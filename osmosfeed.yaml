@@ -3,9 +3,21 @@
 # https://github.com/osmoscraft/osmosfeed/blob/master/docs/osmosfeed-yaml-reference.md
 #########################
 
- cacheUrl: https://aaronfs07.github.io/rssfeed/cache.json
+cacheUrl: https://aaronfs07.github.io/rssfeed/cache.json
 sources:
   - href: https://github.com/osmoscraft/osmosfeed/releases.atom # Get new feature announcement via this feed
-  - href: https://css-tricks.com/feed/
-  - href: https://www.smashingmagazine.com/feed/
-  - href: https://www.freecodecamp.org/news/rss/
+  - href: https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss-analyzed.xml
+  - href: https://www.us-cert.gov/ncas/alerts.xml
+  - href: https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA
+
+
+# `siteTitle`: Title to use in the browser tab and the machine readable feed output. (optional)
+siteTitle: "Aaron's RSS Feed"
+
+# `timezone`: Specify your local timezone so server can group content by weekday
+# Find yours from the "TZ database name" column of this page: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+# Examples: America/Los_Angeles, America/New_York, Asia/Shanghai, Asia/Tokyo
+timezone: America/New_York
+
+# `cacheMaxDays` Max number of days to keep the feed content in cache. A very large value can increase the initial load time of the site. (optional)
+cacheMaxDays: 30
