@@ -300,6 +300,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xq9ram/reminder_to_disable_basic_auth_in_exchange_online/",
+          "author": null,
+          "description": "Have you made sure your organization is ready for the deprecation of basic authentication in Exchange Online?\n  \n⚠️ Microsoft will begin to disable basic authentication for Exchange Online on October 1, 2022.\n  \nSo, what will be the impacts of basic auth deprecation?\n Overall, Microsoft will disable basic authentication in Exchange Online for the following protocols:\n  \nExchange ActiveSync (EAS)\n POP\n IMAP\n Remote PowerShell\n Exchange Web Services (EWS)\n Offline Address Book (OAB)\n Outlook for Windows and Mac\n  \nGot you screaming! Is SMTP protocol also being deprecated by Microsoft?\n No, SMTP isn't being deprecated. But if you stop using it for a while, your SMTP protocol will be disabled. Also, the SMTP will be disabled for tenants who never used the protocol previously.\n Then, what are we going to do with this deprecation?\n All we need to do is to switch to Modern authentication.\n  \nIMAP/POP: Now, OAuth 2.0 support for POP, IMAP, and SMTP Auth protocols have been released, so users can switch to OAuth.\n Exchange ActiveSync: If your organization still using Exchange ActiveSync, you can use Outlook Mobile clients to connect with Exchange Online.\n Do you spend more time on Remote PowerShell to access Exchange Online? Then, use Exchange Online PowerShell V2 Module which supports modern auth.\n You can begin updating your users' client applications to OAuth 2.0 versions.\n Your code must be updated to use OAuth 2.0 if you have written using protocols with Basic Authentication.\n You need to contact the developers of the 3rd party application and ask them to update it to support OAuth 2.0 or switch to an application that supports Modern authentication.\n  \nFor more details on the basic auth deprecation and its solution, check out this article.\n https://blog.admindroid.com/basic-authentication-deprecation-in-exchange-online/\n    submitted by    /u/Embry_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xq9ram/reminder_to_disable_basic_auth_in_exchange_online/",
+          "publishedOn": "2022-09-28T11:08:29.000Z",
+          "wordCount": 27119,
+          "title": "Reminder to disable basic auth in Exchange Online: Take actions before Oct 1, 2022",
+          "imageUrl": "https://external-preview.redd.it/ZwXvm5RCZRVDxp6JbeKe8Z6VbAox2WkL97XZPHXUaAs.jpg?auto=webp&s=23c9c4fee07aa3acdf207cf637450a5007036bb4"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xq9gba/microsoft_endpoint_ios_complaince_policy_for/",
+          "author": null,
+          "description": "We are in the processing of testing Endpoint for Personal Devices. App Protection is setup and working for iOS & Android. \n Some Microsoft documentation suggest Complaince Policies to ensure a device is secure (jailborken, min OS, etc) can be applied to Personal Devices but I'm not sure this is right? I've applied it to all users but unlike the app protection policies these don't apply?\n Can Complaince Policies apply to Personal Devices or is it company only?\n    submitted by    /u/tempredacc85  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xq9gba/microsoft_endpoint_ios_complaince_policy_for/",
+          "publishedOn": "2022-09-28T10:52:16.000Z",
+          "wordCount": 26711,
+          "title": "Microsoft Endpoint - iOS complaince policy for personal Devices?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xq9bb1/midlevel_admin_privileges/",
+          "author": null,
+          "description": "We have finally gotten all users to where they are not local admins on their machines.\n We have also done a good job of having sysadmins utilize daily driver accounts as well as separate admin accounts in Active Directory.\n What I am struggling with is creating 1) 'sub-admin' accounts with rights to install software on local machines and 2) sub-admin accounts for performing basic tasks in AD and on the domain.\n Obviously you don't want to use your domain admin account to elevate a one-off software install on a local machine. And we have lots of those one-offs. We have many field technicians that require specialized mechanic's software. And they are very different per technician. You'll have one tech that is certified on Cummins, another Mercedes etc. There's really no way to standardize things. So they must call in for assistance with installation.\n One of my colleagues has piloted an installers security group in AD and gave that group local admin rights on all workstations. \n Several problems with this:\n 1) you now have (in our case) half a dozen or more new accounts with the power to wipe out every single workstation. \n 2) it does not solve the problem of machines not being on the corporate network bc you can't elevate with no DC available. VPN on every machine with another 2FA account and PW ?\n 3) are we to create yet ANOTHER tier of admin accounts to, for example, run RSAT ADUC?\n The more I read, the more I get spooked to EVER use a domain admin account. But it's also almost like a custom account needs to be created for every single task. DNS change? use your DNS admin account. DHCP change? DHCP login. Add a subnet to sites and services? GPO change? SAS account. GPO account. WTF? Is this the state of the world now ?\n I am all ears for reasonable suggestions.\n    submitted by    /u/UrbyTuesday  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xq9bb1/midlevel_admin_privileges/",
+          "publishedOn": "2022-09-28T10:44:44.000Z",
+          "wordCount": 34487,
+          "title": "Mid-Level admin privileges",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/xq8jh0/solution_suggestionproduct_recommendation/",
           "author": null,
           "description": "Maybe it is a stupid question , but when the client asked me I was stumped.\n Basically client has two separate networks running in adjacent locations. Lets say network 1 and network 1 . He needs to connect both networks such that any data when it leaves Network 1 gets encrypted by an appliance and then the encrypted data travels through the data pipe and when it enters network 2 gets decrypted by another appliance and the data enters network 2 as decrypted data and vice versa.\n diagram link https://ibb.co/MsGzM5h\n I have seen P2P wireless devices working on same principle . Is there any other solution for the same . Vpn is not what he is looking at.\n    submitted by    /u/e_karma  \n [link]   [comments]",
