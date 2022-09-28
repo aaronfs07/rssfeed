@@ -2,10 +2,670 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-09-27T14:30:05.872Z</updated>
+    <updated>2022-09-28T09:22:47.446Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[AOS-CX STP settings]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xq7gn8/aoscx_stp_settings/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xq7gn8/aoscx_stp_settings/"/>
+        <updated>2022-09-28T08:57:21.000Z</updated>
+        <summary type="html"><![CDATA[Yes yes I know, another STP question. I was handed a new Aruba CX 6000 switch from my boss to play around with, and learn the new config. I've watched the airheads youtube series about AOS-CX which was very helpful, and I have been scrolling through the 1900 page manual, but I am not sure if I got it right. 
+ I am trying to use MSTP, have my client access ports configured as admin-edge with bpdu-guard and loop-guard enabled. In my example config the first 10 ports are configured for wireless access points, the next 10 for clients, and the last 4 are for links to other switches, and to the firewall. 
+ When I connect an older 2530 switch to port 1/1/24 I'm getting STP issues and the 2530 disables the port. 
+ I do not have a config to compare mine to, or anyone at all to ask. Did I get this right or did I make some rookie mistakes? The VLANs are not the issue, I'm not completely new to networking, its just the MSTP that I'm struggling to understand. 
+ According to what I learned I should not have to enable bpdu or loop guard on the uplinks, but only on client access ports? Does this include APs? 
+ ​
+ Any videos/info about MSTP in AOS-CX would be very helpful. 
+ !Version ArubaOS-CX PL.10.10.1010 !export-password: default hostname LAB-SW6000 vlan 1 vlan 202 name MGMT vlan 203 name LAN vlan 204 name WLAN CLIENTS vlan 205 name WLAN PUBLIC spanning-tree interface 1/1/1-1/1/10 description ACCESSPOINTS no shutdown vlan trunk native 202 vlan trunk allowed 202,204-205 spanning-tree loop-guard interface 1/1/11-1/1/20 description CLIENTS no shutdown vlan access 203 spanning-tree bpdu-guard spanning-tree loop-guard spanning-tree port-type admin-edge loop-protect vlan 203 interface 1/1/21 description INTERNET no shutdown vlan trunk native 202 vlan trunk allowed all interface 1/1/22-1/1/24 description RESERVED UPLINKS shutdown vlan trunk native 202 vlan trunk allowed all interface vlan 1 ip dhcp interface vlan 202 ip address 10.100.2.51/24 ! https-server vrf default 
+    submitted by    /u/SuccotashOk960  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Don't miss this opportunity and participate in the bounty now!]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq7b5q/dont_miss_this_opportunity_and_participate_in_the/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq7b5q/dont_miss_this_opportunity_and_participate_in_the/"/>
+        <updated>2022-09-28T08:48:00.000Z</updated>
+        <summary type="html"><![CDATA[House of Gaming is excited to announce the GameGods Bug Bounty, with a bounty prize of $300 for the winners and an exciting chance to be part of the GameGods Project!
+ So if you think you are interested in new features, apps, and platforms, then it's time to prove yourself and show us!
+ Don't miss this opportunity and participate in the bounty now!
+ Website Link : https://www.gamegods.com
+ Form Link : https://forms.gle/Tw9sF4zMmrzBjg1j7
+    submitted by    /u/MaterWelonCS  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What should Sysadmin operations look like for the next 5-10 years?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq78uu/what_should_sysadmin_operations_look_like_for_the/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq78uu/what_should_sysadmin_operations_look_like_for_the/"/>
+        <updated>2022-09-28T08:43:54.000Z</updated>
+        <summary type="html"><![CDATA[Trying to get a flavour of future proofing Sysadmin ops. What kind of tech we may want to invest in. Training etc. Just any advice to get going.
+    submitted by    /u/steevstrange  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft 365 network connectivity - Main Page not updating]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq76p3/microsoft_365_network_connectivity_main_page_not/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq76p3/microsoft_365_network_connectivity_main_page_not/"/>
+        <updated>2022-09-28T08:40:22.000Z</updated>
+        <summary type="html"><![CDATA[Morning
+ We have an issue where our main page of the Microsoft 365 network connectivity network assessment is not displaying the latest results from any test. The last test that the graph shows 8/14 which is incorrect. The last test we run is displayed in the location’s section. In here we have the latest results showing different points for our office. Compare that to the main page results on Microsoft 365 network connectivity there completely different. (See picture attached)
+ I would have thought the latest results would be published on the main page
+ Any help would be appreciated
+    submitted by    /u/Chapperz2021  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meeting room schedule dashboard]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq6rb6/meeting_room_schedule_dashboard/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq6rb6/meeting_room_schedule_dashboard/"/>
+        <updated>2022-09-28T08:14:29.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking for a solution to display the meeting room schedule for several rooms of that day. 
+ I found something like AskCody - but other than that I can't find many other possibilities.
+ I'm open to opensource or something reasonably priced. 
+ The TV we'll be using is a digital signage TV so we could put a signage app on it or connect a NUC or RBPI that we have laying around.
+ My preference goes to putting up a display (Joan or Evoko) at each meeting room - but for multiple reasons we aren't allowed to do that. :(
+ So we gotta run with what we have: a TV in the meeting center. 
+ Any ideas?
+    submitted by    /u/Imperiu5  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Server Gui to build VM servers]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq6gue/server_gui_to_build_vm_servers/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq6gue/server_gui_to_build_vm_servers/"/>
+        <updated>2022-09-28T07:57:23.000Z</updated>
+        <summary type="html"><![CDATA[Hey all.
+ I was looking for software? Where you browse to a web gui, enter in specs of a machine and a disc image and it spins up a VM server for you. Similar to how Azure and AWS. Just a facade of those and I want to run it on a large on prem machine and give users access to thier own servers they create etc
+ Im not sure where to start looking as Im not sure what this solution is called.
+ Any suggestions?
+    submitted by    /u/jellyfishchris  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mimecast - Queue Email During Migration]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq6dan/mimecast_queue_email_during_migration/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq6dan/mimecast_queue_email_during_migration/"/>
+        <updated>2022-09-28T07:51:14.000Z</updated>
+        <summary type="html"><![CDATA[We will be migrating emails for a specific domain in the coming days and I was wondering whether anyone had done this before with Mimecast. I raised a Support Request with Mimecast over a week ago and have had no response at all, which is rubbish.
+ So domain.com is currently in 365 TenantA with MX pointing directly to Microsoft and we will be bringing this domain into our 365 TenantB. We use Mimecast for our email security, so this domain will be added here too. My previous plan for these types of migrations has been:
+ 1) Change MX of domain.com to something invalid. Emails will queue and retry at sender for an unknown period. 2) Add domain to 365 and add aliases. 3) Add domain to Mimecast and perform directory sync from 365 so Mimecast is aware of all the new aliases. 4) Change MX to Mimecast.
+ This works well, with the exception of the unknown behaviour when switching to the bogus MX records.
+ It got me wondering; is there a way with Mimecast that we could bring the domain in earlier, maybe even pre-migration, so that when I start the rip out of the domain from TenantA, Mimecast will queue email and then ultimately deliver when all the aliases are added to TenantB? Is that or something similar possible?
+ Thanks in advance!
+    submitted by    /u/brepmassive  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IPSec Client compatible Windows / MacOS / Linux]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xq61dq/ipsec_client_compatible_windows_macos_linux/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xq61dq/ipsec_client_compatible_windows_macos_linux/"/>
+        <updated>2022-09-28T07:31:13.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I trie to find a client VPN IPSec compatibles Windows / MacOS / Linux with IKv2 and AES-GCM encryption support for a Fortigate Gateway VPN.
+ FortiClient doesn't support IKev2. I already try TheGreenBow VPN Clients but i have performance problem on MacOS.
+ If you have any advice for an other client i will be glad to heard them.
+ Thx
+    submitted by    /u/Alucard_Paris  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2019 RDS farm and app readiness]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq5y4p/2019_rds_farm_and_app_readiness/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq5y4p/2019_rds_farm_and_app_readiness/"/>
+        <updated>2022-09-28T07:26:02.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone,
+ More and more of our clients are starting to use server 2019 on their rds farm. Eventually they're all confronted with slow session openings.
+ Firewall rules are clean, we use a script to clean them every weekend or months. PS command "get-netfirewall rule | measure" only returns about 1k rules max.
+ I've read alot about the appreadiness service causing problems like this and when the service is disabled, sessions open nearly instantly. I've also read about problems with updates when the service is disabled.
+ Are you guys dealing with the same issue and is there any other way to deal with it ?
+    submitted by    /u/Aelian  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[One-way ping - what's the reason?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xq5y0n/oneway_ping_whats_the_reason/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xq5y0n/oneway_ping_whats_the_reason/"/>
+        <updated>2022-09-28T07:25:51.000Z</updated>
+        <summary type="html"><![CDATA[I have several locations with this structure: a Cisco FTD (2110 or 2120) in transparent mode has its management interface connected to a Cisco 2960S switch. On the switch I have a vlan 1 with an IP address and from the switch I can ping the management IP and the diagnostic interface IP on the FTD. So far, so good.
+ From the FTD to the switch I cannot reach anything.
+ I cannot ping the vlan 1 IP address on the switch, even though I do get an ARP entry in the table, and the ping returns question marks, not dots. I had configured an IP address on the diagnostic interface in order to be able to reach a local DNS server from the FTD so I can use FQDN objects in some rules.
+ I have checked ten locations and five of them work as expected (ping and DNS resolution) and five of them cannot reach the local IP addresses on the switch or DNS servers. 
+ This makes me feel like a noob. How can it be that I can ping from the switch to the FTD but not the other way round?
+    submitted by    /u/hstracker90  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to tell if your internet provider is blocking ports]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xq5vm7/how_to_tell_if_your_internet_provider_is_blocking/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xq5vm7/how_to_tell_if_your_internet_provider_is_blocking/"/>
+        <updated>2022-09-28T07:21:53.000Z</updated>
+        <summary type="html"><![CDATA[So a little backstory: I'm running ISP through my local Internet provider. On my end it says ports 500 and 4500 are inactive. Session status is down-negotiating. I can't get into the local Internet provider's router. So before I call them out here to check their stuff, is there a way for me to confirm on my end that the ports are indeed being blocked? Preferably looking for commands I can run thru CMD Prompt or putty/rutty. 
+ Thanks!
+    submitted by    /u/Thin-Distribution724  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Play Fair, Intel]]></title>
+        <id>https://www.youtube.com/watch?v=eAa41vVclGA</id>
+        <link href="https://www.youtube.com/watch?v=eAa41vVclGA"/>
+        <updated>2022-09-28T06:47:17.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[For ISP/MSOs, what do you all use for IP requests?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xq1fsw/for_ispmsos_what_do_you_all_use_for_ip_requests/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xq1fsw/for_ispmsos_what_do_you_all_use_for_ip_requests/"/>
+        <updated>2022-09-28T03:25:58.000Z</updated>
+        <summary type="html"><![CDATA[Working in a data center, when we scale an environment horizontally for example, and need to add new Aggregate blocks or what not, we just use an excel sheet with a bunch of formulas for the requestor to fill out. We fill out ToR with ports for examples, in which that auto populates fields for the infrastructure guys to follow, and so on with any other teams that need access. 
+ I feel this is very archaic and maybe some type of online form would work better. This got me thinking, what do you all use? There have to be a better solution even with some type of freeware app out there (hopefully). 
+ Thanks.
+    submitted by    /u/magic9669  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What’s your big picture take on current licensing model?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xq1enn/whats_your_big_picture_take_on_current_licensing/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xq1enn/whats_your_big_picture_take_on_current_licensing/"/>
+        <updated>2022-09-28T03:24:24.000Z</updated>
+        <summary type="html"><![CDATA[For me I lean towards avoiding them (maybe irrationally) out of spite at this point. It just clouds my judgment when there’s some new licensing scheme involved, especially if there weren’t any for the same thing 5-10 years ago. 
+ I know funding is not coming out of my own pocket, and some of these things are really unavoidable. I know these companies also need to make money. I’m all for paying for great tech support by the way! But it’s getting a bit out of hand in my opinion
+ Does this newish development factor into your decision making? Has it pushed you to go a different direction (if there are any)?
+    submitted by    /u/d3adbor3d2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows Time Service (W32Time) issue when using "AllSync" and UseAsFallbackOnly" together]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xq0iqh/windows_time_service_w32time_issue_when_using/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xq0iqh/windows_time_service_w32time_issue_when_using/"/>
+        <updated>2022-09-28T02:44:10.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone,
+ ​
+ I am trying to set up a backup NTP server for remote client PCs which have joined domain when they are disconnected from corporate network.
+ ​
+ I followed this blog post particularly "Enable Backup Simple-NTP Sync" part to have a backup NTP server for remote client PCs.
+ https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/domain-time-synchronization-in-the-age-of-working-from-home/ba-p/1440820
+ ​
+ After adding those reg keys I captured NTP traffic with wireshark but I only see NTP traffic between client and external NTP server even the client is connected to corporate network via VPN.
+ interesting thing is that when I run w32tm /query /status command, it shows the source time server as my domain controller though I did not see that traffic on wireshark.
+ ​
+ My understanding for these configuration is that the client will first try to sync time to domain controller and if domain controller is unreachable then will try sync time to external NTP server.
+ At the moment the client PC does not even try to talk to domain controller by looking at captured packets.
+ ​
+ Does anyone have the same issue?
+    submitted by    /u/Reliab1yUnreliable  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Replacing option 54 in DHCPNAK. Cisco Catalyst 6509]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpzxmy/replacing_option_54_in_dhcpnak_cisco_catalyst_6509/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpzxmy/replacing_option_54_in_dhcpnak_cisco_catalyst_6509/"/>
+        <updated>2022-09-28T02:17:11.000Z</updated>
+        <summary type="html"><![CDATA[Good afternoon. Faced a problem on Cisco catalyst 6509:
+ In packages of the type - DHCPOFFER / DHCPACK, option 54 is substituted for the cisco address. But this does not happen for DHCPNAK packages, why is this so? Is there any way to fix this?
+    submitted by    /u/EaZy_rus  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why is Wasabi so much cheap? What do you feel like it's missing as a standalone backup?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpyr4q/why_is_wasabi_so_much_cheap_what_do_you_feel_like/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpyr4q/why_is_wasabi_so_much_cheap_what_do_you_feel_like/"/>
+        <updated>2022-09-28T01:24:11.000Z</updated>
+        <summary type="html"><![CDATA[A lot of my fellow sys admins at other organizations are using Veeam and Wasabi. I don't want to mention pricing, but it's super cheap. I'm curious what's the catch?
+    submitted by    /u/pleasedontjudgeme13  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network config repos: monorepo or split up?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpyqse/network_config_repos_monorepo_or_split_up/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpyqse/network_config_repos_monorepo_or_split_up/"/>
+        <updated>2022-09-28T01:23:44.000Z</updated>
+        <summary type="html"><![CDATA[If you store your network configs in version control, do you have one single repo for all devices, or do you split it up?
+ In one place I'm thinking of changing from separate ones to a monorepo - I'd love to have a single commit history of all config changes. I could then filter the commits by folder if I wanted the split view again.
+    submitted by    /u/goldensyrupgames  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I've noted a workaround for renaming cloud-only distribution groups that return an "Object reference not set" error]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpyjnm/ive_noted_a_workaround_for_renaming_cloudonly/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpyjnm/ive_noted_a_workaround_for_renaming_cloudonly/"/>
+        <updated>2022-09-28T01:14:43.000Z</updated>
+        <summary type="html"><![CDATA[Thought I'd share as this was frustrating me, hopefully helps others.
+ I have been unable to save the name of some cloud-only distribution groups after editing them via the 365 EAC web UI, most I can edit and save without issue, but some return "Object reference not set to an instance of an object" when I try to save the new name.
+ Turns out if you swap to the Classic Exchange Admin Center and edit the name there, saving the new name works without issue.
+    submitted by    /u/ir34dy0ur3m4i1  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anyone get to work with modular blade servers?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpy4fx/anyone_get_to_work_with_modular_blade_servers/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpy4fx/anyone_get_to_work_with_modular_blade_servers/"/>
+        <updated>2022-09-28T00:55:48.000Z</updated>
+        <summary type="html"><![CDATA[Ever since our Dell rep showed us the modular blade infrastructure way back when I’ve always wanted to play with them, but they never really fit any roles in our environment. Has anyone had the pleasure/displeasure to work with these type of servers? Are they cool or a PITA. What purpose do they serve?
+    submitted by    /u/cincymi  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Recommend a zooming camera for workbench]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpy0pl/recommend_a_zooming_camera_for_workbench/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpy0pl/recommend_a_zooming_camera_for_workbench/"/>
+        <updated>2022-09-28T00:50:58.000Z</updated>
+        <summary type="html"><![CDATA[Hey all, I've seen a video of someone working on a mac and they had a camera to see things up close on a scissor/suspension mount. I have really good eyesight so I've never thought about getting one, but can you point me in the right direction of what to look for? It would help to be able to move the camera above what im working on to see without straining my eyes. Thanks!
+    submitted by    /u/lightspeedissueguy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Duplicate API POST call to IIS server.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpxs6w/duplicate_api_post_call_to_iis_server/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpxs6w/duplicate_api_post_call_to_iis_server/"/>
+        <updated>2022-09-28T00:39:57.000Z</updated>
+        <summary type="html"><![CDATA[I know this will sound like a software issue and it may be, but I need help proving it's not network.
+ I host a site on IIS that allows members to add people to their account. A fee is charged when this happen. Users must agree to terms and check a box kind of thing. Verified the button disables after one click. 
+ Using Fiddler we see the POST request sent only once by the browser. Wireshark capture on the client shows only one request, best I can tell.
+ We have our fortigate hosted in Azure.
+ The request goes to the FortiGate which performs SSL Offloading before passing along the traffic to the IIS server. I am using virtual servers because we have plans to load balance this server, but right now it's the only server in the pool. Static load balancing method over HTTPS. No cookies. No per…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Should DHCP reservations be created inside or outside the pool?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpxkgp/should_dhcp_reservations_be_created_inside_or/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpxkgp/should_dhcp_reservations_be_created_inside_or/"/>
+        <updated>2022-09-28T00:30:15.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ is there a standard or best practice as to whether DHCP reservations should be set inside or outside the address pool?
+ Simple example: DHCP Pool = 192.168.0.50 - 192.168.0.149/24
+ The client should now get a "fixed" IP in form of a reservation. But which? 192.168.0.50 or 192.168.0.150?
+ I have read different recommendations so far, from definitely inside, definitely outside to never mind.
+ Sometimes I stumble over devices that don't even allow a reservation outside the pool.
+ That's also why I've always defined reservations within the scope and only really fixed IPs outside of it.
+ On the other hand, the pfSense Docs says:
+  
+ISC dhcpd only checks via ping to ensure that an IP is not actively in use when making assignments.Making a static mapping does not “reserve” that IP out of the pool.The static mapping in this case merely represents a preference for an IP and others are not prevented from taking the IP if it is not in use. 
+ (...) 
+ As such, it is best to only make assignments outside the range/pool, and the GUI enforces this practice.
+  
+So how it the right way to do it?
+ Thanks and greetings,
+ Martin
+    submitted by    /u/mfessl  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Don’t buy Lenovo E15’s !!! Big warning.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpxe85/dont_buy_lenovo_e15s_big_warning/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpxe85/dont_buy_lenovo_e15s_big_warning/"/>
+        <updated>2022-09-28T00:22:22.000Z</updated>
+        <summary type="html"><![CDATA[We bought a lot of E15’s as part of a refresh. After a while they stop charging. Trust me we did all the troubleshooting and our only option is to send them to Lenovo to get the motherboard replaced.
+ Here is another instance of a company that bought 500 and is having the same issue with no solution but to send it to Lenovo.
+ https://forums.lenovo.com/t5/ThinkPad-11e-Windows-13-E-and-Edge-series-Laptops/Lenovo-E15-Gen-2-not-charging-not-powering-on/m-p/5149857
+    submitted by    /u/PalmTreesandTech  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rant Wednesday!]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpwwbe/rant_wednesday/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpwwbe/rant_wednesday/"/>
+        <updated>2022-09-28T00:00:10.000Z</updated>
+        <summary type="html"><![CDATA[It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
+ There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!
+ Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I've lost my professional discipline and can't get it back.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpv8li/ive_lost_my_professional_discipline_and_cant_get/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpv8li/ive_lost_my_professional_discipline_and_cant_get/"/>
+        <updated>2022-09-27T22:47:00.000Z</updated>
+        <summary type="html"><![CDATA[Background: M30 Jr InfoSec Analyst, started about 2 months ago, previously was IT support for 3 years at same company, previous to that was 6y military, so still relativity new to IT compared to my colleagues.
+ My company just stood up a security dept, and rn its only me, another jr analyst and our boss, whos usually so busy trying to hold meetings with stakeholders that he really doenst have time to check in on me and the other guy. Both work in an office across the country so they never would see me anyway. I only ever do just enough to have my name pop up in emails, chats, tickets so it gives a good illusion i am remaining busy, but the truth is, I have been getting next to nothing accomplished over the last 2 months (even longer as this issue carried over from my previous role)
+ For th…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Untangle NG Firewall pros and cons]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpttj3/untangle_ng_firewall_pros_and_cons/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpttj3/untangle_ng_firewall_pros_and_cons/"/>
+        <updated>2022-09-27T21:49:54.000Z</updated>
+        <summary type="html"><![CDATA[Hi guys,
+ I'm working alone in a company which has 2 branches in different cities. Unfortunately i have a little budget to setup a firewall. I need to merge these branches through the vpn for better tracking and backup system.
+ What is pros and cons of long term use untangle for vpn, threat detecting etc. ?
+ Is it worthy to giving a shot or should i search for an another solution ?
+    submitted by    /u/Yckan  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nexus 93240 (NX-OS 9.3.3) PBR Multiple Next Hops]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpt9e5/nexus_93240_nxos_933_pbr_multiple_next_hops/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpt9e5/nexus_93240_nxos_933_pbr_multiple_next_hops/"/>
+        <updated>2022-09-27T21:28:22.000Z</updated>
+        <summary type="html"><![CDATA[I need to create a PBR with multiple next hops but have them verified by different track objects. In IOS there is a parameter to use a sequence number to order the next hop list. I could define multiple next hop addresses in different set statements each with their own track object like below:
+ IOS-Router(config-route-map)#set ip next-hop verify-availability 1.1.1.1 ?
+ <1-65535> Sequence to insert into next-hop list
+ ​
+ In NX-OS 9.3.3 this feature does not seem to exist. I can only configure a single next hop if I use the verify-availability parameter and no sequence number available. I ran across an ePBR feature introduced in 9.3.5 but wasn't sure if this was the future of PBR on nexus or something different. Has any one come across this and found a workaround?
+ N9K(config-route-map)# set ip next-hop verify-availability 1.1.1.1 ?
+ <CR> 
+ load-share Enables load sharing
+ track The tracking method is track
+    submitted by    /u/wobbypetty  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Does a NAT device need to have a interface within a defined NAT pool for it to work?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpt18g/does_a_nat_device_need_to_have_a_interface_within/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpt18g/does_a_nat_device_need_to_have_a_interface_within/"/>
+        <updated>2022-09-27T21:19:31.000Z</updated>
+        <summary type="html"><![CDATA[In our DC we have a FW that is configured with a /28 outside interface. We mostly use these public ips for remote access and various public to private and private to public nat translations. Recently we have just used our last available public IP however I have just received a request to create another public to private static nat translation so that our internal smtp mail server can be accessible externally. My question is, if I request another /28 from our datacenter to use to complete this request , would I be able to configure a new public to private static nat using one if these new ips even though my firewall does not have a interface in this new subnet?
+    submitted by    /u/BlueberryThick  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When did "Site - to - Site VPN" become "Software Defined WAN"?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpt01g/when_did_site_to_site_vpn_become_software_defined/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpt01g/when_did_site_to_site_vpn_become_software_defined/"/>
+        <updated>2022-09-27T21:18:12.000Z</updated>
+        <summary type="html"><![CDATA[I've been doing VPN since it was a brand new idea, and not enterprise-y enough for a real company. I've been dealing with WANs since Frame Relay was still a neat idea.
+ Today I find out the new office I'm bringing online this week will not be part of our MPLS network, but instead use a "Software Defined WAN".
+ My question is when did they change the name, and how much less expensive would it be of they still called it a VPN?
+    submitted by    /u/theservman  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why do Executive Assistants for the lowest level C person always have the biggest hard on for IT?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xprv4i/why_do_executive_assistants_for_the_lowest_level/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xprv4i/why_do_executive_assistants_for_the_lowest_level/"/>
+        <updated>2022-09-27T20:33:58.000Z</updated>
+        <summary type="html"><![CDATA[Anyone else feel that EA’s for the lowest level C Person in the most rural areas have the biggest hard on for IT and seem to be the most demanding? For example, all our execs traveled to our most rural office and the EA demanded that we put a Teams phone on every desk that they will be sitting at. Tell them to use their cellphone for Christ sake.
+    submitted by    /u/Illnasty2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Configure SNMPv3 on 1550s for my NMS]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xprad3/how_to_configure_snmpv3_on_1550s_for_my_nms/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xprad3/how_to_configure_snmpv3_on_1550s_for_my_nms/"/>
+        <updated>2022-09-27T20:11:07.000Z</updated>
+        <summary type="html"><![CDATA[I am having difficulties with my Adtran 1550s (AOS) authenticating to my NMS Auvik. I am able to authenticate with SNMPv2 with a community string, but I would like to use SNMPv3. They seem to authenticate sometimes, but other times it with just keep trying and trying with no authentication. 
+ My questions are, does every device have to have a unique engine-id? If so, is there a way to automate which one the switch chooses or do I have to manually enter each one to be unique? In addition, does anyone know of any limitation on what passwords the switch will accept for the sha and des? Perhaps my actual passwords are using forbidden characters?
+ Below is an example used (with usernames and passwords substituted):
+ snmp-server engine local 800002980300000000000001
+ snmp-server view "GroupExample" 1.3.* included
+ snmp-server user UserExample GroupExample v3 auth sha encrypted password1 priv des encrypted password2
+ snmp-server group GroupExample v3 priv read GroupExample
+ Any help is appreciated. Thank you for your time.
+    submitted by    /u/Particular-Dingo4851  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Safe way to connect to an open WIFI]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpr9dc/safe_way_to_connect_to_an_open_wifi/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpr9dc/safe_way_to_connect_to_an_open_wifi/"/>
+        <updated>2022-09-27T20:10:01.000Z</updated>
+        <summary type="html"><![CDATA[Hi guys,
+ My company has some employees who travel and stay in hotels without any kind of WIFI security. I'm afraid someone is scanning/wireshark the network.
+ What's the safest way for them to use those kinds of hotel WIFIs?
+ Should I ask them to connect to the Corporate VPN (full-tunnel ) when they are travelling?
+ My environment is Cisco, we have Cisco NGFW, Cisco AMP, Umbrella. 
+ Thanks, guys
+    submitted by    /u/Existing-Finish-3338  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I wrote a tool you can use to audit your DNS with and you'd be probably be shocked to see how bad it is]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpqoio/i_wrote_a_tool_you_can_use_to_audit_your_dns_with/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpqoio/i_wrote_a_tool_you_can_use_to_audit_your_dns_with/"/>
+        <updated>2022-09-27T19:47:57.000Z</updated>
+        <summary type="html"><![CDATA[https://github.com/punk-security/dnsReaper
+ I wrote a tool to hunt out DNS config errors that allow for subdomain takeovers. You wouldn't believe how common it is. No one looks after DNS.
+ I've done a couple talks about DNS takeovers in the UK now at places like blackhat and bsides. I'm really hoping to present it at defcon next year and I'm doing a tonne of research using different DNS datasets.
+ I'd really appreciate if anyone can point me at some obscure DNS takeover blogs they've come across.
+    submitted by    /u/punksecurity_simon  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Q: MPLS vs IPv4 routing]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpporz/q_mpls_vs_ipv4_routing/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpporz/q_mpls_vs_ipv4_routing/"/>
+        <updated>2022-09-27T19:09:48.000Z</updated>
+        <summary type="html"><![CDATA[A basic question to help me understand MPLS:
+ If a switch/router has a route to a destination via an IGP and MPLS label. Why will it use MPLS? is it because MPLS label is at Layer2.5 and the IP is at L3?
+ Thanks
+    submitted by    /u/Abdulrahman-k  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Check Point online course]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpp5zm/check_point_online_course/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpp5zm/check_point_online_course/"/>
+        <updated>2022-09-27T18:50:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello, I'm new to this world of security. I got my CCNA 7 months ago now I'm in a Junior Network Engineer position. In the company we use a CheckPoint firewall, I wanted to know if you can recommend me an online course, as I intend to take my CCSA in the future .
+ Thanks
+    submitted by    /u/Aquillay1  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I'm (22m) losing pride in what I do as an IT support employee]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpohyp/im_22m_losing_pride_in_what_i_do_as_an_it_support/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpohyp/im_22m_losing_pride_in_what_i_do_as_an_it_support/"/>
+        <updated>2022-09-27T18:24:19.000Z</updated>
+        <summary type="html"><![CDATA[Edit: Thank you for the support guys, this really means a lot. I wanna thank you all for taking the time to cheer me up :)
+ Okay so, most of you are probably thinking: Pride in IT support???
+ But hear me out...
+ I recently started a job as a 1st line IT support employee. I was really proud of myself when I got this job, because for me, it was a way to get into IT. It also happend to pay well.
+ The way I looked at my job, was like this: An entry level IT job that I can grow in and use as an foundation to hopefully grow into something else.
+ I never looked at it like it's a low job (in a negative way), even tho it's on the bottom of the pyramid.
+ The thing is that I sometimes get negative comments that put me down and make me lose the motivation and pride in what I do, or the grow process that I'm in.
+ Some of the negative comments or actions that I experience: "Just let him do the shitty work, he's a first line employee." "You're not on our level yet, our work is way more difficult."
+ Just comments that show that I'm on the lowest level of IT.
+ I know it's not the most prestigious job, but is it really that bad and shameful?
+ Ps: I don't hate what I do. It's a boring job, but it pays well and it's comfortable.
+    submitted by    /u/wegwerp69420  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Code improvement suggestions - Netmiko Juniper Config Script]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpnwr2/code_improvement_suggestions_netmiko_juniper/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpnwr2/code_improvement_suggestions_netmiko_juniper/"/>
+        <updated>2022-09-27T18:02:06.000Z</updated>
+        <summary type="html"><![CDATA[I'm still new at writing these scripts. The following works, but I'm just curious if anyone had any suggestions for improvements. Basically this script leverages Netmiko and concurrent.futures modules to log into a list of Juniper devices and commit set config commands. I'm sure I could have some better error handling or verification the commit completed and the config is now how I wanted, but I'm not sure how to do that. I'm also not sure if it's better to use multiprocessing or multithreading... ProcessPool vs. ThreadPool.
+ #!/usr/bin/python3.8 import time import concurrent.futures import getpass from netmiko import ConnectHandler username = input('Username:') password = getpass.getpass() hosts_info = [] starting_time = time.perf_counter() #Opens device_list and populates dictionary host_info with device info with open('device_list', 'r') as devices: for line in devices: hostname = line.strip() host = { 'device_type': 'juniper_junos', 'ip': hostname, 'username': username, 'password': password, } hosts_info.append(host) #Function to connect to and run Juniper config command on each device in hosts_info def open_connection(host): try: connection = ConnectHandler(**host) print('Connection Established to', host['ip']) connection.enable() config_commands = ['set snmp community redacted clients 1.1.1.1./32', 'delete snmp community redacted clients 2.2.2.2/32'] connection.send_config_set(config_commands, exit_config_mode=False) output = connection.commit() print('Completed on', host['ip']) except: print('Failed on', host['ip']) #Main function to use multiprocessing to concurrently connect to 10 devices; calls open_connection function def main(): with concurrent.futures.ProcessPoolExecutor(max_workers=10) as executor: results = executor.map(open_connection, hosts_info) finish = time.perf_counter() print('Time Elapsed:', finish - starting_time) if __name__ == '__main__': main() 
+    submitted by    /u/n3twork_spren  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cisco distribution Switch replacement procedure]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xpmpdg/cisco_distribution_switch_replacement_procedure/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xpmpdg/cisco_distribution_switch_replacement_procedure/"/>
+        <updated>2022-09-27T17:16:18.000Z</updated>
+        <summary type="html"><![CDATA[We will be replacing 2 Cisco nexus distribution switches which are connected to the two 7k cores (2 links from each switch to the cores, 1 link to 1 core and the other link to the other core).
+ We are using vpc on our switches and rstp for spanning tree.
+ Typical 3 tier Cisco architecture.
+ Only has 1 svi for switch management and a bunch of vlans.
+ Default gateway pointed to svi on core switch.
+ Has ACLS, snmp, qos, aaa and ntp configurations as well.
+ Access switches have uplinks to distribution switches using port channels.
+ Distribution switches have uplinks to core using port channels.
+ Will be replacing them with 9k Nexus switches which will have the same configuration as the old ones (apart from the svi which will temporarily have a different IP).
+ Plan is to connect the access switches to the old distribution as well as the new distribution switches so that end devices/access switches can reach the core switches 2 ways, 1 through old distribution pair and the other through new distribution pair. Therefore all we have to do is turn off old ports on old pair during the change window and we should expect traffic to flow through new pair?
+ Is this the right way?
+ And we want this to be done with no downtime.
+ Thank you.
+    submitted by    /u/kb389  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TIL a USB-B fits in an RJ-11 port]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xplzqo/til_a_usbb_fits_in_an_rj11_port/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xplzqo/til_a_usbb_fits_in_an_rj11_port/"/>
+        <updated>2022-09-27T16:49:23.000Z</updated>
+        <summary type="html"><![CDATA[My boss asked me to move a few things and re-cable his desk while he was gone. No problem, borrowed facilities to drill some holes, swapped some cables and extended others.
+ Boss goes to print something today to his desktop printer, but no workie. Printer is happy, no error messages. Check the print queue, full of pending jobs. Cancel all but the latest one, and check Control Panel.
+ Printer offline.
+ Double check the printer for errors and physical issues. The USB cable is a little loose on the printer end, but it seems to move in-and-out smoothly and stays put once in.
+ Double check computer. No errors other than printer offline.
+ Pull printer out from the wall to check the back for physical issues. Notice the empty USB port.
+ >InternalScreaming.jpeg
+ Move the USB-B cable from the RJ-11 port to the USB port. Laser printer happily dims the lights and triggers the UPS, then spits out the print job, just like it's supposed to.
+    submitted by    /u/TheDigiDoc  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New to Graylog]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpj9yn/new_to_graylog/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpj9yn/new_to_graylog/"/>
+        <updated>2022-09-27T15:05:57.000Z</updated>
+        <summary type="html"><![CDATA[I was researching different logging platforms and started researching how to spin up a Graylog instance when....holy cow. Their documentation is amazing. I had a POC server spun up in 5 minutes. This is an open source product that has better documentation than any product I've implemented in the past 25 years.
+ Checking out the repository now and trying to see how to contribute. I can see using their documentation as an exemplar to show my team ideas on things to include and how to present it.
+ Kudos to the developers. They take pride in their work and it really shows.
+ edited: typo
+    submitted by    /u/geekender  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hurricane prep story....]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpj52z/hurricane_prep_story/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpj52z/hurricane_prep_story/"/>
+        <updated>2022-09-27T15:00:52.000Z</updated>
+        <summary type="html"><![CDATA[Grizzled old IT vet here. Story time with the hurricane headed to Florida. Grab a cup of coffee and enjoy.
+ I worked for a company that sold my division off to a company in Tampa-St. Pete. They were a bunch of arrogant pricks that would take any opportunity to remind us that "they bought us". For several months they gutted our building up north and sent everything down to Florida. This included several critical servers that we used for sales and customers. They flew me down to the area to do a cross-training class with the local support. We didn't do it in the office (a modest 3 story prefab building), but did a drive by and saw the moving trucks sitting out in the back parking lot still loaded up.
+ I completed the training, and offered to do a walkthrough of the facility to confirm everyt…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RDP / SSH Manager]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xpilqh/rdp_ssh_manager/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xpilqh/rdp_ssh_manager/"/>
+        <updated>2022-09-27T14:40:17.000Z</updated>
+        <summary type="html"><![CDATA[What is everyone using? I am currently using free version of Remote Desktop Manager. The main features I require are RDP and SSH, but I also use multiple virtual machines daily. So having the entries sync across all of them is priority.
+    submitted by    /u/Imgunnacrumb  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Windows Folder]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/xpi923/windows_folder/</id>
@@ -3402,16 +4062,6 @@ The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastru…]]>
         <link href="https://www.dailywire.com/podcasts/morning-wire"/>
         <updated>2022-08-30T08:30:00.000Z</updated>
         <summary type="html"><![CDATA[The White House plans a push for a new Covid vaccine targeting BA5, Republicans vow to conduct multiple investigations if they gain control of Congress in November, and a crime spike in Los Angeles is affecting even the city’s most popular destinations. Get the facts first on Morning Wire.]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FBI ‘Disinformation’ Controversy | 8.29.22]]></title>
-        <id>4eb528e2-4862-4d4a-a7c9-666a56249da6</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2022-08-29T08:30:00.000Z</updated>
-        <summary type="html"><![CDATA[The FBI responds to controversy over social media “disinformation” censorship, California moves to ban the sale of gas-powered cars, and the FBI’s Trump affidavit is released. Get the facts first on Morning Wire.]]></summary>
         <author>
             <name>podcasts@dailywire.com (The Daily Wire)</name>
         </author>
