@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-29 datetime="2022-09-29T09:06:35.000Z">2022-09-29</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-29 datetime="2022-09-29T09:06:35.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-29 datetime="2022-09-29T10:00:10.000Z">2022-09-29</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-29 datetime="2022-09-29T10:00:10.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,106 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xr3qle/thickheaded_thursday_september_29_2022/"
+                        open
+                      >
+                        <summary class="article-expander__title">Thickheaded Thursday - September 29, 2022</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xr3qle/thickheaded_thursday_september_29_2022/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Howdy, /r/sysadmin!
+ It&#x27;s that time of the week, Thickheaded Thursday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I&#x27;ve taken over responsibility for posting these weekly threads so you don&#x27;t have to worry about anything except your comments!
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xr3hlv/connect_to_windows_using_azure_ad_account/"
+                        open
+                      >
+                        <summary class="article-expander__title">Connect to windows using Azure AD account</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xr3hlv/connect_to_windows_using_azure_ad_account/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ Sorry for the bad english, baguette here.
+ So, with all this home office stuff going on, I have to find a way to let a new user log in to a computer at home. Right now I have to connect to windows using their account while in the office and connected to the company network. Not great.
+ I saw that you could connect to windows using the Azure AD account but I don&#x27;t understand where to start to allow this in my company.
+ Do I have to migrate everything to azure AD and stop using my on-prem AD ? Can I configure it using Azure AD connect without touching my current AD infrastucture ? Like I said, I find a lot of documentation about all of this but I don&#x27;t understand where to start exactly and it&#x27;s driving me nuts.
+    submitted by    /u/BatouMediocre  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xr3h63/hi_can_someone_please_review_these_2_bat_files/"
+                        open
+                      >
+                        <summary class="article-expander__title">Hi can someone please, review these 2 bat files please?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xr3h63/hi_can_someone_please_review_these_2_bat_files/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>im getting 10 laptops from client side and the requests were to create a local account with admin access so i went with this. (remote)
+ @echo off net user &quot;username&quot; &quot;password&quot; /add WMIC USERACCOUNT WHERE &quot;Name&#x3D;&#x27;Alexa&#x27;&quot; SET PasswordExpires&#x3D;FALSE net user administrator /active:yes 
+ i have to customize it for each and every laptop with a name but makes its easier.
+ and i have some laptops that are running slow and out of storage so, ill have check them via teamviewer, also i found this script that removes junk/temp files
+ @echo off if not &quot;%1&quot; &#x3D;&#x3D; &quot;max&quot; start /MAX cmd /c %0 max &amp; exit/b echo. echo Cleaning system junk files, please wait . . . echo. del /f /s /q %systemdrive%\*.tmp del /f /s /q %systemdrive%\*._mp del /f /s /q %systemdrive%\*.log del /f /s /q %systemdrive%\*.gid del /f /s /q %systemdrive%\*.chk del /f /s /q %systemdrive%\*.old del /f /s /q %systemdrive%\recycled\*.* del /f /s /q %windir%\*.bak del /f /s /q %windir%\prefetch\*.* rd /s /q %windir%\temp &amp; md %windir%\temp del /f /q %userprofile%\cookies\*.* del /f /q %userprofile%\recent\*.* del /f /s /q “%userprofile%\Local Settings\Temporary Internet Files\*.*” del /f /s /q “%userprofile%\Local Settings\Temp\*.*” del /f /s /q “%userprofile%\recent\*.*” echo. echo Junk files clean is finished! echo. &amp; pause 
+ is it best if i go through them 1 by 1 or just automate those process?
+ so what do u think? should i use these? or go though each and eveyone and do it manually?
+    submitted by    /u/CANidownloadRAM  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;90
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xr3bpl/linux_script_to_check_the_connection/"
+                        open
+                      >
+                        <summary class="article-expander__title">Linux script to check the connection</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xr3bpl/linux_script_to_check_the_connection/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ ​
+ I am trying to write a script, or find a way that will test the connection between my VM at the data center.
+ Then, I need to get the result value and set an action depending on the result.
+ ​
+ So, anyone can help to get this script?
+    submitted by    /u/a7awwa  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -413,6 +513,29 @@ No, I do not want to use an external service, I want it on-premise.
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr3g0y/how_can_i_find_the_ip_of_the_router_which/"
+                        open
+                      >
+                        <summary class="article-expander__title">How can i find the IP of the router which connects me to the internet?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr3g0y/how_can_i_find_the_ip_of_the_router_which/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am connected to a college network and using wireshark to capture packets to try and to extract some information and make sense of it.
+ I am connected to a wifi AP which in turns connects to a router which then connects me to the internet. Is my default gateway address the IP of the router that connects me to the internet.
+ I want to know since i enter the URL of a website how, which and in what order the packets exchanged to connect me to that website.
+    submitted by    /u/slo-mo-hoe  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;113
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -9918,8 +10041,8 @@ The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastru…</s
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3150129884">
-        <time id="build-timestamp" datetime="2022-09-29T09:22:46.935Z">2022-09-29T09:22:46.935Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3150491048">
+        <time id="build-timestamp" datetime="2022-09-29T10:18:17.599Z">2022-09-29T10:18:17.599Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
