@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-29 datetime="2022-09-29T14:12:34.000Z">2022-09-29</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-29 datetime="2022-09-29T14:12:34.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-30 datetime="2022-09-30T09:23:55.000Z">2022-09-30</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-30 datetime="2022-09-30T09:23:55.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,28 +34,30 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8wz0/is_there_any_network_related_issue_that_caused/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrwslt/vdp_build_and_citrix/"
                         open
                       >
-                        <summary class="article-expander__title">Is there any network related issue that caused this to happen? Not hearing voice on cisco jabber at work</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8wz0/is_there_any_network_related_issue_that_caused/">
+                        <summary class="article-expander__title">VDP Build and Citrix</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrwslt/vdp_build_and_citrix/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I&#x27;m working as a NOC and I was in the office yesterday using cisco jabber to take phone calls. I could hear the ring and answer the phone call, but 3 times I did with a customer I heard nothing on their end. 
- I checked all jabber settings, my speaker and microphone settings and kept testing it over and over after the first call where I couldn&#x27;t hear. 
- I was able to dial and talk to team members and make outbound calls and hear them but when a customer would call me I would not hear it. It was bizarre. I know the wifi password was changed a few days prior for some reason at the office. So whenever I received an inbound call from anyone who wasn&#x27;t on my team I could not hear voice
- When I went back home I was able to hear them when they called. With no settings changed or nothing different.
-    submitted by    /u/velociraptor90  
+                              <span>Hi all,
+ So i have got a physical SCCM build which i now need to transfer to a virtual environment and create VDPs.I have started working and striping all physical related stuff and leave only the relevant.
+ I have got assistance from a Citrix resource however i am not 100% sure they are telling me what the capabilities are and how we can do this optimally. Unfortunately i got no clue about Citrix.
+ So we are going to build into the Virtual environment and that machine is gonna be captured and then fed into MCS and then clone it.
+ What i am worried about is how do i transfer all the things i have stripped of the main build to the VDP build. For example specific languages. Can i have a PowerShell script run during MCS and do all that? 
+ How do you guys go about this kind of challenges ?
+    submitted by    /u/Sysadmin_in_the_Sun  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;116
+                                &ensp;<span class="article-reading-time">(&hairsp;105
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -66,25 +68,17 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8pbx/vpn_throughput_issues/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrvxuw/password_writeback_disable/"
                         open
                       >
-                        <summary class="article-expander__title">VPN Throughput issues.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8pbx/vpn_throughput_issues/">
+                        <summary class="article-expander__title">password writeback disable</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrvxuw/password_writeback_disable/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hey all,
- This VPN is insanely slow compared to connection speeds and I am having a hard time finding a reason why. Keep in mind I&#x27;m a junior sysadmin at best so I&#x27;ll try to include all the needed details while keeping them sanitized. 
- Quick run down: I have a ipsec site to site vpn between two networks with 1Gb duplex connections through two pfsense 7000 series firewall appliances. Connection is stable however iperf only shows a bandwidth of 68 Mbps with transfer capping out at 8.50 MBytes from two hyper-v vm on either side of the tunnel. File transfers from local to remote site are also very slow at 20Mbps. While these speeds may work for my use case temporarily I can&#x27;t help but feel I am missing something to speed this connection up.
- Steps I have taken to attempt to speed this up:
- Set MSS clamping to 1396 after calculating my OMSS. Sniffed before and after the changes and it fixed a fragmentation issue but speeds are unchanged. Using UDP over IPv4 for tunnel.
- Ensure there was no duplex mismatch on any NIC and no traffic shaping is in place.
- CPU&#x27;s are mostly idle and a combined usage of less then 15%
- Asynchronous Cryptography is on, compression is off, no rules conflict with traffic.
- Any thoughts? I am at a loss and about to attempt another VPN option in the mean time to see if I can get better speeds elsewhere.
-    submitted by    /u/boringlichlight  
+                              <span>I done an inplace upgrade of azure ad connect for some reason the password write back got disabled. How will i know if its cause by my upgrade. Is there any logs to check who disable it?
+    submitted by    /u/bizcbtr  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;116
+                                &ensp;<span class="article-reading-time">(&hairsp;104
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -95,313 +89,41 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8o81/cisco_vxlan_dummy_question/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xruu5a/breach_by_phishing_email_what_else_can_i_put_in/"
                         open
                       >
-                        <summary class="article-expander__title">Cisco VXLAN , Dummy Question</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8o81/cisco_vxlan_dummy_question/">
+                        <summary class="article-expander__title">Breach by phishing email, what else can I put in place to monitor/stop in future?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xruu5a/breach_by_phishing_email_what_else_can_i_put_in/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>This week, I&#x27;m studying VXLAN, and I&#x27;m finding it challenging to understand the concept. Therefore, I&#x27;m just asking if anyone can help in addressing my dumb question. But don&#x27;t worry, I&#x27;m doing research at the same time. Perhaps you have an idea that will help me better comprehend technology.
- a. Per my knowledge we have 2 ways for VTEP interconnection. First using multicast, and the second using MP-BGP EVPN.
- Q1: What would be the purpose of MP-BGP and Multicast, for example, if we configured MP-BGP EVPN and add multicast group to member VNI at the same time?
- Sample Config: router bgp 65113 router-id 10.48.224.1 address-family l2vpn evpn advertise-pip neighbor 10.48.224.7 send-community extended address-family l2vpn evpn send-community interface nve1 no shutdown host-reachability protoco…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;91
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8nzu/inconsistent_download_speeds_across_devices_on/"
-                        open
-                      >
-                        <summary class="article-expander__title">Inconsistent Download Speeds Across Devices on the Same Wireless Network</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8nzu/inconsistent_download_speeds_across_devices_on/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Greetings and good morning to all, 
- I&#x27;ve come across a frustrating and bothersome networking issue where one of my laptops on the same configured wireless network (5 GHz bandwidth) supposedly gets fast download speeds (208.04 Mbps). However, when put in a real-world scenario of installing a virtual machine like Kali Linux, the time to install and configure is night and day when put side by side on my main laptop. This older laptop model would take a considerable amount of time to download large files from the web or even install a VM. The Kali Linux VM that I downloaded just yesterday took 1-2 hours before being configured and installed. 
- On my main laptop, I get a relatively stable connection to the router as well when downloading (211.34 Mbps). yet, it appears that this laptop has no p…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;116
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8gq5/bgp_on_cpe/"
-                        open
-                      >
-                        <summary class="article-expander__title">BGP on CPE</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8gq5/bgp_on_cpe/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I work for a service provider providing DIA and MPLS services. We have a customer to which we will provide a redundant service using dual CPE&#x27;s. He wants to run BGP towards us. Usually we use VRRP towards the customer on the CPE&#x27;s in redundant cases, eBGP between the CPE and the PE, and iBGP between the CPE&#x27;s (over the customer LAN).
- So if we are going to run BGP towards the customer, what would be the best practice way of setting it up? iBGP / eBGP towards the customer? iBGP / eBGP between CPE and PE? Or is there some other way of doing it?
-    submitted by    /u/ThinkStation8120  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;90
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr89h5/what_data_is_stored_on_network_switches/"
-                        open
-                      >
-                        <summary class="article-expander__title">What data is stored on network switches?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr89h5/what_data_is_stored_on_network_switches/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have recently come into a bunch of cisco 2960X switches that I&#x27;d like to sell. Some of them don&#x27;t want to reset or go into express setup, so I&#x27;m wondering if I could be exposing the data of the previous owner by selling them as is. I&#x27;m not familiar enough with them to get into the console.
-    submitted by    /u/Elevated_Dongers  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;89
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr7m0n/non_adhesive_patch_cable_ids/"
-                        open
-                      >
-                        <summary class="article-expander__title">*non adhesive* patch cable IDs</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr7m0n/non_adhesive_patch_cable_ids/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Anyone know of such a thing? I want a method to ID each switch port’s cable that’s easier to change than an adhesive label
- I DIY’d one IDF’s cables with binder clips, but that was a little too bulky. I’m surprised there isn’t anything sold by someone.
-    submitted by    /u/desperate-caucasian  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;89
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr69zq/nec_pf_switches/"
-                        open
-                      >
-                        <summary class="article-expander__title">NEC PF switches</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr69zq/nec_pf_switches/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello. We recently got several NEC PF5240/5248 and a couple of PF5459 switches. We deal with refurbishing of IT kit. We need to factory default them but google is really scarce with any info/manuals for them. We have no logins/passwords. On boot they don&#x27;t offer or show anything to be able to interrupt boot and have a look there. Called UK office, but they apparently don&#x27;t deal with issues like that. Has anyone worked with this kit and would be able to help?
-    submitted by    /u/alexxei__  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;115
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr43sk/mpls_trace_explanation_required/"
-                        open
-                      >
-                        <summary class="article-expander__title">MPLS trace explanation required</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr43sk/mpls_trace_explanation_required/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello everyone,
- Can someone explain here with diagrams, MPLS trace for the below scenarios
- 1) CE to CE 2) PE to PE
- I have an interview coming up, I know normal IP traceroute, but the mpls trace seems confusing even after reading the INE document about it, would appreciate if someone can explain better.
-    submitted by    /u/avinashv07  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;89
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr3g0y/how_can_i_find_the_ip_of_the_router_which/"
-                        open
-                      >
-                        <summary class="article-expander__title">How can i find the IP of the router which connects me to the internet?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr3g0y/how_can_i_find_the_ip_of_the_router_which/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I am connected to a college network and using wireshark to capture packets to try and to extract some information and make sense of it.
- I am connected to a wifi AP which in turns connects to a router which then connects me to the internet. Is my default gateway address the IP of the router that connects me to the internet.
- I want to know since i enter the URL of a website how, which and in what order the packets exchanged to connect me to that website.
-    submitted by    /u/slo-mo-hoe  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;113
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr2ezk/ping_1111_l_1500_vs_ping_8888_l_1500/"
-                        open
-                      >
-                        <summary class="article-expander__title">ping 1.1.1.1 -l 1500 vs ping 8.8.8.8 -l 1500</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr2ezk/ping_1111_l_1500_vs_ping_8888_l_1500/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Can someone help me understand why 8.8.8.8 does not answer, and I only can ping with 1472 ( windows ). But I can ping 1.1.1.1 -l 1500 +, why does it seem that the icmp packet gets fragmented towards 1.1.1.1 and 8.8.8.8 drops right away?
+                              <span>Hi All
+ We had an elaborate phishing breach. Led to nothing but will lebaorate on what they did and I want advice of what else we can do, or even buy to help reduce. We are a MS 365 house
  ​
- When I trace the path towards 8.8.8.8, I can ping each hop with +1500 MTU, (above 1472 in windows ), but at a specific hop stops it and starts dropping. Why is the packet simply not fragmented when it goes over 8.8.8.8, but it is fragmented when I ping other addressess like 1.1.1.1 . Im so confused.
- ​
- And just to add, I&#x27;m not using &#x27;Do not fragment flag.&#x27;, just normal ping with extra size. 
-    submitted by    /u/sillybutton  
+  
+User in question is in finance.
+ User was recently scammered personally.
+ User was tricked (we suspect she may have been using same passwords for everything) to approve MFA. MFA was set as phone. The initial entry point we think they either had tested her password as got from the initial, non company scam or a phshing email pre Avanan being turned onto the max and slipped through MS quarantine.
+ Scammer got in (using a IP on same country) and set a rule for correspondance on a &quot;shared finance mailbox&quot;
+ 2 weeks later...logged in and started correspondance with a cutsomer as set in the rule about bank details.
+ Bank details were changed but we got altered and was started.
+  
+Shared mailbox had 13 plus people in so took me time as shared maiboxes dont have great auditing. Eventually located, blocked, changed passwords, altered MFA, coverted this mailbox to a licensed etc. The whole company is about to have all passwords changed and MFA sessions revoked.
+ We already do:
+  
+Yearly training std
+ Atleast 2, if not 3 fake phishing tests a year that lead to extra training
+ We have Avanan in place since Sept. Note, was not placed inline till after the initial breach. 
+ I block most countries hence how they go in via IP address in this country via a VPN
+ Shed load of alerts on 365 but a a since instance, not sure any alert would have trigged unless I do alerts on any rules adding into a mailbox (we have 600+ mailboxes, rising to 2500 shortly.
+  
+Any AI solution that could help?
+ Would EDR/XDR in any way?
+ Move shared mailbox correspondances to helpdesk solution eg freshdesk?
+ Open to comments as going to present to board what I need and why.
+ Thanks in advance.
+    submitted by    /u/slewis_1972  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;91
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr1l33/disable_html5_console_on_eveng/"
-                        open
-                      >
-                        <summary class="article-expander__title">Disable HTML5 console on EVE-NG</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr1l33/disable_html5_console_on_eveng/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi
- I just installed the lastest and greatest version of Eve-NG community edition, but in this release it will always force me to use the HTML5 console or i have to click the node so it can open the telnet link.
- I used to use the API to get a list over all nodes and their telnet ports from the url value in the request.
- Now only the html5 url is present.
- Do you guys know if there are any way to get a list over running nodes and their telnet ports or should i just accept to click the node from now on or use the html5 console where copy/paste does not work for me.
- ​
- Thanks.
-    submitted by    /u/p373r_7h3_5up3r10r  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;113
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr1i87/cisco_vs_aruba_vs_ruckus_which_is_better/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cisco vs Aruba vs Ruckus, which is better?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr1i87/cisco_vs_aruba_vs_ruckus_which_is_better/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Thinking to implement a new Wi-Fi system, Wich brand will better when considering price and manageability?
- I have used to implement Ruckus before, but the manageability seems to complicated to me and I would like to have a more simple setup.
- PS working for a school that have around 40 rooms, estimating 40 APs
-    submitted by    /u/AustinLeungCK  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;89
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr06hv/win_server_2016_limit_rdp_connections_to_internal/"
-                        open
-                      >
-                        <summary class="article-expander__title">Win Server 2016 - Limit RDP connections to internal network only?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr06hv/win_server_2016_limit_rdp_connections_to_internal/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/fM_sjvmVTi1Y6jk6dk8fsur2KPNloi4w7vgluy3As5Q.jpg?auto&#x3D;webp&amp;s&#x3D;c50fd4e7241fd6f1e4aae75f5777229647bc7909" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>I&#x27;ve got a Win 2016 Server Std. running in a Workgroup. Boss wants me to restrict all RDP connections to the LAN side alone and no connection from the WAN side or the VPN I have in place. We have received new heightened security measures from even further up the food chain and I was told &quot;lock it down&quot; but no instructions on what to lock down (other than disable RDP altogether, which is not viable).
- Things look differently now from the last time I did something similar and I am trying to change the firewall inbound rules. The instructions I found are always variations of this and refer me to the firewall&#x27;s inbound rules. But they only mention &quot;Remote Desktop (TCP-In)&quot;. Logging into the inbound rules, there are 6 differently named ones for Remote Desktop and I don&#x27;t know if I need to edit …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;92
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xqzras/how_long_into_networking_before_you_truly_felt/"
-                        open
-                      >
-                        <summary class="article-expander__title">How long into Networking before you truly felt like you understood a lot of what was going on?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xqzras/how_long_into_networking_before_you_truly_felt/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Got a decent amount of certs in a shortish span of time and have been in Networking for a year for an ISP. I originally got in so I could just get the networking bit done before moving to security.
- There’s so much that comes up on a daily basis in the middle of studying my CCNP that I realize I have no clue about, and I’m not even talking about just CCNP material, just how everything at work works in general. Guess I’m just wanting some reassurance. 
- So again, how long into your guys career did it take for you to feel like, “yeah, I get most of this.” Just feel like maybe I’m behind in terms of getting into cyber security because of networking.
- Also, thanks so much ahead of time for your guys answers!
-    submitted by    /u/Delsincameback  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;95
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xqzp9p/need_examples_for_high_priority_network_incidents/"
-                        open
-                      >
-                        <summary class="article-expander__title">need examples for high priority network incidents</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xqzp9p/need_examples_for_high_priority_network_incidents/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Is ther any site to know high priority network incidents case studies... Mainly for layer 3.
-    submitted by    /u/Vegetable_Depth_4196  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                &ensp;<span class="article-reading-time">(&hairsp;108
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -418,10 +140,486 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrwmin/how_to_map_the_route_logs_take_from_source_to/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to map the route logs take from source to destination?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrwmin/how_to_map_the_route_logs_take_from_source_to/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Looking for tools/methods/advice on how to map the route logs take from source to reach the destination (SIEM, central server). Essentially find out the list of devices the logs pass through to eventually reach the storage location, so I can create network/flow diagrams to help visualise that journey in case of a loss of logs to assist with contingency and remediation.
+    submitted by    /u/_gourami  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrw6eo/password_management_solution_for_it_team/"
+                        open
+                      >
+                        <summary class="article-expander__title">Password management solution for IT team</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrw6eo/password_management_solution_for_it_team/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>What are people using for a password management solution? It&#x27;s a small company so happy to pay but ideally low cost. Alternatively any open source solution that is good. 
+ I was looking at Bitwarden but would like to explore other products. 
+ Thanks
+    submitted by    /u/Tars-01  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrt4ye/ipsec_vpn_over_starlink/"
+                        open
+                      >
+                        <summary class="article-expander__title">IPSec VPN over Starlink?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrt4ye/ipsec_vpn_over_starlink/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is anyone doing IPSec VPN&#x27;s over starlink? Site to site style?
+ Currently trying to work a solution for a client, cisco platform all around - and best idea is to use IPSec VTI tunnels. This particular install is using Starlink business so we should get the public IP direct on the cisco, but we may have a need to do it on residential which is CGNAT stuff with dynamic IP&#x27;s .
+ Whats the best solution here?
+ I&#x27;ve previously tried l2tp VPN over residential starlink, and found the tunnel was limited to about ~30mbps, not sure if this was an unrelated issue, but other VPN&#x27;s to the same concentrator did not have any issues, so I thought perhaps starlink was PCQ the tunnel (seeing it as a single flow).
+ Just keen to hear peoples experiences so I can push myself to the right solution.
+ Thanks!
+    submitted by    /u/Joeymon  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;126
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrs23d/trying_to_fix_my_business_mobile_communication_by/"
+                        open
+                      >
+                        <summary class="article-expander__title">Trying to fix my business&#x27; mobile communication by opening a port for a PC but they have multiple routers and hubs so I&#x27;m getting confused. People in charge of software at a loss also.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrs23d/trying_to_fix_my_business_mobile_communication_by/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Basically I am trying to get a computer (192.168.3.4) to receive stuff from port 12499. 
+ I called ISP and it is not blocked by them, but whwn I try to enable that port in port forwarding on the comcast router i gwt an invalid IP range error saying it is not in the range of IPs. I have tried using the sonicwall ip as well as the cradlepoint IP (both are seen as connected devices and I pick them from the connected device list to try and do so). 
+ In more detail, the way that things are set up is that they have a comcast business router, which is connected into the WAN port on a cradlepoint router I&#x27;m pretty sure but hard to tell since cable is routed through a big ceiling. The LAN of the cradlepoint is attached to phones on a VOIP box. There is a sonicwall that is connected to a hub that ha…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrrwil/configuration_of_dhcp_option_60_on_client_side/"
+                        open
+                      >
+                        <summary class="article-expander__title">Configuration of DHCP option 60 on client side</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrrwil/configuration_of_dhcp_option_60_on_client_side/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have a cisco ISR 4331 router. I have a customer provided internet Iink connected to the ISR router.I need to configure dhcp option 60 on client side in order to get IP via DHCP.
+ I tried to run debug ip dhcp server packet in order to determine vendor class identifier. But I only managed to find client ID in the debug logs. It has come to my knowledge that the vendor class identifier depends on the device that type that is getting connected to the ISP device. Is there a way I can know how to determine vendor class identifier for Cisco router ? I have tried to search for various forums and Cisco documents but reached a dead end.
+    submitted by    /u/Vegetable-Coconut-63  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-29 datetime="2022-09-30T03:07:59.000Z">2022-09-29</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-29 datetime="2022-09-30T03:07:59.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrqnsc/7_ps_everyone/"
+                        open
+                      >
+                        <summary class="article-expander__title">7 P&#x27;s, everyone.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrqnsc/7_ps_everyone/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Got a call at 7AM this morning stating my companies head office is without power just in time for the End Of Month processing to start.
+ This isn&#x27;t the first time we&#x27;ve been without power and I&#x27;ve been here long enough to know what to do. Most of the office staff haven&#x27;t been here in a power blackout before and Jnr IT Helpdesk guy has only been here a month at his very first job so an office emergency like this has been a real eye opener for him.
+ The generator powering the server room and some of the cubicles fired up automatically when the power dropped ( funnily enough we were planning to do a generator test tonight) so we got the staff redistributed to cubicles with power, set-up a few printers and everything is going along as well as can be expected at the moment. The warehouse parts …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrouui/threat_advisory_new_0day_vulnerabilities_found_in/"
+                        open
+                      >
+                        <summary class="article-expander__title">Threat advisory: New 0-Day Vulnerabilities Found in Microsoft Exchange</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrouui/threat_advisory_new_0day_vulnerabilities_found_in/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/e9S3-fyTJzXlLFzneN46HhEdjpGDUDybDBfdW2GtVcE.jpg?auto&#x3D;webp&amp;s&#x3D;abc534de476a59ca6e309cc0fe0d9aa5bad5610d" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>submitted by    /u/huntresslabs  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;106
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrmssd/new_microsoft_exchange_zeroday_actively_being/"
+                        open
+                      >
+                        <summary class="article-expander__title">New Microsoft Exchange Zero-Day actively being exploited</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrmssd/new_microsoft_exchange_zeroday_actively_being/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/e9S3-fyTJzXlLFzneN46HhEdjpGDUDybDBfdW2GtVcE.jpg?auto&#x3D;webp&amp;s&#x3D;abc534de476a59ca6e309cc0fe0d9aa5bad5610d" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Edit: Follow the Huntress Thread in /r/MSP
+ ZDI confirmed as 8.8 &amp; 6.3, no CVSS at the moment.
+ You can find mitigation recommendation here: https://gteltsc.vn/blog/warning-new-attack-campaign-utilized-a-new-0day-rce-vulnerability-on-microsoft-exchange-server-12715.html#:~:text&#x3D;Temporary%20containment%20measures
+ Edit: Direct Steps below
+  
+- In Autodiscover at FrontEnd select tab URL Rewrite, select Request Blocking
+ - Add string .*autodiscover\.json.*\@.*Powershell.* to the URL Path:
+ 
+- Condition input: Choose {REQUEST_URI}
+  
+Detection:
+ To help organizations check if their Exchange Servers have been exploited by this bug yet, GTSC have released guideline and a tool to scan IIS log files (stored by default in the %SystemDrive%\inetpub\logs\LogFiles folder ): Method 1: Use powershell co…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrlsoc/exchange_zero_day/"
+                        open
+                      >
+                        <summary class="article-expander__title">Exchange Zero Day</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrlsoc/exchange_zero_day/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/e7uhJxKzu3mOHqnOJ9mCA2pkZj4h41SGRAgzC5_oBqY.jpg?auto&#x3D;webp&amp;s&#x3D;f94cf42a57b14a7c09fe7e362ea6c64128f9abc2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Action stations , action stations, set condition 1 through out the board, this is not a drill. 
+ https://www.bleepingcomputer.com/news/security/new-microsoft-exchange-zero-days-reportedly-exploited-in-attacks/
+    submitted by    /u/Insanitydoge14  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;141
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrkbcx/rant_microsoft_support/"
+                        open
+                      >
+                        <summary class="article-expander__title">Rant: Microsoft support</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrkbcx/rant_microsoft_support/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>They are terrible. That is all I am going to say.
+    submitted by    /u/heimos  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;108
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrk7jg/i_got_laid_off_today/"
+                        open
+                      >
+                        <summary class="article-expander__title">I got laid off today</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrk7jg/i_got_laid_off_today/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Nothing crazy or spectacular. My boss&#x27;s boss put a &#x27;check in&#x27; on my calendar for 15 minutes, he read his little HR generated goodbye note, HR read me my rights, and it was over just like that.
+ This was a roller coaster for me, this company acquired the company I worked for for 12 years, then let me go in less than a year. The official corporate story is &#x27;downsizing&#x27;. About 20 people got let go from a 300ish person company.
+ Not looking for sympathy or pity, but just wanted to share some things I&#x27;ve learned over the years.
+  
+NEVER feel bad for taking time off, asking for more money, or quitting a job. If you don&#x27;t look out for you, nobody will.
+ Have a healthy level of distrust, even in those you trust the most. It may sound counterintuitive, but when push comes to shove, they will most l…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrj8c8/theres_reports_emerging_that_a_new_zero_day/"
+                        open
+                      >
+                        <summary class="article-expander__title">There’s reports emerging that a new zero day exists in Microsoft Exchange, and is being actively exploited in the wild</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrj8c8/theres_reports_emerging_that_a_new_zero_day/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/7wgjNnQDcQu9vZirYKDyzID-TSy6myjlRkqStXhfVKc.jpg?auto&#x3D;webp&amp;s&#x3D;80dd7b99edbadf1161aa0d817087117848fb7cf0" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>https://twitter.com/GossiTheDog/status/1575580072961982464
+ Not looking good. Microsoft is said to be aware but has not gone public.
+    submitted by    /u/Pie-Otherwise  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xritbm/exchange_0day_in_the_wild_on_prem_admins_alert/"
+                        open
+                      >
+                        <summary class="article-expander__title">Exchange 0-Day in the Wild - On Prem admins alert!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xritbm/exchange_0day_in_the_wild_on_prem_admins_alert/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/7wgjNnQDcQu9vZirYKDyzID-TSy6myjlRkqStXhfVKc.jpg?auto&#x3D;webp&amp;s&#x3D;80dd7b99edbadf1161aa0d817087117848fb7cf0" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Kevin Beaumont (GossiTheDog on twitter) reports
+ First write up with some bandaids and IoCs
+ More info as we get it - ETA: check in with Kevin Beaumont on the thread
+ ETA: This may be ProxyShell rehashed ... if it is, fully patched environments should be good. If you are not fully patched (Cumulative Updates and Security Updates), this is as good a time as any to fix it
+    submitted by    /u/BerkeleyFarmGirl  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrh7jz/hp_printers_with_a_model_that_ends_in_e_require/"
+                        open
+                      >
+                        <summary class="article-expander__title">HP printers with a model# that ends in e require internet to print</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrh7jz/hp_printers_with_a_model_that_ends_in_e_require/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Internet is required so that the printer can check to see if you&#x27;re buying cartridges from HP. If not the printer stops working. Don&#x27;t buy.
+    submitted by    /u/IntentionalTexan  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrgo8f/microsoft_cloud_outage/"
+                        open
+                      >
+                        <summary class="article-expander__title">Microsoft Cloud Outage</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrgo8f/microsoft_cloud_outage/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/U4fpxg32-Dh4sndf-2pVAqFJXZlwyqPiTJU08Dd_hRc.jpg?auto&#x3D;webp&amp;s&#x3D;09217da9e340a189ff7692c376e3a54759ccd6c2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>It looks like Microsoft is having an outage, but they haven&#x27;t acknowledged it yet (all green on their status pages). We&#x27;re down at my office. How are you guys holding up?
+ https://imgur.com/a/A2CdCtV https://portal.office.com/servicestatus https://status.office365.com/
+    submitted by    /u/PoisonWaffle3  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;106
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xreed8/microsoft_ignite_2022_5_yubikey_offer/"
+                        open
+                      >
+                        <summary class="article-expander__title">Microsoft Ignite 2022 $5 Yubikey Offer</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xreed8/microsoft_ignite_2022_5_yubikey_offer/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/o9pwflIttqaqE3yCoit7h2qDy7efnh1iSgFZbftHoJQ.jpg?auto&#x3D;webp&amp;s&#x3D;378111c0e7f0b3e923804d43d4547d487dc80484" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>https://www.yubico.com/microsoft-ignite-yubikeyoffer2022/
+  
+Exclusive limited-time offer for Microsoft Ignite 2022
+ Try the YubiKey with a special $5 Microsoft Ignite experience pack.
+ The experience pack includes:
+  
+1 YubiKey 5 NFC
+ 1 YubiKey 5 NFC C
+ Complimentary shipping
+  
+This offer is available while supplies last and is only valid in the United States.
+ The one-time use coupon will expire on Friday, October 15, 2022 at 11:59 pm PT and is valid only at Yubico.com/store. This redemption is valid for one (1) Microsoft Ignite Experience Pack, a $100 value. YubiKeys procured with this redemption are Not For Resale. Redemption code cannot be combined with other offers or redemption codes.
+ Protect your accounts today with the YubiKey.
+  
+The terms say the offer is only valid in the United States, but I redeemed the offer for $15 USD as a Canadian
+    submitted by    /u/scottwtang  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;138
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrdwes/which_do_you_think_will_happen_first_cobol_apps/"
+                        open
+                      >
+                        <summary class="article-expander__title">Which do you think will happen first; Cobol apps are ported and the language is retired, IPv4 is decommissioned, or you retire?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrdwes/which_do_you_think_will_happen_first_cobol_apps/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am halfway through my career and from the beginning there&#x27;s been chatter of Cobol going away. Now it is a scramble to find new coders and admins for the mainframe hardware as the current workers are retiring. IPv6 has been around for decades but pretty much every site and every company in the world still uses IPv4. 
+ I&#x27;m thinking both will still be alive and well in 2040
+    submitted by    /u/bustedbutthole  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;143
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrcz82/fuck_saas_seriously/"
+                        open
+                      >
+                        <summary class="article-expander__title">Fuck SaaS... Seriously.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrcz82/fuck_saas_seriously/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>/rant on
+ A routine request comes in, a fairly new user needs a piece of software so fire off an e-mail to the company for a quote and once I receive it, I send it over to operations and they call, reference the quote number, pay by credit card, we receive license information, and done deal. 
+ However, this time was much different. It took them nearly a week to respond which is very unusual and the e-mail was basically a big &quot;FUCK YOU&quot;. No quote, informed they no longer sell the software, no longer allow software upgrade discounts, no longer offer phone sales/support (so no payment by phone) and told that all our existing perpetual licenses will end of life in March and will no longer be able to be activated/deactivated/transferred (for example, a user gets a new computer, can&#x27;t deactivate…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;115
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xrcovq/the_still_sad_state_of_ipv6_adoption/"
+                        open
+                      >
+                        <summary class="article-expander__title">The (still) sad state of IPv6 adoption</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xrcovq/the_still_sad_state_of_ipv6_adoption/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So at work we&#x27;ve been batting around the whole IPv6 chestnut, for the past year or so. We&#x27;ve gotten to the point that some of our providers don&#x27;t provide IPv4 anymore unless you cough up a bundle of money, so we want to go IPv6 only. 
+ And that&#x27;s where the fun starts. So many external services we rely on don&#x27;t support IPv6. Github for one doesn&#x27;t. Docker&#x27;s registry doesn&#x27;t. Most of the CPAN mirrors (yeah, we use Perl in a few places) don&#x27;t. A lot of Ubuntu&#x27;s repository mirrors don&#x27;t. It&#x27;s actually easier to list the things that *do* support it than the things that don&#x27;t, it&#x27;s a sad and very small list. 
+ So tell me, how to transit to a full IPv6 stack when 90% of external services flat out don&#x27;t support it, and (in Github&#x27;s case at any rate) don&#x27;t seem too interested in getting it to work?
+    submitted by    /u/blockstackers  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;119
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -1421,6 +1619,824 @@ No, I do not want to use an external service, I want it on-premise.
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;129
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrqjxy/learning_about_type_5_lsa_but_the_ospf_database/"
+                        open
+                      >
+                        <summary class="article-expander__title">Learning about type 5 LSA but the ospf database on a live network confused me.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrqjxy/learning_about_type_5_lsa_but_the_ospf_database/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I looked at the ospf database of a boundary router in a single area today (a pretty big area). I don&#x27;t have access to anything beyond the boundary which goes to some other campus.
+ The database had 3 sections with routes. Type 1, type 2, and type 5. So I looked at one of the /25 networks being advertised as a type 5 lsa and saw the the advertising router, the boundary I was one, was hosting that /25 SVI itself! That&#x27;s where I got confused since the side of the network I could see is area 0. 
+ I&#x27;m a visual learner and couldn&#x27;t picture where those type 5s were going and why they exist. Could someone explain this scenario to me?
+    submitted by    /u/Erediv  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrpi91/option54_cisco_6509/"
+                        open
+                      >
+                        <summary class="article-expander__title">Option54 cisco 6509</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrpi91/option54_cisco_6509/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Good afternoon, tell me why cisco 6509 replaces option 54 in dhcp packets:
+ In option 54, the cisco interface address, not the dhcp server address
+ Configuration example:
+ ip dhcp relay information option no ip dhcp relay information check ip dhcp relay information trust-all ! ip dhcp snooping information option allow-untrusted no ip dhcp snooping information option ip dhcp snooping 
+ What kind of functionality does this? Where can I read more about this ?
+    submitted by    /u/EaZy_rus  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xro4g2/looking_for_help_in_the_phx_area/"
+                        open
+                      >
+                        <summary class="article-expander__title">Looking for help in the PHX area</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xro4g2/looking_for_help_in_the_phx_area/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am working on setting up equipment in a Colo in Chandler, AZ. We have Palo Alto 3220 firewalls and are trying to get 2 fiber connections to work. 2 x 1G dia fiber connections from 2 different ISP’s. We are not certain the issue is the transceivers, but we are leaning that direction. No link lights on the ports, etc. We have tickets out with both ISP&#x27;s and hope to have answers soon.
+ We have 2 different SFP transceivers and both act the same way. 1 type is generic from Amazon that was supposed to work with most major hardware providers. We brought them along as backups. The primary module is from FS.com and is supposed be PA compatible and has the PA designation like we expected.
+ Does anyone in the Phoenix area have any Palo Alto compatible Singlemode 1310nm LX/LR - 10km transceivers with LC connectors? We would need them asap, our flights leave 5pm phoenix time on Friday 9/30.
+ Does anyone have any other ideas or access to a vendor in the area that could help?
+    submitted by    /u/worktheoldmuscles  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrnz6y/after_defining_the_primary_dns_suffix_dns_is_not/"
+                        open
+                      >
+                        <summary class="article-expander__title">After defining the primary DNS suffix, dns is not working</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrnz6y/after_defining_the_primary_dns_suffix_dns_is_not/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ Apologies in advance for being pretty new to networking.
+ My situation is as the title states.
+ How I got here was we are preparing for a merger and we were asked to add the DNS suffixes to the dns search list of our two source domains and our Target domain via GPO
+ Doing this seems to cause the primary DNS suffix to be the first one in that search list
+ To try and get around that I tried to define the primary as what it should be per domain.
+ But after doing that, DNS only seems to be working with FQDN.
+ Not sure what is causing this but if anyone has any input I would want to hear it. Thank you!
+    submitted by    /u/guymn999  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;106
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrnk88/nhrpdmvpn_creating_very_specific_routes/"
+                        open
+                      >
+                        <summary class="article-expander__title">NHRP/DMVPN creating very specific routes</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrnk88/nhrpdmvpn_creating_very_specific_routes/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So I just had to work an incident where some VOIP phones stopped working. I get on the local router and switch and notice I can&#x27;t ping the call manager. I check the routing table and I see the route to the subnet the call manager sits in right but there is also a /32 route for the call manager coming from NHRP, we do use DMVPN. 
+ Visual with made up IPs
+ B 192.168.2.0/24 via 172.16.16.10
+ H 192.168.2.10/32 via 172.16.16.2
+ So in this example the 172.16.16.10 is the dmvpn address of the call center&#x27;s router and 172.16.16.2 is the dmvpn address of a secondary headend. 
+ Now yes there is also a problem with why the secondary headend we are standing up doesn&#x27;t have a route to the call center itself, making this just inefficient routing not broken, but I&#x27;m mostly confused by how NHRP just decided to advertise a route to a somewhat random server. I just threw a static route in to fix it for now but I would like to figure out the cause.
+ This is my first time working at a company with DMVPN so I&#x27;m still learning the ins and outs.
+ Thanks
+    submitted by    /u/ericscal  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;106
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrmvpv/blogpost_friday/"
+                        open
+                      >
+                        <summary class="article-expander__title">Blogpost Friday!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrmvpv/blogpost_friday/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>It&#x27;s Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member&#x27;s new and shiny blog posts.
+ Feel free to submit your blog post and as well a nice description to this thread.
+ Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;166
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrk4hv/vendors_for_networkingwireless_equipment_to/"
+                        open
+                      >
+                        <summary class="article-expander__title">Vendors for networking/wireless equipment to Google and FB?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrk4hv/vendors_for_networkingwireless_equipment_to/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Does anyone have in/direct knowledge of what networking hardware platforms (cores, switching at all levels, wireless APs and wireless infrastructure vendors) these major firms employ?
+ Separately, I’m looking for a listing of the major tech companies and their networking infrastructure/wireless/security platforms and vendors. Not sure if that is public anywhere.
+ Thanks!
+    submitted by    /u/entropickle  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;110
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrjjlu/using_fs_optics_on_a_dellbroadcom_57412_dual_port/"
+                        open
+                      >
+                        <summary class="article-expander__title">Using fs optics on a Dell/Broadcom 57412 Dual Port 10Gb, SFP+, PCIe Adapter</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrjjlu/using_fs_optics_on_a_dellbroadcom_57412_dual_port/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve lucked out in using Avago optics I had on hand when installing these 10Gb nics in the past, no compatibility issues. I&#x27;m going to buy some optics for a new nic and I&#x27;m unsure what &quot;brand&quot; of FS optics would be compatible. Anybody have first hand experience? I&#x27;ve had no issues with FS &quot;Cisco&quot; optics in the past in the switches, just not sure how the nic would respond to using these same optics.
+ I&#x27;ve reached out to FS to see if they have advice, have heard nothing back yet.
+ THANKS!
+    submitted by    /u/dankgus  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;108
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrh0yz/inactive_ports_for_a_year/"
+                        open
+                      >
+                        <summary class="article-expander__title">Inactive Ports for a Year</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrh0yz/inactive_ports_for_a_year/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello all. I&#x27;m trying to get a report for 3 of our cisco stacks on the ports and how long they have been inactive. I&#x27;ve been looking through Cisco Prime and haven&#x27;t been able to figure it out. Any ideas on how I can get this information? Thanks in advanced!
+    submitted by    /u/IntelSarge  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrdmuz/replicating_network_to_different_site/"
+                        open
+                      >
+                        <summary class="article-expander__title">Replicating network to different site</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrdmuz/replicating_network_to_different_site/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Trying to see if this is even possible what&#x27;s being asked. We&#x27;re wanting to set up some VM hosts at a separate site to replicate to for failover so if Site 1 goes down then we can continue to use our VMs at Site 2. These sites are connected via a layer 3 fiber link. Currently the VM hosts and the VMs themselves are all on the same subnet/vlan. Is there a way to recreate that subnet at site 2 or would they conflict with one another since the two sites are still technically connected?
+    submitted by    /u/BuffaloOnAMotorcycle  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;110
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrdfup/subnet_communications_question/"
+                        open
+                      >
+                        <summary class="article-expander__title">subnet communications question</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrdfup/subnet_communications_question/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>If a have a router A with its wan port connect to a modem. Router A have two subnet 192.168.1.0 and 192.168.1.32, mask of 255.255.255.224. the gateway is at 192.168.1.1. Multiple device are connected physically through lan ports and are assigned ip adresses in the first subnet (192.168.1.0) and all the devices here have the default fateway to be router A. Multiple devices are connected physically through other lan ports still on router A with assigned ip adresses in the second subnet (192.168.1.32). An other router, Router B. Its wan port is connected to a lan port on router A an assigned an adresse from the first network (192.168.1.0). The lan port of router B are configured to be from the second network (192.168.1.32) and one of its lan port is connected to a lan port of router A. All device in the second network (192.168.1.32) are configured with a default gateway to be router B. Does anyone in all subnet will be able to see everyone across each network? If no, how can i achieve that?
+    submitted by    /u/justarandomguy1917  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;108
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrddry/best_way_to_feed_a_drop_cable_into_a_rack/"
+                        open
+                      >
+                        <summary class="article-expander__title">Best way to feed a drop cable into a rack?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrddry/best_way_to_feed_a_drop_cable_into_a_rack/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/S3lckfUE0u5y5UQoXnD1M8gz6Ylts1el9eVLpHq0VYc.jpg?auto&#x3D;webp&amp;s&#x3D;1a17372e92182fc12cb3ca074d4ddc518de08f32" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Pretty new to the profession, but have worked on network racks before. I&#x27;m building one from scratch for the first time though. Have ~200 cables coming in through a drop in the ceiling, and trying to decided on the best way to feed them into the patch panels.
+ Is it better to have all the cables drop to the bottom of the rack, and then come back up to feed into the panels, or to feed the cables directly into the panels as they drop down? I&#x27;ve seen it done both ways, so I&#x27;m not really sure what the &quot;preferred&quot; method is.
+ ​
+ Pic to make things more clear: https://imgur.com/a/hjbbkL3
+    submitted by    /u/networkingnoob325  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;114
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrcpbx/issue_connecting_to_a_host_via_vpn/"
+                        open
+                      >
+                        <summary class="article-expander__title">issue connecting to a host via vpn.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrcpbx/issue_connecting_to_a_host_via_vpn/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have a machine (10.9.9_35) that&#x27;s an ubuntu box. I need to connect to it via vpn (http80 and ping). I can get to this box no issues when I&#x27;m in prem from different vlan. When I&#x27;m vpn&#x27;d in i can get to the gateway (10.9.9__1) and a couple other devices in the same network JUST not this particular box. I look at the firewall logs and 80 and icmp are green going to this box. From the ubuntu box i can even ping the vpn box from the ubuntu, not vice versa. I&#x27;ve even tried a win10 laptop, gave it the same IP and i&#x27;m not able to get to it thru vpn as well. gave it a different one and it&#x27;s good! 
+ As far as path goes, vpn -&gt; fw-&gt; core -&gt; access switch-&gt; box. the 10.9.9.x network is L2. i&#x27;m not a linux guy so i&#x27;m not sure if there&#x27;s an internal (i doubt it because i have access to it on-prem). i&#x27;m clearly missing something here. fw rule, routing, something.
+    submitted by    /u/d3adbor3d2  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrc6v7/dscp_trust_for_voip_qos/"
+                        open
+                      >
+                        <summary class="article-expander__title">DSCP Trust for VoIP QoS?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrc6v7/dscp_trust_for_voip_qos/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We&#x27;re getting a new Avaya VoIP system. From what I can tell, the phones already assign DSCP values of 46, 34, and 24. Our current switching environment is HPE and Aruba based. By default, the ports do not trust DSCP. To enable QoS to give VOIP traffic priority, is it just a matter of enabling DSCP port trust on all switches end to end for it to begin working? Currently, we are not coming anywhere close to saturating our current backbone links, but I&#x27;d like to just have QOS setup properly just in case.
+    submitted by    /u/LegendSS  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;106
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xrbuks/cradlepoint_ibr900_inside_a_rural_home/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cradlepoint IBR900 inside a rural home?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xrbuks/cradlepoint_ibr900_inside_a_rural_home/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi. We are building a home and have no access to ISP&#x27;s with a physical connection. We do have great Verizon connections on our phones though so I think some kind of LTE modem would be sufficient. I have worked with Cradlepoint IBR900&#x27;s in the past and was thinking of just getting one of them. My problem is that our room where the internet and camera equipment will be stored is right in the middle of the home, where the LTE connection suffers.
+ ​
+ My question is this: Is there an antenna system or something we could use to place the antennas outside on the side of the home and run that back to the IBR900 placed in the middle of the home? Or another solution that would work with this setup?
+    submitted by    /u/rolltidebammer  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr9fs0/confusion_on_where_to_point_our_voip_vlans/"
+                        open
+                      >
+                        <summary class="article-expander__title">Confusion on where to point our VoIP VLANs ip-helper address</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr9fs0/confusion_on_where_to_point_our_voip_vlans/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are preparing to deploy a new system. I apologize if I don&#x27;t word things correctly when trying to explain this, but honestly the most I&#x27;ve done on phones has been static configs and configuring switchports for VoIP VLANs. This rollout we have ESXi, VMs, we&#x27;re configuring Option 150 on a server, and I need to figure out where to point the ip-helper for the VoIP VLANs (there are about 12 but they should all point to the same whatever will be acting as the DHCP server; my problem is I don&#x27;t know what that is. On the last setup it was the CME on a Cisco 3925 router. (Sorry if I didn&#x27;t word that correctly.) I was told specifically by the vendor (Presidio) that it would not point to the router this time, but she didn&#x27;t know where to point it either. I&#x27;m looking for suggestions and your experience in helping me answer the question of where to direct my ip-helper on my VoIP VLAN configs. Our server admin says he configured our internal DHCP scope on a server (on a server VLAN and not a VoIP VLAN, and don&#x27;t internal DHCP scopes only assign to to those in it&#x27;s own subnet? ) but the only time I’ve heard of internal DHCP has been for wireless so that doesn’t sound right. I know it’s supposed to be a L3 device but if it’s not the router, then I’m lost again.
+    submitted by    /u/UnitedWolverine5501  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;109
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8wz0/is_there_any_network_related_issue_that_caused/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is there any network related issue that caused this to happen? Not hearing voice on cisco jabber at work</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8wz0/is_there_any_network_related_issue_that_caused/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m working as a NOC and I was in the office yesterday using cisco jabber to take phone calls. I could hear the ring and answer the phone call, but 3 times I did with a customer I heard nothing on their end. 
+ I checked all jabber settings, my speaker and microphone settings and kept testing it over and over after the first call where I couldn&#x27;t hear. 
+ I was able to dial and talk to team members and make outbound calls and hear them but when a customer would call me I would not hear it. It was bizarre. I know the wifi password was changed a few days prior for some reason at the office. So whenever I received an inbound call from anyone who wasn&#x27;t on my team I could not hear voice
+ When I went back home I was able to hear them when they called. With no settings changed or nothing different.
+    submitted by    /u/velociraptor90  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;116
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8pbx/vpn_throughput_issues/"
+                        open
+                      >
+                        <summary class="article-expander__title">VPN Throughput issues.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8pbx/vpn_throughput_issues/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all,
+ This VPN is insanely slow compared to connection speeds and I am having a hard time finding a reason why. Keep in mind I&#x27;m a junior sysadmin at best so I&#x27;ll try to include all the needed details while keeping them sanitized. 
+ Quick run down: I have a ipsec site to site vpn between two networks with 1Gb duplex connections through two pfsense 7000 series firewall appliances. Connection is stable however iperf only shows a bandwidth of 68 Mbps with transfer capping out at 8.50 MBytes from two hyper-v vm on either side of the tunnel. File transfers from local to remote site are also very slow at 20Mbps. While these speeds may work for my use case temporarily I can&#x27;t help but feel I am missing something to speed this connection up.
+ Steps I have taken to attempt to speed this up:
+ Set MSS clamping to 1396 after calculating my OMSS. Sniffed before and after the changes and it fixed a fragmentation issue but speeds are unchanged. Using UDP over IPv4 for tunnel.
+ Ensure there was no duplex mismatch on any NIC and no traffic shaping is in place.
+ CPU&#x27;s are mostly idle and a combined usage of less then 15%
+ Asynchronous Cryptography is on, compression is off, no rules conflict with traffic.
+ Any thoughts? I am at a loss and about to attempt another VPN option in the mean time to see if I can get better speeds elsewhere.
+    submitted by    /u/boringlichlight  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;116
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8o81/cisco_vxlan_dummy_question/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco VXLAN , Dummy Question</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8o81/cisco_vxlan_dummy_question/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>This week, I&#x27;m studying VXLAN, and I&#x27;m finding it challenging to understand the concept. Therefore, I&#x27;m just asking if anyone can help in addressing my dumb question. But don&#x27;t worry, I&#x27;m doing research at the same time. Perhaps you have an idea that will help me better comprehend technology.
+ a. Per my knowledge we have 2 ways for VTEP interconnection. First using multicast, and the second using MP-BGP EVPN.
+ Q1: What would be the purpose of MP-BGP and Multicast, for example, if we configured MP-BGP EVPN and add multicast group to member VNI at the same time?
+ Sample Config: router bgp 65113 router-id 10.48.224.1 address-family l2vpn evpn advertise-pip neighbor 10.48.224.7 send-community extended address-family l2vpn evpn send-community interface nve1 no shutdown host-reachability protoco…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;91
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8nzu/inconsistent_download_speeds_across_devices_on/"
+                        open
+                      >
+                        <summary class="article-expander__title">Inconsistent Download Speeds Across Devices on the Same Wireless Network</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8nzu/inconsistent_download_speeds_across_devices_on/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Greetings and good morning to all, 
+ I&#x27;ve come across a frustrating and bothersome networking issue where one of my laptops on the same configured wireless network (5 GHz bandwidth) supposedly gets fast download speeds (208.04 Mbps). However, when put in a real-world scenario of installing a virtual machine like Kali Linux, the time to install and configure is night and day when put side by side on my main laptop. This older laptop model would take a considerable amount of time to download large files from the web or even install a VM. The Kali Linux VM that I downloaded just yesterday took 1-2 hours before being configured and installed. 
+ On my main laptop, I get a relatively stable connection to the router as well when downloading (211.34 Mbps). yet, it appears that this laptop has no p…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;116
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr8gq5/bgp_on_cpe/"
+                        open
+                      >
+                        <summary class="article-expander__title">BGP on CPE</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr8gq5/bgp_on_cpe/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I work for a service provider providing DIA and MPLS services. We have a customer to which we will provide a redundant service using dual CPE&#x27;s. He wants to run BGP towards us. Usually we use VRRP towards the customer on the CPE&#x27;s in redundant cases, eBGP between the CPE and the PE, and iBGP between the CPE&#x27;s (over the customer LAN).
+ So if we are going to run BGP towards the customer, what would be the best practice way of setting it up? iBGP / eBGP towards the customer? iBGP / eBGP between CPE and PE? Or is there some other way of doing it?
+    submitted by    /u/ThinkStation8120  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;90
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr89h5/what_data_is_stored_on_network_switches/"
+                        open
+                      >
+                        <summary class="article-expander__title">What data is stored on network switches?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr89h5/what_data_is_stored_on_network_switches/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have recently come into a bunch of cisco 2960X switches that I&#x27;d like to sell. Some of them don&#x27;t want to reset or go into express setup, so I&#x27;m wondering if I could be exposing the data of the previous owner by selling them as is. I&#x27;m not familiar enough with them to get into the console.
+    submitted by    /u/Elevated_Dongers  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr7m0n/non_adhesive_patch_cable_ids/"
+                        open
+                      >
+                        <summary class="article-expander__title">*non adhesive* patch cable IDs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr7m0n/non_adhesive_patch_cable_ids/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Anyone know of such a thing? I want a method to ID each switch port’s cable that’s easier to change than an adhesive label
+ I DIY’d one IDF’s cables with binder clips, but that was a little too bulky. I’m surprised there isn’t anything sold by someone.
+    submitted by    /u/desperate-caucasian  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr69zq/nec_pf_switches/"
+                        open
+                      >
+                        <summary class="article-expander__title">NEC PF switches</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr69zq/nec_pf_switches/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello. We recently got several NEC PF5240/5248 and a couple of PF5459 switches. We deal with refurbishing of IT kit. We need to factory default them but google is really scarce with any info/manuals for them. We have no logins/passwords. On boot they don&#x27;t offer or show anything to be able to interrupt boot and have a look there. Called UK office, but they apparently don&#x27;t deal with issues like that. Has anyone worked with this kit and would be able to help?
+    submitted by    /u/alexxei__  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;115
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr43sk/mpls_trace_explanation_required/"
+                        open
+                      >
+                        <summary class="article-expander__title">MPLS trace explanation required</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr43sk/mpls_trace_explanation_required/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello everyone,
+ Can someone explain here with diagrams, MPLS trace for the below scenarios
+ 1) CE to CE 2) PE to PE
+ I have an interview coming up, I know normal IP traceroute, but the mpls trace seems confusing even after reading the INE document about it, would appreciate if someone can explain better.
+    submitted by    /u/avinashv07  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr3g0y/how_can_i_find_the_ip_of_the_router_which/"
+                        open
+                      >
+                        <summary class="article-expander__title">How can i find the IP of the router which connects me to the internet?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr3g0y/how_can_i_find_the_ip_of_the_router_which/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am connected to a college network and using wireshark to capture packets to try and to extract some information and make sense of it.
+ I am connected to a wifi AP which in turns connects to a router which then connects me to the internet. Is my default gateway address the IP of the router that connects me to the internet.
+ I want to know since i enter the URL of a website how, which and in what order the packets exchanged to connect me to that website.
+    submitted by    /u/slo-mo-hoe  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;113
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr2ezk/ping_1111_l_1500_vs_ping_8888_l_1500/"
+                        open
+                      >
+                        <summary class="article-expander__title">ping 1.1.1.1 -l 1500 vs ping 8.8.8.8 -l 1500</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr2ezk/ping_1111_l_1500_vs_ping_8888_l_1500/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Can someone help me understand why 8.8.8.8 does not answer, and I only can ping with 1472 ( windows ). But I can ping 1.1.1.1 -l 1500 +, why does it seem that the icmp packet gets fragmented towards 1.1.1.1 and 8.8.8.8 drops right away?
+ ​
+ When I trace the path towards 8.8.8.8, I can ping each hop with +1500 MTU, (above 1472 in windows ), but at a specific hop stops it and starts dropping. Why is the packet simply not fragmented when it goes over 8.8.8.8, but it is fragmented when I ping other addressess like 1.1.1.1 . Im so confused.
+ ​
+ And just to add, I&#x27;m not using &#x27;Do not fragment flag.&#x27;, just normal ping with extra size. 
+    submitted by    /u/sillybutton  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;91
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr1l33/disable_html5_console_on_eveng/"
+                        open
+                      >
+                        <summary class="article-expander__title">Disable HTML5 console on EVE-NG</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr1l33/disable_html5_console_on_eveng/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi
+ I just installed the lastest and greatest version of Eve-NG community edition, but in this release it will always force me to use the HTML5 console or i have to click the node so it can open the telnet link.
+ I used to use the API to get a list over all nodes and their telnet ports from the url value in the request.
+ Now only the html5 url is present.
+ Do you guys know if there are any way to get a list over running nodes and their telnet ports or should i just accept to click the node from now on or use the html5 console where copy/paste does not work for me.
+ ​
+ Thanks.
+    submitted by    /u/p373r_7h3_5up3r10r  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;113
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr1i87/cisco_vs_aruba_vs_ruckus_which_is_better/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco vs Aruba vs Ruckus, which is better?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr1i87/cisco_vs_aruba_vs_ruckus_which_is_better/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Thinking to implement a new Wi-Fi system, Wich brand will better when considering price and manageability?
+ I have used to implement Ruckus before, but the manageability seems to complicated to me and I would like to have a more simple setup.
+ PS working for a school that have around 40 rooms, estimating 40 APs
+    submitted by    /u/AustinLeungCK  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xr06hv/win_server_2016_limit_rdp_connections_to_internal/"
+                        open
+                      >
+                        <summary class="article-expander__title">Win Server 2016 - Limit RDP connections to internal network only?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xr06hv/win_server_2016_limit_rdp_connections_to_internal/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/fM_sjvmVTi1Y6jk6dk8fsur2KPNloi4w7vgluy3As5Q.jpg?auto&#x3D;webp&amp;s&#x3D;c50fd4e7241fd6f1e4aae75f5777229647bc7909" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I&#x27;ve got a Win 2016 Server Std. running in a Workgroup. Boss wants me to restrict all RDP connections to the LAN side alone and no connection from the WAN side or the VPN I have in place. We have received new heightened security measures from even further up the food chain and I was told &quot;lock it down&quot; but no instructions on what to lock down (other than disable RDP altogether, which is not viable).
+ Things look differently now from the last time I did something similar and I am trying to change the firewall inbound rules. The instructions I found are always variations of this and refer me to the firewall&#x27;s inbound rules. But they only mention &quot;Remote Desktop (TCP-In)&quot;. Logging into the inbound rules, there are 6 differently named ones for Remote Desktop and I don&#x27;t know if I need to edit …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;92
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xqzras/how_long_into_networking_before_you_truly_felt/"
+                        open
+                      >
+                        <summary class="article-expander__title">How long into Networking before you truly felt like you understood a lot of what was going on?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xqzras/how_long_into_networking_before_you_truly_felt/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Got a decent amount of certs in a shortish span of time and have been in Networking for a year for an ISP. I originally got in so I could just get the networking bit done before moving to security.
+ There’s so much that comes up on a daily basis in the middle of studying my CCNP that I realize I have no clue about, and I’m not even talking about just CCNP material, just how everything at work works in general. Guess I’m just wanting some reassurance. 
+ So again, how long into your guys career did it take for you to feel like, “yeah, I get most of this.” Just feel like maybe I’m behind in terms of getting into cyber security because of networking.
+ Also, thanks so much ahead of time for your guys answers!
+    submitted by    /u/Delsincameback  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;95
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/xqzp9p/need_examples_for_high_priority_network_incidents/"
+                        open
+                      >
+                        <summary class="article-expander__title">need examples for high priority network incidents</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xqzp9p/need_examples_for_high_priority_network_incidents/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is ther any site to know high priority network incidents case studies... Mainly for layer 3.
+    submitted by    /u/Vegetable_Depth_4196  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;89
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Lawrence Systems</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;BwOvb1SOPCg"
+                        open
+                      >
+                        <summary class="article-expander__title">VLOG Thursday 297: TrueNAS, New Servers, Errata, and Q&amp;A</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;BwOvb1SOPCg">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;6iKiZymxDD8"
+                        open
+                      >
+                        <summary class="article-expander__title">This is TWO PCs!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;6iKiZymxDD8">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -10712,86 +11728,10 @@ The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastru…</s
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-08-31 datetime="2022-08-31T12:37:13.000Z">2022-08-31</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-08-31 datetime="2022-08-31T12:37:13.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Computerphile</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;-XU54IsG8Vo"
-                        open
-                      >
-                        <summary class="article-expander__title">SLAM Robot Mapping - Computerphile</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;-XU54IsG8Vo">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Morning Wire</button>
-                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="c146d69c-1af4-4e04-b91a-0fa0da9316f7"
-                        open
-                      >
-                        <summary class="article-expander__title">Musk vs. Twitter &amp; CA vs. Doctor ‘Disinformation’ | 08.31.22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Elon Musk opens a new front in his legal battle with Twitter, California moves to punish doctors for “Covid disinformation,” and GOP senators demand details on the FBI’s communication with Facebook. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3152121389">
-        <time id="build-timestamp" datetime="2022-09-29T14:25:39.370Z">2022-09-29T14:25:39.370Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3157695449">
+        <time id="build-timestamp" datetime="2022-09-30T09:24:53.559Z">2022-09-30T09:24:53.559Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
