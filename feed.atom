@@ -2,10 +2,432 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-01T14:16:43.428Z</updated>
+    <updated>2022-10-02T09:17:47.320Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Excel 2016 needs authentication when sharing via email]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtjrlp/excel_2016_needs_authentication_when_sharing_via/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtjrlp/excel_2016_needs_authentication_when_sharing_via/"/>
+        <updated>2022-10-02T08:49:48.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ apparently there is a function in the MS Office applications to send an email with the spreadsheet directly from the application (now I know it).
+ Last month (a week after the August patches were applied) the first user from company A complains that this function does not work and an authentication window appears. -> enter AD credentials -> "general error - restart microsoft excel", window appears again. Tried domain-netbios\username, username@domain-fqdn and username only. Since it's not really a critical function, just dragging and dropping the file from File Manager into Outlook, I decided to put the ticket on hold until I have time to investigate.
+ Today (Sunday) the 2nd manager of company B called me that this is not working, tried the same -> no success.
+ My findings so far:
+ - All systems with issues are Windows 2016 Server with Office 2016 (sometimes 32 bit, sometimes 64 bit), September Windows and Office patches applied, both RDS farms and Citrix systems.
+ - The issue may have been introduced with the August patches and has not been fixed with the September patches.
+ - Sending an email from Word works fine, Outlook opens and the user can write their message.
+ - it's not user specific it's maschine-wide
+ - it seems that only customers with on prem exchange have problems, IMAP / POP seems fine, exchange online is not used by our customers, so i can't test.
+ - Googling was not really helpful -> only old articles with reinstalling Office.
+ ​
+ Does anyone else have a similar problem? Anyone have any ideas ?
+ ​
+ Edit: All systems are fully OnPrem with also fully patched DCs; If I add an pop / imap account to the outlook profile and make it the default one everything works.
+    submitted by    /u/minimaximal-gaming  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Creating an internal Certificate Authority in 2022 that is accepted by modern web browsers.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtj5jc/creating_an_internal_certificate_authority_in/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtj5jc/creating_an_internal_certificate_authority_in/"/>
+        <updated>2022-10-02T08:10:41.000Z</updated>
+        <summary type="html"><![CDATA[So I have just spend a whole day trying (and failing) to implement an internal CA setup. One offline Root and one intermediary to issue certs. I was following one or two guides I found on the internet.
+ Turns out, internet outdates way too quickly. A test cert I issued to a website got outright rejected by Google Chrome (with no option to move forward) despite having the whole cert chain imported to my system. 
+ I ran a cert lint tool on the certs using online (https://crt.sh/lintcert) tool, and it spew out so many errors, I was questioning my ability as a sysadmin. 
+ I won't go into details of what the errors are since they are pointless at this stage. But stuff like mandatory Subject alternative names, and the abolishment of CNs, requirement for policy extensions, are some of the few things that have changed over the past few years, and none of the guides I used bothered to address any of this either.
+ Hence, my question is, do any of you guys have a good reference guide that I can follow to create an internal CA the way the internet overlords intended in the current day and age, since apparently all the guides I have followed on the internet are all very much outdated. 
+ And yes, I am aware I can bypass these warnings by manual adding to chrome, and using secret codes or whatever, but remember that this is going to be used in a real production environment so such work arounds are not a permanent solution. 
+ P.S. For OpenSSL only please. I don't want to touch Windows ADCS.
+    submitted by    /u/CatMDV  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Can USB A receive power?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtj3kc/can_usb_a_receive_power/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtj3kc/can_usb_a_receive_power/"/>
+        <updated>2022-10-02T08:07:22.000Z</updated>
+        <summary type="html"><![CDATA[I have Pluggable USB-C docking station, and the USB C connection can provide power to a laptop. However, my laptop USB C plug does not accept power. My laptop does have a USB A plug that can provide power, but can it also receive power? If so, if I plug an adapter from USB C to USB A, will it charge my laptop?
+    submitted by    /u/pilot_pen01  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Standing up a CA - best practices with regard to key type and cert expiry?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtinb6/standing_up_a_ca_best_practices_with_regard_to/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtinb6/standing_up_a_ca_best_practices_with_regard_to/"/>
+        <updated>2022-10-02T07:38:53.000Z</updated>
+        <summary type="html"><![CDATA[Hi guys,
+ Going to be implementing a Root CA with ICAs for a company network and need some advice.
+ The Root CA will be offline (it will live within XCA) and the ICA will be a Windows Enterprise CA.
+ The certs will mainly be issued for machine auth, smart card auth and simple https web servers.
+ What are the best practices today with regards to key type and cert expiry? Is RSA-2048 enough? I was thinking of going EC (ed25519) but apparently this has compatibility problems.
+ How long does my RCA and ICA expiry need to be?
+ I've seen the occasional 99 year RCA expiry but that can't be the right way to do things.
+ I know that individual certs for websites can't be more than 398 days, but how about the rest?
+ Would love to hear what you guys are doing.
+ Thank you so much!
+    submitted by    /u/goelsago  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Custom IDS w/ Pyshark?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xtijr0/custom_ids_w_pyshark/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xtijr0/custom_ids_w_pyshark/"/>
+        <updated>2022-10-02T07:32:19.000Z</updated>
+        <summary type="html"><![CDATA[I’ve been using Pyshark recently and I’ve been getting into writing scripts that simulate the functionality of tools like Wireshark or Tshark (I just think it’s fun). Something I’ve been wanting to do recently is see if it might be possible to write a custom host-based IDS in Python to analyze capture files for “indicators of compromise”. I was wondering if there are any straightforward parsing methods I could apply to a capture file that might simulate an IDS but instead using Pyshark? Maybe I just need to look into Wireshark forensics and copy those techniques? I’m new to all of this so if I sound naive, it’s because I am. If this sounds ridiculous or infeasible please let me know.
+    submitted by    /u/GRAMS_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Solution to Sign-out Disconnected Users on Workstations after specified amount of time]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xth22x/solution_to_signout_disconnected_users_on/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xth22x/solution_to_signout_disconnected_users_on/"/>
+        <updated>2022-10-02T06:03:04.000Z</updated>
+        <summary type="html"><![CDATA[Hi All, 
+ Wondering if anyone has come across a solution to Sign-out Disconnected Users on Workstations after specified amount of time eg 8 hours. 
+ I work at a hospital where we have multiple Nurses/Doctors signing into multiple computers and not logging out after their done for the day and account lockouts are a problem when it comes time for password changes or forgotten passwords. 
+ Unfortunately turning off "switch user" is not an option as much as I'd love to. 
+ There is an option in group policy for this exact problem but it only exists for Remote Desktop Servers... Great.
+ Policy for Reference:
+ Computer Configuration=> Administrative Templates=>Windows Components=>Remote Desktop Services=>Remote Desktop Session Host=>Session Time Limits.
+ ​
+ Any input would be much appreciated, Cheers Legends
+    submitted by    /u/brm20_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to deploy or integrate the h5 model and run it inside the ryu controller?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xtfp5l/how_to_deploy_or_integrate_the_h5_model_and_run/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xtfp5l/how_to_deploy_or_integrate_the_h5_model_and_run/"/>
+        <updated>2022-10-02T04:46:20.000Z</updated>
+        <summary type="html"><![CDATA[I wrote a mininet program to simulate an SDN network with single controller (ryu controller), 6 switches and 18 hosts .
+ A monitoring program have been deployed in the ryu controller in order to capture the network traffic with two classes (normal and attack) .
+ The monitored traffic has been saved in csv file and treated as a dataset in order to train a deep learning model for network traffic classification . 
+ A One Dimensional Convolutional Neural Network (1D-CNN) model has been developed using tensorflow and keras. The trained model was saved as h5 file . My question is how to deploy or integrate the h5 model and run it inside the ryu controller .. I have tried to do the tensorflow integration in different ways but unfortunately I failed as I faced many difficulties in installing tensorflow and its supporting libraries inside the ryu controller. I would be greatful If you have any suggestions that lead to sort out the aforementioned issue.
+  
+   submitted by    /u/Odd-Recognition4231  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IBM Trusteer Rapport Taskbar Troubles]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xteuie/ibm_trusteer_rapport_taskbar_troubles/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xteuie/ibm_trusteer_rapport_taskbar_troubles/"/>
+        <updated>2022-10-02T04:00:02.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone else encountered issues with their taskbar/start menu becoming catastrophically slow since the latest Trusteer Update? Mine updated on September 23rd and ever since then, I’m experiencing a CPU usage spike when I click on my start menu (windows 10) or when I view my hidden taskbar icons. I’m so confused as to why Trusteer has anything to do with my taskbar but I understand the overbearing bloat that it is. Don’t think I can afford to uninstall it at this point though
+    submitted by    /u/dbad80  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Setting up a mail server for my clients]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtesd0/setting_up_a_mail_server_for_my_clients/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtesd0/setting_up_a_mail_server_for_my_clients/"/>
+        <updated>2022-10-02T03:56:53.000Z</updated>
+        <summary type="html"><![CDATA[Hey hey!
+ I run a tech software company where we have been using webmail built into shared Linux hosting for our clients.
+ As you can imagine, the IPs are all on various blacklists and it's getting difficult.
+ I'm looking at setting up an AWS EC2 server to use as an email server for all my clients. Would love and appreciate any suggestions on how I should do this, which software I can use and if there's a better option than EC2.
+ We're a small company so would like to keep costs low.
+ Thank you
+    submitted by    /u/RiffRaffStreetRat_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Project assistance] Designing a monitoring tool for system admins to get data periodically from the configured computers. What data from the client systems can be collected ?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtc4bb/project_assistance_designing_a_monitoring_tool/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtc4bb/project_assistance_designing_a_monitoring_tool/"/>
+        <updated>2022-10-02T01:39:00.000Z</updated>
+        <summary type="html"><![CDATA[So there will be a central server to which all the configured systems will send their system data which will be analyzed and displayed visually. This is the main goal of the project.
+ ​
+ What different data can be collected from a given computer system and represented as JSON to be sent to the central server periodically ?
+ ​
+ I've been able to come up with the following list till now:
+ - Hostname
+ - OS
+ - OS version/kernel version
+ - Total disk space
+ - Available disk space
+ - IP address
+ - Open ports
+ - Current running processes
+ - Battery percentage
+ - CPU utilization over the last "x" hours
+ - Users
+ ​
+ What else can be added ? It's for a group project and there are no fixed criteria
+    submitted by    /u/noob_coder1029  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Any recommendations on Professional IT Resume Services?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtbd4t/any_recommendations_on_professional_it_resume/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtbd4t/any_recommendations_on_professional_it_resume/"/>
+        <updated>2022-10-02T01:01:25.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone used any type of resume service and was content with their finished work?
+ I'd appreciate any suggestions. 
+ Thanks
+    submitted by    /u/sysadminforthewin  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RSA token reaching its expiration date?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtb3ea/rsa_token_reaching_its_expiration_date/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtb3ea/rsa_token_reaching_its_expiration_date/"/>
+        <updated>2022-10-02T00:47:53.000Z</updated>
+        <summary type="html"><![CDATA[Once an rsa token reaches its expiration date is their anyway to reactivate it? I currently work for defense contractor on non classified work and work remotely, but use my rsa token basically to login into my computer and rdp into different servers. I didn't realize my rsa token expired yesterday. (Currently says off). I'm mainly concerned as I assume a new one will need be shipped to me. (Unsure the process or how long this will take just realized today it expired and wont be able reach out to it/support until monday). I was wondering if anyone had insights the process general and what should I expect terms timelines . (Know guidelines/timeleines range company to company but general ideas). Thanks in advance worried as approaching a deadline this week and don't want be out of my labtop/company resources while I assume new rsa token will be shipped to me.
+    submitted by    /u/MangoDouble3259  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Taking over IT for a company. Want first step suggestions.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xtag11/taking_over_it_for_a_company_want_first_step/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xtag11/taking_over_it_for_a_company_want_first_step/"/>
+        <updated>2022-10-02T00:16:13.000Z</updated>
+        <summary type="html"><![CDATA[The company I am moving to has a system that needs some help and I would like to know what steps you would take first. 
+ 3 locations
+ Pfsense with openvpn 
+ Netgear smart switches
+ Server 2016 as domain controller (16gb ram)
+ A mix of manufacturers of pc's. 
+ Most all are running Windows Home with only a few desktops in pro and connected to domain
+ About 100 computers between all locations. 
+ Have 1 other server for files and running a vm (64gb ram)
+ Have another server just sitting not imaged.(64 gb ram)
+ Unifi wireless network
+    submitted by    /u/PerfectBake420  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Found a new phish email scam. Well new to me]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xt7veg/found_a_new_phish_email_scam_well_new_to_me/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xt7veg/found_a_new_phish_email_scam_well_new_to_me/"/>
+        <updated>2022-10-01T22:18:29.000Z</updated>
+        <summary type="html"><![CDATA[One of my users said he got an email from himself, but the vanity part of the email was different. Had our company name but his email. It said it originated outside of our org. But the thing is, it literally was his email. I looked it up and down for things like using rn to spoof an m, but nothing was wrong with it. Anyone seen stuff like this?
+    submitted by    /u/Probably_a_Shitpost  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Finally got a role with the salary I deserve]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xt7qk4/finally_got_a_role_with_the_salary_i_deserve/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xt7qk4/finally_got_a_role_with_the_salary_i_deserve/"/>
+        <updated>2022-10-01T22:12:28.000Z</updated>
+        <summary type="html"><![CDATA[I have been working in IT for a while now, about 10 years ago I started my apprenticeship.
+ And for the first time, I honestly feel like I am being paid what I am worth!
+ I start Monday and it feels great, I have had a few roles in that time and each time I felt like I went for a “safe” role and when I started I soon realised that I could do a lot more than my job description. (Mainly think that is because some job job descriptions are far more broader than you actual responsibilities, if I saw SQL database, I would assume I needed to be a SME)
+ Now I have gained some pretty desirable skills (such as PowerShell, Microsoft 365 expert, Cloud knowledge, etc) I went for a £50k role with no hesitation, it will be challenging but in a good way.
+ And I feel like I will be far more motivated knowing I am getting a salary worth my knowledge, skills and experience.
+ I also have been offered contract work on the side, which I’ve always felt IT was hard to side hustle.
+ But my PowerShell and modern workplace knowledge has been very desirable as of late. All that training paid off!
+ So this post is just to say… go for it, as long as you are willing and train when required, maybe that role your eyeing up will work for you.
+ Wish me luck!
+    submitted by    /u/KrustyYeti  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Crowd Strike]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xt6txe/crowd_strike/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xt6txe/crowd_strike/"/>
+        <updated>2022-10-01T21:32:03.000Z</updated>
+        <summary type="html"><![CDATA[Bossman is considering switching from Cisco Secure Endpoint to Crowd Strike when our license is up in 2023. Looking for some input on Crowd Strike. 
+ Cisco is the only EDR I’ve had exposure to so I have nothing to compare to.
+    submitted by    /u/Patchewski  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AD domain can't be resolved after new DC migration]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xt6jly/ad_domain_cant_be_resolved_after_new_dc_migration/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xt6jly/ad_domain_cant_be_resolved_after_new_dc_migration/"/>
+        <updated>2022-10-01T21:19:41.000Z</updated>
+        <summary type="html"><![CDATA[Hello everyone,
+ Apologize in advance for my poor english skills, it is not my first language. However, I hope you could help with my issue:
+ I have to update the company's DC so I did set up a a new DC with Win2022 as secondary DC, joined to the AD forest, and make sure the replication of AD Sites and Services, DNS, and GPOs were fine. The old one is a Win2012, I kept both running for a while, until I had some free time to decommission the old one.
+ Finally, today I did transfer all the FSMO roles to the secondary DC make it as primary, the old DC is hosting the DNS server as well, so I added the new DC to each Forward Lookup Zone FQDN and changed the DNS in the network settings pointing our AWS Route53 (which I don't manage). At first, until the old DC was online and after I transferred the FSMO roles, all the clients and workspaces were able to resolve the new DC as DNS server, the group policies update correctly, everything looks fine. 
+ Unfortunately, after I shut down the old DC, the new DC could not resolve out domain and lost the all the metadata it replicated before. Starting back the old DC resolved the issue, and everything went back to normal.
+ Now I don't know what exactly where the issue is, I suspect this is something to do with the DNS but I really don't know what I missed.
+ Thank you for your help!
+    submitted by    /u/FedeDost  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SQL Server Administration Training]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xt4uel/sql_server_administration_training/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xt4uel/sql_server_administration_training/"/>
+        <updated>2022-10-01T20:06:48.000Z</updated>
+        <summary type="html"><![CDATA[Hi Everyone,
+ I hope all everyone is well.
+ I started working for new company that is has more work done on SQL server administration. Mainly using Microsoft SQL. My job is more system administration side. 
+ These area including installation & upgrade, basic query, backup & recovery, monitoring & optimizing, and security.
+ I have very little knowledge on it and would like to learn from beginning to administrate them. Can you let me know if you know any possible training focuses on these, I couldn't find much quality reviewed based training on Udemy or YouTube.
+ ​
+ Thank you.
+    submitted by    /u/jbala28  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows Server in-Place Upgrade 2016 to 2019]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xt2ypg/windows_server_inplace_upgrade_2016_to_2019/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xt2ypg/windows_server_inplace_upgrade_2016_to_2019/"/>
+        <updated>2022-10-01T18:45:52.000Z</updated>
+        <summary type="html"><![CDATA[Question for the group. Im going to do an in-place upgrade on two 2016 always on, sql clustered server to server 2019. Now, ive done many in-place upgrades, but this is my first with a cluster. Is there anything I have to do besides the upgrade, such as drain or evict? the customer wants them done one at a time.
+ Thanks in advance!
+    submitted by    /u/11lidkys9  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Did Chrome Ent 106 break LastPass for anyone else?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xt280c/did_chrome_ent_106_break_lastpass_for_anyone_else/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xt280c/did_chrome_ent_106_break_lastpass_for_anyone_else/"/>
+        <updated>2022-10-01T18:14:34.000Z</updated>
+        <summary type="html"><![CDATA[Chrome extension is unresponsive. The login prompt doesn't even appear on lastpass.com. Still works great in other browsers. Had a couple of users call in about it, but we can't replicate the issue.
+    submitted by    /u/danieljonestoshepard  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I didn't WANT to be mean, but...]]></title>
+        <id>https://www.youtube.com/watch?v=7Fle55mZ_WQ</id>
+        <link href="https://www.youtube.com/watch?v=7Fle55mZ_WQ"/>
+        <updated>2022-10-01T17:12:00.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Switch support for fast Wi-Fi roaming]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xt0ocl/switch_support_for_fast_wifi_roaming/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xt0ocl/switch_support_for_fast_wifi_roaming/"/>
+        <updated>2022-10-01T17:09:42.000Z</updated>
+        <summary type="html"><![CDATA[I’m helping troubleshoot a VoIP over Wi-Fi network with a HP Aruba 5406 core switch and about 12 Aruba switches (not sure the model) directly uplinked to the 5406.
+ WiFi is Ruckus, about 250 APs. We’re not using tunnelling because of some issues with tunnelling.
+ The issue we’re seeing is a drop of a couple of seconds whenever the handset roams from an AP connected to a switch to an AP connected on another switch. Roaming between APs on the same switch is fine.
+ Has anyone here ever seen this issue? Is the 5406 that slow at updating its bridge forwarding table or is there some config/firmware issue?
+    submitted by    /u/leftplayer  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SSL-VPN: Destination net unreachable from local subnet's gateway?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xt0268/sslvpn_destination_net_unreachable_from_local/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xt0268/sslvpn_destination_net_unreachable_from_local/"/>
+        <updated>2022-10-01T16:44:23.000Z</updated>
+        <summary type="html"><![CDATA[I'm having the weirdest issue with a user's PC being unable to reach a specific domain controller and an RDS server while connected via an SSL-VPN connection. 
+ First, this user has the correct AD permissions and can access this server over the LAN. The RDP profile on her laptop, which has been rebuilt and verified, is mapped by IP to avoid DNS issues. The firewall policy allowing SSL-VPN users/traffic to the LAN has not changed. As well, I used a test account mirroring her account and can connect to the VPN, ping that DC and RDS server, and connect via RDP without issue. During testing, I at one point even got assigned the same IP she was getting assigned so it doesn't look like any weird issues with that specific IP address or part of the SSL-VPN subnet. Another very weird thing is this …]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Just a rant - Users]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xsye81/just_a_rant_users/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xsye81/just_a_rant_users/"/>
+        <updated>2022-10-01T15:38:00.000Z</updated>
+        <summary type="html"><![CDATA[Thursday was our monthly patching. The engineers we support often leave -very- long running tasks running on their workstations, think days, even weeks. So we send an email on Monday reminding them it's monthly patches on Thursday and if they need us not to reboot their system to let us know. Sent a reminder on Wednesday, and again Thursday morning.
+ 4:02 pm on Thursday I get an email "can you skip me?" bitch you're lucky I'm even here. I apply patches on Thursday morning then I issue a reboot command for midnight, done and done. I almost let her workstation reboot anyway just for the late-ass email but I didn't.
+    submitted by    /u/Grimsterr  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Job Choice Help: Systems Administrator again for more pay, or promotion to Systems Integrator?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xswyrt/job_choice_help_systems_administrator_again_for/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xswyrt/job_choice_help_systems_administrator_again_for/"/>
+        <updated>2022-10-01T14:39:39.000Z</updated>
+        <summary type="html"><![CDATA[I'm currently working as a 'System Administrator' (no s for some reason) at a large MSP, where I have been for three years, and I'm lucky to have two job offers on the table right now: An offer to work for a non-profit healthcare organization as a Systems Administrator for a great salary, or to stay where I am and get a promotion to a 'Systems Integrator' (SI) on the Professional Services team.
+ Salary-wise, the promotion to Systems Integrator would pay slightly less, but it seems to be a somewhat higher paying position in general - so it could potentially be a better career path at least salary-wise down the line. With that said, the data on 'Systems Integrator' salaries seems to be muddled, as there are completely different jobs with the same title. There's a 'Systems Integrator' job in …]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Career change...advice seeker]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xswmk8/career_changeadvice_seeker/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xswmk8/career_changeadvice_seeker/"/>
+        <updated>2022-10-01T14:25:16.000Z</updated>
+        <summary type="html"><![CDATA[Good morning, okay so I have been a chef for 16 years. I have diplomas in culinary arts, personal nutrition, and a certificate in food operations. The pandemic pushed me out of the field but I'm also tired of food and beverage. Before that, I worked as a tier 2 tech support with yahoo. Now, I am a tier 3 tech support at a communications company. My question is, is there a test that I can take somewhere to help narrow down my path? I'm thinking of network admin, cyber security, or developer of some kind. I'm just trying to get the most rewarding career path, money wise. I spent too many years in culinary and got paid crap.
+    submitted by    /u/ichefcast  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IPSEC tunnel with dynamic IPs]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xswhb1/ipsec_tunnel_with_dynamic_ips/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xswhb1/ipsec_tunnel_with_dynamic_ips/"/>
+        <updated>2022-10-01T14:18:53.000Z</updated>
+        <summary type="html"><![CDATA[Using Cisco IOS-XE routers. Is it possible to create a IPSEC tunnel with one side being completely dynamic with no FQDN, and one side being dynamic but using DDNS?
+ I tried getting DMVPN Phase 1 to work but spoke still seemed to require a static IP for NHRP. 
+ Am I trying to do something not possible or am I going about it the wrong way?
+    submitted by    /u/enfowler  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[What is the process you make when malware detected on one of your company's PCs]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/xsw1et/what_is_the_process_you_make_when_malware/</id>
@@ -7347,16 +7769,6 @@ The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastru…]]>
         <link href="https://www.dailywire.com/podcasts/morning-wire"/>
         <updated>2022-09-03T08:30:00.000Z</updated>
         <summary type="html"><![CDATA[Chilean citizens prepare for a historic vote that could scrap the country’s constitution, the PGA up’s it’s game in the continued competition against LIV Golf, and energy bills continue to spike across the U.K. Get the facts first on Morning Wire.]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Biden Sounds Alarm Over ‘MAGA Republicans’ | 9.2.22]]></title>
-        <id>f5793854-6f11-49b1-bfd8-de710e07077d</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2022-09-02T08:30:00.000Z</updated>
-        <summary type="html"><![CDATA[President Biden delivers a prime time address in which he declares ‘MAGA Republicans’ an existential threat to American democracy, western countries reverse course on nuclear energy, and Miami bucks the national trend on its approach to crime. Get the facts first on Morning Wire.]]></summary>
         <author>
             <name>podcasts@dailywire.com (The Daily Wire)</name>
         </author>
