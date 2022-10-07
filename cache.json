@@ -350,6 +350,26 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xxya24/best_practices_twoway_trust_between_two_ad_forest/",
+          "author": null,
+          "description": "Hello, \n ​\n we have 2 domains each in their own location. There is a VPN connecting between both sites each domain with their own firewall, DNS and DHCP services. We would like to create a two-way trust relationship from Site A to Site B.\n ​\n Does anyone have the correct steps required to create a trust relationship? \n ​\n My questions are :\n ​\n ​\n 1- Here's a shortlist of the minimum amount of ports: Am I Correct ?\n ​\n Port Protocol Service\n ​\n 53 TCP/UDP DNS\n ​\n 88 TCP/UDP Kerberos\n ​\n 389 TCP/UDP LDAP\n ​\n 445 TCP SMB\n ​\n 636 TCP LDAP (SSL)\n ​\n ​\n ​\n 2 - Do I have to create two-way tust between the PDC emulator in both domains ?\n ​\n ​\n ​\n My environment:\n ​\n COMPANY A : We have 4 DC & DNS.\n ​\n DC1 is holding all FSMO roles.\n ​\n C:\\Windows\\system32>netdom query fsmo\n Schema master dc1.contoso.local\n Domain naming master dc1.contoso.local\n PDC dc1.contoso.local\n RID pool manager dc1.contoso.local\n Infrastructure master dc1.contoso.local\n The command completed successfully.\n ​\n ​\n COMPANY B : We have 4 DC & DNS.\n ​\n DC1 is holding all FSMO roles.\n ​\n C:\\Windows\\system32>netdom query fsmo\n Schema master dc1.companyB.local\n Domain naming master dc1.companyB.local\n PDC dc1.companyB.local\n RID pool manager dc1.companyB.local\n Infrastructure master dc1.companyB.local\n The command completed successfully.\n ​\n ​\n Thank you\n    submitted by    /u/maxcoder88  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xxya24/best_practices_twoway_trust_between_two_ad_forest/",
+          "publishedOn": "2022-10-07T12:48:42.000Z",
+          "wordCount": 31726,
+          "title": "Best Practices two-way trust between two AD forest",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xxy1hl/apply_this_new_phishingresistant_mfa_setting_to/",
+          "author": null,
+          "description": "Not all MFAs are equal!! As we know, we're seeing a spike in multiple MFA attacks like MFA Fatigue on push notification authentication. With all these suspicious MFA attacks, it's been hard to cope.\n Thankfully, Microsoft has finally understood our concerns and provided options to choose different MFA security levels for different users. You can find this newly released grant control \"require authentication strength in Microsoft conditional access.\" Navigate to the path below to find the newly released “require authentication strength” checkbox:\n Azure AD Admin Center --> Azure Active Directory ---> Security (Under Manage Tab) --> Conditional Access.\n  \nHereafter, you can opt to allow SMS for base-level workers and implement stronger phishing-resistant MFA for admin & executive accounts.\n  \nFollowing a thorough analysis of all authentication methods, Microsoft has categorized three different authentication modes under the grant control. They are, \n  \nBasic multi-factor authentication. \n \nPasswordless multi-factor authentication. \n \nPhishing-resistant multi-factor authentication. \n  \nNote: This is still in \"preview\" mode. Sadly, it won't be available for everyone. Hope it will be rolled out for you soon if you don't see it!\n    submitted by    /u/Emma__24  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xxy1hl/apply_this_new_phishingresistant_mfa_setting_to/",
+          "publishedOn": "2022-10-07T12:37:47.000Z",
+          "wordCount": 31574,
+          "title": "Apply this new Phishing-Resistant MFA setting to safeguard Microsoft 365 Admin & Executive Accounts.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/xxxvqm/am_i_getting_getting_fucked_friday_october_7th/",
           "author": null,
           "description": "Brought to you by r/sysadmin 'Trusted VARs': /u/SquizzOC and /u/bad0seed with Trusted Telecom Broker /u/Each1Teach1x27/ for Telecom, now including /u/Mediocre-Tackle8415 for UK/EU information and Canada represented by /u/Necessary_Time.\n As always, PMs welcome with your questions any time, not just Fridays.\n This weekly thread is here for you to discuss vendor expectations, software questions, pricing, and quotes of services, licensing, support, deployment and hardware. Last Post: September 30th.\n Required Info for accurate answers:\n  \nPart Number - of utmost importance\n Manufacturer/vendor\n Service Type and Location\n Quantity (as applicable)\n  \nAll questions welcome, keep in mind that there are of course more pieces to this IT puzzle we can dig out of the box\n  \nCloud Services - Security, configurations, deployment, management, consulting services, and migrations\n Server configs and quote answers\n Storage Vendor options, alternatives, details and selection\n Network infrastructure - overlay software, segmentation, routers, switches, load balancing, APs…\n Security - Access Management, firewalls, MFA, cloud DNS, layer 7 services, antivirus, email, DLP….\n User gear - Usually you should buy the quote you have unless the quantity is +50 units\n Bandwidth - Internet, MPLS, dark fiber, carrier SD-WAN, Broadband, and 4G LTE\n Voice - MS Teams Direct Routing, SIP, Hosted VoIP, PRI etc.\n  \n   submitted by    /u/bad0seed  \n [link]   [comments]",
@@ -6061,6 +6081,46 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/xxz4rf/i_was_checking_forti_authenticator_logs/",
+          "author": null,
+          "description": "So i was checking forti authenticator logs and i was seeing some log type 20230 ( invalid credentials) While scrolling i was seeing some sus usernames admin, abaws, hunterasia, chankod, etc\n So captured some packets turns out it is coming from source port 3842( radius) to destination port 1812, Under application data is was seeing following information:\n Code: access-request Avp-- username:abaws User-password : encrypted\n Framed IP-address: 20.87.27.181 Calling station Id (31) l=14 Val = 20.87.27.181 ( Microsoft ip! For some reason)\n Acct-session-id = 5eb714bb\n Connect-info : VPN-ssl ( very interesting) Vendor I'd: fortinet (12356)\n Is it normal or does it change for different vendors? Why Microsoft ip is in the captures?\n    submitted by    /u/Godless_homer  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/xxz4rf/i_was_checking_forti_authenticator_logs/",
+          "publishedOn": "2022-10-07T13:26:33.000Z",
+          "wordCount": 31627,
+          "title": "i was checking forti authenticator logs",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/xxymew/multicast_switch_activity/",
+          "author": null,
+          "description": "Just curious if it's common for all connected ports on a managed switch to show constant activity when there is multicast traffic and igmp is set.\n    submitted by    /u/uncreative_duck  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/xxymew/multicast_switch_activity/",
+          "publishedOn": "2022-10-07T13:03:59.000Z",
+          "wordCount": 31297,
+          "title": "Multicast switch activity",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/xxyig7/know_of_any_network_design_speciality_firms_in_nyc/",
+          "author": null,
+          "description": "(guess they don't have to be in NYC... remote is fine)\n I have a good networking team with a couple of CCIE's and they need some help scanning the market and thinking through a large scale refresh at 200+ locations. We want to modernize and simplify while future-proofing a bit. \n I know that every VAR, and their great-great-great -grandmother's cat, swears they can do it. I'm not looking for some fancy titles at a var that can interface with major vendors to draw diagrams to give me a BOM - although I will need that eventually. Also not looking for an MSP that can \"just do everything for you!\".\n    submitted by    /u/Shujolnyc  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/xxyig7/know_of_any_network_design_speciality_firms_in_nyc/",
+          "publishedOn": "2022-10-07T12:59:26.000Z",
+          "wordCount": 31516,
+          "title": "Know of any network design speciality firms in NYC?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/xxy6c6/clarification_on_the_100640010_subnet/",
+          "author": null,
+          "description": "I am by no means even at a novice level of networking, so I would appreciate if someone can clarify what this address block is intended for. I keep seeing it described as \"shared network space\" and \"not private address space\".\n I just wanted to confirm that this range is indeed not public, and in that sense, similar to a range like 10.0.0.0/8.\n    submitted by    /u/oznablok  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/xxy6c6/clarification_on_the_100640010_subnet/",
+          "publishedOn": "2022-10-07T12:43:51.000Z",
+          "wordCount": 31865,
+          "title": "Clarification on the 100.64.0.0/10 subnet",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/xxxdjs/viewing_all_offline_siterfpolicy_tags_on_a_9800/",
           "author": null,

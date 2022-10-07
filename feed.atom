@@ -2,10 +2,162 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-07T12:34:28.470Z</updated>
+    <updated>2022-10-07T13:50:13.219Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[i was checking forti authenticator logs]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xxz4rf/i_was_checking_forti_authenticator_logs/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xxz4rf/i_was_checking_forti_authenticator_logs/"/>
+        <updated>2022-10-07T13:26:33.000Z</updated>
+        <summary type="html"><![CDATA[So i was checking forti authenticator logs and i was seeing some log type 20230 ( invalid credentials) While scrolling i was seeing some sus usernames admin, abaws, hunterasia, chankod, etc
+ So captured some packets turns out it is coming from source port 3842( radius) to destination port 1812, Under application data is was seeing following information:
+ Code: access-request Avp-- username:abaws User-password : encrypted
+ Framed IP-address: 20.87.27.181 Calling station Id (31) l=14 Val = 20.87.27.181 ( Microsoft ip! For some reason)
+ Acct-session-id = 5eb714bb
+ Connect-info : VPN-ssl ( very interesting) Vendor I'd: fortinet (12356)
+ Is it normal or does it change for different vendors? Why Microsoft ip is in the captures?
+    submitted by    /u/Godless_homer  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multicast switch activity]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xxymew/multicast_switch_activity/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xxymew/multicast_switch_activity/"/>
+        <updated>2022-10-07T13:03:59.000Z</updated>
+        <summary type="html"><![CDATA[Just curious if it's common for all connected ports on a managed switch to show constant activity when there is multicast traffic and igmp is set.
+    submitted by    /u/uncreative_duck  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Know of any network design speciality firms in NYC?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xxyig7/know_of_any_network_design_speciality_firms_in_nyc/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xxyig7/know_of_any_network_design_speciality_firms_in_nyc/"/>
+        <updated>2022-10-07T12:59:26.000Z</updated>
+        <summary type="html"><![CDATA[(guess they don't have to be in NYC... remote is fine)
+ I have a good networking team with a couple of CCIE's and they need some help scanning the market and thinking through a large scale refresh at 200+ locations. We want to modernize and simplify while future-proofing a bit. 
+ I know that every VAR, and their great-great-great -grandmother's cat, swears they can do it. I'm not looking for some fancy titles at a var that can interface with major vendors to draw diagrams to give me a BOM - although I will need that eventually. Also not looking for an MSP that can "just do everything for you!".
+    submitted by    /u/Shujolnyc  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best Practices two-way trust between two AD forest]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xxya24/best_practices_twoway_trust_between_two_ad_forest/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xxya24/best_practices_twoway_trust_between_two_ad_forest/"/>
+        <updated>2022-10-07T12:48:42.000Z</updated>
+        <summary type="html"><![CDATA[Hello, 
+ ​
+ we have 2 domains each in their own location. There is a VPN connecting between both sites each domain with their own firewall, DNS and DHCP services. We would like to create a two-way trust relationship from Site A to Site B.
+ ​
+ Does anyone have the correct steps required to create a trust relationship? 
+ ​
+ My questions are :
+ ​
+ ​
+ 1- Here's a shortlist of the minimum amount of ports: Am I Correct ?
+ ​
+ Port Protocol Service
+ ​
+ 53 TCP/UDP DNS
+ ​
+ 88 TCP/UDP Kerberos
+ ​
+ 389 TCP/UDP LDAP
+ ​
+ 445 TCP SMB
+ ​
+ 636 TCP LDAP (SSL)
+ ​
+ ​
+ ​
+ 2 - Do I have to create two-way tust between the PDC emulator in both domains ?
+ ​
+ ​
+ ​
+ My environment:
+ ​
+ COMPANY A : We have 4 DC & DNS.
+ ​
+ DC1 is holding all FSMO roles.
+ ​
+ C:\Windows\system32>netdom query fsmo
+ Schema master dc1.contoso.local
+ Domain naming master dc1.contoso.local
+ PDC dc1.contoso.local
+ RID pool manager dc1.contoso.local
+ Infrastructure master dc1.contoso.local
+ The command completed successfully.
+ ​
+ ​
+ COMPANY B : We have 4 DC & DNS.
+ ​
+ DC1 is holding all FSMO roles.
+ ​
+ C:\Windows\system32>netdom query fsmo
+ Schema master dc1.companyB.local
+ Domain naming master dc1.companyB.local
+ PDC dc1.companyB.local
+ RID pool manager dc1.companyB.local
+ Infrastructure master dc1.companyB.local
+ The command completed successfully.
+ ​
+ ​
+ Thank you
+    submitted by    /u/maxcoder88  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clarification on the 100.64.0.0/10 subnet]]></title>
+        <id>https://www.reddit.com/r/networking/comments/xxy6c6/clarification_on_the_100640010_subnet/</id>
+        <link href="https://www.reddit.com/r/networking/comments/xxy6c6/clarification_on_the_100640010_subnet/"/>
+        <updated>2022-10-07T12:43:51.000Z</updated>
+        <summary type="html"><![CDATA[I am by no means even at a novice level of networking, so I would appreciate if someone can clarify what this address block is intended for. I keep seeing it described as "shared network space" and "not private address space".
+ I just wanted to confirm that this range is indeed not public, and in that sense, similar to a range like 10.0.0.0/8.
+    submitted by    /u/oznablok  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apply this new Phishing-Resistant MFA setting to safeguard Microsoft 365 Admin & Executive Accounts.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/xxy1hl/apply_this_new_phishingresistant_mfa_setting_to/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/xxy1hl/apply_this_new_phishingresistant_mfa_setting_to/"/>
+        <updated>2022-10-07T12:37:47.000Z</updated>
+        <summary type="html"><![CDATA[Not all MFAs are equal!! As we know, we're seeing a spike in multiple MFA attacks like MFA Fatigue on push notification authentication. With all these suspicious MFA attacks, it's been hard to cope.
+ Thankfully, Microsoft has finally understood our concerns and provided options to choose different MFA security levels for different users. You can find this newly released grant control "require authentication strength in Microsoft conditional access." Navigate to the path below to find the newly released “require authentication strength” checkbox:
+ Azure AD Admin Center --> Azure Active Directory ---> Security (Under Manage Tab) --> Conditional Access.
+  
+Hereafter, you can opt to allow SMS for base-level workers and implement stronger phishing-resistant MFA for admin & executive accounts.
+  
+Following a thorough analysis of all authentication methods, Microsoft has categorized three different authentication modes under the grant control. They are, 
+  
+Basic multi-factor authentication. 
+ 
+Passwordless multi-factor authentication. 
+ 
+Phishing-resistant multi-factor authentication. 
+  
+Note: This is still in "preview" mode. Sadly, it won't be available for everyone. Hope it will be rolled out for you soon if you don't see it!
+    submitted by    /u/Emma__24  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Am I Getting Getting Fucked Friday, October 7th, Chocolate Covered Pretzel Edition]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/xxxvqm/am_i_getting_getting_fucked_friday_october_7th/</id>
