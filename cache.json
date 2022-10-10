@@ -294,16 +294,6 @@
           "wordCount": null,
           "title": "Saasilo: Uncover, Manage, and Secure Your Clients’ SaaS ecosystems",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=CmmvOyP4Er8",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=CmmvOyP4Er8",
-          "publishedOn": "2022-09-10T19:30:38.000Z",
-          "wordCount": null,
-          "title": "Remote Command Execution pfsense pfblocker ⚠️CVE2022-31814",
-          "imageUrl": null
         }
       ]
     },
@@ -339,6 +329,216 @@
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y097gz/365_apps_for_ent_aadbroker_sign_in_problems/",
+          "author": null,
+          "description": "Hi all\n I'm hoping someone can shed some light before I go a little crazy.\n I know others have also had this problem as I've seen threads, but everyones is slightly different.\n 2019 environment running RDS (With FSLogix) (Hosted in a DC)\n 365 Apps for Enterprise - Shared License (E3)\n Back in May/June - all users received an activation issue - office wouldn't activate at all\n Microsoft pushed me around, placing registries keys like EnableADAL and DisableADALatopWAMOverride then it started to work but I didn't really want to use either of these keys long term... I was also advised to use: AlwaysUseMSOAuthForAutoDiscover=1 but I haven't removed this key as of yet.\n We continued to have problems for the months with Activation (not licensed) or 'these set of folders can't be opened'\n The main fix after a lot of research seemed to have been the Microsoft.AAD.BrokerPlugin was missing/corrupted. I've been able to mostly fix this with a logon script that checks + reinstall with the following:\n if (-not (Get-AppxPackage Microsoft.AAD.BrokerPlugin)) { Add-AppxPackage -Register \"$env:windir\\SystemApps\\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\\Appxmanifest.xml\" -DisableDevelopmentMode -ForceApplicationShutdown } Get-AppxPackage Microsoft.AAD.BrokerPlugin \n For the most part, this script has fixed the daily problems but occasionally, for different people, randomly when they logon in the morning, they won't be able to open Outlook as it'll say 'these set of folders can't be opened' - AAD BrokerPlugin is installed and the main fix is to open Word, go to File > Accounts > Sign out and then sign straight back in. You can then open Outlook straight away - it's a frustrating little resolution.\n Has this else experienced this too? Anyone able to provide some insight or suggestions for a final fix?\n Thanks!\n    submitted by    /u/Matty34  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y097gz/365_apps_for_ent_aadbroker_sign_in_problems/",
+          "publishedOn": "2022-10-10T08:19:13.000Z",
+          "wordCount": 31668,
+          "title": "365 Apps for Ent - AADBroker / Sign in problems?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y096wt/migration_to_exchange_online_finished_close/",
+          "author": null,
+          "description": "Hi,\n We have a hybrid Exchange 2016 organisation. I finished migrating the last mailbox to exchange online. I have updated MX records and autodiscover (now pointing to EXO). We keep AD on prem.\n A the moment firewall port 25, 80 and 443 are still forwarded to our on prem mailserver. \n The purpose of migrating to exchange online was to avoid the vulnerabilities of exchange on prem.\n So how can I disable OWA, and all unnecessary access from WAN to our exchange server?\n Do the ports still need to be forwarded? I read that some are necessary for AD connect?\n Thomas.\n    submitted by    /u/Thomas_VDB  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y096wt/migration_to_exchange_online_finished_close/",
+          "publishedOn": "2022-10-10T08:18:13.000Z",
+          "wordCount": 31406,
+          "title": "Migration to exchange online finished - close firewall ports?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y0943b/ssms_databases_completely_inaccessible/",
+          "author": null,
+          "description": "Hey guys 👋 first post here cause I’m kinda lost.\n Have a client that uses load balancing on their SQL server, randomly today all their databases on SSMS 2012 are completely inaccessible, drop-down menu on left panel won’t even expand just sits as (expanding…)\n This is my only client using load balancing & I can’t find anything online for this but I’m certain this is due to the load balancing on his sever. \n All feedback very appreciated :)\n    submitted by    /u/Evilgamedev  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y0943b/ssms_databases_completely_inaccessible/",
+          "publishedOn": "2022-10-10T08:12:52.000Z",
+          "wordCount": 39592,
+          "title": "SSMS databases completely inaccessible",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y08tmf/is_it_possible_to_see_when_a_iis_rewrite_rule_was/",
+          "author": null,
+          "description": "Hi.\n I want to know when a IIS URL rewrite rule was created. Is this logged anywhere?\n Lately there has been found new exploits regarding CVE-2022-41040 - One mitigation is to make a IIS URL rewrite rule. One of my exchanges was missing this rule but has it now. I want to know when the rule was created.\n    submitted by    /u/Daffy82  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y08tmf/is_it_possible_to_see_when_a_iis_rewrite_rule_was/",
+          "publishedOn": "2022-10-10T07:54:05.000Z",
+          "wordCount": 38419,
+          "title": "Is it possible to see when a IIS rewrite rule was created?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y08s8d/terranova_gone_phishing_tournament_end_users/",
+          "author": null,
+          "description": "Hi all,\n We're taking part in this years Gone Phishing Tournament and have gone through the setup process as instructed. The test email came through, bypassing the mail server filters and I uploaded a list of all users as instructed.\n This morning, I get an email from an end user saying they had received an email over the weekend about a \"Gone Phishing Tournament\". It appears they have been sent the same initial setup instructions that I received in September. A quick message trace shows that everyone in the company has received the same setup email! So now this tournament is no longer a surprise to anyone and has basically been ruined. \n Has this happened to anyone else? I've contacted their support team and await their reply. I've looked back through the instructions and at no point does it say the uploaded user list will receive this email.\n    submitted by    /u/Simong_1984  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y08s8d/terranova_gone_phishing_tournament_end_users/",
+          "publishedOn": "2022-10-10T07:51:18.000Z",
+          "wordCount": 31472,
+          "title": "TerraNova Gone Phishing Tournament - End Users Receiving Setup Instructions?!",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y08brv/nable_vs_automox/",
+          "author": null,
+          "description": "Hi all,\n I'm thinking of switching our org (35 seats) from N-Able to Automox. Any input on this? Seems to have way better patch management, but missing some features like remote PowerShell shell, etc.\n    submitted by    /u/TechAidan  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y08brv/nable_vs_automox/",
+          "publishedOn": "2022-10-10T07:20:50.000Z",
+          "wordCount": 31175,
+          "title": "N-Able vs Automox",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y083fk/update_apply_phishingresistant_mfa_by_creating/",
+          "author": null,
+          "description": "Few days ago, we discussed the newly -released grant control that helps us to apply phishing-resistant MFA.https://www.reddit.com/r/sysadmin/comments/xxy1hl/apply_this_new_phishingresistant_mfa_setting_to/\n Today I observed that we can also add a custom authentication type by combining any type of multi-factor authentication.\n By default, Microsoft has categorized three authentication modes under grant control. They are, \n  \nBasic multi-factor authentication. \n Passwordless multi-factor authentication. \n Phishing-resistant multi-factor authentication. \n  \nNow the cherry on top of this, we can also create a custom authentication type based on your requirement. You can combine any type of multi-factor authentication of your wish and apply it to your users. It can significantly help in disabling weaker authentication methods, such as SMS and calls.\n How do you think this custom authentication type can be used for your organization?\n    submitted by    /u/Emma__24  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y083fk/update_apply_phishingresistant_mfa_by_creating/",
+          "publishedOn": "2022-10-10T07:05:50.000Z",
+          "wordCount": 31379,
+          "title": "UPDATE! - Apply Phishing-Resistant MFA by Creating Custom Multi-Factor Authentication Type.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y07m6j/storage_question_synology_nas/",
+          "author": null,
+          "description": "So I am more of a network guy but as we all do, I wear a bunch of hats and help the server guys alot. We have several (like 10) synology NAS devices in the network for our backup solution. Veeam backs up to these devices. Can anyone give me a good reason these are not ready for enterprise setup? To me they are just a solution thats not really expensive, but maybe not the ideal solution. \n I have had a 3rd party in our stuff saying X is wrong or Y is wrong and so far its been things that are not actually a big deal. Example: They complained about the m.2 drives the NAS uses as not being enterprise. (The m.2 is simply a cache drive). They have also been looking at the network side of things and making, honestly dumb suggestions. Dumb as in replacing our backbone with a different manufacturer for network hardware.\n    submitted by    /u/Wdrussell1  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y07m6j/storage_question_synology_nas/",
+          "publishedOn": "2022-10-10T06:36:21.000Z",
+          "wordCount": 32799,
+          "title": "Storage Question - Synology NAS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y073pu/eks_cluster_behind_openvpn/",
+          "author": null,
+          "description": "Hi, We are migrating our K8s cluster from azure to AWS and we have new requirement from our PM team that, cluster need to be behind openVPN. I have multiple documents online in which they are showing we can do VPC peering that is fine, but how we can create one endpoint which will communicate under openVPN network. We are using ISTIO as our ingress, how to create openVPN based ingress gateway. Please help me.\n Thanks\n    submitted by    /u/johntheh4cker  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y073pu/eks_cluster_behind_openvpn/",
+          "publishedOn": "2022-10-10T06:04:28.000Z",
+          "wordCount": 31512,
+          "title": "EKS cluster behind OpenVPN.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y05w1b/exchange_online_imappop3_inbetweener_software/",
+          "author": null,
+          "description": "Hi,\n So Microsoft turned off Basic Authentication and I though I had everything under control. Sadly I missed our own Servicedesk :-D This is spiceworks on-premise.\n Does anybody know of a software that can work as an inbetween so it is possible to connect through Imap/Pop3 and the software can connect to Exchange via Modern Auth?\n Or should I just start looking for a new ticket system?\n    submitted by    /u/danininodk  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y05w1b/exchange_online_imappop3_inbetweener_software/",
+          "publishedOn": "2022-10-10T04:54:55.000Z",
+          "wordCount": 31792,
+          "title": "Exchange Online Imap/Pop3 inbetweener software",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y05g7z/ibm_server_cmos_battery/",
+          "author": null,
+          "description": "Hello All,\n Basically in one of our servers We got an alert about the CMOS battery\n I contacted IBM with the logs and they sent me a CMOS battery\n I managed to finally remove the old CMOS battery and insert this new one \n However the CMOS battery bay holder is lose\n The CMOS battery bay in the server \n ibm 3550 m5 \n Sits like this \n https://i.postimg.cc/5053cmm0/Screenshot-2022-10-10-17-23-48-027-edit-com-android-chrome.jpg\n And the CMOS battery bay that seems lose has these plastic things as shown below\n https://i.postimg.cc/gkjv4p1r/Screenshot-2022-10-10-17-15-52-984-edit-com-miui-gallery.jpg\n that holds it ( it is NOT soldered to the board ) when I was trying to clip off the last battery I may have losened it\n Now when I plugged the new battery in the IBM server ImM console gives the same error saying something about a faulty battery so my questions are\n @ the server boots up and is functional without any noises and when the new CMOS battery was inserted it changed the IBM IMM time date to 1999 - does this mean anything ?\n @ also do I have to replace the whole motherboard or the CMOS battery being lose could it be a problem ? I mean it's placed fine - or could I tighten it from the back ? \n @ does anyone know what the problem is ?\n Thanks !\n    submitted by    /u/hello4467666767-  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y05g7z/ibm_server_cmos_battery/",
+          "publishedOn": "2022-10-10T04:30:24.000Z",
+          "wordCount": 32082,
+          "title": "IBM server CMOS battery",
+          "imageUrl": "https://external-preview.redd.it/JNSv20hPuYsFrTipoJcs2UqhqBwhLeqGNdMPsEGW_Bk.jpg?auto=webp&s=36c142e3421f615fe84208c05a3d615fb3e21d3e"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y05eam/cisco_unified_wireless_ip_phone_model_7925g/",
+          "author": null,
+          "description": "So any sysadmin out there could lend a quick help~ \n i know what i am doing i just need a Cisco Driver that is locked behind a reseller account \n |Cisco Unified Wireless IP Phone Model 7925G \n the driver i need is USB-Install-792x-Windows7-64bit.1-0-4.exe\n    submitted by    /u/BloodyDragon20  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y05eam/cisco_unified_wireless_ip_phone_model_7925g/",
+          "publishedOn": "2022-10-10T04:27:24.000Z",
+          "wordCount": 31203,
+          "title": "Cisco Unified Wireless IP Phone Model 7925G",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y053gk/recommended_network_switches/",
+          "author": null,
+          "description": "Wanting to move away from ubiquity switches. What's a good brand to go with? Want 10gb uplinks. Vlan capable. We use some POE.\n    submitted by    /u/icedutah  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y053gk/recommended_network_switches/",
+          "publishedOn": "2022-10-10T04:10:49.000Z",
+          "wordCount": 38556,
+          "title": "recommended network switches",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xzy99z/6040_windowsmac_environment_best_option/",
+          "author": null,
+          "description": "Started at a new company recently, we're using JumpCloud/Datto RMM to manage our fleet of laptops combined with Google WorkSpace.\n The company's growing and we're attempting to plan for the future and it looks like we may outgrow this setup.\n For those of you in these dual environments, are you running a combo of Intune and Jamf (or similar), or is there a better \"one size fits all\" solution?\n    submitted by    /u/ALadWellBalanced  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xzy99z/6040_windowsmac_environment_best_option/",
+          "publishedOn": "2022-10-09T22:29:49.000Z",
+          "wordCount": 32030,
+          "title": "60/40 Windows/Mac environment - best option",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xzwic6/is_booting_from_iscsi_a_thing_in_2022/",
+          "author": null,
+          "description": "Have been trying to find some tutorials and software for diskless booting of windows 10 from iscsi (not just install, but full on running) and all videos and blogs are like from 2009, referencing windows XP and 7 at best. Which makes me wonder, is this still a thing ? are there any tools with proper enterprise support for it out there ? MS support page for windows server has a section about benefits o booting from iscsi, but totally does not explain how to do it.... Can someone point me in the right direction?\n I've got an environment with a large SAN already in place and a lot of hardware rotation for client workstations, where booting from iscsi would be perfect solution to a lot of challenges\n    submitted by    /u/BoilingJD  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xzwic6/is_booting_from_iscsi_a_thing_in_2022/",
+          "publishedOn": "2022-10-09T21:13:55.000Z",
+          "wordCount": 34213,
+          "title": "Is booting from iscsi a thing in 2022?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xzwdv1/solarwinds_orion_excessive_broadcast_arp_traffic/",
+          "author": null,
+          "description": "We use SolarWinds Orion products like Server & Application Monitor, Network Performance Monitor, and Network Traffic Analyzer. One of our network engineers noticed a lot of Broadcast (ARP) traffic with the info stating \"Who has <internal IP>? Tell <Orion IP>\". Does SolarWinds Orion normally behave like that in a corporate network? I sort of get the idea that it might, but it seems excessive the amount of broadcast traffic we are seeing at any given point, even if we aren't doing discoveries at that point.\n    submitted by    /u/jwckauman  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xzwdv1/solarwinds_orion_excessive_broadcast_arp_traffic/",
+          "publishedOn": "2022-10-09T21:08:32.000Z",
+          "wordCount": 31650,
+          "title": "SolarWinds Orion - excessive broadcast (ARP) traffic?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xzvyw4/migrating_emails_from_o365_to_google_workspace/",
+          "author": null,
+          "description": "Hi,\n so I have this one client who wants to migrate from O365 to Google Workspace (reason is not important). Circa 50 users.\n I already tried all the tools that Google recommend for migrating from O365 but NONE of them worked and the documentation is DOG SHIT. The only way I was able to migrate a mailbox (test mail) was manual process by making a content search on O365 and uploading the PST file to Gmail. I need to automate the migration and I am now thinking if I should rather just create my own migrating tool with powershell/C# and use Google/Graph REST apis... but that could potentially scale the price 3 times the initial budget.\n Has anyone here migrated from O365 to Google workspace (Gmail primarily)? Any help would be appreciated. Thanks.\n    submitted by    /u/shmavee  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xzvyw4/migrating_emails_from_o365_to_google_workspace/",
+          "publishedOn": "2022-10-09T20:50:57.000Z",
+          "wordCount": 32018,
+          "title": "Migrating emails from O365 to Google Workspace",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xzuqdu/what_duties_does_the_jr_sysadmin_perform_at_your/",
+          "author": null,
+          "description": "Saw on another post, creating ID's, adding computers to domain, basic troubleshooting, etc. That is lvl 1 helpdesk where I am, so maybe that company was an oddball.\n What do they do at your company? What are they def not allowed to do?\n    submitted by    /u/crystalblue99  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xzuqdu/what_duties_does_the_jr_sysadmin_perform_at_your/",
+          "publishedOn": "2022-10-09T19:59:10.000Z",
+          "wordCount": 36209,
+          "title": "What duties does the Jr SysAdmin perform at your company?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xzu8zy/riotgames_forgot_to_change_their_ssl_cert_on_the/",
+          "author": null,
+          "description": "Someone at riot seemingly forgot their old .conf file lol\n while https://www.leagueoflegends.com works perfectly and is their main page, if you go to https://leagueoflegends.com which should redirect you, you receive an SSL Error.\n Small blunder but that happens during \"Worlds\" their biggest tournament and I would love to see if the click rate dropped since the cert got invalidated (yesterday).\n Happens to all of us, so monitor your stuff and try to always have documentation for these changes in order to not forget some .conf files!\n Have a quiet weekend and don't forget tomorrow is read-(mails/tickets)-only Monday\n Edit: Riot saw this thread and apparently fixed it:)\n https://reddit.com/r/sysadmin/comments/xzu8zy/riotgames_forgot_to_change_their_ssl_cert_on_the/irqb7in\n    submitted by    /u/xKawo  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xzu8zy/riotgames_forgot_to_change_their_ssl_cert_on_the/",
+          "publishedOn": "2022-10-09T19:38:01.000Z",
+          "wordCount": 33519,
+          "title": "Riotgames forgot to change their SSL Cert on the non-www .conf which redirects to www - Currently receiving an error and this during their biggest tournament of the year",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xzps77/local_admin_for_remote_computers/",
+          "author": null,
+          "description": "Hello,\n So, I will need your help on this one.\n I have users that work on company laptops (ad-joined), they log in using their AD credentials as Standard Users.\n When they work from home, they connect to the company VPN. However, if they won't connect to VPN, their credentials are cached on the laptop so they can still log in to their account.\n Sometimes, let's assume that the VPN connection is broken, I want to remotely configure a setting or two (via Anydesk) using a local administrator account without being connected to the VPN. Not being connected to VPN means that I cannot grant a user local admin rights to overcome this.\n How can I configure a local admin account (maybe with cached creds) so that I can still support these remote users? Actually, what I am asking is the best practice covering both security and ease of access, how are you guys implementing a similar case?\n I should mention that we are not using LAPS or any other Endpoint Privilege Management software, we are considering this scenario though.\n    submitted by    /u/johnenxada  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xzps77/local_admin_for_remote_computers/",
+          "publishedOn": "2022-10-09T16:29:22.000Z",
+          "wordCount": 32668,
+          "title": "Local admin for remote computers",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/xznqj6/switching_from_smtp_basic_auth_to_graph_api_in/",
+          "author": null,
+          "description": "Microsoft has now disabled basic auth for Office 365, with the minor exception of SMTP. While SMTP Basic Auth is not going away because of mostly legacy devices or applications, it's better to switch to oAuth 2.0 and Graph API as per Microsoft's recommendation.\n The more significant issue is that Microsoft points you to Graph API documentation, specifically this link: https://learn.microsoft.com/en-us/graph/api/user-sendmail. If you want to upload attachments higher than 4MB, they send you to this link https://learn.microsoft.com/en-us/graph/outlook-large-attachments where after a brief moment, you decide to drop that idea and not send emails with larger attachments ;-)\n Over one year ago, I wrote a PowerShell module called Mailozaurr, which simplifies sending emails with SMTP using BASIC …",
+          "link": "https://www.reddit.com/r/sysadmin/comments/xznqj6/switching_from_smtp_basic_auth_to_graph_api_in/",
+          "publishedOn": "2022-10-09T15:01:03.000Z",
+          "wordCount": 32303,
+          "title": "Switching from SMTP Basic Auth to Graph API in PowerShell Scripts for Office 365 made easy",
+          "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&s=e62264227377a9581e2e2946169864d130fa3217"
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/xzmcel/root_ca_expires_before_server_certificate_will_a/",
           "author": null,
@@ -6559,24 +6759,6 @@
             "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/45c6fce7-3354-4162-8265-ab07841bf735/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=45c6fce7-3354-4162-8265-ab07841bf735&feed=WCb5SgYj"
           },
           "imageUrl": null
-        },
-        {
-          "id": "437a1b73-cdae-4bb5-b81d-4822f0f156b6",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "Russia’s war on Ukraine continues to grind on, droughts in several regions are having a massive impact worldwide, and tensions continue to escalate between the U.S. and China over Taiwan. Get the facts first on Morning Wire.",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2022-09-10T08:30:00.000Z",
-          "wordCount": null,
-          "title": "Russia’s War in Ukraine & Global Drought Threats | 9.10.22",
-          "itunes": {
-            "duration": "00:14:56"
-          },
-          "enclosure": {
-            "length": "14350283",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/b0931679-3fde-4442-b989-b88f2d63c97e/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=b0931679-3fde-4442-b989-b88f2d63c97e&feed=WCb5SgYj"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -6585,6 +6767,76 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y09xnr/how_to_combine_2_wifi_networks_into_one_and_be/",
+          "author": null,
+          "description": "I dont know how to phrase a title but let me explain.\n I have two routers: one for internet access, and other other is an LTE router for accessing a specialized service.\n There is no LAN infrastructure so am thinking of bridging the two wifis into one by making one behave like a switch.\n or turn one into a switch and connect it to the second router via lan cable. (with the process, i think i wont be able to access the services of both routers.\n Or i can get a third old router, turn it into a switch and connect the two routers to it. AM not sure if the 3rd rout/switch would be able to broadcast a wifi with the two wifis merged.\n Is it possible to do so or to do routing in a router/switch?\n ​\n its a thought experiment. Glad for any suggestions\n ​\n    submitted by    /u/beldict  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y09xnr/how_to_combine_2_wifi_networks_into_one_and_be/",
+          "publishedOn": "2022-10-10T09:06:47.000Z",
+          "wordCount": 31709,
+          "title": "How to combine 2 wifi networks into one and be able to access both network services? (without LAN connectivity) like a wifi network switch",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y09lam/some_doubts_on_ospf_and_bgp/",
+          "author": null,
+          "description": "Hi Friends, \n Can you please help clarify following doubts?\n  \nIn OSPF, While forwarding a received Type5 LSA to other area, why does the ABR not change the Advertising Router IP of the Type 5 LSA to it's own IP? What is te basic reason behind this? If ABR is able to change the Advertising Router's IP in the Type5 LSA, then there was no need of Type 4 LSA which meant less OSPF overhead on the network.\n BGP Split Horizon Rule says, \"Don't advertise IBGP learned routes to another IBGP peer.\" The purpose is to avoide loop because as per standard, it is assumed that all of the IBGP Peers will be on full mesh connectivity. - What is the reason that the BGP Protocol designers made this standard assumption?\n Why is does the Route Reflector not change the next hop IP while advertising an IBGP learned route to client? I am trying to understand what made the BGP designers decide for RR to not change the next Hop IP for IBGP learned routes?\n What is the reason due to which BGP designers did not consider EBGP router to automatically change Next Hop IP for EBGP learned routes while advertising towards IBGP Peers?\n  \n   submitted by    /u/abhijit040  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y09lam/some_doubts_on_ospf_and_bgp/",
+          "publishedOn": "2022-10-10T08:44:27.000Z",
+          "wordCount": 32206,
+          "title": "Some doubts on OSPF and BGP",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y07pkr/basic_firewallrouter_interface_question/",
+          "author": null,
+          "description": "Hi,\n I've got a few logical networks at the office. Internal LAN/Ethernet, Phones/VOIP, Internal Wifi, Guest Wifi, pretty basic). For the network equipment I have a firewall/router appliance, two managed switches, and three wireless access points. \n Should I have one interface port on the Firewall appliance configured as a trunk for each of the logical networks setup as VLANs? Or would splitting wired and wireless device types into their own switches, each connected to a dedicated interface on the appliance be the better choice?\n What are the pros & cons, and which would give me better or worse performance? Is either approach sound?\n    submitted by    /u/joejoe12345avc  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y07pkr/basic_firewallrouter_interface_question/",
+          "publishedOn": "2022-10-10T06:42:05.000Z",
+          "wordCount": 31847,
+          "title": "Basic firewall/router interface question",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y06jpq/network_design_for_a_quarter_rack/",
+          "author": null,
+          "description": "Hello, I just recently acquired a quarter rack with one 10G uplink and two bgp sessions. I'm trying to figure out how I'm going to deploy the network. I have some ideas but am running into some analysis paralysis.\n I have some questions I want to ask. The hosts are going to have 2x1G and 2x10G nics with the 10G being used for storage. \n I'm trying to figure out what TOR switch I should use. I'm also trying to figure out if I should do all the routing on the TOR switch and even do the bgp sessions on said switch or should I just trunk the uplink to its own router and a firewall behind it. I have a xeon d host where I was planning on virtualizing most network functions.\n I'm probably not going to be able to afford any brand new high end switch so used switch recommendations are highly welcome.\n    submitted by    /u/theobkoomson  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y06jpq/network_design_for_a_quarter_rack/",
+          "publishedOn": "2022-10-10T05:31:16.000Z",
+          "wordCount": 37762,
+          "title": "Network design for a quarter rack",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y01du0/looking_for_advise_regarding_mpls_devices/",
+          "author": null,
+          "description": "Hi, we're an small ISP that needs a solution regarding MPLS Devices. Right now we're using Mikrotik but its so unstable that we decides to get a more better device with limited budget. Any advise what device that should we acquired ? We're needs some device that can do traffic engineering and VPLS , capable to the fast reroute on OSPF, and running P/PE roles. Throughput right now is approximately 3-5Gbps, but seems we also need advise to if our traffic reaches 10Gbps between site. Thanks before.\n    submitted by    /u/harajukakei  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y01du0/looking_for_advise_regarding_mpls_devices/",
+          "publishedOn": "2022-10-10T01:00:27.000Z",
+          "wordCount": 31545,
+          "title": "Looking for Advise Regarding MPLS Devices",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y007ad/for_intervlan_routing_when_should_you_use/",
+          "author": null,
+          "description": "Hello\n I have some networking knowledge and experience, but I am still growing my skills and advancing my career. \n I was thinking about how layer 3 switching for interVLAN routing is more efficient and quicker due to the ASICs and such for routing traffic between VLANs compared to a standard firewall with inspection and such. But layer 3 switching ACLs are very basic and doesn't allow any sort of traffic inspection/analysis. \n Firewalls have all the great security features for traffic inspection and analysis, but can the bottleneck/slower for interVLAN routing to internal systems.\n One scenario I can think of is; lets say you have a media department (10+ people) that works with a lot of large files and directly edits off a network share through a 10gb link connected to their desktops. Using a firewall to separate the server network and their desktop network (as well as all the other standard user networks) may be the bottleneck when it comes to those connections but more secure for internal threats. Layer 3 switching would be faster, but way less security to defend against internal threats as well as more complicated to maintain with ACLs the larger the distribution layer grows. Or is this just a money problem and a beefier firewall should be purchased to handle something like this?\n I guess the question is, at what point do you choose firewall or layer 3 switch for interVLAN routing and ensuring the network is properly secure and why?\n    submitted by    /u/clifford641  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y007ad/for_intervlan_routing_when_should_you_use/",
+          "publishedOn": "2022-10-10T00:01:10.000Z",
+          "wordCount": 34917,
+          "title": "For interVLAN routing, when should you use Firewall (Router) on a stick or layer 3 switches with ACLs?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y006a6/moronic_monday/",
+          "author": null,
+          "description": "It's Monday, you've not yet had coffee and the week ahead is gonna suck. Let's open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we're too embarrassed to ask!\n Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.\n Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y006a6/moronic_monday/",
+          "publishedOn": "2022-10-10T00:00:10.000Z",
+          "wordCount": 59896,
+          "title": "Moronic Monday!",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/xzlrra/advice_for_new_project/",
           "author": null,
@@ -9579,6 +9831,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw",
       "siteUrl": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=blU_2wIMT4U",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=blU_2wIMT4U",
+          "publishedOn": "2022-10-09T16:53:05.000Z",
+          "wordCount": null,
+          "title": "The God of Computer Fans",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=MozKrDoS1Dc",
           "author": null,
