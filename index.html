@@ -22,8 +22,451 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-10 datetime="2022-10-10T14:07:16.000Z">2022-10-10</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-10 datetime="2022-10-10T14:07:16.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-11 datetime="2022-10-11T09:17:14.000Z">2022-10-11</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-11 datetime="2022-10-11T09:17:14.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y14bqw/rds_2019_users_unable_to_open_start_button/"
+                        open
+                      >
+                        <summary class="article-expander__title">RDS 2019 users unable to open start button</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y14bqw/rds_2019_users_unable_to_open_start_button/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/q6b0BzdkAJILrALz1sll6sALWzANUt4IfnEBB96KZIY.jpg?auto&#x3D;webp&amp;s&#x3D;1b5291a8bdbd6e5bdb6cb368e936d16aba717fb9" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We have been struggeling with the Windows startbutton not working on our RDS 2019 servers for a while now. The weird thing is, this only happens for regular users, not admin users. I have been searching online and found that I could run the following command: 
+  
+Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode –Register “$($_.InstallLocation)\AppXManifest.xml”} 
+  
+This doesn&#x27;t work for me because it gets blocked by applocker. Also in the eventviewer under &#x27;Applications and Service Logs/Microsoft/Windows/AppXDeployment-server&#x27; I see a lot of errors regarding packages that cannot be installed/updated due to applocker restrictions. Example of the error: 
+  
+AppX Deployment operation failed for package Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy with error 0x80073D01. The specific error text for this failure is: error 0x800704EC: Deployment of package Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy was blocked by AppLocker.
+  
+I tried to allow the packages in our applocker GPO and reboot the servers, but that didn&#x27;t fix the issue either.
+ https://imgur.com/VhmzBMn
+ I also tried to delete the firewall rules in the registery, but that does not seem to work either.
+ Source:https://www.phy2vir.com/windows-server-2016-2019-rds-server-black-screen-or-start-menu-not-working/
+ Anyone else have been struggeling with this?
+    submitted by    /u/ElijahBurningWoods  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;138
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y13okf/how_to_setup_l2tpipsec_server_to_login_with/"
+                        open
+                      >
+                        <summary class="article-expander__title">how to setup l2tp/ipsec server to login with workspace credentials?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y13okf/how_to_setup_l2tpipsec_server_to_login_with/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>How to setup?
+    submitted by    /u/Additional-Cow1888  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;137
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y13niz/gpo_edit_settings_without_affecting_linked_ou/"
+                        open
+                      >
+                        <summary class="article-expander__title">GPO - edit settings without affecting linked OU</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y13niz/gpo_edit_settings_without_affecting_linked_ou/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, I&#x27;m looking for a convenient way to test a change in an existing GPO. I am a bit of a rookie, but i cant seem to find a way to do test the change on a single test OU. Any advice is appreciated. Unlinking the GPO is not an alternative sadly.
+    submitted by    /u/Snowkiwiman  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;104
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y13ion/securing_a_byod_mac_accessing_office_365/"
+                        open
+                      >
+                        <summary class="article-expander__title">Securing a BYOD Mac accessing Office 365</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y13ion/securing_a_byod_mac_accessing_office_365/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto&#x3D;webp&amp;s&#x3D;e62264227377a9581e2e2946169864d130fa3217" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Ridiculous task of the week, we&#x27;ve been tasked with securing access to Office 365 for someone using a personal MacBook. With Windows 10 of course, we would Azure register the device and use MAM in Intune/Endpoint Manager with Windows Information Protection. And of course on iPads, iPhones, and Android phones, there&#x27;s app policies available too
+ Obviously this is not something we can do with Mac. And as it&#x27;s a BYOD laptop, we are not at liberty to lock the entire laptop down. Is there any sort of data protection policy or software we can use with Mac, or are we SOL? They&#x27;re basically just going to be using Office and OneDrive
+ Edit: I did find this from MS, which seems to offer some level of support, but as commenters have already stated, it&#x27;s just a terrible idea and I&#x27;m going to strongly make that point
+    submitted by    /u/DeifniteProfessional  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;106
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y13hnj/password_managers_for_a_team/"
+                        open
+                      >
+                        <summary class="article-expander__title">Password Managers For A Team</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y13hnj/password_managers_for_a_team/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All,
+ Wondering if there are any recommendations fellow sys admins have when it comes to professional password managers for a team? We&#x27;re only small but would ideally like all members of the team to have access to the same password vault for admin accounts etc. Doesn&#x27;t need to be anything special, just easy to setup and use ideally.
+ Thanks in advanced.
+    submitted by    /u/Bondegg  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y13daq/vmware_how_can_i_achieve_a_mirrored_cluster/"
+                        open
+                      >
+                        <summary class="article-expander__title">VMWare how can I achieve a mirrored cluster</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y13daq/vmware_how_can_i_achieve_a_mirrored_cluster/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;d like to put two machines together in a cluster then have them use only one of it&#x27;s storage while having the other one mirror it so in case any of the machines fail, I can immediately change to the other storage. What do I need to achieve this? Google gave me a lot of different answer so I&#x27;m really not sure
+    submitted by    /u/drgreed  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;126
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y12pvv/cannot_install_powershellget/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cannot install PowershellGet</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y12pvv/cannot_install_powershellget/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I get the below error message when I run the powereshell code
+ PS C:\Windows\system32&gt; Install-Module PowerShellGet -AllowClobber -Force
+ WARNING: Source Location &#x27;https://www.powershellgallery.com/api/v2/package/PackageManagement/1.4.8.1&#x27; is not valid.
+ PackageManagement\Install-Package : Package &#x27;PackageManagement&#x27; failed to download.
+ At C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1:1809 char:21
+ + ... $null &#x3D; PackageManagement\Install-Package u/PSBoundParameters
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + CategoryInfo : ResourceUnavailable: (C:\Users\aimpet...anagement.nupkg:String) [Install-Package], Exception
+ + FullyQualifiedErrorId : PackageFailedInstallOrDownload,Microsoft.PowerShell.PackageManagement.Cmdlets.InstallPackage
+ ​
+ ​
+ I have TLS 1.2 enabled.
+ ​
+ Any idea
+    submitted by    /u/ashveen96  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y12o85/kmshost_on_server2022/"
+                        open
+                      >
+                        <summary class="article-expander__title">KMSHOST on Server2022</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y12o85/kmshost_on_server2022/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So i have a problem with Office 2013 activation.
+ We had an old 2012 server that hosted kms but now its time as come and we need to shutdown that server. I done the server licenses and it worked like charm but now when trying to add new Office 2013 keys to new KMS server (OS2022) it says this
+ An activation request has been processed.
+ Info:
+ 0xC004F042
+ ​
+ i had some test pc-s to work with and tried with command -skms to manually add them and it did work and they get the right license but from server it still showing that error, anyone has a fix for that?
+    submitted by    /u/WTFHELLLORD  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;104
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y12fxj/computer_to_test_potential_viruses/"
+                        open
+                      >
+                        <summary class="article-expander__title">Computer to test potential viruses</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y12fxj/computer_to_test_potential_viruses/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>time and again we receive concerned calls/emails from users who have received a suspicious email/link/file.
+ Of course, we in IT say that this must not be opened under any circumstances!
+ ​
+ I am a sysadmin, not a security specialist. Nevertheless, I (and my colleagues) are curious about what would happen if a potential virus is executed or a link is followed.
+ ​
+ To test something like this, we currently have an old notebook with Windows 7. The notebook is of course not in the domain and in a separate VLAN without access to the LAN.
+ We would like to replace this notebook with a new one (more performance, Win10 etc.).
+ ​
+ Now to my question: do you have a special computer to test potential viruses, malware, phishing links etc.?
+ If so, what is your configuration of the computer?
+ ​
+ - separate VLAN -&gt; no access to the LAN
+ - no domain join
+ - Office installed
+ - 7zip
+ - Wireshark
+ Have you created a way to reset the computer after running the file? Restore Point, Backup, Hyper-V or something else?
+ ​
+ The reason for this computer is primarily curiosity and to rule out any false positives.
+    submitted by    /u/MarcoVfR1923  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y10rir/what_was_your_last_project/"
+                        open
+                      >
+                        <summary class="article-expander__title">What was your last project?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y10rir/what_was_your_last_project/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Big or small and how did it go? Success or failure let’s hear it.
+    submitted by    /u/SuperGuy41  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y10aav/gpg4win_command_line_automation/"
+                        open
+                      >
+                        <summary class="article-expander__title">gpg4win command line automation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y10aav/gpg4win_command_line_automation/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Crosspost from :
+ https://www.reddit.com/r/gpg4win/comments/y0y28b/command_line_encryptiondecryption/?utm_source&#x3D;share&amp;utm_medium&#x3D;web2x&amp;context&#x3D;3 
+ Hi, I&#x27;m relatively new to gpg4win, and am trying to accomplish what I *think* is a relatively simple task.
+ I&#x27;d like to encrypt and decrypt files from a command line, such that I can script a process to automatically parse files in a folder to be encrypted at regular intervals, or decrypted. I have only one certificate with private key stored in Kleopatra, and it&#x27;s set to my default identity, and &quot;ultimate&quot; trusted.
+ I&#x27;ve googled for hours, read through documentation, found examples, but a few of the option switches that are widely referenced don&#x27;t seem to work with gpg4win (IE, --passphrase-file or --passphrase_fl, or even just --passphrase).
+ Here&#x27;s my current syntax for a test encryption
+ .\gpg -r &quot;KEYNAME&quot; -o testencrypt.gpg --pinentry-mode&#x3D;loopback --passphrase &quot;PASSPHRASE&quot; --default-recipient-self --always-trust -encrypt test.txt
+ yeilds :
+ gpg: ypt: skipped: No public keygpg: test.txt: encryption failed: No public key
+ I&#x27;m not sure if I even need the passphrase for encryption, rather than decryption - but if I omit --passphrase, it prompts for one.
+ I haven&#x27;t gotten to decryption syntax, but figure it will be pretty much just the opposite process. I noticed the gpg-preset-passphrase.exe program, and ran it and entered the password there - not sure if that impacts anything.
+ Thanks for any insight!
+ edit : using gpg4win 4.0.3
+    submitted by    /u/mindphlux0  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0zqgo/user_folder_redirection/"
+                        open
+                      >
+                        <summary class="article-expander__title">User Folder Redirection</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0zqgo/user_folder_redirection/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all, 
+ Unfortunately we cannot use OneDrive to redirect user directories and instead are looking to utilise the in-built user folder redirection GPO and wanted to check if anyone here may have used this in the past and can provide any advice or anecdotal tales?
+ Our plan is...
+  
+Use GPO to redirect our user folders (Desktop, Documents etc) to a windows file share using the in-built offline files feature.
+ The share will be hosted on DFS and replicated between fileservers across regions.
+ Configure folder quotas to prevent users running riot with local files
+  
+Does this sound like a bad idea?
+ Thanks in advance!
+    submitted by    /u/cananyonehelpmoi  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0z7ar/another_one_sysadminsoftware_engineers_is_this/"
+                        open
+                      >
+                        <summary class="article-expander__title">(Another One) SysAdmin/Software engineers is this normal?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0z7ar/another_one_sysadminsoftware_engineers_is_this/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Dear fellow IT peeps, 
+ First question was : https://www.reddit.com/r/sysadmin/comments/y06smj/sysadminsoftware_enginners_is_this_normal/?utm_source&#x3D;share&amp;utm_medium&#x3D;web2x&amp;context&#x3D;3
+ I got another question, as i am wondering if this is a common practice which i have not experinced as i feel that it is a bad pratice, or am i wrong, 
+ So for example, Customer creates a ticket, ticket gets assigned to wtv team i.e. Hardware team. Hardware team resolves the issues, comments on the ticket saying issue has been resolved, can we proceed to close the ticket, customer comments back about a quey on something that is not related the issue i.e. warranty status of the HD which we have to email the OEM and await their reply. Which will extend the SLA even though the main issue has been resolved. 
+ Do you get the customer to create a new ticket or keep the ticket open?
+ For me i think it is a bad practice to keep the ticket open, from my experience usually we&#x27;d get the customer to create a new ticket. 
+ But then again, back then i was working for companies had some of control i.e. HPE, big IT corps. 
+ But the new company i just joined, i am still getting used to the practice, and i was wondering if i should address this as this might give the customer too much power to dictate and of course my previous question
+ I find such practices bad and is making things very confusing which in turn would reduce productivity.
+ ​
+ Am i wrong?
+ Or should i address this? 
+ I dont wanan address something that would shoot myself in the foot
+    submitted by    /u/ChmodPlusEx  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0z6yt/cve202240684_remote_authentication_bypass/"
+                        open
+                      >
+                        <summary class="article-expander__title">CVE-2022-40684: Remote Authentication Bypass Vulnerability in Fortinet Firewalls, Web Proxies</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0z6yt/cve202240684_remote_authentication_bypass/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/6wfbv0tKByQsO7w-jnh6uZb_uk-GsI5mMAo-AzrBZrQ.jpg?auto&#x3D;webp&amp;s&#x3D;cc902caff02f91e8238647e365a08a44944d5b4d" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>submitted by    /u/Canecraze  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;104
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0z1xa/patch_tuesday_megathread_20221011/"
+                        open
+                      >
+                        <summary class="article-expander__title">Patch Tuesday Megathread (2022-10-11)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0z1xa/patch_tuesday_megathread_20221011/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/ivjlZE27cyiGaeSllyjZLfH4MQ1Ald7FRZXjSsoTFlY.jpg?auto&#x3D;webp&amp;s&#x3D;4fc40c88b1f377dc6427f0ee7d05fb81a590b1ec" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hello r/sysadmin, I&#x27;m /u/AutoModerator, and welcome to this month&#x27;s Patch Megathread!
+ This is the (mostly) safe location to talk about the latest patches, updates, and releases. We put this thread into place to help gather all the information about this month&#x27;s updates: What is fixed, what broke, what got released and should have been caught in QA, etc. We do this both to keep clutter out of the subreddit, and provide you, the dear reader, a singular resource to read.
+ For those of you who wish to review prior Megathreads, you can do so here.
+ While this thread is timed to coincide with Microsoft&#x27;s Patch Tuesday, feel free to discuss any patches, updates, and releases, regardless of the company or product. NOTE: This thread is usually posted before the release of Microsoft&#x27;s updates, which are scheduled to come out at 5:00PM UTC.
+ Remember the rules of safe patching:
+  
+Deploy to a test/dev environment before prod.
+ Deploy to a pilot/test group before the whole org.
+ Have a plan to roll back if something doesn&#x27;t work.
+ Test, test, and test!
+  
+   submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;156
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-10 datetime="2022-10-11T03:56:00.000Z">2022-10-10</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-10 datetime="2022-10-11T03:56:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +481,311 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0yz15/is_switchport_trunk_allowed_vlan_all_a_bad_idea/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is &quot;switchport trunk allowed vlan all&quot; a bad idea</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0yz15/is_switchport_trunk_allowed_vlan_all_a_bad_idea/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey guys, we have had a couple of discussions at work about the concepts behind &quot;switchport mode trunk&quot; / &quot;switchport trunk allowed vlan all&quot;. The two commands both accept every VLAN configured on the switch on the trunk ports. So my question is, if there are any disadvantages for network, when the trunks are configured in that way instead of specifying the exact VLANs. We have some delays and higher TTLs in our network and/or some black magic we can&#x27;t figure out. So my boss hat the opinion its caused by the trunk all command. Is that true? We are talking about a VLAN configuration of 20-30 VLANs.
+ Thanks!
+    submitted by    /u/sn0oz3  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;111
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0shro/starlink_ipoe_static_routes/"
+                        open
+                      >
+                        <summary class="article-expander__title">Starlink / IPoE Static Route(s)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0shro/starlink_ipoe_static_routes/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all!
+ Just trying to get a client up with Starlink - we are using tunnels to deliver their public IP and starlink as a backhaul - this all works fine.
+ Deployment testing internally - we just setup a dhcp server and added routes based on DHCP like so:
+ ip route 0.0.0.0 0.0.0.0 dhcp 100
+ And a few other routes back to management IP&#x27;s in case of tunnel issues
+ ip route 1.2.3.4 255.255.255.255 dhcp 100
+ This worked in testing with normal DHCP server, but what we&#x27;ve found since deploying is that starlink&#x27;s IPoE doesn&#x27;t deliver a default route via the &#x27;dhcp&#x27; keyword - i.e. DHCP Option 3 (I believe) and is instead providing the default static route via classless routes (option 121) ?
+ The big tell is that a default route is there, but its 254 distance instead of the configured 100, and the /32 routes we added do not get picked up.
+ So my question is thus - given we can not get that gateway using the &#x27;dhcp&#x27; keyword on the routes, is there any way to kind of add a route for the /32&#x27;s based on the default route given out in what we assume is option 121?
+ I am remote to the site, so can&#x27;t really reliably debug DHCP without kicking my access off, so any help is appreciated to understand my options.
+ Thanks!
+    submitted by    /u/Joeymon  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;111
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0s0y3/toning_mixed_cable_network/"
+                        open
+                      >
+                        <summary class="article-expander__title">Toning mixed cable network</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0s0y3/toning_mixed_cable_network/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All, I&#x27;m not sure if my vocabulary is sound on this question. I hope you can decipher it. 
+ I have a data network that is roughly 75 drops. The installer mixed the runs for voice and data. So each cable is terminated into two jacks, 2 pair for data, 2 pair for voice. Nothing is labeled, and my toner does not seem to work with these mixed cable runs. The toner tests out fine on a standard patch cable.
+ Do I need a different\better toner or is this expected on cables terminated this way?
+    submitted by    /u/duke_007  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0qk0g/juniper_in_a_cisco_environment/"
+                        open
+                      >
+                        <summary class="article-expander__title">Juniper in a Cisco Environment</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0qk0g/juniper_in_a_cisco_environment/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>New Network Engineer here who joined a new company. I have the opportunity to get some Juniper switches that will accomplish the exact same thing as some Catalyst 9300&#x27;s (can&#x27;t get these for a year) but the existing Network Engineers are looking at me as though I&#x27;m a heretic :)
+ Is there something glaring about Juniper that I&#x27;m missing? On paper Junos seems to tick the right boxes of not being a monolithic kernel, linux-based, EVPN/VXLAN support, SDN management and they&#x27;ve been around for decades. I&#x27;m getting my talking points together to talk with management about it, but I &quot;don&#x27;t know what I don&#x27;t know&quot; so I&#x27;m hoping reddit can educate me as to if there is something in production with this gear&#x27;s operation that someone with tribal knowledge would know. Could definitely use some career advice as, the only downside I see is having to learn something new but I could be way off base. Thanks.
+    submitted by    /u/h0mebas3  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;149
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0q0u4/intermittent_loop_nexus/"
+                        open
+                      >
+                        <summary class="article-expander__title">Intermittent loop (Nexus)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0q0u4/intermittent_loop_nexus/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/hVCoSbBilJJUGQQJUH5V7dJ3O6v2p2Fmk14flsQ28n4.jpg?auto&#x3D;webp&amp;s&#x3D;19c47162eb97ca8738fec9e21950f5d6408a7389" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hoping to get some community help even if it must be a &quot;don&#x27;t be a moron and do this&quot; type advice. I currently have a Frankenstein Nexus layout that is giving an intermittent loop on a vlan (1). It seems to pop up randomly but it does show some consistency with it happening 1-2 time a day. 
+ Topo: https://imgur.com/a/11VezZl
+ I have been able to identify the firewall (HA-FP asa) interface as the kick off of all these occurrences. This device sits on a TOR running RSTP. This is currently configured as an access port. The TOR connects via vPC to two 9500 chassis with the primary acting as STP root. (No peer switch configuration) these are set by separate priority levels. Priority 1 &amp; 4096.
+ Under the core we have two more vPC domains running RSTP. The vlan 1 root ports are reflecting correct…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;111
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0ocb1/need_some_help_with_a_vxlan_setup_vxlan_tunnel_is/"
+                        open
+                      >
+                        <summary class="article-expander__title">Need some help with a VXLan setup. VXLan tunnel is up. Everything seems to traverse except TLS. What could be the issue?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0ocb1/need_some_help_with_a_vxlan_setup_vxlan_tunnel_is/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all,
+ Having a bit of a problem driving me nuts and hoping someone can lend a bone.
+ I&#x27;ve done a similiar setup before and never had any trouble.
+ I have two physical sites with an ESX host in each. All networking machines are inside of ESX. There is a virtual firewall at each site. The two have a Site2Site VTI (Route based) VPN Tunnel between them. Over it I&#x27;m sending VXLan traffic. The VxLan endpoint is behind each of the firewalls, running OpnSense in another VM. No NAT going on inside the VTI. Subnet to subnet. VxLan link is established and I have a stretched layer 2 segment with the IP range of 10.20.171.0/24. I can ping across it. I can browse http across it. But the second I swap the same test/set of ips for https - I&#x27;m unable to browse. In other words, I believed that it is a TLS problem. curl -k -vvv showed it hanging on &quot;Client Hello&quot;.
+ ​
+ Using the same http host I succeeded with but https did not work with, I did a client side wireshark twice:
+  
+On Net
+ Across VxLink
+  
+For #1, it worked (ie: the vms live next to each other on the same time).
+ For #2, last thing client sends is a tls &quot;client hello&quot; and never receives the server hello back.
+ I did another wire shark on the server side, and the server hello IS being sent back, just not arriving at back at the client. OVER THE SAME LINK that plain old http (stateful) and icmp work.
+ I&#x27;m absolutely dizzy trying to chase the packets for that particular conversation at this stage. 
+ Can anyone think of anything?
+    submitted by    /u/usa_commie  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;107
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0nqjg/alternatives_to_vrealize_network_insight_for/"
+                        open
+                      >
+                        <summary class="article-expander__title">Alternatives to vRealize Network Insight for service discovery?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0nqjg/alternatives_to_vrealize_network_insight_for/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Background: We&#x27;re currently investigating options for microsegmentation using NSX. This is a brownfield deployment, so we have lots of workloads that are already talking to each other and we need to do some kind of discovery to determine what&#x27;s talking to what on what ports.
+ VMware&#x27;s solution is to pay a lot of money for vRealize Network Insight. I&#x27;m balking partly on the cost and partly on the principle of the thing.... lots of firewall products have this visibility for no extra cost once you buy the product.
+ Anyone have suggestions for alternative approaches?
+    submitted by    /u/Tx_Drewdad  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0n7rl/erspan_rspan_switch_support/"
+                        open
+                      >
+                        <summary class="article-expander__title">ERSPAN &amp; RSPAN Switch Support</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0n7rl/erspan_rspan_switch_support/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>How many switches actually support RSPAN?
+ Looking at the documentation online it looks like only the following platforms support ERSPAN.
+  
+Cisco 6500
+ Nexus switches
+ Cisco ISR 44xx
+ Cisco ASR
+ Cisco 3850 ( IOS-XE 16.x)
+  
+Does RSPAN have more support and can you pretty much RSPAN on any switch? Dell, Cisco, etc?
+    submitted by    /u/Rare_Protection  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0jjxf/issue_with_cisco_nexus_vpc_and_mac_addresses/"
+                        open
+                      >
+                        <summary class="article-expander__title">Issue with Cisco Nexus vPC and MAC addresses</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0jjxf/issue_with_cisco_nexus_vpc_and_mac_addresses/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have some relatively old Nexus 5k’s where I work. They are vPC’d together and support fex’s throughout the campus with workstations on them. 
+ We’re having an issue where some of the new workstations getting connected to the fex’s, their MAC address shows up in the table as a static mac being learned over the vPC peer link. It’s the same on both Nexuses, they both think they’re learning it from the other device. We can’t clear it out of the mac table because it’s a static (it will only let you clear dynamic), and when checking the running config on both devices there are no static MAC’s assigned to any interfaces. 
+ Has anyone seen this issue before, or found a resolution? 
+ TLDR: both our nexuses think they’re learning a static mac from the other side via the vPC peer link, but there is no static mac configured.
+    submitted by    /u/ThaDude915  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;105
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0j7rg/looking_for_options_for_near_10gbit_site_to_site/"
+                        open
+                      >
+                        <summary class="article-expander__title">Looking for options for near 10gbit site to site wifi links.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0j7rg/looking_for_options_for_near_10gbit_site_to_site/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are moving offices to a building about 200m down the street for... various reasons (dont ask). We currently have WAN links (fiber LES) to the building but the connection is sometimes problematic, and only 1gbit when its working at its best. We are going to be moving our entire office to the building so to ease this transition we want to link back to the original office with the fastest link we can reasonably set up without spending mad amounts of cash.
+ We have looked at possibly using the Unifi UBB-XG https://dl.ui.com/ds/ubb-xg_ds.pdf But its not clear if this is encrypted and/or secure. Regular raw wifi isnt an option in our setup, and laying a VPN over the top means a lot of reconfiguration of routing etc. Ideally we want to extend our broadcast domain over the wifi (not ideal but its only short term) to avoid having to reconfigure all the equipment. Also the speed appears to only be ~6gbit on a good day, despite it having 10gbit SPF+ ports.
+ Can anyone suggest a better option? Preferably someone with some experiential knowledge.
+    submitted by    /u/wk-uk  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;108
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0gols/dot1x_vlan_when_shit_hits_the_fan_and_ise_is_down/"
+                        open
+                      >
+                        <summary class="article-expander__title">Dot1x vlan when shit hits the fan and ISE is down.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0gols/dot1x_vlan_when_shit_hits_the_fan_and_ise_is_down/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi guys. I’m having kind of a dilemma here. We are trying to achieve network segmentation with port security at our work but there is something I just can’t seem to grasp on how to fix.
+ We want to use 802.1x on all access switch ports, the problem is that we use different vlans for difference devices. So printers in VLAN20, clients in VLAN10 etcetera. I want to somehow push the VLAN through authorization policies so that users can move printers without having them stop functioning.
+ I want to know what we can do about this in an event where the ISE goes down completely. I know that you can revert to a specified VLAN if the radius server goes dead. But I want that for every VLAN we use. 
+ Is that even possible?
+    submitted by    /u/BigDaddyKunkka  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;116
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y0gicm/advices_for_10_x_100g_edge_interface_router_with/"
+                        open
+                      >
+                        <summary class="article-expander__title">advices for 10 x 100G Edge interface router with full BGP table</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y0gicm/advices_for_10_x_100g_edge_interface_router_with/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ We&#x27;re considering to buy few new DC Internet Edge routers, we need them just for routing, no need MPLS or segment routing, or other &#x27;fancy&#x27; features, currently we&#x27;re using Cisco NCS-5501-SE. But it has only 4x100G ports, which is not sufficient. So we started to look to other options:
+ Cisco NCS55A1-24H - it has 24x100G, but limited scale - supports only ~2.2millions of prefixes. The maximum could be reached in a few next years. So this is not very good. Filter all /24 prefixes would be a workaround for future, but it could bring some new un expected problems, so we&#x27;re looking very carefully to this.
+ Cisco NCS 55A1-36H-SE-S - It has 36x100G with Extended scale for prefixes - support 4millions of prefixes, but seems too expensive.
+ Maybe you know so other models would be not so expensive as NCS 55A1-36H-SE-S ? Maybe something from Juniper series ? I think every DC operator with quite much internet traffic are having similar head ache these days. Any advices ? Thanks !
+    submitted by    /u/kajatonas  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -341,6 +1089,233 @@ In OSPF, While forwarding a received Type5 LSA to other area, why does the ABR n
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0vwrg/how_to_determine_if_ad_was_reverted_or_what/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to determine if AD was reverted or what happened?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0vwrg/how_to_determine_if_ad_was_reverted_or_what/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We use an MSP, but have been slowly looking to leave them. 
+ Today, something odd happened. We noticed that old users account that were once deleted now appeared back in AD. To add to this, a bunch of users that were removed from security groups for licensing purposes, were also suddenly added back to those sec groups. The MSP had dropped the ball on doing back ups for the last few months and we noticed a couple weeks ago and they have been working to get their crap together. So they have been in and out of the network working on this. 
+ I’m not entirely sure what happened and why Active Directory suddenly looks like old stuff is there and/or reverted in some way or idk, cause it’s not reverted in its entirety. 
+ What are some events or things I can look at in AD to help determined what happened here???
+    submitted by    /u/Mr_username123  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;133
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0vtno/what_degree_did_you_get/"
+                        open
+                      >
+                        <summary class="article-expander__title">What degree did you get?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0vtno/what_degree_did_you_get/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Associate&#x27;s? Bachelors? CS, CIS, IT??
+ I started off as a psych major
+    submitted by    /u/the-frog-monarch  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;122
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0v8lo/ad_delegation_help_please/"
+                        open
+                      >
+                        <summary class="article-expander__title">AD Delegation Help Please?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0v8lo/ad_delegation_help_please/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi ladies and gents,
+ ​
+ Would really appreciate some help with AD delegation please?
+ ​
+ with a delegated user,
+ I&#x27;m having a problem where, if I keep a users password as is, (for test purposes) and untick the box that says user must change password at next logon, the password is changed successfully.
+ But if I access the account tab in ADUC, I still see the &quot;user must change password at logon&quot; box is ticked.
+ If I untick and ok, I get that access is denied.
+ ​
+ what I&#x27;ve done thus far,
+ I&#x27;ve created an OU, put some users in it and created a group to whom I&#x27;d like to delegate the permissions of change, reset password, read and write lockout time, read-write pwd last reset
+ I&#x27;ve also added read and write user account control, but I&#x27;m not having any luck.
+ ​
+ Your help would be much appreciated.
+    submitted by    /u/Heathro_X  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0r8dp/waiting_on_windows_update_to_finish_so_i_can/"
+                        open
+                      >
+                        <summary class="article-expander__title">Waiting on windows update to finish so I can start a vmware cold migration (sigh)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0r8dp/waiting_on_windows_update_to_finish_so_i_can/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ll call this more of a sighing vent rather than a full rant. I&#x27;m waiting, and waiting and waiting for a customer machine that clearly hasn&#x27;t rebooted in ages to apply updates on shutdown.
+ Next time I&#x27;ll encourage a customer power cycle before our maintenance window begins. We do have larger customers with scheduled reboots and monitoring via zabbix if it&#x27;s been too long with reboots queued but this is a smaller division.
+ Just a quick sanity check, I have vm console access, I couldn&#x27;t have chosen &#x27;shutdown without updates&#x27; without credentials, correct?
+ My other choice would have been to have them shut it down from inside OS, and patch when it came up instead.
+ ​
+ edit: the therapeutic power of bitching and moaning made the box relinquish it&#x27;s hold on my time. 2.2TB to migrate and hopefully up by start of business.
+    submitted by    /u/thermbug  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0nmbm/dmarc_dkim_and_spf_request_from_a_vendor/"
+                        open
+                      >
+                        <summary class="article-expander__title">DMARC, DKIM and SPF request from a Vendor</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0nmbm/dmarc_dkim_and_spf_request_from_a_vendor/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have a vendor who is sending emails our of their system and is getting flagged for DMARC quarantine. When working with the vendor, their recommendation is to turn this off or make our customers who are receiving these emails whitelist the vendors domain. For 7000 different customers this seems pretty unreasonable. I have been asked to give our management options on what to do. Here is what I have so far. 
+ 1) move systems to a different account receivable software that will sending information 
+ 2) email all customers to whitelist the domain
+ 3) turn off DMARC quarantine option. 
+ ​
+ Personally I don&#x27;t think 3 is an option but my direct manager wanted it there. I am leaning strongly towards 1 if the vendor cannot find a way to sending this in a secure fashion. Any helpful tips?
+    submitted by    /u/knighttown  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;140
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0mors/anyone_done_per_vmcore_licensing_of_windows/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone done per VM-core licensing of Windows Server yet? (new alternative to per physical-core)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0mors/anyone_done_per_vmcore_licensing_of_windows/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/XMleTY9rhb6OMQSsge4sftpSJzuZu89HcwO7hBSzxHA.jpg?auto&#x3D;webp&amp;s&#x3D;3c07571cfc8eda2df1e04d71f1d6e73791665ead" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>On Oct 1, Microsoft announced that they were changing some licensing requirements for Windows Server.(link)
+ Our reseller was trying to tell us that this only applies to Hosting Companies/MSPs, but this video says that it also applies to on-prem.
+ https://www.youtube.com/watch?v&#x3D;Kf9W0mWxEV8
+ https://www.youtube.com/watch?v&#x3D;e9eeXxH4hJw
+ We recently purchased some new server hardware with a lot of excess capacity and it&#x27;s painful to pay for DataCenter licenses for all of the cores when they&#x27;re not being used. My hope was that if I could license per VM cores, it might end up being cheaper than licensing per Hardware-cores.
+ I&#x27;m trying to figure out some ballpark pricing but can&#x27;t find any details anywhere. Has anyone done this and would be willing to share?
+    submitted by    /u/Forgery  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0kbis/phone_cutover/"
+                        open
+                      >
+                        <summary class="article-expander__title">Phone Cutover</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0kbis/phone_cutover/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Post of relief that a project final comes to a close tomorrow. 
+ This isn&#x27;t anything special, this is my third phone system cutover in 9 years here. We went on-Prem Intertel to ShoreTelSky to a on-prem Mitel 3300/MiCollab system, and now we&#x27;re switching to Zoom Phone. And we&#x27;re only 115 or so extensions, most DID&#x27;s with just a few AA&#x27;s and groups. 
+ My biggest issue. Comcast. We moved all 200+ of our DID&#x27;s to Comcast and used Comcast SIP (Via Fiber) for our OnPrem Mitel system. Getting them off Comcast has been a GIANT PITA. We&#x27;re forced to use Comcast for fiber services more or less, but for the love of god and all that is holy never put your phone system eggs in their basket if you even plan on moving from them. 
+ We have had open port requests with them for over 4 months. 4 MONTHS We we…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;160
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0iogi/ms_is_working_on_disabling_basic_auth_today_fyi/"
+                        open
+                      >
+                        <summary class="article-expander__title">MS is working on disabling basic auth today, FYI.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0iogi/ms_is_working_on_disabling_basic_auth_today_fyi/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>https://portal.office.com/adminportal/home#/servicehealth/:/alerts/EX444315
+ Exchange Online Basic Auth Deprecation in Progress EX444315, Last updated: October 9, 2022 9:59 AM Estimated start time: October 8, 2022 5:00 PM
+ We&#x27;ve had a number of users that SHOULD default to modern auth but that doesn&#x27;t always seem to be the case. We&#x27;re currently working on forcing to modern auth via GP.
+ Happy Canadian Thanksgiving! ...grumble...grumble...
+    submitted by    /u/FarceMultiplier  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y0hepi/servicenow_down/"
+                        open
+                      >
+                        <summary class="article-expander__title">ServiceNow down?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y0hepi/servicenow_down/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We cannot get our support portal to load. Took a look at Downdetector and it seems to be widespread. 
+ Anyone else actually able to get it working? I don&#x27;t think they have a status page.
+    submitted by    /u/B0ndzai  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;106
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -1403,6 +2378,68 @@ Now the cherry on top of this, we can also create a custom authentication type b
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;129
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;WVjtK71qqXU"
+                        open
+                      >
+                        <summary class="article-expander__title">I bought a SECOND GPU… but NOT for gaming…</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;WVjtK71qqXU">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Lawrence Systems</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;t_W_TfdeDn0"
+                        open
+                      >
+                        <summary class="article-expander__title">The Homelab Show Episode 75: Homelab Privacy, Security, and Q&amp;A</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;t_W_TfdeDn0">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -26620,55 +27657,10 @@ Deploy to a test/dev environment before prod.
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-11 datetime="2022-09-11T08:30:00.000Z">2022-09-11</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-11 datetime="2022-09-11T08:30:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Morning Wire</button>
-                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="058dbf3f-bc2e-415a-90c5-467035230cfe"
-                        open
-                      >
-                        <summary class="article-expander__title">The Afghan Allies Left Behind | 9.11.22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Just over a year after the U.S. withdrew from Afghanistan, thousands of American allies remain there – hunted daily by the Taliban, with little hope of escaping the war torn country. We speak with retired Green Beret Scott Mann who founded task force pineapple, a volunteer group that collaborates with the U.S. military in keeping U.S. allies out of harm&#x27;s way. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3220156628">
-        <time id="build-timestamp" datetime="2022-10-10T14:37:28.808Z">2022-10-10T14:37:28.808Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3225642157">
+        <time id="build-timestamp" datetime="2022-10-11T09:22:06.879Z">2022-10-11T09:22:06.879Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
