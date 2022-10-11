@@ -340,6 +340,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y1aejv/whats_the_worst_network_anyone_has_worked_on/",
+          "author": null,
+          "description": "working on a network migration for a customer and I think I've got the cake for the worst network I've ever worked on, but I'm curios to see everyone elses experiences. \n Static assigned hostnames (no working DNS), NICs, IP's and of course persistent static routes. \n They never had L3 router in the environment to do the routing, they've relied on host routes lol\n    submitted by    /u/SpaceF1sh69  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y1aejv/whats_the_worst_network_anyone_has_worked_on/",
+          "publishedOn": "2022-10-11T14:25:06.000Z",
+          "wordCount": 31251,
+          "title": "Whats the worst network anyone has worked on?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y19zkz/winrm_cert_mapping_wefwec_insecure/",
+          "author": null,
+          "description": "Following the MS article on setting up WEF/WEC using certificate authentication. It says to create an admin user and map the issuing CA cert to the admin user. Does this mean any client using a cert issued by that CA can call into the WEC server as an admin? That seems like a big hole. I can't find further info explaining why that user has to be an admin. I just want these clients to be able to forward their events. Any ideas? Thanks!\n https://learn.microsoft.com/en-us/windows/win32/wec/setting-up-a-source-initiated-subscription#configure-certificate-mapping-on-the-event-collector\n    submitted by    /u/CogitatingFuriously  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y19zkz/winrm_cert_mapping_wefwec_insecure/",
+          "publishedOn": "2022-10-11T14:07:17.000Z",
+          "wordCount": 31289,
+          "title": "WinRM, Cert mapping, WEF/WEC = insecure?",
+          "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&s=e62264227377a9581e2e2946169864d130fa3217"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y19za3/drive_mappingverification_via_powershell_looking/",
+          "author": null,
+          "description": "I'm configuring an Intune environment and testing with drive mappings. I have a single Z: drive using OMA-URI configurations similar to this article, initially works fine. But every day it seems to try to remap it. I end up with an inaccessible Z: drive with a red X over it saying the drive letter is already in use, and then I have a Y: drive mapped to the location the Z: drive originally was, also saying the path isn't available.\n I have to remove both, remap Z: and it's fine again.\n What I'm looking to do is a (hopefully) simple powershell script that maps that drive, that I can package as an app instead of a script or configuration profile.\n I can make a script that simply maps the drive with net use easy enough and send output to a file that I can use for \"install\" detection, but I feel that having a check for the existing drive letter(s) first would be best since there are plenty of already-deployed Intune machines in production that will end up getting this new \"app\"/script applied.\n I realize I'm \"asking for the fish\" here, when I'd normally prefer to learn how to fish myself, but given that this is already in production I'm hoping a few of you might have the time and be willing to help me out.\n I can do a basic script in the meantime that will just blanket remove Z: and Y:, remap Z:, and send the output somewhere the user won't accidentally delete it, but I'm sure there are much more efficient ways to do so.\n Ultimately what I am hoping to accomplish:\n  \nCheck existing drive mappings (I've found that it doesn't add a 3rd letter, so can probably focus directly on Z: and Y:)\n Remove existing mappings\n Remap Z: to the proper path\n Check Z: to confirm its accessible\n If Z: is fine, send some output to a text file that can be used for program detection so that it's not constantly executing against the same machines\n  \n   submitted by    /u/legalthrow420  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y19za3/drive_mappingverification_via_powershell_looking/",
+          "publishedOn": "2022-10-11T14:06:54.000Z",
+          "wordCount": 31791,
+          "title": "Drive mapping/verification via Powershell - Looking for some guidance",
+          "imageUrl": "https://external-preview.redd.it/MmCpuS02XgqiPIGBQhjFACsGukkygZ1NaFcFoBYTJ7U.jpg?auto=webp&s=ae1c2a942a213d3f10b799ef84eb129d1834d1b3"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y19rho/isolate_workstation_from_network_but_allow_access/",
+          "author": null,
+          "description": "Hello Admins!\n I have a situation where I have some clients working from home. Due to compliance, I have to prevent them from being able to talk to other devices on the network (such as home PCs, IoT devices, etc...).\n We use ESET Endpoint Antivirus and RocketCyber SIEM/SOC software. Both of those applications have an isolation mode that prevents that PC from talking to anything other than the ESET/RocketCyber console.\n Is there anyway to achieve this type of protection using only software, but still allow WAN/Internet access (so basically it can talk to the gateway and nothing else). The isolation modes in the applications I mention, prevent general WAN/Internet access as well... so they won't work in this situation.\n However, since they are able to lock it down to a specific port/application... I assume there must be some way to do what I am describing. I searched around looking for Windows Firewall rules, but those seem to be limited to very specific protocols/ports. I would like true isolation like Wireless access points do in Guest mode.\n Since this is in multiple home networks, I don't really have the option to create network segmentation (VLANs, etc...).\n Any help is greatly appreciated :)\n    submitted by    /u/g2tegsown  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y19rho/isolate_workstation_from_network_but_allow_access/",
+          "publishedOn": "2022-10-11T13:57:55.000Z",
+          "wordCount": 31612,
+          "title": "Isolate Workstation from Network, but allow access to the gateway? (Work from home scenario)",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/y19kc2/your_access_to_this_mail_system_has_been_rejected/",
           "author": null,
           "description": "This is happening with emails being sent to our smtp relay server. \n The emails are being sent to a CI/CD pipeline from containers running on our aws delivery platform.\n The ip addresses are internal... class a private ips.\n I received a ticket this morning to request to whitelist the ip addresses to fix the issue.\n I do not think that would fix the issue, as they are interal ips... I'm a bit confused here. Has anyone ever ran into this?\n    submitted by    /u/PlaneTry4277  \n [link]   [comments]",

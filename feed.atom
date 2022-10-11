@@ -2,10 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-11T13:53:08.795Z</updated>
+    <updated>2022-10-11T14:29:08.782Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Whats the worst network anyone has worked on?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y1aejv/whats_the_worst_network_anyone_has_worked_on/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y1aejv/whats_the_worst_network_anyone_has_worked_on/"/>
+        <updated>2022-10-11T14:25:06.000Z</updated>
+        <summary type="html"><![CDATA[working on a network migration for a customer and I think I've got the cake for the worst network I've ever worked on, but I'm curios to see everyone elses experiences. 
+ Static assigned hostnames (no working DNS), NICs, IP's and of course persistent static routes. 
+ They never had L3 router in the environment to do the routing, they've relied on host routes lol
+    submitted by    /u/SpaceF1sh69  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WinRM, Cert mapping, WEF/WEC = insecure?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y19zkz/winrm_cert_mapping_wefwec_insecure/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y19zkz/winrm_cert_mapping_wefwec_insecure/"/>
+        <updated>2022-10-11T14:07:17.000Z</updated>
+        <summary type="html"><![CDATA[Following the MS article on setting up WEF/WEC using certificate authentication. It says to create an admin user and map the issuing CA cert to the admin user. Does this mean any client using a cert issued by that CA can call into the WEC server as an admin? That seems like a big hole. I can't find further info explaining why that user has to be an admin. I just want these clients to be able to forward their events. Any ideas? Thanks!
+ https://learn.microsoft.com/en-us/windows/win32/wec/setting-up-a-source-initiated-subscription#configure-certificate-mapping-on-the-event-collector
+    submitted by    /u/CogitatingFuriously  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Drive mapping/verification via Powershell - Looking for some guidance]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y19za3/drive_mappingverification_via_powershell_looking/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y19za3/drive_mappingverification_via_powershell_looking/"/>
+        <updated>2022-10-11T14:06:54.000Z</updated>
+        <summary type="html"><![CDATA[I'm configuring an Intune environment and testing with drive mappings. I have a single Z: drive using OMA-URI configurations similar to this article, initially works fine. But every day it seems to try to remap it. I end up with an inaccessible Z: drive with a red X over it saying the drive letter is already in use, and then I have a Y: drive mapped to the location the Z: drive originally was, also saying the path isn't available.
+ I have to remove both, remap Z: and it's fine again.
+ What I'm looking to do is a (hopefully) simple powershell script that maps that drive, that I can package as an app instead of a script or configuration profile.
+ I can make a script that simply maps the drive with net use easy enough and send output to a file that I can use for "install" detection, but I feel that having a check for the existing drive letter(s) first would be best since there are plenty of already-deployed Intune machines in production that will end up getting this new "app"/script applied.
+ I realize I'm "asking for the fish" here, when I'd normally prefer to learn how to fish myself, but given that this is already in production I'm hoping a few of you might have the time and be willing to help me out.
+ I can do a basic script in the meantime that will just blanket remove Z: and Y:, remap Z:, and send the output somewhere the user won't accidentally delete it, but I'm sure there are much more efficient ways to do so.
+ Ultimately what I am hoping to accomplish:
+  
+Check existing drive mappings (I've found that it doesn't add a 3rd letter, so can probably focus directly on Z: and Y:)
+ Remove existing mappings
+ Remap Z: to the proper path
+ Check Z: to confirm its accessible
+ If Z: is fine, send some output to a text file that can be used for program detection so that it's not constantly executing against the same machines
+  
+   submitted by    /u/legalthrow420  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Isolate Workstation from Network, but allow access to the gateway? (Work from home scenario)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y19rho/isolate_workstation_from_network_but_allow_access/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y19rho/isolate_workstation_from_network_but_allow_access/"/>
+        <updated>2022-10-11T13:57:55.000Z</updated>
+        <summary type="html"><![CDATA[Hello Admins!
+ I have a situation where I have some clients working from home. Due to compliance, I have to prevent them from being able to talk to other devices on the network (such as home PCs, IoT devices, etc...).
+ We use ESET Endpoint Antivirus and RocketCyber SIEM/SOC software. Both of those applications have an isolation mode that prevents that PC from talking to anything other than the ESET/RocketCyber console.
+ Is there anyway to achieve this type of protection using only software, but still allow WAN/Internet access (so basically it can talk to the gateway and nothing else). The isolation modes in the applications I mention, prevent general WAN/Internet access as well... so they won't work in this situation.
+ However, since they are able to lock it down to a specific port/application... I assume there must be some way to do what I am describing. I searched around looking for Windows Firewall rules, but those seem to be limited to very specific protocols/ports. I would like true isolation like Wireless access points do in Guest mode.
+ Since this is in multiple home networks, I don't really have the option to create network segmentation (VLANs, etc...).
+ Any help is greatly appreciated :)
+    submitted by    /u/g2tegsown  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA["Your access to this mail system has been rejected due to the sending MTA's poor reputation"]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/y19kc2/your_access_to_this_mail_system_has_been_rejected/</id>
