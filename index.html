@@ -22,168 +22,11 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-12 datetime="2022-10-12T10:10:36.000Z">2022-10-12</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-12 datetime="2022-10-12T10:10:36.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-12 datetime="2022-10-12T11:13:40.000Z">2022-10-12</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-12 datetime="2022-10-12T11:13:40.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1zyye/cisco_asr1002_espgcm_256_not_supported/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cisco ASR1002 | ESP-GCM 256 not supported</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1zyye/cisco_asr1002_espgcm_256_not_supported/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I think I know the answer to this because it&#x27;s glaringly obvious from the error message.. But is it possible to run esp-gcm 256 on an ASR1002? When I try configure it I get an error:
- Transform set NGE-ESP-GCM disabled because esp-gcm 256 is not supported by encryption hardware
- I&#x27;m just posting in the hope that I&#x27;ve missed something and it could maybe be enabled somehow.
- According to this doc, it should be possible.
- Thanks
-    submitted by    /u/Tars-01  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;130
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1z4la/100g_dwdm_at_1550nm_over_80km/"
-                        open
-                      >
-                        <summary class="article-expander__title">100G DWDM at 1550nm over 80KM?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1z4la/100g_dwdm_at_1550nm_over_80km/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi,
- Not sure if I’m somehow missing it, but we’re implementing some 80KM dark fiber and we purchased some 100G 80KM QSFP28 modules at 1310nm. However, the loss is a bit high (no link possible) so we wanted to try 1550nm which of course has better attenuation figures, but I can’t locate any QSFP28 100G modules operating at 1550nm??
- Funnily enough though I have found posts in this subreddit with people saying that at 80KM all DWDM modules will be 1550nm - but the exact opposite seems to be true.
- The loss over the link appears to be about 23-26dBm according to our 10G 1650nm 80KM modules, so I’d expect at 1310 it’s closer to 36db of loss.
- I assume the recommendation would be EDFA, but any other suggestions for reliable 100G over this link would be appreciated :)
- Thanks!
-    submitted by    /u/TryTurnItOffAndOnAgn  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;130
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1ycf6/help_with_mab_policy_on_nps/"
-                        open
-                      >
-                        <summary class="article-expander__title">Help with MAB policy on NPS</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1ycf6/help_with_mab_policy_on_nps/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi All, 
- I&#x27;m running a small scale test on 802.1x in preparation for a company-wide rollout. We&#x27;re using Cisco catalyst + Microsoft NPS with EAPTLS. On the Windows side of thing everything is working flawlessly but I&#x27;m struggling to get a working MAB policy on NPS for the IP Phones (This model does not support 802.1x) 
- I have seen a few methods of configuring MAB on NPS. One involves setting up a user with username/password as the MAC address. This wont work in my environment as the password is just getting rejected due to complexity requirements. 
- The 2nd method I have seen involves setting up a connection request policy like so : 
- Conditions: 
-  
-NAS Port Type &#x3D; Ethernet
- Calling Station ID &#x3D; ^00-00-00-00-00$|^11-11-11-11-11$ 
-  
-Authentication: 
-  
-&#x27;Accept users without verifying credentials&#x27;
-  
-The the switchport is configured like so: 
- interface GigabitEthernet1/0/1 description Access-Port switchport access vlan 101 switchport mode access switchport voice vlan 107 access-session host-mode multi-domain access-session closed access-session port-control auto mab dot1x pae authenticator spanning-tree portfast spanning-tree bpduguard enable service-policy type control subscriber DOT1X2MAB end 
- When connecting the PC works fine, but the IP phone is failing , then the switchport gets err disabled as a result. Is anyone able to advise on where I am going wrong ? Documentation on MAB in NPS seems to be lacking
-    submitted by    /u/CCTG  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;132
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1xvnh/how_to_get_full_failover_working_diagram_included/"
-                        open
-                      >
-                        <summary class="article-expander__title">How to get full failover working : Diagram included</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1xvnh/how_to_get_full_failover_working_diagram_included/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/v4TcZ5hgthjlLg4TJHOyKpZYk93k3yi2umOC5_M3j2g.jpg?auto&#x3D;webp&amp;s&#x3D;660a2acf2f88f3b08bb1f08b78b0872705723e03" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>I&#x27;m in a bind to look for an elegant solution to get the following failover solution working and I wondered if anyone here might have any ideas? 
- Diagram as follows : Diagram 
- Simple two site setup with both sites having their own WAN link for internet as well as site to site connectivity. 
- The MPLS wans are setup with eBGP so each Cisco router receives the prefix of the other site via that WAN link for reachability to each other. 
- The LANs of both routers are setup with two subnets and are setup using VRRP. with each router acting as the active VRRP group for each subnet: 
- Site1 : 192.168.1.254
- Site2 : 192.168.0.254
- VRRP is setup so in the event of the WAN going down the other router takes over as VRRP master. 
- This means that as well as resilience that both WAN links are fully utilised instead of all traffic just using the one WAN link. All good! 
- The issue is that due to the point to point interface and VRRP that if the point to point dies so site1 can no longer reach site2 using the point to point that you would want that traffic to go out via the WAN into the MPLS to reach the other site. 
- The problem is of course it won&#x27;t do that due to each of the Cisco routers having LAN&#x27;s which belong to both subnets. So if traffic was going from Site1 to Site2 then as soon as those packets destined for 192.168.0.0/24 hit the Site1 router then it would just not send it out&#x27;s its WAN as it has an interface belonging to that subnet which is up and part of the VRRP group. 
- This is the problem I&#x27;m trying to solve. A solution which I don&#x27;t like is to create a EMM script which will shut down that LAN in the event traffic is no longer using the P2P but I don&#x27;t like how messy that could be. 
- Anyone got any ideas or suggestions then I&#x27;m open to them :) 
- I hope that made at least some sense?
-    submitted by    /u/Busbyuk  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;132
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1v64i/dhcp_server_issue/"
-                        open
-                      >
-                        <summary class="article-expander__title">DHCP server issue</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1v64i/dhcp_server_issue/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We are basically sailing this boat until we move to a new office and will replace all the network equipment. We have a weird issue with the DHCP server. Every time we onboard a new user and plug in their new device it just gives us a unidentified network. But any other user on the network that was there a couple months back can get an address. I&#x27;ve tried statically assigning the wired endpoints with no luck. The other weird thing is when we connect to the Main wifi, it states not internet and when I statically assign an unused IP address, it then works just fine. We have 3 managed switches that I have tried plugging my laptop directly in and still have no luck.
-    submitted by    /u/onisimus  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;129
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -195,6 +38,203 @@ The the switchport is configured like so:
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y213y9/exchange_online_bookin_in_rooms_currently_not/"
+                        open
+                      >
+                        <summary class="article-expander__title">Exchange Online - BookIn in Rooms currently not possible</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y213y9/exchange_online_bookin_in_rooms_currently_not/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello Sysadmin-Community,
+ in our company (about 240 meeting rooms) we have a malfunction that it is not possible to book a room directly. 
+ You mostly get a tentative message back and the Delegates needs to approve it. As a temporary workaround, all users are now able to book any room.
+ All the BookIns worked normal before we updated our Exchange OnPrem-Server to the new SU August and activated Extended Protection. We have a Exchange-Hybrid-Environment. 
+ Is anyone else having this issure? Thanks for all answers.
+    submitted by    /u/lukasiam  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y20o3s/windows_focus_assist_managing_the_list_of/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows Focus Assist - managing the list of priority apps via script/GPO</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y20o3s/windows_focus_assist_managing_the_list_of/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I got several cases, where users complain that after Monthly patches being installed they see only one notification from Software Center (Config Manager), it&#x27;s the last one which gives them 15 minutes to a forced reboot. It was not a case for everyone so I started digging and I found that it happens only for people who use the &quot;Focus Assist&quot; feature in Windows 10 (former name &quot;Quiet hours&quot;). So it was obvious that people who have set &quot;Alarms only&quot; won&#x27;t see the reboot notifications, but there is also an option called &quot;Priority only&quot;, where you can select applications that can show notifications - this works well when the user chooses Software Center as a priority app manually, via the GUI.
+ I&#x27;m wondering if anyone knows a way to centrally add items to the priority applications list (via GPO or script)?
+ The ideal solution would be to:
+  
+Disable &quot;Alarms only&quot; mode in Focus Assist
+ have a possibility to add &quot;Software Center&quot; to the priority list applications
+  
+   submitted by    /u/TheM4jor  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y20mpd/external_domain_trust_with_selective/"
+                        open
+                      >
+                        <summary class="article-expander__title">External Domain Trust with Selective Authentication</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y20mpd/external_domain_trust_with_selective/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ i need to configure an Domain Trust with a different site which has its own IT.
+ I dont want them to see and configure anything on our site/Domain, thats why i want to implement an External Domain Trust - Non-Transitive with Selective Authentication.
+ I set it up in my lab and the only thing i dont understand is, how the other Domain should make use of the Selective Authentication when he doesnt have access to our Domain to select the Users which should be able to authenticate on their resources.
+ When i click on the resource domain on ntfs settings, i can change the location to the other Domain but will be prompted for credentials access it.
+ How can i manage it so the other Site can configure their Selective Authentication without Domain Credentials from my Domain?
+ i cant really find any resource on that.. Just some Videos where they enter the Domain Admin from the Domain, which is a huge security concern for me.
+ ​
+ Thank you!
+    submitted by    /u/jimstar95  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y20mea/rebuilding_a_large_school/"
+                        open
+                      >
+                        <summary class="article-expander__title">Rebuilding a large school</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y20mea/rebuilding_a_large_school/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey guys, just seeking advice here.
+ My IT team has recently been hired to work at a 1300+ user school and have taken over the whole operation from the old staff. It’s a mix of around 300 BYOD laptops and 1000 supplied Windows laptops.
+ The virtual infrastructure is an absolute mess. Blends of Server 2012/2016 VM’s running on an outdated ESXI host.
+ We would like to rebuild the VM’s for starters (File/Print, DC1, DC2, NPS) but we’re not sure how to do this to minimise downtime, especially for the BYOD devices.
+ The file/print server would be the biggest headache. Next would be cutting over NPS and making sure all of the devices connect up okay.
+ How do you even begin to do this to prevent any downtime/issues with a site of this scale?
+    submitted by    /u/htmlnoob52  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;133
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y20ifv/user_ethernet_drop_on_2_laptops/"
+                        open
+                      >
+                        <summary class="article-expander__title">User ethernet drop on 2 laptops</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y20ifv/user_ethernet_drop_on_2_laptops/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>This problem stumps me and my colleagues to no end...
+ I&#x27;m hoping someone here can help think this through?
+ One of our endusers has the problem where his ethernet connection drops at random intervals, and his Wi-Fi doesn&#x27;t pick up the slack automatically either.
+ Here&#x27;s what we tried:
+  
+New UTP cable
+ New docking station
+ Connected the cable directly (without docking station)
+ Gave him another laptop (issue occurs on 2 laptops now)
+ Colleagues tried the same outlets/the same cables, and they can work just fine
+  
+There are no overarching GPOs on his laptop that cause this.
+ One thing we saw was that his domain firewall profile was set to ON while it should be OFF.
+ That can&#x27;t be the cause because it was the same for me and I have no issues whatsoever.
+ I started checking winevt logs.
+ We can pinpoint when the system dropped UTP and the user had to manually connect to Wi-Fi instead:
+ A request was made to authenticate to a wireless network.
+ Logged: 12/10/2022 11:05:32
+ Checked the Security winevt logs; all we saw was the firewall started to check all policies right after the system lost UTP connection. After Googling possible ethernet drop issues I wanted to disable the Energy/Green Energy/Wake on Magic settings in his ethernet adapter to see if that could help, but I can&#x27;t reach his device right now. When he&#x27;s forced to make a manual switch to Wi-Fi we have to reverse connect to his laptop and then run an ipconfig /registerdns before we can continue troubleshooting (most likely due to the fact we are in the middle of a DNS server cutover and those managing the transfer are veggies...).
+ Even though, these are all things that shouldn&#x27;t transfer from one laptop to another yet he&#x27;s had the problem on 2 laptops one after the other now.
+ Anyone have any clue on what could be causing this issue?
+    submitted by    /u/kalelfaneditor  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;137
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y20i4o/auditing_your_it_environment/"
+                        open
+                      >
+                        <summary class="article-expander__title">Auditing your IT environment</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y20i4o/auditing_your_it_environment/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I want to audit my windows/Linux shop now that the senior IT has left to understand what is the current situation.
+ What tools/techniques do you recommend? I have started to configure GVM on Kali Linux but I’m sure I’ll need more than that. Any experiences would be very welcome
+    submitted by    /u/chris_redz  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y20ewq/even_though_user_dont_have_a_permission_to_send/"
+                        open
+                      >
+                        <summary class="article-expander__title">Even though user don&#x27;t have a permission to send to mail group user can send mail to restricted mail group in Exchange 2013</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y20ewq/even_though_user_dont_have_a_permission_to_send/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi there,
+ I am using exch2013, i have restricted the distribution group to receive email only from particular users.
+ but very strange Even though user don&#x27;t have a permission to send to mail group user can send mail to this restricted mail group.
+ ​
+ has anyone experienced something similar?
+ ​
+ Thanks,
+    submitted by    /u/maxcoder88  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -396,6 +436,209 @@ The the switchport is configured like so:
     submitted by    /u/decduck  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y20pbj/undo_passwordrecovery_enable_not_recognized/"
+                        open
+                      >
+                        <summary class="article-expander__title">&#x27;&#x27;undo password-recovery enable&#x27;&#x27; not recognized (HP1920-24G JG924A)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y20pbj/undo_passwordrecovery_enable_not_recognized/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi Friends! i was trying to reset a &#x27;&#x27;HP1920-24G JG924A&#x27;&#x27; Switch to factory default settings in PuTTY But everytime i Skip configuration file and get into the CLI and i type &#x27;&#x27;undo password-recovery enable&#x27;&#x27; it does not wanna work. Instead it just says: &#x27;&#x27;command not recognized at the line&#x27;&#x27; i can&#x27;t find anything on Google, so if anyone knows how i can fix this it would be grealty appreciated!
+    submitted by    /u/BramInDeBuurt1111111  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y20gl0/xpost_from_rubiquity_access_zerotier_network_via/"
+                        open
+                      >
+                        <summary class="article-expander__title">x-post from /r/Ubiquity - Access ZeroTier network via LAN device (mac mini)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y20gl0/xpost_from_rubiquity_access_zerotier_network_via/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all, I have a UDM Pro SE which has fiber on WAN1 and a 4G router on WAN2 (a Teltonika RUT241).
+ The 4G router does CGNAT, so in order to easily reach the Web GUI for admin purposes I&#x27;ve installed ZeroTier on it and it works well, I can reach it from a LAN device (a mac mini) with ZeroTier installed.
+ BUT, Tailscale works so much better for me, so that&#x27;s what I&#x27;m using on all other devices (the 4G router doesn&#x27;t support Tailscale, only ZeroTier).
+ My question is if I can somehow bride the LAN to the ZeroTier network using the mac mini as a bridge since it has a network interface for both networks? When I&#x27;m inside my LAN using Tailscale I&#x27;d like to route traffic to the Zerotier network (192.168.192.0/24) via the mac mini.
+ I&#x27;m guessing I should setup a static route, pointing traffic going to the destination network 192.168.192.0/24 through the LAN device on 192.168.5.142 (the mac mini), but do I need to do something on the mac mini to make this work?
+    submitted by    /u/goodyear77  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1zyye/cisco_asr1002_espgcm_256_not_supported/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco ASR1002 | ESP-GCM 256 not supported</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1zyye/cisco_asr1002_espgcm_256_not_supported/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I think I know the answer to this because it&#x27;s glaringly obvious from the error message.. But is it possible to run esp-gcm 256 on an ASR1002? When I try configure it I get an error:
+ Transform set NGE-ESP-GCM disabled because esp-gcm 256 is not supported by encryption hardware
+ I&#x27;m just posting in the hope that I&#x27;ve missed something and it could maybe be enabled somehow.
+ According to this doc, it should be possible.
+ Thanks
+    submitted by    /u/Tars-01  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1z4la/100g_dwdm_at_1550nm_over_80km/"
+                        open
+                      >
+                        <summary class="article-expander__title">100G DWDM at 1550nm over 80KM?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1z4la/100g_dwdm_at_1550nm_over_80km/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ Not sure if I’m somehow missing it, but we’re implementing some 80KM dark fiber and we purchased some 100G 80KM QSFP28 modules at 1310nm. However, the loss is a bit high (no link possible) so we wanted to try 1550nm which of course has better attenuation figures, but I can’t locate any QSFP28 100G modules operating at 1550nm??
+ Funnily enough though I have found posts in this subreddit with people saying that at 80KM all DWDM modules will be 1550nm - but the exact opposite seems to be true.
+ The loss over the link appears to be about 23-26dBm according to our 10G 1650nm 80KM modules, so I’d expect at 1310 it’s closer to 36db of loss.
+ I assume the recommendation would be EDFA, but any other suggestions for reliable 100G over this link would be appreciated :)
+ Thanks!
+    submitted by    /u/TryTurnItOffAndOnAgn  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1ycf6/help_with_mab_policy_on_nps/"
+                        open
+                      >
+                        <summary class="article-expander__title">Help with MAB policy on NPS</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1ycf6/help_with_mab_policy_on_nps/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All, 
+ I&#x27;m running a small scale test on 802.1x in preparation for a company-wide rollout. We&#x27;re using Cisco catalyst + Microsoft NPS with EAPTLS. On the Windows side of thing everything is working flawlessly but I&#x27;m struggling to get a working MAB policy on NPS for the IP Phones (This model does not support 802.1x) 
+ I have seen a few methods of configuring MAB on NPS. One involves setting up a user with username/password as the MAC address. This wont work in my environment as the password is just getting rejected due to complexity requirements. 
+ The 2nd method I have seen involves setting up a connection request policy like so : 
+ Conditions: 
+  
+NAS Port Type &#x3D; Ethernet
+ Calling Station ID &#x3D; ^00-00-00-00-00$|^11-11-11-11-11$ 
+  
+Authentication: 
+  
+&#x27;Accept users without verifying credentials&#x27;
+  
+The the switchport is configured like so: 
+ interface GigabitEthernet1/0/1 description Access-Port switchport access vlan 101 switchport mode access switchport voice vlan 107 access-session host-mode multi-domain access-session closed access-session port-control auto mab dot1x pae authenticator spanning-tree portfast spanning-tree bpduguard enable service-policy type control subscriber DOT1X2MAB end 
+ When connecting the PC works fine, but the IP phone is failing , then the switchport gets err disabled as a result. Is anyone able to advise on where I am going wrong ? Documentation on MAB in NPS seems to be lacking
+    submitted by    /u/CCTG  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1xvnh/how_to_get_full_failover_working_diagram_included/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to get full failover working : Diagram included</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1xvnh/how_to_get_full_failover_working_diagram_included/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/v4TcZ5hgthjlLg4TJHOyKpZYk93k3yi2umOC5_M3j2g.jpg?auto&#x3D;webp&amp;s&#x3D;660a2acf2f88f3b08bb1f08b78b0872705723e03" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I&#x27;m in a bind to look for an elegant solution to get the following failover solution working and I wondered if anyone here might have any ideas? 
+ Diagram as follows : Diagram 
+ Simple two site setup with both sites having their own WAN link for internet as well as site to site connectivity. 
+ The MPLS wans are setup with eBGP so each Cisco router receives the prefix of the other site via that WAN link for reachability to each other. 
+ The LANs of both routers are setup with two subnets and are setup using VRRP. with each router acting as the active VRRP group for each subnet: 
+ Site1 : 192.168.1.254
+ Site2 : 192.168.0.254
+ VRRP is setup so in the event of the WAN going down the other router takes over as VRRP master. 
+ This means that as well as resilience that both WAN links are fully utilised instead of all traffic just using the one WAN link. All good! 
+ The issue is that due to the point to point interface and VRRP that if the point to point dies so site1 can no longer reach site2 using the point to point that you would want that traffic to go out via the WAN into the MPLS to reach the other site. 
+ The problem is of course it won&#x27;t do that due to each of the Cisco routers having LAN&#x27;s which belong to both subnets. So if traffic was going from Site1 to Site2 then as soon as those packets destined for 192.168.0.0/24 hit the Site1 router then it would just not send it out&#x27;s its WAN as it has an interface belonging to that subnet which is up and part of the VRRP group. 
+ This is the problem I&#x27;m trying to solve. A solution which I don&#x27;t like is to create a EMM script which will shut down that LAN in the event traffic is no longer using the P2P but I don&#x27;t like how messy that could be. 
+ Anyone got any ideas or suggestions then I&#x27;m open to them :) 
+ I hope that made at least some sense?
+    submitted by    /u/Busbyuk  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y1v64i/dhcp_server_issue/"
+                        open
+                      >
+                        <summary class="article-expander__title">DHCP server issue</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y1v64i/dhcp_server_issue/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are basically sailing this boat until we move to a new office and will replace all the network equipment. We have a weird issue with the DHCP server. Every time we onboard a new user and plug in their new device it just gives us a unidentified network. But any other user on the network that was there a couple months back can get an address. I&#x27;ve tried statically assigning the wired endpoints with no luck. The other weird thing is when we connect to the Main wifi, it states not internet and when I statically assign an unused IP address, it then works just fine. We have 3 managed switches that I have tried plugging my laptop directly in and still have no luck.
+    submitted by    /u/onisimus  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -29669,8 +29912,8 @@ Deploy to a test/dev environment before prod.
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3233881316">
-        <time id="build-timestamp" datetime="2022-10-12T10:20:01.970Z">2022-10-12T10:20:01.970Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3234216499">
+        <time id="build-timestamp" datetime="2022-10-12T11:16:01.305Z">2022-10-12T11:16:01.305Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

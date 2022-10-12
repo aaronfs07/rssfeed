@@ -330,6 +330,76 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y213y9/exchange_online_bookin_in_rooms_currently_not/",
+          "author": null,
+          "description": "Hello Sysadmin-Community,\n in our company (about 240 meeting rooms) we have a malfunction that it is not possible to book a room directly. \n You mostly get a tentative message back and the Delegates needs to approve it. As a temporary workaround, all users are now able to book any room.\n All the BookIns worked normal before we updated our Exchange OnPrem-Server to the new SU August and activated Extended Protection. We have a Exchange-Hybrid-Environment. \n Is anyone else having this issure? Thanks for all answers.\n    submitted by    /u/lukasiam  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y213y9/exchange_online_bookin_in_rooms_currently_not/",
+          "publishedOn": "2022-10-12T11:13:40.000Z",
+          "wordCount": 40583,
+          "title": "Exchange Online - BookIn in Rooms currently not possible",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y20o3s/windows_focus_assist_managing_the_list_of/",
+          "author": null,
+          "description": "I got several cases, where users complain that after Monthly patches being installed they see only one notification from Software Center (Config Manager), it's the last one which gives them 15 minutes to a forced reboot. It was not a case for everyone so I started digging and I found that it happens only for people who use the \"Focus Assist\" feature in Windows 10 (former name \"Quiet hours\"). So it was obvious that people who have set \"Alarms only\" won't see the reboot notifications, but there is also an option called \"Priority only\", where you can select applications that can show notifications - this works well when the user chooses Software Center as a priority app manually, via the GUI.\n I'm wondering if anyone knows a way to centrally add items to the priority applications list (via GPO or script)?\n The ideal solution would be to:\n  \nDisable \"Alarms only\" mode in Focus Assist\n have a possibility to add \"Software Center\" to the priority list applications\n  \n   submitted by    /u/TheM4jor  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y20o3s/windows_focus_assist_managing_the_list_of/",
+          "publishedOn": "2022-10-12T10:50:27.000Z",
+          "wordCount": 40759,
+          "title": "Windows Focus Assist - managing the list of priority apps via script/GPO",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y20mpd/external_domain_trust_with_selective/",
+          "author": null,
+          "description": "Hello,\n i need to configure an Domain Trust with a different site which has its own IT.\n I dont want them to see and configure anything on our site/Domain, thats why i want to implement an External Domain Trust - Non-Transitive with Selective Authentication.\n I set it up in my lab and the only thing i dont understand is, how the other Domain should make use of the Selective Authentication when he doesnt have access to our Domain to select the Users which should be able to authenticate on their resources.\n When i click on the resource domain on ntfs settings, i can change the location to the other Domain but will be prompted for credentials access it.\n How can i manage it so the other Site can configure their Selective Authentication without Domain Credentials from my Domain?\n i cant really find any resource on that.. Just some Videos where they enter the Domain Admin from the Domain, which is a huge security concern for me.\n ​\n Thank you!\n    submitted by    /u/jimstar95  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y20mpd/external_domain_trust_with_selective/",
+          "publishedOn": "2022-10-12T10:48:12.000Z",
+          "wordCount": 40733,
+          "title": "External Domain Trust with Selective Authentication",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y20mea/rebuilding_a_large_school/",
+          "author": null,
+          "description": "Hey guys, just seeking advice here.\n My IT team has recently been hired to work at a 1300+ user school and have taken over the whole operation from the old staff. It’s a mix of around 300 BYOD laptops and 1000 supplied Windows laptops.\n The virtual infrastructure is an absolute mess. Blends of Server 2012/2016 VM’s running on an outdated ESXI host.\n We would like to rebuild the VM’s for starters (File/Print, DC1, DC2, NPS) but we’re not sure how to do this to minimise downtime, especially for the BYOD devices.\n The file/print server would be the biggest headache. Next would be cutting over NPS and making sure all of the devices connect up okay.\n How do you even begin to do this to prevent any downtime/issues with a site of this scale?\n    submitted by    /u/htmlnoob52  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y20mea/rebuilding_a_large_school/",
+          "publishedOn": "2022-10-12T10:47:42.000Z",
+          "wordCount": 39911,
+          "title": "Rebuilding a large school",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y20ifv/user_ethernet_drop_on_2_laptops/",
+          "author": null,
+          "description": "This problem stumps me and my colleagues to no end...\n I'm hoping someone here can help think this through?\n One of our endusers has the problem where his ethernet connection drops at random intervals, and his Wi-Fi doesn't pick up the slack automatically either.\n Here's what we tried:\n  \nNew UTP cable\n New docking station\n Connected the cable directly (without docking station)\n Gave him another laptop (issue occurs on 2 laptops now)\n Colleagues tried the same outlets/the same cables, and they can work just fine\n  \nThere are no overarching GPOs on his laptop that cause this.\n One thing we saw was that his domain firewall profile was set to ON while it should be OFF.\n That can't be the cause because it was the same for me and I have no issues whatsoever.\n I started checking winevt logs.\n We can pinpoint when the system dropped UTP and the user had to manually connect to Wi-Fi instead:\n A request was made to authenticate to a wireless network.\n Logged: 12/10/2022 11:05:32\n Checked the Security winevt logs; all we saw was the firewall started to check all policies right after the system lost UTP connection. After Googling possible ethernet drop issues I wanted to disable the Energy/Green Energy/Wake on Magic settings in his ethernet adapter to see if that could help, but I can't reach his device right now. When he's forced to make a manual switch to Wi-Fi we have to reverse connect to his laptop and then run an ipconfig /registerdns before we can continue troubleshooting (most likely due to the fact we are in the middle of a DNS server cutover and those managing the transfer are veggies...).\n Even though, these are all things that shouldn't transfer from one laptop to another yet he's had the problem on 2 laptops one after the other now.\n Anyone have any clue on what could be causing this issue?\n    submitted by    /u/kalelfaneditor  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y20ifv/user_ethernet_drop_on_2_laptops/",
+          "publishedOn": "2022-10-12T10:41:27.000Z",
+          "wordCount": 41053,
+          "title": "User ethernet drop on 2 laptops",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y20i4o/auditing_your_it_environment/",
+          "author": null,
+          "description": "I want to audit my windows/Linux shop now that the senior IT has left to understand what is the current situation.\n What tools/techniques do you recommend? I have started to configure GVM on Kali Linux but I’m sure I’ll need more than that. Any experiences would be very welcome\n    submitted by    /u/chris_redz  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y20i4o/auditing_your_it_environment/",
+          "publishedOn": "2022-10-12T10:40:55.000Z",
+          "wordCount": 40629,
+          "title": "Auditing your IT environment",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y20ewq/even_though_user_dont_have_a_permission_to_send/",
+          "author": null,
+          "description": "Hi there,\n I am using exch2013, i have restricted the distribution group to receive email only from particular users.\n but very strange Even though user don't have a permission to send to mail group user can send mail to this restricted mail group.\n ​\n has anyone experienced something similar?\n ​\n Thanks,\n    submitted by    /u/maxcoder88  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y20ewq/even_though_user_dont_have_a_permission_to_send/",
+          "publishedOn": "2022-10-12T10:36:04.000Z",
+          "wordCount": 40569,
+          "title": "Even though user don't have a permission to send to mail group user can send mail to restricted mail group in Exchange 2013",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/y1zwb7/logon_as_batch_job_on_a_dc/",
           "author": null,
           "description": "I have a Powershell Script that has to run on a scheduled Task to make changes in the AD.\n For the script to run with the right permissions it has to run as a Domain Admin User, but my Domain Admins are not allowed to logon as a Batch Job.\n Should I allow these users to do so?\n My gut tells that that is a bad idea security-wise.\n    submitted by    /u/DunkelArts  \n [link]   [comments]",
@@ -7841,6 +7911,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y20pbj/undo_passwordrecovery_enable_not_recognized/",
+          "author": null,
+          "description": "Hi Friends! i was trying to reset a ''HP1920-24G JG924A'' Switch to factory default settings in PuTTY But everytime i Skip configuration file and get into the CLI and i type ''undo password-recovery enable'' it does not wanna work. Instead it just says: ''command not recognized at the line'' i can't find anything on Google, so if anyone knows how i can fix this it would be grealty appreciated!\n    submitted by    /u/BramInDeBuurt1111111  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y20pbj/undo_passwordrecovery_enable_not_recognized/",
+          "publishedOn": "2022-10-12T10:52:19.000Z",
+          "wordCount": 38723,
+          "title": "''undo password-recovery enable'' not recognized (HP1920-24G JG924A)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y20gl0/xpost_from_rubiquity_access_zerotier_network_via/",
+          "author": null,
+          "description": "Hi all, I have a UDM Pro SE which has fiber on WAN1 and a 4G router on WAN2 (a Teltonika RUT241).\n The 4G router does CGNAT, so in order to easily reach the Web GUI for admin purposes I've installed ZeroTier on it and it works well, I can reach it from a LAN device (a mac mini) with ZeroTier installed.\n BUT, Tailscale works so much better for me, so that's what I'm using on all other devices (the 4G router doesn't support Tailscale, only ZeroTier).\n My question is if I can somehow bride the LAN to the ZeroTier network using the mac mini as a bridge since it has a network interface for both networks? When I'm inside my LAN using Tailscale I'd like to route traffic to the Zerotier network (192.168.192.0/24) via the mac mini.\n I'm guessing I should setup a static route, pointing traffic going to the destination network 192.168.192.0/24 through the LAN device on 192.168.5.142 (the mac mini), but do I need to do something on the mac mini to make this work?\n    submitted by    /u/goodyear77  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y20gl0/xpost_from_rubiquity_access_zerotier_network_via/",
+          "publishedOn": "2022-10-12T10:38:42.000Z",
+          "wordCount": 39405,
+          "title": "x-post from /r/Ubiquity - Access ZeroTier network via LAN device (mac mini)",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/y1zyye/cisco_asr1002_espgcm_256_not_supported/",
           "author": null,
