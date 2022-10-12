@@ -330,6 +330,66 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y25je7/does_dkimsignature_domain_need_to_match_senders/",
+          "author": null,
+          "description": "Does the domain specified in the DKIM-Signature header on a SMTP message need to match or be a parent domain from the domain sending the message (e.g. MailFrom or From headers)?\n I'm working with a client trying to figure out some email deliverability issues. While investigating, I discovered one of their ESP is using their domain and not the client's for the DKIM domain. That's getting that switched to use my client's domain, but I didn't even think this was possible.\n Relevant headers from a test message showing it passing SPF (client's domain) and DKIM (ESP's domain):\n  \nAuthentication-Results:\n spf=pass (sender IP is x.x.x.x) smtp.mailfrom=service.client.com;\n dkim=pass (signature was verified) header.d=esp.com; dmarc=bestguesspass action=none\n header.from=client.com; compauth=pass reason=109\n DKIM-Signature: v=1; a=rsa-sha256; d=esp.com; i=@esp.com; s=dkim; c=relaxed/relaxed;\n q=dns/txt; t=1665520754; x=1668112754; h=content-transfer-encoding:content-type:subject:date:to:from:mime-version:list-unsubscribe:x-thread-info:subject:to:from:cc:reply-to;bh=jdBAlGXcZ<snipped>KDm8k=\n From: donotreply@client.com\n  \nIf there doesn't need to be any type of domain name alignment, what prevents a rogue actor from just putting their own DKIM-Signature there. Yeah it could be discovered...but who looks at SMTP headers of all their messages. The damage from a phishing attack or similar may have already been done.\n    submitted by    /u/divDevGuy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y25je7/does_dkimsignature_domain_need_to_match_senders/",
+          "publishedOn": "2022-10-12T14:33:08.000Z",
+          "wordCount": 40684,
+          "title": "Does DKIM-Signature domain need to match sender's domain?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y25j9t/knowledge_base_content/",
+          "author": null,
+          "description": "Does anyone know of any generic KB articles (purchase or free) to download on MS Office, Windows, browsers, etc? We’re looking to expand our internal KB targeting user self help with some generic content to supplement our environment specific stuff.\n    submitted by    /u/LightbulbIcon  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y25j9t/knowledge_base_content/",
+          "publishedOn": "2022-10-12T14:33:00.000Z",
+          "wordCount": 40408,
+          "title": "Knowledge Base Content",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y254xp/how_to_i_remove_apps_like_instagram_facebook_etc/",
+          "author": null,
+          "description": "how to I remove ( apps like Instagram, Facebook etc etc ) on windows 11 for all users ?\n I removed them for an account but once someone else logs in they come back again \n Any ideas ?\n    submitted by    /u/-Ho0k  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y254xp/how_to_i_remove_apps_like_instagram_facebook_etc/",
+          "publishedOn": "2022-10-12T14:16:57.000Z",
+          "wordCount": 40496,
+          "title": "how to I remove ( apps like Instagram, Facebook etc etc ) on windows 11 for all users ?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y24y60/zscaler/",
+          "author": null,
+          "description": "anyone here use zscaler and have any thoughts or \"boots on the ground\" experiences of it? In particular ZIA for web protection.\n    submitted by    /u/britishotter  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y24y60/zscaler/",
+          "publishedOn": "2022-10-12T14:09:06.000Z",
+          "wordCount": 39989,
+          "title": "zscaler",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y24os5/which_partition_tool_is_best_to_shrink_partition/",
+          "author": null,
+          "description": "I'm looking for paid tool to shrink partition on production server under Windows server 2019 Datacenter. This is one time action. I need to shrink one big partition (over 4TB) into two partition. Native Disk Part tool have big difficulties with shrink the disc. I won't have much time to shrink this partition during maintenance window that's why I need a solid and proven tool. What do you think about MiniTool Partition Wizard Server ? Within this site https://www.g2.com/categories/hard-drive-partitioning this tool has best user feedback.\n    submitted by    /u/maglPOL  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y24os5/which_partition_tool_is_best_to_shrink_partition/",
+          "publishedOn": "2022-10-12T13:58:10.000Z",
+          "wordCount": 40518,
+          "title": "Which partition tool is best to shrink partition",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y24ok9/vmware_alternatives/",
+          "author": null,
+          "description": "With VMware being acquired by Broadcom if you had to stop using VMware what would you use? Has anyone seen an increase in their renewal cost?\n    submitted by    /u/root_15  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y24ok9/vmware_alternatives/",
+          "publishedOn": "2022-10-12T13:57:55.000Z",
+          "wordCount": 40763,
+          "title": "VMware Alternatives?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/y24j7y/central_storeadmx_issue/",
           "author": null,
           "description": "I'm trying to load in the new ADMX for Edge Chromium using this guide:\n Configure Microsoft Edge for Windows with policy settings | Microsoft Learn \n Using a domain admin account, I navigated to \\\\DC\\sysvol\\Domain\\Policies and I have a lot of items in there but no policydefinitions folder. So I created it along with the EN-US subfolder and then put the ADML file. Then when I go to edit my existing Edge GPO, under administrative templates I now have no settings at all. I reverted the change and it's back to what it was, but any idea what I'm doing wrong? \n DC's are Server 2019 at 2016 AD level.\n    submitted by    /u/isoaclue  \n [link]   [comments]",
@@ -8041,6 +8101,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y24r51/route_all_kubernetes_pods_traffic_through_firewall/",
+          "author": null,
+          "description": "I'm still reading and learning, i have AWS requirement all pods traffic should be routed through a firewall for layer 7 inspection, i know there is network policies but they are not enough, I'm thinking maybe there is a way to build vxlan tunnels from pods to the firewall(which is fortigate btw), what you guys think? Currently I have one node multiple pods set up\n    submitted by    /u/time_over  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y24r51/route_all_kubernetes_pods_traffic_through_firewall/",
+          "publishedOn": "2022-10-12T14:00:46.000Z",
+          "wordCount": 38917,
+          "title": "Route all kubernetes pods traffic through firewall",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y24o7g/game_server_on_private_ip_help/",
+          "author": null,
+          "description": "Hello, I am trying to find a way to make a free & somewhat powerful (I tried free hosting services but they just aren't enough) dedicated game server for me & my friends, but I've found out that I have a private IP. Is there any way I can make this work without any fancy VPN / tunneling software? Maybe some simple software that only I need to have on PC and not them?\n    submitted by    /u/KraftakSvK  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y24o7g/game_server_on_private_ip_help/",
+          "publishedOn": "2022-10-12T13:57:31.000Z",
+          "wordCount": 39348,
+          "title": "Game server on Private IP help",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/y23lp4/single_ip_address_cant_get_off_subnet/",
           "author": null,

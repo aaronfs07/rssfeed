@@ -2,10 +2,120 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-12T13:52:31.442Z</updated>
+    <updated>2022-10-12T14:34:35.506Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Does DKIM-Signature domain need to match sender's domain?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y25je7/does_dkimsignature_domain_need_to_match_senders/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y25je7/does_dkimsignature_domain_need_to_match_senders/"/>
+        <updated>2022-10-12T14:33:08.000Z</updated>
+        <summary type="html"><![CDATA[Does the domain specified in the DKIM-Signature header on a SMTP message need to match or be a parent domain from the domain sending the message (e.g. MailFrom or From headers)?
+ I'm working with a client trying to figure out some email deliverability issues. While investigating, I discovered one of their ESP is using their domain and not the client's for the DKIM domain. That's getting that switched to use my client's domain, but I didn't even think this was possible.
+ Relevant headers from a test message showing it passing SPF (client's domain) and DKIM (ESP's domain):
+  
+Authentication-Results:
+ spf=pass (sender IP is x.x.x.x) smtp.mailfrom=service.client.com;
+ dkim=pass (signature was verified) header.d=esp.com; dmarc=bestguesspass action=none
+ header.from=client.com; compauth=pass reason=109
+ DKIM-Signature: v=1; a=rsa-sha256; d=esp.com; i=@esp.com; s=dkim; c=relaxed/relaxed;
+ q=dns/txt; t=1665520754; x=1668112754; h=content-transfer-encoding:content-type:subject:date:to:from:mime-version:list-unsubscribe:x-thread-info:subject:to:from:cc:reply-to;bh=jdBAlGXcZ<snipped>KDm8k=
+ From: donotreply@client.com
+  
+If there doesn't need to be any type of domain name alignment, what prevents a rogue actor from just putting their own DKIM-Signature there. Yeah it could be discovered...but who looks at SMTP headers of all their messages. The damage from a phishing attack or similar may have already been done.
+    submitted by    /u/divDevGuy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Knowledge Base Content]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y25j9t/knowledge_base_content/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y25j9t/knowledge_base_content/"/>
+        <updated>2022-10-12T14:33:00.000Z</updated>
+        <summary type="html"><![CDATA[Does anyone know of any generic KB articles (purchase or free) to download on MS Office, Windows, browsers, etc? We’re looking to expand our internal KB targeting user self help with some generic content to supplement our environment specific stuff.
+    submitted by    /u/LightbulbIcon  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[how to I remove ( apps like Instagram, Facebook etc etc ) on windows 11 for all users ?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y254xp/how_to_i_remove_apps_like_instagram_facebook_etc/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y254xp/how_to_i_remove_apps_like_instagram_facebook_etc/"/>
+        <updated>2022-10-12T14:16:57.000Z</updated>
+        <summary type="html"><![CDATA[how to I remove ( apps like Instagram, Facebook etc etc ) on windows 11 for all users ?
+ I removed them for an account but once someone else logs in they come back again 
+ Any ideas ?
+    submitted by    /u/-Ho0k  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[zscaler]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y24y60/zscaler/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y24y60/zscaler/"/>
+        <updated>2022-10-12T14:09:06.000Z</updated>
+        <summary type="html"><![CDATA[anyone here use zscaler and have any thoughts or "boots on the ground" experiences of it? In particular ZIA for web protection.
+    submitted by    /u/britishotter  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Route all kubernetes pods traffic through firewall]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y24r51/route_all_kubernetes_pods_traffic_through_firewall/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y24r51/route_all_kubernetes_pods_traffic_through_firewall/"/>
+        <updated>2022-10-12T14:00:46.000Z</updated>
+        <summary type="html"><![CDATA[I'm still reading and learning, i have AWS requirement all pods traffic should be routed through a firewall for layer 7 inspection, i know there is network policies but they are not enough, I'm thinking maybe there is a way to build vxlan tunnels from pods to the firewall(which is fortigate btw), what you guys think? Currently I have one node multiple pods set up
+    submitted by    /u/time_over  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Which partition tool is best to shrink partition]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y24os5/which_partition_tool_is_best_to_shrink_partition/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y24os5/which_partition_tool_is_best_to_shrink_partition/"/>
+        <updated>2022-10-12T13:58:10.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking for paid tool to shrink partition on production server under Windows server 2019 Datacenter. This is one time action. I need to shrink one big partition (over 4TB) into two partition. Native Disk Part tool have big difficulties with shrink the disc. I won't have much time to shrink this partition during maintenance window that's why I need a solid and proven tool. What do you think about MiniTool Partition Wizard Server ? Within this site https://www.g2.com/categories/hard-drive-partitioning this tool has best user feedback.
+    submitted by    /u/maglPOL  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[VMware Alternatives?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y24ok9/vmware_alternatives/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y24ok9/vmware_alternatives/"/>
+        <updated>2022-10-12T13:57:55.000Z</updated>
+        <summary type="html"><![CDATA[With VMware being acquired by Broadcom if you had to stop using VMware what would you use? Has anyone seen an increase in their renewal cost?
+    submitted by    /u/root_15  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Game server on Private IP help]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y24o7g/game_server_on_private_ip_help/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y24o7g/game_server_on_private_ip_help/"/>
+        <updated>2022-10-12T13:57:31.000Z</updated>
+        <summary type="html"><![CDATA[Hello, I am trying to find a way to make a free & somewhat powerful (I tried free hosting services but they just aren't enough) dedicated game server for me & my friends, but I've found out that I have a private IP. Is there any way I can make this work without any fancy VPN / tunneling software? Maybe some simple software that only I need to have on PC and not them?
+    submitted by    /u/KraftakSvK  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Central Store/ADMX Issue]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/y24j7y/central_storeadmx_issue/</id>
