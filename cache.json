@@ -330,6 +330,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y2xip3/n2ws_strategy/",
+          "author": null,
+          "description": "Does anyone where to find any documentation of AWS VMs Backup strategies? I’m familiar with the “classic” on-premise backup strategies but I’m sure the way to implement a good cloud backup plan/strategy isn’t like the on-premise one. We use n2ws Backup & Recovery, any advice welcome.\n    submitted by    /u/8008seven8008  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y2xip3/n2ws_strategy/",
+          "publishedOn": "2022-10-13T12:31:27.000Z",
+          "wordCount": 42029,
+          "title": "N2WS Strategy",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y2x7lz/isp_public_ip_trouble/",
+          "author": null,
+          "description": "I've been asked to start taking on more IT responsibilities at work. I haven't worked much with firewalls, and have been asked to switch my offices firewall over to a new internet circuit. \n The ISP gave me the following IP information, and I feel like I'm missing something in understanding what to input for the IP, Subnet and Gateway addresses. \n ISP Provided Info (I changed a few numbers around for privacy purposes):\n WAN IPv4: 3.15.202.216/29\n Peer IP (IPv4): 3.15.202.21\n Lumen Peer IP (IPv4): 3.15.202.217\n I've been testing different configurations against my laptop to try testing the internet circuit and nothings worked so far. What am I missing? \n I'm probably going to call the ISP later. I just figured I'd jump on Reddit and start to network with more tech people while I'm on this new endeavor in life.\n    submitted by    /u/OverCollection374  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y2x7lz/isp_public_ip_trouble/",
+          "publishedOn": "2022-10-13T12:16:41.000Z",
+          "wordCount": 42389,
+          "title": "ISP Public IP trouble",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y2wg9e/managed_identity_help_xpost_from_rpowershell/",
+          "author": null,
+          "description": "Managed Identity Help\n 📷\n About a year ago I created a pretty foolproof way to have a shared Service Account that would still require MFA in the cloud, using some Azure Automation and run as accounts. Not keeping up on upcoming changes I see Run As accounts are no longer an option and am trying to adjust my Script to use the managed Identity that is created with the Automation resource. The way it worked before was the Run as Account would get a few permissions once it was created the App Reg would get\n  \nApplication Permissions\n Select User.ReadWrite. All\n GroupMember.ReadWrite. All\n Delegated Permissions\n User.ReadWrite\n  \nIt would also get User Admin RBAC role. All of these permission were needed to change the password of a Synced up account and also was used to Read group membership of a security group that had all users with access in it so if one was disabled it would then force a password change Now with a managed Identity I understand it is suppose to be easier but am not able to get it to Write the changed password . I assume it will also have issues with the group membership changes script also.\n Here is the only snippet of the Script where the Run as account was called\n ## get automation account: $connection = Get-AutomationConnection -Name AzureRunAsConnection $azconnection = Get-AutomationConnection -Name AzureRunAsConnection Connect-AzureAD -Tenant $connection.TenantID -ApplicationId $connection.ApplicationID -CertificateThumbprint $connection.CertificateThumbprint write-output \"Connected Azure AD\" Connect-AzAccount -Tenant $connection.TenantID -ApplicationId $azconnection.ApplicationID -CertificateThumbprint $azconnection.CertificateThumbprint write-output \"Connected AZ Accounts\" \n    submitted by    /u/jej0584  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y2wg9e/managed_identity_help_xpost_from_rpowershell/",
+          "publishedOn": "2022-10-13T11:38:59.000Z",
+          "wordCount": 42445,
+          "title": "Managed Identity Help X-Post from r/powershell",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/y2vjii/admin_activity_logging/",
           "author": null,
           "description": "Hi,\n A long time ago I remember setting the retention period for various admin logs so they were retained, I set them to a year from memory.\n Now I have to prove it for an audit, but it was so long ago I can't remember where I set it up?\n Anyone give me a hint please?\n    submitted by    /u/O365-Zende  \n [link]   [comments]",
@@ -458,6 +488,16 @@
           "wordCount": 41234,
           "title": "Network problems - how to check cables?",
           "imageUrl": "https://external-preview.redd.it/aXGy1VJWNg7m9ahL8SXt9ZIs4NGoqSqRutdGEqURNyY.jpg?auto=webp&s=90bd929227655cc6203cf31faf9fd9484eab6b1e"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y2sfdk/what_security_vulnerability_did_you_use_to_your/",
+          "author": null,
+          "description": "TLDR; manipulated the school system, got caught, then got the job as an admin a few years down the line. \n When I was at secondary / high school, my ICT lessons were always the best. It was a time where I did 20% work, and 80% trying to exploit the system to gain some sort of advantage over the other standard student accounts. Now, I wasn’t doing this for any malicious intent, just for personal satisfaction. \n Our school had everything very locked down as most did for a student. The limitations were as I would compare to an exam/ kiosk type account at the time. One IT lesson, I was looking at the pxe boot options and found they were using SCCM. I was hit with a login screen and almost admitted defeat. I thought, what the hell and tried my student details. They worked \n Turns out the sysadmins had just added the \\domainusers group to authenticate. Once launched, I was able to re deploy a Windows environment and more notably to me at the time, create a local admin account. Once I found this out, I was able to sit at my allocated computer and happily install all the programs I wanted and hide my tracks. ICT lessons then turned into 100% fun. \n One day, I got caught out by a teacher remotely viewing my screen and got called to the IT office. Had to explain what I had done and instead of a slap on the wrist, I was praised for finding the exploit! \n 2 years after I left the school, I then got a job as a system admin at the same school and even used that scenario to my advantage during my interview. \n And we all lived happily ever after!\n    submitted by    /u/marco7532  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y2sfdk/what_security_vulnerability_did_you_use_to_your/",
+          "publishedOn": "2022-10-13T07:33:48.000Z",
+          "wordCount": 44119,
+          "title": "What security vulnerability did you use to your advantage during your school years?",
+          "imageUrl": null
         },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/y2rlhy/outlook_mails_get_marked_as_spam/",
@@ -8335,6 +8375,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y2xh3e/is_there_a_way_to_decapsulate_gre_port_mirrored/",
+          "author": null,
+          "description": "I was searching for info on how to decapsulate GRE traffic on Ubuntu or RHEL without installing additional tools and if I've understood correctly, GRE traffic needs to have \"inner IPs\" set so that they can be sent to a tunnel interface. Is there a way I can send port mirrored traffic to a GRE tunnel and have all packets de-encapsulated at the GRE tunnel regardless of the inner IPs?\n If it helps make my question any clearer, it seems like this post is also about doing almost the same thing I'm trying to do.\n    submitted by    /u/cronchache  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y2xh3e/is_there_a_way_to_decapsulate_gre_port_mirrored/",
+          "publishedOn": "2022-10-13T12:29:29.000Z",
+          "wordCount": 40253,
+          "title": "Is there a way to decapsulate GRE port mirrored traffic that's sent to a Linux machine",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y2xdv2/wds_and_pxe_driving_me_crazy/",
+          "author": null,
+          "description": "So this is a little project of mine I've put upon myself and it's about to drive me insane.\n Running Windows Server 2019, no VLANs, no separate subnets, one home router as gateway and three unmanaged switches. Single server hosting all of the DNS, DHCP and WDS services.\n One day I can get PXE working fine, the very next I'm running into constant TFTP timeouts. As of yesterday I had a BIOS system consistently booting fine, and a UEFI system constantly failing. Today both fail. \n Attempting to deploy a custom Windows 10 image, no drivers. I have both x86 and x64 boot images. Only DHCP option set is 60: PXEClient. WDS deployed as standalone server (No AD), unattended installs set for both the images as well as WDS. DHCP settings per WDS are default (do not listen on DHCP ports, configure DHCP…",
+          "link": "https://www.reddit.com/r/networking/comments/y2xdv2/wds_and_pxe_driving_me_crazy/",
+          "publishedOn": "2022-10-13T12:25:05.000Z",
+          "wordCount": 40805,
+          "title": "WDS and PXE driving me crazy",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/y2v26a/ospf_interface_best_practice/",
           "author": null,
