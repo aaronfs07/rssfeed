@@ -22,211 +22,11 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-14 datetime="2022-10-14T10:06:34.000Z">2022-10-14</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-14 datetime="2022-10-14T10:06:34.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-14 datetime="2022-10-14T11:00:10.000Z">2022-10-14</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-14 datetime="2022-10-14T11:00:10.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3ptej/junipert_mx204_router_internet_access/"
-                        open
-                      >
-                        <summary class="article-expander__title">junipert mx204 router , internet access</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3ptej/junipert_mx204_router_internet_access/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi all, I configured a router and a connected switch to it. I can ping the router IP from the switch and vice versa. Also, I can ping 1.1.1.1 from the router, but I can not ping 1.1.1.1 from the switch. Here is the routing table of the router:
- inet.0: 5 destinations, 5 routes (5 active, 0 holddown, 0 hidden) + &#x3D; Active Route, - &#x3D; Last Active, * &#x3D; Both 0.0.0.0/0 *[Static/5] 21:05:20 &gt; to 172.89.117.1 via xe-0/1/0.0 172.89.117.0/22 *[Direct/0] 21:08:05 &gt; via xe-0/1/0.0 172.89.117.2/32 *[Local/0] 21:08:05 Local via xe-0/1/0.0 192.168.50.0/24 *[Direct/0] 06:25:54 &gt; via xe-0/1/2.0 192.168.50.1/32 *[Local/0] 06:25:54 Local via xe-0/1/2.0 
- The router IP addresses are:
- 172.89.117.2 
- and
- 192.168.50.1 
- and the switch IP address is:
- 192.168.50.2 
- I should note that I can ping router interface from switch.
- any body can help me in this problem?
-    submitted by    /u/Straight_Quality6138  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;135
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3prh3/noob_question_on_ssh_tunneling_in_ubuntu_with/"
-                        open
-                      >
-                        <summary class="article-expander__title">Noob question on ssh tunneling in ubuntu with Gnome Boxes</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3prh3/noob_question_on_ssh_tunneling_in_ubuntu_with/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/z9Bxe-9CWiYeYejbi2mq2J391gB_1S7iVbOqU430sAI.jpg?auto&#x3D;webp&amp;s&#x3D;b549e8f5f7ddef44c262256e4bf49f8bcd937892" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hi guys, 
- First time here, newbie on networking problems.
- I&#x27;m having problems to make an ssh connection from my host machine (ubuntu 22.04) and my virtual machine in Gnome Boxes (Ubuntu server 20.04). After failing to succeed, I relied on the following guide: https://bytefreaks.net/gnulinux/an-easy-way-to-ssh-into-a-gnome-boxes-os, with which I was able to open the ssh tunnel.
- The problem is that currently, I don&#x27;t know for what reason, the method no longer works and fails me in a generic: &quot;Network unreachable&quot; error. Do you have any idea why? Also do you know if there is a better way to connect me from host to guest using gnome boxes.
- ip -a | grep:
- inet 192.168.1.25/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp5s0
- systemctl status ssh:
- ssh.service - OpenBSD Secure Shell server
- Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
- Active: active (running) since Fri 2022-10-14 11:50:31 CEST; 3s ago
- Docs: man:sshd(8)
- man:sshd_config(5)
- Process: 21924 ExecStartPre&#x3D;/usr/sbin/sshd -t (code&#x3D;exited, status&#x3D;0/SUCCESS)
- Main PID: 21925 (sshd)
- Tasks: 1 (limit: 38162)
- Memory: 1.7M
- CPU: 14ms
- CGroup: /system.slice/ssh.service
- └─21925 &quot;sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups&quot;
- ​
- ott 14 11:50:31 username systemd[1]: Starting OpenBSD Secure Shell server...
- ott 14 11:50:31 username sshd[21925]: Server listening on 0.0.0.0 port 22.
- ott 14 11:50:31 username sshd[21925]: Server listening on :: port 22.
- ott 14 11:50:31 username systemd[1]: Started OpenBSD Secure Shell server.
-    submitted by    /u/_DocKarma  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;136
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3pnj9/help_how_doe_traffic_flow_and_what_port_is/"
-                        open
-                      >
-                        <summary class="article-expander__title">Help: How doe traffic flow and what port is actually used when link is https:// but has a port number on the end?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3pnj9/help_how_doe_traffic_flow_and_what_port_is/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Example link https://website.com:4110
- Is this traffic still using TCP Port 443 or not?
- Because our firewall is blocking this link since we only allow https 443.
- But how can a link be https and use port 4110
-    submitted by    /u/chicconumberone  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;134
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3orhd/switch_port_discovery/"
-                        open
-                      >
-                        <summary class="article-expander__title">Switch Port Discovery?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3orhd/switch_port_discovery/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello Everyone,
- How to find what host is connected to the switch port on HP and Aruba switches? For example show mac-address table on a specific port and lets say i got the mac address of the device some doeds not make sense if i look up find mac addresses websites. Please suggest if I can use Wireshark to make it easier or just just running commands on the switch. Thank you all for your suggestions.
-    submitted by    /u/Driver_Mysterious  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;134
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3nrkf/career_nontechnical_interview_questions/"
-                        open
-                      >
-                        <summary class="article-expander__title">[Career] Non-technical interview questions</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3nrkf/career_nontechnical_interview_questions/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi,
- I have started to look for a new job, after 10 years within the same company, and are going on a few network engineer interviews in the upcoming week. I am struggling to prepare for the non-technical questions. Specifically &quot;what&#x27;s 3 of your strengths/weaknesses?&quot; What kind of answers should I give, that doesn&#x27;t sound like clichés? Like &quot;I am bad at saying no so I always end up with too much to do&quot; or &quot;I suck at BGP, but I am alway keen to learn new things&quot;.
-    submitted by    /u/rocktanstone  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;140
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3ky5b/peering_noob_question/"
-                        open
-                      >
-                        <summary class="article-expander__title">Peering noob question</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3ky5b/peering_noob_question/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I am thoroughly confused after looking at bgp.tools and peeringdb. Can someone pls enlighten me what&#x27;s the relation between facility, exchange and network operator? How does prefix come in?
- And the most important question: what&#x27;s the most cheapskate way to own your own IP range and use these IPs?
-    submitted by    /u/lmux  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;136
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3kx9h/ballpark_costs_of_securew2/"
-                        open
-                      >
-                        <summary class="article-expander__title">Ballpark costs of SecureW2</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3kx9h/ballpark_costs_of_securew2/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Doing research into the space for some anticipated discussions I&#x27;m wondering what the ballpark estimate costs are for SecureW2 are at both the high and low end
-    submitted by    /u/Individual_Hearing_3  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;134
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -238,6 +38,135 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y3qrzx/fridays_promotional_thread_october_14_2022/"
+                        open
+                      >
+                        <summary class="article-expander__title">Friday&#x27;s Promotional Thread - October 14, 2022</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y3qrzx/fridays_promotional_thread_october_14_2022/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>There is a great deal of content out there that violates our advertising/promotion rule, from scripts and software to tutorials and videos. We have received a number of requests for exemptions to the rule, and rather than allowing the front page to get consumed, we thought we&#x27;d try a weekly thread that allows for that kind of content. We don&#x27;t have a catchy name for it yet, so please let us know if you have any ideas!
+ In this thread, feel free to show us your pet project, YouTube videos, blog posts, or whatever else you may have and share it with the community. Commercial advertisements, affiliate links, or links that appear to be monetization-grabs will still be removed.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;142
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y3qqia/dc02_loses_its_role_after_reboot/"
+                        open
+                      >
+                        <summary class="article-expander__title">DC02 loses its role after reboot</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y3qqia/dc02_loses_its_role_after_reboot/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, locking fo4 a bit of help. After a planned grateful shutdown of our infrastructure, DC02 comes online with warnings saying it cant understand if it&#x27;s still a domain controller or not. &quot;Error determining if the targeted server is already a Donain Controller. The WS- management service cannot process the request...&quot; when i select the prompt to continue and complete AD promotion it errors out with the above once again. Dcdiag fails with DFSREvent for replication at sysvol (though sysvol is fine). Seems it&#x27;s giving me authentication errors (probably since it can&#x27;t reach directory to authenticate logged on user).
+ Any ideas here?
+    submitted by    /u/dcaywithme  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;142
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y3qq52/devices_trying_to_log_in_to_a_user_account/"
+                        open
+                      >
+                        <summary class="article-expander__title">Devices trying to log in to a user account automatically after turning on</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y3qq52/devices_trying_to_log_in_to_a_user_account/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello
+ I have a very strange &quot;issue&quot; on new machines after they have been imaged using our SCCM task sequence build. So I do apologize if this doesn&#x27;t make much sense... it isn&#x27;t very clear for me either.
+ When you reboot or turn on these new built machines the device tries to automatically log in to an account and says password incorrect. I can&#x27;t see this account referenced anywhere in the sccm task sequence and i have no idea why its trying to log into this account when the device turns on...
+ Is there any way to control this via a task sequence? When a user turns on the machine, I want the log in screen showing only options for the previous logged in user and &quot;Other User&quot;.
+ Any advice its really stumping me...
+ Thanks
+    submitted by    /u/Jewpacarbra  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y3qnbt/domain_alias_for_login_on_machines_in_remote_tree/"
+                        open
+                      >
+                        <summary class="article-expander__title">domain alias for login on machines in remote tree</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y3qnbt/domain_alias_for_login_on_machines_in_remote_tree/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi y&#x27;all, got a question.
+ Recently we started building up our secondary domain here at this school for just our department. Background is that we wanna use VMware Horizon and everyone else doesn&#x27;t. And with &quot;we&quot; I mean &quot;my boss&quot;. 
+ Anyhow, we set up a new domain (first time for me going away from open source/linux), got a trust with the main domain. unidirective, transitive. Beacuse of privacy laws and whatnot the users will reside on the remote AD, but they are supposed to log in in our domain.
+ This is all fine and dandy, everything works alright, except one thing that I have no idea how to replicate:
+ The main domain is called something like domain1.school.int but they log in with [user@school.int](mailto:user@school.int)
+ now our domain is also underneath school.int like this: domain2.it.school.int 
+ I want to be able to login with the same [user@school.int](mailto:user@school.int) that they can in their domain, all that works now is domain1\Username or [user@domain1.school.int](mailto:user@domain1.school.int) 
+ what exactly am i looking for to do that?
+    submitted by    /u/deGanski  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;142
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y3qbva/we_need_a_caa_record_ive_done_the_reading_but_am/"
+                        open
+                      >
+                        <summary class="article-expander__title">We need a CAA record, I&#x27;ve done the reading but am asking for tips or advice</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y3qbva/we_need_a_caa_record_ive_done_the_reading_but_am/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ We require a CAA record. We use Sectigo, so I assume our records will look something like this (as per the Sectigo FAQ):
+ 0 issue &quot;sectigo.com&quot;
+ 0 issuewild &quot;sectigo.com&quot;
+ I&#x27;m not entirely sure if Sectigo wants these 2 records or just one of them; their FAQ is a bit vague? Input much appreciated.
+ Is there anything else I should keep in mind adding these records?
+  
+I understand this record only affects the renewal or newly issued certificates, so no matter how much we&#x27;d fuck this record up right now, our sites won&#x27;t be affected as of today, have I correctly understood this? This is crucial - Our certificates are present in a lot of places, so it&#x27;d, frankly, be an absolute disaster if these records could negatively impact the sites today.
+ Are there any other advice or tips you could give me that I should keep in mind?
+ Thank you so very much!
+  
+   submitted by    /u/Charlotte_Host  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;137
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -579,6 +508,206 @@ Anyways let me know the dumbest thing management has ever told you that IT was r
     submitted by    /u/New_Lengthiness_1086  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;143
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3ptej/junipert_mx204_router_internet_access/"
+                        open
+                      >
+                        <summary class="article-expander__title">junipert mx204 router , internet access</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3ptej/junipert_mx204_router_internet_access/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all, I configured a router and a connected switch to it. I can ping the router IP from the switch and vice versa. Also, I can ping 1.1.1.1 from the router, but I can not ping 1.1.1.1 from the switch. Here is the routing table of the router:
+ inet.0: 5 destinations, 5 routes (5 active, 0 holddown, 0 hidden) + &#x3D; Active Route, - &#x3D; Last Active, * &#x3D; Both 0.0.0.0/0 *[Static/5] 21:05:20 &gt; to 172.89.117.1 via xe-0/1/0.0 172.89.117.0/22 *[Direct/0] 21:08:05 &gt; via xe-0/1/0.0 172.89.117.2/32 *[Local/0] 21:08:05 Local via xe-0/1/0.0 192.168.50.0/24 *[Direct/0] 06:25:54 &gt; via xe-0/1/2.0 192.168.50.1/32 *[Local/0] 06:25:54 Local via xe-0/1/2.0 
+ The router IP addresses are:
+ 172.89.117.2 
+ and
+ 192.168.50.1 
+ and the switch IP address is:
+ 192.168.50.2 
+ I should note that I can ping router interface from switch.
+ any body can help me in this problem?
+    submitted by    /u/Straight_Quality6138  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3prh3/noob_question_on_ssh_tunneling_in_ubuntu_with/"
+                        open
+                      >
+                        <summary class="article-expander__title">Noob question on ssh tunneling in ubuntu with Gnome Boxes</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3prh3/noob_question_on_ssh_tunneling_in_ubuntu_with/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/z9Bxe-9CWiYeYejbi2mq2J391gB_1S7iVbOqU430sAI.jpg?auto&#x3D;webp&amp;s&#x3D;b549e8f5f7ddef44c262256e4bf49f8bcd937892" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hi guys, 
+ First time here, newbie on networking problems.
+ I&#x27;m having problems to make an ssh connection from my host machine (ubuntu 22.04) and my virtual machine in Gnome Boxes (Ubuntu server 20.04). After failing to succeed, I relied on the following guide: https://bytefreaks.net/gnulinux/an-easy-way-to-ssh-into-a-gnome-boxes-os, with which I was able to open the ssh tunnel.
+ The problem is that currently, I don&#x27;t know for what reason, the method no longer works and fails me in a generic: &quot;Network unreachable&quot; error. Do you have any idea why? Also do you know if there is a better way to connect me from host to guest using gnome boxes.
+ ip -a | grep:
+ inet 192.168.1.25/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp5s0
+ systemctl status ssh:
+ ssh.service - OpenBSD Secure Shell server
+ Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+ Active: active (running) since Fri 2022-10-14 11:50:31 CEST; 3s ago
+ Docs: man:sshd(8)
+ man:sshd_config(5)
+ Process: 21924 ExecStartPre&#x3D;/usr/sbin/sshd -t (code&#x3D;exited, status&#x3D;0/SUCCESS)
+ Main PID: 21925 (sshd)
+ Tasks: 1 (limit: 38162)
+ Memory: 1.7M
+ CPU: 14ms
+ CGroup: /system.slice/ssh.service
+ └─21925 &quot;sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups&quot;
+ ​
+ ott 14 11:50:31 username systemd[1]: Starting OpenBSD Secure Shell server...
+ ott 14 11:50:31 username sshd[21925]: Server listening on 0.0.0.0 port 22.
+ ott 14 11:50:31 username sshd[21925]: Server listening on :: port 22.
+ ott 14 11:50:31 username systemd[1]: Started OpenBSD Secure Shell server.
+    submitted by    /u/_DocKarma  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3pnj9/help_how_doe_traffic_flow_and_what_port_is/"
+                        open
+                      >
+                        <summary class="article-expander__title">Help: How doe traffic flow and what port is actually used when link is https:// but has a port number on the end?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3pnj9/help_how_doe_traffic_flow_and_what_port_is/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Example link https://website.com:4110
+ Is this traffic still using TCP Port 443 or not?
+ Because our firewall is blocking this link since we only allow https 443.
+ But how can a link be https and use port 4110
+    submitted by    /u/chicconumberone  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3orhd/switch_port_discovery/"
+                        open
+                      >
+                        <summary class="article-expander__title">Switch Port Discovery?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3orhd/switch_port_discovery/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello Everyone,
+ How to find what host is connected to the switch port on HP and Aruba switches? For example show mac-address table on a specific port and lets say i got the mac address of the device some doeds not make sense if i look up find mac addresses websites. Please suggest if I can use Wireshark to make it easier or just just running commands on the switch. Thank you all for your suggestions.
+    submitted by    /u/Driver_Mysterious  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3nrkf/career_nontechnical_interview_questions/"
+                        open
+                      >
+                        <summary class="article-expander__title">[Career] Non-technical interview questions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3nrkf/career_nontechnical_interview_questions/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ I have started to look for a new job, after 10 years within the same company, and are going on a few network engineer interviews in the upcoming week. I am struggling to prepare for the non-technical questions. Specifically &quot;what&#x27;s 3 of your strengths/weaknesses?&quot; What kind of answers should I give, that doesn&#x27;t sound like clichés? Like &quot;I am bad at saying no so I always end up with too much to do&quot; or &quot;I suck at BGP, but I am alway keen to learn new things&quot;.
+    submitted by    /u/rocktanstone  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;140
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3ky5b/peering_noob_question/"
+                        open
+                      >
+                        <summary class="article-expander__title">Peering noob question</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3ky5b/peering_noob_question/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am thoroughly confused after looking at bgp.tools and peeringdb. Can someone pls enlighten me what&#x27;s the relation between facility, exchange and network operator? How does prefix come in?
+ And the most important question: what&#x27;s the most cheapskate way to own your own IP range and use these IPs?
+    submitted by    /u/lmux  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y3kx9h/ballpark_costs_of_securew2/"
+                        open
+                      >
+                        <summary class="article-expander__title">Ballpark costs of SecureW2</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y3kx9h/ballpark_costs_of_securew2/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Doing research into the space for some anticipated discussions I&#x27;m wondering what the ballpark estimate costs are for SecureW2 are at both the high and low end
+    submitted by    /u/Individual_Hearing_3  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -33064,8 +33193,8 @@ In July 2022, Iranian state cyber actors—identifying as “HomeLand Justice”
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3249197785">
-        <time id="build-timestamp" datetime="2022-10-14T10:18:43.062Z">2022-10-14T10:18:43.062Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3249518398">
+        <time id="build-timestamp" datetime="2022-10-14T11:15:02.919Z">2022-10-14T11:15:02.919Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
