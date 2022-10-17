@@ -300,6 +300,56 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y675pp/vlans_with_a_draytek_router_and_unifi_ap_is_this/",
+          "author": null,
+          "description": "Just looking for a pointer if Im setting this up correct?\n VLAN10 - 192.168.10.1 - Office VLAN20 - 192.168.20.1 - Guest\n I have setup 2 x VLANs on the Draytek router (Office & Guest) assigmed them to the ports. Then i have added the VLANs to the UniFi AP & Switch thats all fine. \n However the UniFi APs and switch are getting VLAN10 IPs and wondering if i should have them on a Management VLAN for best practise? Or is it ok to keep them on here as its the business network? It's only a very small 5 user setup\n    submitted by    /u/tempredacc85  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y675pp/vlans_with_a_draytek_router_and_unifi_ap_is_this/",
+          "publishedOn": "2022-10-17T10:12:01.000Z",
+          "wordCount": 39245,
+          "title": "VLANs with a Draytek router and UniFi AP - is this correct?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y66xnw/moronic_monday_october_17_2022/",
+          "author": null,
+          "description": "Howdy, /r/sysadmin!\n It's that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I've taken over responsibility for posting these weekly threads so you don't have to worry about anything except your comments!\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y66xnw/moronic_monday_october_17_2022/",
+          "publishedOn": "2022-10-17T10:00:13.000Z",
+          "wordCount": 39868,
+          "title": "Moronic Monday - October 17, 2022",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y66vya/handle_clients_that_are_offline_for_long_periods/",
+          "author": null,
+          "description": "Hi Guys,\n I need some input for a new issue in our company. We have a small hand full of new Business Consultants that have Laptops that are offline in AD for sometimes up to 3-4 Months.\n I am very keen on keeping the AD clean, and usualy clients that are offline for over 2 Months get deactivated. \n My question is, is there a best practice way of handling those kind of clients in AD to prevent accidental deletion and or other Input on how to manage clients like this.\n Thank you!\n    submitted by    /u/RLDdank  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y66vya/handle_clients_that_are_offline_for_long_periods/",
+          "publishedOn": "2022-10-17T09:57:21.000Z",
+          "wordCount": 39239,
+          "title": "Handle Clients that are offline for long periods",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y66jt4/azure_and_azuread_dev_environment/",
+          "author": null,
+          "description": "Hi guys,\n we are a medium sized dev company. As of today, any application is developed in our own tenant. Devs are able to register new apps, grant (most) delegated permissions and start hacking away (loosely speaking).\n There are a couple of issues I see with that approach:\n  \nApps grant permissions to production data.\n Bugs or misuse can lead to data loss.\n App credential stealing can lead to data loss and leaks.\n Registering enterprise apps can lead to data leaks.\n  \nFor that reason, I'd wish that development is out-sourced to a non-production tenant. Or better: Each project gets their own tenant. We have a couple of dozen parallel projects and this could prevent teams getting in each others way - even if that would be only by accident.\n There are currently two ways I can imagine how this works:\n  \nFor every new project, a standalone tenant must be registered. If licenses are needed, they must buy-in. Ideally, this is managed completely separate from IT e.g., by the project manager or a designated tenant-owner. They manage the tenant registration, credit-card info and payments, licensing. We have a devops-department, maybe also they could take over dev-tenant management company-wide.\n For every new project, a M365 developer subscription sandbox is registered. The upside to this is that it is batteries-included with licensing and sample data in most used areas like EXO and SP. The downside is that this tenant is linked to a person in the company, who may leave the company at any point in time. (Now that I think of it, we could use service accounts to have this not linked to real people.)\n  \nI imagine that this tenant should not be managed by IT at all. The project members are responsible for security, compliance and data privacy.\n How are you guys managing this kind of stuff? Are there other solutions I have not thought of yet?\n    submitted by    /u/Caleb__  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y66jt4/azure_and_azuread_dev_environment/",
+          "publishedOn": "2022-10-17T09:36:03.000Z",
+          "wordCount": 40232,
+          "title": "Azure and AzureAD dev environment?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y66gie/help_we_messed_up_ms_sql_service_is_down_due_to/",
+          "author": null,
+          "description": "I have inherited the responsibility for maintaining the IT side of a very small 4 people startup as the lead guy has become permanently ill. Neither he nor I have tons of experience. Today a server rebooted and when it came up again the SQL server was down due to expired evaluation as I found out, when reviewing the logs.\n Turns out the reason for not having a license was that it was too expensive for us, but as long as the DB was >10GB it shouldn't be a problem I was told, but tuns out that only applies if you use the express version. We only need this particular server for 1.5 months more before it will be taken down anyway.\n Is it possible to migrate the db from the standard edition to the express? I also read an article saying that I can turn back the clock on the server, but I fear that may lead to complications with other systems, though that would be an easy solution given we only need it for 6 more weeks.\n I am frankly a little out of my depth here. I'm good at figuring stuff out by furiously googling and never giving up and I have worked as a junior sysadmin for two years and have been dabbling with homelabs etc for many years. I'm decent with networking and Linux, but I have not worked much at all with SQL, especially not MS SQL. \n Could I buy a license for just two months perhaps? Please help, this is a production system.\n What should I do?\n    submitted by    /u/bionor  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y66gie/help_we_messed_up_ms_sql_service_is_down_due_to/",
+          "publishedOn": "2022-10-17T09:30:17.000Z",
+          "wordCount": 39879,
+          "title": "Help. We messed up. MS SQL service is down due to evaluation period.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/y669bd/remotely_connecting_to_sql_server/",
           "author": null,
           "description": "Dear,\n I need your help in connecting to a SQL server remotely. The SQL server is not in our subnet but outside our network, but in same country.\n I allowed the SQL port 1433 in firewall and also in DATABASE server properties, in connection, enabled remote connection.\n Is it possible to connect to a SQL server database remotely using MS SQL Server Management Studio?\n Thank you all in advance.\n    submitted by    /u/Choice-Flaky  \n [link]   [comments]",
