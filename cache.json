@@ -96,6 +96,16 @@
       "siteUrl": "https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ",
       "articles": [
         {
+          "id": "https://www.youtube.com/watch?v=GDC9aKtebAU",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=GDC9aKtebAU",
+          "publishedOn": "2022-10-17T17:59:04.000Z",
+          "wordCount": null,
+          "title": "Which VPN To Use In pfsense?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.youtube.com/watch?v=lzJ_SOjDzOE",
           "author": null,
           "description": "",
@@ -299,6 +309,216 @@
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y720gc/debugging_an_unresponsive_server/",
+          "author": null,
+          "description": "My ubuntu cloud server has begun having random spikes of IOPS/read and cpu every few days. I've tried to keep some logging scripts running but even they stop logging while server is unresponsive during this spike. The spike is anything from 5mins-1hr long\n Because of being unable to log or login, I'm at a loss how to debug this,any suggestions?\n We deployed upgraded versions of mongo/mysql and other apps via docker but I can't kill them for days at a time to check server behavior.\n Logging script: while true; do (echo \"%CPU %MEM ARGS $(date)\" && ps -e -o pcpu,pmem,args --sort=pcpu | tail) >> ps.log; sleep 5; done & while true; do (echo \"%CPU %MEM ARGS $(date)\" && ps -e -o pcpu,pmem,args --sort=pmem | tail) >> ps2.log; sleep 5; done &\n    submitted by    /u/goin_nowhere  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y720gc/debugging_an_unresponsive_server/",
+          "publishedOn": "2022-10-18T09:22:30.000Z",
+          "wordCount": 41266,
+          "title": "Debugging an unresponsive server?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y717vq/sophos_central_email_protection_possible_to_make/",
+          "author": null,
+          "description": "So yesterday I managed to infect myself with this: https://www.virustotal.com/gui/file/e268f2982e14d363e7f7874696d231701234d4b426c3a1bef7271cc0bf766706/summary It came with a very well made, legit looking mail. The main reason why I was so careless is because the sender name was very similar to one of our customers. The virus itself was bundled inside of an img file. We use sophos central email gateway with all bells and whistles enabled - including the sandbox. The mail made it through all of that, windows 11 defender (also with all bells and whistles enabled) didn't catch it either. \n With the help of someone smarter than me we managed to gain access to the ftp server that the virus uses to upload extracted login information. Afterwards we sent an abuse notice to the hoster who immediately deleted all contents and locked the customer out. \n We use the default sophos list for blocked attachment file types (sophos specifically recommends using it instead of making a list on your own!). I'm trying to change that to a whitelist so for example only PDF files are allowed everything else goes into quarantine. But apparently sophos central doesn't even have that option or am I blind?\n    submitted by    /u/Wild-Square1453  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y717vq/sophos_central_email_protection_possible_to_make/",
+          "publishedOn": "2022-10-18T08:40:10.000Z",
+          "wordCount": 41430,
+          "title": "Sophos Central Email protection: possible to make a whitelist for allowed mail attachment files?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y717e6/questions_from_a_dev/",
+          "author": null,
+          "description": "Hello /rsysadmin\n ​\n First, if this is not supposed to be posted here, you all have my sincere apologies.\n ​\n I am a web developer (don't throw stones yet ^^ ) and I come to you looking for advice.\n ​\n As a pet project, I am building an application to streamline data collection in non technical teams.\n It is a server based application (PHP) with a web interface so I would see it either as a cloud product or on an in house server.\n I am trying to do things the right way, and one of my next steps is to think about user authentication.\n For the basics, i made a username or email | password authentication, users stored in the database, password encrypted using bcrypt. The administrator create user accounts and generate an account specific url for account activation. Transmission of the url is the responsibility of the admin.\n To go further, I plan on implementing some SSO methods.\n My guesses are:\n  \ngoogle\n openId\n microsoft AD (this one will be fun to debug, as I never understood windows server XD)\n  \nFinally come the question:\n If you had to sysadmin such a solution, what SSO solution would you expect to find by default ?\n (And to go further, what kind of functionnality would you expect to find out of the box ? )\n ​\n Thank you in advance :)\n    submitted by    /u/Elvandar_Ysalys  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y717e6/questions_from_a_dev/",
+          "publishedOn": "2022-10-18T08:39:25.000Z",
+          "wordCount": 42180,
+          "title": "Questions from a dev",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y70veo/pvc_is_not_creating_in_eks/",
+          "author": null,
+          "description": "Hi, I created an eks cluster. And deployed EBS csi drivers as well. Now if i am deploying any statefulset it is not scheduled anywhere. It is showing status as pending.\n PVC is also in the pending stage. No PV available. \n I checked the ebs-csi-controller log, it is showing the following errors. \n E1017 16:44:10.757397 1 leaderelection.go:330] error retrieving resource lock kube-system/ebs-csi-aws-com: Get \"https://172.20.0.1:443/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/ebs-csi-aws-com\": dial tcp 172.20.0.1:443: i/o timeout E1017 16:44:48.306178 1 leaderelection.go:330] error retrieving resource lock kube-system/ebs-csi-aws-com: Get \"https://172.20.0.1:443/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/ebs-csi-aws-com\": dial tcp 172.20.0.1:443: i/o timeout E1017…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y70veo/pvc_is_not_creating_in_eks/",
+          "publishedOn": "2022-10-18T08:20:01.000Z",
+          "wordCount": 41406,
+          "title": "PVC is not creating in EKS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y70pnn/how_to_enable_allow_administrator_account_lockout/",
+          "author": null,
+          "description": "https://support.microsoft.com/en-us/topic/kb5020282-account-lockout-available-for-local-administrators-bce45c4d-f28d-43ad-b6fe-70156cb2dc00\n ​\n I'm trying to integrate this Policy into our noncloud Active Directory Domain. But it`s a local policy and I can't find the corresponding admx file.\n ​\n How would one go about to propagate that Local Computer Policy to all clients?\n    submitted by    /u/QuirkyImpress2099  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y70pnn/how_to_enable_allow_administrator_account_lockout/",
+          "publishedOn": "2022-10-18T08:10:12.000Z",
+          "wordCount": 41472,
+          "title": "How to enable \"Allow Administrator account lockout\" as GPO?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y70id3/microsoft_hybrid_environment_disabled_user_to/",
+          "author": null,
+          "description": "I am just having the discussion of whether or not to remove users from the AAD sync when de-provisioning.\n We are in a hybrid environment. During user deprovisioning, after the users are disabled and the associated license groups are removed, we currently keep them synchronized via AAD Connect.\n ​\n I know that when the users are de-provisioned, they are moved to an OU in AD that is not synchronized by AAD-Connect.\n ​\n I can't find a \"best practice\" or similar in the Microsoft documentation, is there a recommendation from Microsoft?\n ​\n How do you guys handle this?\n ​\n best regards\n    submitted by    /u/Mundane_Fix7621  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y70id3/microsoft_hybrid_environment_disabled_user_to/",
+          "publishedOn": "2022-10-18T07:58:01.000Z",
+          "wordCount": 41942,
+          "title": "Microsoft Hybrid Environment - Disabled User to continue syncing or not?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y70ib4/configuring_custom_url_handlers_on_os_x/",
+          "author": null,
+          "description": "Hi all!\n I've been trying to configure custom URL handlers that work on Mac's for our business, but without any success. We want a handler to open links to local files, and open these files with Finder.\n So far I've tried:\n Lincastor https://onflapp.github.io/blog/pages/LinCastor.html\n RCDefaultApp https://www.rubicode.com/Software/RCDefaultApp/\n SwiftDefaultApp https://github.com/LordKamina/SwiftDefaultApps\n https://hublog.hubmed.org/archives/001154 \n RCDefaultApp & SwiftDefaultApp are outdated and not compatible with the OS version we're using, while Lincastor doesn't do anything when I add a new URL handler.\n Can anyone help me out? I'm relatively new to MacOS. The macOS version we currently have installed is Monterey.\n Thank you!\n    submitted by    /u/SouthEye9030  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y70ib4/configuring_custom_url_handlers_on_os_x/",
+          "publishedOn": "2022-10-18T07:57:56.000Z",
+          "wordCount": 41194,
+          "title": "Configuring custom URL handlers on OS X",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y70f76/adnps_8021x_mac_authentication/",
+          "author": null,
+          "description": "Hello,\n We're currently trying to secure the network even more and we'd like to setup 802.1x auth for printers to put allowed printers in the correct vlan, and unknown devices in a quarantine vlan.\n Computers are authenticated using their AD computer account, and printer don't have that.\n Certificates are also not a good solution since printers are not able to request renewal themselves... \n I've seen posts saying \"you just have to create a AD user account with the macaddress and same for the password\" but no one seems to care about the fact that this is a huge security issue.\n The only thing I found was to create a \"Connection Request Policy\" for each MAC and put them above every other regular policies.\n Conditions are :\n - Calling station ID = mac address\n - NAS Port Type = Ethernet\n Settings :\n - Authentication : Accept users without validating credentials\n It does not have to be 100% secure but at least prevent users from connecting untrusted devices like some 3rd party contractor who comes for the day and needs \"internet\"... but I'm still looking for ideas or a better way to do it.\n Thanks in advance :)\n    submitted by    /u/foundunderwater  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y70f76/adnps_8021x_mac_authentication/",
+          "publishedOn": "2022-10-18T07:52:31.000Z",
+          "wordCount": 42060,
+          "title": "AD/NPS 802.1x mac authentication",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y7085l/latest_wordpress_603_fixes_16_security/",
+          "author": null,
+          "description": "A new WordPress security release was announced on October 17th, 2022. This release includes a substantial number of security bug patches, so we reviewed them. 16 security vulnerabilities were fixed (such XSS, CSRF, SQLi, etc.) so you may want to check your servers and update the sites running on WordPress. \n Too much info to post here directly so the details are written in a blog post here:\n https://patchstack.com/articles/wordpress-6-0-3-security-release-summary/\n    submitted by    /u/ded1cated  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y7085l/latest_wordpress_603_fixes_16_security/",
+          "publishedOn": "2022-10-18T07:41:12.000Z",
+          "wordCount": 41157,
+          "title": "Latest WordPress 6.0.3 fixes 16 security vulnerabilities",
+          "imageUrl": "https://external-preview.redd.it/hCXWp4iPlYVQuE_lIPQyiSOdsUUyj1Yttfip5UDILTs.jpg?auto=webp&s=eed896a7e10550124bf13ab7b935aa35466db20b"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6zv5k/windows_admin_center_local_access/",
+          "author": null,
+          "description": "Hey, I recently installed Windows 11 ARM on a raspberry pi and installed Windows Admin Center to manage my servers. Problem is I can only access it via local host which means I have to RDC into that slow little machine. Has anyone found a reliable way to open WAC up on a non server install to anyone browsing the ip? I can protect it here via my management VLAN.\n    submitted by    /u/TattooedBrogrammer  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6zv5k/windows_admin_center_local_access/",
+          "publishedOn": "2022-10-18T07:19:25.000Z",
+          "wordCount": 41154,
+          "title": "Windows Admin Center local access",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6zfug/anyone_here_uses_nessus_vulnerability_scanner/",
+          "author": null,
+          "description": "I want to try it, anyone here used free version? Ive read that it supports 16 IPs to scan, maybe i can input only important things for it to scan, like DC, veeam, etc?\n    submitted by    /u/hwehwegwhgewe23  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6zfug/anyone_here_uses_nessus_vulnerability_scanner/",
+          "publishedOn": "2022-10-18T06:54:24.000Z",
+          "wordCount": 39936,
+          "title": "Anyone here uses Nessus Vulnerability Scanner Free version for their network?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6z70j/ideas_for_comparing_fileserver_to_sharepoint_site/",
+          "author": null,
+          "description": "I recently moved a drive to Sharepoint, and i used Sharepoint Migration Tool for the task.\n Since SPMT didnt give me any sort of errors, and telling me that no files was skipped, i belived that everything was in perfect order.\n However, i can see that it is far from in perfect order. Lots of files and folders is missing. And it seems random which files is missing and which dont. There is no difference in rights on the folders, where files is missing, and there are no obvious reason to why the files are missing.\n Running an incremental task with SPMT makes no difference, it wont acknowledge that there are files it doesn't sync up.\n Its quite a large filedrive. My original plan was to sync everything with OneDrive to a temp location on a fileserver, and then have something like FreeFileSync to compare files and sync the missing files. But is not a viable way since OneDrive taking a really long time to get something in sync, and i dont really believe that it can handle all that data, because its also freezing up on me.\n ​\n TLDR;\n So im looking for some tool, not SPMT, since experience, that can compare my files on the fileserver to a Sharepoint site and sync the missing files. Preferably free.\n Ideas?\n    submitted by    /u/Sandahl84  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6z70j/ideas_for_comparing_fileserver_to_sharepoint_site/",
+          "publishedOn": "2022-10-18T06:40:16.000Z",
+          "wordCount": 40546,
+          "title": "Ideas for comparing fileserver to Sharepoint site.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6wz85/good_file_deployment_storage/",
+          "author": null,
+          "description": "hi guys,\n I've been asking myself what do you use as storage for gpo file deployment? I'm currently using a NAS but could it be like sysvol or netlogon?\n    submitted by    /u/Krinkk  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6wz85/good_file_deployment_storage/",
+          "publishedOn": "2022-10-18T04:40:32.000Z",
+          "wordCount": 40429,
+          "title": "Good file deployment storage",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6siuh/server_2003webroot_hacked_hard_to_believe_i_know/",
+          "author": null,
+          "description": "submitted by    /u/taylor436  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6siuh/server_2003webroot_hacked_hard_to_believe_i_know/",
+          "publishedOn": "2022-10-18T01:10:39.000Z",
+          "wordCount": 41740,
+          "title": "Server 2003\\Webroot Hacked (hard to believe I know)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6pv9r/moving_from_tech_support_to_sysadmin/",
+          "author": null,
+          "description": "I'm currently working in tech support (just over 3 years now) and really am wanting to move over to sysadmin. I've sent out a handful of applications and am having no luck so far. I've realized that there is a huge gap in knowledge and experience between tech support and sysadmin.\n I am \"level 2\" at my company and deal with our business products so I work with admins vs home users which has given me some understanding of what a sysadmin is, but I'm still missing a lot of what's required for a sysadmin position.\n Is a helpdesk job going to be my best option for getting into a sysadmin role? I'm hesitant to pursue helpdesk since I'll more than likely lose a noticeable amount of pay, but there is no more growth for me in tech support and I would be able to make more in the long run as a sysadmin.\n Has anyone here gone directly from tech support to sysadmin? If so, any advice on making that switch?\n    submitted by    /u/SpareBeat1548  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6pv9r/moving_from_tech_support_to_sysadmin/",
+          "publishedOn": "2022-10-17T23:12:03.000Z",
+          "wordCount": 43938,
+          "title": "Moving from tech support to sysadmin",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6ps7y/goodbye_control_printers_thank_you_print_nightmare/",
+          "author": null,
+          "description": "Noticed in the newest build of Windows 11 \"Control Printers\" doesn't take you to the old devices and printers, on the plus side because of Print Nightmare and all the hassle it caused me I started learning PowerShell and don't really have to manually install a printer.\n    submitted by    /u/Btown891  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6ps7y/goodbye_control_printers_thank_you_print_nightmare/",
+          "publishedOn": "2022-10-17T23:08:31.000Z",
+          "wordCount": 41430,
+          "title": "Goodbye \"Control Printers\", thank you Print Nightmare",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6kum7/ms_hardening_settings_requires_ms_defender/",
+          "author": null,
+          "description": "So I'm sure everyone knows the following settings in Hardening Guidelines:\n Block Office applications from injecting code into other processes\n Block Office applications from creating executable content\n Block all Office applications from creating child processes\n Block Win32 API calls from Office macro Warn\n Block execution of potentially obfuscated scripts (js/vbs/ps)\n Block JavaScript or VBScript from launching downloaded executable content\n Block Process Creations Originating from PSExec and WMI Commands\n Etc etc\n well, it turns out Windows Defender has to be the primary AV Solution on your PC for these to function. MS Docs even labels these as requiring and Depending on Defender to function The M365 Security center even states Defender must be the Primary AV Solution with Real Time Pr…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6kum7/ms_hardening_settings_requires_ms_defender/",
+          "publishedOn": "2022-10-17T19:56:04.000Z",
+          "wordCount": 38755,
+          "title": "MS Hardening Settings Requires MS Defender",
+          "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&s=e62264227377a9581e2e2946169864d130fa3217"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6igqa/proper_way_to_deploy_printers_post_printnightmare/",
+          "author": null,
+          "description": "Hi!\n What's the recommended way to deploy printers in the post PrintNightmare world? Small AD environment with under a 100 users with a print server. How would it differ for printers with a V3 driver versus ones that offer a V4?\n    submitted by    /u/Phratros  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6igqa/proper_way_to_deploy_printers_post_printnightmare/",
+          "publishedOn": "2022-10-17T18:22:16.000Z",
+          "wordCount": 39948,
+          "title": "Proper way to deploy printers post PrintNightmare?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6hvhc/found_malware_in_the_source_code_for_my_companys/",
+          "author": null,
+          "description": "Sorry if this is the wrong sub to post this in, mods feel free to delete if so.\n I work in IT for a small insurance firm. I accidentally discovered that our website was having issues loading when troubleshooting a different problem and found some random text in german appearing on the homepage. Upon inspecting the source code there are TONS of links that point to gambling websites and other stuff involving crypto. Our insureds use the website to log into their portal which doesn’t contain any PHI but it does have PII such as addresses, phone numbers, etc.. Is it safe to assume that there are keyloggers stealing login credentials and possibly worse things going on?\n I emailed our webdev but he isn’t in the office today and hasn’t responded yet. I’m not sure what our next steps should be.\n EDIT: No we don’t use WordPress\n    submitted by    /u/texoma_5  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6hvhc/found_malware_in_the_source_code_for_my_companys/",
+          "publishedOn": "2022-10-17T17:59:25.000Z",
+          "wordCount": 43507,
+          "title": "Found malware in the source code for my company’s website",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6hpe5/why_do_they_offshore_go_out_of_their_way_to_make/",
+          "author": null,
+          "description": "Grumpy old IT guy, coming in hot again.\n We had a filesystem migration to a new server this weekend. Figured there would be a few hiccups, given how thorough (/s) our testing team was. Sure enough got a P1 ticket that they are unable to process files from a system this morning. Turns out they were using sftp to push files up to the old server for one of the data flows.\n So, easy enough fix. Once I was sucked into the P1 group call this morning, I told them exactly what needed to be done. Put in a request to get ssh access to the new server, and here is the new path to the directory. Easy peasy, just like I sent out last week.\n Cut to 6 hours later. The call now has over 20 people on it, including management. They are dissecting all the data flow diagrams, and just ruled out the application server as the issue about an hour ago. Two managers asked me to rejoin the call, and before they could even 'recap' everything they've done so far, I pasted a screenshot of what I told them needed to be done from 6 hours ago, and got dead silence.\n Seems one of the offshore managers (yes, this is ALL coming from our offshore \"support partner\"), stepped in at the end of the call this morning to manage the issue. They are supposedly working on the access requests now and will let me know. In other news, now management wants me to write up an RCA as to the problem, and corrective instructions. Sure, no one read my emails over the last couple weeks warning of this change, they ignored my instructions for the fix this morning, and the still don't seem to fathom what they did wrong. That about covers it.\n    submitted by    /u/digitalamish  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6hpe5/why_do_they_offshore_go_out_of_their_way_to_make/",
+          "publishedOn": "2022-10-17T17:52:40.000Z",
+          "wordCount": 43698,
+          "title": "Why do they (offshore) go out of their way to make fixing things difficult?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/y6g8qg/has_anyone_ever_enforced_an_abandonment_of_adobe/",
+          "author": null,
+          "description": "We are patching it monthly and we STILL are getting high vulnerability scores among the workstation fleet. Considering the wealth of PDF viewers available, to say nothing of the fact that most modern browsers can open them natively, I was wondering what the user backlash would be if we just uninstalled it across the board. Then the question would be whether to replace it with, well, nothing (i.e let them use browsers) or instead deploy Foxit or PDF-Xchange or whatever.\n Anyone ever covered anything like that?\n ADDENDUM: I don't mean Adobe Acrobat. Just Reader. Acrobat certainly has its vulnerabilities too but a hugely smaller foothold in the fleet.\n    submitted by    /u/Xenith19  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/y6g8qg/has_anyone_ever_enforced_an_abandonment_of_adobe/",
+          "publishedOn": "2022-10-17T16:54:42.000Z",
+          "wordCount": 42720,
+          "title": "Has anyone ever enforced an abandonment of Adobe Reader?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/y6clni/is_eaptls_insecure_for_user_authentication/",
           "author": null,
@@ -9781,24 +10001,6 @@
             "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/4607f644-e53e-4b3c-8f5c-e34590969a0d/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=4607f644-e53e-4b3c-8f5c-e34590969a0d&feed=WCb5SgYj"
           },
           "imageUrl": null
-        },
-        {
-          "id": "6500d92a-4f70-452b-852c-9c63cab51aa7",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "Newly released photos from the James Webb Space Telescope have allowed scientists to view farther into space, and farther into the past, than ever before. The images emerging are raising questions about the origins of our universe. One viral article from independent scientist Eric Lerner made the rounds on social media in recent weeks with its provocative claim that the Big Bang never happened. We speak to UC San Diego Professor of Cosmology Brian Keating about what the images show, and what we can and can’t conclude from them.  Get the facts first on Morning Wire.",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2022-09-18T08:30:00.000Z",
-          "wordCount": null,
-          "title": "Did the Big Bang Happen? | 9.18.22",
-          "itunes": {
-            "duration": "00:13:57"
-          },
-          "enclosure": {
-            "length": "13401516",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/2322b8ad-d739-4ff7-9574-6c3199a587de/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=2322b8ad-d739-4ff7-9574-6c3199a587de&feed=WCb5SgYj"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -9807,6 +10009,146 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/",
+          "author": null,
+          "description": "I'm setting up a network for a small shop (5 users) with a draytek router acting as the DNS currently (192.168.1.1). I am wondering though should I be giving the clients (via DHCP the router IP or instead 8.8.8.8 and 4.4.4.4 so it has failover? \n I know both will work but just wondering on the best practise? There is no servers internally and nothing that's needing DNS resolution internally.\n What's people's thoughts know this ?? I think my feeling is set it to the router incase I need to set any DNS records on the draytek for something.\n    submitted by    /u/tempredacc85  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/",
+          "publishedOn": "2022-10-18T08:29:38.000Z",
+          "wordCount": 38711,
+          "title": "What DNS do you give clients in a basic network?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/",
+          "author": null,
+          "description": "I'm looking for some info on the size of a table on ASR9001. \n According to this doc, the ASR9000 can take 1.2 million routes. Is that routes in the RIB or the FIB?\n I have an e-BGP connection to an upstream internet provider and I take a full route table (approx 900k routes) If I take a second connection to a different upstream to a second provider also with a full route table will I exceed the max allowed routes? Or, will it be OK because BGP will only take the best routes between the two and discard the others in the route table?\n Thanks\n    submitted by    /u/Tars-01  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/",
+          "publishedOn": "2022-10-18T08:08:55.000Z",
+          "wordCount": 38959,
+          "title": "Route table size ASR9001",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/",
+          "author": null,
+          "description": "Hi all, I am in possession of a few IP-ranges as a Hosting company. \n I encounter difficulity online with my IP's (IPv4) because all kind of Third Parties identify me incorrectly as Polish. While I am infact in The Netherlands. \n These GEO IP DB's I know of, and are reporting NL correctly: \n Ripe.net\n Maxmind\n IP2Location \n Do you guys and gals know maybe more GEO IP DB's that I should contact for GEO IP Corrections? \n Please help, for me it's a serious problem. \n Thank you all so much in advance.\n    submitted by    /u/Engineer8899  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/",
+          "publishedOn": "2022-10-18T07:49:09.000Z",
+          "wordCount": 38582,
+          "title": "How to update GEO-IP location and what DB's exist to request correction?",
+          "imageUrl": "https://external-preview.redd.it/bCDU7YzXpZokVVrFT1HMvFABUjM_8Wt4XFis6Ck_q4w.jpg?auto=webp&s=55ad0939a8a99b53423aed8f3d208c47f23dc9ea"
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/",
+          "author": null,
+          "description": "Howdy y'all!\n Looking for tips/pointers on dealing with multiple internet circuits without SD-WAN appliances.\n I'm fairly well rounded with network and systems administration, but due to working in medium sized orgs most of my career, I'm definitely in the \"jack of all trades, leader of none\" camp.\n With this hurricane that recently ripped here through Florida, it's got me looking at now wanting to add some WAN redundancy.\n I'm about midway though the lifecycle of a sizable investment in ISR 4ks as my branch office routers/firewall. Our branches all have a single internet circuit and a basic AVPN circuit from a big ISP. The AVPN doesn't have any internet access option setup, it is only used for a private WAN.\n The idea is that I'd like to drop a 2nd, cheaper circuit for backup internet acc…",
+          "link": "https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/",
+          "publishedOn": "2022-10-18T05:11:40.000Z",
+          "wordCount": 39027,
+          "title": "Redundant Internet Topology/Strategy?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/",
+          "author": null,
+          "description": "I'm the network admin for a client who is having intermittent internet issues. I contacted their ISP who sent out a tech to investigate. I asked the tech about removing the 3-way splitter in place, wondering if it had degraded and possibly causing issues. The tech tested the signals with an expensive looking tool and determined the signals coming in were good. At one point, he did indicate we could remove the splitter without issue. But, them he tested it again before proceeding and noticed an issue. \n The way the tech explained it was if we remove the splitter, we would gain 5dB somewhere, but then lose 5dB somewhere else which would push past a certain threshold that would cause sync issues. Im not even sure it was dB, but I have to assume. He wasnt great at talking smart and I wasnt great at knowing what he was talkinh about. Im not an expert in coax cable signaling and understanding readings. I have worked at an ISP in tech support and understand the basics and sync issues, but I never got trained or learned much about this. Any help is appreciated.\n    submitted by    /u/dumbtechnoob  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/",
+          "publishedOn": "2022-10-18T04:27:58.000Z",
+          "wordCount": 39558,
+          "title": "Are there instances where removing a coaxial cable spillter would be bad for the modem's signal?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6w47r/recommended_reading_for_ospf_ibgp/",
+          "author": null,
+          "description": "I'm looking for recommendations for learning the best practices regarding setting up OSPF and iBGP in a large network, particularly as it relates to traffic engineering and path selection.\n I'm already familiar with the basic configuration of these protocols in a medium sized single campus environment with bandwidth to spare, but I've recently moved to a new employer and am in the beginning stages of setting up a network to connect many data centers around the world with our own IP space. As a result we'll have many entry and exit points with various network providers. Now latency and available bandwidth are very real issues that I've not previously had to think about.\n Any tips on route metrics, link costs, BGP communities / filtering, local preference, ect... Would be very helpful.\n Blogs posts, books, or personal anecdotes all welcome.\n    submitted by    /u/ljb2of3  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6w47r/recommended_reading_for_ospf_ibgp/",
+          "publishedOn": "2022-10-18T03:58:06.000Z",
+          "wordCount": 38872,
+          "title": "Recommended reading for OSPF / iBGP?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6tudd/mtp_universal_polarity/",
+          "author": null,
+          "description": "Hey,\n I've been researching MTP fibre cables and can get my head around, just about, Type A, B and C (and AF), but I've seen a \"universal polarity\" https://www.fs.com/uk/products/143164.html?attribute=6679&id=299323 but very little documentation about on what that actually means.\n Can anyone explain? And why I'd use it over the other types?\n Thanks!\n    submitted by    /u/CounterclockwiseTea  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6tudd/mtp_universal_polarity/",
+          "publishedOn": "2022-10-18T02:10:39.000Z",
+          "wordCount": 38640,
+          "title": "MTP Universal Polarity?",
+          "imageUrl": "https://external-preview.redd.it/7285FchIjK7iX7M4JGdCrAMQSD_x9JXdzY5hH0O8GCk.jpg?auto=webp&s=79bbc8d599a3149fee3de1f7a69abeb4c1f2b221"
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6rlq5/cloud_network_administration_jobs_inquiry/",
+          "author": null,
+          "description": "tried to get some answers in /r/itcareerquestions but no bites.\n For the ones that have these types of jobs what is it like on a day to day?\n How did you get to this point in your life to go that route vs traditional on-prem hardware?\n Been in IT for years mainly deal with onsite network switches/routers/firewalls/WAN Services, with a few CompTIA/Cisco certs as well what does this translate to for Cloud Services?\n What are some basic job requirements are needed for cloud infrastructure jobs and is the pay much higher and if so then why?\n    submitted by    /u/tolegittoshit2  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6rlq5/cloud_network_administration_jobs_inquiry/",
+          "publishedOn": "2022-10-18T00:28:50.000Z",
+          "wordCount": 38176,
+          "title": "Cloud Network Administration jobs inquiry",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6mbk7/long_shot_but_ill_give_reddit_gold_to_anybody/",
+          "author": null,
+          "description": "I have 300 switches I need to create a specific VLAN on. I was hoping to use snmpset, but it appears my syntax is way off.\n    submitted by    /u/dannymuffins  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6mbk7/long_shot_but_ill_give_reddit_gold_to_anybody/",
+          "publishedOn": "2022-10-17T20:51:19.000Z",
+          "wordCount": 44906,
+          "title": "Long shot but I'll give Reddit gold to anybody with a working answer: How do I create a VLAN on a Ruckus/Brocade ICX 6450 using snmpset?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6kjpq/aruba_aoscx6100_switch_to_switch_ssh_not_working/",
+          "author": null,
+          "description": "I am trying to SSH from Switch A to Switch B. ( CX6100 )\n Both Switches have vlan 1 no ip DHCP and manually configured IP addresses on VLAN 2.\n I can plug my laptop into an access port on vlan 2 both ping and ssh into any of the switches.\n If I attempt to ssh username@switchIP from the console of any switch, it just hangs. \n Any Ideas?\n    submitted by    /u/Crazy_Memory  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6kjpq/aruba_aoscx6100_switch_to_switch_ssh_not_working/",
+          "publishedOn": "2022-10-17T19:44:17.000Z",
+          "wordCount": 38991,
+          "title": "Aruba AOS-CX6100 Switch to Switch SSH not working",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6hhux/l3_only_vrfs_with_vxlan/",
+          "author": null,
+          "description": "Anybody running VXLAN with MP-BGP simply to do L3 VRF/segmentation? In a scenario where you have no need to stretch layer 2 vlans, would it make sense to still do VXLAN as a simple/cheap way to accomplish L3 segmentation? What other options would there be?\n    submitted by    /u/Vxlan-interface  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6hhux/l3_only_vrfs_with_vxlan/",
+          "publishedOn": "2022-10-17T17:44:19.000Z",
+          "wordCount": 39039,
+          "title": "L3 only VRF's with VXLAN?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6h6s3/how_big_of_a_vlan_broadcast_domain_is_too_big/",
+          "author": null,
+          "description": "At a large factory we have a WiFi SSID linked to a /23 subnet which is used exclusively for phones and tablets on the factory floor for carrying out tasks by the factory floor staff. We're running out of IP addresses on the /23 network, would it be okay to increase the network to a /22 without causing broadcast issues or, is a /22 too large of a broadcast domain?\n Normally I would just create a additional subnet/ VLAN however, creating a second network/ VLAN wouldn't be ideal as ideally we need a single SSID.\n We use DHCP exclusively on this subnet with no static addresses - would it be a good idea to increase the network to a /22 but only increase our DHCP scope to 6-700 IP addresses to limit the size of the broadcast domain as much as possible?\n    submitted by    /u/wutanglan90  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6h6s3/how_big_of_a_vlan_broadcast_domain_is_too_big/",
+          "publishedOn": "2022-10-17T17:32:16.000Z",
+          "wordCount": 40308,
+          "title": "How big of a VLAN/ broadcast domain is too big?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6flzd/know_any_reliable_vendors_that_sell_refurbished/",
+          "author": null,
+          "description": "And do they offer warranty on their refurbished/used managed switches?\n    submitted by    /u/vane1978  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6flzd/know_any_reliable_vendors_that_sell_refurbished/",
+          "publishedOn": "2022-10-17T16:29:57.000Z",
+          "wordCount": 38469,
+          "title": "Know any reliable Vendors that sell refurbished managed switches",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/y6cbqp/trying_to_setup_network_failover_with_lan_to_wan/",
+          "author": null,
+          "description": "I currently have two routers running in my small business network setup. One is setup for the main network and is my Fortinet 80f. It currently has a 1gb circuit from ISP 1. The other is a Pfsense sg-3100 which is set up for our Kraft's team only and it has its own 1gb circuit from a different ISP. My problem is the ISP on my main router is pretty crappy and has outages all the time. I would like to utilize the 1GB on my 2nd router for failover. I figured there must be a way to configure the lan port on the pfsense router to be able to utilize the circuit on the main router. Any ideas on how i should proceed with this configuration? vlans, bridge mode,??? help please!\n    submitted by    /u/FantasticReporter482  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/y6cbqp/trying_to_setup_network_failover_with_lan_to_wan/",
+          "publishedOn": "2022-10-17T14:12:41.000Z",
+          "wordCount": 38380,
+          "title": "Trying to setup network failover with lan to wan configuration",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/y6c9s0/does_anyone_have_a_use_yet_for_90w_class_8_poe/",
           "author": null,
@@ -14232,6 +14574,16 @@
       "siteUrl": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
       "articles": [
         {
+          "id": "https://www.youtube.com/watch?v=Yyu4elBIGbg",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=Yyu4elBIGbg",
+          "publishedOn": "2022-10-17T17:06:28.000Z",
+          "wordCount": null,
+          "title": "Your Keyboard Sucks and I Can Prove It.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.youtube.com/watch?v=_-hsYsc8dCg",
           "author": null,
           "description": "",
@@ -14549,16 +14901,6 @@
           "publishedOn": "2022-09-19T17:22:02.000Z",
           "wordCount": null,
           "title": "First Water Cooled Mac Studio",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=bxya-divayE",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=bxya-divayE",
-          "publishedOn": "2022-09-18T16:55:28.000Z",
-          "wordCount": null,
-          "title": "I Made a Mistake...",
           "imageUrl": null
         }
       ]

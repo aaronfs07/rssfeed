@@ -2,10 +2,560 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-17T14:37:17.055Z</updated>
+    <updated>2022-10-18T09:24:48.655Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Debugging an unresponsive server?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y720gc/debugging_an_unresponsive_server/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y720gc/debugging_an_unresponsive_server/"/>
+        <updated>2022-10-18T09:22:30.000Z</updated>
+        <summary type="html"><![CDATA[My ubuntu cloud server has begun having random spikes of IOPS/read and cpu every few days. I've tried to keep some logging scripts running but even they stop logging while server is unresponsive during this spike. The spike is anything from 5mins-1hr long
+ Because of being unable to log or login, I'm at a loss how to debug this,any suggestions?
+ We deployed upgraded versions of mongo/mysql and other apps via docker but I can't kill them for days at a time to check server behavior.
+ Logging script: while true; do (echo "%CPU %MEM ARGS $(date)" && ps -e -o pcpu,pmem,args --sort=pcpu | tail) >> ps.log; sleep 5; done & while true; do (echo "%CPU %MEM ARGS $(date)" && ps -e -o pcpu,pmem,args --sort=pmem | tail) >> ps2.log; sleep 5; done &
+    submitted by    /u/goin_nowhere  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sophos Central Email protection: possible to make a whitelist for allowed mail attachment files?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y717vq/sophos_central_email_protection_possible_to_make/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y717vq/sophos_central_email_protection_possible_to_make/"/>
+        <updated>2022-10-18T08:40:10.000Z</updated>
+        <summary type="html"><![CDATA[So yesterday I managed to infect myself with this: https://www.virustotal.com/gui/file/e268f2982e14d363e7f7874696d231701234d4b426c3a1bef7271cc0bf766706/summary It came with a very well made, legit looking mail. The main reason why I was so careless is because the sender name was very similar to one of our customers. The virus itself was bundled inside of an img file. We use sophos central email gateway with all bells and whistles enabled - including the sandbox. The mail made it through all of that, windows 11 defender (also with all bells and whistles enabled) didn't catch it either. 
+ With the help of someone smarter than me we managed to gain access to the ftp server that the virus uses to upload extracted login information. Afterwards we sent an abuse notice to the hoster who immediately deleted all contents and locked the customer out. 
+ We use the default sophos list for blocked attachment file types (sophos specifically recommends using it instead of making a list on your own!). I'm trying to change that to a whitelist so for example only PDF files are allowed everything else goes into quarantine. But apparently sophos central doesn't even have that option or am I blind?
+    submitted by    /u/Wild-Square1453  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Questions from a dev]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y717e6/questions_from_a_dev/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y717e6/questions_from_a_dev/"/>
+        <updated>2022-10-18T08:39:25.000Z</updated>
+        <summary type="html"><![CDATA[Hello /rsysadmin
+ ​
+ First, if this is not supposed to be posted here, you all have my sincere apologies.
+ ​
+ I am a web developer (don't throw stones yet ^^ ) and I come to you looking for advice.
+ ​
+ As a pet project, I am building an application to streamline data collection in non technical teams.
+ It is a server based application (PHP) with a web interface so I would see it either as a cloud product or on an in house server.
+ I am trying to do things the right way, and one of my next steps is to think about user authentication.
+ For the basics, i made a username or email | password authentication, users stored in the database, password encrypted using bcrypt. The administrator create user accounts and generate an account specific url for account activation. Transmission of the url is the responsibility of the admin.
+ To go further, I plan on implementing some SSO methods.
+ My guesses are:
+  
+google
+ openId
+ microsoft AD (this one will be fun to debug, as I never understood windows server XD)
+  
+Finally come the question:
+ If you had to sysadmin such a solution, what SSO solution would you expect to find by default ?
+ (And to go further, what kind of functionnality would you expect to find out of the box ? )
+ ​
+ Thank you in advance :)
+    submitted by    /u/Elvandar_Ysalys  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What DNS do you give clients in a basic network?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/"/>
+        <updated>2022-10-18T08:29:38.000Z</updated>
+        <summary type="html"><![CDATA[I'm setting up a network for a small shop (5 users) with a draytek router acting as the DNS currently (192.168.1.1). I am wondering though should I be giving the clients (via DHCP the router IP or instead 8.8.8.8 and 4.4.4.4 so it has failover? 
+ I know both will work but just wondering on the best practise? There is no servers internally and nothing that's needing DNS resolution internally.
+ What's people's thoughts know this ?? I think my feeling is set it to the router incase I need to set any DNS records on the draytek for something.
+    submitted by    /u/tempredacc85  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PVC is not creating in EKS]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y70veo/pvc_is_not_creating_in_eks/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y70veo/pvc_is_not_creating_in_eks/"/>
+        <updated>2022-10-18T08:20:01.000Z</updated>
+        <summary type="html"><![CDATA[Hi, I created an eks cluster. And deployed EBS csi drivers as well. Now if i am deploying any statefulset it is not scheduled anywhere. It is showing status as pending.
+ PVC is also in the pending stage. No PV available. 
+ I checked the ebs-csi-controller log, it is showing the following errors. 
+ E1017 16:44:10.757397 1 leaderelection.go:330] error retrieving resource lock kube-system/ebs-csi-aws-com: Get "https://172.20.0.1:443/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/ebs-csi-aws-com": dial tcp 172.20.0.1:443: i/o timeout E1017 16:44:48.306178 1 leaderelection.go:330] error retrieving resource lock kube-system/ebs-csi-aws-com: Get "https://172.20.0.1:443/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/ebs-csi-aws-com": dial tcp 172.20.0.1:443: i/o timeout E1017…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to enable "Allow Administrator account lockout" as GPO?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y70pnn/how_to_enable_allow_administrator_account_lockout/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y70pnn/how_to_enable_allow_administrator_account_lockout/"/>
+        <updated>2022-10-18T08:10:12.000Z</updated>
+        <summary type="html"><![CDATA[https://support.microsoft.com/en-us/topic/kb5020282-account-lockout-available-for-local-administrators-bce45c4d-f28d-43ad-b6fe-70156cb2dc00
+ ​
+ I'm trying to integrate this Policy into our noncloud Active Directory Domain. But it`s a local policy and I can't find the corresponding admx file.
+ ​
+ How would one go about to propagate that Local Computer Policy to all clients?
+    submitted by    /u/QuirkyImpress2099  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Route table size ASR9001]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/"/>
+        <updated>2022-10-18T08:08:55.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking for some info on the size of a table on ASR9001. 
+ According to this doc, the ASR9000 can take 1.2 million routes. Is that routes in the RIB or the FIB?
+ I have an e-BGP connection to an upstream internet provider and I take a full route table (approx 900k routes) If I take a second connection to a different upstream to a second provider also with a full route table will I exceed the max allowed routes? Or, will it be OK because BGP will only take the best routes between the two and discard the others in the route table?
+ Thanks
+    submitted by    /u/Tars-01  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Hybrid Environment - Disabled User to continue syncing or not?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y70id3/microsoft_hybrid_environment_disabled_user_to/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y70id3/microsoft_hybrid_environment_disabled_user_to/"/>
+        <updated>2022-10-18T07:58:01.000Z</updated>
+        <summary type="html"><![CDATA[I am just having the discussion of whether or not to remove users from the AAD sync when de-provisioning.
+ We are in a hybrid environment. During user deprovisioning, after the users are disabled and the associated license groups are removed, we currently keep them synchronized via AAD Connect.
+ ​
+ I know that when the users are de-provisioned, they are moved to an OU in AD that is not synchronized by AAD-Connect.
+ ​
+ I can't find a "best practice" or similar in the Microsoft documentation, is there a recommendation from Microsoft?
+ ​
+ How do you guys handle this?
+ ​
+ best regards
+    submitted by    /u/Mundane_Fix7621  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Configuring custom URL handlers on OS X]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y70ib4/configuring_custom_url_handlers_on_os_x/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y70ib4/configuring_custom_url_handlers_on_os_x/"/>
+        <updated>2022-10-18T07:57:56.000Z</updated>
+        <summary type="html"><![CDATA[Hi all!
+ I've been trying to configure custom URL handlers that work on Mac's for our business, but without any success. We want a handler to open links to local files, and open these files with Finder.
+ So far I've tried:
+ Lincastor https://onflapp.github.io/blog/pages/LinCastor.html
+ RCDefaultApp https://www.rubicode.com/Software/RCDefaultApp/
+ SwiftDefaultApp https://github.com/LordKamina/SwiftDefaultApps
+ https://hublog.hubmed.org/archives/001154 
+ RCDefaultApp & SwiftDefaultApp are outdated and not compatible with the OS version we're using, while Lincastor doesn't do anything when I add a new URL handler.
+ Can anyone help me out? I'm relatively new to MacOS. The macOS version we currently have installed is Monterey.
+ Thank you!
+    submitted by    /u/SouthEye9030  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AD/NPS 802.1x mac authentication]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y70f76/adnps_8021x_mac_authentication/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y70f76/adnps_8021x_mac_authentication/"/>
+        <updated>2022-10-18T07:52:31.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ We're currently trying to secure the network even more and we'd like to setup 802.1x auth for printers to put allowed printers in the correct vlan, and unknown devices in a quarantine vlan.
+ Computers are authenticated using their AD computer account, and printer don't have that.
+ Certificates are also not a good solution since printers are not able to request renewal themselves... 
+ I've seen posts saying "you just have to create a AD user account with the macaddress and same for the password" but no one seems to care about the fact that this is a huge security issue.
+ The only thing I found was to create a "Connection Request Policy" for each MAC and put them above every other regular policies.
+ Conditions are :
+ - Calling station ID = mac address
+ - NAS Port Type = Ethernet
+ Settings :
+ - Authentication : Accept users without validating credentials
+ It does not have to be 100% secure but at least prevent users from connecting untrusted devices like some 3rd party contractor who comes for the day and needs "internet"... but I'm still looking for ideas or a better way to do it.
+ Thanks in advance :)
+    submitted by    /u/foundunderwater  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to update GEO-IP location and what DB's exist to request correction?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/"/>
+        <updated>2022-10-18T07:49:09.000Z</updated>
+        <summary type="html"><![CDATA[Hi all, I am in possession of a few IP-ranges as a Hosting company. 
+ I encounter difficulity online with my IP's (IPv4) because all kind of Third Parties identify me incorrectly as Polish. While I am infact in The Netherlands. 
+ These GEO IP DB's I know of, and are reporting NL correctly: 
+ Ripe.net
+ Maxmind
+ IP2Location 
+ Do you guys and gals know maybe more GEO IP DB's that I should contact for GEO IP Corrections? 
+ Please help, for me it's a serious problem. 
+ Thank you all so much in advance.
+    submitted by    /u/Engineer8899  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Latest WordPress 6.0.3 fixes 16 security vulnerabilities]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y7085l/latest_wordpress_603_fixes_16_security/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y7085l/latest_wordpress_603_fixes_16_security/"/>
+        <updated>2022-10-18T07:41:12.000Z</updated>
+        <summary type="html"><![CDATA[A new WordPress security release was announced on October 17th, 2022. This release includes a substantial number of security bug patches, so we reviewed them. 16 security vulnerabilities were fixed (such XSS, CSRF, SQLi, etc.) so you may want to check your servers and update the sites running on WordPress. 
+ Too much info to post here directly so the details are written in a blog post here:
+ https://patchstack.com/articles/wordpress-6-0-3-security-release-summary/
+    submitted by    /u/ded1cated  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows Admin Center local access]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6zv5k/windows_admin_center_local_access/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6zv5k/windows_admin_center_local_access/"/>
+        <updated>2022-10-18T07:19:25.000Z</updated>
+        <summary type="html"><![CDATA[Hey, I recently installed Windows 11 ARM on a raspberry pi and installed Windows Admin Center to manage my servers. Problem is I can only access it via local host which means I have to RDC into that slow little machine. Has anyone found a reliable way to open WAC up on a non server install to anyone browsing the ip? I can protect it here via my management VLAN.
+    submitted by    /u/TattooedBrogrammer  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anyone here uses Nessus Vulnerability Scanner Free version for their network?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6zfug/anyone_here_uses_nessus_vulnerability_scanner/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6zfug/anyone_here_uses_nessus_vulnerability_scanner/"/>
+        <updated>2022-10-18T06:54:24.000Z</updated>
+        <summary type="html"><![CDATA[I want to try it, anyone here used free version? Ive read that it supports 16 IPs to scan, maybe i can input only important things for it to scan, like DC, veeam, etc?
+    submitted by    /u/hwehwegwhgewe23  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ideas for comparing fileserver to Sharepoint site.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6z70j/ideas_for_comparing_fileserver_to_sharepoint_site/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6z70j/ideas_for_comparing_fileserver_to_sharepoint_site/"/>
+        <updated>2022-10-18T06:40:16.000Z</updated>
+        <summary type="html"><![CDATA[I recently moved a drive to Sharepoint, and i used Sharepoint Migration Tool for the task.
+ Since SPMT didnt give me any sort of errors, and telling me that no files was skipped, i belived that everything was in perfect order.
+ However, i can see that it is far from in perfect order. Lots of files and folders is missing. And it seems random which files is missing and which dont. There is no difference in rights on the folders, where files is missing, and there are no obvious reason to why the files are missing.
+ Running an incremental task with SPMT makes no difference, it wont acknowledge that there are files it doesn't sync up.
+ Its quite a large filedrive. My original plan was to sync everything with OneDrive to a temp location on a fileserver, and then have something like FreeFileSync to compare files and sync the missing files. But is not a viable way since OneDrive taking a really long time to get something in sync, and i dont really believe that it can handle all that data, because its also freezing up on me.
+ ​
+ TLDR;
+ So im looking for some tool, not SPMT, since experience, that can compare my files on the fileserver to a Sharepoint site and sync the missing files. Preferably free.
+ Ideas?
+    submitted by    /u/Sandahl84  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Redundant Internet Topology/Strategy?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/"/>
+        <updated>2022-10-18T05:11:40.000Z</updated>
+        <summary type="html"><![CDATA[Howdy y'all!
+ Looking for tips/pointers on dealing with multiple internet circuits without SD-WAN appliances.
+ I'm fairly well rounded with network and systems administration, but due to working in medium sized orgs most of my career, I'm definitely in the "jack of all trades, leader of none" camp.
+ With this hurricane that recently ripped here through Florida, it's got me looking at now wanting to add some WAN redundancy.
+ I'm about midway though the lifecycle of a sizable investment in ISR 4ks as my branch office routers/firewall. Our branches all have a single internet circuit and a basic AVPN circuit from a big ISP. The AVPN doesn't have any internet access option setup, it is only used for a private WAN.
+ The idea is that I'd like to drop a 2nd, cheaper circuit for backup internet acc…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Good file deployment storage]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6wz85/good_file_deployment_storage/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6wz85/good_file_deployment_storage/"/>
+        <updated>2022-10-18T04:40:32.000Z</updated>
+        <summary type="html"><![CDATA[hi guys,
+ I've been asking myself what do you use as storage for gpo file deployment? I'm currently using a NAS but could it be like sysvol or netlogon?
+    submitted by    /u/Krinkk  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Are there instances where removing a coaxial cable spillter would be bad for the modem's signal?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/"/>
+        <updated>2022-10-18T04:27:58.000Z</updated>
+        <summary type="html"><![CDATA[I'm the network admin for a client who is having intermittent internet issues. I contacted their ISP who sent out a tech to investigate. I asked the tech about removing the 3-way splitter in place, wondering if it had degraded and possibly causing issues. The tech tested the signals with an expensive looking tool and determined the signals coming in were good. At one point, he did indicate we could remove the splitter without issue. But, them he tested it again before proceeding and noticed an issue. 
+ The way the tech explained it was if we remove the splitter, we would gain 5dB somewhere, but then lose 5dB somewhere else which would push past a certain threshold that would cause sync issues. Im not even sure it was dB, but I have to assume. He wasnt great at talking smart and I wasnt great at knowing what he was talkinh about. Im not an expert in coax cable signaling and understanding readings. I have worked at an ISP in tech support and understand the basics and sync issues, but I never got trained or learned much about this. Any help is appreciated.
+    submitted by    /u/dumbtechnoob  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Recommended reading for OSPF / iBGP?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6w47r/recommended_reading_for_ospf_ibgp/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6w47r/recommended_reading_for_ospf_ibgp/"/>
+        <updated>2022-10-18T03:58:06.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking for recommendations for learning the best practices regarding setting up OSPF and iBGP in a large network, particularly as it relates to traffic engineering and path selection.
+ I'm already familiar with the basic configuration of these protocols in a medium sized single campus environment with bandwidth to spare, but I've recently moved to a new employer and am in the beginning stages of setting up a network to connect many data centers around the world with our own IP space. As a result we'll have many entry and exit points with various network providers. Now latency and available bandwidth are very real issues that I've not previously had to think about.
+ Any tips on route metrics, link costs, BGP communities / filtering, local preference, ect... Would be very helpful.
+ Blogs posts, books, or personal anecdotes all welcome.
+    submitted by    /u/ljb2of3  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MTP Universal Polarity?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6tudd/mtp_universal_polarity/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6tudd/mtp_universal_polarity/"/>
+        <updated>2022-10-18T02:10:39.000Z</updated>
+        <summary type="html"><![CDATA[Hey,
+ I've been researching MTP fibre cables and can get my head around, just about, Type A, B and C (and AF), but I've seen a "universal polarity" https://www.fs.com/uk/products/143164.html?attribute=6679&id=299323 but very little documentation about on what that actually means.
+ Can anyone explain? And why I'd use it over the other types?
+ Thanks!
+    submitted by    /u/CounterclockwiseTea  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Server 2003\Webroot Hacked (hard to believe I know)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6siuh/server_2003webroot_hacked_hard_to_believe_i_know/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6siuh/server_2003webroot_hacked_hard_to_believe_i_know/"/>
+        <updated>2022-10-18T01:10:39.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/taylor436  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloud Network Administration jobs inquiry]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6rlq5/cloud_network_administration_jobs_inquiry/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6rlq5/cloud_network_administration_jobs_inquiry/"/>
+        <updated>2022-10-18T00:28:50.000Z</updated>
+        <summary type="html"><![CDATA[tried to get some answers in /r/itcareerquestions but no bites.
+ For the ones that have these types of jobs what is it like on a day to day?
+ How did you get to this point in your life to go that route vs traditional on-prem hardware?
+ Been in IT for years mainly deal with onsite network switches/routers/firewalls/WAN Services, with a few CompTIA/Cisco certs as well what does this translate to for Cloud Services?
+ What are some basic job requirements are needed for cloud infrastructure jobs and is the pay much higher and if so then why?
+    submitted by    /u/tolegittoshit2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moving from tech support to sysadmin]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6pv9r/moving_from_tech_support_to_sysadmin/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6pv9r/moving_from_tech_support_to_sysadmin/"/>
+        <updated>2022-10-17T23:12:03.000Z</updated>
+        <summary type="html"><![CDATA[I'm currently working in tech support (just over 3 years now) and really am wanting to move over to sysadmin. I've sent out a handful of applications and am having no luck so far. I've realized that there is a huge gap in knowledge and experience between tech support and sysadmin.
+ I am "level 2" at my company and deal with our business products so I work with admins vs home users which has given me some understanding of what a sysadmin is, but I'm still missing a lot of what's required for a sysadmin position.
+ Is a helpdesk job going to be my best option for getting into a sysadmin role? I'm hesitant to pursue helpdesk since I'll more than likely lose a noticeable amount of pay, but there is no more growth for me in tech support and I would be able to make more in the long run as a sysadmin.
+ Has anyone here gone directly from tech support to sysadmin? If so, any advice on making that switch?
+    submitted by    /u/SpareBeat1548  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goodbye "Control Printers", thank you Print Nightmare]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6ps7y/goodbye_control_printers_thank_you_print_nightmare/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6ps7y/goodbye_control_printers_thank_you_print_nightmare/"/>
+        <updated>2022-10-17T23:08:31.000Z</updated>
+        <summary type="html"><![CDATA[Noticed in the newest build of Windows 11 "Control Printers" doesn't take you to the old devices and printers, on the plus side because of Print Nightmare and all the hassle it caused me I started learning PowerShell and don't really have to manually install a printer.
+    submitted by    /u/Btown891  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Long shot but I'll give Reddit gold to anybody with a working answer: How do I create a VLAN on a Ruckus/Brocade ICX 6450 using snmpset?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6mbk7/long_shot_but_ill_give_reddit_gold_to_anybody/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6mbk7/long_shot_but_ill_give_reddit_gold_to_anybody/"/>
+        <updated>2022-10-17T20:51:19.000Z</updated>
+        <summary type="html"><![CDATA[I have 300 switches I need to create a specific VLAN on. I was hoping to use snmpset, but it appears my syntax is way off.
+    submitted by    /u/dannymuffins  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MS Hardening Settings Requires MS Defender]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6kum7/ms_hardening_settings_requires_ms_defender/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6kum7/ms_hardening_settings_requires_ms_defender/"/>
+        <updated>2022-10-17T19:56:04.000Z</updated>
+        <summary type="html"><![CDATA[So I'm sure everyone knows the following settings in Hardening Guidelines:
+ Block Office applications from injecting code into other processes
+ Block Office applications from creating executable content
+ Block all Office applications from creating child processes
+ Block Win32 API calls from Office macro Warn
+ Block execution of potentially obfuscated scripts (js/vbs/ps)
+ Block JavaScript or VBScript from launching downloaded executable content
+ Block Process Creations Originating from PSExec and WMI Commands
+ Etc etc
+ well, it turns out Windows Defender has to be the primary AV Solution on your PC for these to function. MS Docs even labels these as requiring and Depending on Defender to function The M365 Security center even states Defender must be the Primary AV Solution with Real Time Pr…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aruba AOS-CX6100 Switch to Switch SSH not working]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6kjpq/aruba_aoscx6100_switch_to_switch_ssh_not_working/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6kjpq/aruba_aoscx6100_switch_to_switch_ssh_not_working/"/>
+        <updated>2022-10-17T19:44:17.000Z</updated>
+        <summary type="html"><![CDATA[I am trying to SSH from Switch A to Switch B. ( CX6100 )
+ Both Switches have vlan 1 no ip DHCP and manually configured IP addresses on VLAN 2.
+ I can plug my laptop into an access port on vlan 2 both ping and ssh into any of the switches.
+ If I attempt to ssh username@switchIP from the console of any switch, it just hangs. 
+ Any Ideas?
+    submitted by    /u/Crazy_Memory  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Proper way to deploy printers post PrintNightmare?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6igqa/proper_way_to_deploy_printers_post_printnightmare/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6igqa/proper_way_to_deploy_printers_post_printnightmare/"/>
+        <updated>2022-10-17T18:22:16.000Z</updated>
+        <summary type="html"><![CDATA[Hi!
+ What's the recommended way to deploy printers in the post PrintNightmare world? Small AD environment with under a 100 users with a print server. How would it differ for printers with a V3 driver versus ones that offer a V4?
+    submitted by    /u/Phratros  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Found malware in the source code for my company’s website]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6hvhc/found_malware_in_the_source_code_for_my_companys/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6hvhc/found_malware_in_the_source_code_for_my_companys/"/>
+        <updated>2022-10-17T17:59:25.000Z</updated>
+        <summary type="html"><![CDATA[Sorry if this is the wrong sub to post this in, mods feel free to delete if so.
+ I work in IT for a small insurance firm. I accidentally discovered that our website was having issues loading when troubleshooting a different problem and found some random text in german appearing on the homepage. Upon inspecting the source code there are TONS of links that point to gambling websites and other stuff involving crypto. Our insureds use the website to log into their portal which doesn’t contain any PHI but it does have PII such as addresses, phone numbers, etc.. Is it safe to assume that there are keyloggers stealing login credentials and possibly worse things going on?
+ I emailed our webdev but he isn’t in the office today and hasn’t responded yet. I’m not sure what our next steps should be.
+ EDIT: No we don’t use WordPress
+    submitted by    /u/texoma_5  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Which VPN To Use In pfsense?]]></title>
+        <id>https://www.youtube.com/watch?v=GDC9aKtebAU</id>
+        <link href="https://www.youtube.com/watch?v=GDC9aKtebAU"/>
+        <updated>2022-10-17T17:59:04.000Z</updated>
+        <author>
+            <name>Lawrence Systems</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why do they (offshore) go out of their way to make fixing things difficult?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6hpe5/why_do_they_offshore_go_out_of_their_way_to_make/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6hpe5/why_do_they_offshore_go_out_of_their_way_to_make/"/>
+        <updated>2022-10-17T17:52:40.000Z</updated>
+        <summary type="html"><![CDATA[Grumpy old IT guy, coming in hot again.
+ We had a filesystem migration to a new server this weekend. Figured there would be a few hiccups, given how thorough (/s) our testing team was. Sure enough got a P1 ticket that they are unable to process files from a system this morning. Turns out they were using sftp to push files up to the old server for one of the data flows.
+ So, easy enough fix. Once I was sucked into the P1 group call this morning, I told them exactly what needed to be done. Put in a request to get ssh access to the new server, and here is the new path to the directory. Easy peasy, just like I sent out last week.
+ Cut to 6 hours later. The call now has over 20 people on it, including management. They are dissecting all the data flow diagrams, and just ruled out the application server as the issue about an hour ago. Two managers asked me to rejoin the call, and before they could even 'recap' everything they've done so far, I pasted a screenshot of what I told them needed to be done from 6 hours ago, and got dead silence.
+ Seems one of the offshore managers (yes, this is ALL coming from our offshore "support partner"), stepped in at the end of the call this morning to manage the issue. They are supposedly working on the access requests now and will let me know. In other news, now management wants me to write up an RCA as to the problem, and corrective instructions. Sure, no one read my emails over the last couple weeks warning of this change, they ignored my instructions for the fix this morning, and the still don't seem to fathom what they did wrong. That about covers it.
+    submitted by    /u/digitalamish  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[L3 only VRF's with VXLAN?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6hhux/l3_only_vrfs_with_vxlan/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6hhux/l3_only_vrfs_with_vxlan/"/>
+        <updated>2022-10-17T17:44:19.000Z</updated>
+        <summary type="html"><![CDATA[Anybody running VXLAN with MP-BGP simply to do L3 VRF/segmentation? In a scenario where you have no need to stretch layer 2 vlans, would it make sense to still do VXLAN as a simple/cheap way to accomplish L3 segmentation? What other options would there be?
+    submitted by    /u/Vxlan-interface  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How big of a VLAN/ broadcast domain is too big?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6h6s3/how_big_of_a_vlan_broadcast_domain_is_too_big/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6h6s3/how_big_of_a_vlan_broadcast_domain_is_too_big/"/>
+        <updated>2022-10-17T17:32:16.000Z</updated>
+        <summary type="html"><![CDATA[At a large factory we have a WiFi SSID linked to a /23 subnet which is used exclusively for phones and tablets on the factory floor for carrying out tasks by the factory floor staff. We're running out of IP addresses on the /23 network, would it be okay to increase the network to a /22 without causing broadcast issues or, is a /22 too large of a broadcast domain?
+ Normally I would just create a additional subnet/ VLAN however, creating a second network/ VLAN wouldn't be ideal as ideally we need a single SSID.
+ We use DHCP exclusively on this subnet with no static addresses - would it be a good idea to increase the network to a /22 but only increase our DHCP scope to 6-700 IP addresses to limit the size of the broadcast domain as much as possible?
+    submitted by    /u/wutanglan90  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Your Keyboard Sucks and I Can Prove It.]]></title>
+        <id>https://www.youtube.com/watch?v=Yyu4elBIGbg</id>
+        <link href="https://www.youtube.com/watch?v=Yyu4elBIGbg"/>
+        <updated>2022-10-17T17:06:28.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Has anyone ever enforced an abandonment of Adobe Reader?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y6g8qg/has_anyone_ever_enforced_an_abandonment_of_adobe/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y6g8qg/has_anyone_ever_enforced_an_abandonment_of_adobe/"/>
+        <updated>2022-10-17T16:54:42.000Z</updated>
+        <summary type="html"><![CDATA[We are patching it monthly and we STILL are getting high vulnerability scores among the workstation fleet. Considering the wealth of PDF viewers available, to say nothing of the fact that most modern browsers can open them natively, I was wondering what the user backlash would be if we just uninstalled it across the board. Then the question would be whether to replace it with, well, nothing (i.e let them use browsers) or instead deploy Foxit or PDF-Xchange or whatever.
+ Anyone ever covered anything like that?
+ ADDENDUM: I don't mean Adobe Acrobat. Just Reader. Acrobat certainly has its vulnerabilities too but a hugely smaller foothold in the fleet.
+    submitted by    /u/Xenith19  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Know any reliable Vendors that sell refurbished managed switches]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6flzd/know_any_reliable_vendors_that_sell_refurbished/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6flzd/know_any_reliable_vendors_that_sell_refurbished/"/>
+        <updated>2022-10-17T16:29:57.000Z</updated>
+        <summary type="html"><![CDATA[And do they offer warranty on their refurbished/used managed switches?
+    submitted by    /u/vane1978  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Is EAP-TLS Insecure for User Authentication?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/y6clni/is_eaptls_insecure_for_user_authentication/</id>
@@ -45,6 +595,18 @@
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Trying to setup network failover with lan to wan configuration]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y6cbqp/trying_to_setup_network_failover_with_lan_to_wan/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y6cbqp/trying_to_setup_network_failover_with_lan_to_wan/"/>
+        <updated>2022-10-17T14:12:41.000Z</updated>
+        <summary type="html"><![CDATA[I currently have two routers running in my small business network setup. One is setup for the main network and is my Fortinet 80f. It currently has a 1gb circuit from ISP 1. The other is a Pfsense sg-3100 which is set up for our Kraft's team only and it has its own 1gb circuit from a different ISP. My problem is the ISP on my main router is pretty crappy and has outages all the time. I would like to utilize the 1GB on my 2nd router for failover. I figured there must be a way to configure the lan port on the pfsense router to be able to utilize the circuit on the main router. Any ideas on how i should proceed with this configuration? vlans, bridge mode,??? help please!
+    submitted by    /u/FantasticReporter482  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
     <entry>
@@ -22022,25 +22584,6 @@ In July 2022, Iranian state cyber actors—identifying as “HomeLand Justice”
         <link href="https://www.dailywire.com/podcasts/morning-wire"/>
         <updated>2022-09-19T08:30:00.000Z</updated>
         <summary type="html"><![CDATA[The political battle over the border escalates, mortgage rates reach highest levels since the 2008 Recession, and key races tighten in the usually reliably blue state of New York. Get the facts first on Morning Wire.]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I Made a Mistake...]]></title>
-        <id>https://www.youtube.com/watch?v=bxya-divayE</id>
-        <link href="https://www.youtube.com/watch?v=bxya-divayE"/>
-        <updated>2022-09-18T16:55:28.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Did the Big Bang Happen? | 9.18.22]]></title>
-        <id>6500d92a-4f70-452b-852c-9c63cab51aa7</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2022-09-18T08:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Newly released photos from the James Webb Space Telescope have allowed scientists to view farther into space, and farther into the past, than ever before. The images emerging are raising questions about the origins of our universe. One viral article from independent scientist Eric Lerner made the rounds on social media in recent weeks with its provocative claim that the Big Bang never happened. We speak to UC San Diego Professor of Cosmology Brian Keating about what the images show, and what we can and can’t conclude from them.  Get the facts first on Morning Wire.]]></summary>
         <author>
             <name>podcasts@dailywire.com (The Daily Wire)</name>
         </author>
