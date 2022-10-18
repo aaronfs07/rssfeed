@@ -2,10 +2,177 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-18T13:54:51.596Z</updated>
+    <updated>2022-10-18T14:32:01.323Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Internal Network IP/Vlan Change Project]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y78o4e/internal_network_ipvlan_change_project/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y78o4e/internal_network_ipvlan_change_project/"/>
+        <updated>2022-10-18T14:31:23.000Z</updated>
+        <summary type="html"><![CDATA[I've inherited a network that is using public IPs inside it's LAN. I've been tasked to begin cleaning these up and make them proper private IPs. Another fun fact about this network is that the original designer tagged Vlan 1 on all uplink ports. Of course Vlan 1 is still also the default & native vlan throughout the network. Our main data subnet, cameras and door controls are all on Vlan 1 across the entire company.
+ The project requirement is to implement department vlans at our main site and have a few other vlans at other remote sites as needed. Of course they want to move the cameras off the data subnet and also use vlans for IOT, printers, and a few other departments at some sites.
+ Our WAN is connected using AT&T Metro ASE Layer 2. We have an Aruba 3810 L3 Switch as the gateway at each site. IP Routing is enabled on each of these L3 Switches.
+ We have 12 remote sites, STP is in use at each site, but we only connect using static routes. No ospf, rip, bgp, etc.
+ My initial thought is to first install all of the new subnets/vlans throughout the network. Then slowly begin moving the Vlan 1 devices over to the new subnets. We have a server team that will handle most of the systems that will need their IP changed so my main task is to ensure connectivity.
+ How would you handle moving users off of Vlan 1 onto the new subnets? For all you L2 WAN folks, is there a better way to approach this?
+ I appreciate your thoughts & inputs.
+    submitted by    /u/Sully-Trails  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022-10-17 Out-of-band Patch for Windows]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y78de1/20221017_outofband_patch_for_windows/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y78de1/20221017_outofband_patch_for_windows/"/>
+        <updated>2022-10-18T14:20:16.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone had issues with the October Windows Desktop and Server cumulative patches that the 10\17 patch resolved? Looks to affect Windows 10/11 and Server.
+ https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-22h2
+ ​
+  
+Microsoft has received reports that after installing KB5018427, some types of SSL (Secure Sockets Layer) and TLS (Transport Layer Security) connections might have handshake failures. Note for developers: Affected connections are likely to be sending multiple frames within a single input buffer, specifically one or more complete records with a partial record that is less than 5 bytes all sent in a single buffer. When this issue is encountered, your app will receive SEC_E_ILLEGAL_MESSAGE when the connection fails.
+  
+​
+ I am about to do some testing with the monthly update and wondering what I should look for that might necessitate the OoB patch to also be deployed along with the cumulative.
+    submitted by    /u/Sekers  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ConnectWise Control Access fast enough for remote workers?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y787kp/connectwise_control_access_fast_enough_for_remote/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y787kp/connectwise_control_access_fast_enough_for_remote/"/>
+        <updated>2022-10-18T14:13:57.000Z</updated>
+        <summary type="html"><![CDATA[Is anyone finding cloud solutions like ConnectWise Control Access or TeamViewer adequate for SMB remote workers to connect from home to their office machines?
+ In my last position, the remotes used RDP over VPN (with 2FA) which was plenty snappy with fiber at the office, and I also used ConnectWise for support. I found ConnectWise a less responsive in general than RDP but not unbearable, but I preferred RDP for fulltime work.
+ RDS/Citrix would be overkill at my present position as a one-man show in a small office with just a couple of FT remotes and a few people who sometimes work remotely.
+ ConnectWise Control Access pricing is very attractive. I would prefer to use it for support anyway, so I wanted to hear what others were doing in smaller offices with limited remote users.
+    submitted by    /u/RestartRebootRetire  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[rsyslogd forward logs but keep copy]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y7872d/rsyslogd_forward_logs_but_keep_copy/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y7872d/rsyslogd_forward_logs_but_keep_copy/"/>
+        <updated>2022-10-18T14:13:24.000Z</updated>
+        <summary type="html"><![CDATA[Hi there,
+ I want our syslog server to forward logs to another server (Tufin) but keep a copy of the logs. I found the forwarding rule in the /etc/rsyslog.conf file but does this just forwards the log and bypass the firstlog or will I get a copy of each log on both servers?
+    submitted by    /u/NazgulNr5  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Looking for advice]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y785ca/looking_for_advice/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y785ca/looking_for_advice/"/>
+        <updated>2022-10-18T14:11:26.000Z</updated>
+        <summary type="html"><![CDATA[I have an Associates in Information Technology. 
+ Currently working a Systems Administrator role. But, I tend to have a good amount of downtime.
+ So, my question ultimately is getting a general studies degree worth anything in our field? 
+ It seems to be the only curriculum available online from my local college. 
+ I have two years left of the GI Bill, but I don't want to stop working to go to school. However I still want to use the benefits.
+    submitted by    /u/Prudent_Effect6939  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network equipment for a growing organization and novice IT person.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y784eq/network_equipment_for_a_growing_organization_and/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y784eq/network_equipment_for_a_growing_organization_and/"/>
+        <updated>2022-10-18T14:10:24.000Z</updated>
+        <summary type="html"><![CDATA[So, I just got hired as an "IT Specialist" at a non-profit. I have little networking experience outside of installing switches, etc. (Fieldnation). They did not have a IT person before me. I am starting mostly starting from scratch.
+ What would be some good options for someone like me to start off with and a growing organization like them? This is probably a loaded question, but I appreciate any advice.
+ We are about to split the current office team and move to a different floor. They purchased a Sharp BP-70C55/70C65 before I got hired. It will get installed soon.
+ I feel like with help and research, I can groom this organization to a greater level.
+    submitted by    /u/b_superman1  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firewall for SMB]]></title>
+        <id>https://www.reddit.com/r/networking/comments/y782y5/firewall_for_smb/</id>
+        <link href="https://www.reddit.com/r/networking/comments/y782y5/firewall_for_smb/"/>
+        <updated>2022-10-18T14:08:46.000Z</updated>
+        <summary type="html"><![CDATA[Posting for a friend that doesn't have a reddit account: 
+ I've recently started working as a sysadmin + network guy for a small business, around 50 employees and up to a 100 devices if we take into account mobile phones.
+ The company has a dumpster tier firewall that's basically not doing anything and a vm running pfsense for openvpn. There are around 8 ubiquiti 'enterprise' switches in the network and a few APs. 
+ I would like to replace the firewall with something a bit more manageable and feature rich. Naturally i'm thinking of Fortinet etc for the price but I've also seen the Dream Machine Pro from Ubiquiti which has the features we need at a really low price (I assume it's not a great unit...) and would allow me to manage the rest of our switches centrally. You can't even monitor traffic on the switches without a gateway anyway which sucks so I'm tempted to go down this route instead.
+ If the dream machine pro supported openvpn for remote workers I would grab it but it doesn't so I'm still hesitant. 
+ Do you guys think it's better to grab an actual enterprise level switch from Fortinet or maybe a pfsense plus box from netgate instead of a dream machine pro?
+    submitted by    /u/Barrerayy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building IT department from the ground up. I would like your advice.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y77zgr/building_it_department_from_the_ground_up_i_would/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y77zgr/building_it_department_from_the_ground_up_i_would/"/>
+        <updated>2022-10-18T14:04:56.000Z</updated>
+        <summary type="html"><![CDATA[So, I just got hired as an "IT Specialist" at a non-profit. I have little networking experience outside of installing switches, etc. (Fieldnation). They did not have a IT person before me. I am starting mostly starting from scratch.
+ What I would like help with is building my stack. Currently, they are using Google Workspace and trying out Goodday for task management. They are a hybrid of Macs and a few pcs that they purchaced before hiring me. I am thinking about moving from Google Workspace to Microsoft 365 because that is what I am used to. In addition too, they are willing and able to move to a windows environment. This company has been very reassuring that I can move them in any direction and they will pay for it. Their major priority for is a new phone system. I am looking for a VOIP option. They also purchased a Sharp BP-70C55/70C65 before I got hired. It will get installed soon.
+ We are about to split the current office team and move to a different floor.
+ I feel like with help and research, I can groom this organization to a greater level.
+ ​
+ I appreciate you all's help!!
+    submitted by    /u/b_superman1  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Block website for adults in a small library]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y77yjj/block_website_for_adults_in_a_small_library/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y77yjj/block_website_for_adults_in_a_small_library/"/>
+        <updated>2022-10-18T14:03:53.000Z</updated>
+        <summary type="html"><![CDATA[Hi, 
+ ​
+ I'm managing the (2) computers of a small library few hours a week, and i want to block adults sites on them.
+ I've tried to block them using hosts file with this list : https://dsi.ut-capitole.fr/blacklists/
+ But it froze explorer.exe, maybe due to the length of the file (4.5M lines) and the poor capacity of the computers.
+ ​
+ Do you have a smaller banlist which be usable on low config ?
+ Should i try something else like changing the DNS ? (is openDNS good ?)
+ Or do you have good parental control software to suggest ?
+ ​
+ Thanks,
+    submitted by    /u/wesh_powa  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stop running the PowerShell as an Administrator]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/y77ufa/stop_running_the_powershell_as_an_administrator/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/y77ufa/stop_running_the_powershell_as_an_administrator/"/>
+        <updated>2022-10-18T13:59:32.000Z</updated>
+        <summary type="html"><![CDATA[I'm writing this, because unfortunately - on an almost daily basis - I see people that have this habit.
+ Do not run the PowerShell as an Administrator, unless you absolutely need to. So, when do you need to? When you are changing local system setting or deleting/modifying files that only Administrators have access to. When in doubt, run PowerShell normally and just try to run the command you wanna run.
+ You never need to run a PowerShell as an Administrator, when you are remotely configuring resources, through PSSessions, CIM/WMI, or when using any other cmdlet that has a -Credentialparameter, such as the AD module.
+ The gist of it is this: If you do not know why you need admin permissions, you should not use admin permissions.
+    submitted by    /u/HotPieFactory  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How normal are successful 4776 events?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/y77ps4/how_normal_are_successful_4776_events/</id>
