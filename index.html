@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-18 datetime="2022-10-18T14:31:23.000Z">2022-10-18</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-18 datetime="2022-10-18T14:31:23.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-19 datetime="2022-10-19T09:10:22.000Z">2022-10-19</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-19 datetime="2022-10-19T09:10:22.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,31 +34,26 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y78o4e/internal_network_ipvlan_change_project/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7xney/transform_an_ad_domain_into_a_child_domain_of/"
                         open
                       >
-                        <summary class="article-expander__title">Internal Network IP/Vlan Change Project</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y78o4e/internal_network_ipvlan_change_project/">
+                        <summary class="article-expander__title">Transform an AD Domain into a Child Domain of another Domain/Forest</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7xney/transform_an_ad_domain_into_a_child_domain_of/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I&#x27;ve inherited a network that is using public IPs inside it&#x27;s LAN. I&#x27;ve been tasked to begin cleaning these up and make them proper private IPs. Another fun fact about this network is that the original designer tagged Vlan 1 on all uplink ports. Of course Vlan 1 is still also the default &amp; native vlan throughout the network. Our main data subnet, cameras and door controls are all on Vlan 1 across the entire company.
- The project requirement is to implement department vlans at our main site and have a few other vlans at other remote sites as needed. Of course they want to move the cameras off the data subnet and also use vlans for IOT, printers, and a few other departments at some sites.
- Our WAN is connected using AT&amp;T Metro ASE Layer 2. We have an Aruba 3810 L3 Switch as the gateway at each site. IP Routing is enabled on each of these L3 Switches.
- We have 12 remote sites, STP is in use at each site, but we only connect using static routes. No ospf, rip, bgp, etc.
- My initial thought is to first install all of the new subnets/vlans throughout the network. Then slowly begin moving the Vlan 1 devices over to the new subnets. We have a server team that will handle most of the systems that will need their IP changed so my main task is to ensure connectivity.
- How would you handle moving users off of Vlan 1 onto the new subnets? For all you L2 WAN folks, is there a better way to approach this?
- I appreciate your thoughts &amp; inputs.
-    submitted by    /u/Sully-Trails  
+                              <span>Hi everyone, first post here, i was looking for some experience and advice about my topic, we have an many indipendent AD Domain that we would like to transform into child domain of our Company AD, is there a Microsoft procedure for that or some of you could share his experience about that?
+ Thanks in advance, kindest regards.
+    submitted by    /u/Daaamnbrowly  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                &ensp;<span class="article-reading-time">(&hairsp;139
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -69,20 +64,30 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y784eq/network_equipment_for_a_growing_organization_and/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7wy3a/autoenrollment_supersedens_certificate_template/"
                         open
                       >
-                        <summary class="article-expander__title">Network equipment for a growing organization and novice IT person.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y784eq/network_equipment_for_a_growing_organization_and/">
+                        <summary class="article-expander__title">Autoenrollment Supersedens certificate template</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7wy3a/autoenrollment_supersedens_certificate_template/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>So, I just got hired as an &quot;IT Specialist&quot; at a non-profit. I have little networking experience outside of installing switches, etc. (Fieldnation). They did not have a IT person before me. I am starting mostly starting from scratch.
- What would be some good options for someone like me to start off with and a growing organization like them? This is probably a loaded question, but I appreciate any advice.
- We are about to split the current office team and move to a different floor. They purchased a Sharp BP-70C55/70C65 before I got hired. It will get installed soon.
- I feel like with help and research, I can groom this organization to a greater level.
-    submitted by    /u/b_superman1  
+                              <span>We planning to migrate the CA within the same domain. The Old Certificate Authority (Legacy Cryptographic Provider) has permission to issue the Old smartcard logon v3 certificate template. The new Certificate Authority (Crypto Next Generation) has permission to issue the New smartcard logon v4 certificate template (both templates are configured the same except for the cryptography tab). The most interesting customization in the templates below:
+ In both templates, the following parameters are configured in the Issuance Requirements tab:
+ This number of authorized signatures 1
+ application policy
+ Certificate Request Agent
+ Valid existing certificate
+ We have a lot of users using smart cards to logon, to reduce the load on our help desk (enrollment agent) we want to use the Supersedence template. So that our users can reissue certificates on their own / autoenrollment. To do this, use the criterion in the Issuance Requirements tab: Valid existing certificate
+ In the New smart card logon certificate template, the Supersedens template tab contains the Old smartcard logon certificate template, certificate templates are replaced correctly with us.
+ The question is:
+ The user receives a request to renew/autoenroll the certificate in tray OS balloon, the user sees the required template that has been replaced ( New smartcard logon ), but when continuing to work with the certificate issuance wizard, the user is requested to sign the enrollment agent.
+ Tell me, is this because the certificate issued by the Old smartcard logon template does not fall under the Valid existing certificate flag for the New smartcard logon template certificate?
+ Do I understand correctly that this will not work without an enrollment agent in such a configuration?
+ We cannot refuse to use the enrollment agent, we must control new users and issue a certificate for them.
+ Thank you for help.
+    submitted by    /u/Emkillka  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                &ensp;<span class="article-reading-time">(&hairsp;140
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -93,22 +98,19 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y782y5/firewall_for_smb/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7wt2z/what_to_do_when_youre_constantly_being_keep_in/"
                         open
                       >
-                        <summary class="article-expander__title">Firewall for SMB</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y782y5/firewall_for_smb/">
+                        <summary class="article-expander__title">What to do when you&#x27;re constantly being keep in the dark about an environment under your care?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7wt2z/what_to_do_when_youre_constantly_being_keep_in/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Posting for a friend that doesn&#x27;t have a reddit account: 
- I&#x27;ve recently started working as a sysadmin + network guy for a small business, around 50 employees and up to a 100 devices if we take into account mobile phones.
- The company has a dumpster tier firewall that&#x27;s basically not doing anything and a vm running pfsense for openvpn. There are around 8 ubiquiti &#x27;enterprise&#x27; switches in the network and a few APs. 
- I would like to replace the firewall with something a bit more manageable and feature rich. Naturally i&#x27;m thinking of Fortinet etc for the price but I&#x27;ve also seen the Dream Machine Pro from Ubiquiti which has the features we need at a really low price (I assume it&#x27;s not a great unit...) and would allow me to manage the rest of our switches centrally. You can&#x27;t even monitor traffic on the switches without a gateway anyway which sucks so I&#x27;m tempted to go down this route instead.
- If the dream machine pro supported openvpn for remote workers I would grab it but it doesn&#x27;t so I&#x27;m still hesitant. 
- Do you guys think it&#x27;s better to grab an actual enterprise level switch from Fortinet or maybe a pfsense plus box from netgate instead of a dream machine pro?
-    submitted by    /u/Barrerayy  
+                              <span>Been working with this MNC company who I shall not named for more than a year now. Basically my role is to take care of a POC environment AKA lab manager for their pre &amp; post sales engineers to deploy their respective solutions for demo to their potential customers. The problem is, I have no idea what&#x27;s going on with my lab and my reporting manager then was too busy to entertain my inquiry, most of the time they outright ignore me.
+ After a year for some reason I&#x27;ve been assigned to a new reporting manager who happens to be the principal SA for the lab. Met them privately to discuss my dissatisfaction and what I really want for years to come. In the end they promised to get me involved more in whatever pertaining to the lab and to be frank, I don&#x27;t buy it. I was right though because so far it&#x27;s same shit just different person.
+ This really demotivates me as I believe what they&#x27;re doing devalues me as an experienced engineer for 7 years not to mention the jobscope that they promised during the hiring is far from the reality. I&#x27;m more than just that guy who holds CMDB for the lab and gives &quot;consultation&quot; to presales engineers every single day. Been thinking of jumping ship so far not landing any gig.
+    submitted by    /u/keymochi  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                &ensp;<span class="article-reading-time">(&hairsp;141
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -119,20 +121,17 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y76gi4/cisco_asa5508x_syslog_message_ids/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7w366/laps_implementation_admin_account_issue/"
                         open
                       >
-                        <summary class="article-expander__title">Cisco ASA5508-X Syslog Message IDs</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y76gi4/cisco_asa5508x_syslog_message_ids/">
+                        <summary class="article-expander__title">LAPS implementation - Admin account issue</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7w366/laps_implementation_admin_account_issue/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hello guys, 
- I was wondering if in the ASA for the advanced syslog configuration with logging list there are Message IDs regarding when a user logs in and logs out of the appliance through SSH.
- I looked at Cisco’s Secure Firewall ASA Syslog Messages but didn’t find any.
- I have thought about using an EEM applet but I think the syslog list will be more easily implemented.
-    submitted by    /u/Western_Paramedic189  
+                              <span>We disable the built in administrator account and create a new local admin account called RAccess during the build process. When testing LAPS, we have set the name of the administrator account to manage to be RAccess, and were expecting to see the LAPS password applied to that account. What is happening is that the disabled built in administrator account is being re-enabled, renamed to RAccess2 and the LAPS password is being applied to that account. We&#x27;re rolling out the client via SCCM, and have tried installing it both before and after adding the devices to an OU with LAPS set up. Any ideas where to go next would be appreciated. Everything that I have read suggests that LAPS will not create, enable or rename accounts. We can recover the LAPS password OK, so it looks as all Schema and OU setup has been done correctly.
+    submitted by    /u/Inque-Rioja  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                &ensp;<span class="article-reading-time">(&hairsp;140
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -143,20 +142,19 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7615v/network_redesign_help/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7vegi/how_will_you_reply_the_user_in_this_situation/"
                         open
                       >
-                        <summary class="article-expander__title">Network redesign help</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7615v/network_redesign_help/">
+                        <summary class="article-expander__title">How will you reply the user in this situation?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7vegi/how_will_you_reply_the_user_in_this_situation/">
                           <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/KhzHjsEX2KmQ2GlmgQGeasrsXmgKwznpuvA33n-3RUI.jpg?auto&#x3D;webp&amp;s&#x3D;dd2f3712a59a1ba1195ff1e10ca33fe97f70a41a" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
-                              <span>A network redesign was in process when I took over this job. There’s still remnants of the old layer 2 192.168.x.x around and the ultimate goal is to get rid of it completely but that is going to be a rather complex and lengthy process due to VPN tunnels and a bunch of other things. 
- What I need to figure out is how to get that 192.168.x.x network on to the new side of the network. I need to migrate VMs that are on the 192 side over to new hardware that lives on the other side of the firewall. It is both physically and logically separated other than the firewall that has an interface for each side. New fiber and cables have been ran for the new side of the network. The image below shows an example of how the network is designed and what I’m trying to accomplish. I thought about changing vlan tags and tagging everything on the new side and trying an untagged vlan for the 192 but I’m needing some help and ideas. 
- diagram
-    submitted by    /u/blay_189  
+                              <span>One user missed an important email from CEO. The email was found in her Junk mail folder. I ran the email trace and it shows the email was delivered to her Inbox. I also found the spam confidence level was -1, and I saw on the Analyzer destination (Dest): &quot;I&quot; which means that the message was sent to the Inbox and not Junk &quot;J&quot;. I also checked her Outlook rules and Junk folder block sender settings, but didn&#x27;t find anything that will put the email to the Junk mail folder. I suspect she inadvertently drag/drop the email to Junk mail folder, but I can&#x27;t prove it. I don&#x27;t have Office 365 E5 license to let me check the audit log. The user insisted the email went to her Junk mail folder and requested to find out why the email was put there. She refused to accept my suggestion to monitor if the issue happens again. If you were me, how will you reply her?
+ By the way, she is our HR benefit person, I may need her help in the future, so don&#x27;t want to make her upset. 
+ Please advise!
+    submitted by    /u/graceyin39  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                &ensp;<span class="article-reading-time">(&hairsp;142
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -167,17 +165,17 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y72l24/anyone_have_experience_with_openshiftrancher_and/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7v01c/upgrading_apache2_to_latest_version/"
                         open
                       >
-                        <summary class="article-expander__title">Anyone have experience with Openshift/Rancher and Cisco ACI? How is it?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y72l24/anyone_have_experience_with_openshiftrancher_and/">
+                        <summary class="article-expander__title">Upgrading apache2 to latest version?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7v01c/upgrading_apache2_to_latest_version/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Title - We want to setup Kubernetes and integrate it with our Cisco ACI, however our security dept wants us to setup one Kubernetes Cluster per Application, because they&#x27;re telling us that the ACI CNI Plugin is dogshit according to our support vendor and we shouldn&#x27;t use it - Is this true, or is it just another case of our overpaid support vendor spouting garbage (because the licensing is ofc per node, so more nodes &#x3D; more money for them)?
-    submitted by    /u/anonaccountphoto  
+                              <span>Greetings, I’m new to sysadmin. How do I upgrade running apache2 to latest version ? If possible please provide the command. Thanks !!
+    submitted by    /u/Inevitable-Tank-456  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                &ensp;<span class="article-reading-time">(&hairsp;142
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -188,19 +186,21 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7uw8i/on_prem_to_365_hybrid_mail_flow_issues/"
                         open
                       >
-                        <summary class="article-expander__title">What DNS do you give clients in a basic network?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/">
+                        <summary class="article-expander__title">On Prem to 365 Hybrid mail flow issues</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7uw8i/on_prem_to_365_hybrid_mail_flow_issues/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I&#x27;m setting up a network for a small shop (5 users) with a draytek router acting as the DNS currently (192.168.1.1). I am wondering though should I be giving the clients (via DHCP the router IP or instead 8.8.8.8 and 4.4.4.4 so it has failover? 
- I know both will work but just wondering on the best practise? There is no servers internally and nothing that&#x27;s needing DNS resolution internally.
- What&#x27;s people&#x27;s thoughts know this ?? I think my feeling is set it to the router incase I need to set any DNS records on the draytek for something.
-    submitted by    /u/tempredacc85  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;129
+                              <span>Hi all 
+ I know I have low Karma, but have been on reddit for quite some time, hope this is the best sub to ask help with (and actually lets me start replying to other subs without complaining my Karma is too low)
+ Anyway, I have asked google countless times and my first go-to is reddit for issue like this, but all the fixes I have found for others do not seem to work.
+ Trying to log a ticket with MS too, but seems we don&#x27;t have support credits, considering what we spend per month, but will try and use another service to jump off.
+ Issue:
+ We had an Exchange 2010 server in full Hybrid running fine, all mailboxes were migrated to 365 a few years ago and we could use the on prem 2010 box&#x27;s to relay to 365 for printers etc.
+ The main purpose keeping the on prem is for mailbox creation then mi…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;142
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -211,20 +211,17 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7uicw/are_we_at_a_point_where_azureaws_makes_more_sense/"
                         open
                       >
-                        <summary class="article-expander__title">Route table size ASR9001</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/">
+                        <summary class="article-expander__title">Are we at a point where Azure/AWS makes more sense than a full on-perm refresh?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7uicw/are_we_at_a_point_where_azureaws_makes_more_sense/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I&#x27;m looking for some info on the size of a table on ASR9001. 
- According to this doc, the ASR9000 can take 1.2 million routes. Is that routes in the RIB or the FIB?
- I have an e-BGP connection to an upstream internet provider and I take a full route table (approx 900k routes) If I take a second connection to a different upstream to a second provider also with a full route table will I exceed the max allowed routes? Or, will it be OK because BGP will only take the best routes between the two and discard the others in the route table?
- Thanks
-    submitted by    /u/Tars-01  
+                              <span>I’ve been running the numbers and for a small organization with a file, app, and SQL server doing a fairly nominal amount of processing, Azure seems to make financial sense when looking at on-prem alternatives (physical host running ESXi or HyperV). Are any of you migrating existing environments totally to Azure at this point? Especially given the uncertainty of VMware licensing with Broadcom, I’m thinking this might be the last big wave of on-prem for SMBs. Am I missing anything on the horizon?
+    submitted by    /u/mythlabb  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                &ensp;<span class="article-reading-time">(&hairsp;146
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -235,104 +232,19 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7t9qp/printed_handbook_for_endusers/"
                         open
                       >
-                        <summary class="article-expander__title">How to update GEO-IP location and what DB&#x27;s exist to request correction?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/bCDU7YzXpZokVVrFT1HMvFABUjM_8Wt4XFis6Ck_q4w.jpg?auto&#x3D;webp&amp;s&#x3D;55ad0939a8a99b53423aed8f3d208c47f23dc9ea" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hi all, I am in possession of a few IP-ranges as a Hosting company. 
- I encounter difficulity online with my IP&#x27;s (IPv4) because all kind of Third Parties identify me incorrectly as Polish. While I am infact in The Netherlands. 
- These GEO IP DB&#x27;s I know of, and are reporting NL correctly: 
- Ripe.net
- Maxmind
- IP2Location 
- Do you guys and gals know maybe more GEO IP DB&#x27;s that I should contact for GEO IP Corrections? 
- Please help, for me it&#x27;s a serious problem. 
- Thank you all so much in advance.
-    submitted by    /u/Engineer8899  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;129
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y705tx/169254_addresses_crashed_cisco_asa/"
-                        open
-                      >
-                        <summary class="article-expander__title">169.254 addresses crashed Cisco ASA</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y705tx/169254_addresses_crashed_cisco_asa/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/kwUMHdBHnyvZJU6kX-OCwBv3cdAecTs8l3QJXxmLpgQ.jpg?auto&#x3D;webp&amp;s&#x3D;22ca66abdec615f0e61ace75f8e5032ba59f0e3f" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Context: 30 users. Cisco ASA router managing DHCP &gt; 16-port dumb switch &gt; 4 port switch(es)
- https://imgur.com/a/nrG2JcM for a basic network diagram
- Had an issue where *out of nowhere, after years of this setup* the Cisco ASA got flooded with 169.254 addresses and killed the network. 
- I know what you&#x27;re thinking - why the f*** do you have such cheap dumb ass unmanaged networking equipment for a 30 user environment? Because we&#x27;re cheap and stupid and have no money. Believe me I&#x27;ve tried. I don&#x27;t want to go any further into my thoughts in case of this post being found to be honest, but it is not a favourable position I am in.
- Anyways,
- I figured there was maybe a network loop happening, with this being just as the office was closing I got everyone to leave and I powered everything off. I determined that 1 small switch with 2 computers hanging off it was tripping the network when powered back on. The other switches/computers were repowered and are OK.
- The 2 computers appear fine, like I have pretty detailed software inventories using our endpoint protection agent, and indeed plugging the laptops in elsewhere, no issue.
- This is where I am out of diagnosis, knowledge, experience and wit. So I guess I can blame the switch being worth about $10, but why would it be spamming 169.254 addresses?
- I have now plugged the &quot;faulty&quot; switch in elsewhere and it no longer trips the network. Has this been a red herring all along?
- Moral of story is - we need better equipment so I can actually see which ports/devices these addresses were coming from. But I am still in the sad situation where I cannot properly explain the outage, so hoping for ideas.
- ***Disclaimer. I bring this post with great humility, regret and pleading forgiveness. Yes, it is barely an amateur setup for a business turning over millions of $. Just trying to get by.
-    submitted by    /u/saladnicoise  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;135
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/"
-                        open
-                      >
-                        <summary class="article-expander__title">Redundant Internet Topology/Strategy?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/">
+                        <summary class="article-expander__title">Printed handbook for end-users</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7t9qp/printed_handbook_for_endusers/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Howdy y&#x27;all!
- Looking for tips/pointers on dealing with multiple internet circuits without SD-WAN appliances.
- I&#x27;m fairly well rounded with network and systems administration, but due to working in medium sized orgs most of my career, I&#x27;m definitely in the &quot;jack of all trades, leader of none&quot; camp.
- With this hurricane that recently ripped here through Florida, it&#x27;s got me looking at now wanting to add some WAN redundancy.
- I&#x27;m about midway though the lifecycle of a sizable investment in ISR 4ks as my branch office routers/firewall. Our branches all have a single internet circuit and a basic AVPN circuit from a big ISP. The AVPN doesn&#x27;t have any internet access option setup, it is only used for a private WAN.
- The idea is that I&#x27;d like to drop a 2nd, cheaper circuit for backup internet acc…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;130
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/"
-                        open
-                      >
-                        <summary class="article-expander__title">Are there instances where removing a coaxial cable spillter would be bad for the modem&#x27;s signal?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;m the network admin for a client who is having intermittent internet issues. I contacted their ISP who sent out a tech to investigate. I asked the tech about removing the 3-way splitter in place, wondering if it had degraded and possibly causing issues. The tech tested the signals with an expensive looking tool and determined the signals coming in were good. At one point, he did indicate we could remove the splitter without issue. But, them he tested it again before proceeding and noticed an issue. 
- The way the tech explained it was if we remove the splitter, we would gain 5dB somewhere, but then lose 5dB somewhere else which would push past a certain threshold that would cause sync issues. Im not even sure it was dB, but I have to assume. He wasnt great at talking smart and I wasnt great at knowing what he was talkinh about. Im not an expert in coax cable signaling and understanding readings. I have worked at an ISP in tech support and understand the basics and sync issues, but I never got trained or learned much about this. Any help is appreciated.
-    submitted by    /u/dumbtechnoob  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;132
+                              <span>Enterprise IT sysadmins: is there a case to be made for a hard copy user manual / handbook that would be updated and re-printed periodically (say, twice a year) and then physically distributed to end-users? This would be instead of maintaining a user-facing wiki, SharePoint site, BookStack, etc... We would keep using our internal admin-facing Confluence, of course.
+ It would be a lot of work and not something that I would find particularly enjoyable. Furthermore, it almost seems like admitting defeat: our stuff is so complicated, evidently, that you need a book to understand it!
+ But there are a few factors which lead me to believe that it could maybe make sense:
+  
+The handbook depends on neither the VPN nor the hardware in order to be accessible. Our most common and urgent tickets come f…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;147
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -349,10 +261,495 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7xhsp/reacting_on_netxhop_presence_for_routing/"
+                        open
+                      >
+                        <summary class="article-expander__title">Reacting on netxhop presence for routing</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7xhsp/reacting_on_netxhop_presence_for_routing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m doing some clever (stupid?) routing between leaf (bgp, L3 fabric) and openstack (software routing in overlays).
+ I got to the point, when I have two (or more) routes, and only one is valid (i.e. can deliver traffic to the consumer). The difference between them is that in one case there is active nexthop IP, and in other there is none. Nexthop is connected through a bridge, therefore it&#x27;s impossible to use link state to check if nexthop is available or not. The single way is to check if it can be resolved via arp.
+ There are other ways to solve my problem (healthchecks, hooks into openstack code, etc), but I wanted to investigate feasibility of the nexthop &#x27;resolving&#x27; (in this context, resolving of IP into MAC, i.e. arp). Are there the name of this technique? Is someone using it?
+ Basically, I have a route:
+  x.x.x.0/24 via y.y.y.y dev foobar 
+ And this route should only be taken in account when y.y.y.y can be seen as a neighbor in ip neighbors, and ignored, if not.
+ I use bird for bgp, so it&#x27;s either bird feature (check nexthop resolvability), or linux routing feature.
+ Is this a thing, or should I try other ways?
+    submitted by    /u/amarao_san  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7x60r/wlc_placement/"
+                        open
+                      >
+                        <summary class="article-expander__title">wlc placement</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7x60r/wlc_placement/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ I have design question , usually placing where do we have to place the wlc controller ,
+ behind firewall or direct core 
+ Thanks
+    submitted by    /u/tkr_2020  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7wd4o/console_server_recommendation_for_dc/"
+                        open
+                      >
+                        <summary class="article-expander__title">Console server recommendation for DC</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7wd4o/console_server_recommendation_for_dc/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I&#x27;m currently looking for console server data solution for mainly Cisco devices. What do you think about out of band (SIM CARD or wifi based(?) ) console servers - theoretically sounds very good - how about the practice ?
+ Also there&#x27;re some other requirements we would like to have:
+  
+minimum of 16 interfaces
+ possibility to use RJ45 to RJ45 UTP cables for simplicity and longer range cross-rack connectivity (than simple Cisco console cables).
+ Continuing from 2 - the device should be able to rollover programmatically that cable (also - how this function is called - (software selectable pins) ?). Because manually changing pins from straight through to rollover in UTP cable from standard is not very sustainable solution. In Ethernet world similar thing is called auto-mdix - it&#x27;s interesting how this thing is called in serial world :)
+  
+Any suggestions ? Thanks
+    submitted by    /u/kajatonas  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-18 datetime="2022-10-19T03:51:09.000Z">2022-10-18</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-18 datetime="2022-10-19T03:51:09.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7s0r9/hypothetically_if_your_sysadmins_all_left_the_org/"
+                        open
+                      >
+                        <summary class="article-expander__title">Hypothetically, if your SysAdmins all left the org, one after the other, and management/HR was too busy to notice, and ended up with no admins and no access to all vital systems, how would one discover names (ex: CAs/DCs) and gain access to diagnose potential upcoming failures for the environment?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7s0r9/hypothetically_if_your_sysadmins_all_left_the_org/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>If none of the old SysAdmins want to help, even for pay, is there any kind of law that can be used to force them to work to prevent the company from collapsing due to not making money over the holiday season, and to stop thousands of jobs from being lost? Could one of you be hired into such a situation, where nobody has any Domain Admin access and there was no remaining account left (all admins used smart cards with unknown PINs). Would you figure it out before it&#x27;s too late, as a total outsider? You could get datacenter access of course, just no ideas on accounts/credentials. Let&#x27;s say, a mishmash of 300 servers (mostly VMs, Server 2012 R2 or Server 2019), 1500 workstations (mostly W10), up to 300 users on VDI, and 2000 employees total.
+ Are there reasonably-priced outside services that specialize in recovering in such situations to save a company that accidentally their SysAdmins?
+    submitted by    /u/vrtoko  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;149
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7rwcl/small_tax_office_network_setup_help/"
+                        open
+                      >
+                        <summary class="article-expander__title">Small Tax Office Network Setup Help</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7rwcl/small_tax_office_network_setup_help/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi everyone,
+ A bit of background - I&#x27;m helping out a small tax office that has two sites. Site one has 5 desktops and the other has 2. 
+ Site one has a Synology Nas Active Directory environment. 
+ Site two the users have an account on each pc. 
+ They want to be able to share files between the two sites and use roaming profiles.
+ I don&#x27;t like the Synology and would like them on a windows environment. 
+ I&#x27;m use to supporting a large corporate IT environment. So the solutions that I&#x27;m use to just don&#x27;t make business sense to a Small office. 
+ If one of you can prescribe us a setup that would be awesome!
+ A traditional option and a cloud hybrid option.
+ Thank you for reading :D
+    submitted by    /u/psom369  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;141
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7r16h/is_onprem_skype_for_business_officially_dead/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is on-Prem Skype for Business officially dead?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7r16h/is_onprem_skype_for_business_officially_dead/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We’re in a situation where we need to run an on Prem phone system. It seems like SFB on Prem is dead? Is there a decent alternative?
+    submitted by    /u/madocgwynedd  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;139
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7n2o9/job_rejection_story_time/"
+                        open
+                      >
+                        <summary class="article-expander__title">Job Rejection Story Time</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7n2o9/job_rejection_story_time/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So, I&#x27;ve been looking for a different job in my town, IT jobs don&#x27;t come up often around here. One becomes available, i am MORE than qualified but because i&#x27;m a weird f--ker, I was rejected for the job. Alright, I&#x27;ll move on.. A week later (Today) a head hunting company contacts me on indeed about a job &quot;i would be PERFECT for&quot;.. Guess which job it was for.. Yep, the one that rejected me. I told them they rejected me and they asked if I want to apply anyways I told em &quot;Screw it, Go for it lets see what happens&quot;. Thats when I get another email about a job in my town from a different head hunter company, and then another, and another, and another. So far 7 different head hunters from different companies have contacted me regarding this position. I&#x27;ve said yes to every single one. Why? Because f--k them, thats why. 
+ ​
+ Thought I&#x27;d just share that story as it just happened and I am more than amused.
+    submitted by    /u/Nx0Sec  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;145
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7kyoa/netbios_nbtns_disabled_but_still_hitting_in_kali/"
+                        open
+                      >
+                        <summary class="article-expander__title">NETBIOS NBT-NS disabled, but still hitting in Kali</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7kyoa/netbios_nbtns_disabled_but_still_hitting_in_kali/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I’ve set a gpo to run a powershell script to disable NETBIOS on all of our machines. And confirmed on multiple machines under the NIC settings that NETBIOS is disabled. 
+ Also have the DHCP option set. 
+ However when running Responder on Kali linux, I am still get NBT-NS poisoning attempts. 
+ Is there something I’m missing?
+    submitted by    /u/bigvalboa  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7jdck/i_miss_on_prem_too/"
+                        open
+                      >
+                        <summary class="article-expander__title">I miss on prem, too.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7jdck/i_miss_on_prem_too/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>My associate said this. It really struck me because I realized I hold very similar sentiments. 
+ ​
+ ​
+ In Teams, regarding AVD:
+ I really hate all the move to AWS and AVD cloud vm stuff
+ Always over promising and under achieving 
+ ​
+ my prediction: let&#x27;s move your brain to the cloud too... it&#x27;ll be cheaper and better... and faster... but you won&#x27;t be able to feel your toes
+ &quot;who needs toes&quot;
+    submitted by    /u/beegY0shee  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;153
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7j4t4/vent_i_get_you_have_time_crunches_and_things/"
+                        open
+                      >
+                        <summary class="article-expander__title">Vent: I get you have time crunches and things aren&#x27;t working perfectly, but fuck off with your attitude</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7j4t4/vent_i_get_you_have_time_crunches_and_things/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Just need to vent some where.
+ Had an engineer be a complete asshole because, &quot;outlook&quot; wasn&#x27;t working. Spent an hour and half with him fixing things that didn&#x27;t need fixing.
+ Been at this specific company for almost 4 years and this is the 2nd occurrence of a worker having an attitude towards me ever. The first was just a new hire that needed an attitude check and literally was an asshole in front of the IT manager and IT director. So they backed me and even commended me for not retaliating. 
+ We have no help desk. I was promoted years ago and they never replaced me. So for about 200+ it&#x27;s primarily me juggling stupid help desk and admin/engineering work with my boss helping occasionally. 
+ All of this guys tickets are closed and resolved. Like it&#x27;s my fault he doesn&#x27;t ask to reopen tickets or put new ones in if something reoccurs. My bad I&#x27;m not babysitting you non stop while I have 1000 other things to do.
+ Now my evening is off to a irate start because this jackass can&#x27;t put tickets in or be a normal person like literally everyone else. My bad!
+    submitted by    /u/kungfughazi  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;154
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7i044/not_using_root_company_domain_for_bulk_email/"
+                        open
+                      >
+                        <summary class="article-expander__title">Not using root company domain for bulk email sending... still a best practice?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7i044/not_using_root_company_domain_for_bulk_email/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have always been a firm believer that if your company wants to use a 3rd party provider to send out marketing or sales emails (or anything automated), that it is always best practice to use a subdomain or a different domain together; and setup the necessary DNS records, etc...... so that there&#x27;s a zero possibility of trashing our root domain&#x27;s email reputation in case something happens.
+ Is that practice still considered best? I&#x27;ve been seeing automated emails from vendors with the FROM address being the root domain. Are they just being careless? Obviously best practices are likely applied, (SPF, DKIM, DMARC)... but is that considered enough to the point where companies are using their root domain to send automated emails out that way.
+    submitted by    /u/hookahmasta  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7huuy/whats_your_educationcertificationcredentials/"
+                        open
+                      >
+                        <summary class="article-expander__title">What&#x27;s your education/certification/credentials?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7huuy/whats_your_educationcertificationcredentials/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Edit: Thanks for the input, folks! I&#x27;m also now trying to include in my question are there any specific certifications that are within reach of my high school kids? Assuming they&#x27;re in my program and are taking intro college-level classes in programming and info security, what&#x27;s appropriate and worth their time?
+ Hi folks,
+ ​
+ I&#x27;m a high school teacher, running a great computer science department and we recently added a (for college credit) course in information security.
+ ​
+ I&#x27;m attempting to find out some information for the sake of my students interested in working in this field. I was hoping to get some guidance on credentials, certifications, college education, that sort of thing.
+ I&#x27;m not the type of teacher who wants to just tell all of his students to go get a bachelor&#x27;s degree if it&#x27;s not necessarily going to suit them well for their career. Are there other ideas out there that are more appropriate? Do you need a B.S. to even get in the door? What subject area(s)?
+ ​
+ Thank you for any insight you might be able to share!
+    submitted by    /u/ghabibi  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;144
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7fj7y/employee_card_login_system/"
+                        open
+                      >
+                        <summary class="article-expander__title">Employee Card Login System?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7fj7y/employee_card_login_system/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all! Been lurking in this thread for a LONG time, but figured this would be as good a time as any to finally post. My IT Director asked me to look into finding a Smart Card solution so that employees can log into PCs. We&#x27;re a small Hospital and many of the nurse stations have give or take 5 communal PCs that they need to log into the domain to use. I&#x27;ve tried convincing my boss to remove that step and just use a limited Kiosk account as all patient information is locked behind a second login and a remote connection (Parallells), but that&#x27;s been like trying to pull teeth. So, I&#x27;m trying to make this as easy as possible for our staff to log into their accounts and get things done. Any ideas for a badge scan or fingerprint solution to speed up the process? I really don&#x27;t have a lot of experience in this very specific subject and Googling this subject has been a mess. Figured you guys would have at least some recommendations.
+    submitted by    /u/WrecktifyLive  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7ewlm/rant_my_outlook_is_being_slow/"
+                        open
+                      >
+                        <summary class="article-expander__title">[RANT] &quot;my outlook is being slow&quot;</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7ewlm/rant_my_outlook_is_being_slow/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Have an owner who is complaining that his Outlook is running slow (which it is).
+ Do a little recon and digging - his .ost file (Outlook is locally caching) is just under 50GB. He &quot;has&quot; to be delegate on 10+ people&#x27;s accounts too. &quot;Shockingly&quot;, he is not accepting this as the reason for his problem.
+ He definitely is not liking my suggestions.
+ Edit: please note, per the below MS article
+  
+Very large (25 GB or larger): An .ost file of this size increases the frequency of short pauses, especially while you are downloading new email messages.
+  
+and
+  
+In Outlook 2010 and later versions, the maximum size for a .pst file is 50 GB.
+  
+https://support.microsoft.com/en-us/topic/how-to-troubleshoot-performance-issues-in-outlook-7ac5402d-c4eb-ed6b-9545-b26dde618755
+ ​
+ Edit 2: so, I think I&#x27;ve talked him down off the cliff. I removed his profile and created a new one. I am watching the .ost grow though so we&#x27;ll see where this story ends...
+ ​
+ ​
+    submitted by    /u/jpotrz  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;146
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7aqna/what_kind_of_laptops_are_you_giving_out_these_days/"
+                        open
+                      >
+                        <summary class="article-expander__title">What kind of laptops are you giving out these days?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7aqna/what_kind_of_laptops_are_you_giving_out_these_days/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello all. I&#x27;m wondering what sort of laptops your companies are giving out to users these days? 
+ We formerly had desktops, but we moved to a new office that the CEO insisted on setting up as a flexible workspace, so everyone needed laptops, and then covid showed up and we went remote.
+ We currently have MS Surfaces (the CEO&#x27;s choice) through a 3rd party vendor. Most people seem to really like them, but I&#x27;m getting complaints from a few people that then need more powerful ones. Particularly a few people complain about the amount of ram they come with. I&#x27;ve got a user insisting they need at least 64 GB of ram to work properly, more than is available in a surface. I&#x27;m deeply skeptical of this particular user&#x27;s claim, but that&#x27;s a different issue. I sent him to his department head to argue with him about getting the budget. If he actually gets budget to buy one, I&#x27;ll need to source it whether I think he really needs it or not. 
+ Anyway, what sort of laptops do you all like to send out? How much ram do they typically have?
+    submitted by    /u/DJDoubleDave  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;149
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7and5/india_it_outsourcing_thoughts_experiences/"
+                        open
+                      >
+                        <summary class="article-expander__title">India IT outsourcing, thoughts, experiences?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7and5/india_it_outsourcing_thoughts_experiences/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am sure at one point or another we had to deal with Indian IT Support and they&#x27;re almost present on every company nowadays. What are your thoughts about their work or experiences in general?
+    submitted by    /u/Mike9209  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;175
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y7abh5/why_do_companies_purchase_technology_without/"
+                        open
+                      >
+                        <summary class="article-expander__title">Why do companies purchase technology without technology dept input?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y7abh5/why_do_companies_purchase_technology_without/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have been in IT for over 10 years now, in different environments (school district, health care, manufacturing, etc.) And it baffles me that companies will spend THOUSANDS of dollars on software or equipment and don&#x27;t include IT in the conversation.
+ I recently took a new job and was hired to help get a new software up and running. As I&#x27;m going through the requirements, I can&#x27;t find the options they want. I do my best, then email the software support asking if I&#x27;m missing anything. The support emails back that what I need isn&#x27;t even an option available. 
+ So who authorized this? If the software can&#x27;t do the main thing you want it to do, who agreed to purchase it?!? Was the request even asked to the selling company before purchasing? What am I going to do with this software now? Thousands of dollars wasted.
+ I&#x27;ll never know because I joined on after it was already purchased. But holy shit does it get me heated. End rant.
+    submitted by    /u/SailorSatrn  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;167
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y78zia/whats_the_dumbest_thing_you_have_done_since/"
+                        open
+                      >
+                        <summary class="article-expander__title">What&#x27;s the dumbest thing you have done since working in IT?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y78zia/whats_the_dumbest_thing_you_have_done_since/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As the subject says, what&#x27;s the dumbest thing you have done since working in IT? Like worse mistakes or brain dead moments where you think to yourself &quot;wtf did I do that for&quot;?
+ ​
+ I&#x27;ll go first.
+ Last night I was upgrading esxi host from 6.5 to 7.0 and I selected &quot;new&quot; install instead of upgrade. I have never done anything like this, I don&#x27;t know if I was over tired not sure. Thankfully it only had one VM that was easily restored and no one even noticed.
+    submitted by    /u/dickydotexe  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;162
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -1508,6 +1905,619 @@ Finally come the question:
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;135
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7rb92/qinq_in_core_and_distributiom_layers_of/"
+                        open
+                      >
+                        <summary class="article-expander__title">QinQ in core and distributiom layers of enterprise networks: yea or nay?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7rb92/qinq_in_core_and_distributiom_layers_of/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I come from an ISP background so the service provider protocols are kind of the box I like to think in. I now work in the enterprise space.
+ I currently operate an enterprise network that had almost no distribution layer. Our biggest campuses go switched access layer -&gt; SVIs on the core switches. Recently I implemented a routed distribution layer across an ELAN. I am toying with the idea of using QinQ to support a cookie cutter config style for access layer switches while preserving unique address space per different access areas under the same distribution or core switch. 
+ For example, building group A will have different /24s for it&#x27;s SVIs than building group B, even though both use a switched access layer that goes back to the same routing distro switch in building group A. The standar…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7p4ge/bgp_peering_with_isp/"
+                        open
+                      >
+                        <summary class="article-expander__title">BGP Peering with ISP</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7p4ge/bgp_peering_with_isp/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Lets say I&#x27;m using eBGP to peer with an ISP and my router is sitting behind a firewall and I&#x27;m using a loopback on the router as my peering address. Can I simply inform my ISP of my network toplology therefore they can adjust the TTL of their BGP messages? 
+ I&#x27;m testing a firewall in my lab, decided to do a little BGP just for kicks and ended up here. In the past few hours, I&#x27;ve learned all sorts of strange things in regards to rules that some ISPs have when peering with customers. Are ISPs generally that anal when peering with customers? With the ease of filtering with BGP, why?
+    submitted by    /u/410MNetS  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;133
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7oeee/im_chasing_a_ghost_in_need_of_suggestions/"
+                        open
+                      >
+                        <summary class="article-expander__title">I&#x27;m chasing a ghost! In need of suggestions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7oeee/im_chasing_a_ghost_in_need_of_suggestions/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Help me Reddit, you&#x27;re one of my last hopes!
+ I&#x27;m working on a multi-site network full of Ubiquiti EdgeSwitch devices. There are 3 LANs all bridged together. The VLANs were configured incorrectly by my predecessor which will be addressed however I do not think this is causing the issue because the config of the VLANs hasn&#x27;t been touched for a few years. This is a fairly new issue. 
+ In this case there are two buildings connected together by a PTP fiber circuit provided by Spectrum. On both sides the circuit is converted to Ethernet. In Building A (BA) that Ethernet is going into a EdgeSwitch 16 XG (SW1) . In Building B (BB) the Ethernet goes into an EdgeSwitch 48 port switch (SW2).
+ The issue is some computers in BB cannot communicate with some computers in BA. For instance, the troubled c…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7o617/openflow_action_set_copy_ttl_inward_and_outward/"
+                        open
+                      >
+                        <summary class="article-expander__title">OpenFlow action set &quot;Copy TTL Inward&quot; and outward</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7o617/openflow_action_set_copy_ttl_inward_and_outward/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Can someone please explain what does this mean. I&#x27;m not sure what does inward/outward has to do with TTL. Thank you
+    submitted by    /u/huacchob  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7n3hq/rant_wednesday/"
+                        open
+                      >
+                        <summary class="article-expander__title">Rant Wednesday!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7n3hq/rant_wednesday/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>It&#x27;s Wednesday! Time to get that crap that&#x27;s been bugging you off your chest! In the interests of spicing things up a bit around here, we&#x27;re going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
+ There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that&#x27;s been pissing you off or getting on your nerves!
+ Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;238
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7ma3s/what_am_i_doing_wrong_with_iptables/"
+                        open
+                      >
+                        <summary class="article-expander__title">What am I doing wrong with iptables?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7ma3s/what_am_i_doing_wrong_with_iptables/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m trying to use iptables on an Ubuntu VM. This is (part of) what I have:
+ -A ssh-policer -p tcp -m tcp --dport 22 -m state --state NEW -m hashlimit --hashlimit-burst 1 --hashlimit 1/min --hashlimit-mode srcip --hashlimit-name ssh -j LOG-ACCEPT-SSH -A ssh-policer -j LOG-DROP-SSH -A LOG-ACCEPT-SSH -j LOG --log-prefix &quot;ssh_unknown_accept: &quot; -A LOG-ACCEPT-SSH -j ACCEPT -A LOG-DROP-SSH -j LOG --log-prefix &quot;ssh_unknown_drop: &quot; -A LOG-DROP-SSH -j DROP 
+ (I have also tried --hashlimit-upto 1/min which looks like it&#x27;s the same thing as --hashlimit, but iptables docs aren&#x27;t great)
+ The idea here is that if I get 1 new SSH connection per minute (or less) from unique src IPs, I log them as &#x27;ssh_unknown_accept&#x27; and accept them. More than 1 SSH connection per minute from different source IPs, I drop t…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7h0d0/10g_wan_links_for_res_and_smb_customers/"
+                        open
+                      >
+                        <summary class="article-expander__title">10G WAN links for res and SMB customers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7h0d0/10g_wan_links_for_res_and_smb_customers/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>For any ISPs offering 10G DIA or XGSPON links to residential and SMB customers, what sort of gateway are they using and how is the performance?
+ I don&#x27;t have any 10G equipped gateways to play with so I&#x27;m messing around with some servers and 10G NICs. Here&#x27;s the lab, all are Dell R620s with dual Xeon E5-2670, 32GB of memory, and Intel X520-DA2 NICs connected with DACs:
+ Server A 172.16.0.1/30 | Server B &quot;WAN&quot; 172.16.0.2/30 &quot;LAN&quot; 192.168.1.1/24 | Server C 192.168.1.100/24 (DHCP) 
+ Servers A and C are running Debian 11 on fresh installs. Server B is running pfsense with a basic NAT configuration. Server A is running iperf3 as a server. Server C is iperf3 client.
+ If I boot up iperf3 and do a regular test from Server C to Server A:
+ upload [ ID] Interval Transfer Bitrate [ 5] 0.00-60.04 sec 38.0 GBytes 5.44 Gbits/sec receiver download [ ID] Interval Transfer Bitrate Retr [ 5] 0.00-60.04 sec 26.3 GBytes 3.76 Gbits/sec 89 sender bidir [ ID][Role] Interval Transfer Bitrate Retr [ 5][RX-S] 0.00-60.03 sec 37.0 GBytes 5.29 Gbits/sec receiver [ 8][TX-S] 0.00-60.03 sec 25.7 GBytes 3.68 Gbits/sec 72 sender 
+ Of course, better results with 8 threads:
+ upload (-P8) [ ID] Interval Transfer Bitrate [SUM] 0.00-60.02 sec 54.6 GBytes 7.82 Gbits/sec receiver download (-P8) [ ID] Interval Transfer Bitrate Retr [SUM] 0.00-60.01 sec 49.6 GBytes 7.10 Gbits/sec 685 sender bidir (-P8) [ ID][Role] Interval Transfer Bitrate Retr [SUM][RX-S] 0.00-60.01 sec 40.3 GBytes 5.77 Gbits/sec receiver [SUM][TX-S] 0.00-60.01 sec 26.8 GBytes 3.84 Gbits/sec 224 sender 
+ I notice the bidirectional performance is slightly better, but basically the same with more threads. Is this a NIC limitation or possibly tuning? I know the x520 is fairly old by now. 
+ Has anyone done any testing like this? Has anyone tested NAT throughput on more affordable hardware like Mikrotik or Ubiquiti?
+    submitted by    /u/keivmoc  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7fuyq/could_someone_please_confirm_if_my_understanding/"
+                        open
+                      >
+                        <summary class="article-expander__title">Could someone please confirm if my understanding of NAT(PNAT) , correct?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7fuyq/could_someone_please_confirm_if_my_understanding/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>My understanding is that if let&#x27;s say there are multiple devices in a LAN and device A wants to make request to a webserver on the internet -
+ Source IP of A will be replaced with the IP of the router from the packet which is going out to the WAN.
+ So if the source was 10.10.0.1:9876 and IP of router was 125.12.31.7 then router will translate source to 125.12.31.7:5000 (5000 being a random available port) 
+ Now the router will note down :
+ Source : 125.12.31.7:5000 &#x3D; 10.10.0.1:9876 
+ So that when the packet comes back from the server it will look up in the table and send it to the Computer A. 
+ If this computer A had made multiple requests, they all would have been allotted different portnumbers from the available pool. Same if Computer B had made a request. 
+ So basically it&#x27;s the unique port number which is being used here to determine where to send the packed when it enters router from outside world. 
+ What if the number of requests from within the LAN to WAN exceeded the number of available port numbers? What would happen? I mean there are only 64,512 (65,535 -1,023) available ports at max.
+    submitted by    /u/ThePrinceOfAgrabah  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7c49n/options_for_extending_internal_network_to_remote/"
+                        open
+                      >
+                        <summary class="article-expander__title">Options for extending internal network to remote IOT(?) devices</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7c49n/options_for_extending_internal_network_to_remote/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m trying to solve an issue in our environment where, as developers continue to work remotely, we have homebrew devices that need to be on our network to recieve code pushes from our Jenkins servers. These devices are all custom and not capable of having additional software installed on them.
+ I have attempted to connect these devices to GlobalProtect enabled RaspberryPi devices, sharing the GP IP, which gives them access into our network, but this solution fails because the devices are not visible behind the Pi, and are not reachable to have code pushed to them.
+ We have deployed at least 1 home firewall for a key developer but this is not a sustainable approach. Is anyone familiar with a product that would fit this need, or deployed something similar?
+ Also, ideally the solution would have some sort of security (at least MAC auth) so that any random device can not connect to our network. 
+ Thanks!
+    submitted by    /u/BlameFirewall  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y79byf/switch_ips_on_dell_openmanage/"
+                        open
+                      >
+                        <summary class="article-expander__title">Switch IPs on Dell OpenManage</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y79byf/switch_ips_on_dell_openmanage/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have a stack of Dell switches which are managed via Dell OpenManage. My boss wants me to do an inventory of the switches including their individual IPs, but I can&#x27;t for the life of me find the IPs of the switches in OpenManage. Is anyone familiar with it?
+    submitted by    /u/matthewrparker  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;125
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y78o4e/internal_network_ipvlan_change_project/"
+                        open
+                      >
+                        <summary class="article-expander__title">Internal Network IP/Vlan Change Project</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y78o4e/internal_network_ipvlan_change_project/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve inherited a network that is using public IPs inside it&#x27;s LAN. I&#x27;ve been tasked to begin cleaning these up and make them proper private IPs. Another fun fact about this network is that the original designer tagged Vlan 1 on all uplink ports. Of course Vlan 1 is still also the default &amp; native vlan throughout the network. Our main data subnet, cameras and door controls are all on Vlan 1 across the entire company.
+ The project requirement is to implement department vlans at our main site and have a few other vlans at other remote sites as needed. Of course they want to move the cameras off the data subnet and also use vlans for IOT, printers, and a few other departments at some sites.
+ Our WAN is connected using AT&amp;T Metro ASE Layer 2. We have an Aruba 3810 L3 Switch as the gateway at each site. IP Routing is enabled on each of these L3 Switches.
+ We have 12 remote sites, STP is in use at each site, but we only connect using static routes. No ospf, rip, bgp, etc.
+ My initial thought is to first install all of the new subnets/vlans throughout the network. Then slowly begin moving the Vlan 1 devices over to the new subnets. We have a server team that will handle most of the systems that will need their IP changed so my main task is to ensure connectivity.
+ How would you handle moving users off of Vlan 1 onto the new subnets? For all you L2 WAN folks, is there a better way to approach this?
+ I appreciate your thoughts &amp; inputs.
+    submitted by    /u/Sully-Trails  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y784eq/network_equipment_for_a_growing_organization_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">Network equipment for a growing organization and novice IT person.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y784eq/network_equipment_for_a_growing_organization_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So, I just got hired as an &quot;IT Specialist&quot; at a non-profit. I have little networking experience outside of installing switches, etc. (Fieldnation). They did not have a IT person before me. I am starting mostly starting from scratch.
+ What would be some good options for someone like me to start off with and a growing organization like them? This is probably a loaded question, but I appreciate any advice.
+ We are about to split the current office team and move to a different floor. They purchased a Sharp BP-70C55/70C65 before I got hired. It will get installed soon.
+ I feel like with help and research, I can groom this organization to a greater level.
+    submitted by    /u/b_superman1  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y782y5/firewall_for_smb/"
+                        open
+                      >
+                        <summary class="article-expander__title">Firewall for SMB</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y782y5/firewall_for_smb/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Posting for a friend that doesn&#x27;t have a reddit account: 
+ I&#x27;ve recently started working as a sysadmin + network guy for a small business, around 50 employees and up to a 100 devices if we take into account mobile phones.
+ The company has a dumpster tier firewall that&#x27;s basically not doing anything and a vm running pfsense for openvpn. There are around 8 ubiquiti &#x27;enterprise&#x27; switches in the network and a few APs. 
+ I would like to replace the firewall with something a bit more manageable and feature rich. Naturally i&#x27;m thinking of Fortinet etc for the price but I&#x27;ve also seen the Dream Machine Pro from Ubiquiti which has the features we need at a really low price (I assume it&#x27;s not a great unit...) and would allow me to manage the rest of our switches centrally. You can&#x27;t even monitor traffic on the switches without a gateway anyway which sucks so I&#x27;m tempted to go down this route instead.
+ If the dream machine pro supported openvpn for remote workers I would grab it but it doesn&#x27;t so I&#x27;m still hesitant. 
+ Do you guys think it&#x27;s better to grab an actual enterprise level switch from Fortinet or maybe a pfsense plus box from netgate instead of a dream machine pro?
+    submitted by    /u/Barrerayy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y76gi4/cisco_asa5508x_syslog_message_ids/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco ASA5508-X Syslog Message IDs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y76gi4/cisco_asa5508x_syslog_message_ids/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello guys, 
+ I was wondering if in the ASA for the advanced syslog configuration with logging list there are Message IDs regarding when a user logs in and logs out of the appliance through SSH.
+ I looked at Cisco’s Secure Firewall ASA Syslog Messages but didn’t find any.
+ I have thought about using an EEM applet but I think the syslog list will be more easily implemented.
+    submitted by    /u/Western_Paramedic189  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7615v/network_redesign_help/"
+                        open
+                      >
+                        <summary class="article-expander__title">Network redesign help</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7615v/network_redesign_help/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/KhzHjsEX2KmQ2GlmgQGeasrsXmgKwznpuvA33n-3RUI.jpg?auto&#x3D;webp&amp;s&#x3D;dd2f3712a59a1ba1195ff1e10ca33fe97f70a41a" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>A network redesign was in process when I took over this job. There’s still remnants of the old layer 2 192.168.x.x around and the ultimate goal is to get rid of it completely but that is going to be a rather complex and lengthy process due to VPN tunnels and a bunch of other things. 
+ What I need to figure out is how to get that 192.168.x.x network on to the new side of the network. I need to migrate VMs that are on the 192 side over to new hardware that lives on the other side of the firewall. It is both physically and logically separated other than the firewall that has an interface for each side. New fiber and cables have been ran for the new side of the network. The image below shows an example of how the network is designed and what I’m trying to accomplish. I thought about changing vlan tags and tagging everything on the new side and trying an untagged vlan for the 192 but I’m needing some help and ideas. 
+ diagram
+    submitted by    /u/blay_189  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y72l24/anyone_have_experience_with_openshiftrancher_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone have experience with Openshift/Rancher and Cisco ACI? How is it?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y72l24/anyone_have_experience_with_openshiftrancher_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Title - We want to setup Kubernetes and integrate it with our Cisco ACI, however our security dept wants us to setup one Kubernetes Cluster per Application, because they&#x27;re telling us that the ACI CNI Plugin is dogshit according to our support vendor and we shouldn&#x27;t use it - Is this true, or is it just another case of our overpaid support vendor spouting garbage (because the licensing is ofc per node, so more nodes &#x3D; more money for them)?
+    submitted by    /u/anonaccountphoto  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/"
+                        open
+                      >
+                        <summary class="article-expander__title">What DNS do you give clients in a basic network?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7114l/what_dns_do_you_give_clients_in_a_basic_network/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m setting up a network for a small shop (5 users) with a draytek router acting as the DNS currently (192.168.1.1). I am wondering though should I be giving the clients (via DHCP the router IP or instead 8.8.8.8 and 4.4.4.4 so it has failover? 
+ I know both will work but just wondering on the best practise? There is no servers internally and nothing that&#x27;s needing DNS resolution internally.
+ What&#x27;s people&#x27;s thoughts know this ?? I think my feeling is set it to the router incase I need to set any DNS records on the draytek for something.
+    submitted by    /u/tempredacc85  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/"
+                        open
+                      >
+                        <summary class="article-expander__title">Route table size ASR9001</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y70ouy/route_table_size_asr9001/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m looking for some info on the size of a table on ASR9001. 
+ According to this doc, the ASR9000 can take 1.2 million routes. Is that routes in the RIB or the FIB?
+ I have an e-BGP connection to an upstream internet provider and I take a full route table (approx 900k routes) If I take a second connection to a different upstream to a second provider also with a full route table will I exceed the max allowed routes? Or, will it be OK because BGP will only take the best routes between the two and discard the others in the route table?
+ Thanks
+    submitted by    /u/Tars-01  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to update GEO-IP location and what DB&#x27;s exist to request correction?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y70d43/how_to_update_geoip_location_and_what_dbs_exist/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/bCDU7YzXpZokVVrFT1HMvFABUjM_8Wt4XFis6Ck_q4w.jpg?auto&#x3D;webp&amp;s&#x3D;55ad0939a8a99b53423aed8f3d208c47f23dc9ea" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hi all, I am in possession of a few IP-ranges as a Hosting company. 
+ I encounter difficulity online with my IP&#x27;s (IPv4) because all kind of Third Parties identify me incorrectly as Polish. While I am infact in The Netherlands. 
+ These GEO IP DB&#x27;s I know of, and are reporting NL correctly: 
+ Ripe.net
+ Maxmind
+ IP2Location 
+ Do you guys and gals know maybe more GEO IP DB&#x27;s that I should contact for GEO IP Corrections? 
+ Please help, for me it&#x27;s a serious problem. 
+ Thank you all so much in advance.
+    submitted by    /u/Engineer8899  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y705tx/169254_addresses_crashed_cisco_asa/"
+                        open
+                      >
+                        <summary class="article-expander__title">169.254 addresses crashed Cisco ASA</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y705tx/169254_addresses_crashed_cisco_asa/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/kwUMHdBHnyvZJU6kX-OCwBv3cdAecTs8l3QJXxmLpgQ.jpg?auto&#x3D;webp&amp;s&#x3D;22ca66abdec615f0e61ace75f8e5032ba59f0e3f" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Context: 30 users. Cisco ASA router managing DHCP &gt; 16-port dumb switch &gt; 4 port switch(es)
+ https://imgur.com/a/nrG2JcM for a basic network diagram
+ Had an issue where *out of nowhere, after years of this setup* the Cisco ASA got flooded with 169.254 addresses and killed the network. 
+ I know what you&#x27;re thinking - why the f*** do you have such cheap dumb ass unmanaged networking equipment for a 30 user environment? Because we&#x27;re cheap and stupid and have no money. Believe me I&#x27;ve tried. I don&#x27;t want to go any further into my thoughts in case of this post being found to be honest, but it is not a favourable position I am in.
+ Anyways,
+ I figured there was maybe a network loop happening, with this being just as the office was closing I got everyone to leave and I powered everything off. I determined that 1 small switch with 2 computers hanging off it was tripping the network when powered back on. The other switches/computers were repowered and are OK.
+ The 2 computers appear fine, like I have pretty detailed software inventories using our endpoint protection agent, and indeed plugging the laptops in elsewhere, no issue.
+ This is where I am out of diagnosis, knowledge, experience and wit. So I guess I can blame the switch being worth about $10, but why would it be spamming 169.254 addresses?
+ I have now plugged the &quot;faulty&quot; switch in elsewhere and it no longer trips the network. Has this been a red herring all along?
+ Moral of story is - we need better equipment so I can actually see which ports/devices these addresses were coming from. But I am still in the sad situation where I cannot properly explain the outage, so hoping for ideas.
+ ***Disclaimer. I bring this post with great humility, regret and pleading forgiveness. Yes, it is barely an amateur setup for a business turning over millions of $. Just trying to get by.
+    submitted by    /u/saladnicoise  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/"
+                        open
+                      >
+                        <summary class="article-expander__title">Redundant Internet Topology/Strategy?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y6xl2d/redundant_internet_topologystrategy/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Howdy y&#x27;all!
+ Looking for tips/pointers on dealing with multiple internet circuits without SD-WAN appliances.
+ I&#x27;m fairly well rounded with network and systems administration, but due to working in medium sized orgs most of my career, I&#x27;m definitely in the &quot;jack of all trades, leader of none&quot; camp.
+ With this hurricane that recently ripped here through Florida, it&#x27;s got me looking at now wanting to add some WAN redundancy.
+ I&#x27;m about midway though the lifecycle of a sizable investment in ISR 4ks as my branch office routers/firewall. Our branches all have a single internet circuit and a basic AVPN circuit from a big ISP. The AVPN doesn&#x27;t have any internet access option setup, it is only used for a private WAN.
+ The idea is that I&#x27;d like to drop a 2nd, cheaper circuit for backup internet acc…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;130
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/"
+                        open
+                      >
+                        <summary class="article-expander__title">Are there instances where removing a coaxial cable spillter would be bad for the modem&#x27;s signal?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y6wq5q/are_there_instances_where_removing_a_coaxial/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m the network admin for a client who is having intermittent internet issues. I contacted their ISP who sent out a tech to investigate. I asked the tech about removing the 3-way splitter in place, wondering if it had degraded and possibly causing issues. The tech tested the signals with an expensive looking tool and determined the signals coming in were good. At one point, he did indicate we could remove the splitter without issue. But, them he tested it again before proceeding and noticed an issue. 
+ The way the tech explained it was if we remove the splitter, we would gain 5dB somewhere, but then lose 5dB somewhere else which would push past a certain threshold that would cause sync issues. Im not even sure it was dB, but I have to assume. He wasnt great at talking smart and I wasnt great at knowing what he was talkinh about. Im not an expert in coax cable signaling and understanding readings. I have worked at an ISP in tech support and understand the basics and sync issues, but I never got trained or learned much about this. Any help is appreciated.
+    submitted by    /u/dumbtechnoob  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Lawrence Systems</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;MtWM19Ikmdo"
+                        open
+                      >
+                        <summary class="article-expander__title">45 Storinator Q30 Followup Review 2022</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;MtWM19Ikmdo">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;XR72qmzRzfQ"
+                        open
+                      >
+                        <summary class="article-expander__title">The $1,000,000 Computer is Broken</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;XR72qmzRzfQ">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -38930,103 +39940,10 @@ In July 2022, Iranian state cyber actors—identifying as “HomeLand Justice”
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-19 datetime="2022-09-19T20:00:00.000Z">2022-09-19</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-19 datetime="2022-09-19T20:00:00.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Morning Wire</button>
-                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="38ebfd71-c050-4812-b888-3502339a1a09"
-                        open
-                      >
-                        <summary class="article-expander__title">Monday&#x27;s Afternoon Update | 9.19.22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="d4c15963-48f1-4a81-b01c-93ee99a411f5"
-                        open
-                      >
-                        <summary class="article-expander__title">Border Bussing Battle &amp; Spiking Interest Rates | 9.19.22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>The political battle over the border escalates, mortgage rates reach highest levels since the 2008 Recession, and key races tighten in the usually reliably blue state of New York. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Linus Tech Tips</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;0Ueel1wXnZk"
-                        open
-                      >
-                        <summary class="article-expander__title">First Water Cooled Mac Studio</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;0Ueel1wXnZk">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3274344429">
-        <time id="build-timestamp" datetime="2022-10-18T14:32:01.194Z">2022-10-18T14:32:01.194Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3280372797">
+        <time id="build-timestamp" datetime="2022-10-19T09:26:54.031Z">2022-10-19T09:26:54.031Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
