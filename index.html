@@ -22,11 +22,51 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-19 datetime="2022-10-19T14:25:55.000Z">2022-10-19</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-19 datetime="2022-10-19T14:25:55.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-20 datetime="2022-10-20T09:17:37.000Z">2022-10-20</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-20 datetime="2022-10-20T09:17:37.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8tago/how_to_use_a_cdn_for_a_tiktok_like_app/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to use a CDN for a TikTok like app</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8tago/how_to_use_a_cdn_for_a_tiktok_like_app/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have an app similar to TikTok, so the media being served is mainly videos. We are adding a CDN now to both, reduce the costs and make the loading faster (Google Cloud CDN), and are not sure how to configure it.
+  
+Cache static content vs Force cache all content. I think we will go with foce all content since we want all content to be cached.
+ Client time to live: I see no reason to refresh the media ever. The videos cannot be changed by the users. Once uploaded they can just delete the post or keep it. So I see no reason to have such time to live at all. We would just set it to 1 year as that is the maximum time to select. Is that the right choice?
+ Custom response headers and Negative Caching Policy: Do we need this at the beginning? Or should we just consider it later to further improve things?
+  
+   submitted by    /u/trolleid  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -38,6 +78,1312 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8swan/windows_11_group_policy_disables_half_the_taskbar/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows 11 Group policy disables half the taskbar</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8swan/windows_11_group_policy_disables_half_the_taskbar/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Security &gt; Systray
+ Enabling this policy to remove windows security icon removes clock and the network/sound icons on my machine locally in its entirely, 
+ So I wanna ask if anyone else seen this issue? or its just my goofy local machine setup (Win 11 Enterprise ARM running in parallels VM on a apple silicon Mac M1)
+    submitted by    /u/traumalt  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8s2x0/windows_11_unusable/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows 11 Unusable</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8s2x0/windows_11_unusable/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As a sysadmin, I&#x27;ve decided to try W11 myself in my laptop at work in order to avoid turning my users into guinea pigs when the first W11 PCs start to come. After 24h of use, the disaster has exceeded my expectations: 
+ - 2 PC hangs in the first 24h.
+ - Snipping tool --&gt; Print, attempts to open a print dialog then disappears without doing nothing.
+ - Copy that same picture and paste into notepad --&gt; Print. Stays &quot;printing&quot; forever but it doesn&#x27;t print.
+ - Printers --&gt; [Select printer] --&gt; Open queue --&gt; &quot;You need an app to open ms-print-queue&quot;. Going &quot;shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}&quot;, print queue opens fine. Test page from the printer prints no issues.
+ - Run ESET installer --&gt; &quot;Do you want to look for the app in the Store?&quot; instead of just installing. Even selecting &quot;Yes&quot;, it throws an error.
+ Everything above wasn&#x27;t happening 24h ago with W10. Dear Microsoft, if the product is not ready, DON&#x27;T RELEASE IT.
+ I&#x27;m sorry, but needed that rant.
+    submitted by    /u/jocavos  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;137
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8s11a/snipeit_cannot_edit_ldap_settings/"
+                        open
+                      >
+                        <summary class="article-expander__title">SnipeIT - cannot edit LDAP settings</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8s11a/snipeit_cannot_edit_ldap_settings/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ Recently I changed my LDAP login credentials, and I need to update them on SnipeIT configuration also.
+ When I try to update it on LDAP Settings page it doesn&#x27;t change anything. Every time I click &quot;Save&quot; nothing is saved and everything stays the same as before I entered new stuff.
+ Thanks
+    submitted by    /u/sn1p3rkiki  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;133
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8rql6/adjust_server_time_very_slowly_best_practice/"
+                        open
+                      >
+                        <summary class="article-expander__title">Adjust server time very slowly, best practice?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8rql6/adjust_server_time_very_slowly_best_practice/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m in the process of taking over a small group of servers currently in production. None of them currently have an NTP service running on them making the timestamp WAY off, and this also reflects in logs and databases, as usual.
+ Not good.
+ I&#x27;m not allowed to just jank the time several hours leaving overlaps or gaps in the timestamps. So I have to be very gentle.
+ What is a good way to very slowly correct the time over a few days, weeks even. Adjust a minute every hour or something like that.
+    submitted by    /u/Sekhen  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8rmum/blue_screens_every_days/"
+                        open
+                      >
+                        <summary class="article-expander__title">Blue Screens every days</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8rmum/blue_screens_every_days/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all,
+ We have since last week, blue screens on 3 platforms / Microsoft Surface - HP laptop - HP desktop
+ People can connect to their session but when it finishes to load, they have a blue screen, this can happens 3/4 times in a row when users restart before they can use their computer.
+ The errors are either Kernel Failure or Driver failure.
+ We deploy our OS (Win10 21h2) with sccm.
+ We are trying to find what is happening, we looked into event logs, updated drivers and firmware, forced Windows Update but it keeps happening. We have quite a few GPO at logon and some script at startup but nothing was changed these past 2 weeks. We don&#x27;t understand why we get these blue screens like that.
+ Do you have any other ideas for this ?
+    submitted by    /u/Narpok19  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8qqyr/ms_teams_for_android_crashing/"
+                        open
+                      >
+                        <summary class="article-expander__title">MS Teams for android crashing</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8qqyr/ms_teams_for_android_crashing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is Teams for Android down? I have several users where app is crashing on launch. 
+ Tried reset cache, update app, update phone, restart, reinstall. 
+ We pinned a Viva app yesterday, but surely this should not be related?
+    submitted by    /u/EmilKay  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-19 datetime="2022-10-20T03:58:51.000Z">2022-10-19</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-19 datetime="2022-10-20T03:58:51.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8nnor/cisco_spanning_tree_with_allied_telesis_switch/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco spanning tree with Allied telesis switch AT9000</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8nnor/cisco_spanning_tree_with_allied_telesis_switch/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, does any of you got Cisco switch spanning tree working with Allied telesis? How it behave? Are they interoperable? Any special consideration do I have to take into account?
+    submitted by    /u/donokaka  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8nk4b/pfsense_with_meraki_establishes_tunnel_but_unable/"
+                        open
+                      >
+                        <summary class="article-expander__title">pfSense with Meraki. Establishes tunnel but unable to route traffic</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8nk4b/pfsense_with_meraki_establishes_tunnel_but_unable/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As the title says, we did a tunnel with a meraki but for some reason I cannot ping across the subnets.
+ On pfsense I have a firewall &gt; rule &gt; IPsec for any service, any source and any destination.
+ I have no idea why it isnt working. What can I check?
+    submitted by    /u/avrealm  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;125
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8kj19/configuring_qos_on_a_switch_for_all_lan_traffic/"
+                        open
+                      >
+                        <summary class="article-expander__title">Configuring QoS on a switch for all LAN traffic?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8kj19/configuring_qos_on_a_switch_for_all_lan_traffic/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>HI Team,
+ Got kind of a weird question. 
+ I got asked to configure some Juniper switches as a one time fee with certain QoS requirements. 
+ I started making custom classifiers / queues but then after asking specific questions about what traffic was going to flow over this, the contacts response was &quot;it&#x27;s a standalone PA system. The only traffic going through it is PA traffic / multicast traffic, so just a single vlan&quot;
+ He wants 4 different queues setup, each with a different DSCP ranking but...
+ if the ONLY traffic is multicast traffic running on one vlan...what&#x27;s the point?
+    submitted by    /u/FuckBruceArians  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;125
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8it4r/poor_vpn_performance_to_azure_can_someone/"
+                        open
+                      >
+                        <summary class="article-expander__title">Poor VPN Performance to Azure - can someone validate my line of thinking?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8it4r/poor_vpn_performance_to_azure_can_someone/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey Team, I&#x27;ve been fighting with a Vendor who is putting all the blame on us for slowness - say&#x27;s it&#x27;s our network.
+ Here are FACTS: (All tests done during off hours, no backups running)
+ Location A &gt;&gt; IPsec VPN &gt;&gt; Location B
+  
+127Mbps TCP Upload
+ 156Mbps TCP Download
+ 635Mbps UDP Upload
+ 654Mbps UDP Download
+  
+Location A &gt;&gt; IPsec VPN &gt;&gt; Vendor&#x27;s Azure Instance
+  
+64Mbps TCP Upload
+ 284Mbps TCP Download
+ 420Mbps UDP Upload
+ 483Mbps UDP Download
+  
+Location B &gt;&gt; IPsec VPN &gt;&gt; Vendor&#x27;s Azure Instance (Same Instance)
+  
+326Mbps TCP Upload
+ 278Mbps TCP Download
+ 411Mbps UDP Upload
+ 461Mbps UDP Download
+  
+All traffic we pass to the vendor is TCP.
+ Vendor says there is a problem on Office A&#x27;s Network.
+ This is my argument - Office A (My main site) can pass 127Mbps of TCP Traffic to Office B (My remote site) over an IPsec VPN Tunnel. This should mean, at a minimum, I should be able to see at least 127Mbps of traffic from Office A, to the Vendors Azure Instance. I know our Router can pass at least 127Mbps, however we&#x27;re only able to pass 56Mbps to the vendor.
+ The vendor says their Azure server is not setup with an active/active VPN, just failover. They&#x27;re stating there is no load balancers in place.
+ What am I missing? This has to be some sort of routing issue between the ISP to Azure, or, some sort of bottleneck in the vendors Azure environment right?
+    submitted by    /u/cockhorse-_-  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8hl79/electrical_controls_engineer_to_network_engineer/"
+                        open
+                      >
+                        <summary class="article-expander__title">Electrical controls engineer to Network engineer</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8hl79/electrical_controls_engineer_to_network_engineer/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I had my Masters in Electrical and computer engineering. I was earlier interested in automation and robotics so I started working as a controls engineer. It is interesting working with CNCs, PLCs, and robots but I’m tired of working longer hours. With a job like this I either see longer hours, remote location or lots of travel. I’m unable to give my family much time as I’d like to. 
+ I’m looking for something where I can also work from home. I had courses from networking in engineering and I’m fascinated so I started to learn a bit more for CCNA. I’m just worried I’ll have to start from scratch and will have to take a pay cut. I currently make between 90-100k. Is this a smart move or no? Can I make more pay once I get skilled in networking?
+    submitted by    /u/Muneerr  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;126
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8gpyo/troubleshooting_intermediate_ping_spikes_to_local/"
+                        open
+                      >
+                        <summary class="article-expander__title">Troubleshooting Intermediate Ping Spikes to Local ISP Node (Seemly related to VPN/RDP issues)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8gpyo/troubleshooting_intermediate_ping_spikes_to_local/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/_9Nhdpw7OZchuBBM1a0jHHR3M-bcgMh5BG42CoPpHrs.jpg?auto&#x3D;webp&amp;s&#x3D;8cceaa1264797f5f761931e149f5433c7e2f7615" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hello!
+ I work for a small but quickly growing business that has a number of employees working partly or fully remote. The company has been upgrading all of the networking equipment for our relatively small on-premise server/domain, but I&#x27;m still running into issues with RDP accessed through the client VPN provided through a Cisco Meraki MX64 SD-WAN.
+ The RDP/VPN connection seems to struggle mostly with video but it also sometimes drops for no real apparent reason. It&#x27;s out of my normal scope of work but I&#x27;ve been attempting to troubleshoot down to at least a general root cause.
+ After doing quite a few pings/traceroutes/MTRs from the MX64 I&#x27;ve noticed that the ping to the local ISP node (50.46.181.20) seems to spike semi-regularly from very respectable numbers (1-10ms) to strangely much higher numbers (20-40ms). The connection can cope when I&#x27;m just doing office work but seems to push latency tests (performed via testmy.net/latency) on my local machine into the 200-300ms on certain video calls.
+ I&#x27;m not hoping to pin down a specific cause with these tests, but would highly appreciate any insight into where I should look further.
+ Pings to Local Node: https://imgur.com/a/rLRWWAg
+ MTR to Local Node: https://imgur.com/a/BughVsE
+ Traceroute to Google: https://imgur.com/a/0f9rwWR
+ MTR to Google: https://imgur.com/a/OYeO7Iu
+    submitted by    /u/act3297  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8elgn/certified_professional_installer_cpi_for_cbrs/"
+                        open
+                      >
+                        <summary class="article-expander__title">Certified Professional Installer (CPI) for CBRS certification - worth it?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8elgn/certified_professional_installer_cpi_for_cbrs/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/i3fGvKvaRZYSImcqjtu-gb7wgi_x63G04bNKdZLzBe0.jpg?auto&#x3D;webp&amp;s&#x3D;9bbfe7dd1aa700b98540de0701908ca0fa144b22" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I have an expert level certification in WiFi and I was thinking about expanding my knowledge to include all things wireless, including CBRS. Federated Wireless has some relatively low cost certification courses: https://www.federatedwireless.com/services/certified-professional-installer/
+ Has anyone taken this or any private LTE certification courses, and if so was it worth it in the end? I understand that it&#x27;s a loaded question and it depends on goals.
+ My goals (to be transparent): add to resume, get a better job/higher salary
+    submitted by    /u/vakennu  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;124
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8dfsr/static_routes_auto_createdgenerated_catalyst/"
+                        open
+                      >
+                        <summary class="article-expander__title">Static Routes Auto Created/Generated? Catalyst 3850/9300</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8dfsr/static_routes_auto_createdgenerated_catalyst/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Has anyone ever seen static routes just show up in the routing table for host addresses?
+ This switch runs IOS 3.6.5e and license is IP base. You can see the static host addresses below with 0 AD and 0 for metric. Some point to a .2 address and others to .254 (172.31.11.235). There are no routing protocols enabled and no static routes in the config. Does anyone know what is injecting these routes and how the switch is ingesting them?
+ ​
+ SwitchStack1#sh ip route
+ Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+ D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+ N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+ E1 - OSPF external type 1, E2 - OSPF external type 2
+ i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+ ia - IS-IS inter area, * - candidate default, U - per-user static route
+ o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+ + - replicated route, % - next hop override
+ ​
+ Gateway of last resort is 192.168.48.1 to network 0.0.0.0
+ ​
+ S* 0.0.0.0/0 [0/0] via 192.168.48.1
+ 10.0.0.0/32 is subnetted, 6 subnets
+ S 10.1.5.8 [0/0] via 192.168.48.2, Vlan200
+ S 10.1.5.17 [0/0] via 192.168.48.2, Vlan200
+ S 10.1.101.2 [0/0] via 192.168.48.2, Vlan200
+ S 10.1.105.62 [0/0] via 192.168.48.2, Vlan200
+ S 10.1.205.147 [0/0] via 192.168.48.2, Vlan200
+ S 10.1.205.191 [0/0] via 192.168.48.2, Vlan200
+ 172.31.0.0/32 is subnetted, 1 subnets
+ S 172.31.11.235 [0/0] via 192.168.48.254, Vlan200
+ C 192.168.48.0/22 is directly connected, Vlan200
+ 192.168.48.0/32 is subnetted, 1 subnets
+ L 192.168.48.14 is directly connected, Vlan200
+ C 192.168.52.0/22 is directly connected, Vlan300
+ 192.168.52.0/32 is subnetted, 1 subnets
+ L 192.168.52.14 is directly connected, Vlan300
+    submitted by    /u/wobbypetty  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8b4xs/management_ip_and_untagging_management_vlan/"
+                        open
+                      >
+                        <summary class="article-expander__title">Management IP and Untagging management vlan</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8b4xs/management_ip_and_untagging_management_vlan/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Ok, so I&#x27;m kind of confused with Trunking ports. On some of my switches I have trunking ports where every VLAN is tagged, but somehow you you can access the management IP of the switch. The only time I have been able to access the management IP on switches (on other networks) is when I untag the management interface on the switch, but tag ever other vlan.
+ ​
+ Am I doing something wrong, is it bad to untag a vlan in a trunking port?
+ ​
+ ex:
+ Trunk1
+ Vlan1 Tagged
+ Vlan2 Tagged
+ Vlan3 Untagged
+    submitted by    /u/WhiteyP  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;124
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8asfc/experience_with_allegro_packets_network_monitoring/"
+                        open
+                      >
+                        <summary class="article-expander__title">Experience with Allegro Packets network monitoring?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8asfc/experience_with_allegro_packets_network_monitoring/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Anyone have any experience with Allegro Packets monitoring/tools? https://allegro-packets.com/en/resources-service/video
+    submitted by    /u/New_Astronomer_735  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;124
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8abuf/is_anyone_using_solarwinds_for_monitoring_of_a/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is anyone using Solarwinds for monitoring of a PON network?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8abuf/is_anyone_using_solarwinds_for_monitoring_of_a/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are looking to implement a XGSPON network and are already deeply entrenched with Solarwinds for monitoring our Active E network. We will need to get the management platform for the PON vendor in order to provision, but can Solarwinds do any monitoring or statistic collection via MIB? Anyone successfully doing this and what PON vendor are you using (feel free to DM if you don&#x27;t want to publicly post)? 
+ Crossposted to r/Solarwinds
+    submitted by    /u/bccruiser  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;121
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y89ozu/bidirectional_single_strand_fiber_and_sfp/"
+                        open
+                      >
+                        <summary class="article-expander__title">Bidirectional Single Strand Fiber and SFP</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y89ozu/bidirectional_single_strand_fiber_and_sfp/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Does anyone have experience with these bidirectional, single laser SFPs. Here is an example of one “SFP-GE—BX”. Does anyone have field experience using this in a Cisco switch? Any caveats to watch out for?
+    submitted by    /u/Front_Judge_5872  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y87wx7/aruba_vs_arista_for_access_layer_switches/"
+                        open
+                      >
+                        <summary class="article-expander__title">Aruba vs Arista for access layer switches</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y87wx7/aruba_vs_arista_for_access_layer_switches/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello Team!
+ We have Aruba 2540 in access layer and we are planning to buy few more but Aruba 2540 but they are EOL. I was reading about Arista that they have quite good hardware as switch. Anyone using similar model i.e. 48 port with 4SFP+ on Arista and can tell their experience and how much it cost roughly.
+ Thanks for your input.
+    submitted by    /u/capricorn800  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y87gy8/rdma_libs_librdmacm_libibverbs/"
+                        open
+                      >
+                        <summary class="article-expander__title">RDMA libs - librdmacm &amp; libibverbs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y87gy8/rdma_libs_librdmacm_libibverbs/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/QgPvRTknlY3rMNDqH1k4I37XGiq9tZF_FsygC_Xht4o.jpg?auto&#x3D;webp&amp;s&#x3D;8cd5e918e2bde6ca72d4445d6fc007f203689799" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I&#x27;m new to RDMA technology, and I&#x27;m confused by several rdma libraries. I cannot figure out the relationship among them. The libraries and kernel headers I&#x27;m confused with are as follows: 
+ 1.rdma-core/libibverbs
+ 2.rdma-core/librdmacm
+ 3.linux-5.4.2/include/rdma
+ 4.linux-5.4.2/iniclude/uapi/rdma
+ My question is: 
+ 1.As far as I know. libibverbs provides the userspace applications with verbs api(i.e. functions with prefix ibv_), but it does not offer any connection-related functions, so applications need to exchange connection information using sockets(I see this operation in the libibverbs example rc_pingpong.c). librdmacm provides the user with easier connection management mechanism(e.g. rdma_get_cm_event). However, it seems that librdmacm does more work than connection management, since it also defines several apis(e.g. rdma_create_qp in rdma_cma.h) which looks similar to the ibv_function in libibverbs. So I do not know whether librdmacm is a superset of libibverbs? If not, what&#x27;s the relationship between them?
+ 2.In the example rc_pingpong.c of libibverbs, I cound see it includes the header file verbs.h, and it seems that linux-5.4.2/include/rdma and linux-5.4.2/iniclude/uapi do not play any role in the program(no heaer files in these two directories are included). So what are the header files in these two directories aimed at? 
+ I have refer to several materials but have not made it clear. Any explanation or related resources are well-appreciated. Thanks!
+ taken from here but nobody had answered hence asking here
+    submitted by    /u/shrbw  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;126
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y86715/management_vlantagged_or_untagged/"
+                        open
+                      >
+                        <summary class="article-expander__title">Management VLAN...tagged or untagged?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y86715/management_vlantagged_or_untagged/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are in the process of moving our switch network management vlan, from vlan 1 to..say vlan 400. Currently our switch network pan to various locations..and the uplink ports are tagged for the required vlans and vlan 1 is always left untagged for management. 
+ My question is, what is the best practice for management vlans? Do we tag the new management vlan or keep it untagged? If we use tagged management vlan, should the native vlan be a blackhole vlan?
+    submitted by    /u/Vivid_Ad_997  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;125
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8639e/whats_the_purpose_of_a_discard_vlan_and_how_can/"
+                        open
+                      >
+                        <summary class="article-expander__title">What&#x27;s the purpose of a &quot;Discard VLAN&quot; and how can it help shaping traffic?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8639e/whats_the_purpose_of_a_discard_vlan_and_how_can/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>In CISCO- and Linksys-documentation it states:
+ The device reserves VID 4095 as the Discard VLAN and VID 4094 for 802.1x. All packets classified to the Discard VLAN are discarded at ingress, and are not forwarded to a port.
+ Can someone explain to me what the purpose of a &quot;Discard VLAN&quot; is and how it can help shape traffic in a network?
+    submitted by    /u/Cosmic_Husky  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;123
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y860m1/nexus_osv_9k_gns3_tcam_region_problem_trying_to/"
+                        open
+                      >
+                        <summary class="article-expander__title">Nexus OSv 9k (GNS3) TCAM region problem (trying to enable DAI)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y860m1/nexus_osv_9k_gns3_tcam_region_problem_trying_to/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/-KonfdqFgDJbFWG7jJa0BzMmDohhClfDX1f1lC7UrK0.jpg?auto&#x3D;webp&amp;s&#x3D;7049e2451d134468903cdfa6bf0e9488b512a9d8" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hi all,
+ I&#x27;m setting up a lab in GNS3 to pilot enabling DHCP snooping and Dynamic ARP inspection. I got this setup and working properly with a Nexus 7k image, but it doesn&#x27;t support port channels and I want to setup my lab to mirror the real environment as closely as possible. I got the Nexus 9k 10.1.1 image from Cisco and have it all configured, but I can&#x27;t enable arp inspection because it says the ether-region needs to be set in TCAM. I&#x27;ve tried to do this but it throws an error. Trying to set any of the existing TCAM region entries to 0, saving the config, and rebooting results in no changes being made. There is a screenshot here - https://imgur.com/92E7B3a with more detail.
+ Does anyone have any advice on how I can make this work?
+    submitted by    /u/Livid-Relief-9156  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8532y/large_ssid_deployment_cisco_wlc/"
+                        open
+                      >
+                        <summary class="article-expander__title">Large SSID deployment Cisco WLC</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8532y/large_ssid_deployment_cisco_wlc/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are a large factory that in the past we have deployed multiple SSIDs for every service.. Eg AGVs have an ssid PDAs have an ssid, robots have an ssid...etc etc
+ We have now run into the problem of to many SSIDs
+ These SSIDs span over 2000 access points across the entire plant and we need them on every ap for roaming (I can&#x27;t profile down any further)
+ From what I can see from other large deployments companies are moving towards a few SSIDs with a large capacity -- eg instead of 4 SSIDs with 2000 clients we would have 1 ssid and call it &quot;Manufacturing&quot; and create a /20 network for it.. this also allows us to add more vlans to the blank group if we ever need to expand its size.
+ We might also create 2 SSIDs 1 with FT and another with just adaptive.
+ What are you large wireless folks doing.. looking for advice and reasons why to go one way over another
+    submitted by    /u/Goosej13  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y84aq8/weird_aruba_controller_behavior/"
+                        open
+                      >
+                        <summary class="article-expander__title">Weird Aruba controller behavior</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y84aq8/weird_aruba_controller_behavior/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Recently just got done with a refresh: new AP installs, moving APs, etc. We&#x27;re just about done so basically I&#x27;ve cleaned up the APs that are showing &quot;down&quot; on the MM gui. We&#x27;re talking 100+ or so of them. This was done about a week or so ago. Monday, while i was checking my MM a bunch of the (down) APs popped up again on the MM. Minor nuisance really, as my APs in prod are working fine, but it&#x27;s just weird that some came back. A lot of them had partial names to them too: e.g. an AP labelled &quot;A-102&quot; showed up as &quot;A-10&quot;, etc. 
+ ​
+ Any idea what happened here? The only thing i can think of that changed was our Solarwinds alerting was enabled after the deployment was done. It wouldn&#x27;t make sense since that&#x27;s on the SW side.
+    submitted by    /u/d3adbor3d2  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;125
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y82fdt/send_specific_log_message_from_cisco_switch/"
+                        open
+                      >
+                        <summary class="article-expander__title">Send specific log message from Cisco switch</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y82fdt/send_specific_log_message_from_cisco_switch/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I would like to send only specific syslog messages from Cisco IOS switches to Splunk, for example login attempts or configuration changes. I couldn&#x27;t find any outboud syslog filter option.
+ Anyone knows a solution for this?
+ Thanks!
+    submitted by    /u/0xde1e7e  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;126
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y81lfh/vxlanevpn_vs_traditional_mpls_vs_sr_mpls_vs_for_a/"
+                        open
+                      >
+                        <summary class="article-expander__title">VXLAN/EVPN vs traditional MPLS vs SR MPLS vs ?? for a MAN</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y81lfh/vxlanevpn_vs_traditional_mpls_vs_sr_mpls_vs_for_a/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ ​
+ I currently have a MAN with ~20 sites interconnected with dark fibers, in a sort of a ring topology, plus a dozen WAN sites. All these sites are l2 connected (even WAN sites with metro-ethernet) so I have sometimes typical l2 issues (broadcast storm, stp misconfig...). To overcome these problems, I am thinking of doing a redesign of this network with consultants but before meeting them, I would like your views on what are the current technologies used for this type of network and what are the pro/cons.
+ My needs: 
+ - L3VPN but also sometimes L2VPN for legacy applications, 
+ - the simpler solution the best from an exploitation point of view, 
+ - ideally throughtput between sites should be 40+/50+ Gbps
+ - and stable (but does it really need to be specified :-)
+ I did some research, there seems to be 3 main technologies for this type of network: evpn/vxlan, traditional mpls, and sr mpls which seems to be the &quot;new simplified&quot; mpls (perhaps i overlooked some). From a budget standpoint, the evpn/vxlan solution seems cheaper because available on switchs, and mpls seems to be available only on router hardware which could be expensive if i need to go for 50+ Gbps interfaces.
+ ​
+ Thank you for your help.
+ Regards
+    submitted by    /u/Maloutte  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y817jt/cleanest_way_to_have_separate_management/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cleanest way to have separate management interface on linux - IP Rule vs VRF</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y817jt/cleanest_way_to_have_separate_management/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ We are used to have dedicated management interfaces on network devices. As more and more functions/features are hosted on x86 devices, it&#x27;s natural to implement the same management mechanism.
+ To avoid mixing management and data planes, multiple routing tables have to be implemented. There are, from my understanding, three ways to do it :
+ - namespace
+ - table + ip rule from/to
+ - vrf (added to linux kernel thanks to cumulus)
+ Excluding namespaces which are too heavy for this need, what could differenciate the two last propositions?
+ I can feel that vrf have a stronger implementation/traffic isolation but it seems that the result are approximately the same ?
+ Thank you,
+ Romain
+    submitted by    /u/MrDgrey_FR  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y812mc/blacklisting_wireless_clients_after_repeated/"
+                        open
+                      >
+                        <summary class="article-expander__title">Blacklisting wireless clients after repeated failed auth</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y812mc/blacklisting_wireless_clients_after_repeated/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi guys, been working on improving our Aruba wireless set up and one thing I have noticed is we have client devices endlessly trying to auth with bad credentials (mostly missing the domain in their username) or clients who are locked out in AD constantly trying to connect. I was wondering if there was any benefit to blacklisting these clients after repeated failed auth for a period of time? Am I right to think this would free up some AP capacity as they will ignore that client for the duration of the blacklisting meaning less resources are wasted on talking to a client that is failing auth. Any other suggestions on how to improve welcome. Thanks.
+    submitted by    /u/humongouscrab  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8094k/python_question_with_cisco_iosxe_netmiko_and_xml/"
+                        open
+                      >
+                        <summary class="article-expander__title">Python question with Cisco IOSXE, netmiko, and XML files.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8094k/python_question_with_cisco_iosxe_netmiko_and_xml/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I asked this question on r/learnpython and no response yet, so thought I would ask here. 
+ Does anyone know if its possible to edit an XML based on the result of an if else statement? Take this section of my script for example. It uses netmiko and run against iosxe......
+ Output&#x3D; net_connect.send_command(&#x27;show run&#x27;) if &quot;logging buffered&quot; in Output: print (&quot;logging buffered is configured&quot;) else: print (&quot;logging buffered is not configured&quot;) 
+ Based on that result, I want to edit part of an XML file that says....
+ Text 
+ I would like to change the &quot;text&quot; part to something else based on the result of the if else statement. Is something like that possible?
+ I want to also mention that there will be multiple sections on the XML document that I would like to change with one script.
+ Thanks
+    submitted by    /u/Nats_daddy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;126
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7zvlm/bouncing_interface_which_is_a_part_of_portchannel/"
+                        open
+                      >
+                        <summary class="article-expander__title">Bouncing interface which is a part of port-channel on WS-CS3560G-48TS.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7zvlm/bouncing_interface_which_is_a_part_of_portchannel/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>There are currently two other interfaces in the port-channel that are active. I know that we should not make changes directly on an interface if it is part of a port-channel. What about when I want to reset only one interface? Should I reset the entire port-channel?
+    submitted by    /u/puttymonster  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7yike/network_packets_doesnt_get_evenly_shared_between/"
+                        open
+                      >
+                        <summary class="article-expander__title">Network packets doesn&#x27;t get evenly shared between rx/tx queues</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7yike/network_packets_doesnt_get_evenly_shared_between/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have an Intel XL710 network card running on Debian 10, cpu is AMD EPYC 7402P (24-Core). Network card has 24 rx/tx queues, one for each core, but the first queue gets a lot more packets on tx (about twice as more) than the other queues (which are pretty much equivalent). Because of this, the core to which the interrupts of this queue are assigned is much more loaded. What could be the cause of this situation?
+ root@amd:~# ethtool -S eth1 | grep packets rx_packets: 3986026729 tx_packets: 9079590147 tx-0.tx_packets: 619921234 rx-0.rx_packets: 232190547 tx-1.tx_packets: 355157523 rx-1.rx_packets: 174674652 tx-2.tx_packets: 404591271 rx-2.rx_packets: 163045469 tx-3.tx_packets: 362126376 rx-3.rx_packets: 152013976 tx-4.tx_packets: 359056856 rx-4.rx_packets: 217825519 tx-5.tx_packets: 381187521 [...] 
+    submitted by    /u/reinholdPL  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7y4h1/how_are_you_uploading_images_to_your_cisco_devices/"
+                        open
+                      >
+                        <summary class="article-expander__title">How are you uploading images to your cisco devices?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7y4h1/how_are_you_uploading_images_to_your_cisco_devices/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Cisco devices in MNC&#x27;s (where you have to copy images over WAN links) , are you still using tftp/sftp or utilizing any API ? Pushing via Ansible or others? 
+ We have Catalysts and Nexus and FTD&#x27;s, and using tftp/sftp seems slow when you have other devices with a nice GUI that says &quot;upload file/image&quot;.
+    submitted by    /u/sec_admin  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;125
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7xhsp/reacting_on_netxhop_presence_for_routing/"
+                        open
+                      >
+                        <summary class="article-expander__title">Reacting on netxhop presence for routing</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7xhsp/reacting_on_netxhop_presence_for_routing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m doing some clever (stupid?) routing between leaf (bgp, L3 fabric) and openstack (software routing in overlays).
+ I got to the point, when I have two (or more) routes, and only one is valid (i.e. can deliver traffic to the consumer). The difference between them is that in one case there is active nexthop IP, and in other there is none. Nexthop is connected through a bridge, therefore it&#x27;s impossible to use link state to check if nexthop is available or not. The single way is to check if it can be resolved via arp.
+ There are other ways to solve my problem (healthchecks, hooks into openstack code, etc), but I wanted to investigate feasibility of the nexthop &#x27;resolving&#x27; (in this context, resolving of IP into MAC, i.e. arp). Are there the name of this technique? Is someone using it?
+ Basically, I have a route:
+  x.x.x.0/24 via y.y.y.y dev foobar 
+ And this route should only be taken in account when y.y.y.y can be seen as a neighbor in ip neighbors, and ignored, if not.
+ I use bird for bgp, so it&#x27;s either bird feature (check nexthop resolvability), or linux routing feature.
+ Is this a thing, or should I try other ways?
+    submitted by    /u/amarao_san  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7x60r/wlc_placement/"
+                        open
+                      >
+                        <summary class="article-expander__title">wlc placement</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7x60r/wlc_placement/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ I have design question , usually placing where do we have to place the wlc controller ,
+ behind firewall or direct core 
+ Thanks
+    submitted by    /u/tkr_2020  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;127
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7wd4o/console_server_recommendation_for_dc/"
+                        open
+                      >
+                        <summary class="article-expander__title">Console server recommendation for DC</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7wd4o/console_server_recommendation_for_dc/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I&#x27;m currently looking for console server data solution for mainly Cisco devices. What do you think about out of band (SIM CARD or wifi based(?) ) console servers - theoretically sounds very good - how about the practice ?
+ Also there&#x27;re some other requirements we would like to have:
+  
+minimum of 16 interfaces
+ possibility to use RJ45 to RJ45 UTP cables for simplicity and longer range cross-rack connectivity (than simple Cisco console cables).
+ Continuing from 2 - the device should be able to rollover programmatically that cable (also - how this function is called - (software selectable pins) ?). Because manually changing pins from straight through to rollover in UTP cable from standard is not very sustainable solution. In Ethernet world similar thing is called auto-mdix - it&#x27;s interesting how this thing is called in serial world :)
+  
+Any suggestions ? Thanks
+    submitted by    /u/kajatonas  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8mlng/any_reason_to_connect_two_different_isps_under/"
+                        open
+                      >
+                        <summary class="article-expander__title">Any reason to connect two different isps under one network</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8mlng/any_reason_to_connect_two_different_isps_under/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Was stopped by an accountant and higher up today, to talk about implementing A second isp(AT&amp;T) to our network and trying to trunk them together. I asked why his reasoning was because our current isp (spectrum) gets capped at 600/ upload &amp; /600down and he wants the full gigabit from At&amp;T fiber internet. I asked why not just drop spectrum and go full AT&amp;T he explained he saw an article in 2020 saying companies should have isp redundancy in case of outages. I don’t see how this wouldn’t do anything but cause a potential headache trying to trunk and manage seperate isps. Any thoughts on this?
+    submitted by    /u/Complex-Ad-8966  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;140
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8mk6w/emailservice_accounts_how_does_your_org_handle/"
+                        open
+                      >
+                        <summary class="article-expander__title">Email-Service Accounts : How does your org handle these accounts?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8mk6w/emailservice_accounts_how_does_your_org_handle/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello All,
+ Just want to get ideas and best practices to achieve this. Essentially in the case that there are multiple branches and each branch has to pay/communicate with a vendors etc.
+ Management wants to say create a PayPal account per branch. Is it best to create an entire new email for the branch specifically for this service. Branch already has an email ex: &quot; [branch01@xyz.com](mailto:branch01@xyz.com) &quot;
+ My idea is to create a DL as [&quot;pp-branch01@xyz.com](mailto:&quot;pp-branch01@xyz.com)&quot; and set its users ( managment) to view these emails and request as apposed to using the &quot; [branch01@xyz.com](mailto:branch01@xyz.com)&quot; .
+ I know a drawback is that DL wont have a stored location compared to a mailbox but I feel like creating 2 emails is unnecessary. 
+ Using a DL will also avoid the branch email reading the PayPal email not intended for them or even delete it.
+ Im all ears to know how your org handles this, thank you!
+    submitted by    /u/More-Worldliness9291  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;133
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8mhak/tests_for_new_jobs/"
+                        open
+                      >
+                        <summary class="article-expander__title">Tests for new jobs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8mhak/tests_for_new_jobs/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve been applying for jobs lately. At least a few of them now send an email saying &quot;are you still interested&quot;, then when I say &quot;yes&quot; they randomly send an aptitude test that they say needs to be returned in 90 minutes. I&#x27;ve yet to actually do this, it strikes me as wrong and out of order.
+ Others ask me to take tests that attempt to identify how I think, solve problems, get along with others, ECT. These I can sympathize with a little more, but they always ask you to take them after talking to the hiring person, not anyone that knows a ton about the job
+ Am I way off base here? I think they&#x27;re just looking to weed out applicants...
+    submitted by    /u/Life-Cow-7945  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8kdh3/anyone_getting_blamed_for_something_that_isnt/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone getting blamed for something that isn&#x27;t their fault?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8kdh3/anyone_getting_blamed_for_something_that_isnt/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>For context, I look after the health and overall functionality of the Windows endpoints at my organization.
+ Just came out of a long ass meeting with this guy (Bob), and every department manager under the sun. Bob was trying to throw me under the bus because his software installed on half of our endpoints couldn’t report back to the management console for 6 months now. He&#x27;s saying how my environment is trash, that I botched the deployment, that I didn&#x27;t go to him to test, blah blah blah...
+ Rewind 6 months.. Bob reached out to me asking for help because suddenly nothing is reporting back to the console. I was running a project at the time, so I didn&#x27;t have a lot of time to do a deep dive but a quick look was showing that the proxy is blocking the software from contacting the console. I sent an email saying just that and that he would need to log a ticket to the security team to get the sorted.
+ I guess he didn&#x27;t do that, now everything is urgent and it&#x27;s my fault. Everyone is starting to side with Bob then having a go at me. So, I pull one of my contacts from security into the meeting, asked him to whitelist the URLs used by the software, and voila! Suddenly it&#x27;s working. WOULD YOU LOOK AT THAT BOB?
+ In my livid state, I dug up that email I sent and forwarded to everyone in that meeting, then left meeting abruptly.
+ jfc
+    submitted by    /u/outofofficeinoz  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;144
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8jdfe/google_misclassifying_location_of_public_ip/"
+                        open
+                      >
+                        <summary class="article-expander__title">Google Misclassifying Location of Public IP Address</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8jdfe/google_misclassifying_location_of_public_ip/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi Everyone,
+ Our main corporate location has been suffering from a rather annoying issue for almost a year now. We have a 600 user office in the midwestern United States. The trouble is, Google is classifying our public IP addresses as being in Brazil. This is rather annoying for our users, as search results return the Brazilian versions of websites as well as the search results appearing in Portuguese.
+ We can easily switch the search results to English, but the Brazilian websites still appear as first results.
+ Normally you can enable the browser to detect your location (probably also through public IP), however we have an Edge group policy disabling this. We are unable to enable this due to security concerns (even though every website can view our public IP anyways).
+ Ultimately it looks like the issue is an incorrect location mapping in Google’s geo-cache. I have submitted multiple automated requests to get this updated (using this: https://support.google.com/websearch/workflow/9308722?hl&#x3D;en). However after around 50 submissions over various months, nothing has changed.
+ We are a full Microsoft shop with no Google products (so no line of sight to any direct Google support). Looking up our public IP’s using ARIN show the correct address information. Other browser and IP based location services also correctly identify our location.
+ Has anyone ever ran into this issue or have any ideas on how to remediate it? I know it’s nothing on our computers because Google correctly identifies the IP location of our remote users and all of our other offices. Unfortunately it is this one office with the issue.
+    submitted by    /u/jspang16  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8h0b9/whats_your_standpoint_on_sender_spf_failures_to/"
+                        open
+                      >
+                        <summary class="article-expander__title">What&#x27;s your standpoint on sender SPF failures to your domain(s)?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8h0b9/whats_your_standpoint_on_sender_spf_failures_to/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m curious where everyone stands, when it comes to allow lists, vs telling the sender they have to fix their issues to send to your domain. Or how much assistance you&#x27;re willing to give the sender.
+    submitted by    /u/cowprince  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;141
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8ddj0/apc_vs_eaton/"
+                        open
+                      >
+                        <summary class="article-expander__title">APC vs Eaton</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8ddj0/apc_vs_eaton/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Thoughts and opinions?
+ EDIT: My Environment is large enough that we may different kinds of climates, requirements and goals in many different situations with varying budgets. We have a few vendors but, not all needs are for servers. I&#x27;m not so sure that they care either.
+ That said, its nice to know whats out there and what people are using and what their projects are.
+ For example i didn&#x27;t know Eaton had Lithium based Batteries in their UPS line. I happen to know if not over charged Lithium Ion can last notably longer than lead acid, and Lithium Iron Phosphate Far longer than Lithium Ion. So the idea of Lithium based Units is quite interesting!
+    submitted by    /u/cdoublejj  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;138
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8d5iy/tech_debt_tickets_what_to_with_hundreds_of_tickets/"
+                        open
+                      >
+                        <summary class="article-expander__title">Tech Debt &amp; Tickets - what to with hundreds of tickets?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8d5iy/tech_debt_tickets_what_to_with_hundreds_of_tickets/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Trying to sort out how to get a fresh start; I -literally- have 700+ tickets in the queue right now.
+ We use an ITIL based system so some tickets are termination requests where they were properly termed, just not archived yet. Those I&#x27;m not too worried about (actually looks to be about 100 of them)
+ But how do you handle 100s of incidents/break-fixes? Sometimes getting answers from people are pulling teeth with tweezers. Sometimes its a legit issue but there&#x27;s just no good fix at the moment. I&#x27;d love to get this under control. I&#x27;ve added rules and tweaked the logic on the ticket system to require people to reply to tickets if I&#x27;ve replied to them (7 days from my reply, ticket automatically closed).
+ ​
+    submitted by    /u/orion3311  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;138
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8cwe3/if_you_work_for_a_security_tool_company_and_your/"
+                        open
+                      >
+                        <summary class="article-expander__title">If you work for a security tool company and your job is to cold-call prospective clients to talk security, I&#x27;m here to tell you: you&#x27;re bad and should feel bad</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8cwe3/if_you_work_for_a_security_tool_company_and_your/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Recently got a cold call from a _seemingly_ legit company that is in the security space. Went something like this:
+ [My cell phone rings - personal phone, but I also use it for business]Some Guy: Hi! I work for [company]. I got your info from LinkedIn [NOTE: my LinkedIn profile DOES NOT include my phone number at all] and I was wondering if you have a few minutes to talk about what tools you&#x27;re currently using to secure your cloud infrastructure?
+ Me: [context-switching and baffled] I can&#x27;t talk now.
+ SG: When can I give you a call later?
+ Me: You can&#x27;t.
+ [CLICK, END]
+ Listen, I&#x27;m not sure who needs to hear this, but if you are in sales and your job description includes a part where basically you need to cold call companies and try to social engineer their tech people, then I need to inform you that you, your job, the company you work for, or some combination of all three, truly suck and you should feel ashamed of yourself.
+ If, however, you are actually a Black Hat, then.... you&#x27;re doing a bang-up job! Keep going with your bad self!
+    submitted by    /u/guzzijason  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;145
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8c7bs/im_charlie_brown_and_oracle_is_my_lucy/"
+                        open
+                      >
+                        <summary class="article-expander__title">I&#x27;m Charlie Brown and Oracle is my Lucy.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8c7bs/im_charlie_brown_and_oracle_is_my_lucy/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Every time...It sounds like they have an offering that will meet my needs. Scope everything out. Take up a bunch of my time. Then whoosh, they yank it away at the last second and I fall on my rear... The thing that I was offered won&#x27;t do what they promised, and the licensing won&#x27;t fit my environment...but If I&#x27;m willing to look at enterprise edition for...all of the money...then I can get the functionality they offered at the start. I don&#x27;t know why I pick up the phone when I see them on caller ID.
+    submitted by    /u/IntentionalTexan  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;187
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y8c292/has_anyone_dumped_chrome_and_moved_to_100_edge/"
+                        open
+                      >
+                        <summary class="article-expander__title">Has anyone dumped Chrome and moved to 100% Edge?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y8c292/has_anyone_dumped_chrome_and_moved_to_100_edge/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Chrome is giving me all sorts of grief, especially the Legacy Browser Support piece. Up until recently, it had this habit of writing a temp file that would fill my hard drive.
+ I THINK Google fixed that. Now I&#x27;m dealing LBS causing 100% CPU spikes.
+ I can&#x27;t wait to ditch Chrome.
+ EDIT: I meant for your organization, not you personally. Personally, I use Firefox with Total Cookie Protection turned on and uBlock Origin.
+    submitted by    /u/plazman30  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;148
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y88b7h/a_new_team_motto_was_coined_today_on_an_issue_call/"
+                        open
+                      >
+                        <summary class="article-expander__title">A new team motto was coined today on an issue call</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y88b7h/a_new_team_motto_was_coined_today_on_an_issue_call/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Classic story of an app failing and everyone pointing fingers at everyone else. Finally, we are on a call about it and someone figures it out (shit code + DB issue). Anyway, an engineer accidently gave us our new team motto after he fixed it...
+ &quot;It should not happen again, but it should not have happened in the first place either.&quot;
+ If that doesn&#x27;t describe the garbage we deal with, i don&#x27;t know what does.
+ Edit - it broke again
+    submitted by    /u/p8ntballnxj  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/y878ym/you_should_probably_disable_webusb_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">You should probably disable WebUSB and WebBluetooth in Chrome</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/y878ym/you_should_probably_disable_webusb_and/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/n6mjn-mF86zz_uB3U5clol_Ay_DxT93tT3kZC3AXV0k.jpg?auto&#x3D;webp&amp;s&#x3D;b756ed6ab5194eda1c4886eabb28c99c3728d66d" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I recently have been working on moving our org to a security-key based MFA solution considering the various attacks against more traditional push, SMS, call, or TOTP MFA solutions. 
+ As part of this process, I started looking at the various avenues of attack that could bypass FIDO/FIDO2/U2F MFA style authentication. Previously I would use something like EvilGoPhish to phish employees/customers and steal their session cookies to bypass MFA but this does not work with U2F.
+ Then I came across an article that mentioned using WebUSB to defeat YubiKey and of course where one attack exists, other attacks also exist.
+ The important quote from this entire article.
+  
+&quot;Vervier and Orrù found that they could code a website to connect to the Yubikey Neo with that WebUSB feature, instead of with the usual Chrome API for U2F that it&#x27;s designed to use. In doing so, they could circumvent the checks that the browser performs before querying the Yubikey—the checks that confirm that websites are the ones they claimed to be.&quot; 
+  
+Thankfully STIG has descriptions of how to disable both WebUSB and its sister technology WebBluetooth.
+  
+Disable WebUSB
+ Disable WebBluetooth
+ 
+ TL;DR WebUSB can be used for novel attacks to attack local security keys and bypass MFA.
+    submitted by    /u/HanSolo71  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;136
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -920,286 +2266,53 @@ The handbook depends on neither the VPN nor the hardware in order to be accessib
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y82fdt/send_specific_log_message_from_cisco_switch/"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;MDsJJRNXjYI"
                         open
                       >
-                        <summary class="article-expander__title">Send specific log message from Cisco switch</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y82fdt/send_specific_log_message_from_cisco_switch/">
+                        <summary class="article-expander__title">YouTube SHOULD charge for 4K. Hear me out.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;MDsJJRNXjYI">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hello,
- I would like to send only specific syslog messages from Cisco IOS switches to Splunk, for example login attempts or configuration changes. I couldn&#x27;t find any outboud syslog filter option.
- Anyone knows a solution for this?
- Thanks!
-    submitted by    /u/0xde1e7e  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;126
-                                  min&hairsp;)</span>
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
                       </details>
                     </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Wendover Productions</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UC9RM-iSvTu1uPJb8X5yp3EQ">Open</a>
+                </h3>
+                <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y81lfh/vxlanevpn_vs_traditional_mpls_vs_sr_mpls_vs_for_a/"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;YBNcYxHJPLE"
                         open
                       >
-                        <summary class="article-expander__title">VXLAN/EVPN vs traditional MPLS vs SR MPLS vs ?? for a MAN</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y81lfh/vxlanevpn_vs_traditional_mpls_vs_sr_mpls_vs_for_a/">
+                        <summary class="article-expander__title">How the World’s Wealthiest People Travel</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;YBNcYxHJPLE">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hello,
- ​
- I currently have a MAN with ~20 sites interconnected with dark fibers, in a sort of a ring topology, plus a dozen WAN sites. All these sites are l2 connected (even WAN sites with metro-ethernet) so I have sometimes typical l2 issues (broadcast storm, stp misconfig...). To overcome these problems, I am thinking of doing a redesign of this network with consultants but before meeting them, I would like your views on what are the current technologies used for this type of network and what are the pro/cons.
- My needs: 
- - L3VPN but also sometimes L2VPN for legacy applications, 
- - the simpler solution the best from an exploitation point of view, 
- - ideally throughtput between sites should be 40+/50+ Gbps
- - and stable (but does it really need to be specified :-)
- I did some research, there seems to be 3 main technologies for this type of network: evpn/vxlan, traditional mpls, and sr mpls which seems to be the &quot;new simplified&quot; mpls (perhaps i overlooked some). From a budget standpoint, the evpn/vxlan solution seems cheaper because available on switchs, and mpls seems to be available only on router hardware which could be expensive if i need to go for 50+ Gbps interfaces.
- ​
- Thank you for your help.
- Regards
-    submitted by    /u/Maloutte  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;128
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y817jt/cleanest_way_to_have_separate_management/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cleanest way to have separate management interface on linux - IP Rule vs VRF</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y817jt/cleanest_way_to_have_separate_management/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello,
- We are used to have dedicated management interfaces on network devices. As more and more functions/features are hosted on x86 devices, it&#x27;s natural to implement the same management mechanism.
- To avoid mixing management and data planes, multiple routing tables have to be implemented. There are, from my understanding, three ways to do it :
- - namespace
- - table + ip rule from/to
- - vrf (added to linux kernel thanks to cumulus)
- Excluding namespaces which are too heavy for this need, what could differenciate the two last propositions?
- I can feel that vrf have a stronger implementation/traffic isolation but it seems that the result are approximately the same ?
- Thank you,
- Romain
-    submitted by    /u/MrDgrey_FR  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;127
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y812mc/blacklisting_wireless_clients_after_repeated/"
-                        open
-                      >
-                        <summary class="article-expander__title">Blacklisting wireless clients after repeated failed auth</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y812mc/blacklisting_wireless_clients_after_repeated/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi guys, been working on improving our Aruba wireless set up and one thing I have noticed is we have client devices endlessly trying to auth with bad credentials (mostly missing the domain in their username) or clients who are locked out in AD constantly trying to connect. I was wondering if there was any benefit to blacklisting these clients after repeated failed auth for a period of time? Am I right to think this would free up some AP capacity as they will ignore that client for the duration of the blacklisting meaning less resources are wasted on talking to a client that is failing auth. Any other suggestions on how to improve welcome. Thanks.
-    submitted by    /u/humongouscrab  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;128
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y8094k/python_question_with_cisco_iosxe_netmiko_and_xml/"
-                        open
-                      >
-                        <summary class="article-expander__title">Python question with Cisco IOSXE, netmiko, and XML files.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y8094k/python_question_with_cisco_iosxe_netmiko_and_xml/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I asked this question on r/learnpython and no response yet, so thought I would ask here. 
- Does anyone know if its possible to edit an XML based on the result of an if else statement? Take this section of my script for example. It uses netmiko and run against iosxe......
- Output&#x3D; net_connect.send_command(&#x27;show run&#x27;) if &quot;logging buffered&quot; in Output: print (&quot;logging buffered is configured&quot;) else: print (&quot;logging buffered is not configured&quot;) 
- Based on that result, I want to edit part of an XML file that says....
- Text 
- I would like to change the &quot;text&quot; part to something else based on the result of the if else statement. Is something like that possible?
- I want to also mention that there will be multiple sections on the XML document that I would like to change with one script.
- Thanks
-    submitted by    /u/Nats_daddy  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;126
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7zvlm/bouncing_interface_which_is_a_part_of_portchannel/"
-                        open
-                      >
-                        <summary class="article-expander__title">Bouncing interface which is a part of port-channel on WS-CS3560G-48TS.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7zvlm/bouncing_interface_which_is_a_part_of_portchannel/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>There are currently two other interfaces in the port-channel that are active. I know that we should not make changes directly on an interface if it is part of a port-channel. What about when I want to reset only one interface? Should I reset the entire port-channel?
-    submitted by    /u/puttymonster  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;127
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7yike/network_packets_doesnt_get_evenly_shared_between/"
-                        open
-                      >
-                        <summary class="article-expander__title">Network packets doesn&#x27;t get evenly shared between rx/tx queues</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7yike/network_packets_doesnt_get_evenly_shared_between/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have an Intel XL710 network card running on Debian 10, cpu is AMD EPYC 7402P (24-Core). Network card has 24 rx/tx queues, one for each core, but the first queue gets a lot more packets on tx (about twice as more) than the other queues (which are pretty much equivalent). Because of this, the core to which the interrupts of this queue are assigned is much more loaded. What could be the cause of this situation?
- root@amd:~# ethtool -S eth1 | grep packets rx_packets: 3986026729 tx_packets: 9079590147 tx-0.tx_packets: 619921234 rx-0.rx_packets: 232190547 tx-1.tx_packets: 355157523 rx-1.rx_packets: 174674652 tx-2.tx_packets: 404591271 rx-2.rx_packets: 163045469 tx-3.tx_packets: 362126376 rx-3.rx_packets: 152013976 tx-4.tx_packets: 359056856 rx-4.rx_packets: 217825519 tx-5.tx_packets: 381187521 [...] 
-    submitted by    /u/reinholdPL  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;128
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7y4h1/how_are_you_uploading_images_to_your_cisco_devices/"
-                        open
-                      >
-                        <summary class="article-expander__title">How are you uploading images to your cisco devices?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7y4h1/how_are_you_uploading_images_to_your_cisco_devices/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Cisco devices in MNC&#x27;s (where you have to copy images over WAN links) , are you still using tftp/sftp or utilizing any API ? Pushing via Ansible or others? 
- We have Catalysts and Nexus and FTD&#x27;s, and using tftp/sftp seems slow when you have other devices with a nice GUI that says &quot;upload file/image&quot;.
-    submitted by    /u/sec_admin  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;125
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7xhsp/reacting_on_netxhop_presence_for_routing/"
-                        open
-                      >
-                        <summary class="article-expander__title">Reacting on netxhop presence for routing</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7xhsp/reacting_on_netxhop_presence_for_routing/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;m doing some clever (stupid?) routing between leaf (bgp, L3 fabric) and openstack (software routing in overlays).
- I got to the point, when I have two (or more) routes, and only one is valid (i.e. can deliver traffic to the consumer). The difference between them is that in one case there is active nexthop IP, and in other there is none. Nexthop is connected through a bridge, therefore it&#x27;s impossible to use link state to check if nexthop is available or not. The single way is to check if it can be resolved via arp.
- There are other ways to solve my problem (healthchecks, hooks into openstack code, etc), but I wanted to investigate feasibility of the nexthop &#x27;resolving&#x27; (in this context, resolving of IP into MAC, i.e. arp). Are there the name of this technique? Is someone using it?
- Basically, I have a route:
-  x.x.x.0/24 via y.y.y.y dev foobar 
- And this route should only be taken in account when y.y.y.y can be seen as a neighbor in ip neighbors, and ignored, if not.
- I use bird for bgp, so it&#x27;s either bird feature (check nexthop resolvability), or linux routing feature.
- Is this a thing, or should I try other ways?
-    submitted by    /u/amarao_san  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;129
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7x60r/wlc_placement/"
-                        open
-                      >
-                        <summary class="article-expander__title">wlc placement</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7x60r/wlc_placement/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi,
- I have design question , usually placing where do we have to place the wlc controller ,
- behind firewall or direct core 
- Thanks
-    submitted by    /u/tkr_2020  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;127
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/y7wd4o/console_server_recommendation_for_dc/"
-                        open
-                      >
-                        <summary class="article-expander__title">Console server recommendation for DC</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/y7wd4o/console_server_recommendation_for_dc/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello,
- I&#x27;m currently looking for console server data solution for mainly Cisco devices. What do you think about out of band (SIM CARD or wifi based(?) ) console servers - theoretically sounds very good - how about the practice ?
- Also there&#x27;re some other requirements we would like to have:
-  
-minimum of 16 interfaces
- possibility to use RJ45 to RJ45 UTP cables for simplicity and longer range cross-rack connectivity (than simple Cisco console cables).
- Continuing from 2 - the device should be able to rollover programmatically that cable (also - how this function is called - (software selectable pins) ?). Because manually changing pins from straight through to rollover in UTP cable from standard is not very sustainable solution. In Ethernet world similar thing is called auto-mdix - it&#x27;s interesting how this thing is called in serial world :)
-  
-Any suggestions ? Thanks
-    submitted by    /u/kajatonas  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;128
-                                  min&hairsp;)</span>
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -40687,122 +41800,12 @@ In July 2022, Iranian state cyber actors—identifying as “HomeLand Justice”
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Morning Wire</button>
-                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="2fc3fdd0-c9c6-4117-88e8-0661fdb06114"
-                        open
-                      >
-                        <summary class="article-expander__title">Tuesday&#x27;s Afternoon Update | 9.20.22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="b7428ef3-7307-4a34-87b4-e251ac8f829b"
-                        open
-                      >
-                        <summary class="article-expander__title">Texas Anti-Censorship Law &amp; Biden Interview | 9.20.22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>A new Texas anti-censorship law gets a critical court win, the White House walks back politically charged comments from the president, and experts warn that San Francisco is heading for a real estate crash. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Lawrence Systems</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;cPRnr2ep04A"
-                        open
-                      >
-                        <summary class="article-expander__title">Big pfsense Changes Are Coming!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;cPRnr2ep04A">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Windows Central</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCDMnCGlkv4gyFGZo_ZT3atg">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;dkcd3ATQq1w"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows 11 2022 Update — Official Release Demo (Version 22H2)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;dkcd3ATQq1w">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3282467243">
-        <time id="build-timestamp" datetime="2022-10-19T14:32:29.376Z">2022-10-19T14:32:29.376Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3288382332">
+        <time id="build-timestamp" datetime="2022-10-20T09:23:43.024Z">2022-10-20T09:23:43.024Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
