@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-24 datetime="2022-10-24T12:16:50.000Z">2022-10-24</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-24 datetime="2022-10-24T12:16:50.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-24 datetime="2022-10-24T13:48:34.000Z">2022-10-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-24 datetime="2022-10-24T13:48:34.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,228 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycbr2f/trend_micro_postmortem/"
+                        open
+                      >
+                        <summary class="article-expander__title">Trend Micro postmortem</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycbr2f/trend_micro_postmortem/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Early last week PC across our org starting having one of three types of error:
+ 1 - PC would BSOD, possibly multiple times with no obvious cause and disparate error codes
+ 2 - Every application would crash in turn with an error indicating issues with Trend Micro&#x27;s dlls
+ 3 - PC would boot to a black screen, but be online (even on wifi) and respond to remote commands (though any form of remote control would still yield a black screen)
+ Eventually issues 1 and 2 would evolve into 3 in many, though not all cases. An upgrade of TM&#x27;s client was complete or in progress at the time of the first presentation, which coupled with issue 2 made us conclude a botched update was the cause.
+ Unfortunately repair didn&#x27;t seem to work and TM&#x27;s support suggested we proceed with a hard uninstall using their CUT program. The problem was this took an extremely long time (over a day in one notable case). We dug through the logs and discovered CUT was attempting dozens of tries with long timeouts for each operation, before eventually failing and moving to a more aggressive option (ie removing a service after failing to stop it).
+ We discovered that an ini file was created upon launching the CUT executable and we could, if we were quick enough, replace that ini file with a modded one that reduced timeouts and # of attempts to something more manageable. This brought down removal time from hours to about 20 minutes per machine, which could be run in parallel.
+ On some machines CUT would complete on first try, others would require a second application even though CUT logged its successful completion.
+ After that we could reinstall the TM client with no further issue.
+ TM support told us this has never happened before (when does it ever) and we&#x27;re the only ones reporting it (what good luck), so I thought it&#x27;d be useful to put it here for anyone that should happen to suffer this issue or something similar.
+    submitted by    /u/senove2900  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;142
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycbe66/reinstalling_windows_defender_windows_security_in/"
+                        open
+                      >
+                        <summary class="article-expander__title">Re-installing Windows Defender / Windows Security in Windows10</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycbe66/reinstalling_windows_defender_windows_security_in/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Has anyone had any success reinstalling/resetting Windows Defender in Windows 10?
+ We use crowdstrike as our main AV but would like to start using scheduled scanning on our devices per recommendations from our SoC.
+ Our devices are in Intune, and I’ve found out that Defender will automatically run in “passive Mode” if we onboard our devices to Defender for Endpoint.
+ This works fine on our newer deployed devices (via autopilot), but it won’t work on our previous ones that were “imaged” using MDT. I have a feeling that the previous image broke defender somehow since it included crowdstrike on the install, rather than installing after enrolling via autopilot in the new deployment.
+ I’ve tried the commands I’ve found online to reset the app using AppX, re-registering it again using add-appx using the built in windows 10 manifest.xml, and resetting the app via “Windows Settings”. I’ve also tried restarting the Windows Defender service, modifying registry entries to enable “passive mode”, and simply enabling periodic scanning on the device itself. Windows defender seem to just won’t start at all. I checked group policy and Defender is not blocked.
+ Any other ideas you guys may have to get defender running again? I could try uninstalling crowdstrike, but thats not really feasible if it’s the only way to deploy it on our older devices.
+    submitted by    /u/noobneedshelp99  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;142
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycb9xb/where_do_you_think_the_hot_highpaying_jobs_in_it/"
+                        open
+                      >
+                        <summary class="article-expander__title">Where do you think the hot (high-paying) jobs in IT will be over the next 10-20 years?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycb9xb/where_do_you_think_the_hot_highpaying_jobs_in_it/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m mid-career in my 30s and about to be unemployed in a few months. I know I can get another admin or DevOps type job but I&#x27;m curious what is folks&#x27; thoughts on what will be new in-demand roles in IT in the coming years.
+ I&#x27;m not talking about learning an app (for example Chef and building cookbooks) or generic stuff like automation (for example learning Python for scripting). I&#x27;m thinking like where will AI be or quantum computing and what kinds of roles there will be for the admins.
+ Big industry-changing stuff like when Windows 95 came on the scene and the world hustled to move to distributed systems hiring anyone who could spell PC. Or when Amazon released commercial cloud computing and suddenly the &quot;cloud engineer&quot; title was the fat paycheck.
+ Or maybe I just say screw it to cutting-edge tech and get a job supporting the Mainframe and COBOL? That stuff will be around long after I&#x27;m retired. Plus from what I see folks to support that is in very high demand.
+    submitted by    /u/testing_cock  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;143
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycb9t8/how_to_recover_failed_emails_in_exchange_online/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to recover failed emails in Exchange Online</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycb9t8/how_to_recover_failed_emails_in_exchange_online/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello
+ I was doing MX switch last night, because I was changing security email provider to MS, and I forgot to remove a transport rule in Exchange Online. Now, I have a lot of incoming emails piled up as Failed due to transport rule blocked them all.
+ What can I do? How can I see or recover these emails?
+    submitted by    /u/Bhaelros  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;141
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycb94j/upgrading_a_wortmann_7220_g1_server_vmware/"
+                        open
+                      >
+                        <summary class="article-expander__title">Upgrading a Wortmann 7220 G1 Server - VMWare compatibility issues</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycb94j/upgrading_a_wortmann_7220_g1_server_vmware/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello!
+ ​
+ Im a entry-Level Sys-Admin and doing a Server upgrade at my workplace right now.
+ We are switching from a Terra 7220 G1 to a 7220 G4, and are using VMware for Virtualisation.
+ The G1 runs ESXI 5.5, which I plan to Upgrade to 6.5/6.7 before migrating the VMs to the G4 Server, which is expected to run ESXI 7.X on it.
+ ​
+ Therefore i need to know wheter my Hardware is compatibel with ESXI 6.5
+ I already went to Vmware Hardware compatibility Guide to check it, but the list ends with a Terra G2 modell. 
+ ​
+ Does anyone know how to find out if my G1 is compatibel?
+ Its equiped with 2x Intel Xeon E5-2600-v2 Series, which are supported by ESXI 6.5/6.7.
+ Or do you think I should just try to upgrade?
+    submitted by    /u/SuRR_  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;141
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycb3te/bulk_spam_emails/"
+                        open
+                      >
+                        <summary class="article-expander__title">Bulk Spam Emails</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycb3te/bulk_spam_emails/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ll get straight to the point, we have been receiving bulk spam emails (100-400) at a time at my job using a legitimate email address from one of our users. Exchange picks up on it and blocks the legitimate email from sending emails since it is flagging it as spam. This disables and user and the only way to get around it is to create a rule in Exchange with a &quot;body contains&quot; rule. We use MWB Nebula to locate vulnerabilities and I do not see one on our Exchange server. I am a Jr. System Admin so Cybersecurity is something I am learning. I believe this would obviously be a Blue Team issue. We do have a vendor we work with for issues like this, but would like anyone&#x27;s input if possible. Any more info just ask.
+    submitted by    /u/SureLoan  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;142
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycas3g/mbr2gptexe_efi_partition_location_issue/"
+                        open
+                      >
+                        <summary class="article-expander__title">MBR2GPT.exe -- EFI partition location issue</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycas3g/mbr2gptexe_efi_partition_location_issue/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello
+ We have a bunch of WMware VM&#x27;s with BIOS firmware but goal is to get them to UEFI. We found that we can convert the disk using MBR2GPT.exe, but it brings an unexpected issue, the EFI partition is created at the end of the disk and the main partition is not extendable after that :(
+ Also i could put MBR2GPT.exe to a MECM task sequence which boots into WinPE, converts the disk and shuts down, which is convenient.
+ Has anyone faced a similar issue? How did you solve it? How to automate this as much as possible so that EFI partition is first on the disk?
+    submitted by    /u/sipsik  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;141
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycapkr/remove_encryption_from_usb_thumbdrive/"
+                        open
+                      >
+                        <summary class="article-expander__title">Remove encryption from USB thumbdrive</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycapkr/remove_encryption_from_usb_thumbdrive/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have Kingston DataTraveler Vault Privacy 3.0 USB stick. I just want to use it as a normal drive, with no password. I&#x27;ve formatted it but no luck. Is this possible to do?
+    submitted by    /u/Excellent-Will3373  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;139
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ycac1v/overwhelmed/"
+                        open
+                      >
+                        <summary class="article-expander__title">Overwhelmed</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ycac1v/overwhelmed/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>First job in sysadmin, we have a lot of clients, everyone is busy with their cases. each case I received requires tons of research and troubleshooting. This makes me miss sla’s and feedback with the clients because i find myself spending the day deep inside the clients env troubleshooting and chasing seniors and in meetings. I want to create a workflow to follow everyday just to know where my head is..
+    submitted by    /u/ShoneBoyd  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;148
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46854,8 +47076,8 @@ Edit: Removed link pasted email
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3312751713">
-        <time id="build-timestamp" datetime="2022-10-24T12:36:00.886Z">2022-10-24T12:36:00.886Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3313314913">
+        <time id="build-timestamp" datetime="2022-10-24T13:56:47.846Z">2022-10-24T13:56:47.846Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
