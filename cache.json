@@ -260,6 +260,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yccwyt/where_is_ubiquiti_map_in_the_dashboard/",
+          "author": null,
+          "description": "Is anyone on Ubiquiti Cloud Key Gen2 - Network 7.2.92 and can help where the hell they put the Maps option/section now?\n    submitted by    /u/positive_ranch  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yccwyt/where_is_ubiquiti_map_in_the_dashboard/",
+          "publishedOn": "2022-10-24T14:36:54.000Z",
+          "wordCount": 42139,
+          "title": "Where is Ubiquiti Map in the dashboard?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/ycbr2f/trend_micro_postmortem/",
           "author": null,
           "description": "Early last week PC across our org starting having one of three types of error:\n 1 - PC would BSOD, possibly multiple times with no obvious cause and disparate error codes\n 2 - Every application would crash in turn with an error indicating issues with Trend Micro's dlls\n 3 - PC would boot to a black screen, but be online (even on wifi) and respond to remote commands (though any form of remote control would still yield a black screen)\n Eventually issues 1 and 2 would evolve into 3 in many, though not all cases. An upgrade of TM's client was complete or in progress at the time of the first presentation, which coupled with issue 2 made us conclude a botched update was the cause.\n Unfortunately repair didn't seem to work and TM's support suggested we proceed with a hard uninstall using their CUT program. The problem was this took an extremely long time (over a day in one notable case). We dug through the logs and discovered CUT was attempting dozens of tries with long timeouts for each operation, before eventually failing and moving to a more aggressive option (ie removing a service after failing to stop it).\n We discovered that an ini file was created upon launching the CUT executable and we could, if we were quick enough, replace that ini file with a modded one that reduced timeouts and # of attempts to something more manageable. This brought down removal time from hours to about 20 minutes per machine, which could be run in parallel.\n On some machines CUT would complete on first try, others would require a second application even though CUT logged its successful completion.\n After that we could reinstall the TM client with no further issue.\n TM support told us this has never happened before (when does it ever) and we're the only ones reporting it (what good luck), so I thought it'd be useful to put it here for anyone that should happen to suffer this issue or something similar.\n    submitted by    /u/senove2900  \n [link]   [comments]",
