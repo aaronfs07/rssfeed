@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-24 datetime="2022-10-24T09:28:03.000Z">2022-10-24</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-24 datetime="2022-10-24T09:28:03.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-24 datetime="2022-10-24T10:20:36.000Z">2022-10-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-24 datetime="2022-10-24T10:20:36.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,153 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc7kp7/need_opinion_about_current_careers_and_some/"
+                        open
+                      >
+                        <summary class="article-expander__title">Need opinion about current careers and some future prospects</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc7kp7/need_opinion_about_current_careers_and_some/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello r/sysadmin fellows. I need some opinion about my career path. For basic information, I&#x27;m not based in US/EU but in Southeast Asia. 
+ My current occupation right now &quot;IT Implementer&quot; for a branch of multinational animal feed manufacturing company (that is our main product, although our product lineup are diverse, from animal feed, poultry breeding &amp; abattoir, dairy products and FMGC). The &quot;official&quot; work is L1/L2 Helpdesk supporting three business units in two separate location which account to 150-200 endpoints. But as I joined the company three years ago, my responsibility has swelled up a lot. Aside from helpdesk, now I do VMware (Hosting out Win2016 and Win2019 DNS, DHCP, RODC and Local fileserver), AWS (for our critical ERP), maintaining APs, CCTVs(!!!!), developing our homebrew …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;145
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc7f41/windows_11_updating_despite_registry_fix/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows 11 updating despite registry fix</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc7f41/windows_11_updating_despite_registry_fix/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have a machine that keeps upgrading to Windows 11, despite putting the registry keys in place to keep it on Windows 10. Last week I moved it back to 10, then cleared the update catalog and rebooted multiple times, even running manual updates and it didn&#x27;t update. The machine was then turned on at the weekend and has updated to Windows 11 for the 3rd time.
+ Their server is 2012R2 so we&#x27;re trying to keep the machines on Windows 10 until the new one is installed, does anyone have other methods of blocking the updates? I have been informed that installing the ADMX to try the group policy method just caused other issues with the server, which is why I went down the registry route.
+    submitted by    /u/revolut1onname  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;140
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc7cvm/qaa_keyboard_layout_on_windows_server_2019/"
+                        open
+                      >
+                        <summary class="article-expander__title">QAA keyboard layout on Windows Server 2019</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc7cvm/qaa_keyboard_layout_on_windows_server_2019/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>edit colleague mentioned he has also seen it on his infrastructure using windows 10 LTSC 1809 so apparently it&#x27;s not specific to servers only
+ I&#x27;ve seen this problem for quite some time and always ignored but I guess it&#x27;s time to figure out how to fix it. So I&#x27;m looking for any advice on how to proceed with fixing it once and for all.
+ Here&#x27;s what I&#x27;ve looked into:
+  
+HKEY_CURRENT_USER\Keyboard Layout\Preload has correct number of keyboard layouts - the two I&#x27;ve set (00000409 and 00000419, English and russian) - as expected
+ 
+HKEY_LOCAL_MACHINE\SYSTEM\Keyboard Layout\Preload has English only (00000409) - as expected
+ 
+In settings &gt; time and language &gt; language I only have two languages selected, 1 keyboard layout each - as expected
+ 
+powershell&#x27;s Get-WinUserLanguageList returns two languages, 1 keyboard layout each - as expected
+ 
+ And yet, there are three keyboard layouts to select from in tray - being two I&#x27;ve selected and 1 extra called QAA, which is basically English.
+ Logging out and back in again doesn&#x27;t fix it. Rebooting doesn&#x27;t fix it. The only way to fix it is to override current settings - either using powershell or manually resetting up all that. But problem appears again sooner or later - maybe next reboot or maybe 4 months in - appears to be random.
+ Googling leads nowhere as all there either temporal fixes that I&#x27;ve mentioned or common useless advice like &quot;run sfc scannow&quot;
+ Has anyone figured out how to get rid of that problem permanently?
+    submitted by    /u/xCharg  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;140
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc7818/moronic_monday_october_24_2022/"
+                        open
+                      >
+                        <summary class="article-expander__title">Moronic Monday - October 24, 2022</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc7818/moronic_monday_october_24_2022/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Howdy, /r/sysadmin!
+ It&#x27;s that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I&#x27;ve taken over responsibility for posting these weekly threads so you don&#x27;t have to worry about anything except your comments!
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;139
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc71v3/dell_emc_scv3000_force_disk_offline/"
+                        open
+                      >
+                        <summary class="article-expander__title">Dell EMC SCv3000 - Force disk offline?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc71v3/dell_emc_scv3000_force_disk_offline/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Help my sanity... I&#x27;m not a Dell guy.
+ Is there a way to remotely force a physical drive into down state on a Dell SCv3020 array?
+ One disk in the array has very high (&gt;300ms) latency and filling the log with &quot;[Aborted]&quot; messages but for whatever reason the array controller hasn&#x27;t taken the disk out of the RAID. The high latency on one disk is breaking everything connected to the array.
+ I can only find &quot;Release Disk&quot; in Storage Manager but that is trying to rebalance the RAID by moving the data away from the failing disk which will take a very long time.
+ I&#x27;d like to force the disk into failed state without rebalancing. I know I could pull the disk, but I&#x27;m trying to avoid a long car journey.
+    submitted by    /u/calamityjohn  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;139
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc7006/programmable_usb_hub/"
+                        open
+                      >
+                        <summary class="article-expander__title">programmable usb hub</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc7006/programmable_usb_hub/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>do one of you know a programmable usb hub/switching device, with an affordable price?
+ background: usb harddisk rotation on time base.
+    submitted by    /u/netstyles  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;137
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46452,8 +46599,8 @@ Edit: Removed link pasted email
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3311562359">
-        <time id="build-timestamp" datetime="2022-10-24T09:28:50.892Z">2022-10-24T09:28:50.892Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3311914297">
+        <time id="build-timestamp" datetime="2022-10-24T10:23:08.898Z">2022-10-24T10:23:08.898Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
