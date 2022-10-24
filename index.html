@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-23 datetime="2022-10-23T14:13:33.000Z">2022-10-23</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-23 datetime="2022-10-23T14:13:33.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-24 datetime="2022-10-24T09:28:03.000Z">2022-10-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-24 datetime="2022-10-24T09:28:03.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,36 +34,27 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybirq8/network_troubleshooting_question/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc6qrl/how_to_find_out_what_is_blocking_a_port/"
                         open
                       >
-                        <summary class="article-expander__title">Network Troubleshooting Question</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybirq8/network_troubleshooting_question/">
+                        <summary class="article-expander__title">How to find out what is blocking a port</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc6qrl/how_to_find_out_what_is_blocking_a_port/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Look at the following route output - which path would be selected by the router? Explain how you came to your conclusion. 
- you@router&gt; show route 120.50.40.64 
- inet.0: 2296 destinations, 3790 routes 
- (2295 active, 10 holddown, 1 hidden) 
- + &#x3D; Active Route, - &#x3D; Last Active, * &#x3D; Both 
- 120.50.40.64/26 
- Path 1: [BGP/170] 7w1d 20:47:51, MED 0, localpref 120, from 120.50.40.178 
-  AS path: 64207 I, validation-state: unverified 
-  &gt; to 120.50.41.238 via xe-1/3/0.1851 
- Path 2: [BGP/170] 4w1d 10:36:31, MED 0, localpref 90, from 120.50.40.190 
-  AS path: 64207 I, validation-state: unverified 
-  &gt; to 120.50.40.226 via xe-1/2/0.759
-    submitted by    /u/thesumeriangod  
+                              <span>Hi there,
+ I am trying to troubleshoot an issue for a customer where our screen sharing solution requires port 7100 to be open in order for it to work correctly however, with this particular customer we&#x27;ve found that their managed devices are not working. We can bring in unmanaged devices on their network and our software works fine but it&#x27;s only when we try and connect using their managed devices do we get blocked. 
+ We&#x27;ve disabled their Sophos AV, apparently they&#x27;ve had a look at their inbound/outbound ports on Windows Defender and can&#x27;t see any blocks on 7100 so my question is - how else can we find out what&#x27;s blocking this port? Any scanning tools that will point us to some kind of GPO or other application block?
+    submitted by    /u/pattske  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                &ensp;<span class="article-reading-time">(&hairsp;144
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -74,50 +65,26 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybippb/network_question/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc5z5o/help_needed_run_sysinternals_process_explorer_via/"
                         open
                       >
-                        <summary class="article-expander__title">Network Question</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybippb/network_question/">
+                        <summary class="article-expander__title">Help needed: Run Sysinternals Process Explorer via Task scheduler (installed via winget on Win11)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc5z5o/help_needed_run_sysinternals_process_explorer_via/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Please review the following TRACEROUTE and identify where and why this user is experiencing slow network performance. 
- C:/&gt;tracert202.248.37.74 
- Tracing route to dns.nifty.com [202.248.37.74]
- over a maximum of 30 hops: 
- 1 13 ms 14 ms 14 ms 10.240.0.1 
- 2 16 ms 16 ms 19 ms 172.16.206.1 
- 3 16 ms 22 ms 14 ms irb1.ivr1.ss.sls.md.atlantech.net [207.188.223.194] 
- 4 16 ms 15 ms 14 ms xe-1-3-0.cr2.ss.sls.md.atlantech.net [76.76.210.100] 
- 5 17 ms 16 ms 17 ms 76.76.209.74 
- 6 21 ms 17 ms 19 ms xe-0-0-1.ber1.eqix.ash.va.atlantech.net [76.76.211.177] 
- 7 17 ms 20 ms 18 ms 38.32.186.169 
- 8 19 ms 18 ms 19 ms ae-58.r06.asbnva02.us.bb.gin.ntt.net [129.250.8.121] 
- 9 * 19 ms 31 ms ae-8.r25.asbnva02.us.bb.gin.ntt.net [129.250.2.120] 
- 10 78 ms 84 ms 75 ms ae-2.r25.lsanca07.us.bb.gin.ntt.net [129.250.3.189] 
- 11 190 ms 192 ms 191 ms ae-12.r31.tokyjp05.jp.bb.gin.ntt.net [129.250.3.192] 
- 12 195 ms 195 ms 193 ms ae-3.r03.tokyjp05.jp.bb.gin.ntt.net [129.250.3.56] 
- 13 186 ms 186 ms 193 ms ae-2.ocn.tokyjp05.jp.bb.gin.ntt.net [120.88.53.26] 
- 14 196 ms 202 ms 201 ms 60.37.54.162 
- 15 197 ms 200 ms 191 ms 211.0.211.190 
- 16 182 ms 185 ms 543 ms 133.160.233.58 
- 17 195 ms 189 ms 191 ms 133.160.232.134 
- 18 190 ms 194 ms 192 ms 133.160.138.10 
- 19 184 ms 186 ms 182 ms 61.121.125.21 
- 20 * * * Request timed out. 
- 21 * * * Request timed out. 
- 22 * * * Request timed out. 
- 23 * * * Request timed out. 
- 24 * * * Request timed out. 
- 25 * * * Request timed out. 
- 26 * * * Request timed out. 
- 27 * * * Request timed out. 
- 28 * * * Request timed out. 
- 29 * * * Request timed out. 
- 30 * * * Request timed out.
-    submitted by    /u/thesumeriangod  
+                              <span>Hi,
+ I&#x27;m unable to setup the Process Explorer to run at startup via Task Scheduler. Regardless if I create the task via the Process Explorer menu &#x27;Run at startup&#x27; or manually I am unable to make it work.
+ I&#x27;ve installed Systeinternals via winget: &#x60;&#x60;&#x60;&#x60;
+  
+winget list sysinternals
+ Name Id Version Source
+ Sysinternals Suite 9P7KNL5RWT25 2022.10.1.0 msstore &#x60;&#x60;&#x60;&#x60;
+  
+Running the task does nothing and there are no errors in the task history log. It is as if nothing happens. &#x27;Run with highest privileges&#x27; also does nothing What I find very odd about the installation is that procexp.exe is a 0kb file in the Local/Microsoft/WindowsApps folder. It has no icon but I can run it normally by double-clicking on it. However if I use Task Scheduler and I try to selected it (via Browser on Actions) I get the following error:  procexp.exe The file cannot be accessed by the system. 
+ Any help would be appreciated. Thank you.
+    submitted by    /u/tritiy  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                &ensp;<span class="article-reading-time">(&hairsp;144
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -128,19 +95,212 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/yban7d/do_you_have_10gbe_internet_residential_or/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc5nbq/client_devices_reverting_to_retail_pro_key_after/"
                         open
                       >
-                        <summary class="article-expander__title">do you have 10gbe internet residential or business - how much do you pay?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yban7d/do_you_have_10gbe_internet_residential_or/">
+                        <summary class="article-expander__title">client devices reverting to retail pro key after reboot</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc5nbq/client_devices_reverting_to_retail_pro_key_after/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I&#x27;m wondering what the availability of 10 gigabit is and how its changed. Please mention the city and the provider if you&#x27;re able. Also if there are any commitments required.
- Here is an old post I found:
- https://www.reddit.com/r/networking/comments/85dddh/enterprise_how_much_do_you_pay_for_10_gigabit/
-    submitted by    /u/Ashtonian  
+                              <span>we&#x27;ve recently started to move our default deployed image to win11. We&#x27;ve since noticed that activation is behaving weird and so far i cannot get to the bottom of whats going on.
+ We deploy our image via ConfMgr. Enterprise version is selected from the iso as a untouched image. All our changes are done via GPO or CM after the iso. Originally it did not have a key defined (overlooked/assumed AD KMS would take over), but thats now been corrected in the Task Sequence.
+ I stumbled on the fact my laptop is one thats affected; it&#x27;s using the Pro retail key thats burnt into UEFI. ok - no problem; slmgr /upk, /ipk {GVLK}, /ato and /dli to confirm. /dli shows the expected KMS activation from AD. Great, job done i&#x27;ll get that pushed out to existing clients via a Task Sequence that runs those same commands. A week later i noticed my laptop is back to the pro licence (i reboot weekly; sleep the laptop during the week)
+ redo the slmgr process, reboot and now the key has reverted back to the pro retail key again.
+ has anyone seen this behaviour or know why it&#x27;s occuring?
+    submitted by    /u/veehexx  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                &ensp;<span class="article-reading-time">(&hairsp;144
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc5kje/help_needed_finding_a_specific_network_tool/"
+                        open
+                      >
+                        <summary class="article-expander__title">Help needed finding a specific network tool</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc5kje/help_needed_finding_a_specific_network_tool/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Friendly redditors and fellow sysadmins, I need to prevail upon your assistance on this fine Monday. 
+ I am attempting to identify a specific planning tool that I have encountered in the past, but cannot for the life of me remember the name of. My Google foo seems to be pretty bad today as well.
+ In summary, this is a tool published by a company (can’t remember the name) that allows you to pay an annual license fee to get access to part libraries from various vendors and then use these to build BOMs to submit to suppliers. I know it has libraries from Aruba, Cisco, Extreme, to name but a few. 
+ Before anyone says it, I am not thinking about Visio or anything like that. This tool allows you to select e.g. an Aruba CX6300 switch and then can show you which addon modules are compatible with this switch and would then allow you build a complete BOM around this, including PSUs, SFP transceivers, interconnect cables, etc.
+ Please, if anybody knows this tool, I am trying to identify it, as I need to submit budget approval for it.
+    submitted by    /u/jacod1982  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;144
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc5904/excel_on_rdsserver_licensing/"
+                        open
+                      >
+                        <summary class="article-expander__title">Excel on RDS-Server - Licensing</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc5904/excel_on_rdsserver_licensing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi!
+ ​
+ I need to use Microsoft Excel on a Windows Terminalserver for about 30 users.
+ Currently, there is no Azure Active Directory in use (and not planned).
+ ​
+ Office 365 seems to be the easiest option, but I do not want every user to have to logon daily &quot;manually&quot;. --&gt; Is there any possibility without AAD to automate the logon?
+ ​
+ My alternative seems to be Excel as OpenValue with SA.
+ ​
+ Are you aware of any other option?
+ ​
+ Thank you for your help
+ ITStril
+    submitted by    /u/ITStril  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;149
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc53vi/exchange_hybrid_mesh_using_organization/"
+                        open
+                      >
+                        <summary class="article-expander__title">Exchange Hybrid Mesh using Organization Relationships</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc53vi/exchange_hybrid_mesh_using_organization/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/cKJyR5A0y0AC5T0HVSSaPBj4_HAH9Laf6QLPdJdVmgE.jpg?auto&#x3D;webp&amp;s&#x3D;ce9cd9e31ac054f9019cc4bf3680e03a29f7e103" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hi There , 
+ ​
+ ​
+ I have a scenario and couple questions 
+ ​
+ Here is the following configuration of the two organizations:
+ ​
+ Organization 1:
+ ​
+ Exchange 2013 CU23
+ ​
+ Organization 2:
+ ​
+ Exchange 2016 CU19 &amp; Hybrid 
+ ​
+ Both organizations have an internal connection between them and a Full Trust Relationship.
+ ​
+ ​
+ I am very confused related to the Organization Relationships.
+ ​
+ I have found an article like below.
+ ​
+ https://techcommunity.microsoft.com/t5/exchange-team-blog/the-hybrid-mesh/ba-p/605910
+ ​
+ MS says:
+ ​
+  
+Create an Organization Relationship between Contoso on-premises and Tailspin on-premises. Use a unique SMTP namespace for the domain name in the Organization Relationship like OnPrem.Tailspintoys.com
+  
+Note: In most environments, the shared namespace “TailspinToys.com” can be used as the Target address for on-premises users and you would not need the additional namespace of onprem.TailspinToys.com. However, to account for all complex partnerships that could be in place, a unique namespace used as the target address will ensure free busy works properly.
+ ​
+ Note: The domain name “TailspinToys.com” is not present in any of the Organization Relationships in the Contoso environment. Keeping this name out of the Organization Relationship will ensure that you can continue to use the shared namespace and see free/busy information.
+ ​
+ ​
+ ​
+ ​
+ Do I have to use unique address like OnPrem.companyb.com? Because We dont have any DNS record such as OnPrem.companyb.com. I want to use companyb.com as domain name for Organization Relationship between Company A on-premises and Company B on-premises. 
+ ​
+ thanks,
+    submitted by    /u/maxcoder88  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;144
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc4vyw/outlook_contact_sync_bug/"
+                        open
+                      >
+                        <summary class="article-expander__title">Outlook contact sync bug</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc4vyw/outlook_contact_sync_bug/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello Admins of Reddit,
+ First of all, English isn’t my first language, so sorry about any mistakes i make. We have an On-Premise Exchange 2016 running on a VM. I received two support tickets declaring crashes after importing company contacts into own contacts. Outlook then loses connection for about 10-15 Minutes. Can anyone help me with this?
+    submitted by    /u/Hot_Potato_Salad  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;143
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc4nu3/collapsed_for_campus_and_3tier_network_for_data/"
+                        open
+                      >
+                        <summary class="article-expander__title">Collapsed for Campus and 3-Tier Network for Data Center</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc4nu3/collapsed_for_campus_and_3tier_network_for_data/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi Folks,
+ We are designing a network for our new medical center within the region. When designing a hierarchical network, we were having brainstorming discussion with internal engineering team to take a decide on using 3-tier network for Data Center and 2-Tier for Campus (endpoints and end devices)
+ The center would occupy 2000+ endpoints in the network. We propose two main core switches, setup as VSS and aggregating approx. 70 access switches installed in different floors in the building communication rooms. Single stack contains 5 or 6 access switches with 10G uplinks to upstream core switches. Access are all L2, and we route between VLANs using SVIs on the core switches and some VLANs are firewalled for Guest and IoT devices.
+ Pair of high specs firewalls connected to cores for perimeter (internet, wan &amp; dmz) and internal segmentation (servers &amp; end devices, depending on the use case and security controls requirements.
+ Eventually, with regard to servers, we are thinking about having 3-tier network: access &gt; distribution &gt; main campus core
+ Two distribution switches with Servers SVIs on them or Firewalls. 
+ L2 links terminated on Cores with Point-to-Point transit VLAN. Servers connecting to TOR access switches. 
+ Please share your thoughts and comments for 3-tier approach and feel free to add your invaluable inputs if anything is wrong in the design.
+    submitted by    /u/techno_it  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;143
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc3wqx/is_greylisting_still_viable_in_spam_protection/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is greylisting still viable in spam protection?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc3wqx/is_greylisting_still_viable_in_spam_protection/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We&#x27;ve recently discussed if we should keep greylisting enabled on our spam filters.
+ I&#x27;ve been researching opinions about greylisting and it seems to have some mixed reactions. Some say it still useful while others say it just causes headaches with email delays and doesn&#x27;t help that much.
+ What&#x27;s your take on it?
+    submitted by    /u/Grindie  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;141
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -157,10 +317,323 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/yc286j/core_switch_10_years_old/"
+                        open
+                      >
+                        <summary class="article-expander__title">Core switch 10 years old</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yc286j/core_switch_10_years_old/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I installed our current “core” switch, a HP 5412zl, exactly 10 years ago. Small network for a SMB ($55m/yr in revenue). 24/7 casino/hotel, so downtime would hurt but ownership understands shit happens.
+ Have 12 other ProCurve edge switches connecting to it with 2 or 3 1GbE trunks. It does my VLAN routing. All copper currently, might add fiber in a few years when we expand. Kept it simple. IP cameras are the top bandwidth devices. 
+ I updated the firmware 400 days ago, which was the last reboot. I have a spare eBay 5412zl on a shelf for parts. 
+ How much risk is involved with running a 10+ core switch? Am I crazy to run this another 5 years before replacing it? Do you see switches fail after 10+ years frequently?
+    submitted by    /u/mUnChlee  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;133
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-10-23 datetime="2022-10-24T03:25:37.000Z">2022-10-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-10-23 datetime="2022-10-24T03:25:37.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yc0vvu/boot_macrium_img_backup_to_vm_using_only_the/"
+                        open
+                      >
+                        <summary class="article-expander__title">Boot macrium img backup to vm using only the external hdd?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yc0vvu/boot_macrium_img_backup_to_vm_using_only_the/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Did img backup using macrium of windows 10 ssd 240gb (full) to my external 2tb hdd, how do I boot into a vm from my external hdd since the internal ssd is full? It wouldn&#x27;t let me as the img backup and the initial boot (loading the macrium iso) of the vm can&#x27;t both be from the external hdd apparently? Just want to test and see if the backup works/is stable. Thanks all.
+ ​
+ EDIT: More info. I set the vm file location to the external hdd and when I tried to enable the physical usb external hdd to connect to the vm to load the disk img backup, an error popped up basically saying I can&#x27;t do those 2 things from an external drive?? It wouldn&#x27;t let me boot and recover the backup since if I enabled the physical external hdd to the vm to access the img backup, it would disable the external hdd to the main pc which is what the vm is running from. 
+ Is there a way for the external hdd to work in the vm and with the main pc at the same time?
+ ​
+ Have I just missed something obvious? I am confused lol. 
+ ​
+ I must&#x27;ve done something wrong. Most people can&#x27;t just boot up their backup on the internal drive because who has enough space for that? (Essentially 2 copies of a whole computer on the same drive) Mine is only 240gb, how do guys with maxed 3tb drives test their backups? Nobody just assumes their giant backup works?
+    submitted by    /u/akiraperera04  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;143
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybzohn/can_anyone_point_me_to_an_imaging_server_guide/"
+                        open
+                      >
+                        <summary class="article-expander__title">Can anyone point me to an Imaging server guide?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybzohn/can_anyone_point_me_to_an_imaging_server_guide/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We currently use USB’s to image new computers. I’d like to find a faster method and was wondering if anyone had any guides to do this?
+ We have 10+ offices and each has their own localized server, so they’re not all interconnected or anything. Have only been at this company for about a year fresh out of college, I’m currently the only IT on premises with msp backup support. 
+ Thanks guys!
+    submitted by    /u/227rite  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybyeur/strange_error_after_p2v/"
+                        open
+                      >
+                        <summary class="article-expander__title">Strange error after p2v</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybyeur/strange_error_after_p2v/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So during the weekend we tried a « p2v » conversion from an azure VM to vmware 7.0u3 host
+ We used the vmware converter latest version and the conversion went fine. Windows booted (2008r2) lol and everything worked, except the SSL certificate. Who was broken
+ We even tried to reimported the SSL certificate and it seems that the whole ssl certificate IIS store stemmed broken
+ So we tried to download the VHD from azure and convert them to VMDK and import them into vmware and all worked #1
+ Is it something that vmware converter couldn’t do or is it something on the azure side?
+ I’m kinda lost
+ Thanks
+    submitted by    /u/neko_whippet  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;145
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yby0kp/as_a_sysadmin_whats_your_attitude_towards_or/"
+                        open
+                      >
+                        <summary class="article-expander__title">As a sysadmin, what&#x27;s your attitude towards (or solution for) non-tech staff that talk with authority on tech-related issues?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yby0kp/as_a_sysadmin_whats_your_attitude_towards_or/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I work at a university, and most staff that have IT issues seem to think they already know the answer, or just have general &quot;hmm I still think IT is at fault&quot; demeanour when you&#x27;re giving an answer to their problem.
+ I generally try to be really civil, but sometimes the answer to an issue is so glaringly obvious, and becomes a real waste of time have to go through all the rigmarole to prove that the problem is a user problem, not a system/network/IT problem, that I feel I need to be a bit more blunt and not worry too much about how I&#x27;m coming across.
+ To give you an example, just recently I had person in senior management raise a ticket because an important document couldn&#x27;t be found on SharePoint. The ticket was escalated to me, and after looking into it, it just looks like someone moved the doc into another folder (probably accidentally). The user was trying to access the file from a URL link, and when it didn&#x27;t work (because the file was moved), they panicked and assumed IT had done something. When I told the user that the file was most likely moved, their response is still implying that IT had something to do with it, as no one in their team (over 10 people, all with edit access to the file) would have moved the file. I reiterated that it was probably an accident by someone in the team, and a fairly common and easily addressable mistake, but the user has now involved their manager, to make sure the problem doesn&#x27;t happen again. It&#x27;s now become a way bigger issue than it ever needed to be, all because someone just accidentally moved an important file, and the user just can&#x27;t accept that this happened and it wasn&#x27;t someone IT behind it.
+ This is just a recent scenario. Issues like these seem to happen all the time, where frustrated users just don&#x27;t believe what you&#x27;re telling them and seem to just blame anything on either IT staff or systems that they don&#x27;t understand, yet speak with authority on.
+ Any advice?
+    submitted by    /u/PsyduckAF  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;155
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybwlqm/moving_from_generalist_to_cybersecurity/"
+                        open
+                      >
+                        <summary class="article-expander__title">moving from generalist to cybersecurity</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybwlqm/moving_from_generalist_to_cybersecurity/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have been a generalist in it for many years I do have knowledge in lots of things. Should I start studying cybersecurity or something to keep me safe in the it world. With all the changes
+    submitted by    /u/Professional_Hyena_9  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;144
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybvvaa/whats_the_deal_with_cves_being_classifed_as/"
+                        open
+                      >
+                        <summary class="article-expander__title">Whats the deal with CVE&#x27;s being classifed as &quot;critical&quot; or &quot;problematic&quot; recently?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybvvaa/whats_the_deal_with_cves_being_classifed_as/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/EwYDqF44EAIVXcG9CLqtgPF1y5OgSU8ZiNhpkcsRnGU.jpg?auto&#x3D;webp&amp;s&#x3D;bac2e09cc6726a16c269bda028d22a57a9ce0a53" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Part of my morning blog round up is I look through the National Vulnerability Database for any software we run or anything else I need to keep an eye on and I&#x27;ve noticed recently that stuff is being marked as below 
+ https://imgur.com/a/gDYqgtu 
+ Still get number out of 9.9 and such, is it to get you to look at critical items more or something else going on?
+    submitted by    /u/Mydadpicksthefruit  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;144
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybswts/what_laptop_do_you_have_and_what_are_the_pros_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">What laptop do you have and what are the pros and cons to it?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybswts/what_laptop_do_you_have_and_what_are_the_pros_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The company I&#x27;m working for has historically bought whatever random computers were needed as people were hired from wherever they could get them. This was ok at first but we&#x27;ve grown and need to start operating more like a real IT department.
+ I&#x27;d like to hear what laptop you have and how it differs from what your users have, or if you have multiple tiers.
+ The market really is Dell, HP and Lenovo. I&#x27;m not really interested in HP.
+ They say IT should have what the users have. We&#x27;re a bit tricky since we have a ton of tech employees and engineers.
+ A lot of people are running docker on their laptops but do not need absolutely absurd power but this just means the low end is out.
+ I think we can cross off anything extremely low end, but also 9 pound workstation devices.
+    submitted by    /u/detectivejoebookman  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;157
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybsrzq/company_intranet/"
+                        open
+                      >
+                        <summary class="article-expander__title">Company Intranet</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybsrzq/company_intranet/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi Folks!
+ I was asked to deploy an Company Intranet, where HR etc.. can provide Informations. Do you guys have any Open Source, Free and Easy to Setup &amp; Use Software recommendation? 
+ Confuence is used for IT and Dev Documentations but there are some issues with the Pricing for all employees. 250+
+    submitted by    /u/kpwde  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;146
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybs234/dumb_question_but_id_like_an_answer/"
+                        open
+                      >
+                        <summary class="article-expander__title">dumb question but i’d like an answer :)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybs234/dumb_question_but_id_like_an_answer/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>so i work as a 1st line tech and I do gpupdates nearly daily to fix people’s issues. the problem is that this doesn’t always work so if i delete the machine.pol and user.pol files and g update again it works. why is that? TIA
+    submitted by    /u/alexmcross18  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;138
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybne7h/tips_to_go_paperless/"
+                        open
+                      >
+                        <summary class="article-expander__title">Tips to go paperless</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybne7h/tips_to_go_paperless/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I work in a manufacturing environment. Many things are done “because this is how we’ve always done it”. Change can prove to be difficult, but the toner headaches alone are enough for me to want to prompt change. Right now hundreds of pieces of paper are printed per shift and filled out by hand. One poor lady has to scan all these into a folder then they are just recycled. My thought is a few Windows based domain joined tablets with a shared account. That way all production paperwork can be filled out on the tablet and saved to the network location. 
+ I have explained this and am still getting some push back. Any other suggestions?
+    submitted by    /u/Emergency-Director80  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;162
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ybjjlz/sysadmin_role_in_the_eu/"
+                        open
+                      >
+                        <summary class="article-expander__title">Sysadmin Role in the EU</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ybjjlz/sysadmin_role_in_the_eu/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>In the EU is systems administrator a better defined role or could be anything ranging from network administration, windows and Linux administration, database admin, etc.
+    submitted by    /u/Inevitable-Lettuce99  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;146
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -432,6 +905,362 @@
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;136
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybwzag/network_switch_that_plugs_directly_into_power/"
+                        open
+                      >
+                        <summary class="article-expander__title">Network Switch That Plugs Directly Into Power Socket?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybwzag/network_switch_that_plugs_directly_into_power/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is anyone aware of a network switch that plugs directly into a power socket? Similar to some power line adapters but just a network switch. I have a weird space constraint in a certain spot and I need to route an ethernet connection to two devices and the cleanest solution would probably be something that plugs in like that. 100 Mbit switch is perfectly acceptable. No need to gigabit.
+    submitted by    /u/HarryMuscle  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybwszo/moronic_monday/"
+                        open
+                      >
+                        <summary class="article-expander__title">Moronic Monday!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybwszo/moronic_monday/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>It&#x27;s Monday, you&#x27;ve not yet had coffee and the week ahead is gonna suck. Let&#x27;s open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we&#x27;re too embarrassed to ask!
+ Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.
+ Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;230
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybvvdu/bgp_choice_for_evpn_1_ebgp_with_11_ases_2_ebgp/"
+                        open
+                      >
+                        <summary class="article-expander__title">BGP choice for EVPN; 1) eBGP with 1+1 ASes? 2) eBGP with 1+n ASes? 3) iBGP with RR?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybvvdu/bgp_choice_for_evpn_1_ebgp_with_11_ases_2_ebgp/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ I&#x27;m designing an EVPN-BGP network. I have never gone into etails wrt BGP.I read Krattiger&#x27;s book about EVPN-BGP a Nexus 9000&#x27;s perspective and there he always mentions that two fashions of eBGP might be used:
+  
+one AS for the spines, one for all the leaves; here the ption of accepting prefixes from own&#x27;s AS must be cnfigured, otherwise all the announcements will be discarded
+ one AS for the spines and one AS for each VTEP; here I only see a bit of complexity in configuring each VTEP because I cannot apply the same settings.
+  
+eBGP was proposed because, I think, if a peer goes down, then all the family memebers announce by it will be witdrawn in the peer&#x27;s BGP table.
+ Then somebody proposed to use
+ 3) iBGP but with Route Reflectors, because when a VTEP goes down all the family members announced by it will be withdrawn by the BGP tables of of al lthe clients.
+ What do you implement in your own EVPN-BGP design and why?Any preferences among the 3 options above?
+ TIA, Pan
+    submitted by    /u/Panatism  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybtae2/dynamic_reverse_proxy_solution/"
+                        open
+                      >
+                        <summary class="article-expander__title">Dynamic Reverse Proxy Solution?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybtae2/dynamic_reverse_proxy_solution/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The idea is simple: We need dynamic allocation of an incoming request via https, which will use a domain, e.g subdomain1.domain.org, which needs to be mapped to internal IP X.X.X.X and Port Y. Then, subdomain2.domain.org needs to go on a different port and IP. 
+ Nothing special so far.
+ ​
+ Dynamic meaning on the fly, without having to edit a config file. These mapping need to be editable by another program.
+ ​
+ The subdomains can be created at will and need to be routed to the correct instance of our program (where each instance runs on a different port).
+ There is nothing special needed, just a simple domain -&gt; IP:PORT mapping like HAProxy can do.
+ However, HAProxy has its Runtime API, which seems to not be able to hold up to this task.
+ ​
+ Do I need to create a custom forwarding solution, or are there existing ones which i could use?
+ I personally think that HAProxy is really made for this, but it does not feature a way for dyamic creation. Since adding needs to be done ASAP, these edits cannot be done by hand and have to happen automatically.
+ ​
+ Has anyone here experience regarding automatic proxying? It seems like NGINX has some kind of feature like this, but then i&#x27;d had to pay a few thousands bucks for their NGINX plus model.
+ ​
+ Please let me know if more clarification is needed.
+    submitted by    /u/Gandalf1783  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;135
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybpzjk/corporate_core_build_out/"
+                        open
+                      >
+                        <summary class="article-expander__title">Corporate Core Build Out</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybpzjk/corporate_core_build_out/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I’ve been tasked with helping build out a core network for our company. We recently merged with several other “local” businesses and are looking to build out a core network between the sites. Our CIO has already indicated his desire that the core will be a DWDM fiber ring but has left the rest to me (with assistance from some of our consultants).
+ I’m curious if anyone has any insights that they learned from doing something similar. Anything you wished you incorporated into the design? Any vendor preferences or experience? We are currently looking at Ciena and Adva for DWDM and Cisco and Extreme for Core Routing. And I’d like to have the same vendor supply both core routing and Data Center switches. Corporate Network itself will be Cisco for the foreseeable future.
+ Size wise (for context) Site is Core Chassis, 24 IDFs (30 9400 chassis) and ~400 Access Switches. ~65-70000 endpoints according to ISE. The other three sites are about 1/3-1/2 that size
+    submitted by    /u/clinch09  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;134
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybpgw7/access_points_for_use_in_humid_pool_area/"
+                        open
+                      >
+                        <summary class="article-expander__title">Access points for use in humid (pool) area?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybpgw7/access_points_for_use_in_humid_pool_area/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Like the title says. Looking for an access point or two that can withstand some humidity. The area is in an indoor pool area. Would be used year round. 
+ Anyone have any suggestions and/or experience they would be willing to share?
+ Thanks,
+    submitted by    /u/jdlnewborn  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybnaf6/local_preference_or_weight_not_taking_effect_when/"
+                        open
+                      >
+                        <summary class="article-expander__title">Local Preference or Weight not taking effect when tagging inbound prefixes with community attribute.. help?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybnaf6/local_preference_or_weight_not_taking_effect_when/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>route-map SymmetricReturn-&gt;Secondary permit 10 match ip address prefix-list ALL secondary match community 7723:1 set local-preference 300 set weight 300 neighbor 10.52.220.14 route-map SymmetricReturn-&gt;Secondary in BGP routing table entry for 1.1.1.0/24, version 2 Paths: (2 available, best #2, table Default-IP-Routing-Table) Advertised to update-groups: 2 7723 7723 7723 10.52.220.14 from 10.52.220.14 (10.62.220.10) Origin IGP, metric 0, localpref 100, valid, external Community: 7723:1 ip prefix-list ALL: 1 entries seq 5 permit 0.0.0.0/0 le 32 DDC#sh ip prefix-list secondary ip prefix-list secondary: 1 entries seq 5 permit 1.1.1.0/24 le 32 
+    submitted by    /u/ITNerdWhoGolfs  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;128
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybjko2/advice_on_suitable_router_for_wan_2_lans/"
+                        open
+                      >
+                        <summary class="article-expander__title">Advice on suitable router for WAN + 2 LANs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybjko2/advice_on_suitable_router_for_wan_2_lans/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am responsible for a community building in my village where we want to improve the network. The budget is limited of course.
+ I want to have an internal LAN, for internal equipment, which can also be accessible through WiFi. I also want to create a public LAN for guests, wireless as well as wired (from selected places). The private lan should not be reachable from the public lan, but the opposite is ok.
+ We managed to lay our hands on a Cisco WLC plus 5 APs as well as two Cisco manageable switches, so I believe that the only thing missing here is a router (preferably Cisco). Can anyone please suggest a suitable model? It needs to be able to handle Gigabit Ethernet, otherwise I don’t believe it needs any fancy features 
+ I have found a used Cisco ISR 4331 for about $250 which is within my budget. Would this be a good choice?
+ Thanks.
+    submitted by    /u/OA72  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybirq8/network_troubleshooting_question/"
+                        open
+                      >
+                        <summary class="article-expander__title">Network Troubleshooting Question</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybirq8/network_troubleshooting_question/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Look at the following route output - which path would be selected by the router? Explain how you came to your conclusion. 
+ you@router&gt; show route 120.50.40.64 
+ inet.0: 2296 destinations, 3790 routes 
+ (2295 active, 10 holddown, 1 hidden) 
+ + &#x3D; Active Route, - &#x3D; Last Active, * &#x3D; Both 
+ 120.50.40.64/26 
+ Path 1: [BGP/170] 7w1d 20:47:51, MED 0, localpref 120, from 120.50.40.178 
+  AS path: 64207 I, validation-state: unverified 
+  &gt; to 120.50.41.238 via xe-1/3/0.1851 
+ Path 2: [BGP/170] 4w1d 10:36:31, MED 0, localpref 90, from 120.50.40.190 
+  AS path: 64207 I, validation-state: unverified 
+  &gt; to 120.50.40.226 via xe-1/2/0.759
+    submitted by    /u/thesumeriangod  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;131
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ybippb/network_question/"
+                        open
+                      >
+                        <summary class="article-expander__title">Network Question</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ybippb/network_question/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Please review the following TRACEROUTE and identify where and why this user is experiencing slow network performance. 
+ C:/&gt;tracert202.248.37.74 
+ Tracing route to dns.nifty.com [202.248.37.74]
+ over a maximum of 30 hops: 
+ 1 13 ms 14 ms 14 ms 10.240.0.1 
+ 2 16 ms 16 ms 19 ms 172.16.206.1 
+ 3 16 ms 22 ms 14 ms irb1.ivr1.ss.sls.md.atlantech.net [207.188.223.194] 
+ 4 16 ms 15 ms 14 ms xe-1-3-0.cr2.ss.sls.md.atlantech.net [76.76.210.100] 
+ 5 17 ms 16 ms 17 ms 76.76.209.74 
+ 6 21 ms 17 ms 19 ms xe-0-0-1.ber1.eqix.ash.va.atlantech.net [76.76.211.177] 
+ 7 17 ms 20 ms 18 ms 38.32.186.169 
+ 8 19 ms 18 ms 19 ms ae-58.r06.asbnva02.us.bb.gin.ntt.net [129.250.8.121] 
+ 9 * 19 ms 31 ms ae-8.r25.asbnva02.us.bb.gin.ntt.net [129.250.2.120] 
+ 10 78 ms 84 ms 75 ms ae-2.r25.lsanca07.us.bb.gin.ntt.net [129.250.3.189] 
+ 11 190 ms 192 ms 191 ms ae-12.r31.tokyjp05.jp.bb.gin.ntt.net [129.250.3.192] 
+ 12 195 ms 195 ms 193 ms ae-3.r03.tokyjp05.jp.bb.gin.ntt.net [129.250.3.56] 
+ 13 186 ms 186 ms 193 ms ae-2.ocn.tokyjp05.jp.bb.gin.ntt.net [120.88.53.26] 
+ 14 196 ms 202 ms 201 ms 60.37.54.162 
+ 15 197 ms 200 ms 191 ms 211.0.211.190 
+ 16 182 ms 185 ms 543 ms 133.160.233.58 
+ 17 195 ms 189 ms 191 ms 133.160.232.134 
+ 18 190 ms 194 ms 192 ms 133.160.138.10 
+ 19 184 ms 186 ms 182 ms 61.121.125.21 
+ 20 * * * Request timed out. 
+ 21 * * * Request timed out. 
+ 22 * * * Request timed out. 
+ 23 * * * Request timed out. 
+ 24 * * * Request timed out. 
+ 25 * * * Request timed out. 
+ 26 * * * Request timed out. 
+ 27 * * * Request timed out. 
+ 28 * * * Request timed out. 
+ 29 * * * Request timed out. 
+ 30 * * * Request timed out.
+    submitted by    /u/thesumeriangod  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;132
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/yban7d/do_you_have_10gbe_internet_residential_or/"
+                        open
+                      >
+                        <summary class="article-expander__title">do you have 10gbe internet residential or business - how much do you pay?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yban7d/do_you_have_10gbe_internet_residential_or/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m wondering what the availability of 10 gigabit is and how its changed. Please mention the city and the provider if you&#x27;re able. Also if there are any commitments required.
+ Here is an old post I found:
+ https://www.reddit.com/r/networking/comments/85dddh/enterprise_how_much_do_you_pay_for_10_gigabit/
+    submitted by    /u/Ashtonian  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;129
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;HFjJvWPwuJo"
+                        open
+                      >
+                        <summary class="article-expander__title">I Gamed With THIS for a MONTH – Azeron Cyborg</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;HFjJvWPwuJo">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -45616,236 +46445,6 @@ Edit: Removed link pasted email
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xn2jkf/found_my_company_has_a_public_facing_website_that/"
-                        open
-                      >
-                        <summary class="article-expander__title">Found my company has a public facing website that doesn&#x27;t need a password to log in. Not sure where to proceed.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xn2jkf/found_my_company_has_a_public_facing_website_that/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Long story short, it&#x27;s a website meant for employees. But the public internet can access it as well.
- The problem is that they rolled out a update a few months ago where users don&#x27;t need to enter in a password to log in. I discovered this by accident.
- You just need the username, and the system will log you into the account, giving you information such as the employee&#x27;s addresses, contact information, payroll information and so on. Nor is there a &quot;too many attempts&quot; timeout, because I presume that was tied with the password.
- IT department at my office has no idea who to contact to address that issue.
- The website&#x27;s own contact email is never answered. When I called them and waited +3 hours on the line, the help desk person insisted that removing the password was a convince feature, not a …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;112
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/xmsyf2/fully_remote_means_i_can_live_anywhere_should_i/"
-                        open
-                      >
-                        <summary class="article-expander__title">Fully remote means I can live anywhere, should I move?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/xmsyf2/fully_remote_means_i_can_live_anywhere_should_i/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Applying for a fully remote position which lead me to thinking, I can live anywhere now (assuming I get it). I could live at the beach, on a mountain, in the city, on a farm... Anyone dealt with this before? Did you move? I would love to lay low for a few years and save cash, but don&#x27;t know if I would dig living in a small town. Just looking for opinions.
- EDIT: I would not be leaving the country or even my state. Just meant changing cities. I live in NC, so I could live at the beach, or the mountains, or stay in Raleigh, or move out into the sticks.
-    submitted by    /u/paperlevel  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;129
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Linus Tech Tips</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;8dEIy1YXJ4A"
-                        open
-                      >
-                        <summary class="article-expander__title">My wife vetoed my plan</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;8dEIy1YXJ4A">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xmvddb/sdwan_functionality/"
-                        open
-                      >
-                        <summary class="article-expander__title">SD-WAN Functionality</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xmvddb/sdwan_functionality/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey all - I&#x27;m trying to verify that our Meraki SD-WAN is actually utilizing the full bandwidth of our 2 500mb circuits and not seeing what I thought I would, so hoping for a suggestion. Doing an internet speed test yields the same result if I take one of the circuits out (approx 500mb up/down). The MX device shows that both circuits are active and it is set to load balance. That said, the device still makes you pick a &#x27;primary&#x27; circuit and seems to be using that one exclusively for my testing.
-    submitted by    /u/bmessinachicago  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;94
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xml8ii/are_there_devices_that_negotiate_poe_with_a/"
-                        open
-                      >
-                        <summary class="article-expander__title">Are there devices that negotiate POE with a POE-Switch resulting in passive POE - but not having a separate power source (so no POE Injector)?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xml8ii/are_there_devices_that_negotiate_poe_with_a/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have a POE+ Switch, that specifically states no passive POE is possible. Are there devices allowing passive POE that draw power from this switch?
- I am aware there are POE injectors, I have them. But are there devices that negotiate POE with the POE-Switch itself and drawing power from the switch and not from a separate power source?
-    submitted by    /u/greyish_sea  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;92
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/xmkwey/finding_macs_from_vxlan/"
-                        open
-                      >
-                        <summary class="article-expander__title">Finding macs from Vxlan</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/xmkwey/finding_macs_from_vxlan/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So I work in a juniper dominant environment and Vxlan plays a big role. Chasing down a mac/ip address is fairly simple but not here. Does anyone know how with junos to chase down a mac/ip address once &quot;show arp&quot; or &quot;show ethernet-switching table&quot; gives the output of a lsi or vtep interface on the interface column?
-    submitted by    /u/300betos  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;116
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Morning Wire</button>
-                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="ece4e5f1-4eea-4db1-9c5f-23e0e688ec20"
-                        open
-                      >
-                        <summary class="article-expander__title">Overmedicating our Children? | 9.24.22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>A record number of teens are being prescribed psychiatric drugs, concerns rise about the state of the global food supply, and an interview with Whole Foods founder John Mackey. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-09-23 datetime="2022-09-24T03:50:38.000Z">2022-09-23</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-09-23 datetime="2022-09-24T03:50:38.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Linus Tech Tips</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;7YuiFlhe8j4"
-                        open
-                      >
-                        <summary class="article-expander__title">NVIDIA Thinks You&#x27;re RICH - WAN Show September 23, 2022</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;7YuiFlhe8j4">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45853,8 +46452,8 @@ Edit: Removed link pasted email
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3307391527">
-        <time id="build-timestamp" datetime="2022-10-23T14:18:25.862Z">2022-10-23T14:18:25.862Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3311562359">
+        <time id="build-timestamp" datetime="2022-10-24T09:28:50.892Z">2022-10-24T09:28:50.892Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

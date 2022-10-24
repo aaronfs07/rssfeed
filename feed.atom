@@ -2,10 +2,512 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-23T14:18:25.958Z</updated>
+    <updated>2022-10-24T09:28:50.975Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to find out what is blocking a port]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc6qrl/how_to_find_out_what_is_blocking_a_port/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc6qrl/how_to_find_out_what_is_blocking_a_port/"/>
+        <updated>2022-10-24T09:28:03.000Z</updated>
+        <summary type="html"><![CDATA[Hi there,
+ I am trying to troubleshoot an issue for a customer where our screen sharing solution requires port 7100 to be open in order for it to work correctly however, with this particular customer we've found that their managed devices are not working. We can bring in unmanaged devices on their network and our software works fine but it's only when we try and connect using their managed devices do we get blocked. 
+ We've disabled their Sophos AV, apparently they've had a look at their inbound/outbound ports on Windows Defender and can't see any blocks on 7100 so my question is - how else can we find out what's blocking this port? Any scanning tools that will point us to some kind of GPO or other application block?
+    submitted by    /u/pattske  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Help needed: Run Sysinternals Process Explorer via Task scheduler (installed via winget on Win11)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc5z5o/help_needed_run_sysinternals_process_explorer_via/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc5z5o/help_needed_run_sysinternals_process_explorer_via/"/>
+        <updated>2022-10-24T08:39:16.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I'm unable to setup the Process Explorer to run at startup via Task Scheduler. Regardless if I create the task via the Process Explorer menu 'Run at startup' or manually I am unable to make it work.
+ I've installed Systeinternals via winget: ````
+  
+winget list sysinternals
+ Name Id Version Source
+ Sysinternals Suite 9P7KNL5RWT25 2022.10.1.0 msstore ````
+  
+Running the task does nothing and there are no errors in the task history log. It is as if nothing happens. 'Run with highest privileges' also does nothing What I find very odd about the installation is that procexp.exe is a 0kb file in the Local/Microsoft/WindowsApps folder. It has no icon but I can run it normally by double-clicking on it. However if I use Task Scheduler and I try to selected it (via Browser on Actions) I get the following error:  procexp.exe The file cannot be accessed by the system. 
+ Any help would be appreciated. Thank you.
+    submitted by    /u/tritiy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[client devices reverting to retail pro key after reboot]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc5nbq/client_devices_reverting_to_retail_pro_key_after/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc5nbq/client_devices_reverting_to_retail_pro_key_after/"/>
+        <updated>2022-10-24T08:18:00.000Z</updated>
+        <summary type="html"><![CDATA[we've recently started to move our default deployed image to win11. We've since noticed that activation is behaving weird and so far i cannot get to the bottom of whats going on.
+ We deploy our image via ConfMgr. Enterprise version is selected from the iso as a untouched image. All our changes are done via GPO or CM after the iso. Originally it did not have a key defined (overlooked/assumed AD KMS would take over), but thats now been corrected in the Task Sequence.
+ I stumbled on the fact my laptop is one thats affected; it's using the Pro retail key thats burnt into UEFI. ok - no problem; slmgr /upk, /ipk {GVLK}, /ato and /dli to confirm. /dli shows the expected KMS activation from AD. Great, job done i'll get that pushed out to existing clients via a Task Sequence that runs those same commands. A week later i noticed my laptop is back to the pro licence (i reboot weekly; sleep the laptop during the week)
+ redo the slmgr process, reboot and now the key has reverted back to the pro retail key again.
+ has anyone seen this behaviour or know why it's occuring?
+    submitted by    /u/veehexx  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Help needed finding a specific network tool]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc5kje/help_needed_finding_a_specific_network_tool/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc5kje/help_needed_finding_a_specific_network_tool/"/>
+        <updated>2022-10-24T08:12:48.000Z</updated>
+        <summary type="html"><![CDATA[Friendly redditors and fellow sysadmins, I need to prevail upon your assistance on this fine Monday. 
+ I am attempting to identify a specific planning tool that I have encountered in the past, but cannot for the life of me remember the name of. My Google foo seems to be pretty bad today as well.
+ In summary, this is a tool published by a company (can’t remember the name) that allows you to pay an annual license fee to get access to part libraries from various vendors and then use these to build BOMs to submit to suppliers. I know it has libraries from Aruba, Cisco, Extreme, to name but a few. 
+ Before anyone says it, I am not thinking about Visio or anything like that. This tool allows you to select e.g. an Aruba CX6300 switch and then can show you which addon modules are compatible with this switch and would then allow you build a complete BOM around this, including PSUs, SFP transceivers, interconnect cables, etc.
+ Please, if anybody knows this tool, I am trying to identify it, as I need to submit budget approval for it.
+    submitted by    /u/jacod1982  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Excel on RDS-Server - Licensing]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc5904/excel_on_rdsserver_licensing/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc5904/excel_on_rdsserver_licensing/"/>
+        <updated>2022-10-24T07:51:03.000Z</updated>
+        <summary type="html"><![CDATA[Hi!
+ ​
+ I need to use Microsoft Excel on a Windows Terminalserver for about 30 users.
+ Currently, there is no Azure Active Directory in use (and not planned).
+ ​
+ Office 365 seems to be the easiest option, but I do not want every user to have to logon daily "manually". --> Is there any possibility without AAD to automate the logon?
+ ​
+ My alternative seems to be Excel as OpenValue with SA.
+ ​
+ Are you aware of any other option?
+ ​
+ Thank you for your help
+ ITStril
+    submitted by    /u/ITStril  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Exchange Hybrid Mesh using Organization Relationships]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc53vi/exchange_hybrid_mesh_using_organization/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc53vi/exchange_hybrid_mesh_using_organization/"/>
+        <updated>2022-10-24T07:41:17.000Z</updated>
+        <summary type="html"><![CDATA[Hi There , 
+ ​
+ ​
+ I have a scenario and couple questions 
+ ​
+ Here is the following configuration of the two organizations:
+ ​
+ Organization 1:
+ ​
+ Exchange 2013 CU23
+ ​
+ Organization 2:
+ ​
+ Exchange 2016 CU19 & Hybrid 
+ ​
+ Both organizations have an internal connection between them and a Full Trust Relationship.
+ ​
+ ​
+ I am very confused related to the Organization Relationships.
+ ​
+ I have found an article like below.
+ ​
+ https://techcommunity.microsoft.com/t5/exchange-team-blog/the-hybrid-mesh/ba-p/605910
+ ​
+ MS says:
+ ​
+  
+Create an Organization Relationship between Contoso on-premises and Tailspin on-premises. Use a unique SMTP namespace for the domain name in the Organization Relationship like OnPrem.Tailspintoys.com
+  
+Note: In most environments, the shared namespace “TailspinToys.com” can be used as the Target address for on-premises users and you would not need the additional namespace of onprem.TailspinToys.com. However, to account for all complex partnerships that could be in place, a unique namespace used as the target address will ensure free busy works properly.
+ ​
+ Note: The domain name “TailspinToys.com” is not present in any of the Organization Relationships in the Contoso environment. Keeping this name out of the Organization Relationship will ensure that you can continue to use the shared namespace and see free/busy information.
+ ​
+ ​
+ ​
+ ​
+ Do I have to use unique address like OnPrem.companyb.com? Because We dont have any DNS record such as OnPrem.companyb.com. I want to use companyb.com as domain name for Organization Relationship between Company A on-premises and Company B on-premises. 
+ ​
+ thanks,
+    submitted by    /u/maxcoder88  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Outlook contact sync bug]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc4vyw/outlook_contact_sync_bug/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc4vyw/outlook_contact_sync_bug/"/>
+        <updated>2022-10-24T07:26:41.000Z</updated>
+        <summary type="html"><![CDATA[Hello Admins of Reddit,
+ First of all, English isn’t my first language, so sorry about any mistakes i make. We have an On-Premise Exchange 2016 running on a VM. I received two support tickets declaring crashes after importing company contacts into own contacts. Outlook then loses connection for about 10-15 Minutes. Can anyone help me with this?
+    submitted by    /u/Hot_Potato_Salad  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Collapsed for Campus and 3-Tier Network for Data Center]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc4nu3/collapsed_for_campus_and_3tier_network_for_data/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc4nu3/collapsed_for_campus_and_3tier_network_for_data/"/>
+        <updated>2022-10-24T07:11:48.000Z</updated>
+        <summary type="html"><![CDATA[Hi Folks,
+ We are designing a network for our new medical center within the region. When designing a hierarchical network, we were having brainstorming discussion with internal engineering team to take a decide on using 3-tier network for Data Center and 2-Tier for Campus (endpoints and end devices)
+ The center would occupy 2000+ endpoints in the network. We propose two main core switches, setup as VSS and aggregating approx. 70 access switches installed in different floors in the building communication rooms. Single stack contains 5 or 6 access switches with 10G uplinks to upstream core switches. Access are all L2, and we route between VLANs using SVIs on the core switches and some VLANs are firewalled for Guest and IoT devices.
+ Pair of high specs firewalls connected to cores for perimeter (internet, wan & dmz) and internal segmentation (servers & end devices, depending on the use case and security controls requirements.
+ Eventually, with regard to servers, we are thinking about having 3-tier network: access > distribution > main campus core
+ Two distribution switches with Servers SVIs on them or Firewalls. 
+ L2 links terminated on Cores with Point-to-Point transit VLAN. Servers connecting to TOR access switches. 
+ Please share your thoughts and comments for 3-tier approach and feel free to add your invaluable inputs if anything is wrong in the design.
+    submitted by    /u/techno_it  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is greylisting still viable in spam protection?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc3wqx/is_greylisting_still_viable_in_spam_protection/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc3wqx/is_greylisting_still_viable_in_spam_protection/"/>
+        <updated>2022-10-24T06:23:34.000Z</updated>
+        <summary type="html"><![CDATA[We've recently discussed if we should keep greylisting enabled on our spam filters.
+ I've been researching opinions about greylisting and it seems to have some mixed reactions. Some say it still useful while others say it just causes headaches with email delays and doesn't help that much.
+ What's your take on it?
+    submitted by    /u/Grindie  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Core switch 10 years old]]></title>
+        <id>https://www.reddit.com/r/networking/comments/yc286j/core_switch_10_years_old/</id>
+        <link href="https://www.reddit.com/r/networking/comments/yc286j/core_switch_10_years_old/"/>
+        <updated>2022-10-24T04:39:45.000Z</updated>
+        <summary type="html"><![CDATA[I installed our current “core” switch, a HP 5412zl, exactly 10 years ago. Small network for a SMB ($55m/yr in revenue). 24/7 casino/hotel, so downtime would hurt but ownership understands shit happens.
+ Have 12 other ProCurve edge switches connecting to it with 2 or 3 1GbE trunks. It does my VLAN routing. All copper currently, might add fiber in a few years when we expand. Kept it simple. IP cameras are the top bandwidth devices. 
+ I updated the firmware 400 days ago, which was the last reboot. I have a spare eBay 5412zl on a shelf for parts. 
+ How much risk is involved with running a 10+ core switch? Am I crazy to run this another 5 years before replacing it? Do you see switches fail after 10+ years frequently?
+    submitted by    /u/mUnChlee  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Boot macrium img backup to vm using only the external hdd?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yc0vvu/boot_macrium_img_backup_to_vm_using_only_the/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yc0vvu/boot_macrium_img_backup_to_vm_using_only_the/"/>
+        <updated>2022-10-24T03:25:37.000Z</updated>
+        <summary type="html"><![CDATA[Did img backup using macrium of windows 10 ssd 240gb (full) to my external 2tb hdd, how do I boot into a vm from my external hdd since the internal ssd is full? It wouldn't let me as the img backup and the initial boot (loading the macrium iso) of the vm can't both be from the external hdd apparently? Just want to test and see if the backup works/is stable. Thanks all.
+ ​
+ EDIT: More info. I set the vm file location to the external hdd and when I tried to enable the physical usb external hdd to connect to the vm to load the disk img backup, an error popped up basically saying I can't do those 2 things from an external drive?? It wouldn't let me boot and recover the backup since if I enabled the physical external hdd to the vm to access the img backup, it would disable the external hdd to the main pc which is what the vm is running from. 
+ Is there a way for the external hdd to work in the vm and with the main pc at the same time?
+ ​
+ Have I just missed something obvious? I am confused lol. 
+ ​
+ I must've done something wrong. Most people can't just boot up their backup on the internal drive because who has enough space for that? (Essentially 2 copies of a whole computer on the same drive) Mine is only 240gb, how do guys with maxed 3tb drives test their backups? Nobody just assumes their giant backup works?
+    submitted by    /u/akiraperera04  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Can anyone point me to an Imaging server guide?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybzohn/can_anyone_point_me_to_an_imaging_server_guide/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybzohn/can_anyone_point_me_to_an_imaging_server_guide/"/>
+        <updated>2022-10-24T02:22:08.000Z</updated>
+        <summary type="html"><![CDATA[We currently use USB’s to image new computers. I’d like to find a faster method and was wondering if anyone had any guides to do this?
+ We have 10+ offices and each has their own localized server, so they’re not all interconnected or anything. Have only been at this company for about a year fresh out of college, I’m currently the only IT on premises with msp backup support. 
+ Thanks guys!
+    submitted by    /u/227rite  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Strange error after p2v]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybyeur/strange_error_after_p2v/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybyeur/strange_error_after_p2v/"/>
+        <updated>2022-10-24T01:18:26.000Z</updated>
+        <summary type="html"><![CDATA[So during the weekend we tried a « p2v » conversion from an azure VM to vmware 7.0u3 host
+ We used the vmware converter latest version and the conversion went fine. Windows booted (2008r2) lol and everything worked, except the SSL certificate. Who was broken
+ We even tried to reimported the SSL certificate and it seems that the whole ssl certificate IIS store stemmed broken
+ So we tried to download the VHD from azure and convert them to VMDK and import them into vmware and all worked #1
+ Is it something that vmware converter couldn’t do or is it something on the azure side?
+ I’m kinda lost
+ Thanks
+    submitted by    /u/neko_whippet  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[As a sysadmin, what's your attitude towards (or solution for) non-tech staff that talk with authority on tech-related issues?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yby0kp/as_a_sysadmin_whats_your_attitude_towards_or/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yby0kp/as_a_sysadmin_whats_your_attitude_towards_or/"/>
+        <updated>2022-10-24T00:59:15.000Z</updated>
+        <summary type="html"><![CDATA[I work at a university, and most staff that have IT issues seem to think they already know the answer, or just have general "hmm I still think IT is at fault" demeanour when you're giving an answer to their problem.
+ I generally try to be really civil, but sometimes the answer to an issue is so glaringly obvious, and becomes a real waste of time have to go through all the rigmarole to prove that the problem is a user problem, not a system/network/IT problem, that I feel I need to be a bit more blunt and not worry too much about how I'm coming across.
+ To give you an example, just recently I had person in senior management raise a ticket because an important document couldn't be found on SharePoint. The ticket was escalated to me, and after looking into it, it just looks like someone moved the doc into another folder (probably accidentally). The user was trying to access the file from a URL link, and when it didn't work (because the file was moved), they panicked and assumed IT had done something. When I told the user that the file was most likely moved, their response is still implying that IT had something to do with it, as no one in their team (over 10 people, all with edit access to the file) would have moved the file. I reiterated that it was probably an accident by someone in the team, and a fairly common and easily addressable mistake, but the user has now involved their manager, to make sure the problem doesn't happen again. It's now become a way bigger issue than it ever needed to be, all because someone just accidentally moved an important file, and the user just can't accept that this happened and it wasn't someone IT behind it.
+ This is just a recent scenario. Issues like these seem to happen all the time, where frustrated users just don't believe what you're telling them and seem to just blame anything on either IT staff or systems that they don't understand, yet speak with authority on.
+ Any advice?
+    submitted by    /u/PsyduckAF  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network Switch That Plugs Directly Into Power Socket?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybwzag/network_switch_that_plugs_directly_into_power/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybwzag/network_switch_that_plugs_directly_into_power/"/>
+        <updated>2022-10-24T00:08:27.000Z</updated>
+        <summary type="html"><![CDATA[Is anyone aware of a network switch that plugs directly into a power socket? Similar to some power line adapters but just a network switch. I have a weird space constraint in a certain spot and I need to route an ethernet connection to two devices and the cleanest solution would probably be something that plugs in like that. 100 Mbit switch is perfectly acceptable. No need to gigabit.
+    submitted by    /u/HarryMuscle  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moronic Monday!]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybwszo/moronic_monday/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybwszo/moronic_monday/"/>
+        <updated>2022-10-24T00:00:12.000Z</updated>
+        <summary type="html"><![CDATA[It's Monday, you've not yet had coffee and the week ahead is gonna suck. Let's open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we're too embarrassed to ask!
+ Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.
+ Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[moving from generalist to cybersecurity]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybwlqm/moving_from_generalist_to_cybersecurity/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybwlqm/moving_from_generalist_to_cybersecurity/"/>
+        <updated>2022-10-23T23:50:23.000Z</updated>
+        <summary type="html"><![CDATA[I have been a generalist in it for many years I do have knowledge in lots of things. Should I start studying cybersecurity or something to keep me safe in the it world. With all the changes
+    submitted by    /u/Professional_Hyena_9  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[BGP choice for EVPN; 1) eBGP with 1+1 ASes? 2) eBGP with 1+n ASes? 3) iBGP with RR?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybvvdu/bgp_choice_for_evpn_1_ebgp_with_11_ases_2_ebgp/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybvvdu/bgp_choice_for_evpn_1_ebgp_with_11_ases_2_ebgp/"/>
+        <updated>2022-10-23T23:15:26.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I'm designing an EVPN-BGP network. I have never gone into etails wrt BGP.I read Krattiger's book about EVPN-BGP a Nexus 9000's perspective and there he always mentions that two fashions of eBGP might be used:
+  
+one AS for the spines, one for all the leaves; here the ption of accepting prefixes from own's AS must be cnfigured, otherwise all the announcements will be discarded
+ one AS for the spines and one AS for each VTEP; here I only see a bit of complexity in configuring each VTEP because I cannot apply the same settings.
+  
+eBGP was proposed because, I think, if a peer goes down, then all the family memebers announce by it will be witdrawn in the peer's BGP table.
+ Then somebody proposed to use
+ 3) iBGP but with Route Reflectors, because when a VTEP goes down all the family members announced by it will be withdrawn by the BGP tables of of al lthe clients.
+ What do you implement in your own EVPN-BGP design and why?Any preferences among the 3 options above?
+ TIA, Pan
+    submitted by    /u/Panatism  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Whats the deal with CVE's being classifed as "critical" or "problematic" recently?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybvvaa/whats_the_deal_with_cves_being_classifed_as/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybvvaa/whats_the_deal_with_cves_being_classifed_as/"/>
+        <updated>2022-10-23T23:15:19.000Z</updated>
+        <summary type="html"><![CDATA[Part of my morning blog round up is I look through the National Vulnerability Database for any software we run or anything else I need to keep an eye on and I've noticed recently that stuff is being marked as below 
+ https://imgur.com/a/gDYqgtu 
+ Still get number out of 9.9 and such, is it to get you to look at critical items more or something else going on?
+    submitted by    /u/Mydadpicksthefruit  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dynamic Reverse Proxy Solution?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybtae2/dynamic_reverse_proxy_solution/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybtae2/dynamic_reverse_proxy_solution/"/>
+        <updated>2022-10-23T21:20:11.000Z</updated>
+        <summary type="html"><![CDATA[The idea is simple: We need dynamic allocation of an incoming request via https, which will use a domain, e.g subdomain1.domain.org, which needs to be mapped to internal IP X.X.X.X and Port Y. Then, subdomain2.domain.org needs to go on a different port and IP. 
+ Nothing special so far.
+ ​
+ Dynamic meaning on the fly, without having to edit a config file. These mapping need to be editable by another program.
+ ​
+ The subdomains can be created at will and need to be routed to the correct instance of our program (where each instance runs on a different port).
+ There is nothing special needed, just a simple domain -> IP:PORT mapping like HAProxy can do.
+ However, HAProxy has its Runtime API, which seems to not be able to hold up to this task.
+ ​
+ Do I need to create a custom forwarding solution, or are there existing ones which i could use?
+ I personally think that HAProxy is really made for this, but it does not feature a way for dyamic creation. Since adding needs to be done ASAP, these edits cannot be done by hand and have to happen automatically.
+ ​
+ Has anyone here experience regarding automatic proxying? It seems like NGINX has some kind of feature like this, but then i'd had to pay a few thousands bucks for their NGINX plus model.
+ ​
+ Please let me know if more clarification is needed.
+    submitted by    /u/Gandalf1783  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What laptop do you have and what are the pros and cons to it?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybswts/what_laptop_do_you_have_and_what_are_the_pros_and/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybswts/what_laptop_do_you_have_and_what_are_the_pros_and/"/>
+        <updated>2022-10-23T21:04:00.000Z</updated>
+        <summary type="html"><![CDATA[The company I'm working for has historically bought whatever random computers were needed as people were hired from wherever they could get them. This was ok at first but we've grown and need to start operating more like a real IT department.
+ I'd like to hear what laptop you have and how it differs from what your users have, or if you have multiple tiers.
+ The market really is Dell, HP and Lenovo. I'm not really interested in HP.
+ They say IT should have what the users have. We're a bit tricky since we have a ton of tech employees and engineers.
+ A lot of people are running docker on their laptops but do not need absolutely absurd power but this just means the low end is out.
+ I think we can cross off anything extremely low end, but also 9 pound workstation devices.
+    submitted by    /u/detectivejoebookman  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Company Intranet]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybsrzq/company_intranet/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybsrzq/company_intranet/"/>
+        <updated>2022-10-23T20:58:30.000Z</updated>
+        <summary type="html"><![CDATA[Hi Folks!
+ I was asked to deploy an Company Intranet, where HR etc.. can provide Informations. Do you guys have any Open Source, Free and Easy to Setup & Use Software recommendation? 
+ Confuence is used for IT and Dev Documentations but there are some issues with the Pricing for all employees. 250+
+    submitted by    /u/kpwde  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[dumb question but i’d like an answer :)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybs234/dumb_question_but_id_like_an_answer/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybs234/dumb_question_but_id_like_an_answer/"/>
+        <updated>2022-10-23T20:27:46.000Z</updated>
+        <summary type="html"><![CDATA[so i work as a 1st line tech and I do gpupdates nearly daily to fix people’s issues. the problem is that this doesn’t always work so if i delete the machine.pol and user.pol files and g update again it works. why is that? TIA
+    submitted by    /u/alexmcross18  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Corporate Core Build Out]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybpzjk/corporate_core_build_out/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybpzjk/corporate_core_build_out/"/>
+        <updated>2022-10-23T19:02:39.000Z</updated>
+        <summary type="html"><![CDATA[I’ve been tasked with helping build out a core network for our company. We recently merged with several other “local” businesses and are looking to build out a core network between the sites. Our CIO has already indicated his desire that the core will be a DWDM fiber ring but has left the rest to me (with assistance from some of our consultants).
+ I’m curious if anyone has any insights that they learned from doing something similar. Anything you wished you incorporated into the design? Any vendor preferences or experience? We are currently looking at Ciena and Adva for DWDM and Cisco and Extreme for Core Routing. And I’d like to have the same vendor supply both core routing and Data Center switches. Corporate Network itself will be Cisco for the foreseeable future.
+ Size wise (for context) Site is Core Chassis, 24 IDFs (30 9400 chassis) and ~400 Access Switches. ~65-70000 endpoints according to ISE. The other three sites are about 1/3-1/2 that size
+    submitted by    /u/clinch09  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Access points for use in humid (pool) area?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybpgw7/access_points_for_use_in_humid_pool_area/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybpgw7/access_points_for_use_in_humid_pool_area/"/>
+        <updated>2022-10-23T18:42:04.000Z</updated>
+        <summary type="html"><![CDATA[Like the title says. Looking for an access point or two that can withstand some humidity. The area is in an indoor pool area. Would be used year round. 
+ Anyone have any suggestions and/or experience they would be willing to share?
+ Thanks,
+    submitted by    /u/jdlnewborn  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tips to go paperless]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybne7h/tips_to_go_paperless/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybne7h/tips_to_go_paperless/"/>
+        <updated>2022-10-23T17:20:20.000Z</updated>
+        <summary type="html"><![CDATA[I work in a manufacturing environment. Many things are done “because this is how we’ve always done it”. Change can prove to be difficult, but the toner headaches alone are enough for me to want to prompt change. Right now hundreds of pieces of paper are printed per shift and filled out by hand. One poor lady has to scan all these into a folder then they are just recycled. My thought is a few Windows based domain joined tablets with a shared account. That way all production paperwork can be filled out on the tablet and saved to the network location. 
+ I have explained this and am still getting some push back. Any other suggestions?
+    submitted by    /u/Emergency-Director80  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Local Preference or Weight not taking effect when tagging inbound prefixes with community attribute.. help?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybnaf6/local_preference_or_weight_not_taking_effect_when/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybnaf6/local_preference_or_weight_not_taking_effect_when/"/>
+        <updated>2022-10-23T17:16:19.000Z</updated>
+        <summary type="html"><![CDATA[route-map SymmetricReturn->Secondary permit 10 match ip address prefix-list ALL secondary match community 7723:1 set local-preference 300 set weight 300 neighbor 10.52.220.14 route-map SymmetricReturn->Secondary in BGP routing table entry for 1.1.1.0/24, version 2 Paths: (2 available, best #2, table Default-IP-Routing-Table) Advertised to update-groups: 2 7723 7723 7723 10.52.220.14 from 10.52.220.14 (10.62.220.10) Origin IGP, metric 0, localpref 100, valid, external Community: 7723:1 ip prefix-list ALL: 1 entries seq 5 permit 0.0.0.0/0 le 32 DDC#sh ip prefix-list secondary ip prefix-list secondary: 1 entries seq 5 permit 1.1.1.0/24 le 32 
+    submitted by    /u/ITNerdWhoGolfs  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I Gamed With THIS for a MONTH – Azeron Cyborg]]></title>
+        <id>https://www.youtube.com/watch?v=HFjJvWPwuJo</id>
+        <link href="https://www.youtube.com/watch?v=HFjJvWPwuJo"/>
+        <updated>2022-10-23T16:57:20.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Advice on suitable router for WAN + 2 LANs]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ybjko2/advice_on_suitable_router_for_wan_2_lans/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ybjko2/advice_on_suitable_router_for_wan_2_lans/"/>
+        <updated>2022-10-23T14:47:17.000Z</updated>
+        <summary type="html"><![CDATA[I am responsible for a community building in my village where we want to improve the network. The budget is limited of course.
+ I want to have an internal LAN, for internal equipment, which can also be accessible through WiFi. I also want to create a public LAN for guests, wireless as well as wired (from selected places). The private lan should not be reachable from the public lan, but the opposite is ok.
+ We managed to lay our hands on a Cisco WLC plus 5 APs as well as two Cisco manageable switches, so I believe that the only thing missing here is a router (preferably Cisco). Can anyone please suggest a suitable model? It needs to be able to handle Gigabit Ethernet, otherwise I don’t believe it needs any fancy features 
+ I have found a used Cisco ISR 4331 for about $250 which is within my budget. Would this be a good choice?
+ Thanks.
+    submitted by    /u/OA72  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sysadmin Role in the EU]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ybjjlz/sysadmin_role_in_the_eu/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ybjjlz/sysadmin_role_in_the_eu/"/>
+        <updated>2022-10-23T14:46:06.000Z</updated>
+        <summary type="html"><![CDATA[In the EU is systems administrator a better defined role or could be anything ranging from network administration, windows and Linux administration, database admin, etc.
+    submitted by    /u/Inevitable-Lettuce99  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Network Troubleshooting Question]]></title>
         <id>https://www.reddit.com/r/networking/comments/ybirq8/network_troubleshooting_question/</id>
@@ -27537,98 +28039,6 @@ Edit: Removed link pasted email
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Found my company has a public facing website that doesn't need a password to log in. Not sure where to proceed.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/xn2jkf/found_my_company_has_a_public_facing_website_that/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/xn2jkf/found_my_company_has_a_public_facing_website_that/"/>
-        <updated>2022-09-24T20:01:44.000Z</updated>
-        <summary type="html"><![CDATA[Long story short, it's a website meant for employees. But the public internet can access it as well.
- The problem is that they rolled out a update a few months ago where users don't need to enter in a password to log in. I discovered this by accident.
- You just need the username, and the system will log you into the account, giving you information such as the employee's addresses, contact information, payroll information and so on. Nor is there a "too many attempts" timeout, because I presume that was tied with the password.
- IT department at my office has no idea who to contact to address that issue.
- The website's own contact email is never answered. When I called them and waited +3 hours on the line, the help desk person insisted that removing the password was a convince feature, not a …]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[My wife vetoed my plan]]></title>
-        <id>https://www.youtube.com/watch?v=8dEIy1YXJ4A</id>
-        <link href="https://www.youtube.com/watch?v=8dEIy1YXJ4A"/>
-        <updated>2022-09-24T16:59:58.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SD-WAN Functionality]]></title>
-        <id>https://www.reddit.com/r/networking/comments/xmvddb/sdwan_functionality/</id>
-        <link href="https://www.reddit.com/r/networking/comments/xmvddb/sdwan_functionality/"/>
-        <updated>2022-09-24T15:12:32.000Z</updated>
-        <summary type="html"><![CDATA[Hey all - I'm trying to verify that our Meraki SD-WAN is actually utilizing the full bandwidth of our 2 500mb circuits and not seeing what I thought I would, so hoping for a suggestion. Doing an internet speed test yields the same result if I take one of the circuits out (approx 500mb up/down). The MX device shows that both circuits are active and it is set to load balance. That said, the device still makes you pick a 'primary' circuit and seems to be using that one exclusively for my testing.
-    submitted by    /u/bmessinachicago  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fully remote means I can live anywhere, should I move?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/xmsyf2/fully_remote_means_i_can_live_anywhere_should_i/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/xmsyf2/fully_remote_means_i_can_live_anywhere_should_i/"/>
-        <updated>2022-09-24T13:31:03.000Z</updated>
-        <summary type="html"><![CDATA[Applying for a fully remote position which lead me to thinking, I can live anywhere now (assuming I get it). I could live at the beach, on a mountain, in the city, on a farm... Anyone dealt with this before? Did you move? I would love to lay low for a few years and save cash, but don't know if I would dig living in a small town. Just looking for opinions.
- EDIT: I would not be leaving the country or even my state. Just meant changing cities. I live in NC, so I could live at the beach, or the mountains, or stay in Raleigh, or move out into the sticks.
-    submitted by    /u/paperlevel  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Overmedicating our Children? | 9.24.22]]></title>
-        <id>ece4e5f1-4eea-4db1-9c5f-23e0e688ec20</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2022-09-24T08:30:00.000Z</updated>
-        <summary type="html"><![CDATA[A record number of teens are being prescribed psychiatric drugs, concerns rise about the state of the global food supply, and an interview with Whole Foods founder John Mackey. Get the facts first on Morning Wire.]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Are there devices that negotiate POE with a POE-Switch resulting in passive POE - but not having a separate power source (so no POE Injector)?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/xml8ii/are_there_devices_that_negotiate_poe_with_a/</id>
-        <link href="https://www.reddit.com/r/networking/comments/xml8ii/are_there_devices_that_negotiate_poe_with_a/"/>
-        <updated>2022-09-24T06:34:00.000Z</updated>
-        <summary type="html"><![CDATA[I have a POE+ Switch, that specifically states no passive POE is possible. Are there devices allowing passive POE that draw power from this switch?
- I am aware there are POE injectors, I have them. But are there devices that negotiate POE with the POE-Switch itself and drawing power from the switch and not from a separate power source?
-    submitted by    /u/greyish_sea  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Finding macs from Vxlan]]></title>
-        <id>https://www.reddit.com/r/networking/comments/xmkwey/finding_macs_from_vxlan/</id>
-        <link href="https://www.reddit.com/r/networking/comments/xmkwey/finding_macs_from_vxlan/"/>
-        <updated>2022-09-24T06:15:07.000Z</updated>
-        <summary type="html"><![CDATA[So I work in a juniper dominant environment and Vxlan plays a big role. Chasing down a mac/ip address is fairly simple but not here. Does anyone know how with junos to chase down a mac/ip address once "show arp" or "show ethernet-switching table" gives the output of a lsi or vtep interface on the interface column?
-    submitted by    /u/300betos  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NVIDIA Thinks You're RICH - WAN Show September 23, 2022]]></title>
-        <id>https://www.youtube.com/watch?v=7YuiFlhe8j4</id>
-        <link href="https://www.youtube.com/watch?v=7YuiFlhe8j4"/>
-        <updated>2022-09-24T03:50:38.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
         </author>
     </entry>
 </feed>
