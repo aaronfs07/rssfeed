@@ -260,6 +260,206 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yd0bvy/stuck_at_sit_back_and_relax/",
+          "author": null,
+          "description": "I am running into an annoying issue at work, we deploy laptops with autopilot and intune. When we start a new laptop and connect it to our network it get stucks at the windows message “sit back and relax while we work our magic” if we leave the laptop on it stays stuck forever.\n What we found out us that as soon as we remove the docking connection we get prompted to connect to wi-fi and then autopilot kicks in.\n The wi-fi is public so we looked at our firewall logs to see if the fact that deployment get stuck only when on LAN connection is caused by firewall but we don’t see any blocks.\n Is there anyway I can get to some logging on the laptop to see why it is stuck?\n    submitted by    /u/uvegoneincognithough  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yd0bvy/stuck_at_sit_back_and_relax/",
+          "publishedOn": "2022-10-25T09:21:41.000Z",
+          "wordCount": 42129,
+          "title": "Stuck at sit back and relax",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yd083p/ese_database_log_file_cleanup_adcs/",
+          "author": null,
+          "description": "Hopefully there is someone familiar with the ESE/JET engine who could confirm about cleaning up ESE database transaction log files.\n One AD CS CA is having a rather large C:\\Windows\\system32\\CertLog directory with numerous ESE log files. It seems to be a rather known issue that AD CS does not (sometimes?) clean up the ESE log files, for example:\n https://www.sysadmins.lv/blog-en/database-log-files-are-not-truncated-when-you-perform-a-full-certification-authority-database-backup.aspx\n The reference is contradicting itself. It says \"no workaround\" but also gives a command that \"identifies the start log file number to protect\". I had already figured out about as much by using esentutl but would like to confirm I am getting this right.\n In the above linked example all logs with sequence number smaller than 3B, meaning edb00001.log until edb0003B.log could be removed, right? What about edb.log, that one must not be touched? Or one cannot just delete any log file and have a working database?\n It should be rather simple to make a script that:\n  \nRun esentutl /mk edb.chk\n Parse the Checkpoint line for sequence ID\n Delete all edb#####.log files with ##### smaller than value from step 2\n  \nI have been searching for a while and could not find one website about actually doing this. Surely someone must have done this before, it does not even look that complicated?! Several hits for just brutely stopping certsvc and deleting all logs which is not what I want to do if this can be done \"right\", by just deleting unnecessary log files.\n I guess I could just download the whole CertLog and play around with it, see what happens. Will take a while, it being multi-GB...\n    submitted by    /u/Environmental_Kale93  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yd083p/ese_database_log_file_cleanup_adcs/",
+          "publishedOn": "2022-10-25T09:14:32.000Z",
+          "wordCount": 42379,
+          "title": "ESE database log file cleanup (ADCS)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yczx2p/how_do_you_guys_deal_with_supportcustomer_services/",
+          "author": null,
+          "description": "I am getting so frustrated with a certain vendor's customer service every time I report a problem with our laptops. They drain so much energy out of me and send me into loops just to \"fix\" software problems, which are 99% hardware problems and we just need someone to change the parts that's it. I have such a hard time to get through to those people even though I try to fix everything software related beforehand, but the support always wants more from me. \n How do you guys deal with customer support? My manager says I should be harsh, but I don't feel like being rude to a guy who is just doing their job and fend off stupid problems. Maybe I am just too soft, I am lost at this point.\n    submitted by    /u/Pansheru  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yczx2p/how_do_you_guys_deal_with_supportcustomer_services/",
+          "publishedOn": "2022-10-25T08:53:21.000Z",
+          "wordCount": 42308,
+          "title": "How do you guys deal with support/customer services???",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yczoeu/get_an_app_to_open_this_msprintqueue_link/",
+          "author": null,
+          "description": "Hello.\n 5 days ago, I made a thread about several issues I had with my new setup of Windows 11, mostly about printing issues:\n https://www.reddit.com/r/sysadmin/comments/y8s2x0/windows_11_unusable/\n Well, diving deeper into that, found that the print queue is unmanageable from the Config app, dropping the message of the title, and this seems to be the root of the problem. It also seems that I'm not the only one with the issue:\n https://answers.microsoft.com/es-es/windows/forum/all/necesitas-una-aplicaci%C3%B3n-nueva-para-abrir/fdb08d24-a862-40a5-9592-a98c6ffbbe2d\n https://www.reddit.com/r/WindowsHelp/comments/yaj17o/print_spoolerprint_queue_suddenly_shows_this/\n Any fix (powershell command?) to assign the link type to the app?\n And second...\n Given that both results are from the last 7 day…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yczoeu/get_an_app_to_open_this_msprintqueue_link/",
+          "publishedOn": "2022-10-25T08:36:39.000Z",
+          "wordCount": 42815,
+          "title": "\"Get an app to open this 'ms-print-queue' link\"",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycza5x/m365_intune_onprem_file_shares_sharepoint_online/",
+          "author": null,
+          "description": "Hello,\n I am confused: back then we moved from scripting (.bat) to nice Group Policies for connecting network file shares.\n Now, as I am digging deeper into M365 and Intune I can't find a nice, as easy to use solution, like the Group Policy.\n As I see from my researches, we are now back at scripting the network file share connection but now with PowerShell?\n So even in scripting: We move from a Net Use \"One Liner\" to a 317 Line PowerShell Script which adds a local task for reconnecting a single drive? (using https://intunedrivemapping.azurewebsites.net/).\n Maybe I am thinking the wrong way, because modern management and cloud is totally different but:\n Microsoft offers Azure Files as a File Server replacement. These Shares also need to be connected.\n I have a Client with 5 TB of data, whic…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycza5x/m365_intune_onprem_file_shares_sharepoint_online/",
+          "publishedOn": "2022-10-25T08:09:10.000Z",
+          "wordCount": 42728,
+          "title": "M365 Intune / OnPrem File Shares / Sharepoint Online",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycxaay/any_way_to_disable_export_option_in_graylog/",
+          "author": null,
+          "description": "So I have been using Graylog from past week and like it so far and I was wondering if it is possible to disable the export option or if there is any workaround? I have checked the documentation but couldn't find my answer.\n    submitted by    /u/zonulkop  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycxaay/any_way_to_disable_export_option_in_graylog/",
+          "publishedOn": "2022-10-25T05:54:40.000Z",
+          "wordCount": 41854,
+          "title": "Any way to disable export option in Graylog?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycute8/thank_you_david_barrett_your_merge_mailbox_folder/",
+          "author": null,
+          "description": "I've ran into the manual folder shuffle in exchange all too frequently over the last few years. \n Awhile back, I found this random script online made by David Barrett - I think this is the single most powerful and complete script I've ever found via ze google lifeline.\n I encourage you to read the github and check it out for yourself.\n Merge MailboxFolders.ps1 · David-Barrett-MS/PowerShell-EWS-Scripts Wiki · GitHub \n ​\n I just really wanted to take a moment and publicly thank this guy - Hopefully he reads r/sysadmin\n You could package this script into a full app and make a fortune -- instead, this guy updates and provides this script for free for anyone to benefit.\n and sure enough, it supports oauth/modern auth\n Thank You David Barrett. You have saved quite possibly hundreds of hours of my life.\n    submitted by    /u/hex00110  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycute8/thank_you_david_barrett_your_merge_mailbox_folder/",
+          "publishedOn": "2022-10-25T03:32:49.000Z",
+          "wordCount": 41105,
+          "title": "Thank you David Barrett - Your Merge Mailbox Folder script has saved my bacon soo many times",
+          "imageUrl": "https://external-preview.redd.it/11wAVXIys7Ldb1q9qacPfg-4Vh0I2QEAjuqDmxejYXY.jpg?auto=webp&s=dd821f933c4e4d9ab378c02fdb5217e99b16a618"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycuous/vmware_disk_best_practices/",
+          "author": null,
+          "description": "Just wanted to know if there is an existing documentation on what are the best practices for the preferred number and size of disks attached to a VM. I'm aware of the maximum values but that doesn't mean we should implement it, right?\n    submitted by    /u/ShannonUser  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycuous/vmware_disk_best_practices/",
+          "publishedOn": "2022-10-25T03:26:18.000Z",
+          "wordCount": 41886,
+          "title": "VMware Disk Best Practices",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycteis/i_and_pretty_much_all_t1_grunts_arent_allowed_to/",
+          "author": null,
+          "description": "I am a T1 Help Desk agent taking in calls to do the usual T1 things. Password reset, clearing cookies/cache, having to point out their lack of VPN connection is why you can't get access to this resource/intranet, etc. I understand this is mostly a sysadmin sub and if this breaks any rules or frowned upon for non sysadmin to post, I'll delete.\n I work remotely so physically seeing and talking and getting to know your local sysadmin is even harder than it is.\n I had simple questions to ask him to gain some personal perspective on how he got to where he is now.\n And I was immediately shot down by my supervisor, being told to please do not contact him, only supervisors and up can do that.\n And you know what? I sorta get it. I would imagine having 10s or even 100s of agents contacting you could get tiring.\n But it still sucks that I'm pretty much forbidden to gain a little wisdom from him. Oh well.\n    submitted by    /u/xRoguestatus  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycteis/i_and_pretty_much_all_t1_grunts_arent_allowed_to/",
+          "publishedOn": "2022-10-25T02:20:09.000Z",
+          "wordCount": 43425,
+          "title": "I [and pretty much all T1 grunts] aren't allowed to contact our Sysadmin.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycrghs/microsoft_365_tenant_to_tenant_migration/",
+          "author": null,
+          "description": "I'm a tad confused by Microsoft's documentation on this topic.... I'm looking at doing a proof of concept for a possible project to migrate ALL user, group, resource data from one tenant to another and there appears to be two different pathways - both updated within the last 6 months by Microsoft and neither has any reference to the other (with the exception of recommended content).\n ​\n  \n https://learn.microsoft.com/en-us/exchange/mailbox-migration/migrate-mailboxes-across-tenants vs https://learn.microsoft.com/en-us/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-worldwide \n  \n ​\n Which is the better method?\n Notes: \n The primary domain in the source tenant will remain as the primary domain for the users migrated into the target (and ONLY for these users, everyone else already on the target tenant will use the company's normal domain).\n The source tenant is only 3 months old but user accounts contain data and calendars migrated from an on-prem Kerio server.\n Both tenants have their own Mimecast Email Gateway, but after migration is complete, there will be only the target's Mimecast service.\n    submitted by    /u/pedad  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycrghs/microsoft_365_tenant_to_tenant_migration/",
+          "publishedOn": "2022-10-25T00:43:54.000Z",
+          "wordCount": 40305,
+          "title": "Microsoft 365 Tenant to Tenant migration",
+          "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&s=e62264227377a9581e2e2946169864d130fa3217"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycqwbc/sysadmins_that_started_green_but_found_a_way_to/",
+          "author": null,
+          "description": "HOW???\n Please share with me something :/ I have been just a hobbyist in computers since I was a kid, I guess. Building my first computer at a young age, growing in to help-desk after flipping them burgers for X years after college.. A typical story, I assume...\n Was on helpdesk in large org for 5 years, now I have been a SysAdmin for a year and some change (Age 31) and I have been overwhelmed by the sheer infinite amount of things you need to learn. My feelings gravitate to 'why am I even doing this?'..\n My boss is amazing. My team is amazing. I have finally landed a kush job with a description that I thought I always wanted (small shop now doing some networking, security wherever, being new to virtualization, everything a sysadmin would do with an IT team of 3 in the datacenter and 300 employees).\n My motivation is fucked. Every day I want to do good for my co-workers and boss but I just don't feel like I have it in me to learn and think and be creative every day... I just had a very overdue vacation a few months ago and I already have this burnout feeling.. whyyyy.. I question if I am even interested in IT.. working in the dirt or cleaning toilets can NOT be a better deal for me but it is what I fantasize about. something mindless...but idk.. I can continue to rant but I think anyone reading this get's the point. Work is getting hard and I want to be motivated.\n (Possible remedy? Can changing my habits and routine give me a better outlook? ie start waking up earlier and getting some exercise. Can I coax my mind in to enjoying this job by employing other changes in different parts of my life?)\n    submitted by    /u/MannerObjective  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycqwbc/sysadmins_that_started_green_but_found_a_way_to/",
+          "publishedOn": "2022-10-25T00:15:57.000Z",
+          "wordCount": 47432,
+          "title": "SysAdmins that started green, but found a way to carry on...",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycqvt0/ipsec_sitetosite_slow_other_method_or_change_up/",
+          "author": null,
+          "description": "Hey all - \n Have had a s2s tunnel built between site a & site b for quite some time... never seemed to be a super big issue, performed well, but lately I feel like there are times where bandwidth is just yuck... I know it's a broad question, but I have a maybe 7 subnets going across this to 3 or 4 other subnets at the secondary location. AES256 and SHA256 for algorithms with DH14. Not sure if this is a factor? But looking to understand if this is a best solution for site to site locations still or if there is something else I should be pursuing... This area is not my number 1 - so forgive me. Both units are Fortigate. Both sites are on 1000/1000 fiber... Just seems like I can count to 4 before I see anything load up like an SMB query on a file server... etc... but latency between sites is a solid 5ms.... \n ​\n Cheers\n    submitted by    /u/Kreedmoor  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycqvt0/ipsec_sitetosite_slow_other_method_or_change_up/",
+          "publishedOn": "2022-10-25T00:15:12.000Z",
+          "wordCount": 40316,
+          "title": "IPSEC Site-To-Site Slow - Other Method or Change up Phase / Encryption Algorithm?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycqfsj/it_job_resource_guy_built_a_site_that_scrapes_all/",
+          "author": null,
+          "description": "I have no affiliation with this site, but it's pretty gnarly, and as it seems to be geared more towards the IT crowd, I thought I'd share it as a job resource for anyone looking at a career transition for whatever reason. \n I originally saw it listed over on /r/internetisbeautiful. \n This guy made a site that scrapes Twitter for job postings in the past 48 hours, and sorts and publishes everything. It's got built-in filters for location, remote, categories, etc. \n https://www.jobsfromlarry.com/\n    submitted by    /u/PeteyMcPetey  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycqfsj/it_job_resource_guy_built_a_site_that_scrapes_all/",
+          "publishedOn": "2022-10-24T23:53:46.000Z",
+          "wordCount": 41052,
+          "title": "IT job resource - guy built a site that scrapes all job postings from Twitter and publishes them",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycpq4j/security_compliance_portal_error/",
+          "author": null,
+          "description": "Anyone else unable to reach the MS Security & Compliance portal, showing a giant yellow banner with,\n \"Sorry, something went wrong. Please try reloading the page. If the problem persists please contact customer service. Error: Script error for \"re-resizable\"? \n Tried 3 different computers from different geo locations. I'm in So Cal.\n    submitted by    /u/Adagio_for_You  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycpq4j/security_compliance_portal_error/",
+          "publishedOn": "2022-10-24T23:19:47.000Z",
+          "wordCount": 41042,
+          "title": "Security & Compliance Portal error",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycpecb/disabling_tls_10_and_11_best_practice/",
+          "author": null,
+          "description": "Hi all\n so i am tasked to disable TLS 1.0 and 1.1 and only using 1.2 for security reasons on all our windows server machines \n this is what i am going to do, please correct me if i am wrong \n 1- Disable TLS 1.0, 1.1 from internet options \n 2- Run power-shell script to set the registry keys as described in this url\n https://learn.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-tls-enforcement#powershell-script-to-enable-tls-12\n again, the reason is to keep our windows servers secure as server and client there is nothing specific\n thanks in advanced\n    submitted by    /u/Sa77if  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycpecb/disabling_tls_10_and_11_best_practice/",
+          "publishedOn": "2022-10-24T23:04:34.000Z",
+          "wordCount": 43043,
+          "title": "Disabling TLS 1.0 and 1.1 best practice",
+          "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&s=e62264227377a9581e2e2946169864d130fa3217"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yck5dt/laps_natively_built_into_windows/",
+          "author": null,
+          "description": "FYI. Microsoft Technical Takeoff session on the new LAPS : blueteamsec (reddit.com)\n    submitted by    /u/SteveSyfuhs  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yck5dt/laps_natively_built_into_windows/",
+          "publishedOn": "2022-10-24T19:24:41.000Z",
+          "wordCount": 40260,
+          "title": "LAPS natively built into Windows",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ychqd7/sometimes_you_are_appreciated_though_they_might/",
+          "author": null,
+          "description": "I was at a position for about six years then left for greener pastures. About four months after I left I got a call from one of the users. She called just to say thank you and she really appreciated the support I had given her while I was there, and that was it.\n She was just one of the 300ish users I supported, never had any extensive dealings with her, never anything beyond answering the phone/Teams when she called for support.\n Meanwhile, the guy who owned the company, the guy who was supposedly my boss to whom I was supposed to report to, after keeping his company running 24/7 for all those years never talked to me while I was there, \"negotiated\" with me when I turned in my notice by sending verbal messages through somebody who then relayed them through HR who then verbally passed the message to me.\n    submitted by    /u/TheQuarantinian  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ychqd7/sometimes_you_are_appreciated_though_they_might/",
+          "publishedOn": "2022-10-24T17:48:49.000Z",
+          "wordCount": 39024,
+          "title": "Sometimes you are appreciated. Though they might express it in a weird way.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycg16o/i_received_an_appreciation_email/",
+          "author": null,
+          "description": "Yes it happened. This gentleman, let's call him G, is part of the operations and is good at tech. I had an hour discussion with him on how important is the security for the organisation and how are we planning to implement ir. He was really impressed with my ideas and knowledge. Right after our call he sent an email to my managers, company's CEO and HR head. HR head then later forwarded this email to all 2000+ employees.\n G you really made my day and gave me so much motivation to work here.\n Of course I am hoping for a good raise in salary in next appraisal cycle else I will switch Lol. \n Keep up the good work dear SysAdmins.\n    submitted by    /u/mrbatra  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycg16o/i_received_an_appreciation_email/",
+          "publishedOn": "2022-10-24T16:40:43.000Z",
+          "wordCount": 39114,
+          "title": "I received an appreciation email.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycfiob/today_ive_found_this_network_bug/",
+          "author": null,
+          "description": "I was just adding a patch cable and I found this:\n https://imgur.com/a/cm7FWfS\n    submitted by    /u/SysEridani  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycfiob/today_ive_found_this_network_bug/",
+          "publishedOn": "2022-10-24T16:20:38.000Z",
+          "wordCount": 40539,
+          "title": "Today I've found this network bug",
+          "imageUrl": "https://external-preview.redd.it/yqKAX9ijWoodfgph6CTDh2i3pKXTpDNJuLWj3YWRGvw.jpg?auto=webp&s=59b3973b86c42f6d612a45968531334d47a9f862"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ycdk11/carbon_black/",
+          "author": null,
+          "description": "Do I need to say more? Has anyone has the displeasure of dealing with them? While I'm sure their service is wonderful for those who need it, their attempt to win clients by attrition has completely blacklisted them from our acceptable vendors to use. They call, they email, they leave voicemails. For 5 years this has been going on, if not longer. I tell them we don't use VMWare, and I tell them we aren't interested and yet they still harass us. And that's the best term. It's harassment at this point.\n    submitted by    /u/YMCATech  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ycdk11/carbon_black/",
+          "publishedOn": "2022-10-24T15:02:39.000Z",
+          "wordCount": 45844,
+          "title": "Carbon Black",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/yccwyt/where_is_ubiquiti_map_in_the_dashboard/",
           "author": null,
           "description": "Is anyone on Ubiquiti Cloud Key Gen2 - Network 7.2.92 and can help where the hell they put the Maps option/section now?\n    submitted by    /u/positive_ranch  \n [link]   [comments]",
@@ -12338,216 +12538,6 @@
           "wordCount": 35519,
           "title": "Hmm make it Mountain Dew and you might get me.",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnzlim/driving_myself_bonkers/",
-          "author": null,
-          "description": "After the panic hit my company had to downsize. During that time I accepted a lot of tasks. After we got over the hump and started growing I was promoted to management and willed myself to hold on to my task, do automation, keep up with new technology, become the one stop shop for Azure. It all came to a head last week and I walked out for a long weekend breather. Quieting my mind I think I have determined I simply cannot be everyone, be an individual contributor, and manage. I have to pick. I think I am going to continue to be a manager, grow my team, and be the muscle that moves the company's technology forward.\n I still have the desire to learn Linux, establish powershell 7, get into Ansible, make the assets management system and much more but I guess those days are going to have to be behind me.\n Has this realization come to any of you?\n    submitted by    /u/whatnownova  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnzlim/driving_myself_bonkers/",
-          "publishedOn": "2022-09-25T21:26:46.000Z",
-          "wordCount": 27058,
-          "title": "Driving Myself Bonkers",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnz3o8/on_the_learning_curve_for_server_level_hardware/",
-          "author": null,
-          "description": "Hey guys, So basically I am a developer (front end web and backend) but for years I always messed around with web hosting. Setting up servers, etc. I’ve always been SUPER into hardware (passion).\n But lately I’ve been setting up our new hosting servers for the company im at because they trusted me enough to move from managed hosting environment to rented servers where we manage the hosting ourselves.\n Most hosting clients are past clients where we made their sites. We host a few hundred but obviously want to increase.\n Im looking into collocation, but honestly I’m super surprised at the cost of servers. We are in South Africa so there aren’t many big DC providers. So only when we get a few servers would we look at collocation, but how “worth it” is hardware like Xeon CPU’s? I see there are now some new Intel consumer level CPUs that support ECC, and most new AMD CPUs support ECC. So for largely Wordpress and NodeJS environments is there an issue with going with AMD? Is there something I’m missing?\n Honestly I’m just not sure where to start with hardware, I’ve learnt what I can in theory, but real world reasons for certain choices, and advice is very different. \n This post was a bit of a ramble but I guess I’m just looking for any good nuggets from you pros 🙂\n    submitted by    /u/Jordz2203  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnz3o8/on_the_learning_curve_for_server_level_hardware/",
-          "publishedOn": "2022-09-25T21:06:42.000Z",
-          "wordCount": 27292,
-          "title": "On the learning curve for server “level” hardware",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnz1ck/reset_bios_pw_of_hp_envy_x360/",
-          "author": null,
-          "description": "Well, I might've messed up. I own an HP Envy x360 convertible for private use and apparently set an administrator password for it some day and well, being me, didn't document it.\n Whilst I remember the power on password and can therefore still use this thing, the UEFI is out of reach for me.\n Is there any way, at all, to reset the password on a notebook like this, or am I forced to send it in? I'm no stranger to disassembling laptops, but would like to refrain from anything voiding the warranty (so soldering out EPROMs is out of question, unfortunately).\n    submitted by    /u/ThisIsTenou  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnz1ck/reset_bios_pw_of_hp_envy_x360/",
-          "publishedOn": "2022-09-25T21:04:09.000Z",
-          "wordCount": 26842,
-          "title": "Reset Bios PW of HP Envy x360",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnyvtt/guide_how_to_authenticate_to_the_microsoft_graph/",
-          "author": null,
-          "description": "I've gotten a number of questions and folks interested in the Graph API, but struggle a bit regarding authentication. Often times once you get past this hurdle the rest is relatively easy. \n Decided to put a guide together in case it saves anyone a headache:\n https://www.nkasco.com/blog/2022/9/25/how-to-authenticate-to-the-microsoft-graph-api-using-powershell\n    submitted by    /u/nkasco  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnyvtt/guide_how_to_authenticate_to_the_microsoft_graph/",
-          "publishedOn": "2022-09-25T20:58:44.000Z",
-          "wordCount": 26656,
-          "title": "Guide: How to Authenticate to the Microsoft Graph API using PowerShell",
-          "imageUrl": "https://external-preview.redd.it/vaFOdLpIt6CVzybK8oXNaHwqVKgvNLIDFdIKk5e1oA8.jpg?auto=webp&s=1e824c47371c7500feb2dcc68ab6dbc3222be943"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnyn1h/anyone_still_have_any_hpe_procurve_2848s_running/",
-          "author": null,
-          "description": "Or am I the only one that still sees 20 year old switches ?\n    submitted by    /u/CyberHouseChicago  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnyn1h/anyone_still_have_any_hpe_procurve_2848s_running/",
-          "publishedOn": "2022-09-25T20:48:56.000Z",
-          "wordCount": 34316,
-          "title": "Anyone still have any HPE ProCurve 2848s running ?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnx3no/windows_11_active_directory_gold_image_or_intune/",
-          "author": null,
-          "description": "submitted by    /u/jasonin951  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnx3no/windows_11_active_directory_gold_image_or_intune/",
-          "publishedOn": "2022-09-25T19:48:50.000Z",
-          "wordCount": 35608,
-          "title": "Windows 11 - Active Directory + Gold Image or Intune + Hybrid",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnvj3r/have_you_ever_actually_been_to_your_companys_dc/",
-          "author": null,
-          "description": "If you have on-prem and a DC.\n In the last two companies, I've worked at I was never in DC. Then talking to a coworker at my new job this company has a lights-out policy where no one is allowed inside the DC except for emergencies or the planned maintenance window on the first weekend of the month. There are security guards at the gate but that is all. Even the operators work remotely. Exciting stuff!\n    submitted by    /u/bustedbutthole  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnvj3r/have_you_ever_actually_been_to_your_companys_dc/",
-          "publishedOn": "2022-09-25T18:47:35.000Z",
-          "wordCount": 27821,
-          "title": "Have you ever actually been to your company's DC? Is it lights out?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnts3u/is_cisco_ise_always_going_to_be_the_big_dog_or_is/",
-          "author": null,
-          "description": "I’m wanting to maybe point my wheel toward a specific area, cisco ISE. I’d like to get CCNP SEC-ISE.\n But I just wanna make sure something bigger isn’t gonna take over or already has.\n    submitted by    /u/BobbyDoWhat  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnts3u/is_cisco_ise_always_going_to_be_the_big_dog_or_is/",
-          "publishedOn": "2022-09-25T17:40:06.000Z",
-          "wordCount": 26997,
-          "title": "Is CISCO ISE always going to be the big dog? Or is there another similar product going to take over? Or has it already happened?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnt6jh/updated_ssl_cert_on_server_not_being_used_by_all/",
-          "author": null,
-          "description": "We updated a SSL certificate on our web server yesterday, and most clients are seeing the new cert but there is a subset that is still using the old cert (which is expiring this week). Is there some kind of function in Windows that saves a certificate for a website locally, and uses it by default for a period of time? Is there a timeout that forces Windows to recheck/revalidate the cert on a particular website? and is there a way to force a client to ignore any cached certs and check the cert on the server instead? and what might happen if the client uses a cached cert?\n    submitted by    /u/jwckauman  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnt6jh/updated_ssl_cert_on_server_not_being_used_by_all/",
-          "publishedOn": "2022-09-25T17:17:00.000Z",
-          "wordCount": 27167,
-          "title": "Updated SSL cert on server not being used by all clients...",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnswby/what_cyberscurty_attack_tools_could_i_demonstrate/",
-          "author": null,
-          "description": "I'm currently taking a cybersecurity course and one of the major projects that we will be starting soon is a demonstration on either a) an attack on a private network or b) a successful mitigation of an attack. What kind of cool scripts / programs / tools should I look into to demonstrate? I personally want to do a mix of both, where I demonstrate an attack, and then show the steps I would take to mitigate it.\n    submitted by    /u/Silverwoods2  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnswby/what_cyberscurty_attack_tools_could_i_demonstrate/",
-          "publishedOn": "2022-09-25T17:06:08.000Z",
-          "wordCount": 27129,
-          "title": "What cyberscurty attack tools could I demonstrate for a school project?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnr54x/dell_hard_drive_in_hp_server/",
-          "author": null,
-          "description": "I'm running an HP DL380 G6 (2.5'') and I just bought this hard disk: G8FVT Compellent 1TB 7.2k SAS 2.5\" 12G Hard Drive, the hard drive seems to be a Dell G8FVT, compatible with SCv2000, SCv3000 and SC4000 series.\n My concern is that I can't find this drive listed anywhere on this website, is this going to be an issue or is the drive going to work just fine?\n Just want to clarify, I'm not using any HP drives on my system currently, just random ones I found, though those were listed on that website. This is for a home lab, nothing too serious or mission critical.\n    submitted by    /u/MrMyCheese  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnr54x/dell_hard_drive_in_hp_server/",
-          "publishedOn": "2022-09-25T15:58:19.000Z",
-          "wordCount": 27331,
-          "title": "Dell hard drive in HP server?",
-          "imageUrl": "https://external-preview.redd.it/TWmOKCWN-HFO_0FqFNLGSQPshh1Uxq6HR1RwpMPOvE4.jpg?auto=webp&s=53f155890ff2681540b553dcb26a7189813a58d9"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnqugm/do_you_actually_buy_enterprisegrade_ssds_or_hdds/",
-          "author": null,
-          "description": "I'm having this conversation now with a smaller shop. They want to set up a new NAS with RAID syncing to a second NAS at a remote site. They already had a setup like this running with WD Blue HDDs but it's almost 10 years old and ready to update. The admin there read he needs \"enterprise drives\" and I'm like no you don't. They are more than three times the cost of the SSDs in the drive and for this setup way overkill. \n 15-20 years ago when hard drives weren't nearly as reliable I'd more inclined to agree but now not so much. Especially when the place I work at has well over a million SSDs and HDDs in their DCs around the world and all of them are your standard off-the-shelf Western Digitals or Seagates and it's running fine.\n    submitted by    /u/bustedbutthole  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnqugm/do_you_actually_buy_enterprisegrade_ssds_or_hdds/",
-          "publishedOn": "2022-09-25T15:46:45.000Z",
-          "wordCount": 33419,
-          "title": "Do you actually buy \"enterprise-grade\" SSDs or HDDs?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnnryz/external_usb_hd_with_sleep_mode_and_persistent/",
-          "author": null,
-          "description": "Hi,\n I have a external 4TB USB Disc that goes to sleep when it is not accessed for a certain time.\n It this model in 4TB: https://www.tradeinn.com/techinn/en/intenso-memory-center-3.5-usb-3.0-6tb-external-hdd-hard-drive/137796299/p\n I access this disc via ISCSI on a Debian system. I noticed that this disc becomes unavailable as ISCSI Target, once it has gone to sleep because apparently the drive name changes and it gets a new device name usually the next free letter for example instead of /dev/sdd it changes to /dev/sdf messing up my targetcli setup.\n I followed advice and instead of the device name I pointed targetcli to /dev/disk/by-id/...\n But unforutnately that did not help either. After sleeping the disc will not be accessible on ISCSI.\n I'd prefer to have the Disc continue to go to sleep in order to save energy, but still want it to wake up and be available on iscsi. On windows, I also sometimes had issues with the disc not being detected anymore once it went to sleep. It usually helped to rescan for the USB devices to redetect the disc. Also manually reswitching the power button helped.\n Is there any way to make sure that targetcli keeps the external hd connected, even if it goes to sleep on Linux Debian/Ubuntu?\n    submitted by    /u/Spam00r  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnnryz/external_usb_hd_with_sleep_mode_and_persistent/",
-          "publishedOn": "2022-09-25T13:45:05.000Z",
-          "wordCount": 27302,
-          "title": "External USB HD with sleep mode and persistent ISCSI targetcli connection.",
-          "imageUrl": "https://external-preview.redd.it/Lap0fkHaOPZWjig1uGsyTN_CWH60NuT5LBFRnTz6D1Y.jpg?auto=webp&s=ef11f28bd141a5dd4fc2c983b1d95ee7bcc31d3f"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnjar7/dell_mobile_workstation_purchasing_advice/",
-          "author": null,
-          "description": "Hi,\n I may choose a Dell Mobile Workstation for work. Does anyone have any experience?\n There are two for me to choose from:\n Dell Precision 3570\n Dell Precision 3571\n According to the following ranking, the 3570's processor is ranked 47th and the 3571's is ranked 1st, but the 3570 has 16GB more RAM (for a total of 32GB). \n I use the Dell 27\" S2721DGFA monitor twice. The 3571's graphics card is slightly better than the 3570's according to the following ranking.\n No special programs are used. Office, browser, a few VPN clients, anti-virus software, vulnerability scans. I work a lot in the browser. Important for me is a good performance. That's it. \n My questions:\n Which one is better for very fast and reliable \"office\" work?\n What are the differences between the two?\n Or is it worthwhile to put one together yourself? That would look like this. However, I can't find anything about the integrated Intel graphics card GT2 and I don't know if it can handle two 27\" monitors.\n I am very much looking forward to your feedback and thank you in advance. :)\n    submitted by    /u/Melodramatisch  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnjar7/dell_mobile_workstation_purchasing_advice/",
-          "publishedOn": "2022-09-25T10:04:06.000Z",
-          "wordCount": 28447,
-          "title": "Dell Mobile Workstation Purchasing Advice",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnia73/docsmicrosoftcom_is_now_learnmicrosoftcom/",
-          "author": null,
-          "description": "Microsoft have rearranged things, again.\n So if you use site: in your google searches remember to change what you have been used to.\n And any some handy bookmarks you had from before will now give you a 404 page. But at least the 404 page usually gives you a link to the new location. Some old links, but not all, do redirect.\n EDIT: changed bookmark stuff based on u/lanathell's feedback.\n    submitted by    /u/ZAFJB  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnia73/docsmicrosoftcom_is_now_learnmicrosoftcom/",
-          "publishedOn": "2022-09-25T09:05:52.000Z",
-          "wordCount": 29124,
-          "title": "docs.microsoft.com is now learn.microsoft.com",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xni5al/win_server_2016_local_admin_gets_operation/",
-          "author": null,
-          "description": "Hi there, apologies if this is not the way to submit here. In our environment (mostly server 2012 r2 and 2016) we have a server that is used by a third party company to run reports. For this they require local admin access. About 6 weeks ago, three of these accounts stopped being able to launch most apps, all except for windows accessories and office 365 apps (fat)\n These users are members of the local admins group, they are also part of an ad group that is also in local admins. Launching any other application gives the error ‘this operation has been cancelled due to restrictions in effect on this computer’\n These accounts are only a problem with this server, it’s the only one they would normally access\n I’ve cleared down the local accounts from there, including the registry. I’ve also just created the default app locker execution rules in group policy. These accounts have full unrestricted access to the server but still can’t launch other applications and services. Unfortunately this includes CMD, so even running a gpresult is proving difficult. Anyone had a similar issue?\n    submitted by    /u/jeggy111  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xni5al/win_server_2016_local_admin_gets_operation/",
-          "publishedOn": "2022-09-25T08:58:20.000Z",
-          "wordCount": 35896,
-          "title": "Win Server 2016 - local admin gets operation cancelled",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnhlb9/access_review_of_ceo_accounts/",
-          "author": null,
-          "description": "Hi! I would like to know how you everyone here handles account reviews for VIP employees (in our case CEO). \n We have to do a review of all accesses in applications in anticipation of an audit. We now take a report of each user and their access. Their managers review the access and tell us if some changes are needed. But the CEO has access to a few applications and we are not sure who should review his access. Someone at the Board? In AD he does not have a anyone set as the Manager.\n    submitted by    /u/scallopedsambar  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnhlb9/access_review_of_ceo_accounts/",
-          "publishedOn": "2022-09-25T08:25:18.000Z",
-          "wordCount": 27314,
-          "title": "access review of CEO accounts",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xngqmk/automated_microsoft_365_updates_overview/",
-          "author": null,
-          "description": "Hi, I work with Microsoft products like Azure, inTune, Dynamics and other 365 products to implement modern workplace solutions for our end users. \n I find it sometimes difficult to have an overview of all future updates and end of life products that are being pushed by Microsoft. It would be nice to have this automated in some way.\n How do you guys manage this?\n    submitted by    /u/max25k  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xngqmk/automated_microsoft_365_updates_overview/",
-          "publishedOn": "2022-09-25T07:34:47.000Z",
-          "wordCount": 26772,
-          "title": "Automated Microsoft 365 updates overview?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnf86u/vmware_and_windows_server_patching/",
-          "author": null,
-          "description": "Hi all\n I started new job, where I will need to do windows server, Azure Vm and VMware host patching\n there are very few servers no WSUS employed or anything else, because they will go away sooner or later \n my manager asked me about my plan to patch those servers/hosts \n they are mixes of dev and production \n I am thinking:\n -Update windows servers when update released (every month) and when critical update is been pushed \n -Create snapshot for VM before update (is this necessary?)\n -Update VMware server software when new update is released (minor updates for the same version)\n -Update the production servers off hours \n -Test updates (by running the application and testing all functions)\n -Rollback update if test went wrong\n -For Switches, update one switch after making copy from configurations with old FW\n -Test the switches and be ready to rollback to backup file\n ​\n ​\n is there any ideas or things I need to add to the plan?\n ​\n thanks in advanced\n    submitted by    /u/Sa77if  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnf86u/vmware_and_windows_server_patching/",
-          "publishedOn": "2022-09-25T06:08:05.000Z",
-          "wordCount": 29881,
-          "title": "VMWare and Windows Server Patching",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnbjkq/how_are_you_in_smbs_doing_vpn_for_remote/",
-          "author": null,
-          "description": "I still rock an old ass RRAS VPN on 2003 VM, obviously it has got to go... with that I have few choices, I can pay more for the already expensive barracuda firewalls to I believe give me a decent VPN client + single sign-on, I'm not sure how I would do 2FA with that but I assume it can do that as it has enough bells & whistles to confuse me anytime I look at it. I also don't look forward to deploying the client to my users, I love built-in windows VPN and it always treated me well.\n OR\n just a new 2019 VM with VPN and somehow enable 2FA on that. \n OR\n the VM + I wouldn't mind paying for DUO or something similar either, just not sure how that works to be honest with windows VPN server? can it? \n what say you /r/sysadmin?\n    submitted by    /u/Unlucky_Strawberry90  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnbjkq/how_are_you_in_smbs_doing_vpn_for_remote/",
-          "publishedOn": "2022-09-25T02:50:36.000Z",
-          "wordCount": 29507,
-          "title": "How are you in SMBs doing VPN for remote users/vendors?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/xnbece/uptick_in_spam_docusign_emails_is_this_a_new/",
-          "author": null,
-          "description": "I have seen a rash of bogus emails getting through our filters because its being delivered by DocuSign's legitimate service/address *.docusign.com, *.docusign.net however the sender will be for example \"Chase Bank\" with a sender email in the body [00014745billing@outlook.com](mailto:00014745billing@outlook.com). Our users are opening them because they trust the DocuSign domain. The few I have investigated redirected to a 365 sign in when you click \"review document\" or to a static file with an incoherent message that I presume they are trying to get you to download. So I am assuming malware delivery and credential harvesting. All I can say is thank god for MFA and poorly designed fake documents. However I worry its going to hit the right person where the fake document makes sense, like a plausible contract, and the user actually downloads and opens. \n Besides education is there a better way to lock this down other then blocking DocuSign and having to manually release.\n    submitted by    /u/AwayAd9297  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/xnbece/uptick_in_spam_docusign_emails_is_this_a_new/",
-          "publishedOn": "2022-09-25T02:42:56.000Z",
-          "wordCount": 38664,
-          "title": "Uptick In Spam DocuSign emails - is this a new malware delivery attack vector?",
-          "imageUrl": null
         }
       ]
     },
@@ -12555,32 +12545,133 @@
       "title": "Morning Wire",
       "feedUrl": "https://feeds.simplecast.com/WCb5SgYj",
       "siteUrl": "https://www.dailywire.com/podcasts/morning-wire",
-      "articles": [
-        {
-          "id": "fef8ee00-f8d7-4fa9-af8c-a571d4d4e4db",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "Experts have warned that the U-S and China are engaged in a cold war,  warning that the communist nation of a billion people is more intent than ever on supplanting the United States as the dominant superpower on the world stage. And they’re getting more brazen in their efforts.  On this Sunday episode of Morning Wire, we look into the growing threat of China abroad and here at home. Get the facts first on Morning Wire.",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2022-09-25T08:30:00.000Z",
-          "wordCount": null,
-          "title": "The U.S. China Cold War | 9.25.22",
-          "itunes": {
-            "duration": "00:12:43"
-          },
-          "enclosure": {
-            "length": "12221617",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/e204c32e-00f9-4fac-b48d-56b898d1cb94/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=e204c32e-00f9-4fac-b48d-56b898d1cb94&feed=WCb5SgYj"
-          },
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Enterprise Networking Design, Support, and Discussion",
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yd0brm/aruba_switch_trunkaccess_confusion/",
+          "author": null,
+          "description": "Hi all\n I am kind of stuck with a customer where I have got myself into configuring one of the customer switches from cisco to aruba 6300F. (no reasoning here)\n Basically, stuck with this sample scenario and I am looking to see what should the vlan config look like on the 'x' port on the switch?\n https://imgur.com/a/WBKKTD7\n i have tried doing the following and it doesn't help. Can someone please give a hint from the image attached? Or maybe some documentation/video to explain this kind of setup?\n vlan trunk native 2 tag\n vlan trunk allowed 1\n and \n vlan trunk native 1\n vlan trunk allowed 1,2\n and a few other combinations. \n Thanks in advanced for help.\n    submitted by    /u/matrixrice  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yd0brm/aruba_switch_trunkaccess_confusion/",
+          "publishedOn": "2022-10-25T09:21:28.000Z",
+          "wordCount": 39512,
+          "title": "Aruba Switch Trunk/Access confusion",
+          "imageUrl": "https://external-preview.redd.it/mhekNO0z6V8UfWDZB136I87hjaHiDs_ISjSElEnLgHI.jpg?auto=webp&s=f6a26574cbdadbc77391e7300278e9261a682082"
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ycyr79/is_there_any_disadvantage_to_using_1310nm_mm/",
+          "author": null,
+          "description": "Hi,\n I have a multimode fibre run, and now I am looking into transceivers. Locally I can get 1310nm transceivers and 850nm transceivers for about the same price.\n The 1310nm transceivers state that they are rated for 2 kilometer runs, while the 850nm transceivers state that they are rated for 550 meter runs.\n Are there any downsides to using the two 1310nm transceivers on both ends? 1310nm seems to be better\n    submitted by    /u/redditusersg  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ycyr79/is_there_any_disadvantage_to_using_1310nm_mm/",
+          "publishedOn": "2022-10-25T07:32:33.000Z",
+          "wordCount": 38052,
+          "title": "Is there any disadvantage to using 1310nm MM transceivers over 850nm MM transceivers for SFP?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ycrpbt/limit_stp_ina_network_environment/",
+          "author": null,
+          "description": "We have several access switches and a single cores switch. We want to configure it as such access switches cannot connect to each other. \n No stp will be configure in the core switch and bpdu will be disable using a multicast block that is coming thru the trunk port\n Each access switches will have their own stp domain and bpdu guard enable on all access port except thr uplink trunk port\n Will there be a loop seen in this configuration? We would like to limit the use of stp in our network.\n Any advise or comments will be appreciated\n    submitted by    /u/Specialist-Book6731  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ycrpbt/limit_stp_ina_network_environment/",
+          "publishedOn": "2022-10-25T00:55:53.000Z",
+          "wordCount": 38954,
+          "title": "Limit STP ina network environment",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ycrcu6/bgp_question_just_seeking_a_resource/",
+          "author": null,
+          "description": "Hey there. I'm very new to the field... just finished my CCNA not long ago. I've been hired on at a fortune 100 company as the trainee network engineer. Our network operates on a far greater scale than anything I've studied so I'm hoping someone can point me in the right direction for a resource I can read to help me get up to speed. \n So long story short... At the CCNA level there is not much BGP required. As long as you know \"its the routing protocol of the internet\" your about good... Well anyways we have our core and 2 wan edge devices. These wan edge devices have tunnels to each of our some 300+ locations. Each location has a BGP AS number... all in the 65000 private range (at least as far as I understand it). \n So I guess what I'm asking is does anyone have a resource I can read and study up on using BGP as a primary internal routing protocol? I have googled iBGP but man... the amount of info out there is nuts. It's so much to the point I dont even know where to begin reading...\n Thanks in advance.\n    submitted by    /u/Avionticz  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ycrcu6/bgp_question_just_seeking_a_resource/",
+          "publishedOn": "2022-10-25T00:38:43.000Z",
+          "wordCount": 39723,
+          "title": "BGP Question - Just seeking a resource",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ycqgp0/out_with_cisco_in_with_for_access_switches/",
+          "author": null,
+          "description": "I am looking at replacing our access switches in our sites in a year and wanted to look at something not Cisco. \n I've been team team for over a decade and can afford them but recently, I've seen more and more problems with them. I even had a bug that TAC said \"We will wait until someone reports this bug to see if code comes out to fix it\" when THEY discovered the bug with me while working on the case. I asked if THEY might be the right team to report said bug and they blew me off. I don't need anything crazy -10G uplinks, 48-1G ports, stackable. Right now I'm running 9200 switches and was looking for recommendations. \n I'm leaning toward HP/Aruba but need to dig into which model is closest to these 9200s and want to stay away from anything that handcuffs you with licensing (I.E. charges you to make a 1G port a 10G). Any recommendations? I'll end up with about 350 spread out across all of my remote sites so I wanted to buy a few now and plug them in on an upcoming small project to get some time with them. Thanks in advance!\n    submitted by    /u/mcflyatl  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ycqgp0/out_with_cisco_in_with_for_access_switches/",
+          "publishedOn": "2022-10-24T23:54:59.000Z",
+          "wordCount": 41514,
+          "title": "Out with Cisco, in with ??? for Access Switches",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yco93f/used_switching_equipment/",
+          "author": null,
+          "description": "Does anyone have any idea what the used network equipment market is looking like? With logistics on new stuff being so bad we need to consider some backup plans. Can you get Cisco 9300 switches in any quantity on the used market?\n    submitted by    /u/EverWondered-Y  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yco93f/used_switching_equipment/",
+          "publishedOn": "2022-10-24T22:12:54.000Z",
+          "wordCount": 39729,
+          "title": "Used switching equipment",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ycmo0z/moving_to_new_brand_of_ap_mix_and_match_ok/",
+          "author": null,
+          "description": "I am moving from Unifi AP’s to HP Aruba’s. I am planning on rolling them out one at a time, and replacing as I have time.\n Generally speaking we have a business VLAN, and a guest VLAN. If I make the SSID and the passwords the same, and simply replace (since the ports are tagged right on the switches), does it matter? \n I dont think it would, none of my Unifi stuff is mesh, so it should just jump to wherever its able, right?\n    submitted by    /u/jdlnewborn  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ycmo0z/moving_to_new_brand_of_ap_mix_and_match_ok/",
+          "publishedOn": "2022-10-24T21:06:02.000Z",
+          "wordCount": 39813,
+          "title": "Moving to new brand of AP. Mix and match ok?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ycmkb1/hp_1910_switch_connection_issues/",
+          "author": null,
+          "description": "So I am extremely new to the networking industry. I'm in my first semester of college (computer technology) and just got a job as a network technician by dumb luck. One of my first tasks is to get an old managed HP 1910 switch up and running to be added to the network. I have a brand new USB to rj45 console cable. I'm using putty with serial connection enabled. Bits per second 38400. Data bits 8. Stop bits 1. With both parity and flow control set to none. Com 3 is the only serial line that pulls up a terminal. However the terminal is blank and after waiting 10+ mins multiple times and even power cycling during the terminal or before trying to connect, I am unable to get any text to appear on the terminal screen. Am I missing something? I'm feeling kinda dumb here. Any advice is greatly appreciated.\n    submitted by    /u/ScaredNetworkTech  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ycmkb1/hp_1910_switch_connection_issues/",
+          "publishedOn": "2022-10-24T21:02:03.000Z",
+          "wordCount": 38971,
+          "title": "HP 1910 Switch connection issues.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ycm84x/help_deciding_on_type_of_fiber/",
+          "author": null,
+          "description": "Hi!\n There is Cat6 cabling between my MDF and IDF. It's OK for now but an opportunity presented itself to have fiber run between them at almost no extra cost as part of another project. I don't have any equipment right now that would be using it so it would be kind of future proofing and would be nice to have an option of 10Gig as I can easily see that being asked for in the future. Now, having never used fiber before I'm not sure what fiber should be run? I was asked if I want single- or multi-mode. What should I choose? I traditionally stick with Cisco switches, in case this is important and the distance between the locations is at most 200 ft. Are there any other questions that I should ask at this time or when I'm ready to use that link?\n    submitted by    /u/Phratros  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ycm84x/help_deciding_on_type_of_fiber/",
+          "publishedOn": "2022-10-24T20:48:23.000Z",
+          "wordCount": 41102,
+          "title": "Help deciding on type of fiber?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yclg4n/question_about_unmanaged_switches/",
+          "author": null,
+          "description": "I know using them is frowned upon but I am curious. \n Does MAC address whitelisting (I one this is also not good, but 802.1x is not on the table for a while) configured on firewall still work for devices that connect to unmanaged switch, like desktop connected to netgear 8 port desk switch over Ethernet?\n My company can’t afford wiring new lines right now and we have some machines that can’t use Wi-Fi, they must be plugged in. The topic of unmanaged switches came up. \n If I can at least whitelist devices on the firewall to allow/deny computers that plug into the unmanaged switch it would be ok for a little bit.\n Would love to hear what everyone thinks about it!\n    submitted by    /u/chiccc2003  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yclg4n/question_about_unmanaged_switches/",
+          "publishedOn": "2022-10-24T20:16:53.000Z",
+          "wordCount": 39565,
+          "title": "Question about unmanaged switches",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yci2gh/static_ipv6_address_keeps_reverting_to_automatic/",
+          "author": null,
+          "description": "I am fairly new to IPV6 (and networking in general).\n Have a PC that needs to talk to a device over IPV6. Hooked the PC to the device using ethernet and attempted to set a static IPv6 address. \n Device has a static IP of fe80::def set up by manufacturer. Don't have an option to change this. Attempted to set static IP on computer to fe80:abc, prefix to 64, and default gateway to fe80::1.\n Whenever I leave the ethernet properties page the static IP reverts to automatic IPV6 address rather than static. Any idea what I am missing?\n    submitted by    /u/ArchangelFuhkEsarhes  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yci2gh/static_ipv6_address_keeps_reverting_to_automatic/",
+          "publishedOn": "2022-10-24T18:02:11.000Z",
+          "wordCount": 38645,
+          "title": "Static IPV6 address keeps reverting to Automatic",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ychk0n/netops_w_dpus/",
+          "author": null,
+          "description": "Curious as to who is using DPUs to help boost NetOps functions:\n https://www.futuriom.com/articles/news/amd-extends-netops-solution-to-amd-dpus/2022/10\n    submitted by    /u/jimbridger67  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ychk0n/netops_w_dpus/",
+          "publishedOn": "2022-10-24T17:41:20.000Z",
+          "wordCount": 38503,
+          "title": "NetOps w/ DPUs?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/yc286j/core_switch_10_years_old/",
           "author": null,
@@ -17890,46 +17981,6 @@
           "wordCount": 27388,
           "title": "Route tage or community strings",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/xnw2bd/how_do_we_make_use_of_16_million_vnis_when_we/",
-          "author": null,
-          "description": "IE, I've got a basic VxLAN network up, only mapping 2-3 VLANs to VNIs, but what's the point of having 16 million VNIs if theres only 4000 vlans to link them too?\n    submitted by    /u/FuckBruceArians  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/xnw2bd/how_do_we_make_use_of_16_million_vnis_when_we/",
-          "publishedOn": "2022-09-25T19:08:19.000Z",
-          "wordCount": 34923,
-          "title": "how do we make use of 16 million VNIs when we only have 4000 vlans?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/xns4u6/vlan_a_new_ssid_with_server_doing_dhcp_sophos_utm/",
-          "author": null,
-          "description": "I have a network that has Server 2016 running DHCP, Sophos UTM 9 firewall, 3 Cisco CBS250 switches and Unifi access points. They are running out of IP addresses at this location, and I was wanting to create a new SSID and put it on a different IP range so that users can connect devices to that network and work with their mobile devices and laptops.\n I have setup a VLAN for that the SSID in Unifi and created a new Scope in the DHCP server. I also set the firewall DHCP relay to point to the DHCP server so anything looking for those requests can find that IP range. \n I have setup something like this a few times in other devices using Unifi but in this current setup I am unfamiliar with Cisco and Sophos. I have figured a lot out by Googling and watching videos but I can’t seem to find this exact scenario that I am trying to recreate. \n I am wondering if I can just setup the DHCP scope, set the network inside of Unifi with the new IP range and point the DHCP relay to the firewall without using VLAN or if I need to use VLAN how I can get it to function properly across the network.\n Do I have to create a VLAN in the Sophos for this or do I just need to tag the firewall and point the DHCP relay back to the server? Also the switches are Layer 3 which I honestly have never used personally. I have been reading up about them but still unclear how I can utilize the layer 3 in this situation. \n I hope my post doesn’t get locked this time for being low quality. I hardly ever ask anyone for help when trying to do stuff and figure it out on my own but this one has me over thinking everything.\n    submitted by    /u/Revolver034  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/xns4u6/vlan_a_new_ssid_with_server_doing_dhcp_sophos_utm/",
-          "publishedOn": "2022-09-25T16:36:26.000Z",
-          "wordCount": 28293,
-          "title": "VLAN a New SSID with Server doing DHCP, Sophos UTM 9 firewall and 3 Cisco Switches and Unifi Access Points",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/xnqo0n/firewall_confusion/",
-          "author": null,
-          "description": "I am designing a hypothetical network for a homework assignment. It is fairly simple thus far, but this question I have is proving more difficult to answer than I expected. I have watched networking educational videos, I've looked for sources, but it seems that my firewall implementation idea is somehow novel, though I am certain it is not. Or, perhaps it is such a dumb idea that it does not exist online. \n I want to segment my network. Simple enough. My idea was to use firewalls at the edge of each network segment (\"star\" topology central router leads to firewalls at each outgoing port for the various departments) for high security. \n Is this... Reasonable? I only seem to find network segmenting that simply uses switches, but with no firewall other than that which leads to the WAN or DMZ. Additionally, how would these firewalls generally be configured? I would imagine I could allow only the ports that are reasonable for that segment's network usage?\n Also, can I use application proxy gateways at the edge of network segments? Online sources imply that proxies should only be used at the outside edge of the LAN. I want one proxy for one department, but a different proxy for another. Each then accessing the central router of the star topology. \n TL;DR can firewalls be reasonably used as a security measure for multiple internal network segments? What might that look like for security purposes? Same question for application proxy gateways?\n    submitted by    /u/CreedyBabyBoi  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/xnqo0n/firewall_confusion/",
-          "publishedOn": "2022-09-25T15:39:58.000Z",
-          "wordCount": 40877,
-          "title": "Firewall confusion...",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/xno11r/advice_needed_cable_vs_microwave_for_building/",
-          "author": null,
-          "description": "Hi, we have two buildings, eight units in each building, and we are looking at doing a bulk internet deal for them.\n We are deciding between a line of sight (microwave?) Service with asynchronous up/down speeds vs dedicated modems to each unit via cable provider.\n Both offers are priced similarly and have 5 year contract terms. (4-5% yearly increase in price) The microwave provider is everywhere wireless. They would deploy redundant equipment, backup power supplies, and service equipment. We own it after 7 years. Speeds are 500Mbps or 1 Gbps, but not higher at the moment.\n My question.. I'm not sure how to evaluate the microwave offering and if it will be superior to the cable modem in each unit. Latency/jitter, etc. What should we consider? I can ask one of their other recent deployments to test their system.\n From a risk perspective, the DOCSIS4 rollout will possibly drive down prices of cable offerings (at least introductory prices), and we'll be paying more in three years than we negotiate today.\n    submitted by    /u/techDad_312  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/xno11r/advice_needed_cable_vs_microwave_for_building/",
-          "publishedOn": "2022-09-25T13:55:57.000Z",
-          "wordCount": 29143,
-          "title": "Advice needed | Cable vs Microwave for building internet",
-          "imageUrl": null
         }
       ]
     },
@@ -17938,6 +17989,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDMnCGlkv4gyFGZo_ZT3atg",
       "siteUrl": "https://www.youtube.com/channel/UCDMnCGlkv4gyFGZo_ZT3atg",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=povdH453Lm0",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=povdH453Lm0",
+          "publishedOn": "2022-10-24T16:51:02.000Z",
+          "wordCount": null,
+          "title": "Android 12L for Surface Duo - HANDS ON",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=3IgjIxS9vQo",
           "author": null,
@@ -17995,6 +18056,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw",
       "siteUrl": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=VHByReaiJ4o",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=VHByReaiJ4o",
+          "publishedOn": "2022-10-24T17:00:01.000Z",
+          "wordCount": null,
+          "title": "Roasting OUR worst setups!",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=HFjJvWPwuJo",
           "author": null,
@@ -18303,16 +18374,6 @@
           "publishedOn": "2022-09-26T13:00:02.000Z",
           "wordCount": null,
           "title": "AMD is in TROUBLE – Ryzen 7000 Full Review",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=4V_pYA7Uq0U",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=4V_pYA7Uq0U",
-          "publishedOn": "2022-09-25T16:59:43.000Z",
-          "wordCount": null,
-          "title": "I LOVE Paywalls. Thanks Intel!",
           "imageUrl": null
         }
       ]
