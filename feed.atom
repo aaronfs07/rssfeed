@@ -2,10 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-28T10:16:36.062Z</updated>
+    <updated>2022-10-28T11:13:52.622Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Azure AD Log - What is this?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yfl4de/azure_ad_log_what_is_this/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yfl4de/azure_ad_log_what_is_this/"/>
+        <updated>2022-10-28T11:03:13.000Z</updated>
+        <summary type="html"><![CDATA[Hi All,
+ Doing routine checks of our sign in logs.
+ We have this week a user who's account is registering a sign in, non mfa (single authentication - previously satisfied) every 3 to 5 minutes.
+ The service is;
+ Microsoft Teams Web Client - Skype Presence Service 
+ ​
+ Doing an audit does not show Teams signing in.. Can anyone shed any light as to what this is? We don't use Skype, use Teams of course.. is this just the agent having issues or?
+ Only one user.
+    submitted by    /u/andallread1  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How much does it cost to hire a hacker? Buy stolen credentials? Or pay for a successful Spearphish?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yfkztm/how_much_does_it_cost_to_hire_a_hacker_buy_stolen/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yfkztm/how_much_does_it_cost_to_hire_a_hacker_buy_stolen/"/>
+        <updated>2022-10-28T10:56:40.000Z</updated>
+        <summary type="html"><![CDATA[I recently read this thing called "Cyber Signals" - a new publication from Microsoft. These numbers made my skin itch, they seem so cheap! 
+ 🧑‍💻 Attacker for hire: Prices start at $250 per job 🧑‍💻
+ 🪲 Ransomware SaaS kit: $40 per month 🪲
+ 💻 Compromised PC: $0.13-$0.89 💻
+ 🔑 Stolen Credentials: $150 for 400 million (!!!!) 🔑
+ 🕵️ Spearphishing for hire: $100-$1000 per successful account 🕵️ 
+ So for less than the cost of your weekly shopping, you can buy a Ransomware SaaS kit (now so popular it has it's own name: RaaS). 
+ For the price of your council tax, you can buy 400 million stolen credentials. 
+ For the price of your energy bill this month, you can hire an attacker. 
+ For somewhere around the price of your mortgage or rental payment, you could pay for a successful takeover of a highly targeted, important account within an organisation. 
+ I was absolutely floored to learn how low some of these numbers are; especially the Spearphishing one. Okay, you have to know what to do with it afterward.. But even so, it's a crazy world we live in. 
+ Remember; You have to defend perfectly every time, an attacker only has to get it right against you once. Protect yourself: do the basics, do them well: 
+ 🔒 Enable MFA
+ 💉 Ensure virus definitions are up to date
+ ⬆️ Keep endpoints (PC, laptop AND mobile) fully patched
+ 🚫 Don't give out unnecessary admin privileges
+ 💾 Back up your data 
+ Actioning the above will give you protection from 98% of attacks, say Microsoft.
+    submitted by    /u/mnealitpro  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[haproxy + keepalived config issues]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yfkuet/haproxy_keepalived_config_issues/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yfkuet/haproxy_keepalived_config_issues/"/>
+        <updated>2022-10-28T10:48:35.000Z</updated>
+        <summary type="html"><![CDATA[Hi all
+ I have two servers running keepalived to share a virtual IP
+ and haproxy to forward mail traffic to two mail servers using roundrobin. 
+ Where i am currently stuck is
+ when my IP fails over using keepalive(which works as expected)
+ My HAProxy service doesn't restart, so even though the IP fails over the server doesn't work because haproxy is offline so no mail gets passed through.
+ How do i ensure the haproxy service gets restarted once teh server picks up the VIP
+ Here is my keepalived config
+ ​
+ global_defs { router_id haproxy02 # The hostname of this host! } vrrp_script haproxy { script "killall -0 haproxy" interval 2 weight 2 } vrrp_instance 50 { virtual_router_id 50 advert_int 1 priority 100 state Master interface eth0 virtual_ipaddress { 192.168.30.145 dev eth0 # The virtual IP address that will be shared betwee MASTER and BACKUP. } track_script { haproxy } } 
+ My Backup haproxy has the same config but state is backup and priority is 50 
+ thanks for taking a look
+    submitted by    /u/SirKlip  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Solution for multi-site file sharing]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yfkjz8/solution_for_multisite_file_sharing/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yfkjz8/solution_for_multisite_file_sharing/"/>
+        <updated>2022-10-28T10:32:21.000Z</updated>
+        <summary type="html"><![CDATA[I’ve got a site currently using MPLS with two domain controllers to link each of their two branches. The majority of their network shares are on one site’s server and accessed from the other site. The reliability is awful. I’d love to hear some recommendations for the best cloud solution for multi-location file sharing. Thanks in advance.
+    submitted by    /u/kingtommy123  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[how does my cellular provider know how much data i use on an app?]]></title>
         <id>https://www.reddit.com/r/networking/comments/yfj60d/how_does_my_cellular_provider_know_how_much_data/</id>
@@ -29361,18 +29444,6 @@ No, I do not want to use an external service, I want it on-premise.
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Connecting Master Computer to 2 different networks]]></title>
-        <id>https://www.reddit.com/r/networking/comments/xqqnwg/connecting_master_computer_to_2_different_networks/</id>
-        <link href="https://www.reddit.com/r/networking/comments/xqqnwg/connecting_master_computer_to_2_different_networks/"/>
-        <updated>2022-09-28T22:37:13.000Z</updated>
-        <summary type="html"><![CDATA[So I have 2 different networks. 1 is a private network with no internet but it's a network of 2 computers and 1 nas. It has to have no internet since it's using windows xp and it's an old pos system on 2 computers, and it would risk getting viruses. The other network is just the main computer that has connection to the internet and surveillance. Sometimes I would like to access the nas from the main computer to see how the backups are doing in the private network. Should I just connect another switch/hub from the main computer to the private network (old pos system)? Or do i need a specific type of router that aggregates/controls the ports that connects to the main computer then to the private network (old pos system)?
-    submitted by    /u/friendo611  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>

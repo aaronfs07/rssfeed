@@ -270,6 +270,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yfl4de/azure_ad_log_what_is_this/",
+          "author": null,
+          "description": "Hi All,\n Doing routine checks of our sign in logs.\n We have this week a user who's account is registering a sign in, non mfa (single authentication - previously satisfied) every 3 to 5 minutes.\n The service is;\n Microsoft Teams Web Client - Skype Presence Service \n ​\n Doing an audit does not show Teams signing in.. Can anyone shed any light as to what this is? We don't use Skype, use Teams of course.. is this just the agent having issues or?\n Only one user.\n    submitted by    /u/andallread1  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yfl4de/azure_ad_log_what_is_this/",
+          "publishedOn": "2022-10-28T11:03:13.000Z",
+          "wordCount": 21370,
+          "title": "Azure AD Log - What is this?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yfkztm/how_much_does_it_cost_to_hire_a_hacker_buy_stolen/",
+          "author": null,
+          "description": "I recently read this thing called \"Cyber Signals\" - a new publication from Microsoft. These numbers made my skin itch, they seem so cheap! \n 🧑‍💻 Attacker for hire: Prices start at $250 per job 🧑‍💻\n 🪲 Ransomware SaaS kit: $40 per month 🪲\n 💻 Compromised PC: $0.13-$0.89 💻\n 🔑 Stolen Credentials: $150 for 400 million (!!!!) 🔑\n 🕵️ Spearphishing for hire: $100-$1000 per successful account 🕵️ \n So for less than the cost of your weekly shopping, you can buy a Ransomware SaaS kit (now so popular it has it's own name: RaaS). \n For the price of your council tax, you can buy 400 million stolen credentials. \n For the price of your energy bill this month, you can hire an attacker. \n For somewhere around the price of your mortgage or rental payment, you could pay for a successful takeover of a highly targeted, important account within an organisation. \n I was absolutely floored to learn how low some of these numbers are; especially the Spearphishing one. Okay, you have to know what to do with it afterward.. But even so, it's a crazy world we live in. \n Remember; You have to defend perfectly every time, an attacker only has to get it right against you once. Protect yourself: do the basics, do them well: \n 🔒 Enable MFA\n 💉 Ensure virus definitions are up to date\n ⬆️ Keep endpoints (PC, laptop AND mobile) fully patched\n 🚫 Don't give out unnecessary admin privileges\n 💾 Back up your data \n Actioning the above will give you protection from 98% of attacks, say Microsoft.\n    submitted by    /u/mnealitpro  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yfkztm/how_much_does_it_cost_to_hire_a_hacker_buy_stolen/",
+          "publishedOn": "2022-10-28T10:56:40.000Z",
+          "wordCount": 21632,
+          "title": "How much does it cost to hire a hacker? Buy stolen credentials? Or pay for a successful Spearphish?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yfkuet/haproxy_keepalived_config_issues/",
+          "author": null,
+          "description": "Hi all\n I have two servers running keepalived to share a virtual IP\n and haproxy to forward mail traffic to two mail servers using roundrobin. \n Where i am currently stuck is\n when my IP fails over using keepalive(which works as expected)\n My HAProxy service doesn't restart, so even though the IP fails over the server doesn't work because haproxy is offline so no mail gets passed through.\n How do i ensure the haproxy service gets restarted once teh server picks up the VIP\n Here is my keepalived config\n ​\n global_defs { router_id haproxy02 # The hostname of this host! } vrrp_script haproxy { script \"killall -0 haproxy\" interval 2 weight 2 } vrrp_instance 50 { virtual_router_id 50 advert_int 1 priority 100 state Master interface eth0 virtual_ipaddress { 192.168.30.145 dev eth0 # The virtual IP address that will be shared betwee MASTER and BACKUP. } track_script { haproxy } } \n My Backup haproxy has the same config but state is backup and priority is 50 \n thanks for taking a look\n    submitted by    /u/SirKlip  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yfkuet/haproxy_keepalived_config_issues/",
+          "publishedOn": "2022-10-28T10:48:35.000Z",
+          "wordCount": 21409,
+          "title": "haproxy + keepalived config issues",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yfkjz8/solution_for_multisite_file_sharing/",
+          "author": null,
+          "description": "I’ve got a site currently using MPLS with two domain controllers to link each of their two branches. The majority of their network shares are on one site’s server and accessed from the other site. The reliability is awful. I’d love to hear some recommendations for the best cloud solution for multi-location file sharing. Thanks in advance.\n    submitted by    /u/kingtommy123  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yfkjz8/solution_for_multisite_file_sharing/",
+          "publishedOn": "2022-10-28T10:32:21.000Z",
+          "wordCount": 21234,
+          "title": "Solution for multi-site file sharing",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/yfj0o3/dcs_cant_enroll_or_autoenroll_in_custom_cert/",
           "author": null,
           "description": "Part of a multi domain forest, the CA and Offline CA are in the same domain as these DCs. CA is set to only issue certs to the domain.\n Offline CA has been offline throughout this as well it shouldn't be needed. CRLs are all valid. PKIView comes back all ok.\n I can see the standard AD templates on the DCs\n I can see the custom templates on other devices if I add them, just not the DCs\n I've tried adding a single DC on to the permisions for the template restarting the CA and still nothing\n The templates have the following persmions\n Authenticated users - Read\n Domain Admin - Read Enroll\n Domain Controlers - Enroll, Auto Enroll\n Tried settings Enterprise Domain Conrollers to Enroll too but made no difference.\n Has there been some changes to AD that means there's now an extra step for DCs to see templates?\n    submitted by    /u/StuffKooky  \n [link]   [comments]",
@@ -19020,16 +19060,6 @@
           "wordCount": 28394,
           "title": "How are plenum cables properly run?",
           "imageUrl": "https://external-preview.redd.it/27Esf6mHQv24bq8vy9n0GUuVWNpF_0RViDOasAPr__s.jpg?auto=webp&s=c589b14805b70eeccc1a64754be0daa698997232"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/xqqnwg/connecting_master_computer_to_2_different_networks/",
-          "author": null,
-          "description": "So I have 2 different networks. 1 is a private network with no internet but it's a network of 2 computers and 1 nas. It has to have no internet since it's using windows xp and it's an old pos system on 2 computers, and it would risk getting viruses. The other network is just the main computer that has connection to the internet and surveillance. Sometimes I would like to access the nas from the main computer to see how the backups are doing in the private network. Should I just connect another switch/hub from the main computer to the private network (old pos system)? Or do i need a specific type of router that aggregates/controls the ports that connects to the main computer then to the private network (old pos system)?\n    submitted by    /u/friendo611  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/xqqnwg/connecting_master_computer_to_2_different_networks/",
-          "publishedOn": "2022-09-28T22:37:13.000Z",
-          "wordCount": 27414,
-          "title": "Connecting Master Computer to 2 different networks",
-          "imageUrl": null
         }
       ]
     },
