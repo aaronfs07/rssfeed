@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-28T09:16:49.518Z</updated>
+    <updated>2022-10-28T10:16:36.062Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
@@ -120,6 +120,31 @@
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sanity check request - Azure PIM - sign out/in necessary?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yfhqpp/sanity_check_request_azure_pim_sign_outin/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yfhqpp/sanity_check_request_azure_pim_sign_outin/"/>
+        <updated>2022-10-28T07:44:52.000Z</updated>
+        <summary type="html"><![CDATA[Hi all,
+ At the request of the boss, I've been implementing PIM this week in time for an MSP switcheroo next week. 
+ I'm writing an email to explain how to request roles in response to 'we tried logging in and don't have access' from the new service desk but I'm having a bit of trouble with the test account I've put together to grab screenshots from - 
+ ​
+ 1- Should I need to sign out/in for the role to become active? The PIM page says the page will refresh by itself, you don't need to sign out/in. 
+ I've been trying this for the past couple of hours, and I kept having to sign out/in because waiting 3-5 minutes was yielding no change - the 365 admin page and the ECP page were giving a 'no access sucker' unless I signed out/in.
+ Meanwhile, after assigning direct access, then unassigning direct access, then trying again using PIM, it now HAS worked without signing out and in again. Is this the usual experience others have had, or have I just been particularly unlucky with propagation delays
+ ​
+ 2- The Exchange recipient administrator role in particular seems bad for this - I assign it and activate it on my test account, but it doesn't seem to do bugger all. I activate it, I sign out, sign in, do a little dance, and still don't have access to the ECP. 
+ Meanwhile, I assign it to be permanently active, sign out, sign in, BAM it's immediately there and works flawlessly. 
+ ​
+ I've signed out and in to these accounts so many times I'm ready to sign out of existence entirely,I just want someone to confirm whether or not this is the experience other people have had or if I'm just having a particularly bad friday night. 
+ ​
+ I'm gonna go make a cup of tea and cry into it while I wait to see if it's just been me all along
+    submitted by    /u/8ftmetalhead  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
         </author>
     </entry>
     <entry>
@@ -812,6 +837,40 @@ but it doesn't say how common that both sides support this is. Is it like 50% of
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Site to Site Issues]]></title>
+        <id>https://www.reddit.com/r/networking/comments/yes4xc/site_to_site_issues/</id>
+        <link href="https://www.reddit.com/r/networking/comments/yes4xc/site_to_site_issues/"/>
+        <updated>2022-10-27T13:34:41.000Z</updated>
+        <summary type="html"><![CDATA[Cisco ASA -> FortiGate
+ ASA receives, decaps, but wont encap. Usually points to routing or NAT issues. Ran packet tracer and this is what it's outputting. Have good NAT exemptions in place as well. This has been a headache for the past 2 days. 
+ ​
+ GENYOUTH-CKBG-ASA# packet-tracer input inside tcp 10.30.20.114 1065 192.168.1$
+ ​
+ Phase: 1
+ Type: CAPTURE
+ Subtype:
+ Result: ALLOW
+ Config:
+ Additional Information:
+ Forward Flow based lookup yields rule:
+ in id=0x7f3c41074fd0, priority=13, domain=capture, deny=false
+ hits=4877797, user_data=0x7f3c411165c0, cs_id=0x0, l3_type=0x0
+ src mac=0000.0000.0000, mask=0000.0000.0000
+ dst mac=0000.0000.0000, mask=0000.0000.0000
+ input_ifc=inside, output_ifc=any
+ ​
+ Phase: 2
+ Type: ACCESS-LIST
+ Subtype:
+ Result: ALLOW
+ Config:
+ Implicit Rule
+ Additional I…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
     <entry>
@@ -29311,30 +29370,6 @@ No, I do not want to use an external service, I want it on-premise.
         <updated>2022-09-28T22:37:13.000Z</updated>
         <summary type="html"><![CDATA[So I have 2 different networks. 1 is a private network with no internet but it's a network of 2 computers and 1 nas. It has to have no internet since it's using windows xp and it's an old pos system on 2 computers, and it would risk getting viruses. The other network is just the main computer that has connection to the internet and surveillance. Sometimes I would like to access the nas from the main computer to see how the backups are doing in the private network. Should I just connect another switch/hub from the main computer to the private network (old pos system)? Or do i need a specific type of router that aggregates/controls the ports that connects to the main computer then to the private network (old pos system)?
     submitted by    /u/friendo611  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple NEVER Learns. - M2 Macbook Review]]></title>
-        <id>https://www.youtube.com/watch?v=w6GTf6ATlho</id>
-        <link href="https://www.youtube.com/watch?v=w6GTf6ATlho"/>
-        <updated>2022-09-28T22:04:24.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[HP Procurve 2520G for noobs]]></title>
-        <id>https://www.reddit.com/r/networking/comments/xqp6ie/hp_procurve_2520g_for_noobs/</id>
-        <link href="https://www.reddit.com/r/networking/comments/xqp6ie/hp_procurve_2520g_for_noobs/"/>
-        <updated>2022-09-28T21:36:19.000Z</updated>
-        <summary type="html"><![CDATA[Howdy! local failure here at your service! if only i knew what i was doing...
- tl;dr; how do you change a ports vlan for a HP Procurve in putty
- got into the switch by clearing passwords but now the webui isn't prompting for user/password and i'm not very successful with the java errors today. (downloaded java, added trusted sites, added to java exceptions list.)
- Already set passwords in cli and got the port info i needed, now i just need to figure out how to change it to another already configured vlan lol.. Unless it's serious i guess i'll figure out the webui issue later.
-    submitted by    /u/EZinstall  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
