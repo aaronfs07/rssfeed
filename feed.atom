@@ -2,10 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-10-30T13:29:50.584Z</updated>
+    <updated>2022-10-30T14:13:09.090Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Ideas on breaking AD DS?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yhf4hj/ideas_on_breaking_ad_ds/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yhf4hj/ideas_on_breaking_ad_ds/"/>
+        <updated>2022-10-30T14:05:33.000Z</updated>
+        <summary type="html"><![CDATA[I am setting up a test environment for learning Windows AD DS. I am hoping to break it in everyway I can, and then fix it. I am reaching out for ideas.
+ Currently all I have is giving multiple computers the same hostname, and setting the time settings incorrectly.
+    submitted by    /u/Titanium125  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 10 EAP debugging ?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yheqzc/windows_10_eap_debugging/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yheqzc/windows_10_eap_debugging/"/>
+        <updated>2022-10-30T13:48:58.000Z</updated>
+        <summary type="html"><![CDATA[Working with a small network that has Linux, macOS, and Windows systems. * All systems have a system certificate deployed that is used for wired or wireless EAP-TLS/802.1x that works (FreeRADIUS deployed on RHEL8 servers) * Some users now have smartcards that they want to incorporate. * Smartcards work fine on Linux and macOS systems for EAP-TLS wired or wireless * Smartcards fail weirdly on Windows 10 (22H2) with this error in the EapMethods-RasTls event logs:
+ "Authentication failed for EAP method type 13. The error was 0x80090331."
+ GoogleFu says that error is something like "The client and server cannot communicate, because they do not possess a common algorithm."
+ Wireshark packet captures of the EAP conversation show the client sending its list of ciphers it supports in the Client-Hello, and then the Server-Hello coming back using one of those ciphers. But the Windows 10 host stops responding and simply says it could not connect when using the smartcard.
+ The same host works fine when using the computer certificate and the cipher exchange looks the same in that case.
+ Is there a deeper/better way to get Windows to show me more information so I can figure out what cipher mismatch it thinks it has ? Has anyone seen this error before for EAP-TLS ?
+    submitted by    /u/buzzsawcode  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2 routers or 1 router 2 VRFs in kubernetes]]></title>
+        <id>https://www.reddit.com/r/networking/comments/yheoje/2_routers_or_1_router_2_vrfs_in_kubernetes/</id>
+        <link href="https://www.reddit.com/r/networking/comments/yheoje/2_routers_or_1_router_2_vrfs_in_kubernetes/"/>
+        <updated>2022-10-30T13:45:42.000Z</updated>
+        <summary type="html"><![CDATA[If you have 2 subnets in one node they will connect to same vRouter and they will communicate intra node, i want to have 2 vRouters or 1 vRouter with 2 VRFs, I'm using calico. Background if you want to know why, i have firewall and i want it to be in the middle of the subnets i already achieved this in inter node communication with eBGP peering
+    submitted by    /u/time_over  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2012 MacBook pro failing what to buy next?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/yhe0kb/2012_macbook_pro_failing_what_to_buy_next/</id>
@@ -28489,37 +28531,6 @@ Any half-baked (but working) FCC-approved module that can do 802.11y-2008 & inte
  What are the ramifications for renewing this thing? If I get the Enterprise Administrator cert, should I even worry about renewing the Messaging Administrator one or just let it go? Does it cost a lot for renewing? 
  I've only been in the industry for 2 years and I'm trying to transition to the systems/cloud administration side of things, helpdesk is far too easy, and I love working with Windows Server, Azure and 365 and was curious of anyone who perhaps has the MS100/101 cert how long is it valid for?
     submitted by    /u/KeredEkralc  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows Server hosted alternatives to Sharepoint Server\OwnCloud\NextCloud for Small Business?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/xsj6d7/windows_server_hosted_alternatives_to_sharepoint/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/xsj6d7/windows_server_hosted_alternatives_to_sharepoint/"/>
-        <updated>2022-10-01T02:03:52.000Z</updated>
-        <summary type="html"><![CDATA[We have about 80TB of NVME storage on a Windows Server (We chose Windows Server because we just weren't able to get reliable >10gbs transfers via TrueNAS or ProxMox or TrueNAS Scale over SMB to Windows 10 clients.)
- We are looking for a service that we can self-host all of our data, in place with a sync client for Mac and PC that lets you see virtual\files on demand. 
- Synology Drive Server is working for us now. But it requires maintaining a completely redundant copy of all of the data on a Synology NAS just to be able to serve the data over Synology Drive. We use Syncthing to keep our Windows<>Synology in lock step and it's working but it's a fragile arrangement and requires redundant storage. 
- Sharepoint Server is the obvious choice for a cloud file server, however for just 8 users Sharepoint Server is $7,200/license + $150/user CAL = $16,000 it's from a cost perspective more expensive than buying a 250TB TrueNAS server and just doing the Syncthing dance.
- Resilio technologically looks great, but we only have 8 users and in order to get a Windows Server license you need at least 20 users which means we would be paying $200/mo. 
- OwnCloud and NextCloud offer exactly what we need, but back in 2017 they abandoned Windows. We could run them in a hypervisor, but then we'll need to duplicate the data into the VM and double our storage. 
- Qsync in QuTScloud would let us host a QNAP OS image in Hyper-V for a reasonable price per year but would also require us to duplicate our storage in the VM which means double the costs for hard drives. 
- Is there someone I'm missing who works with Windows Server and doesn't have crazy enterprise rates assuming that 80TB will only ever be needed by multinational corporations?
-    submitted by    /u/im_thatoneguy  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Any way to gpo/script to find geolocation to verify OU groups?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/xsiuj3/any_way_to_gposcript_to_find_geolocation_to/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/xsiuj3/any_way_to_gposcript_to_find_geolocation_to/"/>
-        <updated>2022-10-01T01:47:41.000Z</updated>
-        <summary type="html"><![CDATA[Need to clean up an environment
-    submitted by    /u/throwawayisstronk  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
