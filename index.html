@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-03 datetime="2022-11-03T08:57:03.000Z">2022-11-03</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-03 datetime="2022-11-03T08:57:03.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-03 datetime="2022-11-03T10:13:10.000Z">2022-11-03</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-03 datetime="2022-11-03T10:13:10.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,139 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yky860/aws_support_will_no_longer_fall_over_with_useast1/"
+                        open
+                      >
+                        <summary class="article-expander__title">AWS Support will no longer fall over with US-EAST-1, after architectural rebuild</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yky860/aws_support_will_no_longer_fall_over_with_useast1/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>AWS apparently fixed Support and health dashboard&#x27;s reliance on US-EAST-1 over the summer, which is good news. Not sure why they were so coy about it.
+    submitted by    /u/Nominativedetermined  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yky7ui/is_there_anywhere_to_get_solid_gpo_files_to_import/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is there anywhere to get solid GPO files to import?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yky7ui/is_there_anywhere_to_get_solid_gpo_files_to_import/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am looking for GPO files/backups that you can import that are pretty solid and don&#x27;t need much tweaking?
+ Looking to lock out all the obvious feature end users shouldn&#x27;t be accessing, disabling windows search capabilities, block access to other users files etc.
+ They are allowed internet access
+    submitted by    /u/Over-Arugula3320  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ykxxiq/thickheaded_thursday_november_03_2022/"
+                        open
+                      >
+                        <summary class="article-expander__title">Thickheaded Thursday - November 03, 2022</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ykxxiq/thickheaded_thursday_november_03_2022/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Howdy, /r/sysadmin!
+ It&#x27;s that time of the week, Thickheaded Thursday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I&#x27;ve taken over responsibility for posting these weekly threads so you don&#x27;t have to worry about anything except your comments!
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ykxt6r/privileged_commands_is_collected_cis_finding/"
+                        open
+                      >
+                        <summary class="article-expander__title">Privileged commands is collected - CIS finding</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ykxt6r/privileged_commands_is_collected_cis_finding/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, 
+ I am working with CIS custom Image for my EC2 - AMZ2 instance.
+ I am facing a new finding in the Inspector result, which is:
+ Ensure use of privileged commands is collected 
+ The recommended action is to run the following command:
+ # find -xdev \( -perm -4000 -o -perm -2000 \) -type f | awk &#x27;{print \&quot;-a always,exit -F path&#x3D;&quot; $1 &quot; -F perm&#x3D;x - F auid&gt;&#x3D;1000 -F auid!&#x3D;4294967295 \-k privileged&quot; }&#x27; 
+ And add the results to the:
+ /etc/ audit/rules.d/audit.rules 
+ ​
+ But, when running this command; I got a syntax error.
+ ​
+ So, I tried to add the following lines (Containing my partitions) to the mentioned file, but this finding still appears in the inspector report.
+ -a always,exit -F path&#x3D;/dev/xvda -F perm&#x3D;x -F auid&gt;&#x3D;1000 -F auid!&#x3D;4294967295 -k privileged -a always,exit -F path&#x3D;/dev/xvdb -F perm&#x3D;x -F auid&gt;&#x3D;1000 -F auid!&#x3D;4294967295 -k privileged 
+    submitted by    /u/a7awwa  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ykx829/the_i_used_to_be_an_it_person_but_changed_careers/"
+                        open
+                      >
+                        <summary class="article-expander__title">The I Used to Be an IT Person But Changed Careers User</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ykx829/the_i_used_to_be_an_it_person_but_changed_careers/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Well. It happened Today we had a new starter. The new Sales Manager started today. Gave him the IT Induction. 
+ ​
+ During the induction
+ ​
+ Him: What Computers Do You Use
+ Me: Lenovo but sometimes HP and used to use Dell but cant get hold of any now
+ Him: They Are Crap. I want a Dell.
+ Me: Sorry We Don&#x27;t use Dell anymore. You have a Brand New Lenovo Carbon Blah whatever. It&#x27;s a great machine. Thin Light 32GB ram. Core I7 etc
+ Him: That&#x27;s unfortunate. Goes on Rant about how he was an IT Manager for xyz company and Dell is better etc.
+ Me: OK
+ Him: What Phone Do I Get
+ Me: Apple iPhone 12 on Optus
+ Him: I use Andriod and I want to be on Telstra. 
+ Me: We Use IPhone and we use Optus for mobile phones
+ Him: I don&#x27;t get Optus Coverage where I live.
+ Me: Pulls up Optus Coverage. He puts in the A…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;71
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -47745,8 +47878,8 @@ Thanks all in advance to all the replies, I&#x27;m a bit anxious and I don&#x27;
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3384379231">
-        <time id="build-timestamp" datetime="2022-11-03T09:15:16.589Z">2022-11-03T09:15:16.589Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3384786237">
+        <time id="build-timestamp" datetime="2022-11-03T10:15:35.498Z">2022-11-03T10:15:35.498Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
