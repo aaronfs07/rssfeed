@@ -240,6 +240,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ylubdr/manufacturing_iot_devices_with_internet_firewall/",
+          "author": null,
+          "description": "Sysadmin working for a pharma manufacturing company in a small 3 employees IT team. Our production has been adding some IoT devices connected directly to prod machines for some years. These devices needs outgoing internet traffic with some Azure/DNS/NTP servers. The way I handled it is I whitelisted the needed IP on the firewall.\n But as time goes, it gets complicated to manage these firewall WAN IP whitelisting, and I'm wondering if it is worth it. \n In résumé, is it overkill to use Wan ip whitelisting for security purpose if iot device is initiating the internet traffic?\n    submitted by    /u/Grimzkunk  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ylubdr/manufacturing_iot_devices_with_internet_firewall/",
+          "publishedOn": "2022-11-04T09:50:23.000Z",
+          "wordCount": 21268,
+          "title": "Manufacturing IoT devices with internet : firewall IP filtering or not?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yltrxh/understanding_this_file_type_spoof/",
+          "author": null,
+          "description": "Would anyone be able to explain how this has been spoofed to show the .pdf extension at the end of the file name?\n Sample 1 which is a standard .html file is as expected - sample1.html\n Sample 2 which is the malicious JS obfuscated page which slipped through a filter contains .htm and then .pdf so the file properties displays this as .htm - malware mth.pdf\n This should have been caught by our filter but the double extension has caused it to not be picked up. I was trying to replicate this but I was having mixed results. I first tried copying the file name as its written with mth.pdf and it changed to a PDF. I then tried playing with the RTLO but this is pretty much patched by most browsers.\n Does anyone know how this was achieved?\n    submitted by    /u/Interesting-Fold5931  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yltrxh/understanding_this_file_type_spoof/",
+          "publishedOn": "2022-11-04T09:23:54.000Z",
+          "wordCount": 21074,
+          "title": "Understanding this file type spoof?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yltq8b/apply_group_policy_to_terminal_server_only_for/",
+          "author": null,
+          "description": "Hello everyone,\n it has been a long time since I last used group policies to administer servers or other computers. Right now we have a terminal server which everyone logs into and uses. I want to prevent certain users from turning off the server by applying the specific group policy rule. From my memory, I think I did the right steps but just now I tested it and it didnt work. I did the following steps:\n  \nMove Terminal Server to OU 'Servers'\n Link GPO to 'Servers' with User Configuration > Administrative Templates > Start Menu and Taskbar > Remove and Prevent Access to the shutdown command activated. \n Link another GPO to 'Servers' with Computer Configuration\\ Administrative Templates\\ System\\ Group Policy\\Configure user Group Policy loopback processing mode activated.\n Set security group for both only allowing the Standard-User Group to apply the policy.\n gpupdate on terminal server\n  \nWhat I expect to happen is the machine reading the loopback policy on startup, however I'm not sure if I just prevented that using a security-group. Do I need to include the machine itself inside the security group? How is it different than using \"authenticated users\". \n After reading the loopback policy, the Server tries to read the user config policy but ignores it, because it is not a user. Now when a user logs into the machine, although not being inside the OU, the user reads the user configuration from the policy because loopback is applied and applies the policy, when the user is a member of the security group. \n I'm certain I made a mistake somewhere because otherwise it would work. \n ​\n Thanks for any help\n    submitted by    /u/Comfortable_Onion318  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yltq8b/apply_group_policy_to_terminal_server_only_for/",
+          "publishedOn": "2022-11-04T09:21:42.000Z",
+          "wordCount": 21663,
+          "title": "Apply group policy to terminal server only for certain users",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yltow4/is_there_a_way_to_save_the_mail_data_before/",
+          "author": null,
+          "description": "after the merger, i think about 10-15 employees from the company left and they have important data in their mail. we don't wanna loose the mail data in their mailbox, is there any way i can back that up before removing their account?\n    submitted by    /u/CANidownloadRAM  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yltow4/is_there_a_way_to_save_the_mail_data_before/",
+          "publishedOn": "2022-11-04T09:20:01.000Z",
+          "wordCount": 20107,
+          "title": "Is there a way to save the mail data before deleting them from my 365 domain?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/ylte44/course_real_world_devops_project_from_start_to/",
           "author": null,
           "description": "submitted by    /u/predmijat  \n [link]   [comments]",
@@ -13265,6 +13305,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yluu7f/is_fibre_throughput_speed_binary_ie_1gbit_or/",
+          "author": null,
+          "description": "Ok so I'm struggling to search for the right terms so I've decided to try and ask.\n If you have a fibre run, and you connect two switches with 1Gbps transceivers, you get 1Gbps link. Yay.\n I'm trying to determine if \"old\" fibre is perfectly fine if it still works. You either get a 1Gbps connection or you don't - or - signal degradation and packet loss could mean a functional connection with a seriously low maximum capability even though the link is established at 1Gbps.\n What happens over time? 5 years, 10 years, 15 years? Does the capability of the medium degrade and lose performance? Do you get \"indicated\" 1Gbps right up until the point where you get no link? Do you get indicated 1Gbps but no where near the 1Gbps throughput and packet loss? \n It's been quite hard to search for the answer, and I think I'm just using the wrong search terms, or this isn't widely discussed. \n ​\n Thank you\n    submitted by    /u/b_muz  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yluu7f/is_fibre_throughput_speed_binary_ie_1gbit_or/",
+          "publishedOn": "2022-11-04T10:15:24.000Z",
+          "wordCount": 17515,
+          "title": "Is fibre throughput speed binary? ie 1Gbit or nothing",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/ylusid/wifi_router_with_url_monitoring_capability/",
+          "author": null,
+          "description": "Hi. I would like to buy a WiFi router with built-in URL monitoring per each device connected to it.\n Any recommendation?\n Currently I have Archer C80.\n    submitted by    /u/c_a_r_l_o_s_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ylusid/wifi_router_with_url_monitoring_capability/",
+          "publishedOn": "2022-11-04T10:12:56.000Z",
+          "wordCount": 17238,
+          "title": "WiFi router with URL monitoring capability",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/ylrxgi/cisco_sg30028pp_poe_fault/",
           "author": null,
