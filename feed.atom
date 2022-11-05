@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-05T10:15:39.477Z</updated>
+    <updated>2022-11-05T11:11:22.987Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
@@ -28737,23 +28737,6 @@ I'm sure this conversation will evolve, but I'd love to hear folks impressions.
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VLANs, Subnets, Broadcast Domains: Enterprise LAN Design]]></title>
-        <id>https://www.reddit.com/r/networking/comments/xxiu0f/vlans_subnets_broadcast_domains_enterprise_lan/</id>
-        <link href="https://www.reddit.com/r/networking/comments/xxiu0f/vlans_subnets_broadcast_domains_enterprise_lan/"/>
-        <updated>2022-10-06T22:54:35.000Z</updated>
-        <summary type="html"><![CDATA[I'm not entirely understanding what the best practice is for managing VLANs, subnets, and broadcast domains is when designing an enterprise LAN. 
- Here's a basic LAN segment to reference throughout this post.
- Across an organization, let's assume that at that a small size site with a single switch has VLAN 69 specified for interfaces connecting to PCs. 
- At a larger site, there will be multiple switches connecting to a central core switch (or switch cluster), which then connected upstream to a router (router-on-a-stick). If I deploy VLAN 69 on both of the access switches, despite them being in different subnets, the trunk links connecting the access switches to the core switch will expand my broadcast domain to include both of these networks. The L3 traffic will be contained to whatever the mask is set to (in this case, the two /24s as shown in the diagram), but the L2 traffic will include all three switches and the LAN-facing router interface. 
- Q: Is it possible to keep the broadcast domain limited to the scope of only the respective /24 networks without having to specify two separate VLAN IDs, or do I have to make one of the switches operate on a different VLAN ID? 
- If separate VLAN IDs are required, how do you best design your VLAN deployments? Do you have ranges of VLAN IDs for specific purposes (i.e. VLAN 60-69 for PCs, VLAN 70-79 for Servers, etc.)?
-    submitted by    /u/EyeDewBrowse  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>

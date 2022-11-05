@@ -18478,16 +18478,6 @@
           "wordCount": 50402,
           "title": "Blogpost Friday!",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/xxiu0f/vlans_subnets_broadcast_domains_enterprise_lan/",
-          "author": null,
-          "description": "I'm not entirely understanding what the best practice is for managing VLANs, subnets, and broadcast domains is when designing an enterprise LAN. \n Here's a basic LAN segment to reference throughout this post.\n Across an organization, let's assume that at that a small size site with a single switch has VLAN 69 specified for interfaces connecting to PCs. \n At a larger site, there will be multiple switches connecting to a central core switch (or switch cluster), which then connected upstream to a router (router-on-a-stick). If I deploy VLAN 69 on both of the access switches, despite them being in different subnets, the trunk links connecting the access switches to the core switch will expand my broadcast domain to include both of these networks. The L3 traffic will be contained to whatever the mask is set to (in this case, the two /24s as shown in the diagram), but the L2 traffic will include all three switches and the LAN-facing router interface. \n Q: Is it possible to keep the broadcast domain limited to the scope of only the respective /24 networks without having to specify two separate VLAN IDs, or do I have to make one of the switches operate on a different VLAN ID? \n If separate VLAN IDs are required, how do you best design your VLAN deployments? Do you have ranges of VLAN IDs for specific purposes (i.e. VLAN 60-69 for PCs, VLAN 70-79 for Servers, etc.)?\n    submitted by    /u/EyeDewBrowse  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/xxiu0f/vlans_subnets_broadcast_domains_enterprise_lan/",
-          "publishedOn": "2022-10-06T22:54:35.000Z",
-          "wordCount": 40860,
-          "title": "VLANs, Subnets, Broadcast Domains: Enterprise LAN Design",
-          "imageUrl": "https://external-preview.redd.it/YmV7AfahcZMh3n2IAkU31l0KIm9Dt9v_ht4bRoCI3MA.jpg?auto=webp&s=bb27cb46552b896647b82aa3d1fc536ffe473d9e"
         }
       ]
     },
