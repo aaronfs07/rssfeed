@@ -240,6 +240,56 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yokx5e/windows_update_breaks_printer_driversettings/",
+          "author": null,
+          "description": "We use a Windows 2016 server to run print jobs for our ERP system. All printing is direct - no print servers/sharing involved.\n For the past year, it seems like about 50% of Microsoft's updates breaks our printers. The exact scenario is: post-update, about 90% of the printers will have been defaulted to duplex printing, and about 90% of the printers will be using the generic Microsoft printer driver. (Note that these two groups do not always overlap; sometimes a printer will still have the correct driver, but will have been changed to duplex printing, or vice-versa.) This is not printer or driver specific; it occurs across several different makes/models and drivers.\n Fixing it is a relatively simple, but frustrating process: Just go into each printer's \"Advanced > Printing Defaults...\" and disable duplex. Afterwards, both issues will be resolved.\n We attempted to resolve this with a simple bit of Powershell, set to run (as admin) on system startup:\n  $printers = Get-Printer foreach($printer in $printers){ Set-PrintConfiguration -PrinterName $printer.name -DuplexingMode 'OneSided' } \n However, Set-PrinterConfiguration only works after the printer has been manually fixed. Otherwise, it generates the following error:\n  Set-PrintConfiguration : Could not access configuration information for the specified printer. At C:\\Scripts\\Set_SingleSidedPrinting.ps1:7 char:5 + Set-PrintConfiguration -PrinterName $printer.name -DuplexingMode ... + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ + CategoryInfo : ObjectNotFound: (MSFT_PrinterConfiguration:ROOT/StandardCi...erConfiguration) [Set-PrintConfiguration], CimException + FullyQualifiedErrorId : HRESULT 0x80070002,Set-PrintConfiguration \n Very frustrating. Any ideas how to resolve things? Either so that Windows Updates no longer cause the printing issue, or so that our script can reliably run, post-update?\n    submitted by    /u/ltwally  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yokx5e/windows_update_breaks_printer_driversettings/",
+          "publishedOn": "2022-11-07T12:09:29.000Z",
+          "wordCount": 23169,
+          "title": "Windows Update breaks printer driver/settings, Powershell fails to fix",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yokfbs/whats_you_terminal_emulator_of_choice_on_windows/",
+          "author": null,
+          "description": "I swear i'm going insane and it shouldn't be that hard.\n The \"new\" Windows Terminal is everything i want. Except, sometimes, pasting passwords over SSH plain won't work. Pasting the Password without a sudo prompt or such shows the correct text, but when asked for a password by ansible or sudo, only typing does it. No idea why. It has also been laggy when connected to Servers with a less than ideal connection. Not sure why my Input depends on the connection to the customer?\n So, suffice to say, i'm not happy with windows Terminal. Alacritty does everything great, except it doesn't have tabs.\n Putty also doesn't have tabs plus it's session management is... less than ideal.\n So, what do i do? My requirements are pretty basic. All Windows stuff can be done through PS. So all i really need is something that can do SSH, Tabs, maybe split windows. Stored sessions are a nice to have, but i'm fine copy pasting IPs and using my SSH config. Right Click Paste would be nice, but Ctrl+V works too. It should use Windows' build in OpenSSH, not putty and Pageant. Other than that, it should be responsive and work as expectet 100% of the time.\n What do those of you that Use SSH for admin tasks all day, but also need to use Windows, use?\n    submitted by    /u/domsch1988  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yokfbs/whats_you_terminal_emulator_of_choice_on_windows/",
+          "publishedOn": "2022-11-07T11:49:18.000Z",
+          "wordCount": 21697,
+          "title": "What's you Terminal emulator of choice on Windows?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yok5ee/limit_ad_logins/",
+          "author": null,
+          "description": "Hello,\n We are currently deploying an web app that uses our AD infrastruture to login users.\n However I have some users that I only want to allow the login through this app (web app with ldap login). Is there any way I can lock these accounts to dont allow login into anycomputer at all on the doman?\n    submitted by    /u/ArminiusPT  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yok5ee/limit_ad_logins/",
+          "publishedOn": "2022-11-07T11:36:46.000Z",
+          "wordCount": 21759,
+          "title": "Limit AD Logins",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yok1o2/how_to_detect_whether_a_physical_cable_is/",
+          "author": null,
+          "description": "Hi All,\n ​\n ​\n I Need to know whether a physical cable is connected to a network port on your Windows Server system. I can see link status via ethtool command in Linux machine.\n Is there any equilavent command for Windows?\n ​\n thanks,\n    submitted by    /u/maxcoder88  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yok1o2/how_to_detect_whether_a_physical_cable_is/",
+          "publishedOn": "2022-11-07T11:32:02.000Z",
+          "wordCount": 20035,
+          "title": "How to detect whether a physical cable is connected to network card slot on windows Server ?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yojovz/hyperv_iso_mounting_issue/",
+          "author": null,
+          "description": "I've recently began a project of replacing a Windows storage space fileserver with a TrueNAS fileserver\n I've recently downloaded brand new Windows and Linux ISO's and stored them on our new storage server and when we try and add the ISO to the virtual machine, I get the following error:\n Failed to add device 'Virtual CD/DVD Disk'.\n User account does not have permission to open attachment\n Originally, I googled this, and I added the delegation in Active Directory but that didn't work.\n Has anyone else experienced this same problem?\n    submitted by    /u/Kwhite2000  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yojovz/hyperv_iso_mounting_issue/",
+          "publishedOn": "2022-11-07T11:15:58.000Z",
+          "wordCount": 20813,
+          "title": "Hyper-V ISO mounting issue",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/yoji94/ncsc_to_scan_all_internet_connected_sitesapps/",
           "author": null,
           "description": "https://www.androidpolice.com/uk-govt-internet-scanning/ \n They have provided IP addresses that the scans will come from. What would be a good custom HTTP response for our Web Application Firewall that will end up stored in their database?\n    submitted by    /u/Confident_Counter203  \n [link]   [comments]",

@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-07 datetime="2022-11-07T11:07:32.000Z">2022-11-07</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-07 datetime="2022-11-07T11:07:32.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-07 datetime="2022-11-07T12:09:29.000Z">2022-11-07</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-07 datetime="2022-11-07T12:09:29.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,136 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yokx5e/windows_update_breaks_printer_driversettings/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows Update breaks printer driver/settings, Powershell fails to fix</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yokx5e/windows_update_breaks_printer_driversettings/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We use a Windows 2016 server to run print jobs for our ERP system. All printing is direct - no print servers/sharing involved.
+ For the past year, it seems like about 50% of Microsoft&#x27;s updates breaks our printers. The exact scenario is: post-update, about 90% of the printers will have been defaulted to duplex printing, and about 90% of the printers will be using the generic Microsoft printer driver. (Note that these two groups do not always overlap; sometimes a printer will still have the correct driver, but will have been changed to duplex printing, or vice-versa.) This is not printer or driver specific; it occurs across several different makes/models and drivers.
+ Fixing it is a relatively simple, but frustrating process: Just go into each printer&#x27;s &quot;Advanced &gt; Printing Defaults...&quot; and disable duplex. Afterwards, both issues will be resolved.
+ We attempted to resolve this with a simple bit of Powershell, set to run (as admin) on system startup:
+  $printers &#x3D; Get-Printer foreach($printer in $printers){ Set-PrintConfiguration -PrinterName $printer.name -DuplexingMode &#x27;OneSided&#x27; } 
+ However, Set-PrinterConfiguration only works after the printer has been manually fixed. Otherwise, it generates the following error:
+  Set-PrintConfiguration : Could not access configuration information for the specified printer. At C:\Scripts\Set_SingleSidedPrinting.ps1:7 char:5 + Set-PrintConfiguration -PrinterName $printer.name -DuplexingMode ... + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ + CategoryInfo : ObjectNotFound: (MSFT_PrinterConfiguration:ROOT/StandardCi...erConfiguration) [Set-PrintConfiguration], CimException + FullyQualifiedErrorId : HRESULT 0x80070002,Set-PrintConfiguration 
+ Very frustrating. Any ideas how to resolve things? Either so that Windows Updates no longer cause the printing issue, or so that our script can reliably run, post-update?
+    submitted by    /u/ltwally  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;77
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yokfbs/whats_you_terminal_emulator_of_choice_on_windows/"
+                        open
+                      >
+                        <summary class="article-expander__title">What&#x27;s you Terminal emulator of choice on Windows?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yokfbs/whats_you_terminal_emulator_of_choice_on_windows/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I swear i&#x27;m going insane and it shouldn&#x27;t be that hard.
+ The &quot;new&quot; Windows Terminal is everything i want. Except, sometimes, pasting passwords over SSH plain won&#x27;t work. Pasting the Password without a sudo prompt or such shows the correct text, but when asked for a password by ansible or sudo, only typing does it. No idea why. It has also been laggy when connected to Servers with a less than ideal connection. Not sure why my Input depends on the connection to the customer?
+ So, suffice to say, i&#x27;m not happy with windows Terminal. Alacritty does everything great, except it doesn&#x27;t have tabs.
+ Putty also doesn&#x27;t have tabs plus it&#x27;s session management is... less than ideal.
+ So, what do i do? My requirements are pretty basic. All Windows stuff can be done through PS. So all i really need is something that can do SSH, Tabs, maybe split windows. Stored sessions are a nice to have, but i&#x27;m fine copy pasting IPs and using my SSH config. Right Click Paste would be nice, but Ctrl+V works too. It should use Windows&#x27; build in OpenSSH, not putty and Pageant. Other than that, it should be responsive and work as expectet 100% of the time.
+ What do those of you that Use SSH for admin tasks all day, but also need to use Windows, use?
+    submitted by    /u/domsch1988  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;72
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yok5ee/limit_ad_logins/"
+                        open
+                      >
+                        <summary class="article-expander__title">Limit AD Logins</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yok5ee/limit_ad_logins/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ We are currently deploying an web app that uses our AD infrastruture to login users.
+ However I have some users that I only want to allow the login through this app (web app with ldap login). Is there any way I can lock these accounts to dont allow login into anycomputer at all on the doman?
+    submitted by    /u/ArminiusPT  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;73
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yok1o2/how_to_detect_whether_a_physical_cable_is/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to detect whether a physical cable is connected to network card slot on windows Server ?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yok1o2/how_to_detect_whether_a_physical_cable_is/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All,
+ ​
+ ​
+ I Need to know whether a physical cable is connected to a network port on your Windows Server system. I can see link status via ethtool command in Linux machine.
+ Is there any equilavent command for Windows?
+ ​
+ thanks,
+    submitted by    /u/maxcoder88  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;67
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yojovz/hyperv_iso_mounting_issue/"
+                        open
+                      >
+                        <summary class="article-expander__title">Hyper-V ISO mounting issue</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yojovz/hyperv_iso_mounting_issue/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve recently began a project of replacing a Windows storage space fileserver with a TrueNAS fileserver
+ I&#x27;ve recently downloaded brand new Windows and Linux ISO&#x27;s and stored them on our new storage server and when we try and add the ISO to the virtual machine, I get the following error:
+ Failed to add device &#x27;Virtual CD/DVD Disk&#x27;.
+ User account does not have permission to open attachment
+ Originally, I googled this, and I added the delegation in Active Directory but that didn&#x27;t work.
+ Has anyone else experienced this same problem?
+    submitted by    /u/Kwhite2000  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;69
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -47344,8 +47474,8 @@ Are these delays due to the implementation of the store-and-forward flow control
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3409826502">
-        <time id="build-timestamp" datetime="2022-11-07T11:12:43.834Z">2022-11-07T11:12:43.834Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3410353599">
+        <time id="build-timestamp" datetime="2022-11-07T12:31:51.131Z">2022-11-07T12:31:51.131Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
