@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-09T10:15:46.144Z</updated>
+    <updated>2022-11-09T11:13:20.736Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Windows updates does not go through WSUS]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yqfvj2/windows_updates_does_not_go_through_wsus/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yqfvj2/windows_updates_does_not_go_through_wsus/"/>
+        <updated>2022-11-09T11:12:54.000Z</updated>
+        <summary type="html"><![CDATA[Hi guys, hope you are all doing fine.
+ ​
+ I have an question. Here in the enviroonment we have several servers running with all his own services.
+ 2 dcs (1st one is AD-DS, GPO, DNS etc. 2d one is replication for AD-DS)
+ 1 sync server with Azure
+ 1 WSUS server
+ 1 backup server (veaam, and cloud backup)
+ 1 file server
+ 1 WDS server
+ I have installed, and configured on the WSUS server everything. 
+ But the updates still goes through Windows Updates instead of the Server.
+ Any chance someone can help me out. 
+ Powershell command
+ $MUSM.Services | select Name, IsDefaultAUService
+ ​
+ Name IsDefaultAUService
+ ---- ------------------
+ DCat Flighting Prod False
+ Windows Store (DCat Prod) False
+ Windows Update True
+    submitted by    /u/testlab01  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pattern of Life/Emulated User Activity suggestions]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yqeqbv/pattern_of_lifeemulated_user_activity_suggestions/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yqeqbv/pattern_of_lifeemulated_user_activity_suggestions/"/>
+        <updated>2022-11-09T10:21:14.000Z</updated>
+        <summary type="html"><![CDATA[I'm hoping someone can suggest a tool to create some network traffic and activity on hosts for a training environment.
+ The plan is for a training environment for my team (SOC/IR) to work through scenario-based engagements with our in-house red team, but we need some "noise" for the red team to blend into. Ideally, something that will generate user activity in the form of opening applications, logging in and out, accessing sites, and email traffic - the things you would see daily on a live network. As it stands, without this, the moment the red team performs any action, it is immediately obvious as they are generating the only traffic.
+    submitted by    /u/Cyb3rMonocorn  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Open-Source Light Weight Wireless Scanner]]></title>
         <id>https://www.reddit.com/r/networking/comments/yqe3xd/opensource_light_weight_wireless_scanner/</id>
@@ -28861,42 +28905,6 @@ Deploy to a test/dev environment before prod.
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Starlink / IPoE Static Route(s)]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y0shro/starlink_ipoe_static_routes/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y0shro/starlink_ipoe_static_routes/"/>
-        <updated>2022-10-10T22:47:29.000Z</updated>
-        <summary type="html"><![CDATA[Hey all!
- Just trying to get a client up with Starlink - we are using tunnels to deliver their public IP and starlink as a backhaul - this all works fine.
- Deployment testing internally - we just setup a dhcp server and added routes based on DHCP like so:
- ip route 0.0.0.0 0.0.0.0 dhcp 100
- And a few other routes back to management IP's in case of tunnel issues
- ip route 1.2.3.4 255.255.255.255 dhcp 100
- This worked in testing with normal DHCP server, but what we've found since deploying is that starlink's IPoE doesn't deliver a default route via the 'dhcp' keyword - i.e. DHCP Option 3 (I believe) and is instead providing the default static route via classless routes (option 121) ?
- The big tell is that a default route is there, but its 254 distance instead of the configured 100, and the /32 routes we added do not get picked up.
- So my question is thus - given we can not get that gateway using the 'dhcp' keyword on the routes, is there any way to kind of add a route for the /32's based on the default route given out in what we assume is option 121?
- I am remote to the site, so can't really reliably debug DHCP without kicking my access off, so any help is appreciated to understand my options.
- Thanks!
-    submitted by    /u/Joeymon  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Toning mixed cable network]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y0s0y3/toning_mixed_cable_network/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y0s0y3/toning_mixed_cable_network/"/>
-        <updated>2022-10-10T22:27:06.000Z</updated>
-        <summary type="html"><![CDATA[Hi All, I'm not sure if my vocabulary is sound on this question. I hope you can decipher it. 
- I have a data network that is roughly 75 drops. The installer mixed the runs for voice and data. So each cable is terminated into two jacks, 2 pair for data, 2 pair for voice. Nothing is labeled, and my toner does not seem to work with these mixed cable runs. The toner tests out fine on a standard patch cable.
- Do I need a different\better toner or is this expected on cables terminated this way?
-    submitted by    /u/duke_007  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
