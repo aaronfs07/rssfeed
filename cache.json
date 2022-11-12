@@ -360,6 +360,16 @@
           "imageUrl": null
         },
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yswun4/stood_up_new_dc_in_azure_suddenly_cant_rdp_into/",
+          "author": null,
+          "description": "We have a preestablished 2008 DFL/FFL domain contoso.com, on-prem, with 4 AD sites, 3 being physical locations, one being Azure.\n There are 3 DCs at our main location (2x 2008, 1x 2008 R2), 1 DC each at our satellite offices.\n We have a S2S tunnel set up between our main location and our single Azure network.\n I connect via VPN to our the router in our main office.\n Today, I stood up a Win2022 Azure Edition DC and put NPS (configured it for RADIUS for VPN auth) on it. That's literally it. No other changes were made.\n Shortly after, I started to be unable to RDP into any of our on-prem Win2008/R2 servers or any Win7 machines that were domain-joined. If I try with Win10 mstsc, I get \"Your credentials did not work (the login attempt failed)\"\n If I try using RDP on the Win2022 DC, I get \"An internal error has occurred. Error code 0x4, extended error code 0x0.\"\n The hilarious bit is I can RDP into an on-prem WinXP VM sitting on a VMware hypervisor, and RDP from there to any of the on-prem machines I'm having trouble with. I can also RDP into any domain-joined VMs in Azure.\n I am completely stumped. Initially I thought NLA settings might somehow have changed on the on-prem servers, but I just checked one and it's set for lax NLA.\n Event viewer shows NOTHING. No persistent DFSR issues, nothing.\n dcdiag comes back clean on all DCs aside from irrelevant System log entries.\n UPDATE: It just started happening to the Azure DC as well, but it told me it was NLA, so I went and set SecurityLayer and UserAuthentication keys to 0 at HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp using Remote Registry, and voila, I can now log on to an affected server.\n Obviously I'd prefer not to leave NLA off, any idea what might be causing this?\n    submitted by    /u/distractal  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yswun4/stood_up_new_dc_in_azure_suddenly_cant_rdp_into/",
+          "publishedOn": "2022-11-12T04:50:39.000Z",
+          "wordCount": 21880,
+          "title": "Stood up new DC in Azure, suddenly can't RDP into any on-prem domain-joined systems except WinXP?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/ysw5ct/offsite_backups/",
           "author": null,
           "description": "Are online offsite / emergency backups realistic once they grow past a certain size ?\n We are evaluating encrypting and storing 200Tb of data with Backblaze. We would do the encryption on our side and just upload it...it would take 2-3 months!\n So that begs the question, in case of disaster, if we need the data back, it will also take 2-3 months to download. Seems unrealistic.\n How do you guys handle the transfer of such amounts of data and/or the backup ?\n    submitted by    /u/rmeman  \n [link]   [comments]",
@@ -12698,16 +12708,6 @@
           "wordCount": 41378,
           "title": "*Need Help* Hard Drive Failure Predicted - PowerEdge R710",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/y3emol/i_have_severe_imposter_syndrome_right_now/",
-          "author": null,
-          "description": "Actually feel like an imposter period.\n I have ~2 years of generic sysadmin experience. I got an engineer role centered around power platforms / teams / 365 / exchange (on prem and cloud) around two months ago. I was administering 365 previously and had exchange online experience but no real exchange experience (patching, migrating on prem to 365 and dealing with all that).\n ​\n I feel pretty lost every day, I feel underqualified for this position and am hoping I can fake it until I make it.\n Lately Ive been tasked with automating governance with our power apps platform (Making a CoE environment group that purges inactive groups, sends emails to groups that never had apps/flows made etc). I've zero experience in power apps in general and even after a couple days of learning etc I still feel utterly clueless. For instance, I cannot figure out how to see what the contents are of an orphaned flow, when I share I just get an error about sharing to myself to see what was in the solution flow (which apparently only exists with these).\n ​\n I suppose I'm just seeing if anyone was ever in my situation (went from generic admin to a specialized engineer role) and had success with it. I've feel I'm a pretty competent individual but my God, I have never had job this difficult before. Truly night and day from what I used to do.\n    submitted by    /u/HighanDry88  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/y3emol/i_have_severe_imposter_syndrome_right_now/",
-          "publishedOn": "2022-10-14T00:14:45.000Z",
-          "wordCount": 42254,
-          "title": "I have severe imposter syndrome right now",
-          "imageUrl": null
         }
       ]
     },
@@ -13065,6 +13065,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yt59hc/what_are_some_easy_to_understand_resources_to_get/",
+          "author": null,
+          "description": "Hello, I’ve tried watching YouTube tutorials but feel like I’m going nowhere. I would like to build my skills in networking and work towards a ccna? \n Does anyone have any quality online learning sites or tutorials which would set me down the right path? \n Or even ebooks? \n Thanks\n    submitted by    /u/TestTurbulent6337  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yt59hc/what_are_some_easy_to_understand_resources_to_get/",
+          "publishedOn": "2022-11-12T12:07:20.000Z",
+          "wordCount": 17518,
+          "title": "What Are Some Easy To Understand resources to get me started?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yt4z7e/sky_broadband_sky_q_orbi_mesh_advice/",
+          "author": null,
+          "description": "Having Sky Q main and mini, and superfast broadband installed on Monday. I also have an Orbi mesh. Can I just disable Wi-Fi on Sky hub and both boxes, connect a network switch to Sky hub, connect both boxes to Sky hub via Ethernet, and connect Orbi to switch? Limited network experience but willing to learn (Skillshare perhaps ) . Thanks for any help.\n    submitted by    /u/Much_Champion4213  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yt4z7e/sky_broadband_sky_q_orbi_mesh_advice/",
+          "publishedOn": "2022-11-12T11:53:43.000Z",
+          "wordCount": 17538,
+          "title": "Sky Broadband, Sky Q, Orbi mesh Advice",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/yt0z5d/if_youre_ever_in_the_field_whats_your_boilerplate/",
           "author": null,
@@ -18284,16 +18304,6 @@
           "wordCount": 39441,
           "title": "Klein Tools \"test + map remote\" question",
           "imageUrl": "https://external-preview.redd.it/AJVj6gfLn5ZBFVbHXxYzXy2JwtByxGbHQN_lqqB2LeQ.jpg?auto=webp&s=561a00a799d58931fb35248d6de58968bdd8a9cf"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/y3eari/blogpost_friday/",
-          "author": null,
-          "description": "It's Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member's new and shiny blog posts.\n Feel free to submit your blog post and as well a nice description to this thread.\n Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/y3eari/blogpost_friday/",
-          "publishedOn": "2022-10-14T00:00:11.000Z",
-          "wordCount": 59155,
-          "title": "Blogpost Friday!",
-          "imageUrl": null
         }
       ]
     },
