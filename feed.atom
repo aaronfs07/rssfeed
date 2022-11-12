@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-12T09:14:20.561Z</updated>
+    <updated>2022-11-12T10:14:30.175Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Best way to sync a folder on DC to OneDrive]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yt2ta2/best_way_to_sync_a_folder_on_dc_to_onedrive/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yt2ta2/best_way_to_sync_a_folder_on_dc_to_onedrive/"/>
+        <updated>2022-11-12T10:05:36.000Z</updated>
+        <summary type="html"><![CDATA[Hi there, we have a Flow that collects data from a Sharepoint List and sends it to a OneDrive location as a CSV file. 
+ At the moment I manually have to copy the file to a folder on the DC because a scheduled Powershell script checks that location for the CSV. Is there a more efficient way to get the file from OneDrive straight to the 'C:\temp\' on the DC?
+ I know that it's strongly advised not to install the OneDrive app on a DC.
+    submitted by    /u/FearIsStrongerDanluv  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M365 backscatter bug if using transport rules to reject bad email.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yt264a/m365_backscatter_bug_if_using_transport_rules_to/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yt264a/m365_backscatter_bug_if_using_transport_rules_to/"/>
+        <updated>2022-11-12T09:32:06.000Z</updated>
+        <summary type="html"><![CDATA[Lots of backscatter reports this week for an old rule that has been in place for years. Seems like a new bug?
+ If you have a global rule Exchange Transport rule in the exchange admin centre that rejects email for some reason (e.g contains executable content) it sends the response to whatever address is in the return path envelope. Forged or not.
+ Lovely backscatter. 
+ Example rule that triggers it:
+ New-TransportRule -Name 'Block Executable Content MS Standard' -Priority '0' -Enabled $true -AttachmentHasExecutableContent $True -RejectMessageReasonText 'Rejected due to executable attachment' -StopRuleProcessing $true -SetAuditSeverity Low -SenderAddressLocation HeaderOrEnvelope
+    submitted by    /u/CupOfTeaWithOneSugar  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Virtualising my estate]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/yt1f35/virtualising_my_estate/</id>
@@ -28451,34 +28481,6 @@ Anyways let me know the dumbest thing management has ever told you that IT was r
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Issue with Cisco ASR 901 IPv6 ACL]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y3biwx/issue_with_cisco_asr_901_ipv6_acl/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y3biwx/issue_with_cisco_asr_901_ipv6_acl/"/>
-        <updated>2022-10-13T22:01:22.000Z</updated>
-        <summary type="html"><![CDATA[Hi everyone,
- the previous solution
- I am currently using an old Cisco Catalyst 3560cg switch for filtering IPv6 traffic using a Port ACL.
-  switch# sh run | begin access-list ipv6 access-list block_IPv6 deny ipv6 any any 
- Config on port: ``` switch#sh run int gi 0/1 Building configuration...
- Current configuration : 146 bytes ! interface GigabitEthernet0/1 description ISP-Uplink switchport access vlan 11 switchport mode access ipv6 traffic-filter block_IPv6 in end ```
- This works flawlessly without any issues.
- The issue:
- I have an Cisco ISR901 (A901-6CZ-F-A) lying around that I wanted to use to replace the old Cisco Catalyst.
- My problem is I can't get the IPv6 ACL to work. I need two interfaces, one to connect my ISP-Router (where I want to filter IPv6-Traffic) and one Interface to my…]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I’m done wasting my life testing products]]></title>
-        <id>https://www.youtube.com/watch?v=mD_ch49vDtw</id>
-        <link href="https://www.youtube.com/watch?v=mD_ch49vDtw"/>
-        <updated>2022-10-13T21:28:29.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
         </author>
     </entry>
 </feed>
