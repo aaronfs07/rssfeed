@@ -2,10 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-14T13:45:00.741Z</updated>
+    <updated>2022-11-14T14:18:54.592Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[[Question - Office 365] How can I remove attendees from being shown on the Room Resource calendar]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yv0dnb/question_office_365_how_can_i_remove_attendees/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yv0dnb/question_office_365_how_can_i_remove_attendees/"/>
+        <updated>2022-11-14T14:05:34.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I have a simple question with a probably not so simple answer.
+ We have an Out of Office calendar that I wanted to automate a bit more of so that after people submitted their OOO reason they didn't have to manually categorize the event with a specific color.
+ To do this, I created mail flow rules on the Room Resource inbox that applied categories based on subject line text. This is working, but comes with a side effect that the attendees are showing on the meeting subject - example below:
+  
+MySecretWork Account - WFH; Out of Office; MySecretWork Account
+  
+I already went into the room resource and adjusted the following settings:
+  
+Set-CalendarProcessing -Identity outofoffice@domain.com -DeleteSubject $False -AddOrganizerToSubject $False
+  
+This was done so that the subject line wouldn't be replaced solely by the organizer's name. Attendees are now showing up on calendar though, which adds a bunch of clutter to calendar.
+ I just want the meeting requests on the Out of Office calendar to look like the below:
+  
+MySecretWork Account - WFH
+  
+No extra info - just the actual subject line of the meeting request.
+ Is this possible? I didn't see anything on the Set-CalendarProcessing documentation page, but if there is a setting elsewhere that can achieve this (either GUI or PowerShell) please let me know!
+    submitted by    /u/MySecretWorkAccount2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What are the best questions to ask in a job interview?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yuzwvd/what_are_the_best_questions_to_ask_in_a_job/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yuzwvd/what_are_the_best_questions_to_ask_in_a_job/"/>
+        <updated>2022-11-14T13:48:16.000Z</updated>
+        <summary type="html"><![CDATA[Especially for a jr sysadmin interview?
+    submitted by    /u/Wholesome710069420  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Powershell with office 365]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/yuzh3r/powershell_with_office_365/</id>
@@ -28255,18 +28296,6 @@ https://www.youtube.com/watch?v=7ArBOzBgA0k]]></summary>
         <updated>2022-10-16T03:00:08.000Z</updated>
         <author>
             <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WinPE missing root/cimv2/mdm/dmmap]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/y54wiq/winpe_missing_rootcimv2mdmdmmap/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/y54wiq/winpe_missing_rootcimv2mdmdmmap/"/>
-        <updated>2022-10-16T02:05:20.000Z</updated>
-        <summary type="html"><![CDATA[Hey there, I've been trying to get the HardwareHash which is a property of the MDM_DevDetail_Ext01 class in the root/cimv2/mdm/dmmap namespace inside a WinPE instance. Problem is that WinPE even with all cab files installed doesn't have it. I tried working around that by including all .mof .mfl and .dll files from the webm folder. Then running regsvr32 for all dll files and mofcomp for all mof and mfl files to recompile the wmi library. Then I can find the MDM_DevDetail_Ext01 file with wbemtest, but trying to get the wmiobejct i receive a system.accessviolationexception: attempted to read or write protected memory. I'm clueless and any idea would be greatly appreciated. Kind Regards
-    submitted by    /u/StrangeIdeas4  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
