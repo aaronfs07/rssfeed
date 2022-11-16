@@ -210,6 +210,26 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ywp0jo/is_your_vmware_vsphere_environment_secure/",
+          "author": null,
+          "description": "Check out this article about how you can assess your VMware vSphere environment against the CIS benchmarks in less than 10 minutes. \n https://medium.com/@karimhabush/is-your-vmware-vsphere-environment-secure-d09d1f3a6351\n    submitted by    /u/karimhabush  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ywp0jo/is_your_vmware_vsphere_environment_secure/",
+          "publishedOn": "2022-11-16T09:30:37.000Z",
+          "wordCount": 18754,
+          "title": "Is your VMware vSphere environment secure?",
+          "imageUrl": "https://external-preview.redd.it/0mVzhFhe273Rr8d1x0t31D7w1hKd0BZX2kqR_IDPPyk.jpg?auto=webp&s=b6afd4942adbf151b17b0e24642779152cc17291"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/ywoqqn/strange_profile_issue_rds_and_a_local_pc_onprem/",
+          "author": null,
+          "description": "Apologies if this is the wrong place to be asking this question, but it is my first time seeing this issue before thought I would try my luck here.\n We have an on-prem environment using a local domain - just a standard dc server with AD and a RDS server - User1 is already logged on to the RDS server. Then User2 comes in to start their day logs into a Windows 10 PC which is domain joined and receives \"Welcome User1\" in the windows login greeting and User1 is then disconnected from their RDS session and User2 has actually loaded User1's profile - desktop icons and all.\n Any ideas what may be causing this, I have tried the following:\n -Removed User1 and User2's profiles from the Windows 10 PC and then re-added only User2 back on to the device but the issue is still occurring - User 1 no longer uses the Windows 10 PC just works on the RDS.\n -Removed the Windows 10 PC from the domain and re-joined to the domain. The RDS server itself is new only a month or two old has been happening ever since the RDS server was setup I was informed.\n any further suggestions on what else we can try here? - getting close to the too much time wasted - blow away windows and reinstall and see if it happens again.\n    submitted by    /u/savijNizl  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/ywoqqn/strange_profile_issue_rds_and_a_local_pc_onprem/",
+          "publishedOn": "2022-11-16T09:13:44.000Z",
+          "wordCount": 18879,
+          "title": "Strange profile issue RDS and a local PC - on-prem domain",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/ywof56/rdp_with_teams_video/",
           "author": null,
           "description": "Anyone out there managed to get Teams video calling running on RDP without killing the CPU? A client of ours wants to do this with their team of around 10, and it really ramps up the CPU on the RDP server. Thoughts? Suggestions? Silver bullet?\n    submitted by    /u/Marco2Go  \n [link]   [comments]",
@@ -12778,6 +12798,16 @@
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/networking/comments/ywp0kc/eaptls_cisco_ise/",
+          "author": null,
+          "description": "Hi,\n I'm currently reworking our corporation's wifi and I've got EAP-TLS working, however I want to permit only a specific group of users from our local AD.\n I've got the CA up and running and publishing certificates all around to the computers (old setup) and I've got the ruleset for EAP-TLS working with GPO on the Windows domain computers.\n My problem now is that I need to permit access only to a specific group in AD as the ruleset just points to users/domain computers so everyone with a domain computer gets access.\n Once a user who's not in the group logs on I want the authentication to fail.\n I've tried adding /users/domain computers AND /group/ as a requirement in the auth policy, but the group I added in ISE External Identity Source/groups doesn't show up in the policy. I also removed a few groups and it doesn't seem to update in the policy set or the condition library.\n Is this a known bug in ISE 3.1?\n I need the computers to log in to the wireless prior to actually logging into the computer so it can reach the DC for login, then drop out of the user is not in the specific Security Group.\n    submitted by    /u/Ahoelinnone  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/ywp0kc/eaptls_cisco_ise/",
+          "publishedOn": "2022-11-16T09:30:39.000Z",
+          "wordCount": 19150,
+          "title": "EAP-TLS - Cisco ISE",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/networking/comments/ywopo1/ccna_200301_dumps/",
           "author": null,
           "description": "Guys, can anyone help me out by locating a website or company or any links where i can get authentic CCNA 200-301 latest dumps as I would be appearing for the exam next month and am unable to find a proper source to get the reliable dumps. \n Any kind of support will be much appreciated.\n    submitted by    /u/Hashmi54  \n [link]   [comments]",
@@ -12978,6 +13008,16 @@
           "imageUrl": null
         },
         {
+          "id": "https://www.reddit.com/r/networking/comments/yw3d6s/azure_virtual_wan_routing_scenario/",
+          "author": null,
+          "description": "I've been having a problem with Azure Virtual WAN routing and was hoping somebody might have some insight. I also posted to /r/Azure but did not get any replies.\n For testing, I have created a network described by the network diagram at https://imgur.com/a/Yf0INds . In my scenario, I am creating a traffic flow from VNet_1 to 10.200.0.10. BGP is used between the VPN Branches and the VirtualHubs.\n  \nAt first, the traffic flow uses path 1. This is expected.\n If path 1 becomes unavailable then the traffic flow uses path 2. This is expected.\n If path 1 recovers then the traffic flow continues to use path 2. This is not expected.\n  \nMy expectations are mostly based on the routing scenarios from https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference . My understanding is that path 1 should always be preferred if it is available because the Virtual Hub will prefer a directly connected route over a route from a remote hub. I would at least expect the routing decision to be deterministic.\n    submitted by    /u/MontereysCoast  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yw3d6s/azure_virtual_wan_routing_scenario/",
+          "publishedOn": "2022-11-15T17:11:26.000Z",
+          "wordCount": 19439,
+          "title": "Azure Virtual WAN Routing Scenario",
+          "imageUrl": "https://external-preview.redd.it/RQ_1M7ESlmKCnLRPsHYrwIGk_Z_8DeOJe270LczGArA.jpg?auto=webp&s=0e70157660136a6641a3b7172971d9f2911b747d"
+        },
+        {
           "id": "https://www.reddit.com/r/networking/comments/yw22x6/firewalls_gateway_or_not_a_gateway_for_vlans/",
           "author": null,
           "description": "When deploying a firewall in a datacenter or even at an office (around 300 people or so), do you put the layer 3 for the lans on the firewall or keep it on the switches but still have the firewall learn all the VLANs downstream?\n I am wondering if there is best practice when it comes to firewall deployment or is it whatever makes sense to you.\n For much smaller deployments, such as an office with 100 users or less, to me, it makes sense to just terminate on the firewall but then again im not concerned so much about the inter-vlan traffic and the firewall policies are a bit more lax compared to a datacenter rollout.\n    submitted by    /u/HumanTickTac  \n [link]   [comments]",
@@ -12986,6 +13026,16 @@
           "wordCount": 20903,
           "title": "Firewalls. Gateway or not a Gateway for vlans",
           "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yw1gmk/second_nexus_9k_in_vpc_not_receiving_ebgp_routes/",
+          "author": null,
+          "description": "Looking for advice on how to resolve this dilemma, and thought it best to include a diagram that shows the current topology:\n https://i.imgur.com/Id3NwcL.png\n I recently added a second nexus to our core. For WAN connectivity, we have one MPLS link from the carrier plugged into the original Nexus. This nexus is learning the BGP routes from our remote sites just fine.\n The second Nexus, however, is not. Instead, it is learning the routes from the firewall via OSPF, as each site has a VPN tunnel to the firewall as a backup WAN connection.\n Is it possible for nexus2 to receieve the BGP routes from nexus1 in the short term? Ideally, we would get a second drop from the carrier to have an uplink in nexus2, and they could also establish it as a bgp peer.\n Otherwise, what are my options?\n I could add static routes for each remote subnet on nexus2, but that doesn't seem ideal, either.\n Right now, the bgp config on nexus1 is as follows:\n router bgp 999 address-family ipv4 unicast network 10.1.16.0/24 redistribute direct route-map allow redistribute ospf 1 route-map MPLS neighbor 10.1.99.2 remote-as 99 address-family ipv4 unicast soft-reconfiguration inbound always \n And Nexus2, I configured bgp in case I ever needed to physically move the MPLS cable over.\n router bgp 999 address-family ipv4 unicast network 10.1.16.0/16 redistribute direct route-map allow redistribute ospf 1 route-map MPLS neighbor 10.1.99.2 remote-as 99 update-source Vlan999 address-family ipv4 unicast prefix-list no-default-route in router ospf 1 redistribute bgp 999 route-map MPLS passive-interface default redistribute ospf 1 route-map MPLS route-map MPLS permit 10 match route-type external internal \n    submitted by    /u/FitButFluffy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yw1gmk/second_nexus_9k_in_vpc_not_receiving_ebgp_routes/",
+          "publishedOn": "2022-11-15T16:06:39.000Z",
+          "wordCount": 19476,
+          "title": "Second Nexus 9k in vPC not receiving eBGP routes",
+          "imageUrl": "https://external-preview.redd.it/5hldTqyLd6T_-XUl7pzzXATEcie-MZVXXsIq-xPrZRU.png?auto=webp&s=8099fa62f74b82c6f92af1e67c5d0500a52547b4"
         },
         {
           "id": "https://www.reddit.com/r/networking/comments/yw0z9g/optical_network_source_of_record/",

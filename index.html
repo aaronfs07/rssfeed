@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-16 datetime="2022-11-16T09:11:43.000Z">2022-11-16</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-16 datetime="2022-11-16T09:11:43.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-16 datetime="2022-11-16T09:30:39.000Z">2022-11-16</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-16 datetime="2022-11-16T09:30:39.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,34 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/ywp0kc/eaptls_cisco_ise/"
+                        open
+                      >
+                        <summary class="article-expander__title">EAP-TLS - Cisco ISE</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ywp0kc/eaptls_cisco_ise/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ I&#x27;m currently reworking our corporation&#x27;s wifi and I&#x27;ve got EAP-TLS working, however I want to permit only a specific group of users from our local AD.
+ I&#x27;ve got the CA up and running and publishing certificates all around to the computers (old setup) and I&#x27;ve got the ruleset for EAP-TLS working with GPO on the Windows domain computers.
+ My problem now is that I need to permit access only to a specific group in AD as the ruleset just points to users/domain computers so everyone with a domain computer gets access.
+ Once a user who&#x27;s not in the group logs on I want the authentication to fail.
+ I&#x27;ve tried adding /users/domain computers AND /group/ as a requirement in the auth policy, but the group I added in ISE External Identity Source/groups doesn&#x27;t show up in the policy. I also removed a few groups and it doesn&#x27;t seem to update in the policy set or the condition library.
+ Is this a known bug in ISE 3.1?
+ I need the computers to log in to the wireless prior to actually logging into the computer so it can reach the DC for login, then drop out of the user is not in the specific Security Group.
+    submitted by    /u/Ahoelinnone  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;64
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -191,6 +219,55 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ywp0jo/is_your_vmware_vsphere_environment_secure/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is your VMware vSphere environment secure?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ywp0jo/is_your_vmware_vsphere_environment_secure/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/0mVzhFhe273Rr8d1x0t31D7w1hKd0BZX2kqR_IDPPyk.jpg?auto&#x3D;webp&amp;s&#x3D;b6afd4942adbf151b17b0e24642779152cc17291" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Check out this article about how you can assess your VMware vSphere environment against the CIS benchmarks in less than 10 minutes. 
+ https://medium.com/@karimhabush/is-your-vmware-vsphere-environment-secure-d09d1f3a6351
+    submitted by    /u/karimhabush  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ywoqqn/strange_profile_issue_rds_and_a_local_pc_onprem/"
+                        open
+                      >
+                        <summary class="article-expander__title">Strange profile issue RDS and a local PC - on-prem domain</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ywoqqn/strange_profile_issue_rds_and_a_local_pc_onprem/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Apologies if this is the wrong place to be asking this question, but it is my first time seeing this issue before thought I would try my luck here.
+ We have an on-prem environment using a local domain - just a standard dc server with AD and a RDS server - User1 is already logged on to the RDS server. Then User2 comes in to start their day logs into a Windows 10 PC which is domain joined and receives &quot;Welcome User1&quot; in the windows login greeting and User1 is then disconnected from their RDS session and User2 has actually loaded User1&#x27;s profile - desktop icons and all.
+ Any ideas what may be causing this, I have tried the following:
+ -Removed User1 and User2&#x27;s profiles from the Windows 10 PC and then re-added only User2 back on to the device but the issue is still occurring - User 1 no longer uses the Windows 10 PC just works on the RDS.
+ -Removed the Windows 10 PC from the domain and re-joined to the domain. The RDS server itself is new only a month or two old has been happening ever since the RDS server was setup I was informed.
+ any further suggestions on what else we can try here? - getting close to the too much time wasted - blow away windows and reinstall and see if it happens again.
+    submitted by    /u/savijNizl  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -733,6 +810,35 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/yw3d6s/azure_virtual_wan_routing_scenario/"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure Virtual WAN Routing Scenario</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yw3d6s/azure_virtual_wan_routing_scenario/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/RQ_1M7ESlmKCnLRPsHYrwIGk_Z_8DeOJe270LczGArA.jpg?auto&#x3D;webp&amp;s&#x3D;0e70157660136a6641a3b7172971d9f2911b747d" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I&#x27;ve been having a problem with Azure Virtual WAN routing and was hoping somebody might have some insight. I also posted to /r/Azure but did not get any replies.
+ For testing, I have created a network described by the network diagram at https://imgur.com/a/Yf0INds . In my scenario, I am creating a traffic flow from VNet_1 to 10.200.0.10. BGP is used between the VPN Branches and the VirtualHubs.
+  
+At first, the traffic flow uses path 1. This is expected.
+ If path 1 becomes unavailable then the traffic flow uses path 2. This is expected.
+ If path 1 recovers then the traffic flow continues to use path 2. This is not expected.
+  
+My expectations are mostly based on the routing scenarios from https://learn.microsoft.com/en-us/azure/virtual-wan/about-virtual-hub-routing-preference . My understanding is that path 1 should always be preferred if it is available because the Virtual Hub will prefer a directly connected route over a route from a remote hub. I would at least expect the routing decision to be deterministic.
+    submitted by    /u/MontereysCoast  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
                         data-accordion-key="https://www.reddit.com/r/networking/comments/yw22x6/firewalls_gateway_or_not_a_gateway_for_vlans/"
                         open
                       >
@@ -746,6 +852,38 @@
     submitted by    /u/HumanTickTac  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;70
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/yw1gmk/second_nexus_9k_in_vpc_not_receiving_ebgp_routes/"
+                        open
+                      >
+                        <summary class="article-expander__title">Second Nexus 9k in vPC not receiving eBGP routes</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yw1gmk/second_nexus_9k_in_vpc_not_receiving_ebgp_routes/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/5hldTqyLd6T_-XUl7pzzXATEcie-MZVXXsIq-xPrZRU.png?auto&#x3D;webp&amp;s&#x3D;8099fa62f74b82c6f92af1e67c5d0500a52547b4" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Looking for advice on how to resolve this dilemma, and thought it best to include a diagram that shows the current topology:
+ https://i.imgur.com/Id3NwcL.png
+ I recently added a second nexus to our core. For WAN connectivity, we have one MPLS link from the carrier plugged into the original Nexus. This nexus is learning the BGP routes from our remote sites just fine.
+ The second Nexus, however, is not. Instead, it is learning the routes from the firewall via OSPF, as each site has a VPN tunnel to the firewall as a backup WAN connection.
+ Is it possible for nexus2 to receieve the BGP routes from nexus1 in the short term? Ideally, we would get a second drop from the carrier to have an uplink in nexus2, and they could also establish it as a bgp peer.
+ Otherwise, what are my options?
+ I could add static routes for each remote subnet on nexus2, but that doesn&#x27;t seem ideal, either.
+ Right now, the bgp config on nexus1 is as follows:
+ router bgp 999 address-family ipv4 unicast network 10.1.16.0/24 redistribute direct route-map allow redistribute ospf 1 route-map MPLS neighbor 10.1.99.2 remote-as 99 address-family ipv4 unicast soft-reconfiguration inbound always 
+ And Nexus2, I configured bgp in case I ever needed to physically move the MPLS cable over.
+ router bgp 999 address-family ipv4 unicast network 10.1.16.0/16 redistribute direct route-map allow redistribute ospf 1 route-map MPLS neighbor 10.1.99.2 remote-as 99 update-source Vlan999 address-family ipv4 unicast prefix-list no-default-route in router ospf 1 redistribute bgp 999 route-map MPLS passive-interface default redistribute ospf 1 route-map MPLS route-map MPLS permit 10 match route-type external internal 
+    submitted by    /u/FitButFluffy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -47060,8 +47198,8 @@ Finally come the question:
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3477943955">
-        <time id="build-timestamp" datetime="2022-11-16T09:13:52.402Z">2022-11-16T09:13:52.402Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3478384823">
+        <time id="build-timestamp" datetime="2022-11-16T10:14:46.931Z">2022-11-16T10:14:46.931Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
