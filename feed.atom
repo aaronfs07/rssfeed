@@ -2,10 +2,117 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-17T11:11:27.824Z</updated>
+    <updated>2022-11-17T12:29:04.168Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How do you secure administrative GUIs?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yxokto/how_do_you_secure_administrative_guis/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yxokto/how_do_you_secure_administrative_guis/"/>
+        <updated>2022-11-17T12:07:09.000Z</updated>
+        <summary type="html"><![CDATA[On all our administrative GUIs (VMware vCenter, Storage Systems, Back-up solutions, SAN management, iDRACs, Container Environment), we configure AD authentication together with basic (local) authentication. This basic authentication is used as a 'workaround' in case AD would be unaccessible, or someone messes up the AD binding, or makes a change on AD level.
+ While there are already cases where we had to use the local user, it poses a huge security risk since these are static credentials and there is no policy in place to rotate them. 
+ How do you guys approach this? I'm aware Microsoft doesn't recommend password rotation anymore and instead advices to use MFA together with long/complex passwords. I assume this is not possible with basic authentication? Would you disable basic authentication completely? What happened where you than were lock-out because of an underlying AD issue?
+    submitted by    /u/ILOVESTORAGE_BE  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FGPP Auditing / detecting changes?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yxojqr/fgpp_auditing_detecting_changes/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yxojqr/fgpp_auditing_detecting_changes/"/>
+        <updated>2022-11-17T12:05:35.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone had any experience investigating changes to FGPPs in AD?
+ I've had a situation where one changed and months passed without me noticing until I had an audit and noticed the modified date. I'm looking for if there's any event logs I can monitor or failing that look at the object itself and potentially script a solution that'll check the modified date routeinly so i'm not caught unaware again!
+ ​
+ Thanks in advance
+    submitted by    /u/Lanlith  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Question] Advertised Window and Effective Window]]></title>
+        <id>https://www.reddit.com/r/networking/comments/yxobug/question_advertised_window_and_effective_window/</id>
+        <link href="https://www.reddit.com/r/networking/comments/yxobug/question_advertised_window_and_effective_window/"/>
+        <updated>2022-11-17T11:54:32.000Z</updated>
+        <summary type="html"><![CDATA[I've been trying to self-teach myself about networking as I find it rather interesting. I was looking at some online material and still don't understand what are the conditions in which the advertised window on the receiver side and the effective window on the sender side may go to zero? I would appreciate if someone could help explain this to me please.
+    submitted by    /u/VectorizedHorse  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Separation of duties- multiple accounts best practice?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yxo1f0/separation_of_duties_multiple_accounts_best/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yxo1f0/separation_of_duties_multiple_accounts_best/"/>
+        <updated>2022-11-17T11:38:59.000Z</updated>
+        <summary type="html"><![CDATA[Looking for ideas on how we can perform server administration/desktop administration for a 2 man IT team supporting ~160 users.
+ as it is now I log in as a standard user to my desktop. For any type of desktop elevation I need to perform, I use my la_first initial last name account. If I need to log into the file server for example, I use my ja_first initial last name account to log into any server BUT the file server and jump to the file server using admin share to do what I need to do. Create a folder, permissions, etc. 
+ So that’s 3 accounts I have. Well my boss has only recently started practicing separation of duties and we are looking at ways we can standardize this for both of us. I’ve just been recently promoted to a Jr. Sys admin and am going to be given more access to servers. 
+ How do you handle this in your org?
+    submitted by    /u/GinSabre  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Am I mad or is there a bug with Robocopy's summary when running threaded?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yxo0he/am_i_mad_or_is_there_a_bug_with_robocopys_summary/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yxo0he/am_i_mad_or_is_there_a_bug_with_robocopys_summary/"/>
+        <updated>2022-11-17T11:37:32.000Z</updated>
+        <summary type="html"><![CDATA[I've just wasted an entire morning understanding why a static source directory was apparently changing files, only to realise Robocopy may be reporting the summary wrong.
+ Each time I run a threaded command like...
+ robocopy \\source\folder \\destination\folder /MIR /MT:32 /Z 
+ ... on the same location I get a summary report each time with differing file counts and sizes.
+ ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 547 547 0 0 0 Files : 1353316 0 1353513 0 0 0 Bytes : 699.840 g 0 700.014 g 0 0 0 Times : 0:00:09 0:00:00 0:00:00 0:00:09 ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 547 383 0 0 0 Files : 1356866 501237 855802 0 0 0 Bytes : 693.333 g 34.89 m 693.693 g 0 0 0 Times : 12:12:38 0:39:56 0:00:00 0:02:27 ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 547 547 0 0 0 Files : 1353619 0 1353787 0 0 0 Bytes : 698.507 g 0 698.686 g 0 0 0 Times : 0:00:36 0:00:00 0:00:00 0:00:36 
+ ​
+ But running it standard (without the threaded switch)...
+ robocopy \\source\folder \\destination\folder /MIR /Z 
+ ...I get the same, correct result every time.
+ ​
+ ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 0 547 0 0 0 Files : 1370293 0 1370293 0 0 0 Bytes : 707.611 g 0 707.611 g 0 0 0 Times : 0:08:38 0:00:00 0:00:00 0:08:38 
+ The threaded command copies the files fine (when I check manually), but I need to prove the results after and the summary suggests an incomplete copy.
+ The threaded command is wicked fast compared to the normal way, but I'm having to run a slow /L after the fact just to prove the file counts match.
+ ​
+ Has anyone else experienced this? Am I just doing something wrong?
+    submitted by    /u/FluffyMumbles  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Any Idias about being expert in webmin & LAMP]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yxnzaa/any_idias_about_being_expert_in_webmin_lamp/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yxnzaa/any_idias_about_being_expert_in_webmin_lamp/"/>
+        <updated>2022-11-17T11:35:41.000Z</updated>
+        <summary type="html"><![CDATA[Hello sysadmins, i got new VPS from contabo and i got it wit Webmin and LAMP , it seems that configuring it is not an easy thing, basicly i want to host an informative website on it and to create email accounts for company eployees, making sure that i have best security and performance setup , any idias about courses or guidelines?
+    submitted by    /u/sulimansabha  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[help push multicast across a network]]></title>
+        <id>https://www.reddit.com/r/networking/comments/yxnwt7/help_push_multicast_across_a_network/</id>
+        <link href="https://www.reddit.com/r/networking/comments/yxnwt7/help_push_multicast_across_a_network/"/>
+        <updated>2022-11-17T11:31:58.000Z</updated>
+        <summary type="html"><![CDATA[I am trying to push multicast across a network and am unsure of myself. I have some Sr people to ask but I was hoping I might find some advice here too. I am peering with my RP via bgp on the edge of my network, a direct connect, that router is configured to accept multicast now but due to an oddity I have a switch next. So it is foreign RP, router, switch1, firewall, switch2, multicast clients.
+ For the switch1 how would you all handle it? Would you turn on layer 3 and route multicast between the router and firewall or just extend a vlan between the two.
+    submitted by    /u/mustang23200  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Weird Wi-Fi Issue]]></title>
         <id>https://www.reddit.com/r/networking/comments/yxn7jb/weird_wifi_issue/</id>
@@ -28248,47 +28355,6 @@ The handbook depends on neither the VPN nor the hardware in order to be accessib
         <summary type="html"><![CDATA[Can someone please explain what does this mean. I'm not sure what does inward/outward has to do with TTL. Thank you
     submitted by    /u/huacchob  
  [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rant Wednesday!]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y7n3hq/rant_wednesday/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y7n3hq/rant_wednesday/"/>
-        <updated>2022-10-19T00:00:10.000Z</updated>
-        <summary type="html"><![CDATA[It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
- There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!
- Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Job Rejection Story Time]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/y7n2o9/job_rejection_story_time/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/y7n2o9/job_rejection_story_time/"/>
-        <updated>2022-10-18T23:59:15.000Z</updated>
-        <summary type="html"><![CDATA[So, I've been looking for a different job in my town, IT jobs don't come up often around here. One becomes available, i am MORE than qualified but because i'm a weird f--ker, I was rejected for the job. Alright, I'll move on.. A week later (Today) a head hunting company contacts me on indeed about a job "i would be PERFECT for".. Guess which job it was for.. Yep, the one that rejected me. I told them they rejected me and they asked if I want to apply anyways I told em "Screw it, Go for it lets see what happens". Thats when I get another email about a job in my town from a different head hunter company, and then another, and another, and another. So far 7 different head hunters from different companies have contacted me regarding this position. I've said yes to every single one. Why? Because f--k them, thats why. 
- ​
- Thought I'd just share that story as it just happened and I am more than amused.
-    submitted by    /u/Nx0Sec  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What am I doing wrong with iptables?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y7ma3s/what_am_i_doing_wrong_with_iptables/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y7ma3s/what_am_i_doing_wrong_with_iptables/"/>
-        <updated>2022-10-18T23:24:19.000Z</updated>
-        <summary type="html"><![CDATA[I'm trying to use iptables on an Ubuntu VM. This is (part of) what I have:
- -A ssh-policer -p tcp -m tcp --dport 22 -m state --state NEW -m hashlimit --hashlimit-burst 1 --hashlimit 1/min --hashlimit-mode srcip --hashlimit-name ssh -j LOG-ACCEPT-SSH -A ssh-policer -j LOG-DROP-SSH -A LOG-ACCEPT-SSH -j LOG --log-prefix "ssh_unknown_accept: " -A LOG-ACCEPT-SSH -j ACCEPT -A LOG-DROP-SSH -j LOG --log-prefix "ssh_unknown_drop: " -A LOG-DROP-SSH -j DROP 
- (I have also tried --hashlimit-upto 1/min which looks like it's the same thing as --hashlimit, but iptables docs aren't great)
- The idea here is that if I get 1 new SSH connection per minute (or less) from unique src IPs, I log them as 'ssh_unknown_accept' and accept them. More than 1 SSH connection per minute from different source IPs, I drop t…]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>

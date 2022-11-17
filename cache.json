@@ -240,6 +240,56 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yxokto/how_do_you_secure_administrative_guis/",
+          "author": null,
+          "description": "On all our administrative GUIs (VMware vCenter, Storage Systems, Back-up solutions, SAN management, iDRACs, Container Environment), we configure AD authentication together with basic (local) authentication. This basic authentication is used as a 'workaround' in case AD would be unaccessible, or someone messes up the AD binding, or makes a change on AD level.\n While there are already cases where we had to use the local user, it poses a huge security risk since these are static credentials and there is no policy in place to rotate them. \n How do you guys approach this? I'm aware Microsoft doesn't recommend password rotation anymore and instead advices to use MFA together with long/complex passwords. I assume this is not possible with basic authentication? Would you disable basic authentication completely? What happened where you than were lock-out because of an underlying AD issue?\n    submitted by    /u/ILOVESTORAGE_BE  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yxokto/how_do_you_secure_administrative_guis/",
+          "publishedOn": "2022-11-17T12:07:09.000Z",
+          "wordCount": 19481,
+          "title": "How do you secure administrative GUIs?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yxojqr/fgpp_auditing_detecting_changes/",
+          "author": null,
+          "description": "Has anyone had any experience investigating changes to FGPPs in AD?\n I've had a situation where one changed and months passed without me noticing until I had an audit and noticed the modified date. I'm looking for if there's any event logs I can monitor or failing that look at the object itself and potentially script a solution that'll check the modified date routeinly so i'm not caught unaware again!\n ​\n Thanks in advance\n    submitted by    /u/Lanlith  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yxojqr/fgpp_auditing_detecting_changes/",
+          "publishedOn": "2022-11-17T12:05:35.000Z",
+          "wordCount": 19471,
+          "title": "FGPP Auditing / detecting changes?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yxo1f0/separation_of_duties_multiple_accounts_best/",
+          "author": null,
+          "description": "Looking for ideas on how we can perform server administration/desktop administration for a 2 man IT team supporting ~160 users.\n as it is now I log in as a standard user to my desktop. For any type of desktop elevation I need to perform, I use my la_first initial last name account. If I need to log into the file server for example, I use my ja_first initial last name account to log into any server BUT the file server and jump to the file server using admin share to do what I need to do. Create a folder, permissions, etc. \n So that’s 3 accounts I have. Well my boss has only recently started practicing separation of duties and we are looking at ways we can standardize this for both of us. I’ve just been recently promoted to a Jr. Sys admin and am going to be given more access to servers. \n How do you handle this in your org?\n    submitted by    /u/GinSabre  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yxo1f0/separation_of_duties_multiple_accounts_best/",
+          "publishedOn": "2022-11-17T11:38:59.000Z",
+          "wordCount": 20468,
+          "title": "Separation of duties- multiple accounts best practice?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yxo0he/am_i_mad_or_is_there_a_bug_with_robocopys_summary/",
+          "author": null,
+          "description": "I've just wasted an entire morning understanding why a static source directory was apparently changing files, only to realise Robocopy may be reporting the summary wrong.\n Each time I run a threaded command like...\n robocopy \\\\source\\folder \\\\destination\\folder /MIR /MT:32 /Z \n ... on the same location I get a summary report each time with differing file counts and sizes.\n ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 547 547 0 0 0 Files : 1353316 0 1353513 0 0 0 Bytes : 699.840 g 0 700.014 g 0 0 0 Times : 0:00:09 0:00:00 0:00:00 0:00:09 ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 547 383 0 0 0 Files : 1356866 501237 855802 0 0 0 Bytes : 693.333 g 34.89 m 693.693 g 0 0 0 Times : 12:12:38 0:39:56 0:00:00 0:02:27 ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 547 547 0 0 0 Files : 1353619 0 1353787 0 0 0 Bytes : 698.507 g 0 698.686 g 0 0 0 Times : 0:00:36 0:00:00 0:00:00 0:00:36 \n ​\n But running it standard (without the threaded switch)...\n robocopy \\\\source\\folder \\\\destination\\folder /MIR /Z \n ...I get the same, correct result every time.\n ​\n ------------------------------------------------------------------------------ Total Copied Skipped Mismatch FAILED Extras Dirs : 547 0 547 0 0 0 Files : 1370293 0 1370293 0 0 0 Bytes : 707.611 g 0 707.611 g 0 0 0 Times : 0:08:38 0:00:00 0:00:00 0:08:38 \n The threaded command copies the files fine (when I check manually), but I need to prove the results after and the summary suggests an incomplete copy.\n The threaded command is wicked fast compared to the normal way, but I'm having to run a slow /L after the fact just to prove the file counts match.\n ​\n Has anyone else experienced this? Am I just doing something wrong?\n    submitted by    /u/FluffyMumbles  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yxo0he/am_i_mad_or_is_there_a_bug_with_robocopys_summary/",
+          "publishedOn": "2022-11-17T11:37:32.000Z",
+          "wordCount": 19523,
+          "title": "Am I mad or is there a bug with Robocopy's summary when running threaded?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yxnzaa/any_idias_about_being_expert_in_webmin_lamp/",
+          "author": null,
+          "description": "Hello sysadmins, i got new VPS from contabo and i got it wit Webmin and LAMP , it seems that configuring it is not an easy thing, basicly i want to host an informative website on it and to create email accounts for company eployees, making sure that i have best security and performance setup , any idias about courses or guidelines?\n    submitted by    /u/sulimansabha  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yxnzaa/any_idias_about_being_expert_in_webmin_lamp/",
+          "publishedOn": "2022-11-17T11:35:41.000Z",
+          "wordCount": 19469,
+          "title": "Any Idias about being expert in webmin & LAMP",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/yxmb6x/thickheaded_thursday_november_17_2022/",
           "author": null,
           "description": "Howdy, /r/sysadmin!\n It's that time of the week, Thickheaded Thursday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I've taken over responsibility for posting these weekly threads so you don't have to worry about anything except your comments!\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
@@ -12458,16 +12508,6 @@
           "wordCount": 41801,
           "title": "Is on-Prem Skype for Business officially dead?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/y7n2o9/job_rejection_story_time/",
-          "author": null,
-          "description": "So, I've been looking for a different job in my town, IT jobs don't come up often around here. One becomes available, i am MORE than qualified but because i'm a weird f--ker, I was rejected for the job. Alright, I'll move on.. A week later (Today) a head hunting company contacts me on indeed about a job \"i would be PERFECT for\".. Guess which job it was for.. Yep, the one that rejected me. I told them they rejected me and they asked if I want to apply anyways I told em \"Screw it, Go for it lets see what happens\". Thats when I get another email about a job in my town from a different head hunter company, and then another, and another, and another. So far 7 different head hunters from different companies have contacted me regarding this position. I've said yes to every single one. Why? Because f--k them, thats why. \n ​\n Thought I'd just share that story as it just happened and I am more than amused.\n    submitted by    /u/Nx0Sec  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/y7n2o9/job_rejection_story_time/",
-          "publishedOn": "2022-10-18T23:59:15.000Z",
-          "wordCount": 43612,
-          "title": "Job Rejection Story Time",
-          "imageUrl": null
         }
       ]
     },
@@ -12681,6 +12721,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yxobug/question_advertised_window_and_effective_window/",
+          "author": null,
+          "description": "I've been trying to self-teach myself about networking as I find it rather interesting. I was looking at some online material and still don't understand what are the conditions in which the advertised window on the receiver side and the effective window on the sender side may go to zero? I would appreciate if someone could help explain this to me please.\n    submitted by    /u/VectorizedHorse  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yxobug/question_advertised_window_and_effective_window/",
+          "publishedOn": "2022-11-17T11:54:32.000Z",
+          "wordCount": 18319,
+          "title": "[Question] Advertised Window and Effective Window",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yxnwt7/help_push_multicast_across_a_network/",
+          "author": null,
+          "description": "I am trying to push multicast across a network and am unsure of myself. I have some Sr people to ask but I was hoping I might find some advice here too. I am peering with my RP via bgp on the edge of my network, a direct connect, that router is configured to accept multicast now but due to an oddity I have a switch next. So it is foreign RP, router, switch1, firewall, switch2, multicast clients.\n For the switch1 how would you all handle it? Would you turn on layer 3 and route multicast between the router and firewall or just extend a vlan between the two.\n    submitted by    /u/mustang23200  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yxnwt7/help_push_multicast_across_a_network/",
+          "publishedOn": "2022-11-17T11:31:58.000Z",
+          "wordCount": 18627,
+          "title": "help push multicast across a network",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/yxn7jb/weird_wifi_issue/",
           "author": null,
@@ -18079,26 +18139,6 @@
           "publishedOn": "2022-10-19T00:48:54.000Z",
           "wordCount": 38510,
           "title": "OpenFlow action set \"Copy TTL Inward\" and outward",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/y7n3hq/rant_wednesday/",
-          "author": null,
-          "description": "It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. \n There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!\n Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/y7n3hq/rant_wednesday/",
-          "publishedOn": "2022-10-19T00:00:10.000Z",
-          "wordCount": 71382,
-          "title": "Rant Wednesday!",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/y7ma3s/what_am_i_doing_wrong_with_iptables/",
-          "author": null,
-          "description": "I'm trying to use iptables on an Ubuntu VM. This is (part of) what I have:\n -A ssh-policer -p tcp -m tcp --dport 22 -m state --state NEW -m hashlimit --hashlimit-burst 1 --hashlimit 1/min --hashlimit-mode srcip --hashlimit-name ssh -j LOG-ACCEPT-SSH -A ssh-policer -j LOG-DROP-SSH -A LOG-ACCEPT-SSH -j LOG --log-prefix \"ssh_unknown_accept: \" -A LOG-ACCEPT-SSH -j ACCEPT -A LOG-DROP-SSH -j LOG --log-prefix \"ssh_unknown_drop: \" -A LOG-DROP-SSH -j DROP \n (I have also tried --hashlimit-upto 1/min which looks like it's the same thing as --hashlimit, but iptables docs aren't great)\n The idea here is that if I get 1 new SSH connection per minute (or less) from unique src IPs, I log them as 'ssh_unknown_accept' and accept them. More than 1 SSH connection per minute from different source IPs, I drop t…",
-          "link": "https://www.reddit.com/r/networking/comments/y7ma3s/what_am_i_doing_wrong_with_iptables/",
-          "publishedOn": "2022-10-18T23:24:19.000Z",
-          "wordCount": 39470,
-          "title": "What am I doing wrong with iptables?",
           "imageUrl": null
         }
       ]
