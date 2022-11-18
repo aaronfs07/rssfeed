@@ -250,6 +250,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yyl1zf/public_dns_entry_as_cname_for_internalonly_dns/",
+          "author": null,
+          "description": "Anonymised CLI output:\n root@pve72a:~# nslookup rt.example.com Server: 10.73.7.107 Address: 10.73.7.107#53 Non-authoritative answer: rt.example.com canonical name = rt73a.ad.example.com. root@pve72a:~# nslookup rt73a.ad.example.com Server: 10.73.7.107 Address: 10.73.7.107#53 Name: rt73a.ad.example.com Address: 10.73.7.112 root@pve72a:~# ping rt73a.ad.example.com PING rt73a.ad.example.com (10.73.7.112) 56(84) bytes of data. 64 bytes from 10.73.7.112 (10.73.7.112): icmp_seq=1 ttl=64 time=0.355 ms 64 bytes from 10.73.7.112 (10.73.7.112): icmp_seq=2 ttl=64 time=0.097 ms ^C --- rt73a.ad.example.com ping statistics --- 2 packets transmitted, 2 received, 0% packet loss, time 1001ms rtt min/avg/max/mdev = 0.097/0.226/0.355/0.129 ms root@pve72a:~# ping rt.example.com ping: rt.example.com: Name or service not known root@pve72a:~# \n example.com is the public domain, ad.example.com is the internal-only domain. Lookups to records under ad.example.com will succeed against the internal Samba domain controllers will succeed but will fail against public DNS servers.\n As we can see, a lookup for rt.example.com returns the CNAME, but then doesn't \"follow up\" to get the IP address, even though a lookup for rt73a.ad.example.com returns the IP address.\n The context is that I currently don't want rt.example.com to be accessible over the internet but I might want that in future. Was hoping to be able to that without requiring a change of URL used to access it.\n Is DNS supposed to behave how it's behaving for me, or is there some setting I need to change to get the behaviour I want?\n    submitted by    /u/rootofallworlds  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yyl1zf/public_dns_entry_as_cname_for_internalonly_dns/",
+          "publishedOn": "2022-11-18T14:12:21.000Z",
+          "wordCount": 20656,
+          "title": "Public DNS entry as CNAME for internal-only DNS entry - is that supposed to work?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yykt93/teams_on_avd/",
+          "author": null,
+          "description": "submitted by    /u/y0da822  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yykt93/teams_on_avd/",
+          "publishedOn": "2022-11-18T14:01:49.000Z",
+          "wordCount": 20295,
+          "title": "Teams on AVD",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yykrxw/any_luck_with_the_outofband_updates/",
+          "author": null,
+          "description": "Saw a couple of people posting about the new Out-Of-Band updates that were released last night, with a few saying that the updates didn't resolve their issue. Just thought I'd make a new post to see if the update DID resolve the Kerberos issues for anyone that rolled the update out and removed their original registry edits. Us gunshy sysadmins with no test environment thank you regardless.\n    submitted by    /u/Altezza_OW  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yykrxw/any_luck_with_the_outofband_updates/",
+          "publishedOn": "2022-11-18T14:00:22.000Z",
+          "wordCount": 20353,
+          "title": "Any luck with the Out-Of-Band updates?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/yykpjl/openingcreating_an_outlook_calendar_meeting_also/",
+          "author": null,
+          "description": "So far two people have randomly reported that when they open or create a new outlook calendar meeting in their Outlook desktop application, it will also open a browser window or new tab in the browser, every time.. I've disabled all Add-ins, reset the computers default application settings, verified that the Outlook Desktop application is the default email app.\n WHY IS THIS HAPPENING\n    submitted by    /u/positive_ranch  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/yykpjl/openingcreating_an_outlook_calendar_meeting_also/",
+          "publishedOn": "2022-11-18T13:57:38.000Z",
+          "wordCount": 20371,
+          "title": "Opening/creating an outlook calendar meeting also randomly opens a browser window or tab.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/yyk4uf/v4_drivers_defaulting_to_point_and_print/",
           "author": null,
           "description": "We are replacing the old DCs in our organisation for cyber security which has made us create new print servers. All the printers are installed and work from the servers in the configuration we want, using dns for port names etc.\n Now because of print nightmare we are trying a work around to install the printer drivers via intune and then a login script to map the printers after the drivers are installed.\n Here comes the issue, we have noticed that all of the printers with v4 drivers are being installed with MS point and print driver. The printer with v3 drivers are installing with their appropriate drivers.\n We have found that some of the V4 drivers are not installing, so adding that to the driver install script, removing and re-running the login mapping script, it still adds the printers with point and print. 2 of these are for the main office and need user preferences enabled so they can select trays etc. But point and print doesn't enable that. Without that we cannot shut off the old DCs.\n Now we don't want to disable the print nightmare registry key or amend it to a state where it is not 1 as this will be picked up in the cyber security audit in March 2023. I am at a loss as to what I can do to bypass this issue. It seems odd that all websites on the Internet state V4 is the answer to fixing it but V4 is causing the problem.\n At the moment we cannot move to a driverless system as we need to get new printer contracts first.\n TLDR; printers with V4 drivers are shown installed with point and print and is not suitable for our environment.\n    submitted by    /u/DarthEmu  \n [link]   [comments]",
@@ -12815,6 +12855,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/yykdq9/with_large_tech_companies_laying_people_off_are/",
+          "author": null,
+          "description": "Previous post was deleted for being \"low quality\". Maybe because it only had a single question? IDK. But I'd like to hear opinions and stories from fellow network professionals about what they've experienced during their careers as far as RIFs/layoffs go. Especially with the large RIFs big tech companies are going through.\n    submitted by    /u/Privacy__ThrowAway  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/yykdq9/with_large_tech_companies_laying_people_off_are/",
+          "publishedOn": "2022-11-18T13:42:08.000Z",
+          "wordCount": 19327,
+          "title": "With large tech companies laying people off are network admins among the laid off?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/yyjzu8/reachability_problem_on_vrf_rcf1918/",
           "author": null,

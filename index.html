@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-18 datetime="2022-11-18T13:30:28.000Z">2022-11-18</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-18 datetime="2022-11-18T13:30:28.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-18 datetime="2022-11-18T14:12:21.000Z">2022-11-18</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-18 datetime="2022-11-18T14:12:21.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,95 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yyl1zf/public_dns_entry_as_cname_for_internalonly_dns/"
+                        open
+                      >
+                        <summary class="article-expander__title">Public DNS entry as CNAME for internal-only DNS entry - is that supposed to work?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yyl1zf/public_dns_entry_as_cname_for_internalonly_dns/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Anonymised CLI output:
+ root@pve72a:~# nslookup rt.example.com Server: 10.73.7.107 Address: 10.73.7.107#53 Non-authoritative answer: rt.example.com canonical name &#x3D; rt73a.ad.example.com. root@pve72a:~# nslookup rt73a.ad.example.com Server: 10.73.7.107 Address: 10.73.7.107#53 Name: rt73a.ad.example.com Address: 10.73.7.112 root@pve72a:~# ping rt73a.ad.example.com PING rt73a.ad.example.com (10.73.7.112) 56(84) bytes of data. 64 bytes from 10.73.7.112 (10.73.7.112): icmp_seq&#x3D;1 ttl&#x3D;64 time&#x3D;0.355 ms 64 bytes from 10.73.7.112 (10.73.7.112): icmp_seq&#x3D;2 ttl&#x3D;64 time&#x3D;0.097 ms ^C --- rt73a.ad.example.com ping statistics --- 2 packets transmitted, 2 received, 0% packet loss, time 1001ms rtt min/avg/max/mdev &#x3D; 0.097/0.226/0.355/0.129 ms root@pve72a:~# ping rt.example.com ping: rt.example.com: Name or service not known root@pve72a:~# 
+ example.com is the public domain, ad.example.com is the internal-only domain. Lookups to records under ad.example.com will succeed against the internal Samba domain controllers will succeed but will fail against public DNS servers.
+ As we can see, a lookup for rt.example.com returns the CNAME, but then doesn&#x27;t &quot;follow up&quot; to get the IP address, even though a lookup for rt73a.ad.example.com returns the IP address.
+ The context is that I currently don&#x27;t want rt.example.com to be accessible over the internet but I might want that in future. Was hoping to be able to that without requiring a change of URL used to access it.
+ Is DNS supposed to behave how it&#x27;s behaving for me, or is there some setting I need to change to get the behaviour I want?
+    submitted by    /u/rootofallworlds  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;69
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yykt93/teams_on_avd/"
+                        open
+                      >
+                        <summary class="article-expander__title">Teams on AVD</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yykt93/teams_on_avd/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>submitted by    /u/y0da822  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;68
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yykrxw/any_luck_with_the_outofband_updates/"
+                        open
+                      >
+                        <summary class="article-expander__title">Any luck with the Out-Of-Band updates?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yykrxw/any_luck_with_the_outofband_updates/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Saw a couple of people posting about the new Out-Of-Band updates that were released last night, with a few saying that the updates didn&#x27;t resolve their issue. Just thought I&#x27;d make a new post to see if the update DID resolve the Kerberos issues for anyone that rolled the update out and removed their original registry edits. Us gunshy sysadmins with no test environment thank you regardless.
+    submitted by    /u/Altezza_OW  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;68
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yykpjl/openingcreating_an_outlook_calendar_meeting_also/"
+                        open
+                      >
+                        <summary class="article-expander__title">Opening/creating an outlook calendar meeting also randomly opens a browser window or tab.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yykpjl/openingcreating_an_outlook_calendar_meeting_also/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So far two people have randomly reported that when they open or create a new outlook calendar meeting in their Outlook desktop application, it will also open a browser window or new tab in the browser, every time.. I&#x27;ve disabled all Add-ins, reset the computers default application settings, verified that the Outlook Desktop application is the default email app.
+ WHY IS THIS HAPPENING
+    submitted by    /u/positive_ranch  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;68
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -744,6 +833,27 @@ For requirement #1,2 we have a few branch offices with a decent amount of turn o
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/yykdq9/with_large_tech_companies_laying_people_off_are/"
+                        open
+                      >
+                        <summary class="article-expander__title">With large tech companies laying people off are network admins among the laid off?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yykdq9/with_large_tech_companies_laying_people_off_are/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Previous post was deleted for being &quot;low quality&quot;. Maybe because it only had a single question? IDK. But I&#x27;d like to hear opinions and stories from fellow network professionals about what they&#x27;ve experienced during their careers as far as RIFs/layoffs go. Especially with the large RIFs big tech companies are going through.
+    submitted by    /u/Privacy__ThrowAway  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;64
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -47240,8 +47350,8 @@ Has anyone experienced this issue or have ANY idea what direction to begin looki
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3497308014">
-        <time id="build-timestamp" datetime="2022-11-18T13:31:38.742Z">2022-11-18T13:31:38.742Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3497601546">
+        <time id="build-timestamp" datetime="2022-11-18T14:14:05.382Z">2022-11-18T14:14:05.382Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

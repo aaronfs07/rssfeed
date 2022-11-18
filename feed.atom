@@ -2,10 +2,75 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-18T13:31:38.812Z</updated>
+    <updated>2022-11-18T14:14:05.474Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Public DNS entry as CNAME for internal-only DNS entry - is that supposed to work?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yyl1zf/public_dns_entry_as_cname_for_internalonly_dns/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yyl1zf/public_dns_entry_as_cname_for_internalonly_dns/"/>
+        <updated>2022-11-18T14:12:21.000Z</updated>
+        <summary type="html"><![CDATA[Anonymised CLI output:
+ root@pve72a:~# nslookup rt.example.com Server: 10.73.7.107 Address: 10.73.7.107#53 Non-authoritative answer: rt.example.com canonical name = rt73a.ad.example.com. root@pve72a:~# nslookup rt73a.ad.example.com Server: 10.73.7.107 Address: 10.73.7.107#53 Name: rt73a.ad.example.com Address: 10.73.7.112 root@pve72a:~# ping rt73a.ad.example.com PING rt73a.ad.example.com (10.73.7.112) 56(84) bytes of data. 64 bytes from 10.73.7.112 (10.73.7.112): icmp_seq=1 ttl=64 time=0.355 ms 64 bytes from 10.73.7.112 (10.73.7.112): icmp_seq=2 ttl=64 time=0.097 ms ^C --- rt73a.ad.example.com ping statistics --- 2 packets transmitted, 2 received, 0% packet loss, time 1001ms rtt min/avg/max/mdev = 0.097/0.226/0.355/0.129 ms root@pve72a:~# ping rt.example.com ping: rt.example.com: Name or service not known root@pve72a:~# 
+ example.com is the public domain, ad.example.com is the internal-only domain. Lookups to records under ad.example.com will succeed against the internal Samba domain controllers will succeed but will fail against public DNS servers.
+ As we can see, a lookup for rt.example.com returns the CNAME, but then doesn't "follow up" to get the IP address, even though a lookup for rt73a.ad.example.com returns the IP address.
+ The context is that I currently don't want rt.example.com to be accessible over the internet but I might want that in future. Was hoping to be able to that without requiring a change of URL used to access it.
+ Is DNS supposed to behave how it's behaving for me, or is there some setting I need to change to get the behaviour I want?
+    submitted by    /u/rootofallworlds  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Teams on AVD]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yykt93/teams_on_avd/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yykt93/teams_on_avd/"/>
+        <updated>2022-11-18T14:01:49.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/y0da822  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Any luck with the Out-Of-Band updates?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yykrxw/any_luck_with_the_outofband_updates/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yykrxw/any_luck_with_the_outofband_updates/"/>
+        <updated>2022-11-18T14:00:22.000Z</updated>
+        <summary type="html"><![CDATA[Saw a couple of people posting about the new Out-Of-Band updates that were released last night, with a few saying that the updates didn't resolve their issue. Just thought I'd make a new post to see if the update DID resolve the Kerberos issues for anyone that rolled the update out and removed their original registry edits. Us gunshy sysadmins with no test environment thank you regardless.
+    submitted by    /u/Altezza_OW  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Opening/creating an outlook calendar meeting also randomly opens a browser window or tab.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yykpjl/openingcreating_an_outlook_calendar_meeting_also/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yykpjl/openingcreating_an_outlook_calendar_meeting_also/"/>
+        <updated>2022-11-18T13:57:38.000Z</updated>
+        <summary type="html"><![CDATA[So far two people have randomly reported that when they open or create a new outlook calendar meeting in their Outlook desktop application, it will also open a browser window or new tab in the browser, every time.. I've disabled all Add-ins, reset the computers default application settings, verified that the Outlook Desktop application is the default email app.
+ WHY IS THIS HAPPENING
+    submitted by    /u/positive_ranch  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[With large tech companies laying people off are network admins among the laid off?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/yykdq9/with_large_tech_companies_laying_people_off_are/</id>
+        <link href="https://www.reddit.com/r/networking/comments/yykdq9/with_large_tech_companies_laying_people_off_are/"/>
+        <updated>2022-11-18T13:42:08.000Z</updated>
+        <summary type="html"><![CDATA[Previous post was deleted for being "low quality". Maybe because it only had a single question? IDK. But I'd like to hear opinions and stories from fellow network professionals about what they've experienced during their careers as far as RIFs/layoffs go. Especially with the large RIFs big tech companies are going through.
+    submitted by    /u/Privacy__ThrowAway  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v4 drivers defaulting to Point and Print]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/yyk4uf/v4_drivers_defaulting_to_point_and_print/</id>
