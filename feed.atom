@@ -2,10 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-19T09:12:53.512Z</updated>
+    <updated>2022-11-19T10:13:52.510Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Robocopy running location]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yz86ap/robocopy_running_location/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yz86ap/robocopy_running_location/"/>
+        <updated>2022-11-19T09:40:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi!
+ iam not sure if its matter where to start robocopy cmdlet.
+ For example:
+ Source: MS Fileserver
+ Target: NetApp Volume
+ Would it make a difference to start my robocopy job directly on the source server instead of an admin machine on the same network? When I start the job on my admin machine, would it be a additional hop (cache) for the files, so the copy would take longer?
+ ​
+ Thanks in advanced.
+    submitted by    /u/boogipro  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cisco Hyperflex Questions]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yz7uqr/cisco_hyperflex_questions/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yz7uqr/cisco_hyperflex_questions/"/>
+        <updated>2022-11-19T09:17:42.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking for some level of understanding with Cisco Hyperflex. We will hopefully getting official training on it soon, but my team is being asked to take over a multi-site Hyperflex solution that was created by, well lets just call them non-IT people to be nice, and my first impression is that it wasn't built right. But they insist they followed all the Cisco recommendations. So I have some questions I'm hoping to figure out before I get called at 3am on a Saturday.
+ First, the way these systems are configured is there is 6 VMware hosts, all with 6 SSDs in them, then the 7th server is the Hyperflex management server or something. Each server has a single NIC with 2 ports, 25Gbit, connected to two different switches. Those NICs are handling anything Hyperflex, VMware DRS, VMware Management, storage, and VM traffic itself. 
+ Questions:
+ 1 - I've always gone with the school of thought that 1 single dual port NIC isn't very good for redundancy, but they insist this is the Cisco recommendation, are they really right?
+ 2 - I also would never shove everything through those two nics, is this also Cisco's recommendation?
+ 3 - The storage in VMware looks like iSCSI, but I haven't been able to get hands on. Where does the iSCSI adapters on the VMware host connect to as a SAN provider? Is it the management server? What happens when it crashes?
+ 4 - Is the Hyperflex storage like VSAN where there is a replication delay? if so, how long is that delay?
+ 5 - They told me DRS should be turned off for Hyperflex. Is that true? IF so, why?
+ I guess open ended, is there any other tidbits of info you can supply me? Imagine that you are being asked to support a pair of these systems in different geographic locations, without ever seeing the damn thing ever.
+ That's me
+    submitted by    /u/ntengineer  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moving disks Gen9 to Gen8]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/yz7uja/moving_disks_gen9_to_gen8/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/yz7uja/moving_disks_gen9_to_gen8/"/>
+        <updated>2022-11-19T09:17:17.000Z</updated>
+        <summary type="html"><![CDATA[For a project, I need to transfer the disks from ESXi Gen9 server to Gen8 server. I think there will be data loss due to different raid cards but is there a way to do this without data loss?
+    submitted by    /u/NoneZx  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hyper-V Replication set different destination paths (PowerShell)]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/yz7p60/hyperv_replication_set_different_destination/</id>
@@ -27806,61 +27858,6 @@ Strike one: I only go there once a year to register. In the last three years, my
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How best to configure passthrough VoiP phones in our network]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y9bi88/how_best_to_configure_passthrough_voip_phones_in/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y9bi88/how_best_to_configure_passthrough_voip_phones_in/"/>
-        <updated>2022-10-20T22:07:11.000Z</updated>
-        <summary type="html"><![CDATA[Hi guys,
- I'm looking to add voip phones to our current network and was wondering how best to configure it given the current setup. Currently, it's a flat network 192.168.1.1 /24 with our 48 port switch on eth1 port of ubiquiti edgerouter 4. The switch has multiple desktops(~10) and printers connecting to some win servers (setup as a terminal server). The voip phones would be added at each station sitting in front of the respective desktop on the same line. In order to power the phones, a second poe switch will be added as well.
-  
- 1) Firstly, should I be plugging one switch into another daisy chain style so the phones can see the SBC controller I've setup on the win server? In doing so, all uplink data will be running through a single shared 1GB line which is not great but it's only 10 u…]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Anyone doing hospitality IPTV? (hotels, college dorm, cruise ships, etc)]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y9aqqv/anyone_doing_hospitality_iptv_hotels_college_dorm/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y9aqqv/anyone_doing_hospitality_iptv_hotels_college_dorm/"/>
-        <updated>2022-10-20T21:36:24.000Z</updated>
-        <summary type="html"><![CDATA[Hey folks, I maintain a small coaxial cable TV plant for a campus with a few dormitory buildings (about 400 rooms total). It's really simple with the CATV headend (digital QAM modulator) and we pipe in our licensed channels to it in addition to a few in house channels for signage and information. We're making a new dormitory that will be all ethernet and no coax to the room to use simple digital CATV enabled TVs. 
- It appears the hospitality IPTV market is large from fancy ones that have splash pages that welcome you with customized information to your room. I do notice that at the hotels a lot of them have set top boxes behind the hospitality TV and this seems complex. I feel like buying hospitality grade smart TVs will lock us in or perhaps the set top box is the way to go? How much do these systems cost to maintain and license? is it even worth it?
- I really like the simplicity of coax CATV, just scan for new channels (the channel plan rarely changes) and go, so I can just push to get coax installed in the new dorm to each room and extend CATV to the dorm with HFC fiber. Change my mind?
- One possible driving factor for IPTV is to also allow users to watch IPTV on their desktop or mobile devices. I can technically hit the multicast IP on the distribution side (source to QAM modulator) and watch it in VLC but it's not too user friendly. I don't know how many users would actually watch our channels on mobile. I have tested Haivison's HMP product and have always wondered if there are competition products to this. Is there anything open source in this space at all?
-    submitted by    /u/woodcake  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PC is unable to ping switch (Cisco 2960) and vice versa (School Lab)]]></title>
-        <id>https://www.reddit.com/r/networking/comments/y9agz1/pc_is_unable_to_ping_switch_cisco_2960_and_vice/</id>
-        <link href="https://www.reddit.com/r/networking/comments/y9agz1/pc_is_unable_to_ping_switch_cisco_2960_and_vice/"/>
-        <updated>2022-10-20T21:25:52.000Z</updated>
-        <summary type="html"><![CDATA[Hello guys, I need help in checking what's wrong as our instructor is also baffled with the issue. It could've been easier to just share the topology but I'll do my best explaining it. This is for our networking fundamentals class and not a GRADED activity. I'm working with a partner since this is our lab activity. We're pretty much stuck with this and worried that she can't perform further practicals without solving this one first.
- Basically here's the setup:
-  
-All devices have unique static IPs assigned
- All devices have the same subnet mask
- 2 switches (same models, both VLAN 1)
- 2 end PC end-devices
-  
-​
-  
- S1 VLAN 1 172.18.1.1 255.255.192.0 
-  
- S2 VLAN 1 172.18.1.2 255.255.192.0 
-  PC-A NIC 172.18.1.50 255.255.192.0 
-  PC-B NIC 172.18.1.60 255.255.192.0 
- 
- ​
- It should look like …]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
