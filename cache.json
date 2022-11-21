@@ -230,6 +230,66 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z0ztwk/slow_windows_2012_r2_file_server_transfers/",
+          "author": null,
+          "description": "Hi!\n I have a problem with Win Server 2012, I dont know where to look... Server has 2 NICs one NIC is working normally with 1 Gbps the other one is strange, at least for me. When I copy a file directly from the server to another workstation the speed is ok with 1 Gbps, but when I reach the Server from LAN the same workstation the copy speed is like limited to 200Mbps. Where should I look for the problem?\n Thanks\n    submitted by    /u/brain5can  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z0ztwk/slow_windows_2012_r2_file_server_transfers/",
+          "publishedOn": "2022-11-21T14:06:15.000Z",
+          "wordCount": 22098,
+          "title": "Slow Windows 2012 R2 File Server transfers",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z0znso/migrating_freeradius_with_google_authenticator_to/",
+          "author": null,
+          "description": "We are currently running FreeRADIUS with Google Authenticator on an Ubuntu 14.04 LTS server. This is used in our Horizon environment, the UAG points to this for authentication. Since we have had various issues with this server, instead of upgrading the current server, I have been tasked with standing up a new Ubuntu 20.04 LTS server and setting this up with FreeRADIUS and Google Auth, then migrating over the configuration/database to avoid having to enroll all users with Google Auth again. I did some research but did not find too much information on how to easily migrate the Google Auth database to the new server. I found these two articles (Clone and Restore FreeRADIUS Setup and Sharing Google Auth Keys), but I wasn't sure that it would work. Does anyone have experience with a migration like this, who could point me in the right direction?\n    submitted by    /u/Uno_More_Time  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z0znso/migrating_freeradius_with_google_authenticator_to/",
+          "publishedOn": "2022-11-21T13:59:16.000Z",
+          "wordCount": 22236,
+          "title": "Migrating FreeRADIUS with Google Authenticator to New Linux Server",
+          "imageUrl": "https://external-preview.redd.it/UiIPF2mqA_DFQCLEDWvkDDxPFwNwPdql7LOx5xV-euw.jpg?auto=webp&s=bbfd64870f33bdb05e624063cdefbb5b9d58a33a"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z0zhn8/make_sure_exchange_to_gmail_automated_migration/",
+          "author": null,
+          "description": "We've got a sync set up and running currently, all mailboxes are in the synced status and we plan on switching them over on Friday/Thursday evening. \n What I'm not sure about is this: so inbox 1 last synced 30 minutes ago. Inbox 2 last synced yesterday at 5:54PM. Inbox 3 last synced at 2:21PM. There is still mail arriving to these inboxes, and I want to make sure that no mail get's left behind when I complete the migration and swap the MX records. Does a \"final sync\" run when I approve or complete the migration batch? And if not, then how do I ensure the mail in the recipient inbox is up-to-date the minute of the switch?\n The mail account domains need to be the same while the migration runs on the sending and receiving end, due to this we can't set a forward that will work. So assuming there is no way to do this \"final sync\" I suppose I could complete the migration batch on Thursday evening, swap their 365 accounts to .onmicrosoft.com, set up the forward from the Gmail accounts until they leave on Friday while manually sending over the few emails that may have been missed by the migration sync, change the MX, then log on and set up their profiles. Bit of a long way around it but eh there's only 5 users.\n    submitted by    /u/Genghis_KhaN13  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z0zhn8/make_sure_exchange_to_gmail_automated_migration/",
+          "publishedOn": "2022-11-21T13:51:20.000Z",
+          "wordCount": 22404,
+          "title": "Make sure Exchange to Gmail automated migration syncs last emails",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z0zfzd/hpe_dl380_gen9_nvme_unable_to_attain_full_pci/",
+          "author": null,
+          "description": "Hello all, recently purchased a refurb DL380 Gen9 with the NVMe enablement kit (part no 774741-B21 which consists of a PCIe NVMe controller, drive cage with backplane and 3 PCI express cables). I installed 6 x Kingston DC1500M drives (firmware version S67F0103, no newer available) and whilst they all work, I can only get PCI express Gen 3 link speed on port 1 & 2 of the controller. The other 4 drives (port 3, 4, 5 and 6) only operate at Gen 1 link speed.\n Output in lspci with correct speed (port 1 & 2):\n  LnkSta: Speed 8GT/s (ok), Width x4 (ok) TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt- \n Output in lspci with slower speed (port 3, 4, 5, 6):\n  LnkSta: Speed 2.5GT/s (downgraded), Width x4 (ok) TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt- \n Things I tried:\n  \nReset BIOS: no change. There are also no options to configure link speeds.\n Move drives around: no change. It doesn't matter which drive is connected where, port 1 & 2 run at Gen 3 whilst the other run at Gen 1\n Move cables around: no change\n Swap cable connections: connected port 1 & 2 to port 5 & 6 on the backplane. Still only port 1 & 2 run at Gen 3 whilst the the other run at Gen 1. That rules out a backplane problem\n Swapped NVMe controller: no change\n Connect only port 5 & 6: runs at Gen 3\n Firmware upgrade of NVMe controller: was already at latest version 1.78\n All other firmware is up to date\n  \nSo it looks like in whatever combination, I can only get 2 of the 6 drives to run at full Gen 3 speed whilst the other downgrade to Gen 1. There are some jumpers on the NVMe controller but I can't find any documentation on what they do and I doubt it's going to make a difference anway. Needless to say this quite kneecaps the performance of the NVMe drives... Anything else I can try?\n    submitted by    /u/RedShift9  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z0zfzd/hpe_dl380_gen9_nvme_unable_to_attain_full_pci/",
+          "publishedOn": "2022-11-21T13:49:07.000Z",
+          "wordCount": 21836,
+          "title": "HPE DL380 Gen9 NVMe unable to attain full PCI express Gen 3 on all NVMe drives",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z0zbm1/exchange_online_dkim_question/",
+          "author": null,
+          "description": "We're a US-based user of Exchange Online and DKIM. Recently I noticed in our reports that messages sent by our people traveling in the EU were not DKIM-signed. The messages originated at a European MS server, so they passed SPF and therefore DMARC, but I'm wondering if the lack of a DKIM signature is expected behavior or if I need to involve MS Tech Support. Thanks.\n    submitted by    /u/jimshilliday  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z0zbm1/exchange_online_dkim_question/",
+          "publishedOn": "2022-11-21T13:43:21.000Z",
+          "wordCount": 22058,
+          "title": "Exchange Online DKIM question",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z0zb2j/adr_deployments_pushing_to_machines_outside_of/",
+          "author": null,
+          "description": "I have created a few new ADR's which point to specific device collections for some testing. When I run the ADR to check that it runs correctly, the software update group shows that it has a lot more assets under the statistics section of 107 rather than just the 1 device in the device collection that the ADR is using, am I missing something here, or have I done something wrong?\n    submitted by    /u/craigs2188  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z0zb2j/adr_deployments_pushing_to_machines_outside_of/",
+          "publishedOn": "2022-11-21T13:42:37.000Z",
+          "wordCount": 22088,
+          "title": "ADR Deployments pushing to machines outside of Device Collection",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/z0yyfx/whats_the_modern_version_of_a_weathergoose_now/",
           "author": null,
           "description": "We bought a weathergoose a decade ago that would notify us if the temperatures get to high like AC goes out or other issues. What's everyone using now?\n    submitted by    /u/Freezerburn  \n [link]   [comments]",
@@ -12506,6 +12566,16 @@
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/networking/comments/z0zkhf/security_question/",
+          "author": null,
+          "description": "Newbie here. Why would changing the native VLAN to a VLAN other than VLAN 1 make a switch more secure? I am no hacker but anyone with access to that switch could easily use show commands to see that info right?\n    submitted by    /u/16bitword  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/z0zkhf/security_question/",
+          "publishedOn": "2022-11-21T13:55:05.000Z",
+          "wordCount": 18386,
+          "title": "Security question",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/networking/comments/z0yd17/help_with_a_network_design_based_on_a_business/",
           "author": null,
           "description": "Hello Redditors,\n I am currently facing a business requirement that is outlined in the image below:\n https://imgur.com/a/gZ76JIm\n This is a hard-set requirement from management.\n My current idea is to use L3VPN and play around with RT-Import/Export to achieve this (I am open to different suggestions as well). \n However, I have faced the following problems so far:\n  \nI have to achieve this with IPv6 as well, it seems some of our equipment doesn't support 6VPE, my question is, would there be any other way to accomplish this for IPv6 in this case? \n Looks like I can't have different VRFs for IPv4 and IPv6 in the same interface nor can have IPv6 in the main routing table while the interface is part of a VRF\n \n We have an anti-DDoS system that injects routes via BGP to modify the communities for the attacked /24s, currently, this doesn't modify the next-hop (we keep the next-hop intact) we just modify the community in order to tell the edge routers \"stop all broadcasts to all transits but the scrubbing capable ones\". However, being that this is going to use AF VPNv4 and VPNv6 I don't see how I can just keep the next-hop unaltered nor how I could set this up. \n I can't just tell the network \"the next-hop is the loopback of core/dist-1\" like we currently do, since now the network is inside of a VRF\n Just to clarify, the anti-DDoS injects a route with a higher LPREF than the ones advertised by the core/dist switches at this moment, this causes the edge routers to prefer that one and apply policies based on the communities present on that specific one \n \n I have also concerns about scalability, we currently have ASR1004/1006 with RP2@16GB and receive full routing tables from prov-2 and prov-1, IXP routes from prov-3 and around 50k routes from prov-4 (and this is only IPv4)\n  \nOur equipment is a mix of Huawei CE68XX and Cisco ASR1004/1006. \n Any ideas, hints, or guidelines, especially if you have solved an issue like this before would be really appreciated.\n Regards,\n    submitted by    /u/shaoranrch  \n [link]   [comments]",
@@ -17713,16 +17783,6 @@
           "publishedOn": "2022-10-23T02:40:48.000Z",
           "wordCount": 39215,
           "title": "Advice about firewall setup with dual ISPs",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/yb4qsl/odd_ping_question_scenario_based/",
-          "author": null,
-          "description": "I have 2 Routers , A and B\n Both are directly connected to each other and are also in OSPF \n Router A loopback and router ID 1.1.1.1\n Router B loopback and Router ID 1.1.1.2\n Router A and Router B direct link 192.1681.1. and 192.168.1.2 respectively\n QUESTIONS\n  \nWhen I ping Router B from A without sourcing, what is the source address of the ping? default source address \n  \n2.When I ping Router B from A sourcing from 192.168.1.1 (interface Ip) , is the loopback of Router A involved somehow in the ping ?\n Thanks\n    submitted by    /u/iAteTheDinosours  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/yb4qsl/odd_ping_question_scenario_based/",
-          "publishedOn": "2022-10-23T01:43:07.000Z",
-          "wordCount": 38479,
-          "title": "Odd Ping question (Scenario Based )",
           "imageUrl": null
         }
       ]
