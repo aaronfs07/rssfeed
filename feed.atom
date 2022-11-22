@@ -2,10 +2,101 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-22T09:14:08.784Z</updated>
+    <updated>2022-11-22T10:14:42.618Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[WCCP 4507->9407]]></title>
+        <id>https://www.reddit.com/r/networking/comments/z1pvs5/wccp_45079407/</id>
+        <link href="https://www.reddit.com/r/networking/comments/z1pvs5/wccp_45079407/"/>
+        <updated>2022-11-22T10:07:48.000Z</updated>
+        <summary type="html"><![CDATA[Anybody have experience replacing a4407's with 9407's and use WCCP? We bought a bunch of 9407's and documentation suggests WCCP is supported on 9407 and config looks Identical but doesn't work well 
+ WCCP Sees the Proxy's and reports usable but seemingly 40-60% of Websites that should be blocked gets blocked
+ We have Opened TAC Case and was told WCCP works differently and is more restricted on 9407 compared to 4507, We also had to change our mask on our proxy from 0x1 to 0x3 
+ We have sacrificed 2 goats and are now looking at the Junior admins, for their sake please help !!! :D
+ Bare bones Config Below, IP's in ACL removed as non RFC1918 (we own a /B)
+ We have 2 Core switches non VSS connected by L2 Link and one Proxy on each switch at this site
+ ip wccp 1 redirect-list ws-redirect (HTTP)
+ ip wccp 70 redirect-list ws-redirect (HTTPS)
+ ip wccp 71 redirect-list ws-redirect
+ ip wccp 72 redirect-list ws-redirect
+ Int vlan 212 (SVI for Proxy P1 Sw1)
+ ip address 10.10.213.18/28
+ ip wccp redirect exclude in
+ Int vlan 212 (SVI for Proxy P1 Sw2)
+ ip address 10.10.213.19/28
+ ip wccp redirect exclude in
+ interface gi1/0/30 (Sw1)
+ desc Proxy1-P1
+ Switchport access vlan 212
+ Switchport mode access
+ Spanning-tree Portfast
+ interface gi1/0/30 (Sw2)
+ desc Proxy2-P1
+ Switchport access vlan 212
+ Switchport mode access
+ Spanning-tree Portfast
+ ip access-list extended ws-redirect
+ permit ip subnet1 mask any
+ permit ip subnet2 mask any
+ .........
+    submitted by    /u/totally-random-user  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting info through Virtualmin API]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/z1pbia/getting_info_through_virtualmin_api/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/z1pbia/getting_info_through_virtualmin_api/"/>
+        <updated>2022-11-22T09:30:57.000Z</updated>
+        <summary type="html"><![CDATA[Hello, I'm working with Virtualmin. And know for the security reasons I need to know, when all users last time changed their passwords.
+ When I go through GUI to user separately I can see the line, when their password was changed.
+ When I use an API command 
+ list-users --domain example.lt --multiline 
+ I get a lot of information of each user, but nothing about the time, when the password was changed last time.
+ How could I get that info?
+    submitted by    /u/HerkusBelt  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to delete root or intermediate CA cert?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/z1p3zr/how_to_delete_root_or_intermediate_ca_cert/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/z1p3zr/how_to_delete_root_or_intermediate_ca_cert/"/>
+        <updated>2022-11-22T09:16:44.000Z</updated>
+        <summary type="html"><![CDATA[Hi All,
+ My colleague who does not work on this project anymore, created the CA infra on my domain. For some testing purposes he created multiple certs for both the root and the intermediate servers. 
+ I would like to sanitize this config, so only the current and valid cert is visible. 
+ On Certificate Authority app I right click the server at the top of the tree, Properties, and on the General tab there are 2 CA certificates for my intermediate server. I revoked (from the root) the one which I don't need, published the CRL, deleted this cert (backed up previously) from the intermediate server itself (cert store), but on this list it is still visible.
+ Is there a way to delete from this list? Or is that enough what I have done?
+ Thank you!
+    submitted by    /u/olloczky  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Software update notification service/portal]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/z1p2yj/software_update_notification_serviceportal/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/z1p2yj/software_update_notification_serviceportal/"/>
+        <updated>2022-11-22T09:14:53.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I was looking for some service/portal that can let me know when specific application that we use from various distributors get new releases. I can't find anything interesting. So, for example if new LibreOffice or Chrome or GIMP has a new version released, we can have it in one place, rather then checking on my own for each app.
+ If anyone has an idea or is using something similar, please let me know.
+ Regards
+ Wolf
+    submitted by    /u/wolf_judge  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Migrate/relocate full RAID from HPE ?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/z1o3w8/migraterelocate_full_raid_from_hpe/</id>
@@ -322,6 +413,22 @@ edit: I should mention my recommendation was for scanning the ip-ranges instead 
         <updated>2022-11-21T22:10:05.000Z</updated>
         <summary type="html"><![CDATA[Just start a new SysAdmin job. The previous admin didn’t dnt leave great notes on the network. Where should I start with this task? What software should I run to determine whats on which server and backs ups etc.
     submitted by    /u/No_Farmer9520  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NPS Strong Certificate Mapping Debacle]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/z1br55/nps_strong_certificate_mapping_debacle/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/z1br55/nps_strong_certificate_mapping_debacle/"/>
+        <updated>2022-11-21T22:03:23.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone actually issued new or updated certificates regarding the whole May 2022 CU debacle breaking NPS authentication? We simply used the Schannel registry method to disable strong mapping, but we'd like to fix the issue properly. The doc below from Microsoft leaves a lot to be desired in terms of what to do with AD CS and existing cert templates. 
+ It sounds like using an additional field in the Alternative Subject Name might do the trick, but should I enable that on the existing certificate template and wait for clients to auto renew, or issue a new one? Issuing a new one seems wise so it can be dished out in stages for testing, but it's unclear if the correct cert will be chosen if two exist in the user's personal store. 
+ Do we also need to issue new certs for the actual NPS server? 
+ https://support.microsoft.com/en-gb/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16#bkmk_additionalresources
+ Appreciate any insight.
+    submitted by    /u/save_earth  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
@@ -28082,32 +28189,6 @@ eBGP was proposed because, I think, if a peer goes down, then all the family mem
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dynamic Reverse Proxy Solution?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/ybtae2/dynamic_reverse_proxy_solution/</id>
-        <link href="https://www.reddit.com/r/networking/comments/ybtae2/dynamic_reverse_proxy_solution/"/>
-        <updated>2022-10-23T21:20:11.000Z</updated>
-        <summary type="html"><![CDATA[The idea is simple: We need dynamic allocation of an incoming request via https, which will use a domain, e.g subdomain1.domain.org, which needs to be mapped to internal IP X.X.X.X and Port Y. Then, subdomain2.domain.org needs to go on a different port and IP. 
- Nothing special so far.
- ​
- Dynamic meaning on the fly, without having to edit a config file. These mapping need to be editable by another program.
- ​
- The subdomains can be created at will and need to be routed to the correct instance of our program (where each instance runs on a different port).
- There is nothing special needed, just a simple domain -> IP:PORT mapping like HAProxy can do.
- However, HAProxy has its Runtime API, which seems to not be able to hold up to this task.
- ​
- Do I need to create a custom forwarding solution, or are there existing ones which i could use?
- I personally think that HAProxy is really made for this, but it does not feature a way for dyamic creation. Since adding needs to be done ASAP, these edits cannot be done by hand and have to happen automatically.
- ​
- Has anyone here experience regarding automatic proxying? It seems like NGINX has some kind of feature like this, but then i'd had to pay a few thousands bucks for their NGINX plus model.
- ​
- Please let me know if more clarification is needed.
-    submitted by    /u/Gandalf1783  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
