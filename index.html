@@ -22,201 +22,11 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-22 datetime="2022-11-22T10:07:48.000Z">2022-11-22</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-22 datetime="2022-11-22T10:07:48.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-22 datetime="2022-11-22T10:58:17.000Z">2022-11-22</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-22 datetime="2022-11-22T10:58:17.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1pvs5/wccp_45079407/"
-                        open
-                      >
-                        <summary class="article-expander__title">WCCP 4507-&gt;9407</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1pvs5/wccp_45079407/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Anybody have experience replacing a4407&#x27;s with 9407&#x27;s and use WCCP? We bought a bunch of 9407&#x27;s and documentation suggests WCCP is supported on 9407 and config looks Identical but doesn&#x27;t work well 
- WCCP Sees the Proxy&#x27;s and reports usable but seemingly 40-60% of Websites that should be blocked gets blocked
- We have Opened TAC Case and was told WCCP works differently and is more restricted on 9407 compared to 4507, We also had to change our mask on our proxy from 0x1 to 0x3 
- We have sacrificed 2 goats and are now looking at the Junior admins, for their sake please help !!! :D
- Bare bones Config Below, IP&#x27;s in ACL removed as non RFC1918 (we own a /B)
- We have 2 Core switches non VSS connected by L2 Link and one Proxy on each switch at this site
- ip wccp 1 redirect-list ws-redirect (HTTP)
- ip wccp 70 redirect-list ws-redirect (HTTPS)
- ip wccp 71 redirect-list ws-redirect
- ip wccp 72 redirect-list ws-redirect
- Int vlan 212 (SVI for Proxy P1 Sw1)
- ip address 10.10.213.18/28
- ip wccp redirect exclude in
- Int vlan 212 (SVI for Proxy P1 Sw2)
- ip address 10.10.213.19/28
- ip wccp redirect exclude in
- interface gi1/0/30 (Sw1)
- desc Proxy1-P1
- Switchport access vlan 212
- Switchport mode access
- Spanning-tree Portfast
- interface gi1/0/30 (Sw2)
- desc Proxy2-P1
- Switchport access vlan 212
- Switchport mode access
- Spanning-tree Portfast
- ip access-list extended ws-redirect
- permit ip subnet1 mask any
- permit ip subnet2 mask any
- .........
-    submitted by    /u/totally-random-user  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;66
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1o3r0/by_what_conditions_you_segment_vlans_in_data/"
-                        open
-                      >
-                        <summary class="article-expander__title">By what conditions you segment VLANs in Data Center</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1o3r0/by_what_conditions_you_segment_vlans_in_data/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>By what criteria do you segment VLANs in Data center such as exposure, risk and security profile.
- Is it good idea to put all DB servers in one VLAN, A by All App server in other VLAN ? In this case, if a function has one DB server and VLAN is assigned with /24 then its a waste of addresses.
- or
- Do you separate each DB and App servers by function?
- Appreciate any suggestions
-    submitted by    /u/techno_it  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;65
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1na7p/question_regarding_packet_sniffing/"
-                        open
-                      >
-                        <summary class="article-expander__title">Question Regarding Packet Sniffing</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1na7p/question_regarding_packet_sniffing/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi r/networking
- Looking for some feedback on something. We have had a dev come to us - asking for access to pcap driver for sniffing traffic to locate certain devices.
- My initial reaction to this was a hard no - as I was always taught this was a very bad thing to do. With the risk of intercepting unencrypted data such as passwords etc.
- In today&#x27;s world - would you consider this as much of a risk? My personal thoughts are:
-  
-L2 boundaries (such as VLAN with SVI) will limit what can be easily sniffed.
- plaintext data is a risk no matter what (should be wrapped or encryption).
- purely talking about sniffing of packets, not any other related attacks, the risks are minimal if everything is encrypted?
-  
-edit: I should mention my recommendation was for scanning the ip-ranges instead (as this would also allow for situations where devices are in another l3 network). You could pre-populate with the ip range of the adapter used for the scan.
-    submitted by    /u/xInsertx  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;66
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1mhkd/juniper_not_advertising_routes/"
-                        open
-                      >
-                        <summary class="article-expander__title">Juniper not advertising routes?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1mhkd/juniper_not_advertising_routes/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi!
- I am having an issue where the direct routes 10.10.225.97 are not being advertise on my peer. I can confirm loopback is being advertised from the export policy. I can see routes in the routing table, however they not advertising it to peer 10.255.10.0.
- Any thoughts? 
- Config:
- set interfaces xe-0/1/6 unit 0 family inet address 10.10.225.97/28
- set policy-options policy-statement send-direct term 1 from protocol direct
- set policy-options policy-statement send-direct term 1 then accept
- set policy-options policy-statement export-public-dmz term 1 from prefix-list-filter prefix-public-dmz orlonger
- set policy-options policy-statement export-public-dmz term 1 then accept
- set protocols bgp group ebgp-inet type external
- set protocols bgp group ebgp-inet export export-public-dmz
- set protocols bgp group ebgp-inet export send-direct
- set protocols bgp group ebgp-inet peer-as 64552
- set protocols bgp group ebgp-inet neighbor 10.255.10.0 description &quot;inet (10.255.10.0) {}&quot;
- set protocols bgp group ebgp-inet neighbor 10.255.10.0 family inet unicast
- Routing:
- &gt; show route table inet.0 | match 225
- 10.10.225.96/28 *[Direct/0] 00:45:05
- 10.10.225.97/32 *[Local/0] 00:45:05
- 10.10.225.99/32 *[Direct/0] 1w0d 00:19:08
- &gt; show route table inet.0 advertising-protocol bgp 10.255.10.0
- inet.0: 22 destinations, 23 routes (22 active, 0 holddown, 0 hidden)
- Prefix Nexthop MED Lclpref AS path
- * 10.1.2.0/24 Self I
- * 10.2.2.2/32 Self I
- * 10.255.10.0/31 Self I
- * 172.20.240.2/31 Self I
- * 172.20.240.6/31 Self I
- * 10.10.225.96/28 Self I
- * 10.10.225.99/32 Self I
-    submitted by    /u/kzeouki  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;67
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1m5tk/kemp_loadmaster_in_azure/"
-                        open
-                      >
-                        <summary class="article-expander__title">Kemp Loadmaster in Azure</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1m5tk/kemp_loadmaster_in_azure/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>If anyone has used Kemp loadmaster in Azure? Will it load balance to any backend members (with whatever they can SNAT) or only stuff in the same vnet? I’ve worked on F5s but their cloud VMs are stupid expensive. Looking to make the change.
-    submitted by    /u/PowergeekDL  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;65
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -228,6 +38,220 @@ edit: I should mention my recommendation was for scanning the ip-ranges instead 
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1qomg/ms_edge_bad_performance_when_using_erp_webclient/"
+                        open
+                      >
+                        <summary class="article-expander__title">MS Edge bad performance when using ERP webclient</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1qomg/ms_edge_bad_performance_when_using_erp_webclient/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello friends, I really need some help right now and I&#x27;ve run out of ideas and Google search results, I hope that you guys can give me some suggestions or best practices.
+ We&#x27;ve introduced a new ERP back in August. We&#x27;ve got Vmware Horizon VDIs (4 cores, 8GB RAM, Win Server 2016) and the employees use MS Edge to access the ERP. Everything worked great until now, now some of them are having major performance issues when scrolling/clicking through the webclient. It doesn&#x27;t crash, but the entire browser becomes unresponsive for 8-10 seconds. Same result with Chrome and Firefox. The majority has Teams, Outlook, a few Excel sheets, a few Chrome tabs and MS Edge open, which uses around 30% CPU and 60% RAM altogether.
+ I tested it on the local thinclient browser and it runs fine there, so the problem only seems to persists on the VDIs.
+    submitted by    /u/Themistokles1  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;73
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1qlu3/install_software_via_command_through_url/"
+                        open
+                      >
+                        <summary class="article-expander__title">Install software via command through URL</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1qlu3/install_software_via_command_through_url/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all,
+ I want to install Cybereason agent on multiple Windows machines.
+ I got the URL of the exe file.
+ Which command can I use for installing this exe file via the URL?
+    submitted by    /u/zmiramf  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;72
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1ql3i/how_do_you_managedocument_your_it_infrastructure/"
+                        open
+                      >
+                        <summary class="article-expander__title">How do you manage/document your IT infrastructure?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1ql3i/how_do_you_managedocument_your_it_infrastructure/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Just started at a new job which is heavily involved in hosting - physical (about 30 ish) &amp; virtual servers (from 2-8 per physical), domain names &amp; certificates, vlans &amp; routing, BGP, load balancing, etc.
+ Now, I was expecting at least some sort of minimal central management, but sadly no. It&#x27;s just spreadsheets, as far as the eye can see, each &quot;designed&quot; by someone different and with varying levels of techno-fluff.
+ So, my first job is to sort those spreadsheets into something manageable. I&#x27;ve no experience managing this much equipment and objects, so no idea where to start - my background is developer/opportunistic devops/dogs body, so it&#x27;s not like it&#x27;s particularly daunting for me.
+ For what it&#x27;s worth, Zabbix is installed and actually appears to up to date and useful, so it&#x27;s not so much monitoring that I&#x27;m looking for as it is management.
+ On my list to check out is:
+  
+netbox
+ phpipam
+ openDCIM
+ nipap
+  
+What do you use?
+    submitted by    /u/kolonuk  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;73
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1qj8m/email_fax_forwarding_from_copier_not_carrying/"
+                        open
+                      >
+                        <summary class="article-expander__title">email Fax forwarding from copier not carrying sender information</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1qj8m/email_fax_forwarding_from_copier_not_carrying/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ Printer/copier/fax: Canon imageRUNNER 1730i
+ Is there a way, for documents that are forwarded from the fax machine, to show sender info in the body of the email?
+ ​
+ Curently fax&#x27;s are fowarded from [copier@ourcompany.com](mailto:copier@ourcompany.com) and sent to all staff emails. These emails have a basic subject line which I can edit &quot;our company ltd&quot; and have an attached pdf of what was sent through. The naming of the pdf is randomly generated and no sender info is available in the body of the email.
+ Currently faxs are not printed, only forwarder to all of the team.
+ It is very difficult to find older fax emails as there is no way to search by specific sender email or phone. (I think they are all coming in via fax # but have no way to confirm.
+ I feel there is a check box somewhere in admin settings I am missing or not understanding that could apply sender info to fwd&#x27;d email somehow.
+ Any help appreciated!
+ Cheers,
+ Cheap
+    submitted by    /u/Cheapeatshfx  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;73
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1qhms/so_we_got_this_resume_today/"
+                        open
+                      >
+                        <summary class="article-expander__title">So we got this resume today</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1qhms/so_we_got_this_resume_today/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Previous jobs
+ Title: Senior DevOps Engineer
+ Description: MAD SKILLS BRUH 
+ To be fair, he did have the skills he described
+    submitted by    /u/givesmememes  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;72
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1qd0c/problems_after_nov_8_exchange_su/"
+                        open
+                      >
+                        <summary class="article-expander__title">Problems after Nov 8 Exchange SU</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1qd0c/problems_after_nov_8_exchange_su/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto&#x3D;webp&amp;s&#x3D;e62264227377a9581e2e2946169864d130fa3217" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hello fellow redditors,
+ i&#x27;ve been lurking around here for some time but now is the first time im posting here hoping for help/advice after getting hard stuck trying to solve it.
+ Im working as something like a Junior Sysadmin in a company of ~60 and an IT Team of ~3.5. 
+ Problem:
+ After the last &quot;Security Update for Exchange Server 2016 Cumulative Update 23 (KB5019758)&quot; we noticed several Problems in our environment. User pretty much immediately reportet that the Outlook Search was not working. This is not a new occurance and the workaround is that they click the blue text beneath the error saying something like &quot;Search on local Coputer instead&quot; which works for users that run with Exchange Cache mode. Since barely anyone is using it and we didn&#x27;t have any needs for it eighther we only not…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;77
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1qbn1/msi_unattended_installation_works_locally_but_not/"
+                        open
+                      >
+                        <summary class="article-expander__title">MSI unattended installation works locally but not from network drive?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1qbn1/msi_unattended_installation_works_locally_but_not/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Can anyone suggest why an MSI unattended installation (using msiexec /i) would work when the installer files are copied locally, but not when they&#x27;re on a network drive?
+  
+The installer uses files external to the MSI.
+ The MSI contains a copy of 7z.exe which it extracts to a folder under %TEMP% and uses to extract the external files (they are .wxi.7z files in an Installer.Components folder).
+ I&#x27;ve already tried setting the FilterAdministratorToken registry setting in case it was to do with that, but that had no effect.
+ The MSI was made using the WIX installer toolset.
+ I tried doing caspol.exe -q -machine -addgroup 1 -url file://Z:/* FullTrust -name &quot;Z Drive&quot; as WIX is apparently a .NET application and may need extra permissions to be able to access network drives, but this did not fix the issue.
+ I tried doing a Process Monitor capture to see if I could identify what was wrong, but nothing popped out at me.
+ The installer log file contains the errors &quot;Error. Failed to attach console to process. Error Code: 5. Error. 7z.exe returned exit code: 0&quot;
+  
+Because the install files are large (total is around 24GB), I don&#x27;t want to have to copy them locally onto machines I need to deploy this app on.
+    submitted by    /u/danj2k  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;74
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z1q63v/aad_users_not_receiving_microsoft_authenticator/"
+                        open
+                      >
+                        <summary class="article-expander__title">AAD: Users not receiving Microsoft Authenticator push notifications</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z1q63v/aad_users_not_receiving_microsoft_authenticator/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I have two users (so far) in my org who are not receiving MFA push notification for Microsoft Authenticator. Both have iPhone running iOS 16. Both previously worked up until a few days ago, but now have suddenly stopped working. Here is what I have tried/tested.
+  
+Checked iPhone notifications are enabled for Microsoft Authenticator app. They are.
+ Checked iPhone is not in &#x27;do-not-disturb&#x27; or other Focus Mode. Other app notifications are being received.
+ In AAD portal, forced user to re-register MFA. 
+ Removed existing account from Microsoft Authenticator app. Deleted the Authenticator app from iPhone. Re-downloaded from the App Store. Removed corresponding entry from https://aka.ms/setupmfa. When re-setting up MFA, user scans the QR code, the account gets added to the Authenticato…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;74
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -408,6 +432,224 @@ edit: I should mention my recommendation was for scanning the ip-ranges instead 
     submitted by    /u/ashveen96  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;72
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1q4xs/45g_hotspot_with_enterprise_features/"
+                        open
+                      >
+                        <summary class="article-expander__title">4/5G Hotspot with enterprise features.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1q4xs/45g_hotspot_with_enterprise_features/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m supporting a number of mobile users working in locations that have LTE and 5G coverage. We&#x27;re using some consumer-grade tethering hotspots with a stipulation that users connect to the corp VPN when using it. They&#x27;re mostly fine when coupled with EU data-roaming SIMs, but setup is manual and we have no policy control so the system isn&#x27;t scaling well and we can&#x27;t debug issues. 
+ What I&#x27;d like is something that&#x27;s still a small, rechargeable device, but that offers enterprise niceties such as:
+  
+Dual SIM (Not essential, but it can help in some edge cases)
+ Management portal with signal and usage metrics and connection logs.
+ Simple L3 controls. (At least so I can force users to connect to our full-tunnel VPN)
+  
+If you&#x27;re familiar with the Cradlepoint ecosystem, then basically this, but with a smaller, battery-powered chassis.
+    submitted by    /u/Lethbridge_Stewart  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;66
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1pvs5/wccp_45079407/"
+                        open
+                      >
+                        <summary class="article-expander__title">WCCP 4507-&gt;9407</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1pvs5/wccp_45079407/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Anybody have experience replacing a4407&#x27;s with 9407&#x27;s and use WCCP? We bought a bunch of 9407&#x27;s and documentation suggests WCCP is supported on 9407 and config looks Identical but doesn&#x27;t work well 
+ WCCP Sees the Proxy&#x27;s and reports usable but seemingly 40-60% of Websites that should be blocked gets blocked
+ We have Opened TAC Case and was told WCCP works differently and is more restricted on 9407 compared to 4507, We also had to change our mask on our proxy from 0x1 to 0x3 
+ We have sacrificed 2 goats and are now looking at the Junior admins, for their sake please help !!! :D
+ Bare bones Config Below, IP&#x27;s in ACL removed as non RFC1918 (we own a /B)
+ We have 2 Core switches non VSS connected by L2 Link and one Proxy on each switch at this site
+ ip wccp 1 redirect-list ws-redirect (HTTP)
+ ip wccp 70 redirect-list ws-redirect (HTTPS)
+ ip wccp 71 redirect-list ws-redirect
+ ip wccp 72 redirect-list ws-redirect
+ Int vlan 212 (SVI for Proxy P1 Sw1)
+ ip address 10.10.213.18/28
+ ip wccp redirect exclude in
+ Int vlan 212 (SVI for Proxy P1 Sw2)
+ ip address 10.10.213.19/28
+ ip wccp redirect exclude in
+ interface gi1/0/30 (Sw1)
+ desc Proxy1-P1
+ Switchport access vlan 212
+ Switchport mode access
+ Spanning-tree Portfast
+ interface gi1/0/30 (Sw2)
+ desc Proxy2-P1
+ Switchport access vlan 212
+ Switchport mode access
+ Spanning-tree Portfast
+ ip access-list extended ws-redirect
+ permit ip subnet1 mask any
+ permit ip subnet2 mask any
+ .........
+    submitted by    /u/totally-random-user  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;66
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1o3r0/by_what_conditions_you_segment_vlans_in_data/"
+                        open
+                      >
+                        <summary class="article-expander__title">By what conditions you segment VLANs in Data Center</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1o3r0/by_what_conditions_you_segment_vlans_in_data/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>By what criteria do you segment VLANs in Data center such as exposure, risk and security profile.
+ Is it good idea to put all DB servers in one VLAN, A by All App server in other VLAN ? In this case, if a function has one DB server and VLAN is assigned with /24 then its a waste of addresses.
+ or
+ Do you separate each DB and App servers by function?
+ Appreciate any suggestions
+    submitted by    /u/techno_it  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1na7p/question_regarding_packet_sniffing/"
+                        open
+                      >
+                        <summary class="article-expander__title">Question Regarding Packet Sniffing</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1na7p/question_regarding_packet_sniffing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi r/networking
+ Looking for some feedback on something. We have had a dev come to us - asking for access to pcap driver for sniffing traffic to locate certain devices.
+ My initial reaction to this was a hard no - as I was always taught this was a very bad thing to do. With the risk of intercepting unencrypted data such as passwords etc.
+ In today&#x27;s world - would you consider this as much of a risk? My personal thoughts are:
+  
+L2 boundaries (such as VLAN with SVI) will limit what can be easily sniffed.
+ plaintext data is a risk no matter what (should be wrapped or encryption).
+ purely talking about sniffing of packets, not any other related attacks, the risks are minimal if everything is encrypted?
+  
+edit: I should mention my recommendation was for scanning the ip-ranges instead (as this would also allow for situations where devices are in another l3 network). You could pre-populate with the ip range of the adapter used for the scan.
+    submitted by    /u/xInsertx  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;66
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1mhkd/juniper_not_advertising_routes/"
+                        open
+                      >
+                        <summary class="article-expander__title">Juniper not advertising routes?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1mhkd/juniper_not_advertising_routes/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi!
+ I am having an issue where the direct routes 10.10.225.97 are not being advertise on my peer. I can confirm loopback is being advertised from the export policy. I can see routes in the routing table, however they not advertising it to peer 10.255.10.0.
+ Any thoughts? 
+ Config:
+ set interfaces xe-0/1/6 unit 0 family inet address 10.10.225.97/28
+ set policy-options policy-statement send-direct term 1 from protocol direct
+ set policy-options policy-statement send-direct term 1 then accept
+ set policy-options policy-statement export-public-dmz term 1 from prefix-list-filter prefix-public-dmz orlonger
+ set policy-options policy-statement export-public-dmz term 1 then accept
+ set protocols bgp group ebgp-inet type external
+ set protocols bgp group ebgp-inet export export-public-dmz
+ set protocols bgp group ebgp-inet export send-direct
+ set protocols bgp group ebgp-inet peer-as 64552
+ set protocols bgp group ebgp-inet neighbor 10.255.10.0 description &quot;inet (10.255.10.0) {}&quot;
+ set protocols bgp group ebgp-inet neighbor 10.255.10.0 family inet unicast
+ Routing:
+ &gt; show route table inet.0 | match 225
+ 10.10.225.96/28 *[Direct/0] 00:45:05
+ 10.10.225.97/32 *[Local/0] 00:45:05
+ 10.10.225.99/32 *[Direct/0] 1w0d 00:19:08
+ &gt; show route table inet.0 advertising-protocol bgp 10.255.10.0
+ inet.0: 22 destinations, 23 routes (22 active, 0 holddown, 0 hidden)
+ Prefix Nexthop MED Lclpref AS path
+ * 10.1.2.0/24 Self I
+ * 10.2.2.2/32 Self I
+ * 10.255.10.0/31 Self I
+ * 172.20.240.2/31 Self I
+ * 172.20.240.6/31 Self I
+ * 10.10.225.96/28 Self I
+ * 10.10.225.99/32 Self I
+    submitted by    /u/kzeouki  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;67
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/z1m5tk/kemp_loadmaster_in_azure/"
+                        open
+                      >
+                        <summary class="article-expander__title">Kemp Loadmaster in Azure</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/z1m5tk/kemp_loadmaster_in_azure/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>If anyone has used Kemp loadmaster in Azure? Will it load balance to any backend members (with whatever they can SNAT) or only stuff in the same vnet? I’ve worked on F5s but their cloud VMs are stupid expensive. Looking to make the change.
+    submitted by    /u/PowergeekDL  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -46873,8 +47115,8 @@ eBGP was proposed because, I think, if a peer goes down, then all the family mem
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3522410619">
-        <time id="build-timestamp" datetime="2022-11-22T10:14:42.495Z">2022-11-22T10:14:42.495Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3522832156">
+        <time id="build-timestamp" datetime="2022-11-22T11:11:26.873Z">2022-11-22T11:11:26.873Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
