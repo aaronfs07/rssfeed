@@ -230,6 +230,76 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z1sc5n/teams_screen_share_quality_poor/",
+          "author": null,
+          "description": "Anyone got any idea why when I watch someone elses screenshare on teams the quality is poor, speeds are fine and others on same network dont share same problem?\n    submitted by    /u/Twisterzzz  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z1sc5n/teams_screen_share_quality_poor/",
+          "publishedOn": "2022-11-22T12:28:22.000Z",
+          "wordCount": 21703,
+          "title": "Teams screen share quality poor",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z1s7im/why_twitter_didnt_go_down_from_a_real_twitter_sre/",
+          "author": null,
+          "description": "Great article from someone who worked at Twitter for 5 years (left in August) - goes into good detail about the level of automation and redundancy they've built in\n https://matthewtejo.substack.com/p/why-twitter-didnt-go-down-from-a\n    submitted by    /u/virtusoarmo  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z1s7im/why_twitter_didnt_go_down_from_a_real_twitter_sre/",
+          "publishedOn": "2022-11-22T12:21:46.000Z",
+          "wordCount": 7047,
+          "title": "Why Twitter Didn't Go Down: From a Real Twitter SRE",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z1s7c0/whats_the_difference_between_domotz_lansweeper/",
+          "author": null,
+          "description": "Looking for device inventory/monitoring tool. All three of these basically promise to do the same thing, have same core features and I can't make up my mind on pros and cons of each.\n Lansweeper is the OG everyone knows. How is RunZero or Domotz better than Lansweeper?\n    submitted by    /u/BoilingJD  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z1s7c0/whats_the_difference_between_domotz_lansweeper/",
+          "publishedOn": "2022-11-22T12:21:29.000Z",
+          "wordCount": 21750,
+          "title": "What's the difference between Domotz, Lansweeper and RunZero?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z1rz81/its_too_expensive/",
+          "author": null,
+          "description": "That's what I was told when I suggested you know not storing passwords in excel and word files, or sharing them via Skype, but rather using an actual password. Crucial company passwords. Company of 60 people, I'm the only IT guy. So basically all get dumped on me. Luckily I work from home so sometimes I just sleep and eat during my work hours.\n Company is run by old people completely out of touch with technology. Luckily they are more or less open to discuss ideas. Meh I'll just let it be, don't care really\n Hopefully in a year or so I can start a job in line with my future career path (engineering)\n    submitted by    /u/Fuuuckjannies  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z1rz81/its_too_expensive/",
+          "publishedOn": "2022-11-22T12:10:13.000Z",
+          "wordCount": 22067,
+          "title": "\"it's too expensive\"",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z1rrcx/recovering_a_proprietary_application_thats_tied/",
+          "author": null,
+          "description": "Let me start this by saying this whole situation is utter hell, but it's a necessity.\n I have a server that came from a company we acquired. On this server, let's call it HV1, we have a HyperV installation with 2 DC's, an APP/RDS Server and a DB server (MS Access), and all of these servers are on Server 2012 R2. This host is sitting cold on the network and will never touch the wider internet. On the APP/RDS server is a proprietary software that was developed by the former company over the course of 15 years and there's no documentation. It talks to MS Access files on the DB server and there is a mapped drive to these files on the APP/RDS server. The software is loaded from the APP/RDS server and seems to be very tied into the domain with domain authentication and will not boot unless one of the two DCs is powered on. If the DCs are off, I get some SQL network errors saying the system cannot contact a DC to service the auth request. Boot them on, the software loads and asks for credentials.\n I now need to repurpose this G9 server and use it for production, which means I need to migrate this setup away from this host and onto an older server which can continue sitting cold for X time. Essentially, replicating the entire setup from one server to another, and the only difference being that I'll be moving it to VMware instead of using HyperV. Instant concern when I was asked for this was the domain controllers.\n I've done the initial backup & restore using Veeam, and I now have all of the servers sat on my new host. The problem of course is the domain and DCs - They aren't functional/working and that domain essentially is non-existent at the moment.\n Before I go any further, I want to have a think about the potential best ways to bring these DCs back to life, purely for the purpose of getting this application working again.\n Thoughts?\n Cheers!\n    submitted by    /u/thisisrossonomous  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z1rrcx/recovering_a_proprietary_application_thats_tied/",
+          "publishedOn": "2022-11-22T11:59:04.000Z",
+          "wordCount": 22340,
+          "title": "Recovering a proprietary application that's tied to domain authentication",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z1r6k0/how_to_manage_local_admin_passwords_with_intune/",
+          "author": null,
+          "description": "Unfortunately we're still very much learning how to use Endpoint Management with Azure, as the main business is still on prem. However, the \"side business\" uses exclusively Azure\n We don't have auto enrolment available to use, and are relying on users logging in on the new laptop. The problem then is that the user becomes local admin, which is bad. The solution to this has been to create an entry in user account protection that sets the only admins as \"administrator\" (local admin) and a special pcadmin account we created on Azure AD. To my understanding, this is fine\n The issue we have though, is if we need to support a user remotely, we can't elevate privileges in Bomgar (BeyondTrust) using the Azure account, it only seems to support local user accounts. This hasn't been a problem as we were with the users logging into their laptops, so we could set the admin password at the machine, but the case has arisen where I need to do something on a laptop which was bought and remains in another country\n I was hoping I could, as a temporary workaround, add a PS script to enable and set the local admin password, but either it's not working or the laptop just won't sync, because it's not made a difference\n Is there a solution to my problem, or do I need to take a few steps back and make some bigger changes to our system (other than auto-enrolment)\n ​\n Bonus question - my employer will pay for training courses. Is there a recommended one I can go on for Enpoint Manager/Intune? I've seen the Azure course, but I fear that doesn't really cover the device management I need to learn\n    submitted by    /u/DeifniteProfessional  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z1r6k0/how_to_manage_local_admin_passwords_with_intune/",
+          "publishedOn": "2022-11-22T11:26:24.000Z",
+          "wordCount": 21651,
+          "title": "How to manage local admin passwords with Intune?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z1r4iu/email_provider_that_allows_classic_access_with/",
+          "author": null,
+          "description": "We have a PHP app that accesses an Outlook inbox to process emails. MS is turning off regular username + password at the end of the year in favor of OAuth. Who else still offers this without plans to disable it? We aren't using exactly phpMailer, but something similar (not sure right now)\n I just want to avoid our software guys having to rework half of the app, as well as learning with MS Graph (where does one even start).\n    submitted by    /u/dustojnikhummer  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z1r4iu/email_provider_that_allows_classic_access_with/",
+          "publishedOn": "2022-11-22T11:23:08.000Z",
+          "wordCount": 22309,
+          "title": "Email provider that allows classic access with username and password through PHP?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/z1qomg/ms_edge_bad_performance_when_using_erp_webclient/",
           "author": null,
           "description": "Hello friends, I really need some help right now and I've run out of ideas and Google search results, I hope that you guys can give me some suggestions or best practices.\n We've introduced a new ERP back in August. We've got Vmware Horizon VDIs (4 cores, 8GB RAM, Win Server 2016) and the employees use MS Edge to access the ERP. Everything worked great until now, now some of them are having major performance issues when scrolling/clicking through the webclient. It doesn't crash, but the entire browser becomes unresponsive for 8-10 seconds. Same result with Chrome and Firefox. The majority has Teams, Outlook, a few Excel sheets, a few Chrome tabs and MS Edge open, which uses around 30% CPU and 60% RAM altogether.\n I tested it on the local thinclient browser and it runs fine there, so the problem only seems to persists on the VDIs.\n    submitted by    /u/Themistokles1  \n [link]   [comments]",
@@ -12658,26 +12728,6 @@
           "wordCount": 46500,
           "title": "As a sysadmin, what's your attitude towards (or solution for) non-tech staff that talk with authority on tech-related issues?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/ybwlqm/moving_from_generalist_to_cybersecurity/",
-          "author": null,
-          "description": "I have been a generalist in it for many years I do have knowledge in lots of things. Should I start studying cybersecurity or something to keep me safe in the it world. With all the changes\n    submitted by    /u/Professional_Hyena_9  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/ybwlqm/moving_from_generalist_to_cybersecurity/",
-          "publishedOn": "2022-10-23T23:50:23.000Z",
-          "wordCount": 43276,
-          "title": "moving from generalist to cybersecurity",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/ybvvaa/whats_the_deal_with_cves_being_classifed_as/",
-          "author": null,
-          "description": "Part of my morning blog round up is I look through the National Vulnerability Database for any software we run or anything else I need to keep an eye on and I've noticed recently that stuff is being marked as below \n https://imgur.com/a/gDYqgtu \n Still get number out of 9.9 and such, is it to get you to look at critical items more or something else going on?\n    submitted by    /u/Mydadpicksthefruit  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/ybvvaa/whats_the_deal_with_cves_being_classifed_as/",
-          "publishedOn": "2022-10-23T23:15:19.000Z",
-          "wordCount": 43166,
-          "title": "Whats the deal with CVE's being classifed as \"critical\" or \"problematic\" recently?",
-          "imageUrl": "https://external-preview.redd.it/EwYDqF44EAIVXcG9CLqtgPF1y5OgSU8ZiNhpkcsRnGU.jpg?auto=webp&s=bac2e09cc6726a16c269bda028d22a57a9ce0a53"
         }
       ]
     },
@@ -12747,6 +12797,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/z1qouw/assigning_public_ip_addresses_on_a_new_circuit/",
+          "author": null,
+          "description": "We have a new 10Gb fibre circuit being installed. It comes with 5 useable IP addresses. I've told my boss this is not enough. He said we can add more later. I always thought this was incorrect and you cannot add more later, you have to decide how many you will need up front?\n    submitted by    /u/captainsaveahoe69  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/z1qouw/assigning_public_ip_addresses_on_a_new_circuit/",
+          "publishedOn": "2022-11-22T10:58:42.000Z",
+          "wordCount": 18953,
+          "title": "Assigning Public IP addresses on a new circuit",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/z1q4xs/45g_hotspot_with_enterprise_features/",
           "author": null,
@@ -18005,36 +18065,6 @@
           "publishedOn": "2022-10-24T04:39:45.000Z",
           "wordCount": 39876,
           "title": "Core switch 10 years old",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/ybwzag/network_switch_that_plugs_directly_into_power/",
-          "author": null,
-          "description": "Is anyone aware of a network switch that plugs directly into a power socket? Similar to some power line adapters but just a network switch. I have a weird space constraint in a certain spot and I need to route an ethernet connection to two devices and the cleanest solution would probably be something that plugs in like that. 100 Mbit switch is perfectly acceptable. No need to gigabit.\n    submitted by    /u/HarryMuscle  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/ybwzag/network_switch_that_plugs_directly_into_power/",
-          "publishedOn": "2022-10-24T00:08:27.000Z",
-          "wordCount": 38646,
-          "title": "Network Switch That Plugs Directly Into Power Socket?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/ybwszo/moronic_monday/",
-          "author": null,
-          "description": "It's Monday, you've not yet had coffee and the week ahead is gonna suck. Let's open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we're too embarrassed to ask!\n Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.\n Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/ybwszo/moronic_monday/",
-          "publishedOn": "2022-10-24T00:00:12.000Z",
-          "wordCount": 68927,
-          "title": "Moronic Monday!",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/ybvvdu/bgp_choice_for_evpn_1_ebgp_with_11_ases_2_ebgp/",
-          "author": null,
-          "description": "Hi,\n I'm designing an EVPN-BGP network. I have never gone into etails wrt BGP.I read Krattiger's book about EVPN-BGP a Nexus 9000's perspective and there he always mentions that two fashions of eBGP might be used:\n  \none AS for the spines, one for all the leaves; here the ption of accepting prefixes from own's AS must be cnfigured, otherwise all the announcements will be discarded\n one AS for the spines and one AS for each VTEP; here I only see a bit of complexity in configuring each VTEP because I cannot apply the same settings.\n  \neBGP was proposed because, I think, if a peer goes down, then all the family memebers announce by it will be witdrawn in the peer's BGP table.\n Then somebody proposed to use\n 3) iBGP but with Route Reflectors, because when a VTEP goes down all the family members announced by it will be withdrawn by the BGP tables of of al lthe clients.\n What do you implement in your own EVPN-BGP design and why?Any preferences among the 3 options above?\n TIA, Pan\n    submitted by    /u/Panatism  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/ybvvdu/bgp_choice_for_evpn_1_ebgp_with_11_ases_2_ebgp/",
-          "publishedOn": "2022-10-23T23:15:26.000Z",
-          "wordCount": 39707,
-          "title": "BGP choice for EVPN; 1) eBGP with 1+1 ASes? 2) eBGP with 1+n ASes? 3) iBGP with RR?",
           "imageUrl": null
         }
       ]
