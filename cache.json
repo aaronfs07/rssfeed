@@ -420,6 +420,16 @@
           "imageUrl": null
         },
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z4g294/highly_available_rds_farm_doesnt_work_when/",
+          "author": null,
+          "description": "Hello,\n Several years ago, I installed for a client a full highly available RDS farm, and everything work smoothly as far I recall. back to last month, the client has found that when the database is no longer owned by the \"regular\" SQL server, the farm stop working. So I'm looking for what can cause such a mess, because in the last 4 years, I did'nt touch the farm configuration, but the client did (and the client has changed his IT team twice over the 4 last years).\n For information, it's a 2016 RDS farm with a lot of RDSH, but the main part is the 2 RD Broker, with a database hosted on 2 SQL boxes, with alwaysOn, 2 RD gateways, 2 RD WebAccess and 2 RD licence servers.\n Everything works fine until you manually (or after a reboot) change the replica's owner from the SSMS, then the active broker logs that it cannot contact the database, and everything failed (I waited for more than an hour to be sure, but nothing automatically fixes the mess).\n If I use the cmdlets Get-RDConnectionBrokerHighAvailability, I can see that the database connection is made on the AlwaysOn Listner as expected. The only weird things is that in the registry the database connection is set to one of the SQL servers instead (in the HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tssdis\\Parameters\\DBConnString)\n Anyone can help me troubleshoot this ?\n    submitted by    /u/CyricFirehands  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z4g294/highly_available_rds_farm_doesnt_work_when/",
+          "publishedOn": "2022-11-25T15:27:37.000Z",
+          "wordCount": 20420,
+          "title": "Highly available RDS Farm doesn't work when AlwaysOn database changes to secondary",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/z4fmwm/password_policy/",
           "author": null,
           "description": "We are being asked to block dictionary words in our password policy. We are hesitant because of how limiting that would allow passwords. People already have a hard enough time setting passwords.\n Do you lock down on your password policy and block things like dictionary words?\n    submitted by    /u/Same_Ole_IT_Dude  \n [link]   [comments]",
@@ -12588,16 +12598,6 @@
           "wordCount": 21647,
           "title": "RDP suddenly stopped working.",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yf3inr/teams_issue_with_a_call_of_over_100_people_ceo_is/",
-          "author": null,
-          "description": "Hello,\n Today our company hosted a Town Hall in Teams, and we had some serious issues that our CEO was pissed about.\n Background: Users were mostly on wired internal network, and using the Desktop Teams app.\n Had over 100 people in the call and we were recording it.\n 1). Anyone with a webcam on was extremely laggy and glitchy, but audio was fine.\n 2). Screen Sharing a video would not show for users in the call, they could only see a grey square.\n Had no issues when I joined on my phone and even the recording was fine. It's when we were live that we had issues.\n Any solutions to this, I saw disabling GPU hardware acceleration helped, but I can't find a way to disable it for all users.\n    submitted by    /u/DburkeZM  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yf3inr/teams_issue_with_a_call_of_over_100_people_ceo_is/",
-          "publishedOn": "2022-10-27T21:11:49.000Z",
-          "wordCount": 25265,
-          "title": "Teams Issue with a call of over 100 people (CEO is Pissed)",
-          "imageUrl": null
         }
       ]
     },
@@ -18517,36 +18517,6 @@
           "publishedOn": "2022-10-27T23:25:10.000Z",
           "wordCount": 18744,
           "title": "Cisco C1000-8P switch power supply",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/yf4llx/fortinet_access_switches/",
-          "author": null,
-          "description": "Any experience with Fortinet Access Switches?\n I have 20+ years experience with Cisco and would rather not stray but I am being forced to look at alternatives due to supply chain constraints and our timeline. \n I am told they are not as affected by supply chain but am cautious that there may be a reason for that as if they aren’t as good.\n Curious about others thoughts.\n Thanks!\n    submitted by    /u/kjp12_31  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/yf4llx/fortinet_access_switches/",
-          "publishedOn": "2022-10-27T21:53:51.000Z",
-          "wordCount": 18550,
-          "title": "Fortinet Access Switches?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/yf4a1e/intel_e810_25gb_only_worked_once/",
-          "author": null,
-          "description": "Environment...\n Server: Dell PowerEdge R7525\n OS: ESXi 7.0.3\n Card: Intel E810-XXVDA4\n Switch: QNAP QSW-M5216-1T-US\n ​\n Hello,\n I recently got a new Switch (above model) and the Intel 25Gb card (not directly from Dell) and added it to our R7525 in one of the empty bays.\n The 25Gb connection worked for a few hours, but has yet to work again. It works at 10Gb fine to the above Switch using a non-25Gb (SFP+) cable, but as soon as an SFP28 cable is used to that Switch, it doesn't show a connection on either end (NIC or Switch). However, using a regular SFP+ cable, both work fine. And the SFP28 cable works in a different NIC entirely connecting at 10Gb, so the cables are fine. And the NIC itself is fine, since it works at 10Gb perfectly fine (and once at 25Gb fine (I even took a screenshot to show a coworker we were finally at 25Gb internally)).\n However, I'm at a loss at what could cause it no longer working, especially when neither the NIC or the Switch is showing any sort of connection using SF28 a cable. And ESXi shows the connection as \"Down,\" of course.\n And the server is fairly brand new, so I know it has plenty of PCIe lanes to absorb and plenty of empty PCIe slots to use up since dual-CPU server. I think I tried slot 5 and 7 in the server. It initially worked that one time on slot 5 (I think it was in riser 2?), but stopped after a few hours.\n Multiple cables, multiple manufacturers (10GTek coded for Cisco (initial); Macroreer coded for Intel (last resort)).\n Dell will obviously not assistance since the card is aftermarket, but I have 2 and both are doing the same thing in this same server.\n Link for proof it DID work <once>: https://imgur.com/a/33jBzsH\n Any sort of assistance/direction would be greatly appreciated, as I'm clueless at this point.\n    submitted by    /u/marvin83  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/yf4a1e/intel_e810_25gb_only_worked_once/",
-          "publishedOn": "2022-10-27T21:41:16.000Z",
-          "wordCount": 20636,
-          "title": "Intel E810 25Gb only worked once",
-          "imageUrl": "https://external-preview.redd.it/KGS02sTul9FTs4lrINx73nfEBsbtO53RnwNkBN58z9U.jpg?auto=webp&s=c6c2c88c4958b220511daaa8d5213122d4e44d22"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/yf43th/repurpose_hp_ff_5700_as_core_switch_dumb_idea/",
-          "author": null,
-          "description": "Hi guys, first of all I'm not a high-level networking engineer, far from it actually, but I know my way around most of the stuff we need to do, and as a lone sysadmin I kind of have to.\n We recently migrated to Nutanix and along with the nodes we got ourselves a pair of new Alcatel OmniSwitch OS6900 TOR switches. Tricky ones to manage, but solid. \n Our old server rack will be decommissioned but our old TOR switches are not that old at all, they're a pair of HP FlexFabric 5700s. Our core switch, on the other hand, is a VERY old HP 5406zl, with rapidly dying PoE ports and a general feeling that the whole thing is going to die soon as well. Switches are still hard to find, so getting new ones would take at least 6 to 10 months. \n So, in the meantime, I'm thinking about replacing the 5400 with the 5700.\n Now, when I say \"core\" switch I do not actually mean it, it's by all intents and purposes an access switch: no l3, no gateway, no nothing. All routing is done through the firewall. All it has connected to it are clients, and a trunk to the TOR switches.\n We would not hit any of the limitations of the 5700 (i.e. the 1024 entry arp-table) but we would gain a healthy new switch.\n Yet, since I constantly doubt myself, I'm asking Reddit: am I missing something here?\n    submitted by    /u/camazza  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/yf43th/repurpose_hp_ff_5700_as_core_switch_dumb_idea/",
-          "publishedOn": "2022-10-27T21:34:44.000Z",
-          "wordCount": 20395,
-          "title": "Repurpose HP FF 5700 as \"core\" switch - dumb idea?",
           "imageUrl": null
         }
       ]
