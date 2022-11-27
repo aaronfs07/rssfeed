@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-27 datetime="2022-11-27T09:01:47.000Z">2022-11-27</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-27 datetime="2022-11-27T09:01:47.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-11-27 datetime="2022-11-27T09:33:21.000Z">2022-11-27</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-11-27 datetime="2022-11-27T09:33:21.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,39 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z5wxeb/archiving_from_cloud_drive_to_tape_library_with/"
+                        open
+                      >
+                        <summary class="article-expander__title">Archiving from cloud drive to tape library with checksum validation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z5wxeb/archiving_from_cloud_drive_to_tape_library_with/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All,
+ Our small organization has been archiving media content with our own tape library as a standard practice for some time solely dedicated to our ingest/post-production footage, now we are expanding tape backup writing for other non-critical departments.
+ The other departments have had a few TBs backed up in their &quot;unlimited&quot; (Google) cloud storage using our corporate network for a few years, now we need a mechanism to access the content in the cloud and download them to an on-premise storage machine with access to writing to the tape library. Additionally, a checksum validation of the files should be done after writing to tape. 
+ So far we expect existing content to be around 12-15TB for the newly included department, the data is expected to grow to maybe 20-25% per year. This content will need to be stored for 8 years for data compliance, and we cannot maintain a single (cloud) copy for their department, hence writing to tape is a hard requirement here. 
+ What we have so far as a current setup is, 
+  
+Mac machine with an in-built storage of maybe 500GB free space currently.
+ Access to the cloud content via the desktop application (Google Drive).
+ Standalone tape writer with connectivity to the mac via thunderbolt 2 (We don&#x27;t have the infra for a windows system to connect to standalone tape writer as of now)
+ Rewritable LTO-7 Tapes @ 15TB capacity
+  
+Full disclosure, on our side of IT we have not been looking into the tape writing side until this requirement came up. On a high level, this new project seems to be very tedious as the backup will be of many individual objects, and not sure whether an MD5 checksum for a list of files contained in a folder using the mac terminal is possible, or if somebody can suggest a safe third-party software app. 
+ Would like to know what will be the best approach here? Is using the mac as the storage medium the best option also? We don&#x27;t plan on investing in external hardware.
+    submitted by    /u/Klipspringer112  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;70
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46279,81 +46312,6 @@ Can eBGP, iBGP, and/or OSPF be used to implement a multi-home multi-path load sh
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yg1ms5/robocopy_and_bad_sectors/"
-                        open
-                      >
-                        <summary class="article-expander__title">robocopy and bad sectors</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yg1ms5/robocopy_and_bad_sectors/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I am trying to copy from a eSATA enclosure holding a 4TB HDD with some (okay, more than some, ALOT) bad sectors. I&#x27;ve tried running a check disk but it never completes, I&#x27;ve resorted to trying to robocopy everything off of it using the command;
- robocopy 4TBDRIVE:\ \\NETWORKLOCATION\SAN /MT:1 /r:0 /w:0 
- I&#x27;ve been able to get some files off, but robocopy keeps getting stuck on certain files, obviously ones with bad sectors. I haven&#x27;t figured out a way to get it to skip these and move onto the next if the percent copied doesn&#x27;t move in say 1 minute ... it just sits there forever, until I stop the copy, go into the disk, delete the file and start all over. There is about 2000 files I need to copy off so I am hoping that there is a better way.
-    submitted by    /u/lower_intelligence  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;68
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yg1j46/mounting_an_nfs_directly_to_varlibdockervolumes/"
-                        open
-                      >
-                        <summary class="article-expander__title">Mounting an NFS directly to /var/lib/docker/volumes on Swarm nodes</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yg1j46/mounting_an_nfs_directly_to_varlibdockervolumes/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>submitted by    /u/llabusch93  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;67
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yg1726/your_reimaging_strategy_just_got_more_complicated/"
-                        open
-                      >
-                        <summary class="article-expander__title">Your re-imaging strategy just got more complicated....</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yg1726/your_reimaging_strategy_just_got_more_complicated/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/__NTShoEYvI3E_H3mRdGllI5Sm54mPcc0Xt9u0WNsDc.jpg?auto&#x3D;webp&amp;s&#x3D;48726363fbdf93899686382d6a0c6207f817a700" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-domain-joins-may-fail-after-october-updates/
- Has anyone seen issues since the October updates?
-  
-&quot;Because of these additional protections, domain join operations are intentionally prevented from re-using an existing computer account in the target domain.Domain join operations will be blocked automatically after installing the October 2022 security updates on client computers due to additional security checks before re-using an existing computer account (the changes do not affect new accounts).
-  
-I assume since most people&#x27;s &quot;golden&quot; images are a little older (e.g. most recent updates aren&#x27;t slipstreamed), and most domain-join operations occur during imaging before the OS is patched, this might be going under the radar.
- More from the article:
-  
-This happens unless the user attempting to join the domain does not have the appropriate write permissions (i.e., the user is the creator of the existing account or the computer was created by a domain administrator).Microsoft explained that domain join processes might intentionally fail with &quot;0xaac (2732): NERR_AccountReuseBlockedByPolicy&quot; errors saying that &quot;An account with the same name exists in Active Directory. Re-using the account was blocked by security policy.&quot;&quot;Affected scenarios include some domain join or re-imaging operations where a computer account was created or pre-staged by a different identity than the identity used to join or re-join the computer to the domain.&quot;
-  
-Hopefully this isn&#x27;t as dastardly as it sounds...?
-    submitted by    /u/baddadjazz  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;68
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46454,8 +46412,8 @@ Hopefully this isn&#x27;t as dastardly as it sounds...?
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3557559638">
-        <time id="build-timestamp" datetime="2022-11-27T09:11:53.103Z">2022-11-27T09:11:53.103Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3557754023">
+        <time id="build-timestamp" datetime="2022-11-27T10:12:43.780Z">2022-11-27T10:12:43.780Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

@@ -210,6 +210,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z5wxeb/archiving_from_cloud_drive_to_tape_library_with/",
+          "author": null,
+          "description": "Hi All,\n Our small organization has been archiving media content with our own tape library as a standard practice for some time solely dedicated to our ingest/post-production footage, now we are expanding tape backup writing for other non-critical departments.\n The other departments have had a few TBs backed up in their \"unlimited\" (Google) cloud storage using our corporate network for a few years, now we need a mechanism to access the content in the cloud and download them to an on-premise storage machine with access to writing to the tape library. Additionally, a checksum validation of the files should be done after writing to tape. \n So far we expect existing content to be around 12-15TB for the newly included department, the data is expected to grow to maybe 20-25% per year. This content will need to be stored for 8 years for data compliance, and we cannot maintain a single (cloud) copy for their department, hence writing to tape is a hard requirement here. \n What we have so far as a current setup is, \n  \nMac machine with an in-built storage of maybe 500GB free space currently.\n Access to the cloud content via the desktop application (Google Drive).\n Standalone tape writer with connectivity to the mac via thunderbolt 2 (We don't have the infra for a windows system to connect to standalone tape writer as of now)\n Rewritable LTO-7 Tapes @ 15TB capacity\n  \nFull disclosure, on our side of IT we have not been looking into the tape writing side until this requirement came up. On a high level, this new project seems to be very tedious as the backup will be of many individual objects, and not sure whether an MD5 checksum for a list of files contained in a folder using the mac terminal is possible, or if somebody can suggest a safe third-party software app. \n Would like to know what will be the best approach here? Is using the mac as the storage medium the best option also? We don't plan on investing in external hardware.\n    submitted by    /u/Klipspringer112  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z5wxeb/archiving_from_cloud_drive_to_tape_library_with/",
+          "publishedOn": "2022-11-27T09:33:21.000Z",
+          "wordCount": 21087,
+          "title": "Archiving from cloud drive to tape library with checksum validation",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/z5wdgt/configuring_dnsdist_a_basic_config/",
           "author": null,
           "description": "DNSDist is a great load balancing DNS forwarder/resolver designed by the same people behind PowerDNS.\n ​\n https://boisetech.org/2020/02/25/configuring-dnsdist-a-basic-config/\n    submitted by    /u/pro_saugat  \n [link]   [comments]",
@@ -12358,36 +12368,6 @@
           "wordCount": 16391,
           "title": "some osTicket 1.17 oauth2 things I wish I had known before hand",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yg1ms5/robocopy_and_bad_sectors/",
-          "author": null,
-          "description": "I am trying to copy from a eSATA enclosure holding a 4TB HDD with some (okay, more than some, ALOT) bad sectors. I've tried running a check disk but it never completes, I've resorted to trying to robocopy everything off of it using the command;\n robocopy 4TBDRIVE:\\ \\\\NETWORKLOCATION\\SAN /MT:1 /r:0 /w:0 \n I've been able to get some files off, but robocopy keeps getting stuck on certain files, obviously ones with bad sectors. I haven't figured out a way to get it to skip these and move onto the next if the percent copied doesn't move in say 1 minute ... it just sits there forever, until I stop the copy, go into the disk, delete the file and start all over. There is about 2000 files I need to copy off so I am hoping that there is a better way.\n    submitted by    /u/lower_intelligence  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yg1ms5/robocopy_and_bad_sectors/",
-          "publishedOn": "2022-10-28T21:51:21.000Z",
-          "wordCount": 20404,
-          "title": "robocopy and bad sectors",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yg1j46/mounting_an_nfs_directly_to_varlibdockervolumes/",
-          "author": null,
-          "description": "submitted by    /u/llabusch93  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yg1j46/mounting_an_nfs_directly_to_varlibdockervolumes/",
-          "publishedOn": "2022-10-28T21:47:10.000Z",
-          "wordCount": 19962,
-          "title": "Mounting an NFS directly to /var/lib/docker/volumes on Swarm nodes",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yg1726/your_reimaging_strategy_just_got_more_complicated/",
-          "author": null,
-          "description": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-domain-joins-may-fail-after-october-updates/\n Has anyone seen issues since the October updates?\n  \n\"Because of these additional protections, domain join operations are intentionally prevented from re-using an existing computer account in the target domain.Domain join operations will be blocked automatically after installing the October 2022 security updates on client computers due to additional security checks before re-using an existing computer account (the changes do not affect new accounts).\n  \nI assume since most people's \"golden\" images are a little older (e.g. most recent updates aren't slipstreamed), and most domain-join operations occur during imaging before the OS is patched, this might be going under the radar.\n More from the article:\n  \nThis happens unless the user attempting to join the domain does not have the appropriate write permissions (i.e., the user is the creator of the existing account or the computer was created by a domain administrator).Microsoft explained that domain join processes might intentionally fail with \"0xaac (2732): NERR_AccountReuseBlockedByPolicy\" errors saying that \"An account with the same name exists in Active Directory. Re-using the account was blocked by security policy.\"\"Affected scenarios include some domain join or re-imaging operations where a computer account was created or pre-staged by a different identity than the identity used to join or re-join the computer to the domain.\"\n  \nHopefully this isn't as dastardly as it sounds...?\n    submitted by    /u/baddadjazz  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yg1726/your_reimaging_strategy_just_got_more_complicated/",
-          "publishedOn": "2022-10-28T21:32:46.000Z",
-          "wordCount": 20433,
-          "title": "Your re-imaging strategy just got more complicated....",
-          "imageUrl": "https://external-preview.redd.it/__NTShoEYvI3E_H3mRdGllI5Sm54mPcc0Xt9u0WNsDc.jpg?auto=webp&s=48726363fbdf93899686382d6a0c6207f817a700"
         }
       ]
     },
