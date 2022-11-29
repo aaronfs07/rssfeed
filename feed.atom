@@ -2,10 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-11-29T09:13:09.224Z</updated>
+    <updated>2022-11-29T10:13:59.200Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Chain of trust to redundant NPS server]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/z7pqfq/chain_of_trust_to_redundant_nps_server/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/z7pqfq/chain_of_trust_to_redundant_nps_server/"/>
+        <updated>2022-11-29T10:02:41.000Z</updated>
+        <summary type="html"><![CDATA[New sysadmin here,
+ My current job is making a redundant NPS server to login to the WIFI.
+ The current NPS server also functions as the root CA that enables trust for the clients. Because of a problem with our network, we are unable to chain this CA to a publicly trusted CA. Meaning users need to accept our CA as trusted when first logging into our network.
+ My boss said that I should make the new server a root CA as well. However, this would mean devices would also need to accept this new CA as trusted. This could cause confusion amongst users, why I am not keen on the solution.
+ My idea is as follows:
+  
+Copy all NPS settings to the new server.
+ Make this new server a subordinate CA, chaining it to the already existing root CA.
+  
+I have two questions regarding this setup:
+  
+Will this make it so devices only need to accept a certificate once?
+ What happens when the existing (root CA) is down, will the trust in the subordinate CA keep persisting?
+  
+I am still a bit of a noob when it comes to NPS and certificates, so any help would be appreciated!
+    submitted by    /u/xXGoatResuscitatorXx  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SOC architecture - SIEM - SOAR - IR]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/z7po90/soc_architecture_siem_soar_ir/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/z7po90/soc_architecture_siem_soar_ir/"/>
+        <updated>2022-11-29T10:00:05.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ Do you have any experience integrating Splunk with Shuffle and Thehive? I got no idea where to start and don't have the picture painted in my mind so any architectural/networking information would be highly appreciated!
+ Do you think it's a good combination? Any tips or recommendations are welcome.
+ ​
+ Thanks!
+    submitted by    /u/tryingtoworkatm  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LVM on top of mdamd RAID5 - Best way to grow/extend]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/z7plz6/lvm_on_top_of_mdamd_raid5_best_way_to_growextend/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/z7plz6/lvm_on_top_of_mdamd_raid5_best_way_to_growextend/"/>
+        <updated>2022-11-29T09:56:41.000Z</updated>
+        <summary type="html"><![CDATA[Starting from an LVM VG made by 1 PV that is a MDADM RAID5 array of 4 drives, which is the best way to extend the VG?
+ We are replacing the 4 drives with bigger ones and we are wondering which is better to do:
+  
+Extend the mdadm raid5 partitions on the disk (in order to occupy the free space of each new disk) and then grow, in order: mdadm RAID5 -> PV -> VG.
+ Create 4 new partitions on the unused space of the new disks, create a new raid5 array from them, add the new mdamd array as PV and extend the VG.
+  
+Thanks in advance
+    submitted by    /u/Matwolf  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Anybody has experience in building Private Mobile Network with Huawei BBU3900 and WRFU 2100?]]></title>
         <id>https://www.reddit.com/r/networking/comments/z7ole2/anybody_has_experience_in_building_private_mobile/</id>
@@ -28016,60 +28076,6 @@ I know Inter Area OSPF works like Distance vector (As per many answers i found o
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dumbest but funniest way to be introduced to OpenSUSE Linux]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yhrjvo/dumbest_but_funniest_way_to_be_introduced_to/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yhrjvo/dumbest_but_funniest_way_to_be_introduced_to/"/>
-        <updated>2022-10-30T22:10:28.000Z</updated>
-        <summary type="html"><![CDATA[We had a company come to us for some help with an old Windows Server and we noticed they had a LOT of OpenSUSE VMs. I, as someone who uses mostly Windows and Ubuntu, I asked why they choose it, and they stated they liked the stability and optimizations, etc (I don't know how accurate that is because as stated before, Windows and Ubuntu). But here's the funny part, this is how they got introduced to OpenSUSE (they were a Ubuntu server room before this).
- https://youtu.be/SYRlTISvjww - Uptime Funk 
- A parody song basically introduced the IT staff to OpenSUSE. They did some digging and eventually completely migrated to OpenSUSE back in 2018. This song is basically the IT department's theme song. Thought I'd share this little fun bit from my day working with a really cool group of IT folks.
-    submitted by    /u/BouncyPancake  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[365 powershell to find tenant id and displayname]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yhqmp9/365_powershell_to_find_tenant_id_and_displayname/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yhqmp9/365_powershell_to_find_tenant_id_and_displayname/"/>
-        <updated>2022-10-30T21:34:16.000Z</updated>
-        <summary type="html"><![CDATA[Hello everyone,
- I'm trying to write a PS script which will get a list of all partner tenant names I manage, and tenant id's into an array, which will then populate a combo box. I can get a list of tenant id's easily using get-msolpartnercontract. But cant get a list of names, which I can add to the array alongside the tenant id's
- Anyone have any pointers for me?
- Regards
- James
-    submitted by    /u/smilin229  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Looking for support/ideas to develop own carrier business plan]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yhqbf4/looking_for_supportideas_to_develop_own_carrier/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yhqbf4/looking_for_supportideas_to_develop_own_carrier/"/>
-        <updated>2022-10-30T21:21:18.000Z</updated>
-        <summary type="html"><![CDATA[Hello gents,
- you may find this a funny story, but I started recently to work for a data center provider in Europe. Initially, we were not carrier neutral so we had been trying to resell the internet traffic we purchased from tier 1-2 carriers to our clients as our own service. I mean it works well, as long as the customers aren't the smartest ones and are ready to pay for it. 
- As I am one of the most experienced guys when it comes to carrier network (even thought I am in telco and carrier sales for more than 15 years) they now asking me to develop and establish 2 new products.
-  
-Become a carrier neutral DC
- Develope a Business Plan for a IP transit product
-  
-Regarding the first task.
- I am fine with it, as this had been my key business my entire career. The challenge is: They want me to offer these services (carrier neutral) only to the new clients, but not to the existing ones. So they want carriers to join, but will not allow them to approach existing customers, which is nonsense. IMHO. Why should carriers join us if they are not able to do their business and with whom? I need to write a business plan for that and maybe anybody has any kind of templates or something I can use, I would really appreciate it. 
- Regarding the IP Transit Product.
- I need to write a business plan and present it - even though, again, I am not a product designer nor manager, I used to be sales all my 15 years in DC Business. But that's ok, I don't have any choice. So any plans how I can start? 
- Thanks in advance...
- PS: Sorry English is my 3rd language
-    submitted by    /u/deveto80  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>

@@ -250,6 +250,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z7pqfq/chain_of_trust_to_redundant_nps_server/",
+          "author": null,
+          "description": "New sysadmin here,\n My current job is making a redundant NPS server to login to the WIFI.\n The current NPS server also functions as the root CA that enables trust for the clients. Because of a problem with our network, we are unable to chain this CA to a publicly trusted CA. Meaning users need to accept our CA as trusted when first logging into our network.\n My boss said that I should make the new server a root CA as well. However, this would mean devices would also need to accept this new CA as trusted. This could cause confusion amongst users, why I am not keen on the solution.\n My idea is as follows:\n  \nCopy all NPS settings to the new server.\n Make this new server a subordinate CA, chaining it to the already existing root CA.\n  \nI have two questions regarding this setup:\n  \nWill this make it so devices only need to accept a certificate once?\n What happens when the existing (root CA) is down, will the trust in the subordinate CA keep persisting?\n  \nI am still a bit of a noob when it comes to NPS and certificates, so any help would be appreciated!\n    submitted by    /u/xXGoatResuscitatorXx  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z7pqfq/chain_of_trust_to_redundant_nps_server/",
+          "publishedOn": "2022-11-29T10:02:41.000Z",
+          "wordCount": 22347,
+          "title": "Chain of trust to redundant NPS server",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z7po90/soc_architecture_siem_soar_ir/",
+          "author": null,
+          "description": "Hello,\n Do you have any experience integrating Splunk with Shuffle and Thehive? I got no idea where to start and don't have the picture painted in my mind so any architectural/networking information would be highly appreciated!\n Do you think it's a good combination? Any tips or recommendations are welcome.\n ​\n Thanks!\n    submitted by    /u/tryingtoworkatm  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z7po90/soc_architecture_siem_soar_ir/",
+          "publishedOn": "2022-11-29T10:00:05.000Z",
+          "wordCount": 22069,
+          "title": "SOC architecture - SIEM - SOAR - IR",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/z7plz6/lvm_on_top_of_mdamd_raid5_best_way_to_growextend/",
+          "author": null,
+          "description": "Starting from an LVM VG made by 1 PV that is a MDADM RAID5 array of 4 drives, which is the best way to extend the VG?\n We are replacing the 4 drives with bigger ones and we are wondering which is better to do:\n  \nExtend the mdadm raid5 partitions on the disk (in order to occupy the free space of each new disk) and then grow, in order: mdadm RAID5 -> PV -> VG.\n Create 4 new partitions on the unused space of the new disks, create a new raid5 array from them, add the new mdamd array as PV and extend the VG.\n  \nThanks in advance\n    submitted by    /u/Matwolf  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/z7plz6/lvm_on_top_of_mdamd_raid5_best_way_to_growextend/",
+          "publishedOn": "2022-11-29T09:56:41.000Z",
+          "wordCount": 22195,
+          "title": "LVM on top of mdamd RAID5 - Best way to grow/extend",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/z7mva9/optiplex_3070_trouble/",
           "author": null,
           "description": "I'm running out of ideas and I'm hoping some other experienced IT people can help me out. I look after a small office with 8x Dell Optiplex 3070's in micro form factor and they intermittently and randomly will not post when the staff arrive in the morning to turn them on. There is a post error code on the power button that is amber 2 blinks on, 1 off, 1 on (video below). \n In talking to Dell and scouring reddit/the internet internet indicates motherboard or system failure. They are on warranty for another month from Dell, and we've replaced the motherboards in a couple systems and the problem persists so I think it is something else. They are all stock with the exception of replacing the spinning drives they shipped with with Samsung 860 EVO's. \n If you unplug the power to them for a minut…",
@@ -12568,26 +12598,6 @@
           "wordCount": 23638,
           "title": "Outside contractor overstepping their bounds",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yhrjvo/dumbest_but_funniest_way_to_be_introduced_to/",
-          "author": null,
-          "description": "We had a company come to us for some help with an old Windows Server and we noticed they had a LOT of OpenSUSE VMs. I, as someone who uses mostly Windows and Ubuntu, I asked why they choose it, and they stated they liked the stability and optimizations, etc (I don't know how accurate that is because as stated before, Windows and Ubuntu). But here's the funny part, this is how they got introduced to OpenSUSE (they were a Ubuntu server room before this).\n https://youtu.be/SYRlTISvjww - Uptime Funk \n A parody song basically introduced the IT staff to OpenSUSE. They did some digging and eventually completely migrated to OpenSUSE back in 2018. This song is basically the IT department's theme song. Thought I'd share this little fun bit from my day working with a really cool group of IT folks.\n    submitted by    /u/BouncyPancake  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yhrjvo/dumbest_but_funniest_way_to_be_introduced_to/",
-          "publishedOn": "2022-10-30T22:10:28.000Z",
-          "wordCount": 18671,
-          "title": "Dumbest but funniest way to be introduced to OpenSUSE Linux",
-          "imageUrl": "https://external-preview.redd.it/an8-ftEA43wW9DNhkeRL6sh8B9XjvAMsgmFmn-sp9iI.jpg?auto=webp&s=03332265a18ed9eb259a1a7ae5e1a32fcd29e102"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yhqmp9/365_powershell_to_find_tenant_id_and_displayname/",
-          "author": null,
-          "description": "Hello everyone,\n I'm trying to write a PS script which will get a list of all partner tenant names I manage, and tenant id's into an array, which will then populate a combo box. I can get a list of tenant id's easily using get-msolpartnercontract. But cant get a list of names, which I can add to the array alongside the tenant id's\n Anyone have any pointers for me?\n Regards\n James\n    submitted by    /u/smilin229  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yhqmp9/365_powershell_to_find_tenant_id_and_displayname/",
-          "publishedOn": "2022-10-30T21:34:16.000Z",
-          "wordCount": 17403,
-          "title": "365 powershell to find tenant id and displayname",
-          "imageUrl": null
         }
       ]
     },
@@ -18445,16 +18455,6 @@
           "publishedOn": "2022-10-30T23:41:34.000Z",
           "wordCount": 18638,
           "title": "Suggestions on network automation/IaC tools for a PANOS & Meraki stack?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/yhqbf4/looking_for_supportideas_to_develop_own_carrier/",
-          "author": null,
-          "description": "Hello gents,\n you may find this a funny story, but I started recently to work for a data center provider in Europe. Initially, we were not carrier neutral so we had been trying to resell the internet traffic we purchased from tier 1-2 carriers to our clients as our own service. I mean it works well, as long as the customers aren't the smartest ones and are ready to pay for it. \n As I am one of the most experienced guys when it comes to carrier network (even thought I am in telco and carrier sales for more than 15 years) they now asking me to develop and establish 2 new products.\n  \nBecome a carrier neutral DC\n Develope a Business Plan for a IP transit product\n  \nRegarding the first task.\n I am fine with it, as this had been my key business my entire career. The challenge is: They want me to offer these services (carrier neutral) only to the new clients, but not to the existing ones. So they want carriers to join, but will not allow them to approach existing customers, which is nonsense. IMHO. Why should carriers join us if they are not able to do their business and with whom? I need to write a business plan for that and maybe anybody has any kind of templates or something I can use, I would really appreciate it. \n Regarding the IP Transit Product.\n I need to write a business plan and present it - even though, again, I am not a product designer nor manager, I used to be sales all my 15 years in DC Business. But that's ok, I don't have any choice. So any plans how I can start? \n Thanks in advance...\n PS: Sorry English is my 3rd language\n    submitted by    /u/deveto80  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/yhqbf4/looking_for_supportideas_to_develop_own_carrier/",
-          "publishedOn": "2022-10-30T21:21:18.000Z",
-          "wordCount": 19562,
-          "title": "Looking for support/ideas to develop own carrier business plan",
           "imageUrl": null
         }
       ]
