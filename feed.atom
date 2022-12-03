@@ -2,10 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-03T10:12:13.526Z</updated>
+    <updated>2022-12-03T11:09:07.668Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[LSASS memory leak issue]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zbd9so/lsass_memory_leak_issue/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zbd9so/lsass_memory_leak_issue/"/>
+        <updated>2022-12-03T10:24:39.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ ​
+ Which of these columns should I be monitoring for indicating a memory leak or does this cmd miss the mark? Or is there a different attribute I should be looking for since expanded properties is quite lengthy? I just grabbed the ones related to what I thought were memory related.
+ ​
+ The NTDs.dit file is about 908 MB.
+ ​
+ CSName ProcessName ProcessId StartTime Handles WorkingSetMB ------ ----------- --------- --------- ------- ------------ dc1 lsass.exe 764 11/18/2022 3:02:08 PM 6003 508.30 dc2 lsass.exe 724 9/1/2022 12:17:56 AM 7629 634.58 dc3 lsass.exe 724 9/1/2022 12:41:15 AM 5365 342.02 dc4 lsass.exe 768 11/2/2022 8:46:55 PM 7596 804.70 
+ ​
+ Script :
+ Get-WmiObject -Class Win32_Process -ComputerName (Get-ADDomainController -Filter * | Sort-Object Name).HostName -Filter { name = "lsass.exe" } | Format-Table CSName,ProcessName,ProcessId,@{L='StartTime';E={$_.ConvertToDateTime($_.CreationDate)}},Handles,@{L='WorkingSetMB';E={[math]::Round(([decimal] $_.WS / 1MB), 2)}} 
+    submitted by    /u/maxcoder88  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Joining a Linux to a windows domain with Active Directory]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/zbcpu6/joining_a_linux_to_a_windows_domain_with_active/</id>
@@ -27731,56 +27752,6 @@ What I expect to happen is the machine reading the loopback policy on startup, h
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How can I setup a filter in Google Mail to reject emails from our internal domains that fail an SPF and dmarc validation?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/ylhv6x/how_can_i_setup_a_filter_in_google_mail_to_reject/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/ylhv6x/how_can_i_setup_a_filter_in_google_mail_to_reject/"/>
-        <updated>2022-11-03T23:07:12.000Z</updated>
-        <summary type="html"><![CDATA[I know I can set the dmarc to p=quarantine or p=reject, but we aren't having an issue with email being sent to other organizations, so I'd like to avoid that.
- However, I'd like to block emails from outside the permitted servers from spoofing their domain to try and phish internal users. 
- I'm surprised this filter isn't automatically setup but we have run into this issue a few times (fortunately nobody falling for them), so I'd like to prevent these emails from ending up in user's inboxes. 
- Any assistance on how to setup a filter like this would be greatly appreciated.
- Thank you in advance!
-    submitted by    /u/DigitalMaverick  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What are some portable, cost-effective, real-world ways to demonstrate saturating a 10 or 20 Gbps fiber line?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/ylh14c/what_are_some_portable_costeffective_realworld/</id>
-        <link href="https://www.reddit.com/r/networking/comments/ylh14c/what_are_some_portable_costeffective_realworld/"/>
-        <updated>2022-11-03T22:38:58.000Z</updated>
-        <summary type="html"><![CDATA[I work for a network device manufacturer and am tasked with building a demo of our equipment in use. 
- While we have a few T-Berd 5800s and other chunks of expensive network testing equipment, none of this is something I can put on a cart and show to people that aren't familiar with this equipment already.
- I was thinking about a F5 Big IP, but these are really expensive and seemingly unobtainium at this point, I tried emailing them and a couple of their resellers and heard nothing back. I also have a hard time justifying $15,000 for a load balancer before the HTTP side just to demo.
- I think I could justify a pair of NASs, but there's a lot of moving parts and I have never seen files copied/downloaded at this speed. 
- Any ideas?
-    submitted by    /u/combuchan  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Malware on news sites today. Affects “hundreds” of sites.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/ylgzn7/malware_on_news_sites_today_affects_hundreds_of/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/ylgzn7/malware_on_news_sites_today_affects_hundreds_of/"/>
-        <updated>2022-11-03T22:37:34.000Z</updated>
-        <summary type="html"><![CDATA[Impacted media organizations serve: Boston New York Chicago Miami Washington, DC Cincinnati Palm Beach and include other national news outlets
-  
-https://twitter.com/threatinsight/status/1587866086086541312?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1587866086086541312%7Ctwgr%5E165d075bb97d3a0a041184a227a443107541a693%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.bleepingcomputer.com%2Fnews%2Fsecurity%2Fhundreds-of-us-news-sites-push-malware-in-supply-chain-attack%2F
- ​
- They are being very evasive and will not name even one specific affected site by name.
- https://www.bleepingcomputer.com/news/security/hundreds-of-us-news-sites-push-malware-in-supply-chain-attack/
- Does anyone here have better info?
-    submitted by    /u/Real_Lemon8789  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
