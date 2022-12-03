@@ -280,6 +280,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zbehia/access_onpremise_storage_in_the_cloud/",
+          "author": null,
+          "description": "We are a VFX studio company and currently do post-production of films/movies/series. All employees are working at our office and have an in-house storage server sharing files/projects to the editor's PC using LAN. so, we gave access to the editor of a file according to assign their project. After covid pandemic, we want to shift our all IT infrastructure remotely. For same, we are planning to use AWS ec2 for computation power, and for storage, we want to utilize only our on-premise storage server. Any service/product that can help to achieve this type of solution? \n Archiecture link = https://drive.google.com/file/d/1qBF5tEzt2J3Q4wkMU7zgJOopgHzHbmBR/view?usp=sharing\n Note: \n  \nwe can't use storage in the cloud for projects ( Because one project storage size is 20-30 TB If we give storage to individual VM then it will cost us) to allocate that project we want to utilize an in-house storage server in a Virtual Machine.\n At the office, we have an in-house storage server. so, We share files/projects to the editor's PC using LAN and we gave access to the editor of a file according to to assign their project.\n  \n   submitted by    /u/volvereabhi  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zbehia/access_onpremise_storage_in_the_cloud/",
+          "publishedOn": "2022-12-03T11:46:37.000Z",
+          "wordCount": 24045,
+          "title": "Access On-premise storage in the cloud",
+          "imageUrl": "https://external-preview.redd.it/wuTpphA7ZEea87Pnzdfe1LEgNhhjA0WlUnEU-lKcwjI.jpg?auto=webp&s=25a05bb153a8ccea1b2571537ae96819a6c00a8d"
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/zbd9so/lsass_memory_leak_issue/",
           "author": null,
           "description": "Hi,\n ​\n Which of these columns should I be monitoring for indicating a memory leak or does this cmd miss the mark? Or is there a different attribute I should be looking for since expanded properties is quite lengthy? I just grabbed the ones related to what I thought were memory related.\n ​\n The NTDs.dit file is about 908 MB.\n ​\n CSName ProcessName ProcessId StartTime Handles WorkingSetMB ------ ----------- --------- --------- ------- ------------ dc1 lsass.exe 764 11/18/2022 3:02:08 PM 6003 508.30 dc2 lsass.exe 724 9/1/2022 12:17:56 AM 7629 634.58 dc3 lsass.exe 724 9/1/2022 12:41:15 AM 5365 342.02 dc4 lsass.exe 768 11/2/2022 8:46:55 PM 7596 804.70 \n ​\n Script :\n Get-WmiObject -Class Win32_Process -ComputerName (Get-ADDomainController -Filter * | Sort-Object Name).HostName -Filter { name = \"lsass.exe\" } | Format-Table CSName,ProcessName,ProcessId,@{L='StartTime';E={$_.ConvertToDateTime($_.CreationDate)}},Handles,@{L='WorkingSetMB';E={[math]::Round(([decimal] $_.WS / 1MB), 2)}} \n    submitted by    /u/maxcoder88  \n [link]   [comments]",
@@ -387,6 +397,16 @@
           "publishedOn": "2022-12-02T22:38:30.000Z",
           "wordCount": 22946,
           "title": "MS Exchange 2016 CU guide",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zazr1h/pdu_and_server_arrangements_in_a_rack/",
+          "author": null,
+          "description": "Hello,\n Where would you place a PDU and a server in a rack and why would you choose that arrangement? \n I was thinking for PDU its better to have it close to the bottom for short cabling but I’m not sure with servers.\n    submitted by    /u/Shin-ai  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zazr1h/pdu_and_server_arrangements_in_a_rack/",
+          "publishedOn": "2022-12-02T22:20:21.000Z",
+          "wordCount": 21682,
+          "title": "PDU and server arrangements in a rack",
           "imageUrl": null
         },
         {
@@ -12358,16 +12378,6 @@
           "wordCount": 21618,
           "title": "On-Call compensation",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yliogb/dmarc_alignment_for_vendor_that_uses_google/",
-          "author": null,
-          "description": "We have a vendor that uses Google Workspace as their email platform, and they need to send emails on our behalf. \n Right now they are obviously failing SPF and DKIM alignment because their return-path and DKIM signature domain don't match our domain.\n What's the approach to get DMARC compliance working in this case? I'm assuming a custom return-path?\n    submitted by    /u/ComposedBull  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yliogb/dmarc_alignment_for_vendor_that_uses_google/",
-          "publishedOn": "2022-11-03T23:38:32.000Z",
-          "wordCount": 19614,
-          "title": "DMARC alignment for vendor that uses Google Workspace",
-          "imageUrl": null
         }
       ]
     },
@@ -18041,36 +18051,6 @@
           "publishedOn": "2022-11-04T01:18:27.000Z",
           "wordCount": 19793,
           "title": "Possible onsite suggestions for an ongoing 2year concern.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/ylj5u3/blogpost_friday/",
-          "author": null,
-          "description": "It's Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member's new and shiny blog posts.\n Feel free to submit your blog post and as well a nice description to this thread.\n Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/ylj5u3/blogpost_friday/",
-          "publishedOn": "2022-11-04T00:00:11.000Z",
-          "wordCount": 36794,
-          "title": "Blogpost Friday!",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/ylit3n/locally_managed_ap_similar_to_aruba_instant_on_or/",
-          "author": null,
-          "description": "Hi guys,\n Are there any APs that you are aware of that allow for local management similar in performance/price point to the Aruba AP22/25 or Meraki Go lineup? I'm currently using the TPLink Eap670 (business line) and it's alright, but wanted to see if there were more performance/quality to be had elsewhere. Thanks\n    submitted by    /u/Ovulating_Oyster  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/ylit3n/locally_managed_ap_similar_to_aruba_instant_on_or/",
-          "publishedOn": "2022-11-03T23:44:31.000Z",
-          "wordCount": 18367,
-          "title": "Locally managed AP similar to Aruba Instant on or Meraki Go price point?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/yli6gc/is_my_static_ip_gateway_device_vulnerable_to_ddos/",
-          "author": null,
-          "description": "For work I'm deploying raspberry pi's connecting through gateway devices with SIM cards having static IPs. We've kept default settings mostly, no firewall but no ports being forwarded, except 22 for ssh which goes to a DMZ and then to the pi. 443 and 80 take you to the gateway login screen.\n First question: Does having no firewall matter if we're not forwarding any ports? Surely traffic just dies in a slightly different way?\n And much more importantly:\n Am I going to get DDoS'ed on port 22 any day now? /var/log/auth.log shows failed connection attempts every few minutes. The root account has a complex password with timeouts per attempt, so I'm not worried about access, but is it only a matter of time before some more ambitious bot discovers an open ssh port serving password attempts and has a thousand computers a common password dictionary on me? Or some Russian hackers take me down just so they can pretend I'm a drone bill the KGB?\n If yes, is the way to be safe to close down all ports and use openvpn to gain access? (This sucks because we'd like to access our gateway if the pi goes down). Or could I geo-lock access and save myself? \n But at the end of the day, even if the gateway is set to deny all requests except ones from my own ip address, couldn't someone DDoS the firewall? Is a static IP safe for small businesses without cloudflare or whatever?\n    submitted by    /u/ParanoidAltoid  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/yli6gc/is_my_static_ip_gateway_device_vulnerable_to_ddos/",
-          "publishedOn": "2022-11-03T23:18:11.000Z",
-          "wordCount": 18624,
-          "title": "Is my static IP gateway device vulnerable to DDoS attacks?",
           "imageUrl": null
         }
       ]
