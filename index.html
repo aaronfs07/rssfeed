@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-05 datetime="2022-12-05T09:06:15.000Z">2022-12-05</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-05 datetime="2022-12-05T09:06:15.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-05 datetime="2022-12-05T10:00:11.000Z">2022-12-05</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-05 datetime="2022-12-05T10:00:11.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,49 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zd2tm9/moronic_monday_december_05_2022/"
+                        open
+                      >
+                        <summary class="article-expander__title">Moronic Monday - December 05, 2022</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zd2tm9/moronic_monday_december_05_2022/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Howdy, /r/sysadmin!
+ It&#x27;s that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I&#x27;ve taken over responsibility for posting these weekly threads so you don&#x27;t have to worry about anything except your comments!
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;77
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zd2ce0/can_i_get_a_sanity_check_on_setting_up_a_cloud_nas/"
+                        open
+                      >
+                        <summary class="article-expander__title">Can I get a sanity check on setting up a cloud NAS?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zd2ce0/can_i_get_a_sanity_check_on_setting_up_a_cloud_nas/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I’m a Technical Director (software engineer by trade with enough systems experience to be dangerous) who has been roped into helping my company sunset a physical office space that’s no longer in use since the company has gone remote-only.
+ In this office, however, is an Isilon cluster and a computer attached to a RAID array with about 180TB of raw video files, Adobe Premiere project files, etc. A team of video editors and producers previously used this storage over SMB shares to do video production in the office.
+ In the last 2 years, though, the team has dwindled and most of the work is being done remotely over a combination of FTP back into this office or trading files on Box or other cloud storage. The remainder of the work is done remotely by RDPing into some workstations there and wor…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;79
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -45404,36 +45447,6 @@ Trying to see if DHCPv6 Delegation works as-is (apparently Windows never support
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/yn7g1u/is_this_networkingly_possible_force_domain_name/"
-                        open
-                      >
-                        <summary class="article-expander__title">is this Networkingly possible ? force domain name resolution with specific IP with Nginx</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yn7g1u/is_this_networkingly_possible_force_domain_name/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have set up DNS entry (with Route53) for *.tunnel.example.com and tunnel.example.com to point to 2 IPs of 2 different VMs for high availability, example 1.1.1.1 and 2.2.2.2 . nginx as a reverse proxy is installed on both
- So when I enter app1.tunnel.example.com sometimes it is redirected to 1.1.1.1 server and sometimes to 2.2.2.2
- app1.tunnel.example.com, app2.tunnel.example.com..etc are dynamically generated, these are tunnels to privateIP exposed service, and the other end of the tunnel, the publicIP part from which you have access on the internet, is either server-1 1.1.1.1 or server-2 2.2.2.2, depending on which IP tunnel.example.com DNS has returned (load balancing between the 2 IPs)
- My problem is that sometimes the tunnel for app1.tunnel.example.com is on Server 1, but when acessing this host, the loadbalancer routes this traffic to server 2, and it results on an error
- I have actually made nginx reverse proxy to the end of the tunnel, sith proxy_pass
- What I want, I don&#x27;t know if it&#x27;s possible with Nginx, is if the proxied server returns 404 on server 1, then re-route the request to the other nginx reverse-proxy server 2, but the URL has to remain app1.tunnrl.example.com on the search bar, 
- is it even networkingly possible? If yes and nginx is not the answer, then what could it be?
- Below is How I want the nginx.conf to look like on server1:
- Server { Listen 80; Location / { proxy_pass http://127.0.0.1:4444/; proxy_intercept_error on; } error_page 404 &#x3D; @redirect; location @redirect { return 301 http://$host ON 2.2.2.2; #host here is app1.tunnel.example.com } } 
- Thank you, hope it was clear
-    submitted by    /u/Noor963  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;61
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45588,76 +45601,6 @@ The MySQL version is 5.7. I know that it is outdated, but there is a lot of data
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yn7xv3/dc_cannot_reach_dc/"
-                        open
-                      >
-                        <summary class="article-expander__title">DC cannot reach DC</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yn7xv3/dc_cannot_reach_dc/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi!
- Im in a mess and need help 😅 So a client has a DC running WinServer 2012 which is EOL in less than a year and the whole system is out of date (ESXi, server, switches etc...)
- I finally update all drivers of the physical server and update vmware to v7.0 3U
- Everything seems fine and all VM boots But now the domain controller isnt working correctly Nothing on the network is authenticating and the server itself cant launch the server manager without errors
- &quot;The specified domain controller could not be contacted&quot;
- I see that thoses services are not launching ; Windows time (error 1792) Netlogon (error 1068) Workstation (error 1068)
- Its the only DC what should i do ?
-    submitted by    /u/dparadis04  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;69
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yn7d1u/dashboards/"
-                        open
-                      >
-                        <summary class="article-expander__title">dashboards</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yn7d1u/dashboards/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>what are you currently using for dashboards and what data are you looking at?
- I&#x27;m considering grafana but I&#x27;m curious if something else is the new hotness
-    submitted by    /u/detectivejoebookman  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;64
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/yn70ps/aiding_in_internal_investigations/"
-                        open
-                      >
-                        <summary class="article-expander__title">Aiding in Internal Investigations</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/yn70ps/aiding_in_internal_investigations/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello all, Hope you are having a better weekend than I am! We are a small environment (250-500 users and growing quickly). We have a company first this weekend as we find ourselves having to investigate an employee of wrongdoing (nothing illegal as of this moment). We believe this to be fairly standard misconduct and to be a fireable offense that will be proven quickly upon investigating the employee&#x27;s emails and files. Since this is my first time, what are some things to look out for? Legal issues we may run into? Best practices for this? How and when should I limit management access? I would even welcome personal experiences. Essentially everything we uncover and how we do it will be establishing our written policy that we should already have lol.
-    submitted by    /u/Current-Candidate-76  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45665,8 +45608,8 @@ The MySQL version is 5.7. I know that it is outdated, but there is a lot of data
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3618568023">
-        <time id="build-timestamp" datetime="2022-12-05T09:12:36.306Z">2022-12-05T09:12:36.306Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3619028389">
+        <time id="build-timestamp" datetime="2022-12-05T10:13:53.912Z">2022-12-05T10:13:53.912Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
