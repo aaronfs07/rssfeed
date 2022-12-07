@@ -2,10 +2,635 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-06T14:11:15.350Z</updated>
+    <updated>2022-12-07T09:12:18.350Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[>25% of Dutch government websites reuse nonces. "Not a security problem" ???]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zewf3q/25_of_dutch_government_websites_reuse_nonces_not/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zewf3q/25_of_dutch_government_websites_reuse_nonces_not/"/>
+        <updated>2022-12-07T09:01:46.000Z</updated>
+        <summary type="html"><![CDATA[Yesterday I discovered that 463 of the 1801 Dutch government domains are unnecessarily vulnerable to code injection and XSS attacks due to the use of static `nonces` in the Content-Security-Policy. A `nonce` should not be guessable and should be generated randomly on every request. The official documentation is clear on this: https://www.w3.org/TR/CSP3/#security-nonces.
+ I have reported to the National Cyber Security Center (NCSC), and they confirm the incorrect implementation but do not consider it a security problem. "We will, therefore, not process your report further," said an anonymous employee. In addition, I was still imposed that I may not disclose which domains are involved.
+ I stumbled upon this problem by chance and selflessly took the trouble to map out the scope of the problem and report it properly. I am not in this for a bounty or anything; I just wanted to help out.
+ It is disappointing to see that the Dutch government cannot implement basic security measures according to specifications to protect visitors against malicious parties. This was an absolute waste of my time.
+    submitted by    /u/freddieleeman  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Yubikeys and On-Premise Exchange 2016]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zeweq8/yubikeys_and_onpremise_exchange_2016/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zeweq8/yubikeys_and_onpremise_exchange_2016/"/>
+        <updated>2022-12-07T09:01:09.000Z</updated>
+        <summary type="html"><![CDATA[Hello Wizards,
+ We have implemented Yubikeys as a 2FA method for Windows Login. I have noticed that outlook wants me to enter my yubikey pin, but it doesn’t work and it asks over and over again. Is there anything i can do about that? Thanks in Advance!
+    submitted by    /u/Hot_Potato_Salad  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monitoring center work performance reporting ideas]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zew0c9/monitoring_center_work_performance_reporting_ideas/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zew0c9/monitoring_center_work_performance_reporting_ideas/"/>
+        <updated>2022-12-07T08:33:39.000Z</updated>
+        <summary type="html"><![CDATA[I'm working in a monitoring center where we monitor thousands of customer servers based on alarm tickets. Now we have a project where we want to get some statistics about how our center is doing. Basically we want to have some metrics to show to higher-ups if needed. We already have work hours counted based on each ticket we work on. We use ServiceNow as our ticketing system.
+ I'm now asking for any suggestions on some concrete metrics that we could monitor or just any ideas for performance monitoring.
+ Luckily our boss is really cool about this process and we can define all the metrics and what is a successful day/week/month ourselves.
+    submitted by    /u/Seven0uZeroh  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is there a good tool for tracking and keeping an inventory of laptops in circulation?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zevxbm/is_there_a_good_tool_for_tracking_and_keeping_an/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zevxbm/is_there_a_good_tool_for_tracking_and_keeping_an/"/>
+        <updated>2022-12-07T08:28:01.000Z</updated>
+        <summary type="html"><![CDATA[As the title suggests, I need a better tool than what we currently use.
+ Because at the moment, the way we keep track of laptops is an Excel workbook that I have NOW scripted to find duplicates automatically. Before I started the only tool was an Excel workbook without any checks. So completely manual all the way.
+ Obviously super inefficient and unsafe, the thing is. I haven't been able to find a better solution.
+ What do you guys use to keep track of employee laptops?
+    submitted by    /u/Therose86  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apache suddenly using all CPU and swap]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zevgwi/apache_suddenly_using_all_cpu_and_swap/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zevgwi/apache_suddenly_using_all_cpu_and_swap/"/>
+        <updated>2022-12-07T07:57:13.000Z</updated>
+        <summary type="html"><![CDATA[Hey all. Struggling to work out how to troubleshoot this.
+ The environment:
+ FreeBSD 12.1 on VMware
+ Apache 2.4
+ MySQL 5.7.31
+ Best Practical RT5 5.0.0 (our ticket system)
+ The issue:
+ Has been running fine for years. Abruptly, Monday morning, apache started consuming 100% CPU and using all available swap. httpd-error.log is full of
+ [warning]: Use of uninitialized value $tag in concatenation (.) or string at /usr/local/lib/perl5/site_perl/HTML/Formatter.pm line 150. (/usr/local/lib/perl5/site_perl/HTML/Formatter.pm:150) 
+ ...thousands of them.
+ /var/log/messages is likewise full of the slightly more helpful
+  Use of uninitialized value $tag in string eq at /usr/local/lib/perl5/site_perl/HTML/Element.pm line 2634. 
+ If I stop and restart apache, all goes back to normal for a few minutes, and then starts again.
+ I've spend days googling all sorts of thiings but haven't found anything useful yet. Anyone able to throw me a bone?
+ Thanks,
+ Adam
+    submitted by    /u/Zaphod_The_Nothingth  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Server, Win19 or Win22]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zevevb/new_server_win19_or_win22/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zevevb/new_server_win19_or_win22/"/>
+        <updated>2022-12-07T07:53:04.000Z</updated>
+        <summary type="html"><![CDATA[I have to build a new Server for a customer. Would you shoot for Win Server 2019 or 2022.
+ Newer is not always better, and I havn‘t really worked with Server 2022 in points of reliability and stability.
+ Thanks for the inputs
+    submitted by    /u/iholu  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AITAH? Refusing to whitelist because the sender won't fix their SPF?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zetv4o/aitah_refusing_to_whitelist_because_the_sender/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zetv4o/aitah_refusing_to_whitelist_because_the_sender/"/>
+        <updated>2022-12-07T06:14:08.000Z</updated>
+        <summary type="html"><![CDATA[I'm working with a client (well, several) in a relatively small industry, but there's a very large player who needs to communicate with them via email.
+ ​
+ Throughout the year we've been progressively working on improving email hygiene for our clients, this includes add SPF failure (hard-fail and hard-error) quarantining in the email security platform. 
+ ​
+ the big player has reached out to our client several times, saying we're blocking their email. I've tried to reach back, to find the right person, people or team in in the organisation and asked the few contacts I actually have to help me find the wrong person. Their response is "none of our other clients are reporting this problem, you just need to white list us."
+ ​
+ Here's the thing. They have two SPF records, which fails just on that alone. they have no DKIM keys. They have DMARC configured using proofpoint, but basically acheiving nothing (p=none). 
+ My response is, well, they need to fix their shit. They created these SPF records, someone must be responsible for it. For us to just white list them (considering the industry) is, imo, the wrong decision to make because it then opens up our client to the risk of receiving fake and/or malicious emails from this sender. 
+ ​
+ I've communicated with my client serveral times about the issue. So far they haven't explicitly (or otherwise) told me to white list it and I know they trust my judgement.
+ ​
+ So, Am I the Asshole here, for trying to protect my client (and, I suppose the sender, who is ASX50) and trying to refer it back to them to fix their problem?
+ ​
+ (the one thing I haven't really done yet is try and cold-outreach the CSO on Linkedin)
+    submitted by    /u/lemachet  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bachelor degree vs CCNP]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zesdo8/bachelor_degree_vs_ccnp/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zesdo8/bachelor_degree_vs_ccnp/"/>
+        <updated>2022-12-07T04:50:54.000Z</updated>
+        <summary type="html"><![CDATA[Hello Reddit, I have ccna cert and working in networking since last few years. I was wondering if I should do bachelor degree or CCNP/CCIE path? Will there be advantages of getting college/university degree over CCNP. I was thinking about moving to US🇺🇸 where H1B needs collge bachelor degree
+    submitted by    /u/HsSekhon  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goat Farmer]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zercbk/goat_farmer/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zercbk/goat_farmer/"/>
+        <updated>2022-12-07T03:56:14.000Z</updated>
+        <summary type="html"><![CDATA[Every ticks forward i just want less and less to do with tech at work. I honestly just have no more patience for the cake and eat it too leadership bullshit with budgets. Users. Printers. Exec hires that can plug in their tv for superbowl but cannot connect there monitors after moving desks. I need a hobby outside of tech or a permanent vacation. 10 plus years in the biz im am over it all. 
+ Oh and "you work in IT?" from friends and family yeah no. 185 per hour. To expensive? ok google is i guess since you stated thats all i do anyway. 
+ What has happened to base level problem solving skills is our society that diluted?
+    submitted by    /u/MasterIntegrator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to spin being terminated?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zeprtg/how_to_spin_being_terminated/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zeprtg/how_to_spin_being_terminated/"/>
+        <updated>2022-12-07T02:36:47.000Z</updated>
+        <summary type="html"><![CDATA[Well guys Ive got a question I need some insight on. After working as a sysadmin at a company for 17 years I was let go today.
+ My manager says I was let go for having issues one too many times. And I have made mistakes. Ive tried to correct those and move one. The straw that broke the camels back was when a script Ive run for years to reset system account passwords went sideways and accidentally locked out like 50 service accounts. 
+ But Im about a decade away from retirement and I was burned out there. Over the years management has expected more and more out of my team and I admit as I gotten older Ive had more and more trouble staying sharp and motivated.
+ If I stay in IT how do I spin "hey Im 50+, and got burned out at my old job"?
+ Im even thinking I may not want to stay in IT. What do you guys think?
+    submitted by    /u/AdeptusAdmin  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I recently had to implement my disaster recovery plan.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zeo31j/i_recently_had_to_implement_my_disaster_recovery/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zeo31j/i_recently_had_to_implement_my_disaster_recovery/"/>
+        <updated>2022-12-07T01:14:57.000Z</updated>
+        <summary type="html"><![CDATA[About two years ago I started at a small/medium business with a few hundred employees. We were almost all on prem, very few cloud services outside of MS365. The company previously had one guy who was essentially "good with computers" set things up but they grew to the size where they needed an IT guy full time, which isn't super unusual.
+ But the owner was incredibly cheap. When I started they had a few working virtual host servers but they had zero backups - absolutely nothing on prem was being backed up externally. In my first month there I went to the owner and explained how bad things would be if we didn't have any off site backups we were doomed. I looked into free cloud alternatives but there wasn't anything that would fit our needs.
+ Management was very clear - the budget for backups is $0, and "nothing is going to happen, you worry too much"
+ So I decided to do it myself. I figured out how much I could set aside each week and started saving. I didn't make a whole lot but I did have extra money each month. I was determined to have a disaster recovery plan, even if they didn't want to pay for it.
+ And some of you may remember, Hurricane Ian hit a few months ago. We were not originally predicted to take the brunt of it, and management wanted no downtime, so we did not physically remove the server from the premises. The storm damaged the building and we experienced some pretty severe data loss. 
+ So it was time for my disaster recovery plan. The day after, we gathered at the building and discovered the damage. After confirming we had lost data, I said "I quit," I got in my car, and lived off the 6 months of savings I had. Tomorrow I start my new job. Disaster recovery plan worked exactly how I planned.
+    submitted by    /u/disasterrecoverywhat  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Xerox Universal Printer driver renames my share printers after gpo drops them.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zenv88/xerox_universal_printer_driver_renames_my_share/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zenv88/xerox_universal_printer_driver_renames_my_share/"/>
+        <updated>2022-12-07T01:04:22.000Z</updated>
+        <summary type="html"><![CDATA[Anyone ever see this?
+ Xerox Universal Printer driver renames my shared printers after gpo drops them.
+ It deploys as HR-Xerox printer and a moment after is over written with name "Xerox AltaLink C8030/c8035. What is even more odd is when you go to actually print from say notepad it shows the proper share name?
+ Windows Server2019 Printer Server with shared printers deployed via update gpo.
+    submitted by    /u/sysadmin20214  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What are my options for establishing private connectivity to AWS without a dedicated on-premise network?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zenlzl/what_are_my_options_for_establishing_private/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zenlzl/what_are_my_options_for_establishing_private/"/>
+        <updated>2022-12-07T00:51:51.000Z</updated>
+        <summary type="html"><![CDATA[(Posted this over at /r/aws but it got flagged for moderation, so giving it a shot here). 
+ I've worked for 5 years in AWS/devops/etc. in large companies where this was already established and we had an on-premise network, so we had the full bells and whistles of Direct Connect.
+ Now I've joined a startup and we're setting up our own AWS environment, and establishing private connectivity from scratch is uncharted ground for me. As a startup, we are essentially all "floating" right now --- we don't have a dedicated office with a dedicated network range, or any sort of on-premise presence.
+ But, we need a way to access EC2, RDS, etc. without public IP addresses (and preferably without a publicly exposed bastion/jumpbox to get there). We don't have anything massively critical, and we will grow, so by the time we do, we can revisit this to really flesh out a sturdy solution. But right now I just need some basic items I can go through to ensure only our people can access our AWS resources.
+ For VPN options that aren't site-to-site, "Client VPN" seems like an option: https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-client-vpn-to-securely-access-aws-and-on-premises-resources/
+ If someone can just tell me if I'm warm or cold on this, and point me in the direction of the necessary service/tool that I need, that would be great. Thanks!
+    submitted by    /u/uUqBDOqnXN  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HSRP with devices between switches]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zen9s3/hsrp_with_devices_between_switches/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zen9s3/hsrp_with_devices_between_switches/"/>
+        <updated>2022-12-07T00:35:16.000Z</updated>
+        <summary type="html"><![CDATA[We are physically separating our distribution nodes and having to put in two L3 devices between them for encryption reasons. I’m trying to explain to my coworkers that if we do that HSRP will not work due to the switches not being able to directly see each other (there now being two hops to get to the other). I’ve tried setting something up in a lab of course I didn’t get it to work but I wanted to get y’all’s input on a better explanation on why this wouldn’t work OR if it can work and I’m just missing something.
+    submitted by    /u/Diilsa  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rant Wednesday!]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zemgsd/rant_wednesday/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zemgsd/rant_wednesday/"/>
+        <updated>2022-12-07T00:00:09.000Z</updated>
+        <summary type="html"><![CDATA[It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
+ There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!
+ Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Shouldn't HR be more selfaware?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zemb97/shouldnt_hr_be_more_selfaware/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zemb97/shouldnt_hr_be_more_selfaware/"/>
+        <updated>2022-12-06T23:53:06.000Z</updated>
+        <summary type="html"><![CDATA[So last week I received a Teams message from a senior person in HR that they needed to talk to me and wanted to know if my calendar was updated. I quickly responded that it was and went about my business. I then received a meeting request show up in my email box. It included HR VP, Legal, Recruiting and the CFO.
+ Initially I didn't think about it because I was busy. Then as I slowed down and thought about it and all weekend I freaked myself out about it. Why was HR calling me and why was legal included.
+ I sheepishly walked into HR office today not knowing what to expect. As it turns out they want to replace the applicant tracking system and needed my support.
+ I relayed my angst to the HR folks before the meeting got going. They thought it was funny and laughed it off about a guilty conscience. 
+ How many ways can an IT guy mess up and not even know it? HR Should be more thorough in their communications.
+    submitted by    /u/rafiki-knows  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Riddle Me This]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zejt4n/riddle_me_this/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zejt4n/riddle_me_this/"/>
+        <updated>2022-12-06T22:14:03.000Z</updated>
+        <summary type="html"><![CDATA[A cable tester is showing me that one of the pairs of a 120ft cat6 run (that's getting no connection ) is about 10 feet short, from both directions.
+ Re-terminated both ends twice to make sure.
+ So cable test is showing Orange: 110ft, Green: 122ft, Blue: 122ft, Brown: 122ft. when done from either end. But all pairs mark as good.
+ Getting no link or connection on it either, so it's not like it's even working.
+ ​
+ How's y'alls Tuesday.
+    submitted by    /u/TricoMex  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Self Hosted UniFi Network Application Controller Install Tutorial]]></title>
+        <id>https://www.youtube.com/watch?v=lkUhWnDPutg</id>
+        <link href="https://www.youtube.com/watch?v=lkUhWnDPutg"/>
+        <updated>2022-12-06T22:12:14.000Z</updated>
+        <author>
+            <name>Lawrence Systems</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Slack Migration]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zej16c/slack_migration/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zej16c/slack_migration/"/>
+        <updated>2022-12-06T21:43:32.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone had any experience merging two Slack workspaces? Hoping to see if there’s any watch-outs. 
+ We’re on the ‘Pro’ plan, so we have to do a special request from Slackcorp for both company’s data (private channels and messages). 
+ Just curious what everyone’s experience has been in this situation. Thanks!
+    submitted by    /u/DigDugteam  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pearson VUE and Admin Rights]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zeiuq1/pearson_vue_and_admin_rights/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zeiuq1/pearson_vue_and_admin_rights/"/>
+        <updated>2022-12-06T21:36:27.000Z</updated>
+        <summary type="html"><![CDATA[Really?! Admin docs Pearson VUE must be installed and run as local administrator?
+  
+"Any Windows user account that interacts with the VTS software on
+ the Administration, Proctor, or exam delivery workstation is required
+ to have local administrator rights on that workstation. This includes both
+ installing and running the VTS software."
+  
+Killing a fly with a sledgehammer much?
+ I can use ProcMon to try to find what permissions are actually needed, but maybe some kind soul can save me the hassle?
+    submitted by    /u/Mental_Patient_1862  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SoT and device discovery integration]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zeihq3/sot_and_device_discovery_integration/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zeihq3/sot_and_device_discovery_integration/"/>
+        <updated>2022-12-06T21:22:21.000Z</updated>
+        <summary type="html"><![CDATA[Assuming you have a SoT like Netbox and some device discovery software like solarwinds. I'm always confused which one should be the entry point for device on-boarding?
+ Add device to Solarwinds and then Solarwinds populates Netbox with all device information?
+ OR
+ Populate the device in Netbox and then it adds the device to Solarwinds
+ The issue here is circular dependency, Netbox should be the ultimate SoT meaning it dictates the intent whether to have the device in the network in the first place or not, how the interfaces should look like, IP addresses etc.., so in a sense, it must be the entry point. but at the same the device needs to be populated first to see that are the interfaces, IPs etc.
+ in a sense both should be diff'ed to see the actual vs intended and point out if there's a deviation, but i'm not sure what's the best approach to start integrating both. any thoughts?
+    submitted by    /u/labyrinthcrafter  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OSPF route manipulation]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zei8tk/ospf_route_manipulation/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zei8tk/ospf_route_manipulation/"/>
+        <updated>2022-12-06T21:12:30.000Z</updated>
+        <summary type="html"><![CDATA[All routers interfaces are part of the same /24 & area 0 with a switch in between.
+ 1.1.1.1/32 is adv. from both R1 & R4 to R5.
+ Is there a way I can influence R5 to prefer R1 over R4? 
+ Topology
+ R1
+ SW
+ R4 R5
+    submitted by    /u/tbbx  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Portmaster question?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zehskw/portmaster_question/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zehskw/portmaster_question/"/>
+        <updated>2022-12-06T20:54:30.000Z</updated>
+        <summary type="html"><![CDATA[My friend just told me he was checking out PortMaster, which I wasn't familiar with. I took a brief glance at their page and some of Safing's documentation (which I believe sounds like an extra service on top of the open source portmaster), and I'm trying to understand -
+ Is this essentially application filtering, but on a local firewall as opposed to a network device? 
+ I understand portmaster itself is open source and very configurable and safing has some extra services they've built that portmaster can leverage, but ignoring all that portmaster is more or less a software firewall kind of like pfsense, just for your local machine?
+    submitted by    /u/Hollowpoint357  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FTTH Active Ethernet CPE recomendation]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zegs9i/ftth_active_ethernet_cpe_recomendation/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zegs9i/ftth_active_ethernet_cpe_recomendation/"/>
+        <updated>2022-12-06T20:15:11.000Z</updated>
+        <summary type="html"><![CDATA[What are you guys using as CPEs for consumer FTTH Active Ethernet networks?
+ Our current vendors are having supply chain issues, so I'm open to other options. 
+ Cost is a bit of an issue, as the consumer ARPU isn't that high. 1G is fine, 10G is lovely, but not at any price. Must have either SFP or BiDi optics.
+    submitted by    /u/Ftth_finland  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ADVA R7-platform -- any other users?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zeggrk/adva_r7platform_any_other_users/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zeggrk/adva_r7platform_any_other_users/"/>
+        <updated>2022-12-06T20:03:10.000Z</updated>
+        <summary type="html"><![CDATA[Looking to do more with the Adva NETCONF/TL1/REST for automation, configuration, etc than what I can do with Ensemble. Just wondering if there are other Adva R7 users here on Reddit that have worked with that more than what the limited documentation mentions...
+    submitted by    /u/sbrown24601  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Server rack power cable management]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zeg0tf/server_rack_power_cable_management/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zeg0tf/server_rack_power_cable_management/"/>
+        <updated>2022-12-06T19:46:15.000Z</updated>
+        <summary type="html"><![CDATA[I have an enclosed half rack at a datacenter. It's an older rack where it doesn't have mounting holes for 0U style things on the side. The two PDUs provided by the DC are horizontal and on the bottom of the rack and supply 208v power with c14 locking outlets. After a mix of multiple 1U/2U servers, routers, and switches that all have redundant power supplies I am both out of outlets and the bundle of power cables on the side is out of hand. I used some d ring but those also take up 1U since the server rails are the nice quick install ones from HP/Dell. The DC has suggested Y splitter cables which I would like to avoid as they seem a point of failure. I wanted to know how anyone has solved this in the past? Are there d-rings that work with server rails, is there some nice way to organize this that I don't know?
+    submitted by    /u/jbartley  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My Smart Home is Stupid]]></title>
+        <id>https://www.youtube.com/watch?v=QoC8R3KHk8E</id>
+        <link href="https://www.youtube.com/watch?v=QoC8R3KHk8E"/>
+        <updated>2022-12-06T19:25:47.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multicast routing on Aruba 3810]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zef2sw/multicast_routing_on_aruba_3810/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zef2sw/multicast_routing_on_aruba_3810/"/>
+        <updated>2022-12-06T19:08:27.000Z</updated>
+        <summary type="html"><![CDATA[Clearly I need to guidance on this, have only done multicast routing a handful of times, and only on Cisco IOS platforms, never Aruba. The config is pretty simple, but isn't working. I posted about it on /r/ArubaNetworks 
+ https://www.reddit.com/r/ArubaNetworks/comments/zeetfq/multicast_routing_setup_on_3810/?
+ Any assistanc would be greatly appreciated.
+    submitted by    /u/mailerdeemon  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ISE Sponsored Guest Portal Authentication Failed?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zeeo2t/ise_sponsored_guest_portal_authentication_failed/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zeeo2t/ise_sponsored_guest_portal_authentication_failed/"/>
+        <updated>2022-12-06T18:52:26.000Z</updated>
+        <summary type="html"><![CDATA[Hi, I'm having an issue with the sponsored guest portal on ISE I've set up for our Guest wireless.
+ I've setup everything, so, policy sets (and everything that goes with it), Meraki SSID side of things and a Guest Portal, Guest Type, Sponsor Portal and a Sponsor Group.
+ When a user logs in they get redirected to the Guest Portal, where they are given the chance to register and then from there they register fine, an approval email goes out, as well as me seeing the account created on the Sponsor Portal to, I approve the account. I can see the username/pw etc... but when the user tries to login with the creds, it fails with an Authentication Failed error.
+ The guests are registering their devices in the GuestEndPoints internal store (but not showing up in there)
+ In the logs I can see the users request actually pass and being permitted also (so it passes the check on the GuestEndPoints store to, I think because this laptop has already logged in tbf on the network many times prior to this)
+ But for whatever reason I cannot get the user to login.
+ I have 2 authorisation policies in the policy set to, the second one matches on the wireless type (wireless MAB) which is what shows up in the logs, the first in the chain is a policy that matches on the wireless authentication type again (wireless MAB) but also the Radius Case being "Guest Flow" also, with the VLAN authorisation profile I want to give the guest. I assumed this is done via somekind of CoA on ISE after the user is approved, but this policy never shows up in the logs and is never hit
+    submitted by    /u/Mjr798  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Solarwinds Orion Replacement]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zeeet6/solarwinds_orion_replacement/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zeeet6/solarwinds_orion_replacement/"/>
+        <updated>2022-12-06T18:42:14.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone migrated to another platform in the past couple of years? We're looking for another all-in-one platform. Thanks, all!
+    submitted by    /u/random-ize  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SSD on Cisco Catalyst]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zeedwq/ssd_on_cisco_catalyst/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zeedwq/ssd_on_cisco_catalyst/"/>
+        <updated>2022-12-06T18:41:16.000Z</updated>
+        <summary type="html"><![CDATA[What are you all using them for? Working on a budgetary quote for a large buildout. Boss said to build it out as worst case. Looking for some use cases for it. Looking at using 9410s to support some critical manufacturing. Would love to hear how others take advantage of them.
+    submitted by    /u/usmcjohn  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[L3 out from aci to core router ?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zee6u3/l3_out_from_aci_to_core_router/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zee6u3/l3_out_from_aci_to_core_router/"/>
+        <updated>2022-12-06T18:33:41.000Z</updated>
+        <summary type="html"><![CDATA[Hi in my current environment we only have one Cisco aci eigrp l3 out toward our core router/switches at the moment. We will be expanding aci to our secondary dc via multipod and spine tk spine implementation. That one will also have a layer 3 out to its corresponding core router/switch I’ll add a diagram soon. ? Is how can I redistribute static routes into the aci’s fabrics eigrp,(cores run eigrp too) but we have some static’s for x reasons? The core routers are connected to each other via L3/l2 I was going to try to configure the L3 outs just like any other dual multihomed connections and just weigh them or keep them balanced. Feel free to flame but while I research wanted to see what other net peeps thought.
+    submitted by    /u/strider2025  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CGNAT with PBA]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zed9en/cgnat_with_pba/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zed9en/cgnat_with_pba/"/>
+        <updated>2022-12-06T17:57:11.000Z</updated>
+        <summary type="html"><![CDATA[Good afternoon,
+ I have a question for the folks who work in big ISPs who perform CGNAT and PBA for customers. 
+ What happens when a customer requires a new port block to be allocated, and the current IP they have the port block for has all ports exhausted? Theoretically, whatever devices should try to free up port blocks for that IP, but if it can't, I assume the user gets a different port block on a different public IP. Now the user has 1 port block on one IP and another port block on a different IP. 
+ I can imagine how this would impact various applications, but would like someone who runs this in a large production environment to shed some light on this.
+ Thanks
+    submitted by    /u/extremenetworks  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ansible for cisco.iosxr working on ASR9k's but not NCS540 platform]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zeca65/ansible_for_ciscoiosxr_working_on_asr9ks_but_not/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zeca65/ansible_for_ciscoiosxr_working_on_asr9ks_but_not/"/>
+        <updated>2022-12-06T17:17:24.000Z</updated>
+        <summary type="html"><![CDATA[I've got a very simple playbook to use cisco.iosxr.iosxr_command from the galaxy collection for iosxr to push some raw config commands.
+ It works against the ASR9k platform, but not against an NCS540 with no changes to code or connect method or any of the host/group vars compared to what I'm doing for the ASR chassis.
+ The error isn't specific to a config not being liked, but rather it's like it's failing to connect (I've tried with AAA in place and using local creds only even though there's no login specific error).
+ ​
+ The error I'm getting is "msg": "[Errno -2] Name or service not known" when it goes to run the first task. the full verbose traceback which states it may not be related to the actual failure only references 2 things.... some iosxr.py file from the collection itself, line 179 get_capabilities.... capabilities = Connection(module._socket_path).get_capabilities() and a reference to a connection.py file in ansible module_utils line 200 in __rpc__ raise ConnectionError(to_text(msg, errors='surrogate_then_replace'), code=code) followed by my task that just sends configure terminal and some simple logging commands.
+ ​
+ I've confirmed all of the commands work fine on the NCS platform. The error is the same regardless of if I use any other iosxr method like for banners or logging which is why I tried switching to iosxr_command to rule out any weirdness but it's still there and only when pushing to the NCS540.
+ I'm using network_cli for the connection and iosxr for the network_os in the group_vars vars file for this platform, same as the ASR.
+ ​
+ Any ideas? Any help is appreciated!
+    submitted by    /u/syntax24  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cisco WLC-ISE: SSID not working via slave]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zec2ix/cisco_wlcise_ssid_not_working_via_slave/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zec2ix/cisco_wlcise_ssid_not_working_via_slave/"/>
+        <updated>2022-12-06T17:09:01.000Z</updated>
+        <summary type="html"><![CDATA[Hello engineers!
+ I have user and guest SSIDs running through two ISE nodes.
+ All ok if the work of the ISE is done by the "master" node, instead it doesn't work if the ISE on the track is the "slave".
+ This causes it to have no HA, which is very strange since the fixtures are synchronized.
+ What do you think? Where can I make sure they are actually in sync and back up each other? 
+ Deployment Nodes ISE1: Administration, Monitoring, Policy Service - PRI(A), PRI(M) - SESSION,PROFILER ISE2: Administration, Monitoring, Policy Service - SEC(A), SEC(M) - SESSION,PROFILER 
+    submitted by    /u/Execuzione  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network Issue / Traceroute / Packet Loss]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zebz6h/network_issue_traceroute_packet_loss/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zebz6h/network_issue_traceroute_packet_loss/"/>
+        <updated>2022-12-06T17:05:17.000Z</updated>
+        <summary type="html"><![CDATA[Hi guys,
+ Not a network expert by any means so would like some insight or direction as to whether this is an issue or I'm barking up the wrong tree etc.
+ Our client uses this ZScaler App to route all traffic to a UK range they host.
+ Example IP would be: 165.225.16.240
+ IF I ping this IP there is some loss of packets, ranges between 2-5%. If I ping Google there is no packet loss.
+ When I do a traceroute there is always packet loss at the Zayo hop:
+ Tracing route to 165.225.17.15 over a maximum of 30 hops:
+ 1 1 ms <1 ms <1 ms 192.168.99.1
+ 2 23 ms 32 ms 1 ms 62......
+ (Exits Network Gateway)
+ 3 1 ms 1 ms 1 ms 212......
+ 4 6 ms 4 ms 2 ms 62.........
+ 5 8 ms 2 ms 7 ms ge-3-3-0.mpr1.lhr3.uk.above.net [195.66.236.76]
+ 6 3 ms \ ** ae9.cs1.lhr15.uk.eth.zayo.com [64.125.24.210]
+ 7 \ * * Request timed out.*
+ 8 8 ms 6 ms 9 ms 94.31.30.187.IPYX-069051-042-ZYO.zip.zayo.com [94.31.30.187]
+ 9 4 ms 4 ms 10 ms 165.225.17.15
+ Another reading.. before it reaches the ZScaler service:
+ Host Longitude Latitude Location Name Packet Sent Packet Received Loss
+ ae9.cs1.lhr15.uk.eth.zayo.com 37.751 -97.822 United States 300 80 73.333336
+ ae12.mpr3.lhr8.uk.zip.zayo.com 37.751 -97.822 United States 300 252 16
+ ZScaler confirmed nothing to do with them, a third party ISP. So am I looking to engage with our ISP about this you reckon?
+ Or am I just barking up the wrong tree and this is nothing to be worried about?
+ The client say they are being disconnected random times.. when I check the on-site MX i cant see any issues with latency or packet loss etc.. no downtime of any sort.. i can only think the zscaler service is going down and maybe confusing the clients network adapter switching from zscaler back to lan etc..
+ Anyway can someone let me know if this Zayo route is a ISP issue or ZScaler.
+ Cheers.
+    submitted by    /u/Wu-Disciple  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leaving Organization during a time of Juggling many projects]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zea9wz/leaving_organization_during_a_time_of_juggling/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zea9wz/leaving_organization_during_a_time_of_juggling/"/>
+        <updated>2022-12-06T15:58:16.000Z</updated>
+        <summary type="html"><![CDATA[Anyone find a nice way to resign while stuck in the middle of several projects?
+ I just accepted an offer with my old employer after getting fed up with poor corporate culture and being asked to handle too many tasks in the 11 months I have been with new job. I was going to walk from my new job almost immediately but I decided to keep working through my disdain for my current employer. It didn't work out. I am burned out after less than a year. Now I have a heaping plate of projects that I am going to leave up for my Director of IT to deal with all by himself. I'm honestly terrified to hand in my letter of resignation I see it ending with getting screamed at by the IT Director followed by him having a stroke. The place I am at now needs a whole IT Department I carry all the Infrastructure Engineer, Network Engineer, Systems administration and Help Desk Duties for a $500M a year company.
+ I would honestly just walk out if I didn't live in such a small community. I would run into the people I fuck over pretty frequently if I did.
+ ​
+ UPDATE:
+ Haha I haven't drafted a resignation letter yet and just had 2 more projects dumped on me. 
+    submitted by    /u/red_plate  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My second interview for an IT Help Desk job is in a few hours.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ze94or/my_second_interview_for_an_it_help_desk_job_is_in/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ze94or/my_second_interview_for_an_it_help_desk_job_is_in/"/>
+        <updated>2022-12-06T15:09:12.000Z</updated>
+        <summary type="html"><![CDATA[If I don't mess up, this would be my first step into the IT career, and it seems like a really great place to start. I am sweating buckets and so nervous. I want this job as much as I need it - my savings are getting low and I need an income.
+ Not sure what the point of this post is, I think I am just trying to get out some nervous energy. Can anyone else tell me what their second interview was like? I've never been on a second interview before - the questions I know how to answer, I answered in the first interview. No idea what to expect on this one.
+    submitted by    /u/askingxalice  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pocketethernet wiremap dongle]]></title>
+        <id>https://www.reddit.com/r/networking/comments/ze8p96/pocketethernet_wiremap_dongle/</id>
+        <link href="https://www.reddit.com/r/networking/comments/ze8p96/pocketethernet_wiremap_dongle/"/>
+        <updated>2022-12-06T14:51:05.000Z</updated>
+        <summary type="html"><![CDATA[Hi all would anyone know the wiring to make a wiremap plug for pocketethernet as we have misplaced our and I am stuck for one at the moment contacted vendor about replacment dongle awating to hear back
+    submitted by    /u/Keiracon  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Phone calls with Jr. level Tech]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/ze8hhh/phone_calls_with_jr_level_tech/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/ze8hhh/phone_calls_with_jr_level_tech/"/>
+        <updated>2022-12-06T14:41:44.000Z</updated>
+        <summary type="html"><![CDATA[“Was having trouble logging into the switch, so I did a hard reset to” “Was it in production?” “Uh? What do you mean if it was in production”
+    submitted by    /u/Jeff_TheFam  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Prevent remote users from kicking each other]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/ze7pof/prevent_remote_users_from_kicking_each_other/</id>
@@ -27231,858 +27856,6 @@ Would: - “wireless cable 1” connect from network switch and LAN from office 
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows "Wireshark for USB"?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yozuwl/windows_wireshark_for_usb/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yozuwl/windows_wireshark_for_usb/"/>
-        <updated>2022-11-07T20:48:08.000Z</updated>
-        <summary type="html"><![CDATA[We have a system where the keyboard starts having caps lock "stick" on, making it quite difficult to enter your password or complete other tasks where case matters.
- We have replaced the keyboard, mouse, and then the entire computer. The new PC was a clean image on a brand new computer taken out of the box for this. 
- The shift lock affects local physical users and remote control users over ConnectWiseControl. 
- At this point, I figure it has to be either some device plugged in that is screwing with the keyboard (this controls special hardware), or a bug in some piece of software needed on this computer. 
- We do not see this with otherwise identical computers and configurations around the org.
- We're going to try disconnecting all USB devices except for mouse and keyboard and see if it goes away, and do the old add them back one by one. But I had the idea that if there was something like Wireshark for USB, especially keyboard commands, it might narrow this down vs just blindly plugging things in.
-    submitted by    /u/jmp242  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[For those of you who have implemented banner warnings on emails]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoyr0o/for_those_of_you_who_have_implemented_banner/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoyr0o/for_those_of_you_who_have_implemented_banner/"/>
-        <updated>2022-11-07T20:09:52.000Z</updated>
-        <summary type="html"><![CDATA[What rules have you instituted on when a banner is displayed? Is it a word/phrase list like credit card, account number, password reset etc? Is it certain domains? We use Office 365 and want to implement this and I'm what you implemented for this to actually be useful rather than annoying/.
-    submitted by    /u/stupid---phone  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Re-certifying my CCNA at 54 years old?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yoxa1l/recertifying_my_ccna_at_54_years_old/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yoxa1l/recertifying_my_ccna_at_54_years_old/"/>
-        <updated>2022-11-07T19:20:38.000Z</updated>
-        <summary type="html"><![CDATA[Bit of my history. I was a Network Engineer from 1997-2005, had my CCNA cert and worked for a nationwide ISP in Austin until I was let go during the tech bust. I decided to move in to Tech recruiting then other fields and never went back to the Networking world.
- I am now 54 and pondering getting back in to Networking. I am thinking of doing some online courses and/or tutorials to get my CCNA and putting the feelers out but my worry is that I have lost too much knowledge & expertise and that my age will be a hinderance when seeking employment. 
- Would love to hear any thoughts or advice you could provide. TYIA
-    submitted by    /u/atticusfinch68  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Issue with network. Looking for some help]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yowbpl/issue_with_network_looking_for_some_help/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yowbpl/issue_with_network_looking_for_some_help/"/>
-        <updated>2022-11-07T18:48:58.000Z</updated>
-        <summary type="html"><![CDATA[Hi guys. So I have an issue in our small office network. This network has been up for over 4 years and this issue started about 6 months ago. Users will get kicked off of their internet connection intermittently. This mostly occurs during video calls, especially if there are multiple people on the same call.
- Network setup: WAN: Verizon FIOS 1GB Router: TP-LINK ER7206 Switch: Netgear Prosafe: GS724TPv2 AP: Ubiquiti UniFi U6-LR-US
- This issue started about 6 months ago. The router I had then was a Cisco router and Aruba AP. I swapped both those out and have the configuration above.
- Was hoping someone had some ideas where to go next? Thanks
-    submitted by    /u/Ghost_InThe_Machine  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CPU on a Domain Controller]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yow61k/cpu_on_a_domain_controller/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yow61k/cpu_on_a_domain_controller/"/>
-        <updated>2022-11-07T18:43:47.000Z</updated>
-        <summary type="html"><![CDATA[What tools would be good at pinpointing why the CPU on a Domain Controller hits 100% at the same time every day on a Windows 2012 R2 server?
-    submitted by    /u/ChubsFTWcauseImChubs  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Do you guys bother filling dead air when on the phone?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yow47y/do_you_guys_bother_filling_dead_air_when_on_the/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yow47y/do_you_guys_bother_filling_dead_air_when_on_the/"/>
-        <updated>2022-11-07T18:42:06.000Z</updated>
-        <summary type="html"><![CDATA[For example an update is running, do you just wait silently or try and make small talk?
-    submitted by    /u/LeDemonKing  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[802.03at midspan injector question]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yovsrc/80203at_midspan_injector_question/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yovsrc/80203at_midspan_injector_question/"/>
-        <updated>2022-11-07T18:31:32.000Z</updated>
-        <summary type="html"><![CDATA[For a project we require a 802.03at midspan injector, preferably rackmount. Since the networked hardware (FPGA module) is not our own design, we can not send the appropriate type 2 message in order to negotiate 30W delivery as the standard requires. Does anyone know of an injector which delivers 30W per port without requiring the handshake? Thanks a lot in advance!
-    submitted by    /u/ImaginationNo7069  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Something Different: Love the Datacenter]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yovbtn/something_different_love_the_datacenter/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yovbtn/something_different_love_the_datacenter/"/>
-        <updated>2022-11-07T18:16:12.000Z</updated>
-        <summary type="html"><![CDATA[I just love going to the datacenter. The humming machines, the cold ac blowing. Being alone doing what you need to do in solitude with the machines. The sheer terror that you might take something down just by tugging on the wrong cable. Love it. This is one of things i like most about my job.
-    submitted by    /u/peace991  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[It's always bloody DNS isn't it?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/youajv/its_always_bloody_dns_isnt_it/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/youajv/its_always_bloody_dns_isnt_it/"/>
-        <updated>2022-11-07T17:41:02.000Z</updated>
-        <summary type="html"><![CDATA[I just had the scariest 30 minutes.
- I'm at the office and decide to check my gmail and see that my NAS at home has been disconnected from the internet since midday. I figure our home internet has dropped out or there's been a power cut so decide to try and connect to the NAS over the internet anyway.
- Oh. It's up. That's weird. Why is it saying it's disconnected from the Internet then? Ah well, let's login and see what's going on. Enter credentials, enter the MFA code and "The verification code is incorrect"
- Um. WTF? Try a couple more times and MFA simply isn't working. There's no other admin account to login to (default admin account is disabled - I'm not a total idiot. Yes, yes I know, exposing NAS to the internet etc etc).
- I get my son, who's at home, to reboot the NAS hoping it's a temporary blip. Nope. Still cannot login as the MFA code isn't working.
- At this point my imagination is running wild and I'm assuming that it's been hacked and the MFA for my admin account has been reset to the hacker's phone. Other normal user accounts (non-MFA) are working. The data is still there, no encrypted files or anything else untoward seems to be going on. So, what the hell? 
- I check Synology forums and see posts about the time sync possibly being off but that isn't the case. I'm on the verge of asking my son to press the dreaded Reset button when I have a thought. I have a Active Directory domain at home and a single Zetec mini-PC box acting as DC. This also provides DNS for the home network. It couldn't be that could it? Why would that affect MFA on the NAS? 
- I get my son to check if the Zetec box is on. It wasn't. Soon as that was powered up and the DNS services started, MFA started working again. 
- Bloody DNS man....
-    submitted by    /u/ginolard  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows Internet Connection Sharing security]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yosu80/windows_internet_connection_sharing_security/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yosu80/windows_internet_connection_sharing_security/"/>
-        <updated>2022-11-07T16:52:01.000Z</updated>
-        <summary type="html"><![CDATA[I have a temporary setup for allowing multiple network clients to access a shared VPN resource. I have a Windows PC connected to the internet and sharing it's VPN connection to a switch over ethernet and it's working very well for all connected devices. I've used this setup before and it's easy with everything else I have running. Right now, it's all wired. 
- My question is: if that were to be shared on open wifi instead of ethernet, what dangers to the host/"main" network would there be?
- I know that if I were using a normal router for this, I'd be concerned they would navigate to 192.168.1.1, enter a correct password or bypass an insecure login page, and wreak havok. So I would know that I need a secure router and a good password or I could put management on another VLAN. 
- I'm aware of possible concerns about peer security. Client isolation will be enabled in the access point to this network. 
- What concerns are there with Windows ICS "acting as the router"? Can clients configure ICS settings or somehow reach the Windows PC's primary LAN? Would they be able to send commands to the Windows PC?
-    submitted by    /u/thefanciestofyanceys  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How Is A "Data Room" Different Than Collaborating with External Users Via Box.com, Egnyte.com, etc.?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yos5yj/how_is_a_data_room_different_than_collaborating/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yos5yj/how_is_a_data_room_different_than_collaborating/"/>
-        <updated>2022-11-07T16:29:57.000Z</updated>
-        <summary type="html"><![CDATA[Currently we are using a virtual data room solution that costs $6,000 for 2GB of storage and an additional $2000 per GB, so I am up to $8k annually. That seems really insane to me, and we are likely going to need to increase it to 4GB totaling 10K annually.
- I looked at other cloud storage solution providers, and for example, Box.com's Enterprise plan will allow me to only need to license internal users and all external users are free.
- With that, I could seemingly achieve the same thing for $2500 (5-6 internal users) instead of $8000. Not only that, but it includes unlimited storage as well which is a HUGE selling point to me.
- My use of our current data room solution solely exists to provide company financial files to investors. All that I need is activity audit logging, MFA, and granular permissions. It's used maybe once a year for a month or so during investor rounds, which makes the price tag even more painful.
- While we have SharePoint, I keep SharePoint use to internal only because its confusing to people, permission management is a PITA with external users, and audit reporting is no easy feat. I also want that clear delineation to employees to understand internal and external. I am just saying this so that I am not asked why I don't just use SharePoint for this.
- Is there something missing that I don't understand between the definition of a "data room" and just normal cloud storage setup to share with external/guest users?
- If you go look at Citrix ShareFile, theres specifically a data room tier that drops you from unlimited storage to 5GB of storage, and costs $448 a MONTH. Why is that a thing??
- Thanks!
- ​
- Edit: Based on the comments explaining the differences, it seems like we may be using a data room when we don't really need one for our specific purposes. I'll evaluate the other options. Thank you for the clarification!
-    submitted by    /u/Future_Is_Cloud  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[what are some of your must use rest APIs for networking use? something like http://ip-api.com/json/8.8.8.8 so quickly get ip info without googling it.]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yos275/what_are_some_of_your_must_use_rest_apis_for/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yos275/what_are_some_of_your_must_use_rest_apis_for/"/>
-        <updated>2022-11-07T16:26:29.000Z</updated>
-        <summary type="html"><![CDATA[trying to build a quick get calls workspace for networking info
-    submitted by    /u/blaaackbear  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Server Maintenance as NE?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yorld3/server_maintenance_as_ne/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yorld3/server_maintenance_as_ne/"/>
-        <updated>2022-11-07T16:11:02.000Z</updated>
-        <summary type="html"><![CDATA[Greetings folks, 
- I just wanted to ask your feedback on this situation:
- I've been hired as a network engineer at a mid sized hospital organization, that also is looking for sysadmins.
- In the meantime, after working on network related tasks for about 8 months, I've been asked to assist with server security remediation. It's been understood that it's not a typical job role, but the whole IS team has been chipping in here and there and I certainly don't mind it given that its not all that much work.
- However, some of the maintenance cycles are scheduled for 10pm, on two Saturdays, and at 4am on the following two Sundays. 
- My question is, what server can possibly need to be updated at 4 in the morning? What's wrong with running both cycles simultaneously at 8pm during weekdays?
- Has anyone encountered this and can give any insight?
- Thanks!
-    submitted by    /u/korpus01  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cisco Firepower with ASA code FXOS platform vs appliance mode]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yorc14/cisco_firepower_with_asa_code_fxos_platform_vs/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yorc14/cisco_firepower_with_asa_code_fxos_platform_vs/"/>
-        <updated>2022-11-07T16:02:36.000Z</updated>
-        <summary type="html"><![CDATA[Hi there,
- We run ASA code on Cisco FP appliances. Some still need an upgrade to ASA version >9.13. Appart from where to configure interfaces etc. does it matter if you run it in platform or appliance mode? Like performance wise?
-    submitted by    /u/NazgulNr5  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This is why our jobs are safe, it's 2022 and people still don't know about the phone hotspot]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoqbo7/this_is_why_our_jobs_are_safe_its_2022_and_people/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoqbo7/this_is_why_our_jobs_are_safe_its_2022_and_people/"/>
-        <updated>2022-11-07T15:28:39.000Z</updated>
-        <summary type="html"><![CDATA[Can't post an image here but in one of the local FB groups someone said they just moved out of NYC and looking to commute by train for the first time. She wanted to do some work on the train and asking if there was wifi on the train or is there a device she can buy for wifi for her laptop with a cellular service.
- ​
- Someone said just use the phone hotspot. I don't use mine that much but even my kids know about the feature that's been around for years now. back in the early 2000's I thought that once more people learn computers our jobs will be in danger, but seems like computers are going the same way as cars. as time goes on people know even less about them and our jobs are safe
-    submitted by    /u/lost_in_life_34  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Work ethic after giving 2 weeks notice.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoorfc/work_ethic_after_giving_2_weeks_notice/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoorfc/work_ethic_after_giving_2_weeks_notice/"/>
-        <updated>2022-11-07T14:34:39.000Z</updated>
-        <summary type="html"><![CDATA[How much effort do you guys give after giving notice? I know everyone should be giving it their all because they’re still getting paid, but I can’t lol. My bosses always ask for all kinds of documentation and to brain dump everything I know to a coworker with the same title and access as me. Sorry, but I’m not going to train someone on all kinds of things I taught myself on my own time. And definitely not going to break my back when I’m on my way out.
- Edit: I will document important processes, complete any of my remaining tickets. However, I’m not going to train someone to be on my level when those people have already been there but didn’t take any initiative to learn.
-    submitted by    /u/csp1405  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cooperate computer security training with humor]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yontft/cooperate_computer_security_training_with_humor/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yontft/cooperate_computer_security_training_with_humor/"/>
-        <updated>2022-11-07T14:02:27.000Z</updated>
-        <summary type="html"><![CDATA[What do you think about cooperate computer security training with humor.
- Any more suggestions? Let's collect links.
- Interview with computer security trainer: https://www.youtube.com/watch?v=xP1KEIqF_BM
- Stay safe online: https://www.youtube.com/watch?v=0Wd3JoUHXno
- Mimecast: https://www.youtube.com/watch?v=GVT5IgmA6WE
- Twist and shout communications: https://www.youtube.com/watch?v=d8AAvnFCY2k
- The knowbe4 Movie: https://www.knowbe4.com/inside-man
-    submitted by    /u/ProgrammingMamba189  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Wrong password after joining Zentyal Active Directory domain on W11 22H2 machine]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yondnj/wrong_password_after_joining_zentyal_active/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yondnj/wrong_password_after_joining_zentyal_active/"/>
-        <updated>2022-11-07T13:46:43.000Z</updated>
-        <summary type="html"><![CDATA[I have a crazy issue with joining my 22H2 W11 machine to an Active Directory domain running on my Zentyal 7 server. I can ingress the domain and use any W10/W11 21H2 machine with no issues, and can ingress (using domain credentials) onto the domain with the 22H2 machine, but when I try to login with ANY domain user, it says the password is incorrect.
- I've set the minimum SMB version as SMB2 on Zentyal, but it didn't fix the issue.
- I'm not sure what can I do to investigate the issue further, as I don't receive eny error code.
- Does anyone have any suggestions on how to track the cause of the issue? 
- Edit: Seems it's related to this bug 15197 – Windows 11 22H2 and Samba-AD 4.15 Kerberos login issue with the solution being setting up a separate samba server for 22H2 machines, or not updating to 22h2 until the next Zentyal version releases. Fuck me
-    submitted by    /u/RafaelSoaresP  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Enabled Credential Guard but 802.11 Wifi with EAP-MSCHAP v2 still working?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yonaax/enabled_credential_guard_but_80211_wifi_with/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yonaax/enabled_credential_guard_but_80211_wifi_with/"/>
-        <updated>2022-11-07T13:43:17.000Z</updated>
-        <summary type="html"><![CDATA[I'm on the way to enable some additional security features in our environment.
- Today i enabled Credential Guard on my lab and expected that my wifi connection breaks after rebooting my machine. We are using 802.11 Wifi with EAP-MSCHAP v2.
- But wifi still works, did i do something wrong?
- Systeminformation shows that credential guard is running. LsaIso Process is running. Was there any change on MS side?
- ​
- Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
- AvailableSecurityProperties : {1, 2, 3, 5...}
- CodeIntegrityPolicyEnforcementStatus : 2
- InstanceIdentifier : 4ff40742-2649-41b8-bdd1-e80fad1cce80
- RequiredSecurityProperties : {1, 2, 3}
- SecurityServicesConfigured : {1, 2, 3}
- SecurityServicesRunning : {1, 2}
- UsermodeCodeIntegrityPolicyEnforcementStatus : 0
- Version : 1.0
- VirtualizationBasedSecurityStatus : 2
- VirtualMachineIsolation : False
- VirtualMachineIsolationProperties : {0}
- PSComputerName :
-    submitted by    /u/Odd-Suit-7718  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Let’s encrypt on ipless dag no load distribution]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yon8ig/lets_encrypt_on_ipless_dag_no_load_distribution/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yon8ig/lets_encrypt_on_ipless_dag_no_load_distribution/"/>
-        <updated>2022-11-07T13:41:17.000Z</updated>
-        <summary type="html"><![CDATA[Im wonderingnhow this will work as its done randomly by dns, we have 4 exchange servers and you get assigned one by random chance dns. Not my idea but that’s how it was and that’s how it Hass to stay as no money has been allocated towards a load balancer has anyone ever done this? I’m thinking if I put the renewal script on each of them one of them will have the DNS Record of a given time, and then it will sync up through the Dag.
-    submitted by    /u/Illustrious_Bar6439  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[profile on terminal server crashes after starting query in sql server mgmt studio]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yon2ub/profile_on_terminal_server_crashes_after_starting/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yon2ub/profile_on_terminal_server_crashes_after_starting/"/>
-        <updated>2022-11-07T13:35:12.000Z</updated>
-        <summary type="html"><![CDATA[Hey everyone,
- a certain user experiences problems whenever he logs into the terminal server and does a query which produces a huge amount of rows. The query just crashes his whole desktop and file system. No files can be created and no paths found. Trying to close any program gives an error message that states the path of the program could not be found. 
- I also can't access his virtual hard drive as the path can't be found. The only solution is to log him out with task manager and relog into the server. 
- Is it possible that this could have something to do with too little memory on our volume? There are only a couple of MB left and this is the volume where all our virtual hard disks are stored.
-    submitted by    /u/Comfortable_Onion318  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Back up Microsoft 365 with Synology - Good Idea?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yon02z/back_up_microsoft_365_with_synology_good_idea/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yon02z/back_up_microsoft_365_with_synology_good_idea/"/>
-        <updated>2022-11-07T13:32:18.000Z</updated>
-        <summary type="html"><![CDATA[Hello Dear Sysadmin 
- Our Org is planing to move direction cloud and implementing the usage of Microsoft 365 Services.
- One Point to calculate is backup. I am trying to find a good solution that is price effective. Actually i'm looking at some solutions like avepoint, Veeam, you name it ... there are dozens of BaaS (Backup as a Service) solutions out there. In a nutshell all works similar you pay per user and Month - and i don't like it this way. Call me Old bastard if you want :) 
- Later i stumbled across Synology "Active Backup for Microsoft 365". An app running on your local NAS (synology ones obviously). If i understood right, there is no additional licencing beside of "owning a compatible NAS". We have allready some of this maschines running without any trouble/issues for year as Cheap local Backup Storage Targets. 
- For me, there are two main important things. 1) Price and 2) Stability of the product. And i like to have backups "on-prem" the "classic" way (3 times and different places). 
- Now im wondering if i find here some "real life" Opinions about this setup? Any good for an organisation with 150 Users? 
- Thanx!
-    submitted by    /u/funkyferdy  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[.NET 3.5 on Windows 2012 R2 - Error 0x800f081f]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yomg21/net_35_on_windows_2012_r2_error_0x800f081f/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yomg21/net_35_on_windows_2012_r2_error_0x800f081f/"/>
-        <updated>2022-11-07T13:11:37.000Z</updated>
-        <summary type="html"><![CDATA[Hi!
- ​
- I need to install .NET 3.5 Feature on a fully patched Windows 2012 R2 server, but I am failing...
- ​
- What I tried:
- Install with ServerManager - Additional Source - Win2012R2-DVD\sources\sxs added -> 0x800f081f
- C:\Windows\System32>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"d:\sources\sxs"
- --> Same problem
- ​
- Do you have any idea on how to solve this?
- ​
- Thank you for your help!
- ITStril
-    submitted by    /u/ITStril  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Access to Sharepoint]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yomajy/access_to_sharepoint/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yomajy/access_to_sharepoint/"/>
-        <updated>2022-11-07T13:05:28.000Z</updated>
-        <summary type="html"><![CDATA[Hi, right on the client's side, I can't store sharepoint data on an external server. I thought it would be best to access all my files, sync it with OneDrive and back up the virtual machine with this account once a day. After digging through all the settings, I did not find an option that allows such access. I currently have a microsoft administrator account.
-    submitted by    /u/thirimash  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Penetration Test / Brute Force Attack]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yom7bs/penetration_test_brute_force_attack/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yom7bs/penetration_test_brute_force_attack/"/>
-        <updated>2022-11-07T13:02:00.000Z</updated>
-        <summary type="html"><![CDATA[Is there a software that can try a random URL
- The URL follows the same preset
- https://website.com/key=xxxxxx-0000-xxxx-xxxx-xxxxxxxxxxxx
- x = numbers and small letters
- 0 = numbers only
- ​
- Backstory:
- At my work we use this internal service. To log in, we are given a URL with a random key. The key stays the same the whole time you work here. They claim this is secure because the key is random. But i cant possible think this is secure. I have confirmed with my colleage that if i use his link. I log on as him.
- This is not intended to be nefarious, but to prove its not as secure as they think it is and hopefully get them to change it.
-    submitted by    /u/KommuneKneipp  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Best cisco sd-wan architecture configuration resources.]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yom686/best_cisco_sdwan_architecture_configuration/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yom686/best_cisco_sdwan_architecture_configuration/"/>
-        <updated>2022-11-07T13:00:51.000Z</updated>
-        <summary type="html"><![CDATA[Do you have any recommended resources (pdfs, video courses) that will help me learn sd-wan deeply? I am more of taking practical exercises to understand the concept guy but I cannot afford any emulators as of this moment so any videos especially comprehensive lab setup of sd-wan will be very helpful to me. Thank you.
-    submitted by    /u/Agreeable-Analysis-7  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Printing Problem | Windows Server 2019]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yollzl/printing_problem_windows_server_2019/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yollzl/printing_problem_windows_server_2019/"/>
-        <updated>2022-11-07T12:38:02.000Z</updated>
-        <summary type="html"><![CDATA[Hello guys,
- i have some troubels with the Printer Rolle on Server 2019. The installed Drivers are from Konica Minolta and Up to date, the Printers are allready Installed, ant The Windows Updates are up to date. The same Printers are woking on my 2016 Server but we want a migratopn to 2019 Server. The Problem is, I can Print a Test page from each Server directly (2016 & 2019) but from my client ( Windows 10 ) i can normaly connect an view all settings with the printer, but i cant print on the 2019 Server.
- The 2019 Serve Log is:
- 📷
- "Event 812: Printer Service
- "The printer spooler failed to delete C:\Spool\\FP00001.SHD, Error Code 0x2"
- ​
- ServerLOG
- The Folder hast NTFS Permisions for Full Control on - System -> Creator -> Users
- The Settings are the same and the NTFS is the same as on the 2016 Server, no changes.
- On The Client i got a Error:
- (Error 0x00000bbb) The operation could not be completed. No print job could be created.
- Can anyone help me, any ideas or anything similar to watch for ?
- Thanks and BR
-    submitted by    /u/Net-Add  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows Update breaks printer driver/settings, Powershell fails to fix]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yokx5e/windows_update_breaks_printer_driversettings/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yokx5e/windows_update_breaks_printer_driversettings/"/>
-        <updated>2022-11-07T12:09:29.000Z</updated>
-        <summary type="html"><![CDATA[We use a Windows 2016 server to run print jobs for our ERP system. All printing is direct - no print servers/sharing involved.
- For the past year, it seems like about 50% of Microsoft's updates breaks our printers. The exact scenario is: post-update, about 90% of the printers will have been defaulted to duplex printing, and about 90% of the printers will be using the generic Microsoft printer driver. (Note that these two groups do not always overlap; sometimes a printer will still have the correct driver, but will have been changed to duplex printing, or vice-versa.) This is not printer or driver specific; it occurs across several different makes/models and drivers.
- Fixing it is a relatively simple, but frustrating process: Just go into each printer's "Advanced > Printing Defaults..." and disable duplex. Afterwards, both issues will be resolved.
- We attempted to resolve this with a simple bit of Powershell, set to run (as admin) on system startup:
-  $printers = Get-Printer foreach($printer in $printers){ Set-PrintConfiguration -PrinterName $printer.name -DuplexingMode 'OneSided' } 
- However, Set-PrinterConfiguration only works after the printer has been manually fixed. Otherwise, it generates the following error:
-  Set-PrintConfiguration : Could not access configuration information for the specified printer. At C:\Scripts\Set_SingleSidedPrinting.ps1:7 char:5 + Set-PrintConfiguration -PrinterName $printer.name -DuplexingMode ... + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ + CategoryInfo : ObjectNotFound: (MSFT_PrinterConfiguration:ROOT/StandardCi...erConfiguration) [Set-PrintConfiguration], CimException + FullyQualifiedErrorId : HRESULT 0x80070002,Set-PrintConfiguration 
- Very frustrating. Any ideas how to resolve things? Either so that Windows Updates no longer cause the printing issue, or so that our script can reliably run, post-update?
-    submitted by    /u/ltwally  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What's you Terminal emulator of choice on Windows?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yokfbs/whats_you_terminal_emulator_of_choice_on_windows/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yokfbs/whats_you_terminal_emulator_of_choice_on_windows/"/>
-        <updated>2022-11-07T11:49:18.000Z</updated>
-        <summary type="html"><![CDATA[I swear i'm going insane and it shouldn't be that hard.
- The "new" Windows Terminal is everything i want. Except, sometimes, pasting passwords over SSH plain won't work. Pasting the Password without a sudo prompt or such shows the correct text, but when asked for a password by ansible or sudo, only typing does it. No idea why. It has also been laggy when connected to Servers with a less than ideal connection. Not sure why my Input depends on the connection to the customer?
- So, suffice to say, i'm not happy with windows Terminal. Alacritty does everything great, except it doesn't have tabs.
- Putty also doesn't have tabs plus it's session management is... less than ideal.
- So, what do i do? My requirements are pretty basic. All Windows stuff can be done through PS. So all i really need is something that can do SSH, Tabs, maybe split windows. Stored sessions are a nice to have, but i'm fine copy pasting IPs and using my SSH config. Right Click Paste would be nice, but Ctrl+V works too. It should use Windows' build in OpenSSH, not putty and Pageant. Other than that, it should be responsive and work as expectet 100% of the time.
- What do those of you that Use SSH for admin tasks all day, but also need to use Windows, use?
-    submitted by    /u/domsch1988  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Limit AD Logins]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yok5ee/limit_ad_logins/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yok5ee/limit_ad_logins/"/>
-        <updated>2022-11-07T11:36:46.000Z</updated>
-        <summary type="html"><![CDATA[Hello,
- We are currently deploying an web app that uses our AD infrastruture to login users.
- However I have some users that I only want to allow the login through this app (web app with ldap login). Is there any way I can lock these accounts to dont allow login into anycomputer at all on the doman?
-    submitted by    /u/ArminiusPT  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to detect whether a physical cable is connected to network card slot on windows Server ?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yok1o2/how_to_detect_whether_a_physical_cable_is/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yok1o2/how_to_detect_whether_a_physical_cable_is/"/>
-        <updated>2022-11-07T11:32:02.000Z</updated>
-        <summary type="html"><![CDATA[Hi All,
- ​
- ​
- I Need to know whether a physical cable is connected to a network port on your Windows Server system. I can see link status via ethtool command in Linux machine.
- Is there any equilavent command for Windows?
- ​
- thanks,
-    submitted by    /u/maxcoder88  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hyper-V ISO mounting issue]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yojovz/hyperv_iso_mounting_issue/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yojovz/hyperv_iso_mounting_issue/"/>
-        <updated>2022-11-07T11:15:58.000Z</updated>
-        <summary type="html"><![CDATA[I've recently began a project of replacing a Windows storage space fileserver with a TrueNAS fileserver
- I've recently downloaded brand new Windows and Linux ISO's and stored them on our new storage server and when we try and add the ISO to the virtual machine, I get the following error:
- Failed to add device 'Virtual CD/DVD Disk'.
- User account does not have permission to open attachment
- Originally, I googled this, and I added the delegation in Active Directory but that didn't work.
- Has anyone else experienced this same problem?
-    submitted by    /u/Kwhite2000  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NCSC to scan all Internet connected sites/apps]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoji94/ncsc_to_scan_all_internet_connected_sitesapps/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoji94/ncsc_to_scan_all_internet_connected_sitesapps/"/>
-        <updated>2022-11-07T11:07:32.000Z</updated>
-        <summary type="html"><![CDATA[https://www.androidpolice.com/uk-govt-internet-scanning/ 
- They have provided IP addresses that the scans will come from. What would be a good custom HTTP response for our Web Application Firewall that will end up stored in their database?
-    submitted by    /u/Confident_Counter203  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I'm lazy and not ashamed to admit it.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yojgnf/im_lazy_and_not_ashamed_to_admit_it/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yojgnf/im_lazy_and_not_ashamed_to_admit_it/"/>
-        <updated>2022-11-07T11:05:33.000Z</updated>
-        <summary type="html"><![CDATA[I use to be a real go-getter. I'd be up at 7:00 am, I'd be scripting, I'd be documenting, I'd be on calls helping out people, I'd be helping teammates even if they didn't ask for it, I'd volunteer for tasks, I'd be working late or on the weekends trying to get something done or working the way I wanted it.
- Now? Fuck all that.
- I did that for years, and I'd see people getting promoted and then try to figure out what I did wrong. Or at the end of the year my review comes back with all 'meets', and just get the standard raise. At my third job, it hit me like a baseball in the nuts with a simple comment from another co-worker. 
- "Why, the boss didn't tell me to do it"
- It's that simple. All your manager is interested in is that you getting done what he or she assigned to you. Spending 12 hours making sure that documentation is just right might get you a "good job" comment from the manager and might get you the recognization of being a good document writer but you know what a quick bullet list you did in 20 minutes will tick that task complete and that is what your manager is interested in
- After I got that concept through my head my life in IT became a cakewalk and more important my salary has tripled over the past 10 years (and pretty much no overtime). 
- That's not to say I don't do anything extra. I spend a fair amount of time studying but I take a two-pronged approach. First, learn what is needed for the current job, the processes, the tech stack, the DBs etc. That is usually a month or two then, as I like to change jobs or get promoted every 2 or max 3 years I start studying for the job I want next. 
- I no longer waste my time trying to be the go-getter, the superstar, or that person everyone goes to for the answers cause at the end of the day it's just a job and I'm going to get paid the same to write an amazing doc or a bulleted list.
- Also, remember the rule of 5. How will it affect you in 5 minutes, 5 weeks, 5 months, or 5 years?
-    submitted by    /u/testing_cock  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I'm just very happy with my job.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoiw5e/im_just_very_happy_with_my_job/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoiw5e/im_just_very_happy_with_my_job/"/>
-        <updated>2022-11-07T10:38:17.000Z</updated>
-        <summary type="html"><![CDATA[I wanted to post this for some time but I wasn't confortable because I feel like I'm some egocentric guy on TEDx talk, but I just really like my job.
- My company is full of wonderful people. I have only one boss, the CFO, and so far I wasn't even once told "no" when it came to invest money in IT - he understands that IT is critical and make sure every budget I ask for is approved. When I ask for something and it's expensive, he simply asks me to explain so that he can chose the better option. He's also excellent with Excel, so all the Excel related questions go to him.
- People are usually very nice. Sometimes a little demanding, but also very grateful. I answer all calls because I'm the sole IT guy and I am perfectly aware that although I love engineering tasks more than user support, firs…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Moronic Monday - November 07, 2022]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoi9kr/moronic_monday_november_07_2022/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoi9kr/moronic_monday_november_07_2022/"/>
-        <updated>2022-11-07T10:00:11.000Z</updated>
-        <summary type="html"><![CDATA[Howdy, /r/sysadmin!
- It's that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I've taken over responsibility for posting these weekly threads so you don't have to worry about anything except your comments!
-    submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why Is Internet So Unstable Between 1 AM - 5 AM?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yoi0gu/why_is_internet_so_unstable_between_1_am_5_am/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yoi0gu/why_is_internet_so_unstable_between_1_am_5_am/"/>
-        <updated>2022-11-07T09:44:03.000Z</updated>
-        <summary type="html"><![CDATA[I live in Michigan, and all my coworkers + myself who work from home for 3rd shift have terrible Internet really late at night when no one is awake but 3rd shifters.
- During the day, no issues at all, even at peak times like 12 PM or the evening.
- Since this is affecting presumably the entire state, I doubt anything will change to fix it.
- My question though is... why? An ISP phone technician will be unlikely to tell me, so I'm just curious if there would be any likely cause for these issues? Are they doing updates to their routers that just randomly knocks everyone off the Internet deep at night?
- I'm also curious if anyone else has had experiences like this themselves?
-    submitted by    /u/Koningkrush  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Battleground Updates & Hispanic GOP Vote | 11.7.22]]></title>
-        <id>41abdb42-4a11-418a-8ce6-45cb09c22274</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2022-11-07T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Where the battleground races stand on the eve of the election, an increasing number of Hispanics are backing Republicans, and the GOP’s most diverse group of candidates yet. Get the facts first on Morning Wire.]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cisco 9300 stuck in "switch mode"]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yohreb/cisco_9300_stuck_in_switch_mode/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yohreb/cisco_9300_stuck_in_switch_mode/"/>
-        <updated>2022-11-07T09:28:34.000Z</updated>
-        <summary type="html"><![CDATA[Hello all,
- Was trying to upgrade a Cisco C9300-24T to the latest version.
- I downloaded SFTP server from Solarwind where I uploaded the firmware to.
- The problem I have now is that the switch is stuck in "switch" mode. It happened when I tried to upgrade the firmware, see below: 
- ERROR: failed to boot from tftp:192.168.1.1/cat9k_iosxe.17.03.05.SPA.bin (Incompatible Version)
- Please wait while the system restarts.
- fromInitializing Hardware......
- System Bootstrap, Version 17.6.1r[FC2], RELEASE SOFTWARE (P)
- Compiled Wed 05/12/2021 15:39:34.01 by rel
- Current ROMMON image : Primary
- Last reset cause : SoftwareReload
- C9300-24T platform with 8388608 Kbytes of main memory
- ​
- boot: attempting to boot [tftp:192.168.1.1/cat9k_iosxe.17.03.05.SPA.bin]
- ERROR: failed to boot from tftp:192.168.1.…]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[It's not all bad.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yohehq/its_not_all_bad/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yohehq/its_not_all_bad/"/>
-        <updated>2022-11-07T09:06:10.000Z</updated>
-        <summary type="html"><![CDATA[I haven't worked in support for many years but still remember some of the nice things said to me during my time doing it. 
- One lady with poor vision almost crying when I took a screen magnifier to her and set it up, who just stared at it going "wow" over and over with a huge smile.
- The kids with learning disabilities who got touch screen iMacs which blew their mind and who wrote a theme some (based on Batman) which they sang anytime they saw me.
- The doctor who actually got down on his knees and kissed my feet (I was with a colleague at the time) after I fixed his long-problematic monitor issues (it was literally 5 mins to download/reinstall an Nvidia driver). He said he'd had over a dozen calls and six IT staff at his computer by this point.
- I'm going to be honest I'm easily pleased but when you do make a difference and see that impact on someone else it reminds some of us why we chose to work in support.
-    submitted by    /u/Local_admin_user  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Order pre-labelled cables in NL / EU]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yohdmz/order_prelabelled_cables_in_nl_eu/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yohdmz/order_prelabelled_cables_in_nl_eu/"/>
-        <updated>2022-11-07T09:04:42.000Z</updated>
-        <summary type="html"><![CDATA[Morning,
- I'm looking for a reliable vendor which can provide me with a bunch of patch cables (mix of 0.5 - 3 meters and CAT6 / fiber SM, MM) for a new DC deployment. This is my first time ordering and requesting quotes for cables and i would like to have them with labels to save time and errors.
- When searching online with Google etc. i find some companies which are operating in the US or basic guides on how to label your cables. Not exactly what i need.
- Do any of you have experience with some of the suppliers in the region of The Netherlands, Benelux or even Europe? And can recommend me a supplier?
- Thanks in advance!
-    submitted by    /u/Yariva  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[shared address book]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yogzyf/shared_address_book/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yogzyf/shared_address_book/"/>
-        <updated>2022-11-07T08:40:07.000Z</updated>
-        <summary type="html"><![CDATA[hello awesome people
- i have a small vps with around 15 accounts(domains) each with 5 to 30 emails. (total around 150 email)They all belong to the same group what is the best way to create an address book to add to their outlook for these users? 
- i can do it first time manually per example create an address book on my outlook then export/import please let me know but i am not finding how 
- PS : they dont have exchange ,, only pop3
-    submitted by    /u/chanklish  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Question: Microsoft Security Center, Anti-Phishing.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yogpkz/question_microsoft_security_center_antiphishing/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yogpkz/question_microsoft_security_center_antiphishing/"/>
-        <updated>2022-11-07T08:21:19.000Z</updated>
-        <summary type="html"><![CDATA[I've just implemented all the Anti-Phishing policies/security recommendations etc that Microsoft added in September.
- I've got 99,4% of my users "affected by policies that are configured securely".
- But I've got 0.6% of my users " affected by policies that are configured less securely than is recommended ". 
- How do I go about finding these users? 
- Are there any good or efficient way of finding these users?
- I'm just thinking there's something I'm missing here:
- https://imgur.com/a/XMQcp4d 
- They even list how many users that are affected by the wrong (Default) policies. So my thinking is that I should be able to find these users in a list somehow.
-    submitted by    /u/SP_reborn  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How do I prove to my boss that I'm not wasting time at work.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yogn0o/how_do_i_prove_to_my_boss_that_im_not_wasting/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yogn0o/how_do_i_prove_to_my_boss_that_im_not_wasting/"/>
-        <updated>2022-11-07T08:16:49.000Z</updated>
-        <summary type="html"><![CDATA[I know myself as someone who is always working on something for the 90% of my work hours. If it goes any less, I feel guilty AF. I guess one can call me a workaholic
- But what ticks me off (like crazy) is when my boss/manager says I'm not working and I'm wasting time at work. They seem to think I'm watching movies or playing games during work hours.
- How the hell do I tell them - hey gaffer, I have NO interest in watching movies or playing game during work hours because if I do that, I'll never get any tickets done.
- Crazy thing is it has happened in my previous job when we were back to working from the office for all 5 days in a week and my boss still said I looked like I was not being efficient at work. WTF. I was in the same room as him and he saw me with my eyes glued to the screen and…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iperf bandwidth]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yogcfl/iperf_bandwidth/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yogcfl/iperf_bandwidth/"/>
-        <updated>2022-11-07T07:58:58.000Z</updated>
-        <summary type="html"><![CDATA[Hi 
- two vms in esxi . same machine when swapped client server role , giving different result 
- Test 1 
- Server A : iperf -c 10.10.10.5
- Server B : iperf -s
- Bandwidth 2.5Gbps
- Test 2
- Server B : iperf -c 10.10.10.5
- Server A : iperf -s
- Bandwidth 400Kbps
- ​
- Please help
-    submitted by    /u/tkr_2020  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dell Latitude 5420 Laptops USB PORT ISSUE]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yogbbr/dell_latitude_5420_laptops_usb_port_issue/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yogbbr/dell_latitude_5420_laptops_usb_port_issue/"/>
-        <updated>2022-11-07T07:56:53.000Z</updated>
-        <summary type="html"><![CDATA[So, we have many Dell Latitude 5420 laptops. I7 11th gen.
- We have some random many users having issue with usb ports not recognized after random working hours. They need to restart the laptop in able for the ports to work again.
- Troubleshooting Done:
- - updated all bios, firmware and drivers
- - removed thunderbolt port connected from monitor to laptop
- - used direct usb port connection (mouse and kb direct to laptop) - > works for 1 week but error prompt again.
- Any of you have any idea why this Dell Laptop have this annoying USB port issue?
-    submitted by    /u/vcrs_  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fiber coupler splitter compatible SFP GPON module?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yoezak/fiber_coupler_splitter_compatible_sfp_gpon_module/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yoezak/fiber_coupler_splitter_compatible_sfp_gpon_module/"/>
-        <updated>2022-11-07T06:35:50.000Z</updated>
-        <summary type="html"><![CDATA[Is there a such thing? This might be a stupid question. 
- My internet provider uses coupler splitter. I want to connect fiber directly to my router, I’ve asked for an SFP module and they said I have to use model as pair both side. Any advice on this?
-    submitted by    /u/thamers  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long Print times for RPT files over IPSEC VPN (Sophos XGS -> Mikrotik)]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yoe2ca/long_print_times_for_rpt_files_over_ipsec_vpn/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yoe2ca/long_print_times_for_rpt_files_over_ipsec_vpn/"/>
-        <updated>2022-11-07T05:44:46.000Z</updated>
-        <summary type="html"><![CDATA[Setup:
- Head Office (HO): Sophos XGS Firewall (For troubleshooting all security between the two offices is temporarily disabled)
- Branch Office (BO): Mikrotik 915G
- IPSEC configured between the sites.
- Printers at the branch office are connected via the VPN to the windows terminal server located in HO.
- BO staff connect to HO Terminal server and print documents from their application to their local printers. Printing is taking about 1 minute per page 200kb(according to the spooler) to print. The connectivity appears stable and i dont see packet loss across the link and there is about 70ms between the two. I've performed packet captures from the BO Side and the HO Side. I was hoping to get some indication of where and if the fault is with the link. Also note, we have 3 other BO's connected to the HO with the exact same setup and no performance issues.
- After the initial handshake i see a large number of retransmissions from the HO Side with ACKs from the printer in the BO. This continues for about 15 seconds before a number of back and forwards of packets . After this, 10 seconds of what appears to be healthy communication occurs. I get a TCP Window full from the HO server to the BO Printer. The as well the ad the retransmissions and dup ACK returning. It continues this way for the next 20 seconds before a another flood of what appears to be healthy PSH/ACK communication. Finally ending in the FIN/ACK.
- ​
- Edit: fix some spelling
-    submitted by    /u/Network_Mula  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[IPMessenger on Mac, no individual logs?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoe0ww/ipmessenger_on_mac_no_individual_logs/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoe0ww/ipmessenger_on_mac_no_individual_logs/"/>
-        <updated>2022-11-07T05:42:26.000Z</updated>
-        <summary type="html"><![CDATA[Cant find IPMessenger logs for individual chats on MacOS, unlike on Windows, where you would simply double click on the addressee. On checking logs, it loads the whole history which lags my pc
-    submitted by    /u/BigFootChewbacca  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What OS should I choose for the router PC?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoe02b/what_os_should_i_choose_for_the_router_pc/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoe02b/what_os_should_i_choose_for_the_router_pc/"/>
-        <updated>2022-11-07T05:41:03.000Z</updated>
-        <summary type="html"><![CDATA[Hi all. Just a stupid question.
- I have multiple VMs running in an isolated network and want them to isolate, but I'd like to access them through the VPN connection. So as a solution I'm going to use one VM with the public IP, set up a firewall, and OpenVPN server. Also, I'm going to add authentication for the OpenVPN through the OpenLDAP server and redirect all routing for the VMs from the isolated network using this primary VM. So this primary VM will work as a router.
- So what kind of OS should I use for it?
- For now, I have created an ansible playbook that set up everything required using Ubuntu Server LTS. But I've read that Ubuntu is OS for the users and it's better to use BSD family OSes like OpenBSD, FreeBSD, or even OPNsense for the network devices.
-    submitted by    /u/eeexception  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[manage engine free?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yodpui/manage_engine_free/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yodpui/manage_engine_free/"/>
-        <updated>2022-11-07T05:25:32.000Z</updated>
-        <summary type="html"><![CDATA[We use manage engine service desk for more than 10 years but now we must upgrade it because of the lacking of modern authentication There is a free cloud version that claims to support it but I don't understand how this is a free software (until 6 users) I am trying that management goes to the paid version but with the free option it is being a very hard sell internally speaking... How can this be be free? Any one knows that this cloud versij is reliable enough?
-    submitted by    /u/CarefulApple8893  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CIS Level 1 benchmark security policies on RDS/Citrix servers?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yob697/cis_level_1_benchmark_security_policies_on/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yob697/cis_level_1_benchmark_security_policies_on/"/>
-        <updated>2022-11-07T03:14:47.000Z</updated>
-        <summary type="html"><![CDATA[Hi folks, sorry I'm not following any SecOps subs so not too comfortable posting elsewhere.
- We've been using the Windows Server CIS L1 benchmarks for a while, but are now looking to roll them out to some Citrix servers. On the surface nothing in the benchmark policies seem problematic for users, but I'm concerned that there may be additional User Rights Assignment type permissions required in the Citrix context.
- Has anyone used the CIS policies in a Citrix environment and can speak to any issues, or alterations they had to make to the policies to allow things to work properly?
- Cheers
-    submitted by    /u/Jay_from_NuZiland  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Backup Schedule and RPO]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/yoar2z/azure_backup_schedule_and_rpo/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/yoar2z/azure_backup_schedule_and_rpo/"/>
-        <updated>2022-11-07T02:54:08.000Z</updated>
-        <summary type="html"><![CDATA[Can someone provide clarification on Azure Backup Schedule and RPO?
- "With backup schedule set to Hourly, the default selection for start time is 8 AM, schedule is Every 4 hours, and duration is 24 Hours. Hourly backup has a minimum RPO of 4 hours and a maximum of 24 hours. You can set the backup schedule to 4, 6, 8, 12, and 24 hours respectively."
- Recovery point objective (RPO): The amount of acceptable data loss if a recovery needs to be done
- Azure support hourly VM backup, however their RPO indicates that the schedule is a minimum of every 4 hours.
- So is a backup performed every 1 or 4 hours? Or are they saying that even through you've set to hourly we will only guarantee a backup every 4 hours? If so than that's somewhat poor. 
- https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-enhanced-policy#create-an-enhanced-policy-and-configure-vm-backup
-    submitted by    /u/tom_tech0278  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
