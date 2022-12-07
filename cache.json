@@ -270,6 +270,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zexue0/win11_gpo_unable_to_map_network_drive_to_domain/",
+          "author": null,
+          "description": "Hi all,\n ​\n I have facing above title issue. i create a new GPO in my domain and edit it to map network drive to all pc under --> user configuration--> preferences-->window settings--Drive maps.\n It does not appear the new network map drive under computer Windows 11.\n Results:\n - it works under Win10 21H2\n ​\n - it not works Win11 21H2\n ​\n GPO Screenshot:\n https://imgur.com/a/kGQrOGW\n ​\n https://imgur.com/a/1iclsvH\n ​\n https://imgur.com/a/dXjlku1\n    submitted by    /u/maxcoder88  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zexue0/win11_gpo_unable_to_map_network_drive_to_domain/",
+          "publishedOn": "2022-12-07T10:31:13.000Z",
+          "wordCount": 25276,
+          "title": "Win11 - GPO unable to map network drive to domain computer",
+          "imageUrl": "https://external-preview.redd.it/2oXm08cLCXMX6YK2A9DxIqgac9aIXeamDfBeiutLWCk.jpg?auto=webp&s=91633a66858ad1c1eeeb5ce065109353a9b2484c"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zexpq6/spf_dkim_and_dmarc/",
+          "author": null,
+          "description": "Hi guys,\n Have a quick question regarding the above. \n We have SPF enabled for just spf.protection.outlook.com and that’s sufficient enough I believe. So only things sent from M365 will allow outbound mail. \n DKIM is setup via DNS and our 365 admin centre. And this seems fine. \n But here’s where I’m a bit confused. We have dmarc enabled and it was set to quarantine. So all mail that fails SPF and DKIM will go into spam? Is this for inbound or outbound mail? I thought DMARC was for outbound, but a 3rd party trying to email us, got an error showing DNS Auth: DMARC failed.\n Is this an issue on our end?\n Tia\n    submitted by    /u/Haroldjbb  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zexpq6/spf_dkim_and_dmarc/",
+          "publishedOn": "2022-12-07T10:23:47.000Z",
+          "wordCount": 24309,
+          "title": "SPF, DKIM and DMARC",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zexodc/o365_compliance_dlp/",
+          "author": null,
+          "description": "Anyone using windows defender as a DLP agent successfully on windows or macOS? I’m weeks now trying not just to get the base functionality working but even to get consistent behaviour on the few endpoints in our pilot. I’ve a few contacts that ran the compliance features in their own shops and their experience of it was not encouraging. \n Has anyone here seen MS DLP working in action ?\n    submitted by    /u/thinfoil_hat_Matt  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zexodc/o365_compliance_dlp/",
+          "publishedOn": "2022-12-07T10:21:33.000Z",
+          "wordCount": 24627,
+          "title": "O365 compliance DLP",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/zexdgg/bash_script_to_change_hostname/",
           "author": null,
           "description": "Hi All,\n I am planning to replace existing hostname by making simple interactive script\n #!/bin/bash echo \"Set Hostname\" read name1 name='cat /proc/sys/kernel/hostname' sed -i 's/$name/$name1/g' /etc/hostname hostname $name1 \n The issue here is - it changes hostname after I set input after script run. I exit and log back in. I see new hostname. But nothing gets changed in /etc/hostname file. reboot and I am back to old hostname.\n What am I missing here?\n    submitted by    /u/marathi_manus  \n [link]   [comments]",
@@ -12378,16 +12408,6 @@
           "wordCount": 20770,
           "title": "Write Through vs Write Back and Importance of Raid Controller Battery (H310 vs H710P)",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/yp36bf/redirecting_one_subdomain_in_nginx/",
-          "author": null,
-          "description": "Hi Guys,\n I'm a bit stuck on this one and any assistance would be amazing. I'm very much an Nginx noob.\n We have an existing Nginx setup with lots of redirections already configured.\n I'm trying to only redirect one subdomain in Nginx to an external url, however no matter what I try it redirects all subdomains. \n I've reviewed our existing configs to get some understanding of how things are setup but the life of me I just can't work this one out and all the search results I seem to find are for redirecting all subdomains or sub sites not for redirecting just one subdomain of many.\n This subdomain didn't have an existing config and I've had to create one (copy one of our others and edit it) it looks like previously the subdomain was configured under a catch all.\n Example:\n I need https://foo-bar.test.com.au to redirect to https://externalURL.com\n However I don't want https://other-site.test.com.au to redirect to https://externalURL.com\n This is the current config\n ******************************************************************\n server {\n server_name foo-bar.test.com.au;\n rewrite ^ https://externalURL.com;\n root /opt/nginx-static/foo-bar;\n }\n ​\n server {\n listen 443 ssl http2;\n server_name foo-bar.test.com.au;\n rewrite ^/(.*)$ https://externalURL;\n ssl_certificate /etc/ssl/foo-bar.crt;\n ssl_certificate_key /etc/ssl/foo-bar.key;\n ssl_protocols TLSv1.2 TLSv1.3;\n ssl_ciphers HIGH:!aNULL:!MD5;\n ssl_session_timeout 30m;\n root /opt/nginx-static/foo-bar;\n ​\n location / {\n root /opt/nginx-static/foo-bar;\n index index.html foo-bar.html;\n autoindex on;\n }\n ​\n }\n    submitted by    /u/DissidentSu6  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/yp36bf/redirecting_one_subdomain_in_nginx/",
-          "publishedOn": "2022-11-07T22:40:32.000Z",
-          "wordCount": 18894,
-          "title": "Redirecting one subdomain in Nginx",
-          "imageUrl": null
         }
       ]
     },
@@ -12925,6 +12945,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/zeyd5e/are_ubiquitiunifi_access_points_worth_it/",
+          "author": null,
+          "description": "So I'm making a small setup for a secondary building on the lowest budget possible but to be able to handle about 100 clients (worst case scenario) on one access point. I'm not gonna get a console like a dream machine because it's not worth it for this setup. \n I was thinking of using just two AC or U6 pro APs in \"standalone mode\" and connecting them to a router & switch I already have. Pretty much a \"dumb access point\"\n Is it worth it to get Unifi access points for this or are there cheaper alternatives that would do the same (since you do pay a premium to have everything \"just work\" with ubiquity\" Any suggestions are appreciated! \n Thanks,\n -A newbie networking guy\n ​\n P.S. Please nothing with monthly subscriptions :o\n    submitted by    /u/SmallIce4  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/zeyd5e/are_ubiquitiunifi_access_points_worth_it/",
+          "publishedOn": "2022-12-07T11:01:46.000Z",
+          "wordCount": 18861,
+          "title": "Are Ubiquiti/Unifi access points worth it?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/zeyclk/need_firmware_for_alcatellucent_omniswitch_6860p24/",
+          "author": null,
+          "description": "I need the latest firmware fot my Alcatel-Lucent OmniSwitch 6860-P24 Switch. Since I don't have a business account and without beeing a businees partner I can't download it. It would be nice if someone could help me. Thanks\n    submitted by    /u/PaulR282  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/zeyclk/need_firmware_for_alcatellucent_omniswitch_6860p24/",
+          "publishedOn": "2022-12-07T11:00:57.000Z",
+          "wordCount": 18685,
+          "title": "Need Firmware for Alcatel-Lucent OmniSwitch 6860-P24",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/zexhkc/will_using_a_monitoring_tool_make_my_ping_or/",
           "author": null,
