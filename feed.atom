@@ -2,10 +2,104 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-08T10:13:26.592Z</updated>
+    <updated>2022-12-08T11:10:12.785Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Trying to resync AD post-ransomware!]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zfvu55/trying_to_resync_ad_postransomware/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zfvu55/trying_to_resync_ad_postransomware/"/>
+        <updated>2022-12-08T11:02:56.000Z</updated>
+        <summary type="html"><![CDATA[Hi, my college got hit my Lorenz ransomware. It's been a fun week. As i'm sure many of you know, schools dont have the biggest IT budgets so we're responding with a bare bones team.
+ We have an on-prem Exchange with an Exch relay and AD sync server - i think with bidirectional sync - to our o365 tenant. 
+ We have brought back our servers from backups, but havent placed the AD sync server back in prod yet because we were told that Lorenz ransomware sometimes exfiltrate your mailboxes after a ransomware incident by scraping mailboxes after reconnecting AD sync. 
+ Do you have any idea how i should approach this?
+ I was thinking:
+ 1) Use global admin in o365 to review any suspicious accounts, privileged accounts etc and identify ones which need a password reset (board isnt letting me do a ful pw global reset :/ ) 
+ 2) go onto on prem domain controller and do an AD review there for suspicious accounts etc
+ 3) when both o365 and on prem AD have been reviewed, put the AD sync back into prod but with active sync disabled
+ 4) then when the server appears to be working, re-enable activesync
+ Is there something i'm missing?
+    submitted by    /u/Apprehensive-Pie-599  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Creating PV from logical partition]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zfvlpj/creating_pv_from_logical_partition/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zfvlpj/creating_pv_from_logical_partition/"/>
+        <updated>2022-12-08T10:49:22.000Z</updated>
+        <summary type="html"><![CDATA[Hi all, in my experience I have always created primary partitions like /dev/sda1, dev/sda2 . then create PV and extend VG, now we see all 4 primary partitions are used already. I wonder what if we create dev/sda5 as extended partition and then create PV and extend VG. Anything we should worry about?
+    submitted by    /u/sukur55  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[External HDD partition scheme changed after connecting from Ubuntu back to Windows]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zfvj2n/external_hdd_partition_scheme_changed_after/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zfvj2n/external_hdd_partition_scheme_changed_after/"/>
+        <updated>2022-12-08T10:44:52.000Z</updated>
+        <summary type="html"><![CDATA[Hello. I hope you can give me a pointer on what is happening. The setup is simple. I have a 4000GB Hdd, connected to a W10 client with a USB docking station. Disk management shows the correct size and one huge NTFS schema. Then i connect the HDD to an Ubuntu Client to transfer some data. Ubuntu can mount NTFS and i can copy/edit my data. After moving 400gb to the client i disconnect and put the hdd back into the other docking station at my windows client. Now NTFS seems to be gone and i see 2 non allocated parts with discmanager. 1. 2048GB 2. 1678.02GB
+ I guess something on the Ubuntu client isn't liking NTFS and erase/change my partition table?
+    submitted by    /u/c7coby  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New user questions regarding AAD and Intune integration]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zfvips/new_user_questions_regarding_aad_and_intune/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zfvips/new_user_questions_regarding_aad_and_intune/"/>
+        <updated>2022-12-08T10:44:19.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/Bhaelros  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ssmtp: Authorization failed when trying to send mail]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zfv8mo/ssmtp_authorization_failed_when_trying_to_send/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zfv8mo/ssmtp_authorization_failed_when_trying_to_send/"/>
+        <updated>2022-12-08T10:27:34.000Z</updated>
+        <summary type="html"><![CDATA[hi, sorry if its been asked before.. went through google for an hour and found no working solution...
+ i am trying to send mails through linux ubuntu terminal. installed ssmtp successfully and configured the /etc/ssmtp/ssmtp.conf like these:
+ https://imgur.com/a/CfwCxhy
+ i checked multiple times and my mail and password is correct... a i missing something in the conf file or is it something else?
+ after using ssmtp [mygmail@gmail.com](mailto:mygmail@gmail.com),
+ subject
+ text
+ cntrl + d
+ i get the output:
+ ssmtp: Authorization failed (535 5.7.8 https://support.google.com/mail/?p=BadCredentials f6-20020a0560001b0600b002415dd45320sm21342772wrz.112 - gsmtp)
+ please help. thanks
+    submitted by    /u/michaelovsky5  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[For anyone using Hybrid Azure AD, how long can a device be away from the local network?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zfv8b8/for_anyone_using_hybrid_azure_ad_how_long_can_a/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zfv8b8/for_anyone_using_hybrid_azure_ad_how_long_can_a/"/>
+        <updated>2022-12-08T10:27:03.000Z</updated>
+        <summary type="html"><![CDATA[I’ve worked quite a bit with on-prem and Azure setups but am currently planning my first Hybrid rollout. Trying to find a number on how long a device can go without having line of sight to the internal network/DC. 
+ With 140ish users we have one, maybe two devices that will spend more than a day at a time away from the office (up to a month I’m told is the max) so we would like to avoid the complexities of configuring Intune and having different management protocols for these two devices but want to make sure how long they can go without checking in. They will still have internet connectivity so they are able to check in with Azure but not the internal network in our current plan. 
+ Any advice is appreciated, I can’t find anything about this online and want to make sure we have everything in order before we get too deep in this project.
+ Edit for clarification: right this moment these users are using local users and manually copying/emailing any files that need saved in company file shares, etc. We are working to make sure all devices are managed and users and company data are both controlled while having access to company resources when on the road.
+    submitted by    /u/ytown91  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Thickheaded Thursday - December 08, 2022]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/zfurv7/thickheaded_thursday_december_08_2022/</id>
