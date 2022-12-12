@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-12T10:13:57.025Z</updated>
+    <updated>2022-12-12T11:10:24.769Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How to configure ssl to work correctly with docker]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zjvi3t/how_to_configure_ssl_to_work_correctly_with_docker/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zjvi3t/how_to_configure_ssl_to_work_correctly_with_docker/"/>
+        <updated>2022-12-12T10:49:16.000Z</updated>
+        <summary type="html"><![CDATA[I created a self-signed SSL certificate and it only works on port 80 I then tried to replace it with a lets-encrypt certificate. I deleted all of the certificate files, I have tried to restart docker and the daemon. I have also tried to remove the override file that I tried to put the certificate in. To create the self-signed SSL certificate, I used the following script https://raw.githubusercontent.com/AlexisAhmed/DockerSecurityEssentials/main/Docker-TLS-Authentication/secure-docker-daemon.sh
+ For the override.conf file within /etc/systemd/system/docker.service.d/override.conf I used the following configuration: [Service]ExecStart=ExecStart=/usr/bin/dockerd -D -H unix:///var/run/docker.sock --tlsverify --tlscert=/home//.docker/server-cert.pem --tlscacert=/home//.docker/ca.pem --tlskey=/home//.docker/server-key.pem -H tcp://0.0.0.0:2376
+ I have restarted the docker container but that has also failed to work.
+ Furthermore, I have also deleted the ssl certificate so I have no idea where it is pulling the old on from.
+    submitted by    /u/MembershipNo9626  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare appreciation post]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zjvc52/cloudflare_appreciation_post/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zjvc52/cloudflare_appreciation_post/"/>
+        <updated>2022-12-12T10:40:59.000Z</updated>
+        <summary type="html"><![CDATA[I work in a wholesaler company with only 40 employees. We still do a lot of IT things though (Develop our own software. Host this software. we also have our own small datacenter) and have around 6 IT employees.
+ In my quest to find a good but still affordable ZTNA and a WAF solution i stumbled upon Cloudflare. It instantly became my favorite IT company in existence.
+ Their core belief is "security is something that should be accessible to everyone" and they really actually mean it. If you don't know them, let me introduce you to some of their services
+  
+The fastest DNS resolver in the world with high regards on privacy (free)
+ DNS for families that protect against malware and/or adult content (free)
+ An extremely affordable ZTNA solution (free for <50 users)
+ A WAF, SSL/TLS and DDoS Protection (free for standard usecases)
+  
+Thank you cloudflare, for making security available to everyone, especially for private usage and small companies too.
+ I highly recommend cloudflare, and I am absolutely stunned by their portfolio, their generosity and what they do. Great stuff!
+    submitted by    /u/Zaapfe  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[If I reboot the the firewall my network becomes unstable, why?]]></title>
         <id>https://www.reddit.com/r/networking/comments/zjuqes/if_i_reboot_the_the_firewall_my_network_becomes/</id>
@@ -27271,22 +27308,6 @@ Are we correct to state that with this Cisco is committing themselves to keep IO
  I checked the permissions, recreated the shared drive, Move the files over to another partition and recreated network drive. Same issue...
  Anyone seen this before?
     submitted by    /u/wireditfellow  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MFA Conditional Access Query - Client's Manufacturing Personnel Can't Use Mobile Phone on Factory Floor]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/ytl3x6/mfa_conditional_access_query_clients/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/ytl3x6/mfa_conditional_access_query_clients/"/>
-        <updated>2022-11-12T23:02:26.000Z</updated>
-        <summary type="html"><![CDATA[Evening All, 
- I'll be up front and honest that I'm not that great at all with Azure AD, I do more front-line and hardware support, but I've been given a project to get MFA implemented for a client company due to Microsoft switching off basic authentication globally. 
- The plan was originally to enable MFA for all of the users, with small batches being done on a daily basis but I've found out this evening that 80+ manufacturing users that work on the factory floor can't use mobile phones for health & safety rules, so that throws out using MS Authenticator App.
- I know from the initial reading of the various guides online, that there is the possibility of using conditional access but I'm not 100% sure how to get this setup, as all of the systems onsite use a single DHCP scope so setting it up for a specific IP address range wouldn't be a viable option.
- Any suggestions would be greatly appreciated, and if I find a solution myself I'll update my post. :-)
-    submitted by    /u/TheAuldMan76  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
