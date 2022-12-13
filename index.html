@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-13 datetime="2022-12-13T11:19:46.000Z">2022-12-13</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-13 datetime="2022-12-13T11:19:46.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-13 datetime="2022-12-13T13:15:02.000Z">2022-12-13</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-13 datetime="2022-12-13T13:15:02.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,215 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkvhk3/weird_issue_with_some_of_our_onprem_ad_users_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">Weird Issue with some of our On-prem AD Users and 365?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkvhk3/weird_issue_with_some_of_our_onprem_ad_users_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi everyone,
+ So, long story short, we had an ask from our company to take our external contractor AD Users and run Enable-RemoteMailbox on them. We quickly found out that was not what should have been done and they should have had the command, Enable-MailUser run on them as they are external contractors and we simply want to have them as AD Users that have an external email address that mail is resolved to.
+ Okay, simple enough I thought. So, I went ahead and ran the following for each user that was affected:
+ Disable-RemoteMailbox -Identity  -Confirm:$false
+ Enable-MailUser -Identity  -ExternalEmailAddress 
+ We also wanted their Email field in the General tab of AD to match their UPN, so after running the above commands, AND before AAD sync happened (unfortunately) we updated their Email field to match that of their UPN. When we run the Enable-MailUser is makes their Email property their external email address. Well, that appears to have messed up those users where now On-prem they are showing as MailUsers, but in 365 they are showing still as a UserMailbox for RecipientType.
+ We are struggling to get this update on both ends. So far, I have tried taking one of the users and running Disable-MailUser, letting that sync over to 365 and then running Enable-MailUser again. No luck. I have tried having the user set up as a MailUser On-prem and then stop syncing them with 365. Once they are no longer synced, I then re-sync them, but again, no luck.
+ What&#x27;s even stranger is we noticed that when we disable them On-prem as a MailUser, and then re-sync them, one property keeps getting written back it would seem from 365 to On-prem...
+ Within the user&#x27;s proxyAddresses, one address shows up. The x500? I&#x27;m wondering if I am missing a step here or if something else needs to be updated for these users to finally sync up as a MailUser On-prem as well as in 365? Thanks everyone!
+    submitted by    /u/gpowersr  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;69
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkvegp/exchangeoutlook_365_issue/"
+                        open
+                      >
+                        <summary class="article-expander__title">Exchange/Outlook 365 Issue</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkvegp/exchangeoutlook_365_issue/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We recently went from an on-prem Exchange server to Microsoft 365. We still have On-Prem AD using AAD Connect to sync with 365. PC&#x27;s are a mix of Windows 10/11, all installed with Office 365. Whenever we have a new user logon, the system tries to load Outlook 2016 and connect to our old Exchange server (FYI, this is no longer turned on) My question is how does Windows try and load the 2016 version of something that isn&#x27;t installed and what setting do I need to turn off to stop it trying to connect to old Exchange?
+ All our DNS records are correct and pointing to 365. In the interim of swapping systems we had to have an Autodiscover GPO which is now deleted.
+ Any help appreciated
+    submitted by    /u/Huge-Cardiologist-67  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;68
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkv8w6/splitdns_with_same_domain_internal_external/"
+                        open
+                      >
+                        <summary class="article-expander__title">Split-DNS with same domain internal + external</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkv8w6/splitdns_with_same_domain_internal_external/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ I&#x27;ve inherited an AD with company.com as internal AD domain as well es external domain name. Right now the external records (e.g. www.company.com) are just placed inside the default &quot;company.com&quot; zone inside the AD DNS.
+ Is there currently any Best Practise way to keep external records automatically up2date inside the AD zone?
+ There might be some way to automate this with powershell (lookup external records and set internal records accordingly) but this feels a bit too hacky.
+ Best case would be to tell AD to lookup the records on the external DNS if the internal DNS does not have any records. As far as I understand by default AD doesn&#x27;t forward those requests since only the internal DNS is authoritative for &quot;company.com&quot;?
+ It&#x27;s probably not as simple as adding the external name server to &quot;Properties -&gt; Nameserver&quot; on the AD I guess?
+ Is there any way around this problem or do you just have to live with manually maintaining those external records on the internal DNS?
+ I&#x27;ve also seen you can do zone transfers from AD to a specific server. Could you instead do a zone transfer from external to internal? (Without it overwriting all the internal records)
+ Thanks!
+    submitted by    /u/cmrb_at  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;69
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkv7lc/script_sharing_audit_microsoft_teams_membership/"
+                        open
+                      >
+                        <summary class="article-expander__title">[Script sharing] Audit Microsoft Teams Membership Changes using PowerShell</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkv7lc/script_sharing_audit_microsoft_teams_membership/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/ehECEzcTye5hIbCajJPqZiL0AnKCg7Q_XzlJdj_KEEY.jpg?auto&#x3D;webp&amp;s&#x3D;d75a68857e56a5e9f74fa2008873edc44f57eb87" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Auditing Teams membership changes can help admins ensure that only authorized individuals have access to sensitive information. By regularly auditing membership changes, organizations can identify and address any potential security risks.
+ Since Audit log search has limited customization, I have written a PowerShell script to track Teams membership changes with advanced capabilities.
+ You can download the script from GitHub.
+ Script Highlights:
+  
+The script uses modern authentication to retrieve audit logs.
+ Exports all the teams’ membership changes
+ The script has a filter to track private channel membership changes separately.
+ It has a filter to monitor shared channel membership changes separately.
+ Allows you to generate an audit report for a custom period.
+ It can be executed with an MFA enabled account too.
+ Exports report results to CSV file.
+ Automatically installs the EXO V2 module (if not installed already) upon your confirmation.
+ The script is scheduler-friendly. I.e., Credentials can be passed as a parameter instead of saved inside the script.
+  
+If you have any suggestion or additional requirements, I will update them in the next version.
+    submitted by    /u/Embry_  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;68
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkuz49/any_method_of_setting_domain_cached_credentials/"
+                        open
+                      >
+                        <summary class="article-expander__title">Any method of setting domain cached credentials to automatically expire</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkuz49/any_method_of_setting_domain_cached_credentials/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi guys, there are a few posts on the web regarding this question, but all of them are 5+ years old without any usable solution...
+ To keep it short- We have Active Directory in our company, with 300+ machines, of which ~50 are laptops.
+ We have bad practices in the company - most of the laptop users don&#x27;t bring laptops to the company (thus not connecting to the company LAN, not updating group policy, and some custom software) for long periods of time.
+ The general idea is to FORCE them to bring laptops to the company once in a while (every 15-20 days) by automatically expiring their cached domain credentials after X days or X logins. Since M$ till this day doesn&#x27;t offer any option to achieve this, I am wondering if maybe somebody had a similar situation and if there maybe is some workaround to achieve this?
+ We have VPN (Checkpoint), but also can&#x27;t force users to use it (also no option to keep it constantly connected- which by itself is also bad idea because there would be a lot of incoming traffic on servers).
+    submitted by    /u/danthe1988  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;70
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkuyes/how_would_an_unpatched_windows_system_get_infected/"
+                        open
+                      >
+                        <summary class="article-expander__title">How would an unpatched Windows system get infected?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkuyes/how_would_an_unpatched_windows_system_get_infected/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Sorry if this doesn&#x27;t belong here but hoping you guys can help me out. I want to use Win8.1 on an old PC, without patching it and it will even lose support at the start of next year. Now, I don&#x27;t have anything important on it and really isn&#x27;t a big deal whatever happens to the system, but I would like to know what even could happen. How does an unpatched system get infected if I&#x27;m just on the internet using an updated browser? Everywhere I read that missing security updates is a big no no, but I want to know how. If I used trusted updated software, don&#x27;t download and run anything shady, how does my system get infected then? Can my browser security just get bypasses or what?
+    submitted by    /u/UnlikelyWoodpecker  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;70
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkuhxb/do_have_any_data_leak_protection_software_to/"
+                        open
+                      >
+                        <summary class="article-expander__title">Do have any Data Leak protection Software to recommended ?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkuhxb/do_have_any_data_leak_protection_software_to/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Good Days to every sysadmin 
+ We recently monitor the Data leak Protection product to avoid confidential data leaked out to company. 
+ Do any one have recommended and share with me the feedback as well? 
+ Thank you
+    submitted by    /u/hamsterray  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;66
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zkug0l/linux_sysprep_vmware/"
+                        open
+                      >
+                        <summary class="article-expander__title">Linux sysprep / VMware</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zkug0l/linux_sysprep_vmware/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,Is there sysprep software that allow me to make a suse linux template so that I can set the IP and hostname of the machine while creating a VM from the template?
+    submitted by    /u/Inevitable_Spirit_77  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;67
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46318,8 +46527,8 @@ My initial thoughts are to go with an x86 appliance such as the FW6D from Protec
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3685353960">
-        <time id="build-timestamp" datetime="2022-12-13T12:24:00.046Z">2022-12-13T12:24:00.046Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3685797831">
+        <time id="build-timestamp" datetime="2022-12-13T13:20:37.509Z">2022-12-13T13:20:37.509Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
