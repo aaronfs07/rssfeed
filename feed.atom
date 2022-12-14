@@ -2,10 +2,107 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-14T11:10:19.478Z</updated>
+    <updated>2022-12-14T12:24:15.650Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Does a Windows PC always send a DHCP RENEW after waking from sleep?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zlphca/does_a_windows_pc_always_send_a_dhcp_renew_after/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zlphca/does_a_windows_pc_always_send_a_dhcp_renew_after/"/>
+        <updated>2022-12-14T12:18:10.000Z</updated>
+        <summary type="html"><![CDATA[Hey guys
+ Tbh, not sure if this is a Windows or Networking question .. but here goes.
+ TL;DR - Is it normal for a DHCP server to show ~150 Request/Ack entries for a given PC for a given day?
+ .
+ On my workplace I'm investigating some logs from a specific PC, where I need to crossreference the timestamps with the DHCP server's communication with said PC.
+ The PC was on-prem on the day in question, talking directly with the company DHCP server (although there might have been a firewall in between the LAN networks).
+ When I ask my colleague to pull the DHCP logs (from Logpoint) for one 24-hour period, I get somewhere close to 150 DHCP entries in the log, with a ca. 50/50 distribution of DHCPREQUEST and DHCPACK (status: RENEW).
+ The initial DORA process on the PC's boot looks fine - it's all the entries after that which puzzle me. The PC retains the same IP address all day.
+ Lease time is 4 hours, I'm told (can't confirm on my own PC, working from home right now).
+ .
+ My first thought is that the user closes the lid many times during the day, and the PC will negotiate a renew on the lease when it wakes again. However, my colleagues insist that the PC should retain its IP when going to sleep (not hibernate). My Google skills fall short when trying to confirm this.
+ But even if the PC renegotiates every time - it would mean that the user closes their lid every 10 minutes or so during an entire day, and opens it immediately afterwards. This seems extremely unlikely.
+ I've asked the DHCP guys at work about this, but they're out of office these days, so I'm trying here meanwhile.
+ Does anyone have an input as to why the Logpoint logs show ~150 DHCP entries for a single PC during one work day (assuming normal user behaviour)?
+    submitted by    /u/TerjiD  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Installing LAPS MGMT Tools on a Domain Controller]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zlpfm0/installing_laps_mgmt_tools_on_a_domain_controller/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zlpfm0/installing_laps_mgmt_tools_on_a_domain_controller/"/>
+        <updated>2022-12-14T12:15:43.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ Other posts with comments where some say never to install it on a DC, some say its fine/doesnt matter as long as you configure it correctly. And documentation says install it on a mgmt computer and then the GPO extension says to typically where you edit GPOs which would be on a DC.
+ I want to use LAPS only for clients. And setting the GPO to apply only on clients OU.
+ Installing LAPS MGMT tool on a DC shouldnt be any problems right? As long as I dont set the LAPS settings GPO to apply for the DC.
+ Thanks!
+    submitted by    /u/S3cc  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Konica Minolta Web Interface - your opinions? [rant]]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zlp40t/konica_minolta_web_interface_your_opinions_rant/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zlp40t/konica_minolta_web_interface_your_opinions_rant/"/>
+        <updated>2022-12-14T11:59:35.000Z</updated>
+        <summary type="html"><![CDATA[My opinion is that it's really not that great.
+ Often times the translations are jsut ridicolous, you better know if they like \ or / to seperate directories (there are generally no examples or guidance given near or above fields), you have to tick a box to enter a host-name instead of an ip adress (i guess a regex check was too hard for them to code), there is no search option despite the massive number of settings and submenus and it's just on the slow side, i could go on...
+ Am I just stupid? How do you feel about Konica Minolta's web interface?
+ What are your favourite printers that "just work" and need no guesswork on what to enter 
+ Have a nice day all!
+    submitted by    /u/DaRederBua  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The guy who presided over an empire of EoL, badly configured crap for 12 years suddenly cares about getting things updated and configured properly now it's someone elses problem...anyone else come across this?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zlopxw/the_guy_who_presided_over_an_empire_of_eol_badly/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zlopxw/the_guy_who_presided_over_an_empire_of_eol_badly/"/>
+        <updated>2022-12-14T11:37:51.000Z</updated>
+        <summary type="html"><![CDATA[This seems like an oddly niche circumstance but I've seen this several times in my career and it's happened again today. 
+ So there was a dude who was the architect for one of our environments, probably built it all and did most of the BAU work on it as far as i can tell for several years.
+ This guy has now gone to another job somewhere in security in the same business and handed over BAU support to us. This environment is ancient, all running on EoL hardware, out of support operating systems, lights up like a Christmas tree on pen-test reports that we've been trying to address for six months now...although at this stage it would be easier to just turn the whole lot off, politically that's not really possible. 
+ Out of all the business guess who is most up our arse about fixing the absolute fuck load of problems with this environment? Yep, the guy that has looked after it for twelve fucking years and addressed absolutely none of the problems.
+ I've never wanted to punch someone through a monitor so much in my career.
+    submitted by    /u/mrcoffee83  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Could there be MDM on Apple Watch?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zlonlf/could_there_be_mdm_on_apple_watch/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zlonlf/could_there_be_mdm_on_apple_watch/"/>
+        <updated>2022-12-14T11:34:11.000Z</updated>
+        <summary type="html"><![CDATA[My employer provided an Apple Watch. I would be pairing to my own IOS device and using my personal Apple ID. Is there any chance there is MDM on the Apple Watch itself? When I google, I only ever see MDM on laptops and cellphones.
+    submitted by    /u/throwitoff12908  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How do websites know DNS request source IP ?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zlof5z/how_do_websites_know_dns_request_source_ip/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zlof5z/how_do_websites_know_dns_request_source_ip/"/>
+        <updated>2022-12-14T11:20:26.000Z</updated>
+        <summary type="html"><![CDATA[https://www.doileak.com/classic.html
+    submitted by    /u/RedditNoobie777  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Which Cables for LAN - removing old cables for new ones]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/zlo8es/which_cables_for_lan_removing_old_cables_for_new/</id>
@@ -27800,54 +27897,6 @@ Wifi 6 router supporting HTTP/S server functionality and
 My initial thoughts are to go with an x86 appliance such as the FW6D from Protectli, though I wanted to get your thoughts before I made a decision. 
  Thanks in advance!!
     submitted by    /u/mcfck  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Is there a source I can use to learn the ABCs of fiber network design?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yvh25w/is_there_a_source_i_can_use_to_learn_the_abcs_of/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yvh25w/is_there_a_source_i_can_use_to_learn_the_abcs_of/"/>
-        <updated>2022-11-15T00:04:43.000Z</updated>
-        <summary type="html"><![CDATA[I am helping in designing a fiber network for a roadway tech project. There is backhaul, ring topography, edge compute, cameras, radars, etc. in this project
- I have a kindergarten experience in Fiber and I need to have a high-level understanding on
- - picking the most suitable fiber cable
- - understanding ring topography
- - understanding underground splicing
- - estimating fiber pay items, and qtys (i.e., fiber length, splice cabinets, pigtails, jumpers, patch panels, etc.)
- all in all, I am looking for fiber optic design for dummies kinda course/source
-    submitted by    /u/Cavan_2035  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BGP Prepend Outbound Based on Inbound Received Community String]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yvgbso/bgp_prepend_outbound_based_on_inbound_received/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yvgbso/bgp_prepend_outbound_based_on_inbound_received/"/>
-        <updated>2022-11-14T23:32:47.000Z</updated>
-        <summary type="html"><![CDATA[Is it possible to prepend outbound to BGP neighbor based on the value of a received community string from that neighbor?
- For example, if neighbor 10.10.10.10 send me the community string 5555:1, I want to prepend all routes to that neighbor with my AS.
- The use case is so that individual neighbors can influence the path they take to get to some shared network resources.
-    submitted by    /u/pedrotheterror  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Been out of the game for a while]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yvg6gs/been_out_of_the_game_for_a_while/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yvg6gs/been_out_of_the_game_for_a_while/"/>
-        <updated>2022-11-14T23:26:25.000Z</updated>
-        <summary type="html"><![CDATA[Last couple jobs were at a large regional ISP. I mostly did the capacity maintenances for the edge aggregation routers to the core, via ROADM. I’d add and drop fiber links from the ring, add the configurations for the new interfaces in IOS-XR, write the MOP, sometimes order equipment and deploy it to a hub, and either ran the maintenance or scheduled it to a overnight guy to do for me. 
- I also did new turn-ups of E-BGP peers on the CRS-16, and helped manage the core route reflectors. We were first escalation for outages as well. 
- I left work for FMLA reasons and my confidence is low. Most jobs are enterprise and not sure what to expect really. It’s hard for me to remember some topics I knew inside and out. Managed primary the underlay transport but did some MPLS L2VPN, L3VPN, and VRF stuff for enterprise BGP peering.
- Anyone have any tricks or tips to quickly catch myself back up? I find re-reading material I’ve already read to be difficult. It’s like the information is in the back of my head and the moment I read it again it becomes boring.
- Also having trouble finding interviews. I used to get several lined up and competing offers. Barely even getting responses from company recruiters. Often passed up and never even spoken too.
-    submitted by    /u/ChaosInMind  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
