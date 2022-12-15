@@ -2,10 +2,172 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-15T13:20:57.170Z</updated>
+    <updated>2022-12-15T14:11:35.149Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Is Kerberos authentication encrypted out of the box?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zmlz6h/is_kerberos_authentication_encrypted_out_of_the/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zmlz6h/is_kerberos_authentication_encrypted_out_of_the/"/>
+        <updated>2022-12-15T14:10:16.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I use many services that realize authentication via LDAP, in the course of the thought to eventually aim for LDAPS authentication I was wondering if authentication against the Active Directory for accessing a Windows machine that is a member of the domain is encrypted out of the box or does it need to have a PKI server too?
+    submitted by    /u/Infamous_Low_5267  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cisco ISE Posturing on Windows and VMWare Hosts]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zmludi/cisco_ise_posturing_on_windows_and_vmware_hosts/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zmludi/cisco_ise_posturing_on_windows_and_vmware_hosts/"/>
+        <updated>2022-12-15T14:04:18.000Z</updated>
+        <summary type="html"><![CDATA[My security team wants to implement ISE Posturing on Servers (WIndows Servers/VMWare Hosts) while I think it is a great idea for EUC devices I can't see the need for servers - can the Reddit brain trust here help my understanding please or give me some good arguements to counter back with?
+    submitted by    /u/CaptainZhon  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LDAPS on Windows Server 2019, certificate chain issue]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zmloa3/ldaps_on_windows_server_2019_certificate_chain/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zmloa3/ldaps_on_windows_server_2019_certificate_chain/"/>
+        <updated>2022-12-15T13:57:10.000Z</updated>
+        <summary type="html"><![CDATA[I started to migrate from unencrypted LDAP to LDAPs. The certificate was installed on our DC via
+ 1. mmc -> Add Snap-in -> Certificates -> Services -> ADDS -> NTDS Personal
+ When i check the installation with
+ 2. openssl s_client -connect dc<dot>domain<dot>tld -showcerts
+ it returns
+ 3. Verify return code: 21 (unable to verify the first certificate)
+ Where do i have to put the Intermediate and Root certificates for Windows to deliver them when a LDAPs request occurs?
+ I have build a certificate chain like i would with our Exchange certificate but that did not work either. When imported via step one, the chain is split up in the console and the issuers certificate is listed separate.
+ Picture for clarification: Certificate Snap-in
+ ​
+ Any help would be appreciated.
+    submitted by    /u/haffhase  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Update to .Net Framework 4.8 via SCCM - Error 0x80004005]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zmlldg/update_to_net_framework_48_via_sccm_error/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zmlldg/update_to_net_framework_48_via_sccm_error/"/>
+        <updated>2022-12-15T13:53:32.000Z</updated>
+        <summary type="html"><![CDATA[Howdy Folks,
+ I'm trying to install .Net Framework 4.8.4115.0 via sccm as (install - required) it failed with error general 16389 "Past due - will be retired". When digging deep to read "dd_ndp48-x86-x64-allos-enu_decompression_log.txt" in Windows\Temp folder, I found this below, which is very strange for me :(
+ But if you make it available, and press install, It'll work.
+ and I must install it silently without bothering 250 users to do by them self. 
+ Detection method are both (Install & Version) under (HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full)
+ Could you assist me , please?
+ [12/14/2022, 14:40:4] === Logging started: 2022/12/14 14:40:04 ===
+ [12/14/2022, 14:40:4] Executable: C:\windows\ccmcache\4s\Files\ndp48-x86-x64-allos-enu.exe v4.8.4115.0
+ [12/14/2022, 14:40:4] --- logging level: standard ---
+ [12/14/2022, 14:40:4] Successfully bound to the ClusApi.dll
+ [12/14/2022, 14:40:4] Error 0x800706d9: Failed to open the current cluster
+ [12/14/2022, 14:40:4] Cluster drive map: ''
+ [12/14/2022, 14:40:4] Considering drive: 'C:\'...
+ [12/14/2022, 14:40:4] Drive 'C:\' has been selected as the largest fixed drive
+ [12/14/2022, 14:40:4] Directory 'C:\d81f1db17198625330\' has been selected for file extraction
+ [12/14/2022, 14:40:4] Extracting files to: C:\d81f1db17198625330\
+ [12/14/2022, 14:40:4] Error 0x80004005: Failed to extract all files out of box container #0.
+ [12/14/2022, 14:40:4] Error 0x80004005: Failed to extract
+ [12/14/2022, 14:40:4] Exiting with result code: 0x80004005
+ [12/14/2022, 14:40:4] === Logging stopped: 2022/12/14 14:40:04 ===
+ ​
+ Kr,
+    submitted by    /u/Passion_to_learn  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bizarre Ethernet socket issue]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zmlj7z/bizarre_ethernet_socket_issue/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zmlj7z/bizarre_ethernet_socket_issue/"/>
+        <updated>2022-12-15T13:50:35.000Z</updated>
+        <summary type="html"><![CDATA[I have a Cat6 run. One end has ethernet connector (B) other end, a connector, configured as B. Works fine. However I've recently attached one end to a ethernet wall socket, configured as B. When testing, wire 1 fails. I've tried everything, changing the socket, re-seating the cable etc. but I can overcome wire 1 failure when attached to a socket vs a connector. Any ideas?
+    submitted by    /u/xCyanideee  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I personally like the clicking of Cherry MX Blues]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zmldft/i_personally_like_the_clicking_of_cherry_mx_blues/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zmldft/i_personally_like_the_clicking_of_cherry_mx_blues/"/>
+        <updated>2022-12-15T13:42:55.000Z</updated>
+        <summary type="html"><![CDATA[Follow sysadmins,
+ What is your daily keyboard driver?
+ I understand that some don't, but what's the problem about it? To me it's like a mechanical clock.
+ Watching a colleague get frustrated by the noise coming from another desk and I don't mind it one bit. Like people genuinely dislike the clicky clicky? Tactile feedback is where it's at. As a sysadmin I would love to have one myself in the office.
+ I do like old mechanical typewriters (Smith Corona) as well - something like this https://www.amazon.com/Qwerkywriter-Typewriter-Inspired-Mechanical-Wireless/dp/B01KM6EJOY
+ Or a decent IBM model M
+    submitted by    /u/ukitern2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dell server keys]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zml6rp/dell_server_keys/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zml6rp/dell_server_keys/"/>
+        <updated>2022-12-15T13:33:35.000Z</updated>
+        <summary type="html"><![CDATA[Excuse my ignorance. lol But I haven't bought a new Dell server since the Rx10 series (so R610, R710, etc) and have two new R650's. Did Dell do away with the place to stick the server keys in the bezel or did they move it somewhere else? 
+ Thanks,
+    submitted by    /u/SmoothRunnings  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sanity check on AD/Kerberos login flow]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zml65p/sanity_check_on_adkerberos_login_flow/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zml65p/sanity_check_on_adkerberos_login_flow/"/>
+        <updated>2022-12-15T13:32:44.000Z</updated>
+        <summary type="html"><![CDATA[So lets say I have two domains that trust each other, A and B. The domain controllers for A and B have a network path to each other, but the client machines in domains A and B can only talk to their local DC.
+ If a user in domain A wants to sign into machine A1 with their domain B credentials, will this work if A1 cannot talk to a DC in domain B? Will the request go to domain controller A and then be authenticated against B from there?
+    submitted by    /u/Deliveranc3  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Repeatedly getting error 10048 and 10055 after a short while of runtime.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zml3mt/repeatedly_getting_error_10048_and_10055_after_a/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zml3mt/repeatedly_getting_error_10048_and_10055_after_a/"/>
+        <updated>2022-12-15T13:29:22.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ ​
+ I'm getting the two windows errors 10048 and 10055 on Windows 10 after a short while of runtime indicating that the listening address is already in use or no more sockets are available.
+ ​
+ I tried the following solution found on the Net: Increasing MaxUserPort under: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+ But that doesn't help.
+ ​
+ Also listing the opened Ports via netstat -a -b or tcpview.exe and trying to kill suspicious processes does not help. I have killed dozens of processes, but nothing helps and I failed to identify a bad process.
+ Also there are not too many open listening sockets less than 50 maybe, so there is no way that the number of allowed sockets is maxed out. But still the system won't allow me to listen to any new socket, or any random port claiming that the address or socket is already in use or no buffer space is available to open any new connections.
+ ​
+ Only thing that helps is to restart the system and wait for the problem to occur again, which can happen within an hour or maybe work several hours for the error to occur.
+ ​
+ I'm out of ideas. The system was running fine for months and now this problem is bugging me since a few weeks without finding a solution that avoids a restart.
+ Anyone has experience with these errors and has any suggestions beyond what I have already tried and mentioned above?
+ The system is an I7 11th gen with 64GB of RAM running updated Windows 10.
+ Thanks for the Help!
+    submitted by    /u/Spam00r  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How much work is entailed in rolling out a fiber optic network?]]></title>
         <id>https://www.reddit.com/r/networking/comments/zmkv3m/how_much_work_is_entailed_in_rolling_out_a_fiber/</id>
@@ -27913,72 +28075,6 @@ Federated Single Sign-On issue. After further investigation we have identified a
         <updated>2022-11-16T04:44:08.000Z</updated>
         <summary type="html"><![CDATA[Im trying to find the best way to setup a site to site vpn using two unifi gateways. The problem is one gateway is behind starlink so it has cgnat. What is the best solution for this? Is it possible with just the unifi gateways or will another piece of equipment need to be involved. Thanks!
     submitted by    /u/Green_Ad_7962  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Open Wifi with AD security groups for devices]]></title>
-        <id>https://www.reddit.com/r/networking/comments/ywgj04/open_wifi_with_ad_security_groups_for_devices/</id>
-        <link href="https://www.reddit.com/r/networking/comments/ywgj04/open_wifi_with_ad_security_groups_for_devices/"/>
-        <updated>2022-11-16T02:02:41.000Z</updated>
-        <summary type="html"><![CDATA[Is it possible to have create a open wifi and authenticate using AD security groups for computers ?
-    submitted by    /u/brockey01  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Disable ip_flow_start and ip_flow_end logs?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/ywgcgr/how_to_disable_ip_flow_start_and_ip_flow_end_logs/</id>
-        <link href="https://www.reddit.com/r/networking/comments/ywgcgr/how_to_disable_ip_flow_start_and_ip_flow_end_logs/"/>
-        <updated>2022-11-16T01:54:29.000Z</updated>
-        <summary type="html"><![CDATA[Hello! I work for an MSSP and we have a customer sending Meraki logs to our SIEM - they have enabled FLOWS, which results in a "flow" type as well as a "ip_flow_start" and "ip_flow_end". The flow log contains more data than the start and end logs - it has the mac of the source, the outcome (allow or block)
- As far as I can tell, the only value of the start and end logs are calculating the elapsed time of a flow. However, there is no unique field that ties the two together, only the source and destination IP and port. 
- I don't think the SIEM has any rules that rely on the calculation of flow length - so I figured I should just turn these off to save the customer some $ on data ingestion costs.
- Has anyone ever disabled just the flow start/end logs? In the interface there is only the Flows role. Googling this tells me the customer may need to engage Cisco support in order to do this?
-    submitted by    /u/Unreasonable_Yam  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Project management in the enterprise]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/ywg5y6/project_management_in_the_enterprise/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/ywg5y6/project_management_in_the_enterprise/"/>
-        <updated>2022-11-16T01:45:58.000Z</updated>
-        <summary type="html"><![CDATA[Is it normal for enterprise sized companies 10k+ employees , 300+ IT staff not to have IT project managers? 
- I work in a 50,000+ employee company with projects galore and no IT project managers. Each IT person has projects where they are the lead on. I personally have 10 large projects to manage and it’s chaos. I get constantly pulled into other peoples project meetings while trying to pull what ever resources I can into my projects. This leads to a stupid amount of unproductive meetings, no ownership, and nothing getting done. 
- I’ve told my managers they need to get some project managers on board, but am met with looks of bewilderment. Is this standard operating procedure at most large organizations?
-    submitted by    /u/n3rdyone  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[DNS Ghost]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/ywg0nl/dns_ghost/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/ywg0nl/dns_ghost/"/>
-        <updated>2022-11-16T01:39:12.000Z</updated>
-        <summary type="html"><![CDATA[I have a machine on our network that will ping any host name you give and get a reply from some random IPv4 address. I can ping our firewall, www.google.com, or dddafdasdasd and it always come back as 4 replies from this IP address.
- I've not seen this before and trying to search for "why am I getting a successful ping" ins't helping. the issue seems to go away by rebooting the PC, but it has came back twice within a day or two. Anyone have any idea what to even check for?
-    submitted by    /u/fuzbuster83  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fiber conversion issues]]></title>
-        <id>https://www.reddit.com/r/networking/comments/ywfmfg/fiber_conversion_issues/</id>
-        <link href="https://www.reddit.com/r/networking/comments/ywfmfg/fiber_conversion_issues/"/>
-        <updated>2022-11-16T01:21:03.000Z</updated>
-        <summary type="html"><![CDATA[Hey everyone! I posted about this a couple months ago when I was trying to get the hardware, but now that I've had everything in my hands and have been trying to work with it, I'm stuck. I've literally been trying for 2 months. We currently have 2 TRENDnet TFC-110 MSTs that link our two buildings together using fiber. With the help of some others on Reddit, I purchased these two items (https://www.fs.com/products/11774.html and https://www.fs.com/products/43465.html). I got 3 of each to have backups in case one went bad. My Unifi switches recognize both SFP modules, but I cannot get the two switches to talk to each other with the fiber line that works just fine with the TRENDnet modules. Does anyone have ideas? I've tried everything I know (switching the fiber connections, restarting switches, changing cables/modules) and I'm stumped. Thanks!
-    submitted by    /u/gvzupko  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
