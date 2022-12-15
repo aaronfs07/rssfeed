@@ -22,11 +22,130 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-15 datetime="2022-12-15T11:08:34.000Z">2022-12-15</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-15 datetime="2022-12-15T11:08:34.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-15 datetime="2022-12-15T12:12:33.000Z">2022-12-15</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-15 datetime="2022-12-15T12:12:33.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/zmjm70/how_do_you_linux_guys_scale_openvpn/"
+                        open
+                      >
+                        <summary class="article-expander__title">How do you Linux guys scale OpenVPN?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zmjm70/how_do_you_linux_guys_scale_openvpn/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>OpenVPN is single threaded. Running multiple OpenVPN processes and assigning a public IP address to each one of them is a waste.
+ I come from BSD world where solution to the problem is rather simple. Socket flag SO_REUSEPORT_LB allows multiple OpenVPN processes to connect to a single socket that performs UDP load balancing.
+ Linux only comes with SO_REUSEPORT (without LB part). I had tried to think of a way to run multiple OpenVPN processes and came up with this
+  
+UDP proxy on a host (ha-proxy/nginx)
+ OpenVPN processes in a container behind UDP proxy
+ Each container peers with the host and announces its tun* interface (BGP, OSPF whatever. Or even a bunch of static routes on the host)
+  
+Looks like a lot of overhead. So how do you Linux guys scale OpenVPN?
+    submitted by    /u/ttl256  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/zmihj2/bgp_l2vpn_evpn_between_ios_xr_and_ios_xe_problem/"
+                        open
+                      >
+                        <summary class="article-expander__title">BGP L2VPN EVPN BETWEEN IOS XR AND IOS XE PROBLEM</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zmihj2/bgp_l2vpn_evpn_between_ios_xr_and_ios_xe_problem/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I&#x60;ve been doing this lab trying to figure out how to get through BGP EVPN l2vpn between IOS XE and IOS XR. Here&#x60;s the topology.
+ ​
+ ISR4431 PE ROUTER - ISR4451 P ROUTER - NCS540 PE ROUTER
+ ​
+ IGP being used is IS-IS, and segment routing is enabled. I have no problem doing bgp evpn l2vpn if its IOS XE to IOS XE, it works well, however in this case I need to get through it from an IOS XE device and IOS XR. I can see the mac of the ce1 and ce2 being advertise in the bridge-domain, however it wont ping between the vlan. Here is the config.
+ ​
+ ISR4431 - IOS XE l2vpn evpn instance 520 vlan-based bridge-domain 520 member GigabitEthernet0/0/0 service-instance 520 member evpn-instance 520 ! interface GigabitEthernet0/0/0 no ip address negotiation auto service instance 520 ethernet encapsul…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;77
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/zmha4y/use_my_public_ip_dynamic_as_a_proxy_in_second_pc/"
+                        open
+                      >
+                        <summary class="article-expander__title">Use my Public IP( Dynamic ) as a Proxy in second PC ?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zmha4y/use_my_public_ip_dynamic_as_a_proxy_in_second_pc/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/1-_ktvM-e11DlHuGA3LFwYk-IOzUWUkDERX5JZMnnfM.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;d12dca603b030ac609186f598819d18cb2eb400e" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>What do I need is my public IP to be used by the second PC as a Proxy.
+ My PC is using the dyanmic IP, provided by my ISP. Which automatically changes from time to time.
+ The Second PC need to use my PC as a Middelman, so that it can use my Public IP to access the Internet
+ Both PC will be using windows. Tried NO-ip, But got confused around the port forwarding stuff.
+ Please Help with Some guide , Software&#x27;s which can help me do this.
+ Things required to make this work?
+ This is What I need
+    submitted by    /u/amannarula77  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;74
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/zmdxcl/web_proxies/"
+                        open
+                      >
+                        <summary class="article-expander__title">Web proxies</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zmdxcl/web_proxies/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Are there any businesses out there strictly using web proxies for content inspection and ssl decryption. I’m curious as to what proxies are in use as I have a few businesses that need the decryption but are thinking that it might be more cost effective to go with a proxy as opposed to using a NGFW - currently running ASAs but looking to make the leap.
+ I remember Bluecoat back in the day but don’t think they are as popular as they once were.
+    submitted by    /u/HumanTickTac  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;74
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -38,6 +157,62 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zmjc3j/destroy_the_data_on_720_hdds_how/"
+                        open
+                      >
+                        <summary class="article-expander__title">Destroy the data on 720 HDDs how?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zmjc3j/destroy_the_data_on_720_hdds_how/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey sysadmins, 
+ I have been tasked with the great opportunity to destroy the data on 720 HDDs. I know. It&#x27;s really cool ...
+ I need to figure out a way to do it fast and secure. 
+ In the past I have been using DBAN, but I need to figure out a solution to do batches of 10 or even more HDDs at once. 
+ Any ideas what hardware is needed to achieve something like that? 
+ The HDDs need to be reused, so it&#x27;s just destroying the data on the drives that&#x27;s needed and not the drive itself. 
+ ​
+ Any suggestions or experience with such a task is welcome.
+ ​
+ Thank you!
+    submitted by    /u/FullReaction3273  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zmjavo/application_patching_cloud_solution_with_winget/"
+                        open
+                      >
+                        <summary class="article-expander__title">Application Patching - cloud solution with Winget, Chocolatey or custom repos - any success stories?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zmjavo/application_patching_cloud_solution_with_winget/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/vhzBubZf-d8NR66iDsTFTKSu6g9dzuVFKOiU5ZPsNsE.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;890519eb169fcccd2d71ba323f6dd57fe9800f80" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I&#x27;m exploring different solutions for application patching on Windows endpoints (around 300 right now, different locations). My aim being:
+ * Easy to deploy and manage * Unattended, low maintenance * 100% cloud based * Cover already installed software, not only new deployments * Focus on low priority apps, like 7zip or web browsers. Business critical software is managed via Intune, will stay this way.
+ PDQ Deploy and alike won&#x27;t really work due to cloud requirement. I also don&#x27;t want to rely on Intune for every app, updating it manually. I don&#x27;t have the manpower at the moment. This is a one man department with MSP support. I need this to be smart and automated, while keeping it inhouse within my control. Something I can setup and let it do the work, like with Lenovo Commercial Vantage for firmware and driver updates on our fleet of devices.
+ I&#x27;m looking into winget right now, specifically this spin on it: Winget AutoUpdate - WAU and I really like it so far, testing in the lab. Of course I know it won&#x27;t cover 100% of my inventory, but it works really well for what it is. About to launch small pilot with 10 users.
+ I&#x27;d love to hear about your experiences, some success stories (if any!). Have you tried similar approaches, be it Winget or Chocolatey? Do you maintain your own repos, deploy software this way?
+    submitted by    /u/rngaccount123  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;65
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -370,96 +545,6 @@ VLAN ID
     submitted by    /u/swagglord420  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;66
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/zmihj2/bgp_l2vpn_evpn_between_ios_xr_and_ios_xe_problem/"
-                        open
-                      >
-                        <summary class="article-expander__title">BGP L2VPN EVPN BETWEEN IOS XR AND IOS XE PROBLEM</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zmihj2/bgp_l2vpn_evpn_between_ios_xr_and_ios_xe_problem/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello,
- I&#x60;ve been doing this lab trying to figure out how to get through BGP EVPN l2vpn between IOS XE and IOS XR. Here&#x60;s the topology.
- ​
- ISR4431 PE ROUTER - ISR4451 P ROUTER - NCS540 PE ROUTER
- ​
- IGP being used is IS-IS, and segment routing is enabled. I have no problem doing bgp evpn l2vpn if its IOS XE to IOS XE, it works well, however in this case I need to get through it from an IOS XE device and IOS XR. I can see the mac of the ce1 and ce2 being advertise in the bridge-domain, however it wont ping between the vlan. Here is the config.
- ​
- ISR4431 - IOS XE l2vpn evpn instance 520 vlan-based bridge-domain 520 member GigabitEthernet0/0/0 service-instance 520 member evpn-instance 520 ! interface GigabitEthernet0/0/0 no ip address negotiation auto service instance 520 ethernet encapsul…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;77
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/zmha4y/use_my_public_ip_dynamic_as_a_proxy_in_second_pc/"
-                        open
-                      >
-                        <summary class="article-expander__title">Use my Public IP( Dynamic ) as a Proxy in second PC ?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zmha4y/use_my_public_ip_dynamic_as_a_proxy_in_second_pc/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/1-_ktvM-e11DlHuGA3LFwYk-IOzUWUkDERX5JZMnnfM.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;d12dca603b030ac609186f598819d18cb2eb400e" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>What do I need is my public IP to be used by the second PC as a Proxy.
- My PC is using the dyanmic IP, provided by my ISP. Which automatically changes from time to time.
- The Second PC need to use my PC as a Middelman, so that it can use my Public IP to access the Internet
- Both PC will be using windows. Tried NO-ip, But got confused around the port forwarding stuff.
- Please Help with Some guide , Software&#x27;s which can help me do this.
- Things required to make this work?
- This is What I need
-    submitted by    /u/amannarula77  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/zmdxcl/web_proxies/"
-                        open
-                      >
-                        <summary class="article-expander__title">Web proxies</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zmdxcl/web_proxies/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Are there any businesses out there strictly using web proxies for content inspection and ssl decryption. I’m curious as to what proxies are in use as I have a few businesses that need the decryption but are thinking that it might be more cost effective to go with a proxy as opposed to using a NGFW - currently running ASAs but looking to make the leap.
- I remember Bluecoat back in the day but don’t think they are as popular as they once were.
-    submitted by    /u/HumanTickTac  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -46577,29 +46662,6 @@ CISA and FBI are releasing this Cyb…</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/ywdu7h/rant_wednesday/"
-                        open
-                      >
-                        <summary class="article-expander__title">Rant Wednesday!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/ywdu7h/rant_wednesday/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>It&#x27;s Wednesday! Time to get that crap that&#x27;s been bugging you off your chest! In the interests of spicing things up a bit around here, we&#x27;re going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
- There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that&#x27;s been pissing you off or getting on your nerves!
- Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;65
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46659,30 +46721,6 @@ CISA and FBI are releasing this Cyb…</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/ywd39n/decompressing/"
-                        open
-                      >
-                        <summary class="article-expander__title">Decompressing...</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/ywd39n/decompressing/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Holy hell... Does it take anyone else nearly an hour after ending the work day to stop racing? I feel like I&#x27;m in this never ending loop of a constant barrage of user issues that result in derailing my entire week. 
- What does everyone do to minimize lost time on BS user issues? I feel like my important tasks are always put on the back burner due to the constant interruptions. 
- I&#x27;m a one man show. I do have the support of a MSP available and their usage approved, but is that additional expense warranted? It&#x27;s a small company but I&#x27;m managing their entire tech stack. So far I haven&#x27;t used the MSP for the help desk. Should I start? 
- I&#x27;m trying to juggle important changes to systems that will impact the efficiencies elsewhere in the organization but I end up spending my day diagnosing a printer that a user disconnected. WTH?
-    submitted by    /u/hystericallymad  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;72
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46690,8 +46728,8 @@ CISA and FBI are releasing this Cyb…</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3703533463">
-        <time id="build-timestamp" datetime="2022-12-15T11:10:11.029Z">2022-12-15T11:10:11.029Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3704050039">
+        <time id="build-timestamp" datetime="2022-12-15T12:23:53.766Z">2022-12-15T12:23:53.766Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

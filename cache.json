@@ -340,6 +340,26 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zmjc3j/destroy_the_data_on_720_hdds_how/",
+          "author": null,
+          "description": "Hey sysadmins, \n I have been tasked with the great opportunity to destroy the data on 720 HDDs. I know. It's really cool ...\n I need to figure out a way to do it fast and secure. \n In the past I have been using DBAN, but I need to figure out a solution to do batches of 10 or even more HDDs at once. \n Any ideas what hardware is needed to achieve something like that? \n The HDDs need to be reused, so it's just destroying the data on the drives that's needed and not the drive itself. \n ​\n Any suggestions or experience with such a task is welcome.\n ​\n Thank you!\n    submitted by    /u/FullReaction3273  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zmjc3j/destroy_the_data_on_720_hdds_how/",
+          "publishedOn": "2022-12-15T11:57:14.000Z",
+          "wordCount": 19361,
+          "title": "Destroy the data on 720 HDDs how?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zmjavo/application_patching_cloud_solution_with_winget/",
+          "author": null,
+          "description": "I'm exploring different solutions for application patching on Windows endpoints (around 300 right now, different locations). My aim being:\n * Easy to deploy and manage * Unattended, low maintenance * 100% cloud based * Cover already installed software, not only new deployments * Focus on low priority apps, like 7zip or web browsers. Business critical software is managed via Intune, will stay this way.\n PDQ Deploy and alike won't really work due to cloud requirement. I also don't want to rely on Intune for every app, updating it manually. I don't have the manpower at the moment. This is a one man department with MSP support. I need this to be smart and automated, while keeping it inhouse within my control. Something I can setup and let it do the work, like with Lenovo Commercial Vantage for firmware and driver updates on our fleet of devices.\n I'm looking into winget right now, specifically this spin on it: Winget AutoUpdate - WAU and I really like it so far, testing in the lab. Of course I know it won't cover 100% of my inventory, but it works really well for what it is. About to launch small pilot with 10 users.\n I'd love to hear about your experiences, some success stories (if any!). Have you tried similar approaches, be it Winget or Chocolatey? Do you maintain your own repos, deploy software this way?\n    submitted by    /u/rngaccount123  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zmjavo/application_patching_cloud_solution_with_winget/",
+          "publishedOn": "2022-12-15T11:55:09.000Z",
+          "wordCount": 19393,
+          "title": "Application Patching - cloud solution with Winget, Chocolatey or custom repos - any success stories?",
+          "imageUrl": "https://external-preview.redd.it/vhzBubZf-d8NR66iDsTFTKSu6g9dzuVFKOiU5ZPsNsE.jpg?auto=webp&v=enabled&s=890519eb169fcccd2d71ba323f6dd57fe9800f80"
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/zmijd9/initial_it_setup_with_ms365_what_to_adjust/",
           "author": null,
           "description": "A colleague and I are starting a food tech company and acquired a Microsoft 365 Business Standard subscription (we are used to the MS environment and do not want to use GSuite; mainly due to Teams and OneNote) for us. Additionally, we intend to grow next year by 3-5 employees.\n I have already set up emails with our custom domains and activated MFA.However, I am no system admin and therefore I need to know what other settings with that license should be adjusted from a security/privacy point of view.\n The admin console is quite overwhelming and I am interested in your insights on what I should tackle urgently.\n    submitted by    /u/Suspicious_Ad9730  \n [link]   [comments]",
@@ -12568,16 +12588,6 @@
           "wordCount": 19416,
           "title": "DNS Ghost",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/ywd39n/decompressing/",
-          "author": null,
-          "description": "Holy hell... Does it take anyone else nearly an hour after ending the work day to stop racing? I feel like I'm in this never ending loop of a constant barrage of user issues that result in derailing my entire week. \n What does everyone do to minimize lost time on BS user issues? I feel like my important tasks are always put on the back burner due to the constant interruptions. \n I'm a one man show. I do have the support of a MSP available and their usage approved, but is that additional expense warranted? It's a small company but I'm managing their entire tech stack. So far I haven't used the MSP for the help desk. Should I start? \n I'm trying to juggle important changes to systems that will impact the efficiencies elsewhere in the organization but I end up spending my day diagnosing a printer that a user disconnected. WTH?\n    submitted by    /u/hystericallymad  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/ywd39n/decompressing/",
-          "publishedOn": "2022-11-15T23:28:21.000Z",
-          "wordCount": 21510,
-          "title": "Decompressing...",
-          "imageUrl": null
         }
       ]
     },
@@ -12863,6 +12873,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/zmjm70/how_do_you_linux_guys_scale_openvpn/",
+          "author": null,
+          "description": "OpenVPN is single threaded. Running multiple OpenVPN processes and assigning a public IP address to each one of them is a waste.\n I come from BSD world where solution to the problem is rather simple. Socket flag SO_REUSEPORT_LB allows multiple OpenVPN processes to connect to a single socket that performs UDP load balancing.\n Linux only comes with SO_REUSEPORT (without LB part). I had tried to think of a way to run multiple OpenVPN processes and came up with this\n  \nUDP proxy on a host (ha-proxy/nginx)\n OpenVPN processes in a container behind UDP proxy\n Each container peers with the host and announces its tun* interface (BGP, OSPF whatever. Or even a bunch of static routes on the host)\n  \nLooks like a lot of overhead. So how do you Linux guys scale OpenVPN?\n    submitted by    /u/ttl256  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/zmjm70/how_do_you_linux_guys_scale_openvpn/",
+          "publishedOn": "2022-12-15T12:12:33.000Z",
+          "wordCount": 22493,
+          "title": "How do you Linux guys scale OpenVPN?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/zmihj2/bgp_l2vpn_evpn_between_ios_xr_and_ios_xe_problem/",
           "author": null,
@@ -18051,16 +18071,6 @@
           "publishedOn": "2022-11-16T00:43:32.000Z",
           "wordCount": 19294,
           "title": "AnyConnect prompting for user credentials on every reboot. Profile is not set to connect while on untrusted domain.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/ywdu7h/rant_wednesday/",
-          "author": null,
-          "description": "It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. \n There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!\n Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/ywdu7h/rant_wednesday/",
-          "publishedOn": "2022-11-16T00:00:10.000Z",
-          "wordCount": 19408,
-          "title": "Rant Wednesday!",
           "imageUrl": null
         }
       ]

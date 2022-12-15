@@ -2,10 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-15T11:10:11.113Z</updated>
+    <updated>2022-12-15T12:23:53.877Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How do you Linux guys scale OpenVPN?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zmjm70/how_do_you_linux_guys_scale_openvpn/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zmjm70/how_do_you_linux_guys_scale_openvpn/"/>
+        <updated>2022-12-15T12:12:33.000Z</updated>
+        <summary type="html"><![CDATA[OpenVPN is single threaded. Running multiple OpenVPN processes and assigning a public IP address to each one of them is a waste.
+ I come from BSD world where solution to the problem is rather simple. Socket flag SO_REUSEPORT_LB allows multiple OpenVPN processes to connect to a single socket that performs UDP load balancing.
+ Linux only comes with SO_REUSEPORT (without LB part). I had tried to think of a way to run multiple OpenVPN processes and came up with this
+  
+UDP proxy on a host (ha-proxy/nginx)
+ OpenVPN processes in a container behind UDP proxy
+ Each container peers with the host and announces its tun* interface (BGP, OSPF whatever. Or even a bunch of static routes on the host)
+  
+Looks like a lot of overhead. So how do you Linux guys scale OpenVPN?
+    submitted by    /u/ttl256  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Destroy the data on 720 HDDs how?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zmjc3j/destroy_the_data_on_720_hdds_how/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zmjc3j/destroy_the_data_on_720_hdds_how/"/>
+        <updated>2022-12-15T11:57:14.000Z</updated>
+        <summary type="html"><![CDATA[Hey sysadmins, 
+ I have been tasked with the great opportunity to destroy the data on 720 HDDs. I know. It's really cool ...
+ I need to figure out a way to do it fast and secure. 
+ In the past I have been using DBAN, but I need to figure out a solution to do batches of 10 or even more HDDs at once. 
+ Any ideas what hardware is needed to achieve something like that? 
+ The HDDs need to be reused, so it's just destroying the data on the drives that's needed and not the drive itself. 
+ ​
+ Any suggestions or experience with such a task is welcome.
+ ​
+ Thank you!
+    submitted by    /u/FullReaction3273  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Application Patching - cloud solution with Winget, Chocolatey or custom repos - any success stories?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zmjavo/application_patching_cloud_solution_with_winget/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zmjavo/application_patching_cloud_solution_with_winget/"/>
+        <updated>2022-12-15T11:55:09.000Z</updated>
+        <summary type="html"><![CDATA[I'm exploring different solutions for application patching on Windows endpoints (around 300 right now, different locations). My aim being:
+ * Easy to deploy and manage * Unattended, low maintenance * 100% cloud based * Cover already installed software, not only new deployments * Focus on low priority apps, like 7zip or web browsers. Business critical software is managed via Intune, will stay this way.
+ PDQ Deploy and alike won't really work due to cloud requirement. I also don't want to rely on Intune for every app, updating it manually. I don't have the manpower at the moment. This is a one man department with MSP support. I need this to be smart and automated, while keeping it inhouse within my control. Something I can setup and let it do the work, like with Lenovo Commercial Vantage for firmware and driver updates on our fleet of devices.
+ I'm looking into winget right now, specifically this spin on it: Winget AutoUpdate - WAU and I really like it so far, testing in the lab. Of course I know it won't cover 100% of my inventory, but it works really well for what it is. About to launch small pilot with 10 users.
+ I'd love to hear about your experiences, some success stories (if any!). Have you tried similar approaches, be it Winget or Chocolatey? Do you maintain your own repos, deploy software this way?
+    submitted by    /u/rngaccount123  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Initial IT Setup with MS365 - what to adjust]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/zmijd9/initial_it_setup_with_ms365_what_to_adjust/</id>
@@ -27823,35 +27880,6 @@ Federated Single Sign-On issue. After further investigation we have identified a
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rant Wednesday!]]></title>
-        <id>https://www.reddit.com/r/networking/comments/ywdu7h/rant_wednesday/</id>
-        <link href="https://www.reddit.com/r/networking/comments/ywdu7h/rant_wednesday/"/>
-        <updated>2022-11-16T00:00:10.000Z</updated>
-        <summary type="html"><![CDATA[It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
- There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!
- Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Decompressing...]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/ywd39n/decompressing/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/ywd39n/decompressing/"/>
-        <updated>2022-11-15T23:28:21.000Z</updated>
-        <summary type="html"><![CDATA[Holy hell... Does it take anyone else nearly an hour after ending the work day to stop racing? I feel like I'm in this never ending loop of a constant barrage of user issues that result in derailing my entire week. 
- What does everyone do to minimize lost time on BS user issues? I feel like my important tasks are always put on the back burner due to the constant interruptions. 
- I'm a one man show. I do have the support of a MSP available and their usage approved, but is that additional expense warranted? It's a small company but I'm managing their entire tech stack. So far I haven't used the MSP for the help desk. Should I start? 
- I'm trying to juggle important changes to systems that will impact the efficiencies elsewhere in the organization but I end up spending my day diagnosing a printer that a user disconnected. WTH?
-    submitted by    /u/hystericallymad  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
