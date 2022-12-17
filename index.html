@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-17 datetime="2022-12-17T13:07:10.000Z">2022-12-17</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-17 datetime="2022-12-17T13:07:10.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-17 datetime="2022-12-17T13:40:12.000Z">2022-12-17</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-17 datetime="2022-12-17T13:40:12.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,40 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zo6iba/o365_managementroleassignment/"
+                        open
+                      >
+                        <summary class="article-expander__title">O365 ManagementRoleAssignment</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zo6iba/o365_managementroleassignment/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi
+ I was following come Cisco instructions to setup unified messaging to use OAuth2 authentication. Part of the process was to assign the Application Impersonation management role to the unified messaging services account. 
+ I ran this command 
+ New-ManagementRoleAssignment -Name:  -Role:ApplicationImpersonation -User:&#x27;  &#x27;
+ After running, I ran a Get-ManagementRoleAssignment and I can see the role name and account, but under RoleAssigneeName and EffectiveUserName , I&#x27;m getting what looks like an object ID instead of what I was expecting to see...which was an email address. 
+ I&#x27;m note sure if it was because I didn&#x27;t use the quotes for the account...I used User: 
+ instead of User:&#x27;  &#x27;
+ I&#x27;m an extreme newbie when it comes to powershell so I&#x27;ve got the following questions:
+  
+Is this even a problem?
+ is it the lack of quote marks that caused this?
+ Are there commands I can run to change these to the email address?
+  
+Thanks in advance.
+    submitted by    /u/kbbtech  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;82
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -45675,68 +45709,12 @@ This assumes you have a fresh device without any existing config
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/yy7t13/azure_vpn_gateway_not_creating_bgp_session_using/"
-                        open
-                      >
-                        <summary class="article-expander__title">Azure VPN Gateway not Creating BGP session using APIPA Peer IP</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yy7t13/azure_vpn_gateway_not_creating_bgp_session_using/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;ve been experiencing an odd issue where we&#x27;ve configured a S2S tunnel using the Azure VPN Gateway. We are attempting to peer this to our on prem firewalls. The IPSec tunnel is up successfully without issues, but we&#x27;re attempting to perform BGP peering with our on-prem firewall using APIPA addressing. We&#x27;ve configured the Azure connection, VPN gateway and local network gateway to use the approved APIPA ranges that Microsoft allows for custom APIPA addressing. In addition to this, the on-prem firewall peer is using the correct BGP APIPA addressing scheme in this design that is supported within the Azure documentation.
- From the packet captures, we&#x27;re seeing that even though it&#x27;s configured properly on the Azure VPN gateway with the APIPA addressing on both peers, the IPSec connection and o…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;64
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/yy7spb/cisco_switch_cant_reach_fortigate/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cisco switch can’t reach FortiGate</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/yy7spb/cisco_switch_cant_reach_fortigate/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>It’s a simple router on a stick setup. Switch is in L2 mode and the FG has 2 SVIs (Vlan 1 and 100). Port on switch is trunked, and default gateway is the FG. The FG is replacing a 2901 router, which I converted the config almost identical over to the FG. Works on the router but once I hook up to the FG, it dies. 
- Im thinking it’s a problem with the Virtual Interfaces being tagged with vlan 1 but I’m not sure. Seeing if anyone else ran into this.
-    submitted by    /u/NetSecGuru94  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;61
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3720199493">
-        <time id="build-timestamp" datetime="2022-12-17T13:13:40.377Z">2022-12-17T13:13:40.377Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3720388522">
+        <time id="build-timestamp" datetime="2022-12-17T14:09:33.569Z">2022-12-17T14:09:33.569Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

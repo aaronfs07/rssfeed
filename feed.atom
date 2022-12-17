@@ -2,10 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-17T13:13:40.477Z</updated>
+    <updated>2022-12-17T14:09:33.651Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[O365 ManagementRoleAssignment]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/zo6iba/o365_managementroleassignment/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/zo6iba/o365_managementroleassignment/"/>
+        <updated>2022-12-17T13:40:12.000Z</updated>
+        <summary type="html"><![CDATA[Hi
+ I was following come Cisco instructions to setup unified messaging to use OAuth2 authentication. Part of the process was to assign the Application Impersonation management role to the unified messaging services account. 
+ I ran this command 
+ New-ManagementRoleAssignment -Name: <RoleName> -Role:ApplicationImpersonation -User:' <Account> '
+ After running, I ran a Get-ManagementRoleAssignment and I can see the role name and account, but under RoleAssigneeName and EffectiveUserName , I'm getting what looks like an object ID instead of what I was expecting to see...which was an email address. 
+ I'm note sure if it was because I didn't use the quotes for the account...I used User: <Account>
+ instead of User:' <Account> '
+ I'm an extreme newbie when it comes to powershell so I've got the following questions:
+  
+Is this even a problem?
+ is it the lack of quote marks that caused this?
+ Are there commands I can run to change these to the email address?
+  
+Thanks in advance.
+    submitted by    /u/kbbtech  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Struggling to understand "Advanced Share permissions" Synology]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/zo5xm3/struggling_to_understand_advanced_share/</id>
@@ -27307,30 +27332,6 @@ For requirement #1,2 we have a few branch offices with a decent amount of turn o
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure VPN Gateway not Creating BGP session using APIPA Peer IP]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yy7t13/azure_vpn_gateway_not_creating_bgp_session_using/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yy7t13/azure_vpn_gateway_not_creating_bgp_session_using/"/>
-        <updated>2022-11-18T01:44:11.000Z</updated>
-        <summary type="html"><![CDATA[I've been experiencing an odd issue where we've configured a S2S tunnel using the Azure VPN Gateway. We are attempting to peer this to our on prem firewalls. The IPSec tunnel is up successfully without issues, but we're attempting to perform BGP peering with our on-prem firewall using APIPA addressing. We've configured the Azure connection, VPN gateway and local network gateway to use the approved APIPA ranges that Microsoft allows for custom APIPA addressing. In addition to this, the on-prem firewall peer is using the correct BGP APIPA addressing scheme in this design that is supported within the Azure documentation.
- From the packet captures, we're seeing that even though it's configured properly on the Azure VPN gateway with the APIPA addressing on both peers, the IPSec connection and o…]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cisco switch can’t reach FortiGate]]></title>
-        <id>https://www.reddit.com/r/networking/comments/yy7spb/cisco_switch_cant_reach_fortigate/</id>
-        <link href="https://www.reddit.com/r/networking/comments/yy7spb/cisco_switch_cant_reach_fortigate/"/>
-        <updated>2022-11-18T01:43:42.000Z</updated>
-        <summary type="html"><![CDATA[It’s a simple router on a stick setup. Switch is in L2 mode and the FG has 2 SVIs (Vlan 1 and 100). Port on switch is trunked, and default gateway is the FG. The FG is replacing a 2901 router, which I converted the config almost identical over to the FG. Works on the router but once I hook up to the FG, it dies. 
- Im thinking it’s a problem with the Virtual Interfaces being tagged with vlan 1 but I’m not sure. Seeing if anyone else ran into this.
-    submitted by    /u/NetSecGuru94  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
