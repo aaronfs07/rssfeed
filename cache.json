@@ -320,6 +320,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zqp1h6/anyone_here_have_experience_running_hestia/",
+          "author": null,
+          "description": "^^ see title.\n I have a few servers with a conglomerate of control panels and want to test something else to see what's out there.\n I stumbled on VestaCP, but that project seems dead, Hestia Control Panel seems to be the fork of that, and has code commits on github as recently as two days ago.\n Anyone here able to give me an unbiased elevator-pitch like opinion on it? I have a server with openisp but postfix on it keeps giving me the odd grey hair, and it is overly complex to maintain IMO.\n Feedback will be massively appreciated.\n    submitted by    /u/quintinza  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zqp1h6/anyone_here_have_experience_running_hestia/",
+          "publishedOn": "2022-12-20T13:50:35.000Z",
+          "wordCount": 29747,
+          "title": "Anyone here have experience running Hestia Control Panel in a production environment?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zqozxr/extending_ad_schema_to_manage_exchange_attributes/",
+          "author": null,
+          "description": "Hello, I'm wondering if anyone has any thoughts or experience here before I jump down this rabbit hole.\n I'm in a ~80 user environment that has on-prem AD (probably not going away) that's using ADConnect to sync users to the cloud and O365/Exchange Online (for many years). Exchange has never been installed in this environment, so there are no Exchange attributes in AD.\n I have a few items I'd like to tackle (mostly cleaning up the GAL (hiding on prem DLs, hiding certain users), ability to add additional addresses to users) that seem they would be easier if I had the Exchange Attributes in AD. My understanding is I can just run \n XX:\\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema \n and that will give me the attributes I need, not install Exchange and I can do basic management from ADSI. I know I'll need to refresh the schema in ADConnect, and I know that for \"msExchHideFromAddressLists\" to populate, \"mailNickname\" needs to be populated an unique.\n Here are a few questions I've come up with\n  \nWill this overwrite anything in the cloud and 'break' existing mailboxes (stuff like legacyExchangeDN or X500 addresses)\n Should I continue with the installation of Exchange server for management purposes? If I go this route, do I need to set up Hybrid Mode? Or is 'just installing' Exchange enough?\n Am I muddling my environment by adding Exchange? Should I instead take alternate routes to accomplish these goals? (like use msDS-CloudExtensionAttribute custom sync rules) For what it's worth, if I installed Exchange, my plan would be to have it on a server that's only booted when doing management tasks, but otherwise not powered on.\n  \nI'm wondering if anyone else has gone down this path before, and curious what you've seen... most of my worry is in overwriting something that was custom set on the cloud for a sync'd user, though I know most parameters must be sync'd from on-prem.\n    submitted by    /u/_TheKnightMan_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zqozxr/extending_ad_schema_to_manage_exchange_attributes/",
+          "publishedOn": "2022-12-20T13:48:50.000Z",
+          "wordCount": 30204,
+          "title": "Extending AD Schema to manage Exchange Attributes in an environment that has been using O365 for 6+ years (but never had Exchange on-prem)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zqovul/batch_file_help/",
+          "author": null,
+          "description": "Greetings,\n ​\n I am trying to write a batch file that goes through a text file and for each line of the text file runs psexec net user command.\n ​\n So far I have the following\n ​\n @echo off setlocal EnableDelayedExpansion :: Reset file Type Nul >\"C:\\outputfile.txt\" for /F \"delims=\" %%a in (C:\\ip_addresses) do ( set Var1=\\\\%%a psexec.exe VAR1 net user COMMANDS_HERE >NUL 2>&1 If !errorlevel! equ 0 ( echo %%a Account-Created echo %%a Account-Created>>\"C:\\create-account.txt\" ) Else ( echo %%a Account-NOT-Created echo %%a Account-NOT-Created>>\"C:\\create-account.txt\" ) ) pause \n ​\n I am definitely getting the second part of the else statement because I can't figure out a way to add the \"\\\\\" to the %%a placeholder so that psexec executes on the target machine.\n ​\n I know the command I am running with psexec works without an issue as I have tested individually.\n ​\n I have to use this process or manually go and touch about 50+ machines ;-)\n ​\n I appreciate any input.\n ​\n Edit:\n Fixed formatting so my code was in code block format.\n ​\n Edit2:\n Powershell remote administration is not an option...I know, I would much rather use the fantastic tools supplied with Powershell.\n    submitted by    /u/Cloud_The_Stampede  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zqovul/batch_file_help/",
+          "publishedOn": "2022-12-20T13:44:04.000Z",
+          "wordCount": 27941,
+          "title": "batch file help",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/zqosq0/anyone_have_much_knowledge_on_dbeb_in_o365/",
+          "author": null,
+          "description": "I have been trying to troubleshoot an issue with a org user not receiving notification emails from our support system. In Mimecast the email bounces with an NDR 5.4.1 Recipient address rejected. At first I thought it was a problem with Mimecast but it seems this is the bounce you get when DBEB is rejecting the email. Now I didn't know much about it too be honest until the last few weeks. Microsoft support is useless. They just constantly refer me too their support page explaining DBEB. This user is replicated correctly within O365 from what I see, and our accepted domains are all set to authoritative. Besides that, I am convinced this support system sending these emails (amazonses) has the user on the account level suppression list due to the bounces, but I don't have access to this account to verify. Either way DBEB is the first barrier I need to make sure is not rejecting emails to valid addresses. Anyone have any ideas?\n    submitted by    /u/koalafied4-  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/zqosq0/anyone_have_much_knowledge_on_dbeb_in_o365/",
+          "publishedOn": "2022-12-20T13:40:15.000Z",
+          "wordCount": 29859,
+          "title": "Anyone have much knowledge on DBEB in O365?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/zqo6qo/exchange_license_for_shared_mailboxes_if_i_use_ms/",
           "author": null,
           "description": "After talking to an MS support rep, I now know I need a dedicated MS Defender for Office 365 license for every shared mailbox that benefits from the protection.\n However, I got mixed information regarding these shared mailboxes also needing an exchange license (I don't need any of the exchange features coming with the license).\n So my question is:\n Do I need an exchange online license and MDO licenses for each shared mailbox? Or is a MDO license enough?\n In case I need an exchange license, what happens if I run it without one?\n    submitted by    /u/Suspicious_Ad9730  \n [link]   [comments]",
@@ -12328,16 +12368,6 @@
           "wordCount": 20975,
           "title": "X3650 M1 Shuts Down",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/z0lxwc/mimecast_device_enrollment_not_sticking_for_apple/",
-          "author": null,
-          "description": "I have been running in circles for a bit and wanted to see if anyone else has had this same issue. Basic web links seem to work ok, but anything trying to redirect such as a teams meeting will trigger the \"please enter the code we emailed you to enroll this device\" routine for any unique meeting address. I saw some suggestions that disabling all the privacy/security features on the phones may resolve the issue, but it is not a great look to ask users to kneecap their own device security because we can't be bothered to fix our configuration.\n    submitted by    /u/Technical_Ruin_2355  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/z0lxwc/mimecast_device_enrollment_not_sticking_for_apple/",
-          "publishedOn": "2022-11-21T01:44:20.000Z",
-          "wordCount": 21708,
-          "title": "Mimecast device enrollment not sticking for apple devices?",
-          "imageUrl": null
         }
       ]
     },
@@ -12479,6 +12509,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/zqoevy/cisco_nexus_9knexus_dashboard_formerly_aci/",
+          "author": null,
+          "description": "Cisco is proposing a Nexus 9k environment backed by Nexus Dashboard to upgrade our horribly EOL 6509s. We originally were going to 7706s and then they EOLd those as well. My original plan to use VDCs on the 7706s appears to be dead.\n I'm pretty unfamiliar with ACI/Dashboard, but they're pushing this because I wanted to use VDCs, and they're saying I can do the same thing but with 'slices'. \n Additionally I can see us using VXLANs as well.\n WTF am I getting myself into? Managing Nexus at the cli is no problem for me, but selling my soul to a dashboard (one from Cisco at that) is something I'm wary about.\n Should I bail?\n Thanks.\n    submitted by    /u/krattalak  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/zqoevy/cisco_nexus_9knexus_dashboard_formerly_aci/",
+          "publishedOn": "2022-12-20T13:23:42.000Z",
+          "wordCount": 22686,
+          "title": "Cisco Nexus 9k/Nexus Dashboard (formerly ACI)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/zqocil/smallest_footprint_network_alerting/",
+          "author": null,
+          "description": "What I'm looking for might not exist, but I'm hoping /r/networking will have some recommendations for me.\n I'm looking for the smallest footprint network monitoring and alerting software available. I need to install it in *NIX. All I need is icmp/TCP checks on around 20 remote devices, and then email alerts if those aren't responding after a certain amount of time.\n I don't need a web interface, or graphing, or historical data. I'd even prefer to avoid installing mysql or any DB if possible.\n Does anything like this exist? I've used LibreNMS/Zabbix/icinga2/etc in the past and they are fantastic, but they are overkill for the needs I have on my current project.\n Maybe my best option is to throw together a crude bash script?\n Thanks in advance for any ideas you can send my way!\n    submitted by    /u/LearningSysAdmin987  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/zqocil/smallest_footprint_network_alerting/",
+          "publishedOn": "2022-12-20T13:20:58.000Z",
+          "wordCount": 22083,
+          "title": "Smallest Footprint Network Alerting",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/zqn6h8/n7k_mac_address_learning_issue/",
           "author": null,

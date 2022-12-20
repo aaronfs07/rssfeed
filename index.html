@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-20 datetime="2022-12-20T13:14:16.000Z">2022-12-20</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-20 datetime="2022-12-20T13:14:16.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-12-20 datetime="2022-12-20T13:50:35.000Z">2022-12-20</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-12-20 datetime="2022-12-20T13:50:35.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,125 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zqp1h6/anyone_here_have_experience_running_hestia/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone here have experience running Hestia Control Panel in a production environment?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zqp1h6/anyone_here_have_experience_running_hestia/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>^^ see title.
+ I have a few servers with a conglomerate of control panels and want to test something else to see what&#x27;s out there.
+ I stumbled on VestaCP, but that project seems dead, Hestia Control Panel seems to be the fork of that, and has code commits on github as recently as two days ago.
+ Anyone here able to give me an unbiased elevator-pitch like opinion on it? I have a server with openisp but postfix on it keeps giving me the odd grey hair, and it is overly complex to maintain IMO.
+ Feedback will be massively appreciated.
+    submitted by    /u/quintinza  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;99
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zqozxr/extending_ad_schema_to_manage_exchange_attributes/"
+                        open
+                      >
+                        <summary class="article-expander__title">Extending AD Schema to manage Exchange Attributes in an environment that has been using O365 for 6+ years (but never had Exchange on-prem)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zqozxr/extending_ad_schema_to_manage_exchange_attributes/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello, I&#x27;m wondering if anyone has any thoughts or experience here before I jump down this rabbit hole.
+ I&#x27;m in a ~80 user environment that has on-prem AD (probably not going away) that&#x27;s using ADConnect to sync users to the cloud and O365/Exchange Online (for many years). Exchange has never been installed in this environment, so there are no Exchange attributes in AD.
+ I have a few items I&#x27;d like to tackle (mostly cleaning up the GAL (hiding on prem DLs, hiding certain users), ability to add additional addresses to users) that seem they would be easier if I had the Exchange Attributes in AD. My understanding is I can just run 
+ XX:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareSchema 
+ and that will give me the attributes I need, not install Exchange and I can do basic management from ADSI. I know I&#x27;ll need to refresh the schema in ADConnect, and I know that for &quot;msExchHideFromAddressLists&quot; to populate, &quot;mailNickname&quot; needs to be populated an unique.
+ Here are a few questions I&#x27;ve come up with
+  
+Will this overwrite anything in the cloud and &#x27;break&#x27; existing mailboxes (stuff like legacyExchangeDN or X500 addresses)
+ Should I continue with the installation of Exchange server for management purposes? If I go this route, do I need to set up Hybrid Mode? Or is &#x27;just installing&#x27; Exchange enough?
+ Am I muddling my environment by adding Exchange? Should I instead take alternate routes to accomplish these goals? (like use msDS-CloudExtensionAttribute custom sync rules) For what it&#x27;s worth, if I installed Exchange, my plan would be to have it on a server that&#x27;s only booted when doing management tasks, but otherwise not powered on.
+  
+I&#x27;m wondering if anyone else has gone down this path before, and curious what you&#x27;ve seen... most of my worry is in overwriting something that was custom set on the cloud for a sync&#x27;d user, though I know most parameters must be sync&#x27;d from on-prem.
+    submitted by    /u/_TheKnightMan_  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;101
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zqovul/batch_file_help/"
+                        open
+                      >
+                        <summary class="article-expander__title">batch file help</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zqovul/batch_file_help/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Greetings,
+ ​
+ I am trying to write a batch file that goes through a text file and for each line of the text file runs psexec net user command.
+ ​
+ So far I have the following
+ ​
+ @echo off setlocal EnableDelayedExpansion :: Reset file Type Nul &gt;&quot;C:\outputfile.txt&quot; for /F &quot;delims&#x3D;&quot; %%a in (C:\ip_addresses) do ( set Var1&#x3D;\\%%a psexec.exe VAR1 net user COMMANDS_HERE &gt;NUL 2&gt;&amp;1 If !errorlevel! equ 0 ( echo %%a Account-Created echo %%a Account-Created&gt;&gt;&quot;C:\create-account.txt&quot; ) Else ( echo %%a Account-NOT-Created echo %%a Account-NOT-Created&gt;&gt;&quot;C:\create-account.txt&quot; ) ) pause 
+ ​
+ I am definitely getting the second part of the else statement because I can&#x27;t figure out a way to add the &quot;\\&quot; to the %%a placeholder so that psexec executes on the target machine.
+ ​
+ I know the command I am running with psexec works without an issue as I have tested individually.
+ ​
+ I have to use this process or manually go and touch about 50+ machines ;-)
+ ​
+ I appreciate any input.
+ ​
+ Edit:
+ Fixed formatting so my code was in code block format.
+ ​
+ Edit2:
+ Powershell remote administration is not an option...I know, I would much rather use the fantastic tools supplied with Powershell.
+    submitted by    /u/Cloud_The_Stampede  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;93
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zqosq0/anyone_have_much_knowledge_on_dbeb_in_o365/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone have much knowledge on DBEB in O365?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zqosq0/anyone_have_much_knowledge_on_dbeb_in_o365/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have been trying to troubleshoot an issue with a org user not receiving notification emails from our support system. In Mimecast the email bounces with an NDR 5.4.1 Recipient address rejected. At first I thought it was a problem with Mimecast but it seems this is the bounce you get when DBEB is rejecting the email. Now I didn&#x27;t know much about it too be honest until the last few weeks. Microsoft support is useless. They just constantly refer me too their support page explaining DBEB. This user is replicated correctly within O365 from what I see, and our accepted domains are all set to authoritative. Besides that, I am convinced this support system sending these emails (amazonses) has the user on the account level suppression list due to the bounces, but I don&#x27;t have access to this account to verify. Either way DBEB is the first barrier I need to make sure is not rejecting emails to valid addresses. Anyone have any ideas?
+    submitted by    /u/koalafied4-  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;100
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -586,6 +705,58 @@ Since this is the internet, I know I have to prevent &quot;just do X instead&quo
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/zqoevy/cisco_nexus_9knexus_dashboard_formerly_aci/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco Nexus 9k/Nexus Dashboard (formerly ACI)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zqoevy/cisco_nexus_9knexus_dashboard_formerly_aci/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Cisco is proposing a Nexus 9k environment backed by Nexus Dashboard to upgrade our horribly EOL 6509s. We originally were going to 7706s and then they EOLd those as well. My original plan to use VDCs on the 7706s appears to be dead.
+ I&#x27;m pretty unfamiliar with ACI/Dashboard, but they&#x27;re pushing this because I wanted to use VDCs, and they&#x27;re saying I can do the same thing but with &#x27;slices&#x27;. 
+ Additionally I can see us using VXLANs as well.
+ WTF am I getting myself into? Managing Nexus at the cli is no problem for me, but selling my soul to a dashboard (one from Cisco at that) is something I&#x27;m wary about.
+ Should I bail?
+ Thanks.
+    submitted by    /u/krattalak  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;76
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/zqocil/smallest_footprint_network_alerting/"
+                        open
+                      >
+                        <summary class="article-expander__title">Smallest Footprint Network Alerting</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zqocil/smallest_footprint_network_alerting/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>What I&#x27;m looking for might not exist, but I&#x27;m hoping /r/networking will have some recommendations for me.
+ I&#x27;m looking for the smallest footprint network monitoring and alerting software available. I need to install it in *NIX. All I need is icmp/TCP checks on around 20 remote devices, and then email alerts if those aren&#x27;t responding after a certain amount of time.
+ I don&#x27;t need a web interface, or graphing, or historical data. I&#x27;d even prefer to avoid installing mysql or any DB if possible.
+ Does anything like this exist? I&#x27;ve used LibreNMS/Zabbix/icinga2/etc in the past and they are fantastic, but they are overkill for the needs I have on my current project.
+ Maybe my best option is to throw together a crude bash script?
+ Thanks in advance for any ideas you can send my way!
+    submitted by    /u/LearningSysAdmin987  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;74
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -45177,27 +45348,6 @@ Setup
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/z0lxwc/mimecast_device_enrollment_not_sticking_for_apple/"
-                        open
-                      >
-                        <summary class="article-expander__title">Mimecast device enrollment not sticking for apple devices?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/z0lxwc/mimecast_device_enrollment_not_sticking_for_apple/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have been running in circles for a bit and wanted to see if anyone else has had this same issue. Basic web links seem to work ok, but anything trying to redirect such as a teams meeting will trigger the &quot;please enter the code we emailed you to enroll this device&quot; routine for any unique meeting address. I saw some suggestions that disabling all the privacy/security features on the phones may resolve the issue, but it is not a great look to ask users to kneecap their own device security because we can&#x27;t be bothered to fix our configuration.
-    submitted by    /u/Technical_Ruin_2355  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;72
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45205,8 +45355,8 @@ Setup
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3740845184">
-        <time id="build-timestamp" datetime="2022-12-20T13:17:40.605Z">2022-12-20T13:17:40.605Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3741253390">
+        <time id="build-timestamp" datetime="2022-12-20T14:11:48.748Z">2022-12-20T14:11:48.748Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
