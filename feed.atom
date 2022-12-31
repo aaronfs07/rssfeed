@@ -2,10 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2022-12-31T09:10:44.367Z</updated>
+    <updated>2022-12-31T10:11:12.225Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Possible to consolidate 5 x ISR G2's into 1 x ASR, if all 5 ISR's are DMVPN spokes to same DMVPN cloud?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/zzqdj8/possible_to_consolidate_5_x_isr_g2s_into_1_x_asr/</id>
+        <link href="https://www.reddit.com/r/networking/comments/zzqdj8/possible_to_consolidate_5_x_isr_g2s_into_1_x_asr/"/>
+        <updated>2022-12-31T09:36:27.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I have a good sized DMVPN environment with approximately 100 spokes. One of these locations, happens to be my office.
+ My office in this case, has 5 x WAN links, all of which today are VDSL-class 100Mbps lines.
+ My ISR's here, are 2951 HSEC+ K9 with the ISM accelerator.
+ Performance is satisfactory for 100Mbps circuits, however there are some issues:
+  
+I am replacing the VDSL links with 3 x Fiber links, each of which is 1Gbps down, 100Mbps up.
+ The machines are getting old, and my facility is the only one that must have aes256 tunnels, hence IOS 'up2date' is very important here, the 2951 is now eol.
+ If I can cut down on physical equipment I will be happy
+  
+Downstream of the ISR's (dmvpn spokes) I use ASA5585-X's with WAN traffic zones for load balancing. Each ISR has it's own transit network with it's own /29, and therefore the ASA sees each ISR's downlink as a separate WAN
+ All of this today, works very well, I could say that I'm very satisfied.
+ However, with the new year coming, I need to make changes to match the new WAN links that are inbound.
+ So, my question:
+ Is it possible for me to purchase say a modern ASR, link 4, 5, say 6 WAN links to it directly (route to internet direct), and then with that single ASR, join my DMVPN cloud?
+ Consider that the single ASR, will have a single serial number, hence a single certificate, and I'm trying to join DMVPN with a single ASR as "multiple spokes"
+ The reason for this is that each WAN link needs to be encrypted by way of dmvpn, such that the transit downlink to the ASA is encrypted. The ASA knows only that he sees 4-5 WAN links, which are ultimately DMVPN spokes
+ Thank you for any feedback
+    submitted by    /u/evs9000  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Lenovo Manufacturer Bios Password? - Enabling Secure Boot]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/zzoytk/lenovo_manufacturer_bios_password_enabling_secure/</id>
@@ -25034,30 +25063,6 @@ Because of the 2 domains I use the linked AD accounts, but again, that has not b
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cisco XR model-driven development, am I doing this right?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/za0pw7/cisco_xr_modeldriven_development_am_i_doing_this/</id>
-        <link href="https://www.reddit.com/r/networking/comments/za0pw7/cisco_xr_modeldriven_development_am_i_doing_this/"/>
-        <updated>2022-12-01T21:39:19.000Z</updated>
-        <summary type="html"><![CDATA[I am trying to build a sub interface on our Cisco XR like this (cli):
- interface HundredGigE0/0/0/0.3106 description test vrf testvrf ipv4 address 10.10.10.0 255.255.255.254 encapsulation dot1q 3106 
- Seems straightforward enough, but I have been down the yang road before and its actually not as straightforward as I would think.
- How does one go about actually building a netconf xml based yang model for this? From what I understand you need to determine which yang structures should be used to build your xml netconf from. I found that the openconfig interface yang model does everything I need except applying a vrf to the interface. Then I found Cisco-IOS-XR-ifmgr-cfg, however this yang model has way more settings its not very clear how I use this model properly to create the above interface…]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Thursday Afternoon Update | 12.1.22]]></title>
-        <id>7555acf4-b25f-4210-90e0-7c1e9d3253e1</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2022-12-01T21:33:33.000Z</updated>
-        <summary type="html"><![CDATA[Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
-Pearl Source: Get 20% off your first order with promo code MORNING WIRE: https://thepearlsource.com/]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
         </author>
     </entry>
 </feed>

@@ -11946,24 +11946,6 @@
             "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/e1da99c8-b227-4357-9616-8a1bfa3969b5/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=e1da99c8-b227-4357-9616-8a1bfa3969b5&feed=WCb5SgYj"
           },
           "imageUrl": null
-        },
-        {
-          "id": "7555acf4-b25f-4210-90e0-7c1e9d3253e1",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. \nPearl Source: Get 20% off your first order with promo code MORNING WIRE: https://thepearlsource.com/",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2022-12-01T21:33:33.000Z",
-          "wordCount": null,
-          "title": "Thursday Afternoon Update | 12.1.22",
-          "itunes": {
-            "duration": "00:04:42"
-          },
-          "enclosure": {
-            "length": "4516580",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/d5fe7c1c-8d6a-4733-87cf-bf4fc0e44dab/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=d5fe7c1c-8d6a-4733-87cf-bf4fc0e44dab&feed=WCb5SgYj"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -11972,6 +11954,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/zzqdj8/possible_to_consolidate_5_x_isr_g2s_into_1_x_asr/",
+          "author": null,
+          "description": "Hello,\n I have a good sized DMVPN environment with approximately 100 spokes. One of these locations, happens to be my office.\n My office in this case, has 5 x WAN links, all of which today are VDSL-class 100Mbps lines.\n My ISR's here, are 2951 HSEC+ K9 with the ISM accelerator.\n Performance is satisfactory for 100Mbps circuits, however there are some issues:\n  \nI am replacing the VDSL links with 3 x Fiber links, each of which is 1Gbps down, 100Mbps up.\n The machines are getting old, and my facility is the only one that must have aes256 tunnels, hence IOS 'up2date' is very important here, the 2951 is now eol.\n If I can cut down on physical equipment I will be happy\n  \nDownstream of the ISR's (dmvpn spokes) I use ASA5585-X's with WAN traffic zones for load balancing. Each ISR has it's own transit network with it's own /29, and therefore the ASA sees each ISR's downlink as a separate WAN\n All of this today, works very well, I could say that I'm very satisfied.\n However, with the new year coming, I need to make changes to match the new WAN links that are inbound.\n So, my question:\n Is it possible for me to purchase say a modern ASR, link 4, 5, say 6 WAN links to it directly (route to internet direct), and then with that single ASR, join my DMVPN cloud?\n Consider that the single ASR, will have a single serial number, hence a single certificate, and I'm trying to join DMVPN with a single ASR as \"multiple spokes\"\n The reason for this is that each WAN link needs to be encrypted by way of dmvpn, such that the transit downlink to the ASA is encrypted. The ASA knows only that he sees 4-5 WAN links, which are ultimately DMVPN spokes\n Thank you for any feedback\n    submitted by    /u/evs9000  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/zzqdj8/possible_to_consolidate_5_x_isr_g2s_into_1_x_asr/",
+          "publishedOn": "2022-12-31T09:36:27.000Z",
+          "wordCount": 21783,
+          "title": "Possible to consolidate 5 x ISR G2's into 1 x ASR, if all 5 ISR's are DMVPN spokes to same DMVPN cloud?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/zzluam/what_are_yall_using_for_oob_management/",
           "author": null,
@@ -16480,16 +16472,6 @@
           "publishedOn": "2022-12-01T22:24:51.000Z",
           "wordCount": 21630,
           "title": "I feel like a bureaucrat….",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/za0pw7/cisco_xr_modeldriven_development_am_i_doing_this/",
-          "author": null,
-          "description": "I am trying to build a sub interface on our Cisco XR like this (cli):\n interface HundredGigE0/0/0/0.3106 description test vrf testvrf ipv4 address 10.10.10.0 255.255.255.254 encapsulation dot1q 3106 \n Seems straightforward enough, but I have been down the yang road before and its actually not as straightforward as I would think.\n How does one go about actually building a netconf xml based yang model for this? From what I understand you need to determine which yang structures should be used to build your xml netconf from. I found that the openconfig interface yang model does everything I need except applying a vrf to the interface. Then I found Cisco-IOS-XR-ifmgr-cfg, however this yang model has way more settings its not very clear how I use this model properly to create the above interface…",
-          "link": "https://www.reddit.com/r/networking/comments/za0pw7/cisco_xr_modeldriven_development_am_i_doing_this/",
-          "publishedOn": "2022-12-01T21:39:19.000Z",
-          "wordCount": 21103,
-          "title": "Cisco XR model-driven development, am I doing this right?",
           "imageUrl": null
         }
       ]
