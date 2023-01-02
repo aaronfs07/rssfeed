@@ -349,6 +349,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/101agdj/hp_hpia_options_offered_by_ui_vs_cli/",
+          "author": null,
+          "description": "Hi,\n i am using HP CMSL during my SCCM OSD deployment to fetch the latest version of HPIA on my new computers. This works fine.\n In the next step i am running HPIA silently to install all CRITICAL components - which is working fine as well.\n At that point i am wondering if i oversee something or if the CLI options offer less then the UI of HPIA.\n UI\n In the UI i can select for example a subset of:\n  \nCRITICAL\n UPDATE RECOMMENDED\n INSTALL RECOMMENDED\n ...\n  \nWhile i would like to have:\n  \nCRITICAL \n UPDATE RECOMMENDED\n  \nbut not\n  \nINSTALL RECOMMENDED\n  \nsimply to avoid bloatware being added. So in the UI i can select fine-tuned what to do.\n ​\n CLI\n In the cli manual (http://ftp.ext.hp.com//pub/caps-softpaq/cmit/whitepapers/HPIAUserGuide.pdf) i can only find the following\n  \nALL\n CRITICAL\n RECOMMENDED\n ROUTINE\n  \nso no way to differenciate between\n  \nUPDATE RECOMMENDED\n INSTALL RECOMMENDED\n  \nAm i reading it wrong or is the CLI offering less then the UI?\n    submitted by    /u/dddufte  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/101agdj/hp_hpia_options_offered_by_ui_vs_cli/",
+          "publishedOn": "2023-01-02T11:30:23.000Z",
+          "wordCount": 26672,
+          "title": "HP - HPIA - Options offered by UI vs CLI",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/101aacr/november_updates_kerberos_auth_server_2003/",
+          "author": null,
+          "description": "I know that answer is somewhere inside megathread, but I can't find it. We have some 2003 boxes (several legacy apps), so I am worried about them. We do not applied November updates, and it is time to install December. As I understood, the way to make 2003 work is to create DefaultDomainSupportedEncTypes registry key with one of values 0x1F, 0x1C, 0x3F\n So, I spinned a lab for a test, and there are some problems:\n  \nafter update install, access to 2003 share by name was lost (expected). RDP login is working. Hosted application works.\n after settings DefaultDomainSupportedEncTypes to one of values 0x3F, 0x1F, 0x1C login to server breaks. Both RDP and console login. \n  \nIt only works with default value 0x27. \n Have anyone experienced with 2003 ? Have I missed something?\n    submitted by    /u/mumische  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/101aacr/november_updates_kerberos_auth_server_2003/",
+          "publishedOn": "2023-01-02T11:20:13.000Z",
+          "wordCount": 24256,
+          "title": "November updates, Kerberos auth, Server 2003",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/101a6ma/is_known_folder_redirection_good_enough/",
+          "author": null,
+          "description": "Hey\n We use Known Folder Redirection for users to OeDrive. It's deployed via Intune. No issues with it. Looking at the cyber insurance things and they want endpoint backup of every machine.\n Should I just stick with Known Folder Direction or should I look at something else such as Acronis Cloud or something\n    submitted by    /u/CaterpillarStrange77  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/101a6ma/is_known_folder_redirection_good_enough/",
+          "publishedOn": "2023-01-02T11:14:08.000Z",
+          "wordCount": 24079,
+          "title": "Is Known Folder Redirection Good Enough",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/101a42s/azure_passthrough_authentication/",
+          "author": null,
+          "description": "Hi,\n I would like to discuss Azure Pass-through authentication. \n My understanding is that:\n a) All password validation requests are sent to Windows Server Active Directory via Pass-through authentication, and Active Directory is the actual place where auth occurs. So, with this in place, I could run scripts against Active Directory to look for dormant/inactive user accounts that have not be used for x days, and have them removed afterwards \n b) For AAD Guest accounts, the identity provider, or authentication system would be Azure Active Directory \n Are my assumptions correct?\n    submitted by    /u/Fast-Cardiologist705  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/101a42s/azure_passthrough_authentication/",
+          "publishedOn": "2023-01-02T11:10:01.000Z",
+          "wordCount": 26370,
+          "title": "Azure Pass-through authentication",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/101989y/jwt_token/",
           "author": null,
           "description": "I want to create a JWT token once username and password is validated in RDS DB.\n I also want to validate the JWT token once client sends.\n Do I need to create API for this ? Which language is suitable for creating and validating JWT token ?\n    submitted by    /u/anacondaonline  \n [link]   [comments]",
@@ -11007,16 +11047,6 @@
           "wordCount": 24216,
           "title": "Does anyone here use Rackspace’s hybrid environment? That’s Rackspace email and Hosted Exchange on the same domain. I have thousands of mailboxes impacted by the outage and wondering what others are doing.",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/zbtt6a/bitlocker_and_indexing_encrypted_files/",
-          "author": null,
-          "description": "A noobie question, but should I enable indexing of encrypted files in Windows 10 if my indexed drives are encrypted with Bitlocker? Since all files on those drives are encrypted, then it should be enabled, right?\n But it is disabled by default. Am I misunderstanding what the setting does?\n Thanks!\n    submitted by    /u/Qbccd  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/zbtt6a/bitlocker_and_indexing_encrypted_files/",
-          "publishedOn": "2022-12-03T23:14:55.000Z",
-          "wordCount": 23593,
-          "title": "Bitlocker and indexing encrypted files",
-          "imageUrl": null
         }
       ]
     },
@@ -11680,6 +11710,36 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/101ak17/vlan_from_mikrotik_to_tplink_omada/",
+          "author": null,
+          "description": "I have the following scenario:\n A main Mikrotik1 is connected by SFP to another Mikrotik2 that would act as the core equipment of the fibers, on the SFP1 of the Mikrotik1 6 VLANs are created.\n In the Mikrotik2 all the SFP ports are on a bridge, within the bridge created 1 VLAN to manage my equipment, then a DHCP Client on the VLan to obtain an IP from the Mikrotik1, it takes the IP all right.\n Now, I connect the TP-Link Omada to the Mikrotik2, there is a link through the SFP port but I can't get it to take IP, normally if you connect something else via ethernet that has DHCP Server it takes the IP automatically.\n Has anyone had experience implementing VLAN Mikrotik + TP-Link?\n    submitted by    /u/SirShadowsPY  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/101ak17/vlan_from_mikrotik_to_tplink_omada/",
+          "publishedOn": "2023-01-02T11:36:44.000Z",
+          "wordCount": 21772,
+          "title": "VLAN from Mikrotik to TP-Link Omada",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/101a9yh/how_to_change_name_of_the_wifi_logged_in/",
+          "author": null,
+          "description": "I work from home and since my son is only 7 years old I sometimes take him to public library and connect to the wifi from there in a public wifi. How can I change the name of the public wifi to my personal wifi . Eg LibraryWifi to Att12345 something like this or any other options.\n    submitted by    /u/Shar4489  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/101a9yh/how_to_change_name_of_the_wifi_logged_in/",
+          "publishedOn": "2023-01-02T11:19:38.000Z",
+          "wordCount": 21027,
+          "title": "How to change name of the wifi logged in.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/101a9tz/sd_wan_appliance_with_location_gps_based_routing/",
+          "author": null,
+          "description": "I’ve been tasked with architecting an SD WAN appliance that supports bonding, automatic failover, and use of GPS location to dynamically enable/disable a WAN connection.\n The basic requirement is for the system to support up to four gigabit WAN connections and disable one or more based on GPS location. The stretch goal is for the same device to support Multipath TCP so that traffic can be routed over multiple WAN links and recombined at a cloud server.\n The purpose is for a system installed in a vehicle that can leverage multiple different WAN links (5G, Starlink, Wi-Fi) to maximize bandwidth, provide seamless failover, and disable certain WAN links (Starlink and/or 5G) when operating in areas where the service is unavailable or not approved for use.\n I have prototyped these technologies individually using a Linux PC, but I need to find a reliable hardware + software platform for a production industrial grade system. If you were tasked with such a project, what platform would you chose to build it on?\n    submitted by    /u/fingerzdxb  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/101a9tz/sd_wan_appliance_with_location_gps_based_routing/",
+          "publishedOn": "2023-01-02T11:19:25.000Z",
+          "wordCount": 22297,
+          "title": "SD WAN appliance with location (GPS) based routing?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/101a107/using_policybased_routing_as_a_security_measure/",
           "author": null,
