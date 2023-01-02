@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-01-02T10:12:54.691Z</updated>
+    <updated>2023-01-02T11:09:48.025Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Using Policy-Based Routing as a security measure]]></title>
+        <id>https://www.reddit.com/r/networking/comments/101a107/using_policybased_routing_as_a_security_measure/</id>
+        <link href="https://www.reddit.com/r/networking/comments/101a107/using_policybased_routing_as_a_security_measure/"/>
+        <updated>2023-01-02T11:04:35.000Z</updated>
+        <summary type="html"><![CDATA[In a firewall you have a routing table and a policy. The routing table is used to determine what traffic goes to what next-hop IP-address or interface, and a policy is used to specify what traffic is allowed through the firewall. 
+ Now a colleague of mine has come up with the idea to start using policy-based routes instead or normal routes as an extra layer of security. The idea is to use policy-based routes to specify which sources (subnets or interfaces) are routed to specific networks. His argumentation is that if you make a mistake in the firewall policy and accidentally allow too much traffic, the PBR rules will prevent the traffic to being routed to the addresses it shouldn't be allowed to reach. 
+ This to me sounds like a really bad idea, and makes an already complex network more overly complex. I have never seen PBR being (mis)used for something like this. What are your thoughts about this and using PBR as a security measure instead of a tool for traffic flow management?
+    submitted by    /u/tinuz84  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JWT token]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/101989y/jwt_token/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/101989y/jwt_token/"/>
+        <updated>2023-01-02T10:15:48.000Z</updated>
+        <summary type="html"><![CDATA[I want to create a JWT token once username and password is validated in RDS DB.
+ I also want to validate the JWT token once client sends.
+ Do I need to create API for this ? Which language is suitable for creating and validating JWT token ?
+    submitted by    /u/anacondaonline  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Moronic Monday - January 02, 2023]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/1018yx5/moronic_monday_january_02_2023/</id>
@@ -24173,61 +24201,6 @@ Thank you
  But it is disabled by default. Am I misunderstanding what the setting does?
  Thanks!
     submitted by    /u/Qbccd  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How's your weekend going?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zbtopc/hows_your_weekend_going/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zbtopc/hows_your_weekend_going/"/>
-        <updated>2022-12-03T23:09:45.000Z</updated>
-        <summary type="html"><![CDATA[Secondary data center A/C decided to take a break. Hit 119f at peak. All our VMware servers decided it was too hot to stay powered. Everyone unsurprisingly slept through the alerts. Powered down our SAN earlier this morning. With only a couple switches, firewalls, and some phone stuff, still 93f in there.
- https://i.imgur.com/EnYtZFH.jpg
-    submitted by    /u/jmhalder  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hey ChatGPT, create a powershell script which downloads firefox browser, makes firefox the standard browser and unpins edge from the taskbar. do this for all online hosts. use chocolatey and wmi]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zbtau7/hey_chatgpt_create_a_powershell_script_which/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zbtau7/hey_chatgpt_create_a_powershell_script_which/"/>
-        <updated>2022-12-03T22:53:19.000Z</updated>
-        <summary type="html"><![CDATA[Here's a PowerShell script that uses WMI to accomplish what you're asking:
-  
-# First, ensure that Chocolatey is installed Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) # Get a list of all online hosts $hosts = Get-WmiObject -Class Win32_ComputerSystem | Where-Object { $_.Status -eq "OK" } | Select-Object -ExpandProperty Name # Loop through each host and perform the necessary actions Foreach ($host in $hosts) { # Install Firefox using Chocolatey Invoke-WmiMethod -Path "winmgmts:\\$host\root\cimv2:Win32_Process" -Name Create -ArgumentList "choco install firefox" # Set Firefox as the default browser $firefoxPath = "C:\ProgramData\chocolatey\lib\firefox\tools\firefox.exe" $defaultBrowserPath = "HK…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ubiquiti EdgeSwitch24 - Devices communicating on ports but don't appear to have an IP address ...]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zbtabh/ubiquiti_edgeswitch24_devices_communicating_on/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zbtabh/ubiquiti_edgeswitch24_devices_communicating_on/"/>
-        <updated>2022-12-03T22:52:37.000Z</updated>
-        <summary type="html"><![CDATA[Forgive me if this belongs elsewhere. I am new to this kind of hardware and am not sure what I am seeing here. 
- https://imgur.com/a/nLPVIyK
- My EdgeSwitch at work is telling me that there are two devices plugged into Port 1 and Port 2, and that they are using PoE and they are sending/receiving data, but the Mac table doesn't seem to know what the IP addresses are. 
- Can anyone explain to me what I might be seeing here? I feel like I'm in patch panel hell right now trying to figure out where all these unlabeled cables go.
-    submitted by    /u/wh33t  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rackspace hold times and lessons learned]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zbt39z/rackspace_hold_times_and_lessons_learned/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zbt39z/rackspace_hold_times_and_lessons_learned/"/>
-        <updated>2022-12-03T22:44:20.000Z</updated>
-        <summary type="html"><![CDATA[What is your greatest length of hold time with Rackspace this weekend (weekend of 12-3-2022)?
- Alternative question, Will you listen to Jazz again & What are your lessons learned? It's always important to learn from our mistakes.
- I'm on 6 hours 10 Hours.
- Lesson learned: The alternative email is a thing... just in case you revolve on a password reset for admin creds during a mass outage.
-    submitted by    /u/equregs  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>

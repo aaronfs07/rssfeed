@@ -349,6 +349,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/101989y/jwt_token/",
+          "author": null,
+          "description": "I want to create a JWT token once username and password is validated in RDS DB.\n I also want to validate the JWT token once client sends.\n Do I need to create API for this ? Which language is suitable for creating and validating JWT token ?\n    submitted by    /u/anacondaonline  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/101989y/jwt_token/",
+          "publishedOn": "2023-01-02T10:15:48.000Z",
+          "wordCount": 26475,
+          "title": "JWT token",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/1018yx5/moronic_monday_january_02_2023/",
           "author": null,
           "description": "Howdy, /r/sysadmin!\n It's that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I've taken over responsibility for posting these weekly threads so you don't have to worry about anything except your comments!\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
@@ -11007,36 +11017,6 @@
           "wordCount": 23593,
           "title": "Bitlocker and indexing encrypted files",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/zbtopc/hows_your_weekend_going/",
-          "author": null,
-          "description": "Secondary data center A/C decided to take a break. Hit 119f at peak. All our VMware servers decided it was too hot to stay powered. Everyone unsurprisingly slept through the alerts. Powered down our SAN earlier this morning. With only a couple switches, firewalls, and some phone stuff, still 93f in there.\n https://i.imgur.com/EnYtZFH.jpg\n    submitted by    /u/jmhalder  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/zbtopc/hows_your_weekend_going/",
-          "publishedOn": "2022-12-03T23:09:45.000Z",
-          "wordCount": 23089,
-          "title": "How's your weekend going?",
-          "imageUrl": "https://external-preview.redd.it/2K-ATYKY6nf65NQPTwhocBEBtu2aRBnNyYd98iGRUPE.jpg?auto=webp&s=60c63c2241f971985f4f9fb2d54c0b2a5f7349d9"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/zbtau7/hey_chatgpt_create_a_powershell_script_which/",
-          "author": null,
-          "description": "Here's a PowerShell script that uses WMI to accomplish what you're asking:\n  \n# First, ensure that Chocolatey is installed Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) # Get a list of all online hosts $hosts = Get-WmiObject -Class Win32_ComputerSystem | Where-Object { $_.Status -eq \"OK\" } | Select-Object -ExpandProperty Name # Loop through each host and perform the necessary actions Foreach ($host in $hosts) { # Install Firefox using Chocolatey Invoke-WmiMethod -Path \"winmgmts:\\\\$host\\root\\cimv2:Win32_Process\" -Name Create -ArgumentList \"choco install firefox\" # Set Firefox as the default browser $firefoxPath = \"C:\\ProgramData\\chocolatey\\lib\\firefox\\tools\\firefox.exe\" $defaultBrowserPath = \"HK…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/zbtau7/hey_chatgpt_create_a_powershell_script_which/",
-          "publishedOn": "2022-12-03T22:53:19.000Z",
-          "wordCount": 23968,
-          "title": "Hey ChatGPT, create a powershell script which downloads firefox browser, makes firefox the standard browser and unpins edge from the taskbar. do this for all online hosts. use chocolatey and wmi",
-          "imageUrl": "https://external-preview.redd.it/SlmagGQNYHktAZvtoQ-doQ2tbNoR23Ie3va4CR3ppR4.jpg?auto=webp&s=8989fa1cb96271e762b89a3954f4c4554e5bd7ac"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/zbt39z/rackspace_hold_times_and_lessons_learned/",
-          "author": null,
-          "description": "What is your greatest length of hold time with Rackspace this weekend (weekend of 12-3-2022)?\n Alternative question, Will you listen to Jazz again & What are your lessons learned? It's always important to learn from our mistakes.\n I'm on 6 hours 10 Hours.\n Lesson learned: The alternative email is a thing... just in case you revolve on a password reset for admin creds during a mass outage.\n    submitted by    /u/equregs  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/zbt39z/rackspace_hold_times_and_lessons_learned/",
-          "publishedOn": "2022-12-03T22:44:20.000Z",
-          "wordCount": 25733,
-          "title": "Rackspace hold times and lessons learned",
-          "imageUrl": null
         }
       ]
     },
@@ -11700,6 +11680,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/101a107/using_policybased_routing_as_a_security_measure/",
+          "author": null,
+          "description": "In a firewall you have a routing table and a policy. The routing table is used to determine what traffic goes to what next-hop IP-address or interface, and a policy is used to specify what traffic is allowed through the firewall. \n Now a colleague of mine has come up with the idea to start using policy-based routes instead or normal routes as an extra layer of security. The idea is to use policy-based routes to specify which sources (subnets or interfaces) are routed to specific networks. His argumentation is that if you make a mistake in the firewall policy and accidentally allow too much traffic, the PBR rules will prevent the traffic to being routed to the addresses it shouldn't be allowed to reach. \n This to me sounds like a really bad idea, and makes an already complex network more overly complex. I have never seen PBR being (mis)used for something like this. What are your thoughts about this and using PBR as a security measure instead of a tool for traffic flow management?\n    submitted by    /u/tinuz84  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/101a107/using_policybased_routing_as_a_security_measure/",
+          "publishedOn": "2023-01-02T11:04:35.000Z",
+          "wordCount": 21816,
+          "title": "Using Policy-Based Routing as a security measure",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/1012niq/thoughts_on_arista_campus_wifi/",
           "author": null,
@@ -15979,16 +15969,6 @@
           "wordCount": 18924,
           "title": "Cisco ACI terms and concepts",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/zbtabh/ubiquiti_edgeswitch24_devices_communicating_on/",
-          "author": null,
-          "description": "Forgive me if this belongs elsewhere. I am new to this kind of hardware and am not sure what I am seeing here. \n https://imgur.com/a/nLPVIyK\n My EdgeSwitch at work is telling me that there are two devices plugged into Port 1 and Port 2, and that they are using PoE and they are sending/receiving data, but the Mac table doesn't seem to know what the IP addresses are. \n Can anyone explain to me what I might be seeing here? I feel like I'm in patch panel hell right now trying to figure out where all these unlabeled cables go.\n    submitted by    /u/wh33t  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/zbtabh/ubiquiti_edgeswitch24_devices_communicating_on/",
-          "publishedOn": "2022-12-03T22:52:37.000Z",
-          "wordCount": 18435,
-          "title": "Ubiquiti EdgeSwitch24 - Devices communicating on ports but don't appear to have an IP address ...",
-          "imageUrl": "https://external-preview.redd.it/IdRuiPCgzCldZny0TfcPsuZyWchYjtZnAUQ-k9JcA38.jpg?auto=webp&s=7d009657df2a0d4aef20b2423ab20e889fa3c571"
         }
       ]
     },
