@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-03 datetime="2023-01-03T11:00:14.000Z">2023-01-03</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-03 datetime="2023-01-03T11:00:14.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-03 datetime="2023-01-03T12:09:55.000Z">2023-01-03</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-03 datetime="2023-01-03T12:09:55.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,124 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1026iqo/how_to_administrate_paws/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to administrate PAW-s?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1026iqo/how_to_administrate_paws/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Those of you who use PAW-s, how do you manage them? 
+ Admins have quite high privileges to servers. As Microsoft best practice suggests, their domain user (domain.com\admin) high privilege account which they use logging to PAW has no local Administrator privileges.
+ Now there is situation when those same level/tier PAW-s need to be managed/administered by some of the same level admins. For example execute Powershell scripts on those PAW-s remotely, access ADMIN$ shares, etc... Looks like another domain user (domain.com\paw_admin) is needed for them which has to be inside domain group (domain.com\paw_administrators) which is member of local Administrators group. Nobody wants to have many MFA tokens.... Am I missing something?
+    submitted by    /u/Beneficial_Youth_689  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;82
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1026fpp/how_to_disable_directory_listing_with_htaccess_as/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to disable directory listing with .htaccess as &quot;Options +Indexes&quot; doesn&#x27;t work</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1026fpp/how_to_disable_directory_listing_with_htaccess_as/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>According to https://help.dreamhost.com/hc/en-us/articles/215747718-Control-directory-indexes-with-an-htaccess-file, directory indexes can be turned off by placing Options -Indexes in an .htaccess file in your domain&#x27;s folder to disable directory indexes throughout your entire site:
+ However, it doesn&#x27;t really work.
+ # find / -name .htaccess 2&gt;/dev/null /var/www/html/.htaccess # grep Op /var/www/html/.htaccess Options +Indexes /var/www/html/test# echo one &gt; page1.htm /var/www/html/test# echo two &gt; page2.htm /var/www/html/test# ls -l total 8 -rw-r--r-- 1 root root 4 Jan 3 11:51 page1.htm -rw-r--r-- 1 root root 4 Jan 3 11:51 page2.htm /var/www/html/test# $ curl -s http://localhost/test/ | html2text ****** Index of /test ****** [[ICO]] Name Last_modified Size Description &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; [[PARENTDIR]] Parent_Directory - [[TXT]] page1.htm 2023-01-03 11:51 4 [[TXT]] page2.htm 2023-01-03 11:51 4 &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; Apache/2.4.25 (Debian) Server at localhost Port 80 
+    submitted by    /u/w0lfcat  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;84
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1025wrh/keep_getting_client_error_on_ediscovery/"
+                        open
+                      >
+                        <summary class="article-expander__title">Keep getting Client Error on E-Discovery</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1025wrh/keep_getting_client_error_on_ediscovery/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Its my first time trying to export some mailboxes and everything went smooth, i have the ediscovery manager role but still when i click on export i get this Client error : Request failed with status code 500 
+ does anyone know how to fix it?
+    submitted by    /u/SirThunderCock-  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;83
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1025vab/missing_vdkim1_on_the_2nd_subdomain_cname_for/"
+                        open
+                      >
+                        <summary class="article-expander__title">Missing &quot;v&#x3D;DKIM1;&quot; on the 2nd Subdomain (CNAME) for Mailchimp DKIM ...</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1025vab/missing_vdkim1_on_the_2nd_subdomain_cname_for/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We configured our domain to be used with Mailchimp and DKIM, but Mimecast DMARC Analyzer is complaining about the 2nd key:
+ The results from k2._domainkey.example.com look fine:
+ v&#x3D;DKIM1; k&#x3D;rsa; p&#x3D;MIIBIjANBgkqhkiG....
+ But the 2nd key from k3._domainkey.example.com is missing the v&#x3D;DKIM1 version and starts like:
+ k&#x3D;rsa; p&#x3D;MIIBIjANBgkqhkiG....
+ Mimecast is complaining about the &quot;Missing DKIM protocol version&quot;.
+ Knowing from my past experiences how picky some SPAM-filters can be with such details, I would be happy to know, if I need inform or contact the Mailchimp support?
+ Or is it good enough and only the first key has to have the version info?
+    submitted by    /u/__Kuddelmuddel__  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;84
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1025ltt/mcafee_removal_tool/"
+                        open
+                      >
+                        <summary class="article-expander__title">McAfee Removal Tool</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1025ltt/mcafee_removal_tool/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So it turns out our McAfee licenses expired over the christmas break and we all forgot to grab the latest removal tool (and helpfully I can&#x27;t even contact their support any more either). 
+ Is anyone able to grab the latest version from their portal and share it with me as I just know trying to remove mcafee via ePO is going to fail on a number of PC&#x27;s and generally be a headache to clean up :)
+    submitted by    /u/MrYiff  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;83
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -302,6 +420,31 @@ Again, thank you for your input!
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/1025md1/private_endpoint_not_consistently_resolving_via/"
+                        open
+                      >
+                        <summary class="article-expander__title">Private endpoint not consistently resolving via Cisco Umbrella?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1025md1/private_endpoint_not_consistently_resolving_via/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have set up private endpoint for various Azure resources (SQL Server, Web Apps etc.) and set up conditional forwarding to the Azure wire server within our DNS configuration.
+ A ping resolves to the private IP of the server (i.e. that of the private endpoint) when testing from Azure VM&#x27;s within the VNET, but when testing from local machines, it seems to flip flop between returning the private IP and returning the public azure endpoint, meaning I can sometimes connect through to these resources from my machine (when the private IP is being returned) and sometimes not (when the public IP is being returned).
+ We have our local machines pointing at Cisco Umbrella for their DNS resolution already, and have therefore opted to have the relevant azure endpoints forward onto our VM-based DNS servers using Umbrella&#x27;s in-built DNS forwarding capabilities. 
+ If I test through this method I can replicate the issue, if I override this method using my hosts file (pointing the relevant URL&#x27;s directly at their private endpoint IP address), it works consistently, suggesting the issue is with Cisco Umbrella, and it is not consistently handling the requests.
+ Any ideas on how to resolve this?
+    submitted by    /u/ElliotS123  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;70
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -41360,50 +41503,6 @@ Get 20% off your first order with promo code MORNING WIRE: https://thepearlsourc
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/zcqs62/fake_intel_i210_adapter/"
-                        open
-                      >
-                        <summary class="article-expander__title">Fake Intel i210 Adapter?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zcqs62/fake_intel_i210_adapter/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Recently ordered some HP i210 adapters from Amazon (shipped and sold by) and have a suspicion they are fake. Label says made in Thailand and the CE on that sticker seems correct. Mfg date is 08/2022. They don&#x27;t have any holo stickers on them (yottamark or bradyId) and the crystal does not say TXC. Are these still indicators of an authentic intel card on the i210? Doesn&#x27;t seem to be much info out there about this model as most guides focus on the i350.
-    submitted by    /u/zquintyzmi  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;60
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/zcqd6o/moronic_monday/"
-                        open
-                      >
-                        <summary class="article-expander__title">Moronic Monday!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zcqd6o/moronic_monday/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>It&#x27;s Monday, you&#x27;ve not yet had coffee and the week ahead is gonna suck. Let&#x27;s open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we&#x27;re too embarrassed to ask!
- Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.
- Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;59
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -41411,8 +41510,8 @@ Get 20% off your first order with promo code MORNING WIRE: https://thepearlsourc
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3828965589">
-        <time id="build-timestamp" datetime="2023-01-03T11:09:52.796Z">2023-01-03T11:09:52.796Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3829429482">
+        <time id="build-timestamp" datetime="2023-01-03T12:24:52.724Z">2023-01-03T12:24:52.724Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
