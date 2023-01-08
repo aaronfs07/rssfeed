@@ -2,10 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-01-08T12:21:49.158Z</updated>
+    <updated>2023-01-08T13:15:17.784Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA["New" option on context menu shows only "Folder" option with UAC shield when using symbolic links to network shares]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/106i52p/new_option_on_context_menu_shows_only_folder/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/106i52p/new_option_on_context_menu_shows_only_folder/"/>
+        <updated>2023-01-08T12:30:30.000Z</updated>
+        <summary type="html"><![CDATA[Hello!
+ I've just realised something that is a bit annoying. When I create a symbolic link to a network share, then navigate to that symbolic link and open any subfolder on that share, the context menu "New" option only shows the "Folder" option with the UAC logo. See this picture.
+ These are the steps to recreate the issue:
+ 1. Create a symbolic link on a command prompt: mklink /d d:\LocalFolder\ \\NAS\NAS_Folder 2. Navigate to d:\LocalFolder 3. Open any subfolder inside that symbolic link. 4. Right click/New. You will see only the "Folder" option with the UAC shield. 
+ It's worth noting that if I directly access the \\NAS\NAS_Folder and open any subfolder, the New menu shows all available options and the UAC shield is gone.
+ What's going on and how could I prevent that behaviour? Disabling UAC from registry only gets rid of the shield but the context menu still shows just the Folder option.
+ PS: I've tried this also on a recently installed Windows VM. Same thing happens.
+ ​
+ edit: This person is having a similar issue.
+    submitted by    /u/s1L3nCe_wb  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Waiting for User Profile Service RDS2016 + UPD and Folder Redirection]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/106hepl/waiting_for_user_profile_service_rds2016_upd_and/</id>
@@ -22952,52 +22972,6 @@ https://support.microsoft.com/en-us/account-billing/common-questions-about-the-m
  The further down in step 5 it says "IMAP migration is not available for new EAC. " 
  Thanks
     submitted by    /u/wagglyears  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FileShare permissions as a cleanup project]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zhes4q/fileshare_permissions_as_a_cleanup_project/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zhes4q/fileshare_permissions_as_a_cleanup_project/"/>
-        <updated>2022-12-10T01:14:28.000Z</updated>
-        <summary type="html"><![CDATA[Hello all, I'm working on some FileShare permissions as a cleanup project; by default, our permissions are applied to a top-level file share folder. Different permissions may be applied to a subfolder no more than one level below the top-level file share. 
- We are actively trying to enforce that any other folder permissions needed which don’t fit this model should use a separate subfolder under the top-level file share folder (i.e., \Server1\Accounting\CustomFolder ). 
- I'm trying to tackle this with PowerShell and the NTFSSecurity module if we have a "Read Only Group" and a "Read Write AD group" applied in the ACLs. I want to get the AD RO or RW group members and see if they are in any folders deep than that to clean it up. 
- Example: Share1/Dept/Folder1/Folder2/Folder3 If Joe Doe is already in an AD group at the Dept folder and then some admin added him directly to Folder3, I'll like to have a report showing that.
- I've been doing PS for around six months now, I can do one-liners pretty well, but I need help to write scripts. I would appreciate any guidance you can give me, and if I asked a stupid question or worded it poorly, please let me know! Some of the scripts I've been using are: 
- $notInherited = Get-ChildItem -Path "\\Server1\DeptFolder" -Directory -Recurse | Get-NTFSAccess | Where-Object {!($_.IsInherited)} $notInherited | Export-Excel C:\Temp\Spreadsheets\Data_NotInherited.xlsx -TableName Permissions -AutoSize 
-    submitted by    /u/Gigawatt83  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Need Advice on Colocation]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zhdulg/need_advice_on_colocation/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zhdulg/need_advice_on_colocation/"/>
-        <updated>2022-12-10T00:31:59.000Z</updated>
-        <summary type="html"><![CDATA[Hello, I'm looking to learn more about colocation and networking in the data center environment. Essentially, I have a few servers that I want to put into a rack in a data center but I'm tossed up on what direction I should start with.
- The first topic is the choice of networking equipment. The data center provides a 1 Gbps SFP connection. Now, I could plug that directly into a switch and have a server in the rack that handles DHCP, but are there any good cheap switches that have a DHCP server built in that also allows for easy remote management? 
- The first setup I was looking at using was a Ubiquiti Dream Machine SE and a Ubiquti Pro switch. I would plug the SFP from the data center into the Dream Machine, then another SFP from the Dream Machine into the Pro Switch. Ubiquiti was a choice due to the familiarity of knowing how to manage the settings on both devices.
- The second setup was looking into Cisco Meraki devices, however, I'm not familiar with Cisco's product lineup. I do have my CompTIA A+ and Network+, so I am somewhat familiar with using the CLI, but the program I was in only had us focus on managing Cisco devices on a LAN through the CLI only. I was scrolling through threads on WHT and several times Cisco Meraki devices came up. Does anyone know if Cisco Meraki devices have a built in DHCP server? If not, then I would still need to have a DHCP server setup in the rack.
- Also, does anyone have any recommendations on material that I can use to help better understand networking concepts and practices in the data center regarding how to setup and manage BGP, how to assign IPv4 subnets to specific devices, or personal advice with first time colocation experiences?
- Thank you in advance!
-    submitted by    /u/fallen0523  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Any solutions for hybrid ad computers to report to non line of site without always up vpn?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zhdnv7/any_solutions_for_hybrid_ad_computers_to_report/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zhdnv7/any_solutions_for_hybrid_ad_computers_to_report/"/>
-        <updated>2022-12-10T00:23:24.000Z</updated>
-        <summary type="html"><![CDATA[Any solutions for hybrid ad computers to report to non line of site without always up vpn? Our user base just doesn’t have a large vpn adoption rate due to the saas profile we have. We are still in a state of hybrid ad so this is becoming a issue when people return to office and try to connect to wifi via radius and then deal with local password cache issues.
-    submitted by    /u/sysadmin20214  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
