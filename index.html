@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-09 datetime="2023-01-09T13:15:31.000Z">2023-01-09</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-09 datetime="2023-01-09T13:15:31.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-09 datetime="2023-01-09T14:13:45.000Z">2023-01-09</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-09 datetime="2023-01-09T14:13:45.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,228 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107feec/persistent_group_policy_errors_events_40970_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">Persistent group policy errors, Events 40970 and 1030</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107feec/persistent_group_policy_errors_events_40970_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have two separate environments. In both cases, the operating system and domain levels are the same. Win 2016.
+ Env1 created ten years ago. Persistent errors. Env2 created three years ago. Clean! No errors that I can find.
+ Env1 I&#x27;m getting persistent errors. If I look back at historical logs, we have had this problem since October 2022 at least (prior to the Nov patch problems).
+ In Env1 if I look at the logs in Microsoft-Windows-GroupPolicy/Operational I don&#x27;t see any problems at all. No errors in processing for users logging on. In addition, if I execute &quot;gpupdate&quot; in the cmd line, it succeeds without problems.
+ However if I look at the System log, I see the recurring events every two hours.
+ Event ID 40970 The security system has detected a downgrade attempt when contacting the 3-part SPN LDAP/host1.domain@domain with error code &#x27;The attempted logon is invalid. This is either due to a bad username or authentication information (0xc000006d). Authentication was denied.&#x27;
+ Event ID 40970 The security system has detected a downgrade attempt when contacting the 3-part SPN LDAP/host2.domain@domain with error code &#x27;The attempted logon is invalid. This is either due to a bad username or authentication information (0xc000006d). Authentication was denied.&#x27;
+ Event ID 1030 The processing of group policy failed....
+ After rebooting a server, the problem goes away. But randomly, it will begin on a domain server and then persist indefinitely until rebooted. Then on another day, another server is affected the same way. It could be any server that becomes affected. It seems to occur at any random time. No other problems seem to present in the environment. 
+ The goal though is to remove these errors and to fix whatever issue exists in the domain.
+ I&#x27;m wondering what the connection is between event ID 40970 and 1030 and where to look for clues here. Does anyone have any ideas?
+    submitted by    /u/PictureHead9414  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;64
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107f9ym/mapped_drive_based_on_login_location/"
+                        open
+                      >
+                        <summary class="article-expander__title">Mapped drive based on login location?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107f9ym/mapped_drive_based_on_login_location/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I know this sounds dumb and all but: 
+ I am looking for a way to map drives to a server based on their location, I think this has to be done with DFS name spaces but limitations prevent that at this time. 
+ So does anyone have a creative way to map a drive to the local server if a user login happens at site B so it uses the server at site B.
+    submitted by    /u/neuroreaction  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107f8yt/jscape_mft_server_and_api_examples/"
+                        open
+                      >
+                        <summary class="article-expander__title">JSCAPE MFT Server and API Examples</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107f8yt/jscape_mft_server_and_api_examples/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/Gp-rWhv-Pc4CVpjxprV7s_5DcN1r73ZJKtZ0CxiC-n0.jpg?auto&#x3D;webp&amp;s&#x3D;43e2d87cf26d8c7c8a1ec6749d5a7ccca6910eb4" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I am looking to do some uploading via the client rest api&#x27;s. The server I have access to is owned by someone else and I cannot get to the examples to figure out how to &quot;put&quot; a file.
+ Image of Rest API Required fields:
+ ​
+ I am specifically looking for this &quot;put&quot; feature.
+ For API documentation on client REST services available visit http://localhost/doc/api where localhost is the hostname listening for HTTP requests. Additional REST API examples may be found in the doc/api-examples/rest directory relative to your JSCAPE MFT Server installation directory.
+ https://files.jscape.com/secureftpserver/docs/8.7/index.html?js-users.htm
+    submitted by    /u/jbspillman  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107f5dn/windows_server_2022_evaluation_activation/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows server 2022 evaluation activation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107f5dn/windows_server_2022_evaluation_activation/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I have windows server 2022 evaluation installed on a server .. after some time the server shows that the license is expired, so I got a key (the key has this text)
+ &quot;C16 core for OEM software&quot;
+ and tried to activate (settings/activation), but the activation failed with message:
+ &quot;the product key you entered did not work&quot;.
+ not sure what is happening, any help will be appreciated.
+    submitted by    /u/Vamp808  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;61
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107enne/blocking_things_like_tiktok_etc/"
+                        open
+                      >
+                        <summary class="article-expander__title">Blocking things like TikTok, etc</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107enne/blocking_things_like_tiktok_etc/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Ive seen some chatter on here in the past about network-wide blocking of bad things. Namely this time around TikTok. And I started to wonder, who makes that call in your org?
+ In my org, I block bad stuff on the router level, but when it comes to TikTok, Ive never given it much thought. 
+ How have you gotten to the decision to block that? And what else do you block? Lastly, what’s been the blowback?
+    submitted by    /u/jdlnewborn  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107emr1/restricting_cd_and_external_drive_access_via/"
+                        open
+                      >
+                        <summary class="article-expander__title">Restricting CD and External Drive access via local policy on standalone Windows 10 machine</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107emr1/restricting_cd_and_external_drive_access_via/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Looking for an idea or some help. I have a computer at work that is a standalone Windows 10 machine but I would like to only allow a select group of users (admins) have access to the CD drive and external devices (preventing people from adding programs or extracting data) . For the life of me, I have looked around and it appears that in order to gain this level of granularity, I need Windows Server to enforce this kind of group policy, but as I stated before it&#x27;s a standalone system. Any ideas or help would be great! TIA!
+    submitted by    /u/ISSOhhhNO  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107emf7/rds/"
+                        open
+                      >
+                        <summary class="article-expander__title">RDS</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107emf7/rds/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I wonder if any of you sysadmins have done this and can share what you did? 
+ I previously worked for an MSP that had a client that had RDS access, their RDS and GW servers where separate. If you tried to access to server IP address to the RDS GW it would act if those there wasn&#x27;t a website there but users were able to connect through RDS using 2FA. The 2FA part I can easily do on my own its just the security lock down of the GW so it doesn&#x27;t broadcast IIS I am trying to figure out. 
+ THanks,
+    submitted by    /u/SmoothRunnings  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107efja/ad_synced_distribution_group_deleted_members/"
+                        open
+                      >
+                        <summary class="article-expander__title">AD synced distribution group - deleted members return</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107efja/ad_synced_distribution_group_deleted_members/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Got a strange one here. 
+ I have a distribution group that was created on premise and synced to O365 with AD Sync. It has been working fine for years. We had some staff terminations that affect this group and as part of our offboarding we removed the user accounts from all their groups.
+ However, 365 still shows them in the group. I have checked repeatedly that there is no trace of either user in the AD object, and I see no errors in the AD Sync logs, but 365 still has them present. I can&#x27;t remove them in 365 because it&#x27;s an AD-mastered object. 
+ Short of deleting the group completely and starting a fresh one (which we will eventually do anyway in our normal DG -&gt; MS Teams upgrade process), any ideas? 
+ One note - this domain used to have on premise exchange, but the removal was extremely thorough and no trace of the old org exists. I have no on-prem Exchange management tools available to troubleshoot, the Ex2019 installer fails to install the tools because it can&#x27;t find the org. So I&#x27;m not sure this is even solvable.
+    submitted by    /u/FerengiKnuckles  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;63
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/107ed7u/dfs_sysvol_migration/"
+                        open
+                      >
+                        <summary class="article-expander__title">DFS Sysvol Migration?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/107ed7u/dfs_sysvol_migration/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m in the process of helping a company migrate some servers to Azure including some DC&#x27;s. A co-worker of mine is adamant about migrating the Sysvol replication group onto a different server but, that isn&#x27;t needed right? 
+ From my understanding as long the DC&#x27;s are online they will replicate regardless unless we disable it.
+ I see the replication group in DFS on our new file server in Azure. Anything I&#x27;m missing?
+    submitted by    /u/Illustrious_Bat6577  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;62
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -496,10 +718,84 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;CTiRNnSg0jA"
+                        open
+                      >
+                        <summary class="article-expander__title">Bought AMD? You got played – Ryzen 7000 non-X Review</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;CTiRNnSg0jA">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Enterprise Networking Design, Support, and Discussion</button>
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/107f1wx/how_to_setup_peering_from_aws_vpc_to_gcp_vpc/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to setup peering from AWS VPC to GCP VPC</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/107f1wx/how_to_setup_peering_from_aws_vpc_to_gcp_vpc/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I was under the impression you could setup a VPC Peering connection directly from AWS  GCP but that doesn&#x27;t seem to be the case. What&#x27;s the best way to do this?
+ I was trying to avoid setting up complicated VPNs.
+    submitted by    /u/WolfPusssy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;64
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/107enw4/check_which_users_are_using_anyconnect_on_asa_5555/"
+                        open
+                      >
+                        <summary class="article-expander__title">Check which users are using AnyConnect on ASA 5555.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/107enw4/check_which_users_are_using_anyconnect_on_asa_5555/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>There are currently about 11 AnyConnect profiles in the Cisco ASA5555 configuration. I would like to know if it is possible to extract the logs for each profile, what users were active during the last 30 days? I want to clean up and delete unnecessary profiles. Thanks.
+    submitted by    /u/puttymonster  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;66
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -39216,8 +39512,8 @@ Get 20% off your first order with promo code MORNING WIRE: https://thepearlsourc
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3874175931">
-        <time id="build-timestamp" datetime="2023-01-09T13:20:36.694Z">2023-01-09T13:20:36.694Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3874596189">
+        <time id="build-timestamp" datetime="2023-01-09T14:14:22.419Z">2023-01-09T14:14:22.419Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
