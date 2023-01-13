@@ -369,6 +369,66 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10arfxt/potentially_faulty_virus_definition_update/",
+          "author": null,
+          "description": "In the last hour, we've had half our organisation report that shortcuts have disappeared from their desktop and Microsoft Office has ceased working. Outlook.exe has flat out disappeared for some.\n Whilst not logged in Windows Defender->Operational, if we try to do a quick repair of Office we see that Windows Defender Exploit Guard has blocked the creation of .lnk files\n From what I can see, this appears to be the \"Block Win32 API calls from Office Macro\" ASR rule malfunctioning, potentially after the installation of AntivirusSignatureVersion 1.381.2140.0\n Is anyone else seeing similarly? \n One one machine I've changed that rule to audit rather than block and Office repair has since been successful and the creation of .lnk files via our powershell scripts is functioning again..\n    submitted by    /u/VexedTruly  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10arfxt/potentially_faulty_virus_definition_update/",
+          "publishedOn": "2023-01-13T10:40:41.000Z",
+          "wordCount": 21892,
+          "title": "Potentially faulty Virus Definition Update causing issues win Block Win32 API calls from Office Macro ASR? Desktop shortcuts deleted out of the blue and Office executables disappearing.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10ardg7/how_do_you_manage_changing_your_personal_laptop/",
+          "author": null,
+          "description": "I would like to change my pc, but there are so many tools and ssh keys, and credentials.\n It's always a bit painful to install every tool, get the keys back, it can take me up to a day to almost setup the basics. \n How do you manage changing a laptop ?\n    submitted by    /u/MoiSanh  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10ardg7/how_do_you_manage_changing_your_personal_laptop/",
+          "publishedOn": "2023-01-13T10:36:06.000Z",
+          "wordCount": 21041,
+          "title": "How do you manage changing your personal Laptop ?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10ar9l0/default_user_profile_windows_domain/",
+          "author": null,
+          "description": "Hi,\n I am wondering about the best practice for a scenario that has been causing problems. \n I am working in an IT department of a university and in each classroom is a desktop computer for the teacher and it has all kinds of physical equipment for distance learning.\n The computers are domain joined of course but the problem is that the sample rate on the soundcard needs to be at 48khz for all the software and equipment to work correctly.\n When teacher (domain user) logs in to the computer the first time the sample rate is always at 44.100 so it needs to be set manually to 48khz in the soundcard settings. But once it is set it will be correct next time this user logs in.\n So this only happens the first time each user logs in. \n The soundcards are not the same in each classroom so we are not going to take care of this by some group policy.\n I know about the default user profile settings, but the computers are all on domain but with different soundcards between classrooms. So what I am trying to figure out is the best practice if I can log me in on the computer for the first time locally, set the sample rate to correct settings and then every other domain user that logs in after that will get the same settings. \n Thanks\n    submitted by    /u/gasgeir  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10ar9l0/default_user_profile_windows_domain/",
+          "publishedOn": "2023-01-13T10:29:51.000Z",
+          "wordCount": 22554,
+          "title": "Default user profile - Windows domain",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10ar8y3/windows_defender_asrfalsely_blocking_and_removing/",
+          "author": null,
+          "description": "We've recently onboarded our estate to Defender for Endpoint and we've had a number of reports this morning that their program shortcuts (Chrome, Firefox, Outlook) have all vanished following a reboot of their machine, which has also occurred for me too.\n It seems to be blocking from the rule: \"Block Win32 API calls from Office macro\".\n Scratching my head as to what it might be..? Any ideas/help would be grateful!\n    submitted by    /u/Daanyyaal  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10ar8y3/windows_defender_asrfalsely_blocking_and_removing/",
+          "publishedOn": "2023-01-13T10:28:42.000Z",
+          "wordCount": 21847,
+          "title": "Windows Defender - ASRFalsely blocking and removing applications",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10ar4kp/any_recommendations_for_companies_to_help_walk_us/",
+          "author": null,
+          "description": "I manage the networks for our brick-and-mortar organization, but sense that I can't tackle this and the day-to-day at the same time. Are there companies out there that can help walk us through PCI-DSS Compliance? From securing the network, testing, and writing policies?\n    submitted by    /u/Comfort_Lettuce  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10ar4kp/any_recommendations_for_companies_to_help_walk_us/",
+          "publishedOn": "2023-01-13T10:20:49.000Z",
+          "wordCount": 22270,
+          "title": "Any recommendations for companies to help walk us through PCI Compliance?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10ar1vb/multiple_users_reporting_microsoft_apps_have/",
+          "author": null,
+          "description": "Hi all,\n Have you had anyone report applications going missing from there laptops today? \n I've seemed to have lost all Microsoft apps, outlook/excel/word\n an error message comes up saying it's not supported and then the app seems to have uninstalled. \n ​\n Some users can open Teams and Outlook, and strangely, it seems some users are unable to open Chrome too. \n ​\n We're on InTune, FWIW\n ​\n Anyone else experiencing the same?\n EDIT:\n u/wilstoncakes has the potential solution in another post:\n We have the same issue with the definition version 1.381.2140.0.\n Even for non-office applications like Notepad++, mRemoteNG, Teamviewer, ...\n ​\n We changed the ASR Rule to Audit via Intune.\n ​\n Block Win32 API calls from Office macros\n Rule-ID 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b\n    submitted by    /u/Candid-Chip-1954  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10ar1vb/multiple_users_reporting_microsoft_apps_have/",
+          "publishedOn": "2023-01-13T10:16:04.000Z",
+          "wordCount": 22584,
+          "title": "Multiple users reporting Microsoft apps have disappeared",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/10aq8l4/folder_redirection_moving_it_back_local_and/",
           "author": null,
           "description": "I'm moving back folder redirection to local profiles and getting the files to transfer back as I do it. Then will be turning on OneDrive sync (yeah I know to turn off folder redirection GPO before doing it).\n But the AppData folder has been setup for folder redirection and wondering if its best to just set this back to point local and not move the files as Ive heard it can cause issues? Whats the best approach for AppData and moving it back without causing too many headaches?\n    submitted by    /u/NoAccident9976  \n [link]   [comments]",
@@ -476,6 +536,16 @@
           "publishedOn": "2023-01-13T08:02:32.000Z",
           "wordCount": 21260,
           "title": "Customer Server Management / Overview",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10anpqx/how_can_i_be_a_better_team_member/",
+          "author": null,
+          "description": "I work in cybersecurity - blue team. Our company is small and still developing, so they give permanent increases in salary for finishing projects and accepting new admin positions.\n I'm on a team with 1 other person. We started working about 4 months ago without prior experience in IT, straight out of an unrelated stem uni course. We are working on setting up a virtual Active Directory domain tree - a fake company called CyberCorp with 2 branches, for the purpose of showcasing certain things to new potential clients and as a lab for learning how to do penetration testing. There are a lot of elements to this - setting up email servers, databases, constant replication problems, setting up secure tunnels between company branches and to the outside, firewall, setting up a (physical) switch and…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10anpqx/how_can_i_be_a_better_team_member/",
+          "publishedOn": "2023-01-13T06:46:10.000Z",
+          "wordCount": 22540,
+          "title": "How can I be a better team member?",
           "imageUrl": null
         },
         {
@@ -11057,16 +11127,6 @@
           "wordCount": 19742,
           "title": "Management just suggested storing HR info on a private MS teams channel.",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/zm4vut/questionable_interview_process/",
-          "author": null,
-          "description": "I received an email from a recruiter stating he came across my resume and thought I would be a great fit for a System Admin role he was trying to fill. If interested he directed me to reach out to their Hiring Manager, to which I did. The Hiring Manager emailed me back and stated \"The job briefing and interview is conducted via email and you are required to pay attention, read carefully and respond as fast as you can to keep the conversation smooth. \"\n I've never interviewed with a company that way. Is that normal? Seems very odd to me, and hard for him to even get to know me. Anybody else been through a similar situation?\n    submitted by    /u/rebeljake  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/zm4vut/questionable_interview_process/",
-          "publishedOn": "2022-12-14T22:54:33.000Z",
-          "wordCount": 22522,
-          "title": "Questionable Interview Process",
-          "imageUrl": null
         }
       ]
     },
@@ -15436,16 +15496,6 @@
           "publishedOn": "2022-12-14T23:42:12.000Z",
           "wordCount": 22458,
           "title": "Google had the wrong geolocation for my company's IP range",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/zm3yih/cisco_fnf_flows_per_second/",
-          "author": null,
-          "description": "Currently running FNF on Cisco 9500-16x. I'm collecting flow data from our edge. Does anyone know how I can view how many flows per second are being recorded?\n    submitted by    /u/ZNastyyy  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/zm3yih/cisco_fnf_flows_per_second/",
-          "publishedOn": "2022-12-14T22:16:27.000Z",
-          "wordCount": 22499,
-          "title": "Cisco FNF Flows Per Second",
           "imageUrl": null
         }
       ]
