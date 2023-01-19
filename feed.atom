@@ -2,10 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-01-19T11:10:42.018Z</updated>
+    <updated>2023-01-19T12:23:56.868Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[How do you start scripts that reside in %~dp0 from task scheduler?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10g09y1/how_do_you_start_scripts_that_reside_in_dp0_from/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10g09y1/how_do_you_start_scripts_that_reside_in_dp0_from/"/>
+        <updated>2023-01-19T12:17:20.000Z</updated>
+        <summary type="html"><![CDATA[I have a script that imports a scheduled task, I want this scheduled task to start the script that imported it but since the script is on a USB drive i need to use a variable to find it.
+ Copying the script to the desktop first is not an option, This is because i reuse the %~dp0 variable througout the script and moving the script to the desktop would mean that i have to copy every single file on the usb drive onto the desktop as well.
+ I need to find a solution where i can run the script from my USB drive without actually knowing the path to my USB drive.
+    submitted by    /u/Starmanrealizes  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Script for Deleting Download Folders]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10g08pt/script_for_deleting_download_folders/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10g08pt/script_for_deleting_download_folders/"/>
+        <updated>2023-01-19T12:15:32.000Z</updated>
+        <summary type="html"><![CDATA[Hey,
+ I am trying to delete the download Folder of all my AD Users (About 4k) once a month.
+ My Solution would be running the following Script once a month through the Task Planner on the Server:
+ $profname = Get-ChildItem -Path C:\Users -Directory | Select-Object -Expand Name
+ ​
+ foreach ($name in $profname)
+ {
+ $path = 'C:\Users\' + $name + '\Downloads'
+ Get-ChildItem -Path $path –Recurse | Remove-Item –Recurse
+ }
+ Is there maybe a better solution (Maybe from windows Directly) for this? The Profiles are saved on the Server.
+    submitted by    /u/Vilo123  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What is the most minimal Microsoft 365 package required for audit logs?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10fzwhx/what_is_the_most_minimal_microsoft_365_package/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10fzwhx/what_is_the_most_minimal_microsoft_365_package/"/>
+        <updated>2023-01-19T11:58:30.000Z</updated>
+        <summary type="html"><![CDATA[Somebody knows? Their packages and pricing is really complicated.
+    submitted by    /u/VegetableDay9  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Open source inventory/deployment tool/endpoint manager?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10fzvac/open_source_inventorydeployment_toolendpoint/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10fzvac/open_source_inventorydeployment_toolendpoint/"/>
+        <updated>2023-01-19T11:56:31.000Z</updated>
+        <summary type="html"><![CDATA[Hi folks,
+ I am looking for a software like PDQ Inventory/Deploy (not only the deploy), SCCM, Ivanti, Chocolatey 4Business… but open source (and free!) or everyone use handmade powershell script for this need ?
+    submitted by    /u/veggiefit420  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Network Slow To Fully Connect]]></title>
         <id>https://www.reddit.com/r/networking/comments/10fyupj/network_slow_to_fully_connect/</id>
@@ -24193,57 +24254,6 @@ Microphone quality / audio issues during Teams meetings. I'm aware of the "doubl
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Accidentally Deleted a User's M365 Account/Email When Trying to Unlink On-Premises AD Sync]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zr47d2/accidentally_deleted_a_users_m365_accountemail/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zr47d2/accidentally_deleted_a_users_m365_accountemail/"/>
-        <updated>2022-12-21T00:08:21.000Z</updated>
-        <summary type="html"><![CDATA[There are 2 users in our company who only require an email address, but their AD accounts were created by accident in the past. I deleted the AD accounts to clean it up but didn't realize our hybrid on-premise sync would delete their M365 account and email as well.
-  
- I noticed what I've done 3 hours later and immediately restored their deleted accounts in the Exchange "deleted users" recycle bin. I noticed it forced me to create a new temporarily password, which I notified them of. Is there anything else I need to do to make sure their mailbox is restored back to normal with their old emails?
-    submitted by    /u/callme_e  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rant Wednesday!]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zr402o/rant_wednesday/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zr402o/rant_wednesday/"/>
-        <updated>2022-12-21T00:00:11.000Z</updated>
-        <summary type="html"><![CDATA[It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
- There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!
- Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Company Wants Me to Install Intune MDM on Personally Owned Mobile Phones]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zr3x72/company_wants_me_to_install_intune_mdm_on/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zr3x72/company_wants_me_to_install_intune_mdm_on/"/>
-        <updated>2022-12-20T23:56:45.000Z</updated>
-        <summary type="html"><![CDATA[I graduated from college last May, and now I am the sole IT administrator at a small manufacturing company. While my experiences with the company were mostly decent until now, my supervisor is requiring that I install Microsoft Intune MDM on the personally owned mobile phones of employees accessing company resources on their devices. Company resources include Outlook, OneDrive, SharePoint, and other websites accessible via Microsoft SSO, for example. This effectively mandates MDM for all salaried employees with no way to opt-out, as they are generally required to have company resources installed on their personally owned mobile phones.
- My supervisor’s goals are to ensure that personally owned mobile phones with access to company materials are encrypted and locked. He also wants to make su…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Network admin vs Sysadmin salaries]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zr3alw/network_admin_vs_sysadmin_salaries/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zr3alw/network_admin_vs_sysadmin_salaries/"/>
-        <updated>2022-12-20T23:30:15.000Z</updated>
-        <summary type="html"><![CDATA[I recently had a disagreement with my CIO over compensation for an assistant net admin vs an assistant sysadmin. I told him they should be paid the same if they had the same experience, etc; he said that sysadmins are worth more. I was flabbergasted. As the senior netadmin, I’m compensated the same as the senior sysadmin. Is this a common thing in IT, across industries that sysadmins are worth more than netadmins, or am I right in demanding they be equal?
-    submitted by    /u/beanmachine-23  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
