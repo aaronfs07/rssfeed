@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-20 datetime="2023-01-20T11:05:49.000Z">2023-01-20</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-20 datetime="2023-01-20T11:05:49.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-20 datetime="2023-01-20T12:23:45.000Z">2023-01-20</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-20 datetime="2023-01-20T12:23:45.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,26 +34,51 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gu7au/ups_scaling/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10gvmzf/questions_about_possible_domain_interference_and/"
                         open
                       >
-                        <summary class="article-expander__title">UPS scaling</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gu7au/ups_scaling/">
+                        <summary class="article-expander__title">Questions about possible domain interference and User ID problems in Azure</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10gvmzf/questions_about_possible_domain_interference_and/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Next year we are going to renew some campus datacenters, and I need to scale the UPS systems. I know all the devices and their power supply specs, but I know these are maximum consumption (Watt) which will most of the times not be consumed. 
- Is there a rule of thumb or percentage you guys use for UPS scaling?
-    submitted by    /u/New_Astronomer_735  
+                              <span>Hello, 
+ I have 3 domains in one azure tenant.
+ spidermancc.onmicrosoft.com
+ spiderman.com
+ batman.com 
+ I have created 50 users with UPN spidermancc.onmicrosoft.com. 
+ 99% of all those users will have [user@spiderman.com](mailto:user@spiderman.com) when we go live.
+ Some of them will have same &#x27;accountname&#x27; but other domain. 
+ e.g
+  
+UserA is created as [fanta@spidermancc.onmicrosoft.com](mailto:fanta@spidermancc.onmicrosoft.com)
+ With E5 license assigned. When we go live, i&#x27;ll change the users UPN to [fanta@spiderman.com](mailto:fanta@spiderman.com) 
+ 
+UserB is created as fanta@batman.com
+ With E5 license assigned. 
+ 
+ Since my fallback-domain is spidermancc.onmicrosoft.com and other possible attributes in the tenant might be connected to this domain. Can my practice cause any problems? 
+ Reason why I am worried is 
+ UserA
+ [fanta@spidermancc.onmicrosoft.com](mailto:fanta@spidermancc.onmicrosoft.com) will obviously have [fanta@spidermancc.onmicrosoft.com](mailto:fanta@spidermancc.onmicrosoft.com) as an SMTP adress in exchange. This account have &quot;Identies&quot; in Azure AD s[pidermancc.onmicrosoft.com](mailto:fanta@spidermancc.onmicrosoft.com). 
+ ​
+ UserB
+ [fanta@batman.com](mailto:fanta@batman.com) will only have [fanta@batman.com](mailto:fanta@batman.com) as SIP and SMTP adress in exchange.
+ But this account also have &quot;s[pidermancc.onmicrosoft.com](mailto:fanta@spidermancc.onmicrosoft.com).&quot; as identities in Azure AD. 
+ E.g &quot;Identities&quot; in Azure AD. Even If I create the user as [fanta@](mailto:fanta@spidermancc.onmicrosoft.com)batman.com the Identities in Azure AD is spidermancc.onmicrosoft.com - I believe this will change if I change the fall-back domain or the primary domain (?) 
+ Is my practice a problem? Is there any best-practices or workarounds by not creating an other tenant with batman.com as domain (?) 
+ // T
+    submitted by    /u/amthx  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                &ensp;<span class="article-reading-time">(&hairsp;43
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -64,39 +89,18 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gto0s/question_about_mtu/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10gvdez/cannot_rdp_to_certain_servers/"
                         open
                       >
-                        <summary class="article-expander__title">Question about MTU…</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gto0s/question_about_mtu/">
+                        <summary class="article-expander__title">Cannot RDP to certain servers?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10gvdez/cannot_rdp_to_certain_servers/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hi. I’m working on a problem communicating with a customer over a VPN that I suspect is MTU related. However, in my testing, I’ve seen some behaviour that I can’t explain, so would value some input from experts in this forum.
- I have two Linux servers in Azure. The first is a database server and the source for an outbound connection to the remote server. The second server is a StrongSWAN VPN server that we route to in order to get to the customer. Because of the customer’s VPN requirement, I have setup a routing rule on the database server that our Maximum Segment Size (MSS) is 1360:
-  ip route add  via  dev eth0 advmss 1360 
- I am attempting to open an SSH connection from this database server to the customer’s server. I can see from a tcpdump on the databas…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gt5sr/powerswitch_s5148fon_os_image/"
-                        open
-                      >
-                        <summary class="article-expander__title">PowerSwitch S5148F-ON OS Image</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gt5sr/powerswitch_s5148fon_os_image/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We cant find right image for PowerSwitch S5148F-ON. We tried OS10 and OS9 cant install. This switch support service is expired. can we install old image?
-    submitted by    /u/pse_reseller  
+                              <span>Hi,
+ I dont have allot of info to give here but we got some weird issues going on, I cannot RDP to certain windows servers even though im a domain admin all the sudden, we also have a RDS server with some remote apps installed and end users cant rdp (rds) to those as well. I dont see any errors in the event log regarding this.. Its kinda strange.. Anyone run into anything like that?
+    submitted by    /u/dickydotexe  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                &ensp;<span class="article-reading-time">(&hairsp;43
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -107,17 +111,17 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gsj3q/public_nameserver_settings_for_internal_dns/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10guzk8/i_was_asked_to_disable_a_users_email_and_not_tell/"
                         open
                       >
-                        <summary class="article-expander__title">Public Nameserver Settings for Internal DNS?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gsj3q/public_nameserver_settings_for_internal_dns/">
+                        <summary class="article-expander__title">I was asked to disable a user&#x27;s email and not tell them or their supervisor anything. How to deflect the inevitable questions?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10guzk8/i_was_asked_to_disable_a_users_email_and_not_tell/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>There are endless debates over the best local tld to use for a domain. After years of using .internal myself, I’ve switched to registering an actual public tld to ensure it’s owned. This post isn’t about that, it’s just context.
- My question: If I use foo.com as my internal domain, what should I point the public (registrar) nameservers to?
- Of course, I have internal resolution working perfectly well already regardless of the public nameservers, since I control internal (local) dns, but I’m interested in what people here consider best practice for the public nameserver value. Should I point it to my internal (private) IP to ensure any stray queries from my networks are resolved? Should I point it to an empty zone in a public nameserver?
-    submitted by    /u/d_nnix  
+                              <span>Lying about this stuff doesn&#x27;t come naturally to me (I&#x27;m not a BOFH). I&#x27;m conscious that any excuse will be exposed if management decides to tell the truth later which would mean the same lie won&#x27;t work twice.
+ I figure this must be a fairly common scenario but it&#x27;s something I&#x27;ve rarely if ever encountered. We&#x27;re a small business so I can&#x27;t really hide behind buerocratic processes. And I expect to be seeing these people in person later due to other work making it even harder to duck the question.
+ (I don&#x27;t know or need to know the reason why. I don&#x27;t think the user is being immediately sacked; I&#x27;ve been told their PC and other logins can stay active.)
+    submitted by    /u/rootofallworlds  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;44
                                   min&hairsp;)</span>
@@ -130,30 +134,18 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gs01m/hey_guys_i_saw_a_post_posted_here_years_back_so_i/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10guqed/web_migration_tool_for_migrating_website_mysql/"
                         open
                       >
-                        <summary class="article-expander__title">Hey guys I saw a post posted here years back. So i posted here if you could help me</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gs01m/hey_guys_i_saw_a_post_posted_here_years_back_so_i/">
+                        <summary class="article-expander__title">Web migration tool for migrating website / MySQL database / e-mail (imap)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10guqed/web_migration_tool_for_migrating_website_mysql/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I was using my laptop in my college. And my data got finished, so i was trying to connect to an open wifi. And as soon as I connected to the network, my Kaspersky showed notifications of blocked malicious download for 7 to 10 times. I got scared. When I went to research what&#x27;s it. I came to the Kaspersky report that it was:-
- Application name: svchost.exe
- Application path: c:/windows/system32
- Component: web antivirus
- Result description: blocked
- Type: malicious link
- Name: http://wpad.domain.name/wpad.dat
- Precision: exactly
- Threat level: High
- Object type: webpage
- Object name: wpad.dat
- Object path: http://wpad.domain.name
- Reason: databases
- Database release date: 20-1-2023 01:44:00
- Please clarify what it is. Am i being hacked? Is it a virus download? Am I safe? All of the notifications says the same i checked it. I came across a post years back. So i posted it here so if you could help me.
- Edit: I haven&#x27;t connected the laptop to the internet
-    submitted by    /u/Illustrious_Fruit_  
+                              <span>Hi,
+ I&#x27;m looking for a webscript which would help in migrating a website / database / mail from one server to another. This tool should be installed on a 3rd server such that it can be re-used. Preferably something which has configuration options to define the source and destination server (ftp / ftp over ssl / sftp / scp / rsync), and for mail something like the following:
+ https://imapsync.lamiral.info/X/
+ Does such a tool exist?
+    submitted by    /u/The_Chone  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;43
                                   min&hairsp;)</span>
@@ -166,20 +158,20 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gou4a/scada_operators_want_to_own_their_network_and/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10gupdb/how_are_you_handling_contact_management_between/"
                         open
                       >
-                        <summary class="article-expander__title">SCADA Operators Want to Own Their Network and Kick IT Out</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gou4a/scada_operators_want_to_own_their_network_and/">
+                        <summary class="article-expander__title">How are you handling contact management between Outlook and iphones?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10gupdb/how_are_you_handling_contact_management_between/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hey all,
- Network Architect here - I finally deployed some PA firewalls (basic ACLs before) to separate SCADA and Enterprise, which currently shares the same hardware but on different vlans. 
- Right after finishing this, I&#x27;ve been told they want IT out of the network itself and want to manage it with some Rockwell branded Cisco switches. My team would be in charge of the firewall and that&#x27;s it. This... Seems like a bad idea to me? They don&#x27;t have network experience nor Cisco experience and it&#x27;s about 40-45 switches they&#x27;d take over. 
- For folks with SCADA or PLCs in your environment, do you manage those networks? Do the plant operators? I&#x27;m looking to see what the SOP for this kinda thing is. I&#x27;ve no qualm if they want to use these switches but I feel like you&#x27;d want the people who know how to manage and monitor them to... do that for you?@
-    submitted by    /u/Kirios86  
+                              <span>All the companies i&#x27;ve been liasing with all seem to maintain staff to handle manually edited and amended databases of contacts.
+ Environment is company owned and BYOD iphones. Exchange online, Intune (M365 E3).
+ I know you can export contacts to phone with outlook, but it doesn&#x27;t sync the other direction.
+ Why is this so hard?
+    submitted by    /u/jadeskye7  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;49
+                                &ensp;<span class="article-reading-time">(&hairsp;42
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -190,40 +182,23 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gorgh/simple_livedead_ethernet_port_tester/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10gud2r/azure_who_created_a_logic_app/"
                         open
                       >
-                        <summary class="article-expander__title">Simple live/dead ethernet port tester...</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gorgh/simple_livedead_ethernet_port_tester/">
+                        <summary class="article-expander__title">Azure: who created a logic app</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10gud2r/azure_who_created_a_logic_app/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hello;
- I&#x27;m looking for a simple ethernet port tester, something that will simply show if the port is connected to a switch and determine 10base-t or 100base-t (not necessary to tell if gigabit, but would be nice) or if the port is being used by an analogue phone or PBX... 
- I&#x27;m currently using a Test-um TP-100... it&#x27;s small and I carry it around with me in my laptop bag. Much quicker to simply &#x27;whip&#x27; it out and test the network jack to see if it is connected, than booting up the laptop and seeing if there are network lights. It&#x27;s really quick to check all the ports in a 48 port patch panel to see if there is anything plugged in at the other end.... 
- I want to purchase a second unit... because it seems that the TP-100 is no longer available. What is everyone here using?
-    submitted by    /u/ShermansWorld  
+                              <span>Hello all! Is there any way to find out which user created a logic app? I&#x27;ve tried looking but couldn&#x27;t find any info.
+    submitted by    /u/MyNameIsURL0  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                &ensp;<span class="article-reading-time">(&hairsp;42
                                   min&hairsp;)</span>
                             </span>
                           </div>
                         </a>
                       </details>
                     </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
-                </h3>
-                <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
@@ -572,6 +547,287 @@ Is there a way to force users to change PIN in a while?
     submitted by    /u/_Eulenmongol_  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10guwro/lab_boredom/"
+                        open
+                      >
+                        <summary class="article-expander__title">Lab Boredom</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10guwro/lab_boredom/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>What are some things you guys are doing in your labs? I have Eve-ng and I kind of have become bored with what I can come up with doing in the lab. I also have been stuck trying to come up with ideas, any suggestions or challenges are welcomed and appreciated. I am not the smartest guy in world of networking, just trying to stretch my brain to keep learning, thanks!
+    submitted by    /u/ITnerd03  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10guwhm/interviewing_for_a_technical_consulting_engineer/"
+                        open
+                      >
+                        <summary class="article-expander__title">Interviewing for a technical consulting engineer position at Cisco</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10guwhm/interviewing_for_a_technical_consulting_engineer/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have an interview with Cisco for their technical consulting engineer position. I only have 1 year of experience working as an IT help desk, so I feel blessed that I was hand-picked to do an interview, I only worked entry-level IT help desk jobs. 
+ To the people who got the position, what should I say to impress them? What questions should I ask after the interview?
+ Here is the job description: https://jobs.cisco.com/jobs/ProjectDetail/Technical-Consulting-Engineer-Webex-Solution-Support/1392583?source&#x3D;LinkedIn
+    submitted by    /u/Psychoalphadisco  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10guuhy/unimus_supported_devices/"
+                        open
+                      >
+                        <summary class="article-expander__title">Unimus - supported devices</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10guuhy/unimus_supported_devices/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi guys, I have unusual issue with Unimus. In our company we backup about 200 devices with Unimus, and only device that can&#x27;t be backup is FS Data Center Switch(N8560-48BC). 
+ On Unimus official site I found that they support FS switches:
+  
+ Fiberstore (FS.com) switches 
+ Fiberstore (FS.com) Campus switches 
+  
+Does anyone had same problem?
+    submitted by    /u/bootsman91  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10guh5e/8021x_reauth/"
+                        open
+                      >
+                        <summary class="article-expander__title">8021x - Reauth</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10guh5e/8021x_reauth/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ Testing 8021x wired auth with Clearpass NAC
+ One thing I&#x27;ve encountered is if I disconnect a network cable and reconnect it straight after, the authentication on a windows client fails. I need to leave it about 30 seconds or so and then try again.
+ I don&#x27;t see anything on the NAC suggesting it is even making a request, so I&#x27;ve a feeling there&#x27;s maybe a timeout or cooldown on the switch for reauth? Would that make any sense?
+    submitted by    /u/DaithiG  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gu7au/ups_scaling/"
+                        open
+                      >
+                        <summary class="article-expander__title">UPS scaling</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gu7au/ups_scaling/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Next year we are going to renew some campus datacenters, and I need to scale the UPS systems. I know all the devices and their power supply specs, but I know these are maximum consumption (Watt) which will most of the times not be consumed. 
+ Is there a rule of thumb or percentage you guys use for UPS scaling?
+    submitted by    /u/New_Astronomer_735  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gto0s/question_about_mtu/"
+                        open
+                      >
+                        <summary class="article-expander__title">Question about MTU…</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gto0s/question_about_mtu/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi. I’m working on a problem communicating with a customer over a VPN that I suspect is MTU related. However, in my testing, I’ve seen some behaviour that I can’t explain, so would value some input from experts in this forum.
+ I have two Linux servers in Azure. The first is a database server and the source for an outbound connection to the remote server. The second server is a StrongSWAN VPN server that we route to in order to get to the customer. Because of the customer’s VPN requirement, I have setup a routing rule on the database server that our Maximum Segment Size (MSS) is 1360:
+  ip route add  via  dev eth0 advmss 1360 
+ I am attempting to open an SSH connection from this database server to the customer’s server. I can see from a tcpdump on the databas…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gt5sr/powerswitch_s5148fon_os_image/"
+                        open
+                      >
+                        <summary class="article-expander__title">PowerSwitch S5148F-ON OS Image</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gt5sr/powerswitch_s5148fon_os_image/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We cant find right image for PowerSwitch S5148F-ON. We tried OS10 and OS9 cant install. This switch support service is expired. can we install old image?
+    submitted by    /u/pse_reseller  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gsj3q/public_nameserver_settings_for_internal_dns/"
+                        open
+                      >
+                        <summary class="article-expander__title">Public Nameserver Settings for Internal DNS?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gsj3q/public_nameserver_settings_for_internal_dns/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>There are endless debates over the best local tld to use for a domain. After years of using .internal myself, I’ve switched to registering an actual public tld to ensure it’s owned. This post isn’t about that, it’s just context.
+ My question: If I use foo.com as my internal domain, what should I point the public (registrar) nameservers to?
+ Of course, I have internal resolution working perfectly well already regardless of the public nameservers, since I control internal (local) dns, but I’m interested in what people here consider best practice for the public nameserver value. Should I point it to my internal (private) IP to ensure any stray queries from my networks are resolved? Should I point it to an empty zone in a public nameserver?
+    submitted by    /u/d_nnix  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gs01m/hey_guys_i_saw_a_post_posted_here_years_back_so_i/"
+                        open
+                      >
+                        <summary class="article-expander__title">Hey guys I saw a post posted here years back. So i posted here if you could help me</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gs01m/hey_guys_i_saw_a_post_posted_here_years_back_so_i/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I was using my laptop in my college. And my data got finished, so i was trying to connect to an open wifi. And as soon as I connected to the network, my Kaspersky showed notifications of blocked malicious download for 7 to 10 times. I got scared. When I went to research what&#x27;s it. I came to the Kaspersky report that it was:-
+ Application name: svchost.exe
+ Application path: c:/windows/system32
+ Component: web antivirus
+ Result description: blocked
+ Type: malicious link
+ Name: http://wpad.domain.name/wpad.dat
+ Precision: exactly
+ Threat level: High
+ Object type: webpage
+ Object name: wpad.dat
+ Object path: http://wpad.domain.name
+ Reason: databases
+ Database release date: 20-1-2023 01:44:00
+ Please clarify what it is. Am i being hacked? Is it a virus download? Am I safe? All of the notifications says the same i checked it. I came across a post years back. So i posted it here so if you could help me.
+ Edit: I haven&#x27;t connected the laptop to the internet
+    submitted by    /u/Illustrious_Fruit_  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gou4a/scada_operators_want_to_own_their_network_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">SCADA Operators Want to Own Their Network and Kick IT Out</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gou4a/scada_operators_want_to_own_their_network_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all,
+ Network Architect here - I finally deployed some PA firewalls (basic ACLs before) to separate SCADA and Enterprise, which currently shares the same hardware but on different vlans. 
+ Right after finishing this, I&#x27;ve been told they want IT out of the network itself and want to manage it with some Rockwell branded Cisco switches. My team would be in charge of the firewall and that&#x27;s it. This... Seems like a bad idea to me? They don&#x27;t have network experience nor Cisco experience and it&#x27;s about 40-45 switches they&#x27;d take over. 
+ For folks with SCADA or PLCs in your environment, do you manage those networks? Do the plant operators? I&#x27;m looking to see what the SOP for this kinda thing is. I&#x27;ve no qualm if they want to use these switches but I feel like you&#x27;d want the people who know how to manage and monitor them to... do that for you?@
+    submitted by    /u/Kirios86  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;49
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10gorgh/simple_livedead_ethernet_port_tester/"
+                        open
+                      >
+                        <summary class="article-expander__title">Simple live/dead ethernet port tester...</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10gorgh/simple_livedead_ethernet_port_tester/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello;
+ I&#x27;m looking for a simple ethernet port tester, something that will simply show if the port is connected to a switch and determine 10base-t or 100base-t (not necessary to tell if gigabit, but would be nice) or if the port is being used by an analogue phone or PBX... 
+ I&#x27;m currently using a Test-um TP-100... it&#x27;s small and I carry it around with me in my laptop bag. Much quicker to simply &#x27;whip&#x27; it out and test the network jack to see if it is connected, than booting up the laptop and seeing if there are network lights. It&#x27;s really quick to check all the ports in a 48 port patch panel to see if there is anything plugged in at the other end.... 
+ I want to purchase a second unit... because it seems that the TP-100 is no longer available. What is everyone here using?
+    submitted by    /u/ShermansWorld  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -40809,66 +41065,6 @@ CarZing.com  Visit CarZing.com/WIRE</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/zs69z7/connection_blocked_by_stp/"
-                        open
-                      >
-                        <summary class="article-expander__title">connection blocked by STP</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zs69z7/connection_blocked_by_stp/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;ve lost the connection between my middle school and primary building,. thankfully we are Xmas break😁
- The switch at the middle school is a Cisco and the switch at the primary building is an old 3com
- When looking at at the Cisco it alerted me with
- %SPANTREE-2-PVSTSIM_FAIL: Blocking root port Te1/0/43: Inconsitent inferior PVST BPDU received on VLAN 7, claiming root 32775:00a5.bf25.d800
- The config on te1/0/43 is
- Switchport trunk Spanning-tree portfast Description link to CV
- On the 3com the config is
- interface GigabitEthernet1/0/24
- stp edged-port enable
- port link-type trunk undo port trunk permit vlan 1
- port trunk permit vlan 7 to 8 70 128 157 200
- port trunk pvid vlan 305
- undo jumboframe enable
- description &quot;Uplink to MS 1G&quot;
- I&#x27;m not sure where to begin troubleshooting as this has.never been an issue before. What am I missing?
- Apologies for formatting I&#x27;m on my phone.
-    submitted by    /u/Wizard210  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;73
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/zs61xx/6wind_vsr_community_experience/"
-                        open
-                      >
-                        <summary class="article-expander__title">6wind vsr community experience</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/zs61xx/6wind_vsr_community_experience/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello All, 
- I&#x27;m looking for community opinion and experience related to the 6wind products in general, particularly with 6wind vsr solutions.
- I&#x27;ve been testing it pretty intensively and already have some understanding. However, it would be nice if anybody can share their experience with the company and its products.
- For now, my specific case is a branch VPN router, but I have a few more places where they might fit, just lack external information and have to stick to their corporate website only.
-    submitted by    /u/maugli13  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -40974,27 +41170,6 @@ CarZing.com  Visit CarZing.com/WIRE</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zs6chm/what_was_your_starting_salaryposition_when_you/"
-                        open
-                      >
-                        <summary class="article-expander__title">What was your starting salary/position when you started working in IT to now?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zs6chm/what_was_your_starting_salaryposition_when_you/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>This is simply out of curiosity to see how far people have come in this field.
-    submitted by    /u/GrowthIT  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;103
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -41002,8 +41177,8 @@ CarZing.com  Visit CarZing.com/WIRE</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3967086160">
-        <time id="build-timestamp" datetime="2023-01-20T11:10:17.757Z">2023-01-20T11:10:17.757Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3967584525">
+        <time id="build-timestamp" datetime="2023-01-20T12:24:12.116Z">2023-01-20T12:24:12.116Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
