@@ -2,10 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-01-21T11:09:18.909Z</updated>
+    <updated>2023-01-21T12:20:26.375Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Lumens has taken near a year to install]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10hpqq8/lumens_has_taken_near_a_year_to_install/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10hpqq8/lumens_has_taken_near_a_year_to_install/"/>
+        <updated>2023-01-21T12:04:31.000Z</updated>
+        <summary type="html"><![CDATA[So back in February 2022 I started talks with Lumens about replacing AT&T as my SD-WAN provider and single pane of glass internet billing for all my 28 sites. Well it’s now January 2023 and not a single site is on Lumens yet. It’s been delays after delay with them not being able to get hardware in etc etc and now my account rep is outie, the new guy is a ghost so far.
+ My question for my fellows is how the hell can I get out of this damn contract now that it’s a year with no end in sight. I’ll read my contracts and agreements but was hoping someone here has been through this kind of mid install cancel due to no delivery. I just want to find someone who can actually execute the services.
+    submitted by    /u/gorramfrakker  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to log as Administrator user in CMD Windows XP?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10hpmpr/how_to_log_as_administrator_user_in_cmd_windows_xp/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10hpmpr/how_to_log_as_administrator_user_in_cmd_windows_xp/"/>
+        <updated>2023-01-21T11:58:04.000Z</updated>
+        <summary type="html"><![CDATA[Yes, you read the title well, here is the context: I got some kind of lab (so don't worry it's completely legal and supervised) and I have to exploit anything I can imagine and an IMPORTANT thing is that I only have access to CMD on this Windows XP machine because I have accessed through a msfconsole exploit.
+ So I think I've changed "Administrator" password with net user Administrator 123 (and just in case I: net user Adminstrator /active:yes) and now I don't know how to log as this user on CMD prompt because there is not a su root command in Windows (at least to my knowledge).
+ Could you advise me what to do? I need to log as Administrator because only this user can access to a restricted file with data I need to go on.
+ Or should I try some kind of privilege escalation stuff?
+ Any case thanks in advance!
+    submitted by    /u/CAG12ASSAULT  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Edgerouter not doing NAT for a VLAN]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10hpit5/edgerouter_not_doing_nat_for_a_vlan/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10hpit5/edgerouter_not_doing_nat_for_a_vlan/"/>
+        <updated>2023-01-21T11:51:18.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I have an issue which I was not able to solve.
+ EdgeRouter (Lite v2.0.9-hotfix.5) with Eth1 - static IP address ( public) and 5 VLANs on Eth2 eth2.100 to eth2.105.
+ Internet (masquerade) works well on all the existing VLANs, excepting the latest addition eth2.105 (10.0.5.0/24).
+ Nothing goes out to the internet from this VLAN eth2.105.
+ 5003 MASQ eth1 saddr ANY to 81.x.y.z
+ proto-all sport ANY
+ on the edgerouter I captured the icmp ping packets coming from a host to 1.1.1.3
+ user@router1:~$ sudo tcpdump -i eth2.105 -n -vvv icmp
+ tcpdump: listening on eth2.105, link-type EN10MB (Ethernet), capture size 262144 bytes
+ 13:36:14.345937 IP (tos 0x0, ttl 64, id 60458, offset 0, flags [DF], proto ICMP (1), length 84)
+ 10.0.5.10 >
+ 1.1.1.3: ICMP echo request, id 9, seq 50, length 64
+ 13:36:15.346112 IP (tos 0x0, ttl 64, id 61092, offset 0, flags [DF], proto ICMP (1), length 84)
+ 10.0.5.10 >
+ 1.1.1.3: ICMP echo request, id 9, seq 51, length 64
+ 13:36:16.346278 IP (tos 0x0, ttl 64, id 61596, offset 0, flags [DF], proto ICMP (1), length 84)
+ No reply !
+ I have a S2S tunnel to this location and I can reach out to all IPs belonging to this VLAN.
+ I can ping from the VLAN subnet Edgerouter management interface.
+ Any advice how to further troubleshoot?
+ Thanks
+    submitted by    /u/AMizil  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why would TCP ever allow accepting a SYN for a connection in the TIME-WAIT state?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10hp5te/why_would_tcp_ever_allow_accepting_a_syn_for_a/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10hp5te/why_would_tcp_ever_allow_accepting_a_syn_for_a/"/>
+        <updated>2023-01-21T11:26:25.000Z</updated>
+        <summary type="html"><![CDATA[From RFC 1122:
+  
+When a connection is closed actively, it MUST linger in TIME-WAIT state for a time 2xMSL (Maximum Segment Lifetime). However, it MAY accept a new SYN from the remote TCP to reopen the connection directly from TIME-WAIT state, if it:
+ (1) assigns its initial sequence number for the new connection to be larger
+ than the largest sequence number it used on the previous connection
+ incarnation
+  
+Why would you ever allow this?
+ What if the server accepts the new SYN for a connection in TIME-WAIT state, and then the server starts sending data so fast that the sequence number wraps, and now there could be a duplicate segment from the old connection with the same sequence number? Is this not possible?
+    submitted by    /u/silenceDogoodd2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Network Unlock Bitlocker devices joined in Azure AD]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/10homqo/network_unlock_bitlocker_devices_joined_in_azure/</id>
@@ -602,6 +684,28 @@ We are having a devil of a time understanding the true differences (and advantag
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Yet Another Firewall Recommendation Post - 10gb/s throughput?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10gzebf/yet_another_firewall_recommendation_post_10gbs/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10gzebf/yet_another_firewall_recommendation_post_10gbs/"/>
+        <updated>2023-01-20T15:13:24.000Z</updated>
+        <summary type="html"><![CDATA[Hey all, planning on moving from a mx450 capping at ~4gb/s, and I want to approach the 9.89gb/s that our ISP's Cisco ASR gives. It will need to route vlans.
+ Here is the priority order:
+  
+Uptime (stopping myself from building one...)
+ Throughput (have to say goodbye to meraki)
+ Cost (again with ~8k yearly renewal.. bye meraki)
+ IPS/malware download prevention/etc
+ Monitoring (hopefully something that can pop into grafana)
+  
+​
+ Thanks for any recommendations!
+    submitted by    /u/pullingcablesagain  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
     <entry>
@@ -24458,65 +24562,6 @@ I am sure there are some bright minds out there to help navigate this mess.
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VPN running on Sophos XG 115 and users using vpn on computers]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zt1evy/vpn_running_on_sophos_xg_115_and_users_using_vpn/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zt1evy/vpn_running_on_sophos_xg_115_and_users_using_vpn/"/>
-        <updated>2022-12-23T00:14:13.000Z</updated>
-        <summary type="html"><![CDATA[I manage a small network and some of the users use a vpn on the computer while I have setup the vpn on sohpos. Is there any benefit to running a vpn on a sophos XG 115 and on the device locally? Or does it have little effect. Pretty new to networking but not finding any clear information online.
-    submitted by    /u/GlitteringString5679  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Blogpost Friday!]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zt13in/blogpost_friday/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zt13in/blogpost_friday/"/>
-        <updated>2022-12-23T00:00:10.000Z</updated>
-        <summary type="html"><![CDATA[It's Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member's new and shiny blog posts.
- Feel free to submit your blog post and as well a nice description to this thread.
- Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What’s your password manager of choice?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zt0rms/whats_your_password_manager_of_choice/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zt0rms/whats_your_password_manager_of_choice/"/>
-        <updated>2022-12-22T23:45:13.000Z</updated>
-        <summary type="html"><![CDATA[LastPass is no longer an option since recent breach. With that said, what’s your favorite password manager?
-    submitted by    /u/PM_Me_Graph_Queries  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Teams, web vs local install]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zt0hvm/teams_web_vs_local_install/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zt0hvm/teams_web_vs_local_install/"/>
-        <updated>2022-12-22T23:33:55.000Z</updated>
-        <summary type="html"><![CDATA[After reading a few blogs the difference between the web and local install is negligible and our org could survive just fine with the web version, however I'm looking for why your org went one way or the other if you know and were involved somehow, ty.
-    submitted by    /u/nickcasa  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[VLOG Thursday 310: Management VLAN?, pfsense lab testing, Errata, and Q&A]]></title>
-        <id>https://www.youtube.com/watch?v=fVl60ihxv4E</id>
-        <link href="https://www.youtube.com/watch?v=fVl60ihxv4E"/>
-        <updated>2022-12-22T23:15:47.000Z</updated>
-        <author>
-            <name>Lawrence Systems</name>
         </author>
     </entry>
 </feed>
