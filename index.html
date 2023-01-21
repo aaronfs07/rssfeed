@@ -22,11 +22,218 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-21 datetime="2023-01-21T13:12:58.000Z">2023-01-21</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-21 datetime="2023-01-21T13:12:58.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-21 datetime="2023-01-21T14:05:25.000Z">2023-01-21</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-21 datetime="2023-01-21T14:05:25.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hrzjf/connect_to_a_locally_hosted_website_over_vpn/"
+                        open
+                      >
+                        <summary class="article-expander__title">Connect to a locally hosted website over VPN?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hrzjf/connect_to_a_locally_hosted_website_over_vpn/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>How can I do something like this?
+    submitted by    /u/Wuffel_ch  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hqwyw/create_second_l2_link_between_sites_without/"
+                        open
+                      >
+                        <summary class="article-expander__title">Create second L2 link between sites without causing network loop, where spanning tree can&#x27;t be used</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hqwyw/create_second_l2_link_between_sites_without/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Small IT team covering everything, knowledgeable on networking but no expert.
+ I&#x27;m trying to plan how to best configure a second L2 network link between our two sites without inadvertently creating a network loop, and where I cannot use spanning tree.
+ We have two sites, each has connectivity via upstream provider which is part of the same organisation but separate (so we manage our own networking but don&#x27;t have access to the upstream network), and we also use a bonded 2 x 1Gb Q-in-Q L2 tunnel over the upstream backbone connection to carry shared VLANs between sites.
+ I now have a 10Gb dark fibre linking the sites directly, which I&#x27;ve initially configured with a single access VLAN to test connectivity but want to now configure as a trunk and gradually move the internal VLANs from the existing link to the new, ideally keeping the old link in place as a backup, or for less important traffic. The Q-in-Q tunnel strips out spanning tree packets. While I would remove a VLAN from the existing tunnel before adding it to the new link, I can&#x27;t do that with the native VLAN 1, which would be present on both links and, without STP, would likely cause a loop.
+ To further complicate things for me slightly, I&#x27;m running older Cisco kit at the first site (3850s at the core) and Ruckus at the second site (ICX 7650s) so configuration isn&#x27;t just a copy/paste. Each site is its own spanning tree domain, so I&#x27;d be wanting to enable bpdufilter on the links anyway.
+ Would setting the native VLAN on the new link to something other than default VLAN 1 solve this? Or should I bite the bullet, configure all the VLANs on the new link and simply shut down the old and enable the new, and be ready to switch back if it doesn&#x27;t come up as expected? Or is there another approach? I&#x27;d prefer to do some more testing first, running the link as a trunk carrying a couple of test VLANs, but not causing a network loop is more important!
+ ​
+ Thanks!
+    submitted by    /u/ox-sjwk  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hpit5/edgerouter_not_doing_nat_for_a_vlan/"
+                        open
+                      >
+                        <summary class="article-expander__title">Edgerouter not doing NAT for a VLAN</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hpit5/edgerouter_not_doing_nat_for_a_vlan/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I have an issue which I was not able to solve.
+ EdgeRouter (Lite v2.0.9-hotfix.5) with Eth1 - static IP address ( public) and 5 VLANs on Eth2 eth2.100 to eth2.105.
+ Internet (masquerade) works well on all the existing VLANs, excepting the latest addition eth2.105 (10.0.5.0/24).
+ Nothing goes out to the internet from this VLAN eth2.105.
+ 5003 MASQ eth1 saddr ANY to 81.x.y.z
+ proto-all sport ANY
+ on the edgerouter I captured the icmp ping packets coming from a host to 1.1.1.3
+ user@router1:~$ sudo tcpdump -i eth2.105 -n -vvv icmp
+ tcpdump: listening on eth2.105, link-type EN10MB (Ethernet), capture size 262144 bytes
+ 13:36:14.345937 IP (tos 0x0, ttl 64, id 60458, offset 0, flags [DF], proto ICMP (1), length 84)
+ 10.0.5.10 &gt;
+ 1.1.1.3: ICMP echo request, id 9, seq 50, length 64
+ 13:36:15.346112 IP (tos 0x0, ttl 64, id 61092, offset 0, flags [DF], proto ICMP (1), length 84)
+ 10.0.5.10 &gt;
+ 1.1.1.3: ICMP echo request, id 9, seq 51, length 64
+ 13:36:16.346278 IP (tos 0x0, ttl 64, id 61596, offset 0, flags [DF], proto ICMP (1), length 84)
+ No reply !
+ I have a S2S tunnel to this location and I can reach out to all IPs belonging to this VLAN.
+ I can ping from the VLAN subnet Edgerouter management interface.
+ Any advice how to further troubleshoot?
+ Thanks
+    submitted by    /u/AMizil  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hp5te/why_would_tcp_ever_allow_accepting_a_syn_for_a/"
+                        open
+                      >
+                        <summary class="article-expander__title">Why would TCP ever allow accepting a SYN for a connection in the TIME-WAIT state?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hp5te/why_would_tcp_ever_allow_accepting_a_syn_for_a/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>From RFC 1122:
+  
+When a connection is closed actively, it MUST linger in TIME-WAIT state for a time 2xMSL (Maximum Segment Lifetime). However, it MAY accept a new SYN from the remote TCP to reopen the connection directly from TIME-WAIT state, if it:
+ (1) assigns its initial sequence number for the new connection to be larger
+ than the largest sequence number it used on the previous connection
+ incarnation
+  
+Why would you ever allow this?
+ What if the server accepts the new SYN for a connection in TIME-WAIT state, and then the server starts sending data so fast that the sequence number wraps, and now there could be a duplicate segment from the old connection with the same sequence number? Is this not possible?
+    submitted by    /u/silenceDogoodd2  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hlx0t/cato_networks_v_palo_alto/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cato Networks v Palo Alto</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hlx0t/cato_networks_v_palo_alto/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey Everyone, looking for advice on Cato v Palo Alto Networks, has anyone made the switch? Pro’s and Con’s? Has Cato Matured over the last year or so?
+    submitted by    /u/Any-Signature-5627  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hjhr7/aruba_acsp_certified/"
+                        open
+                      >
+                        <summary class="article-expander__title">ARUBA ACSP CERTIFIED!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hjhr7/aruba_acsp_certified/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Using it as a warmup for the CCNP. It sounds crazy but there&#x27;s so much overlap.
+    submitted by    /u/Emotional-Meeting753  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >ColdFusion</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UC4QZ_LsYcvcq7qOsOhpAX4A">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;eIHDyB9bgbA"
+                        open
+                      >
+                        <summary class="article-expander__title">The Story of the First Modern Electric Car</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;eIHDyB9bgbA">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -38,6 +245,46 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10hr2bk/january_2023_patch_kerberos_hardening_questions/"
+                        open
+                      >
+                        <summary class="article-expander__title">January 2023 Patch - Kerberos Hardening questions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10hr2bk/january_2023_patch_kerberos_hardening_questions/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/ZJsBTE_HHH09avOHjmA-Hr2-bXLLkW4PN0ZuKZVp5sw.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;dd3ba54779da9899f0098711d107555dd78e95b7" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hi,
+ ​
+ ​
+ DC&#x27;s are 2016 as is functional level.
+ ​
+ DCs are 2016.
+ ​
+ We have a legacy systems like XP,2000,2003,2008 server.
+ ​
+ I know everyone says to decom the old servers, but our go live to replace them is like First week of april
+ ​
+ I have not applied the patches to our DC. I also our network security:configure encryption types allowed GPO is NOT defined.
+ ​
+ ​
+ My questions are :
+ ​
+ 1 - Lets say , when applying Microsoft&#x27;s January patch it would break the Kerberos authentication for Legacy OSes ? 
+ ​
+ 2 - In ADUC, can I resolve the issue by explictly setting RC4 (0x4 (RC4_HMAC_MD5)) in msDS-SupportedEncryptionTypes for the computer objects of the target ( legacy OS) ?
+ ​
+ 3- I have noticed that when I run the script I get a report that There are 63 objects that do not have AES K…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;46
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -370,161 +617,6 @@ Drink a glass with me, /r/sysadmin, here&#x27;s to actually having benefits, get
     submitted by    /u/ohgreatishit  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hqwyw/create_second_l2_link_between_sites_without/"
-                        open
-                      >
-                        <summary class="article-expander__title">Create second L2 link between sites without causing network loop, where spanning tree can&#x27;t be used</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hqwyw/create_second_l2_link_between_sites_without/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Small IT team covering everything, knowledgeable on networking but no expert.
- I&#x27;m trying to plan how to best configure a second L2 network link between our two sites without inadvertently creating a network loop, and where I cannot use spanning tree.
- We have two sites, each has connectivity via upstream provider which is part of the same organisation but separate (so we manage our own networking but don&#x27;t have access to the upstream network), and we also use a bonded 2 x 1Gb Q-in-Q L2 tunnel over the upstream backbone connection to carry shared VLANs between sites.
- I now have a 10Gb dark fibre linking the sites directly, which I&#x27;ve initially configured with a single access VLAN to test connectivity but want to now configure as a trunk and gradually move the internal VLANs from the existing link to the new, ideally keeping the old link in place as a backup, or for less important traffic. The Q-in-Q tunnel strips out spanning tree packets. While I would remove a VLAN from the existing tunnel before adding it to the new link, I can&#x27;t do that with the native VLAN 1, which would be present on both links and, without STP, would likely cause a loop.
- To further complicate things for me slightly, I&#x27;m running older Cisco kit at the first site (3850s at the core) and Ruckus at the second site (ICX 7650s) so configuration isn&#x27;t just a copy/paste. Each site is its own spanning tree domain, so I&#x27;d be wanting to enable bpdufilter on the links anyway.
- Would setting the native VLAN on the new link to something other than default VLAN 1 solve this? Or should I bite the bullet, configure all the VLANs on the new link and simply shut down the old and enable the new, and be ready to switch back if it doesn&#x27;t come up as expected? Or is there another approach? I&#x27;d prefer to do some more testing first, running the link as a trunk carrying a couple of test VLANs, but not causing a network loop is more important!
- ​
- Thanks!
-    submitted by    /u/ox-sjwk  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hpit5/edgerouter_not_doing_nat_for_a_vlan/"
-                        open
-                      >
-                        <summary class="article-expander__title">Edgerouter not doing NAT for a VLAN</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hpit5/edgerouter_not_doing_nat_for_a_vlan/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello,
- I have an issue which I was not able to solve.
- EdgeRouter (Lite v2.0.9-hotfix.5) with Eth1 - static IP address ( public) and 5 VLANs on Eth2 eth2.100 to eth2.105.
- Internet (masquerade) works well on all the existing VLANs, excepting the latest addition eth2.105 (10.0.5.0/24).
- Nothing goes out to the internet from this VLAN eth2.105.
- 5003 MASQ eth1 saddr ANY to 81.x.y.z
- proto-all sport ANY
- on the edgerouter I captured the icmp ping packets coming from a host to 1.1.1.3
- user@router1:~$ sudo tcpdump -i eth2.105 -n -vvv icmp
- tcpdump: listening on eth2.105, link-type EN10MB (Ethernet), capture size 262144 bytes
- 13:36:14.345937 IP (tos 0x0, ttl 64, id 60458, offset 0, flags [DF], proto ICMP (1), length 84)
- 10.0.5.10 &gt;
- 1.1.1.3: ICMP echo request, id 9, seq 50, length 64
- 13:36:15.346112 IP (tos 0x0, ttl 64, id 61092, offset 0, flags [DF], proto ICMP (1), length 84)
- 10.0.5.10 &gt;
- 1.1.1.3: ICMP echo request, id 9, seq 51, length 64
- 13:36:16.346278 IP (tos 0x0, ttl 64, id 61596, offset 0, flags [DF], proto ICMP (1), length 84)
- No reply !
- I have a S2S tunnel to this location and I can reach out to all IPs belonging to this VLAN.
- I can ping from the VLAN subnet Edgerouter management interface.
- Any advice how to further troubleshoot?
- Thanks
-    submitted by    /u/AMizil  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hp5te/why_would_tcp_ever_allow_accepting_a_syn_for_a/"
-                        open
-                      >
-                        <summary class="article-expander__title">Why would TCP ever allow accepting a SYN for a connection in the TIME-WAIT state?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hp5te/why_would_tcp_ever_allow_accepting_a_syn_for_a/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>From RFC 1122:
-  
-When a connection is closed actively, it MUST linger in TIME-WAIT state for a time 2xMSL (Maximum Segment Lifetime). However, it MAY accept a new SYN from the remote TCP to reopen the connection directly from TIME-WAIT state, if it:
- (1) assigns its initial sequence number for the new connection to be larger
- than the largest sequence number it used on the previous connection
- incarnation
-  
-Why would you ever allow this?
- What if the server accepts the new SYN for a connection in TIME-WAIT state, and then the server starts sending data so fast that the sequence number wraps, and now there could be a duplicate segment from the old connection with the same sequence number? Is this not possible?
-    submitted by    /u/silenceDogoodd2  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hlx0t/cato_networks_v_palo_alto/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cato Networks v Palo Alto</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hlx0t/cato_networks_v_palo_alto/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey Everyone, looking for advice on Cato v Palo Alto Networks, has anyone made the switch? Pro’s and Con’s? Has Cato Matured over the last year or so?
-    submitted by    /u/Any-Signature-5627  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;42
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10hjhr7/aruba_acsp_certified/"
-                        open
-                      >
-                        <summary class="article-expander__title">ARUBA ACSP CERTIFIED!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10hjhr7/aruba_acsp_certified/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Using it as a warmup for the CCNP. It sounds crazy but there&#x27;s so much overlap.
-    submitted by    /u/Emotional-Meeting753  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;42
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -41258,8 +41350,8 @@ Im also needing to figure out how to push this batch file once and only once so 
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3974987137">
-        <time id="build-timestamp" datetime="2023-01-21T13:14:50.091Z">2023-01-21T13:14:50.091Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3975172076">
+        <time id="build-timestamp" datetime="2023-01-21T14:09:48.899Z">2023-01-21T14:09:48.899Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
