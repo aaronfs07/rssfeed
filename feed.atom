@@ -2,10 +2,667 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-01-23T14:11:39.413Z</updated>
+    <updated>2023-01-24T09:11:56.902Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Scalability of VXLAN Fabrics]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10k1ed9/scalability_of_vxlan_fabrics/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10k1ed9/scalability_of_vxlan_fabrics/"/>
+        <updated>2023-01-24T09:08:07.000Z</updated>
+        <summary type="html"><![CDATA[Hi, I'm working with Cisco and Arista VXLAN Fabrics. We usually build them for small and midsize enterprises. Sometimes bigger ones. For me, most DCs have around 50 switches. 
+ But, after everything is finished and we take a look in the EVPN table, we find that they can get pretty big. Sadly most customers want "every vlan everywhere!!!11" which certainly won't help with scalability. As we have to add a VLAN to 50 switches, even if it's only used on 2 switches. 
+ After we did dig a bit in scalability and how to minimize table entries (depending on BGP design obviously). We are not sure how big someone could scale a standard VXLAN EVPN Fabric. Someone told me "around 400 switchs, then it gets janky" another one said "we have 2000 switches in a campus VXLAN EVPN fabric, everything is fine". So, how far can we/you go? What are the limits?
+ I'm not talking about the routing table of the switches, of course some switches will fill their tables earlier than others. But if you use switches with millions of possible entieries, where is the limit?
+ I know already that the public clouds don't use a DC network like the ones we build. They have "software" on their servers for their fabric and don't have all that state in their network. It wouldn't scale that big.
+    submitted by    /u/onyx9  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rebuild PERC foreign config]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10k1b4y/rebuild_perc_foreign_config/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10k1b4y/rebuild_perc_foreign_config/"/>
+        <updated>2023-01-24T09:01:22.000Z</updated>
+        <summary type="html"><![CDATA[Hi, don't ask me why 😂...
+ Are there ways to rebuild the foreign config of a disk after clearing it so it can be imported back in the old Virtual Drive?
+ Server: Dell R720xd
+ I have all the disks, 2 disks weren't cleared so still have the foreign config, the rest is now recognized as unconfigured (good).
+    submitted by    /u/randommen96  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reminder: If you have never tried to restore your backups, you don’t have a backup]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10k16hc/reminder_if_you_have_never_tried_to_restore_your/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10k16hc/reminder_if_you_have_never_tried_to_restore_your/"/>
+        <updated>2023-01-24T08:51:52.000Z</updated>
+        <summary type="html"><![CDATA[Implemented AWS backint for SAP Hana not too long ago. Followed SAP best practices and AWS recommendations. We tried to restore and it worked perfectly.
+ Tried a different machine and the restore failed. AWS is looking into it, SAP is looking into it. Nobody knows why it won’t restore. Even the dev team is looking into it.
+ Test your backups every once in a while.
+ Thankfully this entire thing was just a DRP exercise. Our “main” backups seem to be working.
+    submitted by    /u/cakeBoss9000  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft tool for nanolearning, specifically for MFA]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10k10nj/microsoft_tool_for_nanolearning_specifically_for/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10k10nj/microsoft_tool_for_nanolearning_specifically_for/"/>
+        <updated>2023-01-24T08:39:31.000Z</updated>
+        <summary type="html"><![CDATA[One of our customers is enabling MFA for their M365 environment and requested we push out some form of nanolearning test / course for their users to get them set up with MFA.
+ Does Microsoft have anything like this themselves? What other solutions are there?
+    submitted by    /u/27Purple  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PasswordManager - Separate account data and access information into separate systems? Is this a thing?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10k10ju/passwordmanager_separate_account_data_and_access/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10k10ju/passwordmanager_separate_account_data_and_access/"/>
+        <updated>2023-01-24T08:39:16.000Z</updated>
+        <summary type="html"><![CDATA[Hello all,
+ due to a new project we got a new password manager. Now we need to protect this data. 
+ Now the data protection department came and said that it is very common in IT to separate "account information" (UserName and Password) and "access information" (IP address, DomainName) and store them in different systems.
+ Plan would be the following 
+ Account information -> PasswordManager
+ Access information -> Tool X 
+ The plan is then that the colleagues can look up the access information via Tool X for example "Greensystem has IP XX.XXX.XXX" and then search for the account information in the PasswordManager. Title: Greensystem, UserName "Test", Password: "123456"
+ I am a big friend of security but have never heard this procedure of information storage and find the whole thing for colleagues who access 5-15 times to any systems simply much too inefficient. I can imagine that colleagues will soon go crazy like this. 
+ What is your experience with this? Do you have any comments here? Am I seeing this wrong or do I need to do some more convincing here?
+    submitted by    /u/get-azusername  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Inactive users]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10k0z7b/inactive_users/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10k0z7b/inactive_users/"/>
+        <updated>2023-01-24T08:36:21.000Z</updated>
+        <summary type="html"><![CDATA[Hey guys
+ I am wondering how you solve this case in your organisation.
+ We have a hybrid AD solution. So we have on-prem AD which is synced with O365. So we administrate the AD on-prem and it syncs it to O365.
+ If a user is inactive we change OU and disable them. In O365 the user will stay active but the login will be blocked. If the user has a email forwarding address this will be active too.
+ This behaviour is because if a user will be accidently moved (we have a script from our ERP) to disabled OU that not all will be deleted.
+ In O365 there is no section like "disabled users" only "deleted users", or do I miss something?
+ The unhappy thing is that the email forwarding will still be active.
+ How you handle this all? Do you block email forwarding at all?
+ If we would remove the email forwarding on every move to disable OU there would be a case if the user was accidently moved to that OU.
+ Best regards
+    submitted by    /u/FreshmenCH89  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cable speed]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10k0qfo/cable_speed/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10k0qfo/cable_speed/"/>
+        <updated>2023-01-24T08:18:45.000Z</updated>
+        <summary type="html"><![CDATA[Hi there I was wondering if some one could recommend a budget freindly cable tester with the ability to test max cable speed. The cheaper ones I found onaly supports 10Mbps, 100Mbps, 1Gbps. But I would like to test 10Mbps, 100Mbps, 1Gbps, 2.5Gbps, 5Gbps and 10Gbps I am happy to buy second hand
+    submitted by    /u/Efficient-Economy-18  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Autopilot deployment failures due to office 365 apps timeout]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10k0o76/autopilot_deployment_failures_due_to_office_365/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10k0o76/autopilot_deployment_failures_due_to_office_365/"/>
+        <updated>2023-01-24T08:14:09.000Z</updated>
+        <summary type="html"><![CDATA[Anyone else having issues with office cdn in Australia? We have a number of devices unable to go through autopilot due to timing out when when installing office/m365 apps. Everything is allowed through firewall and nothing has changed. When I did a packet capture for an update check. I notice the cdn/front door it is trying to use is https://f.c2r.ts.cdn.office.net/ which gives
+ <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0e5LPYwAAAACyJ6a+P8qNRJ/RXYtSpFiwUEFPRURHRTA2MTMARWRnZQ== 
+ or
+ GatewayExceptionResponse 
+ just wondering if anyone else having a similar issue.
+    submitted by    /u/Theknightmarez  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Guilty about leaving current job.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10k0mbq/guilty_about_leaving_current_job/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10k0mbq/guilty_about_leaving_current_job/"/>
+        <updated>2023-01-24T08:10:15.000Z</updated>
+        <summary type="html"><![CDATA[Hi Guys,
+ ​
+ Quick story: i'm currently working as a junior sysadmin at a small company with 70 employees for over 1 year. (this is my first IT job, i'm currently 22 years old)
+ Me and my IT Manager manage all the servers, the whole network and offer support to our collegues. 
+ The last few months do have been really boring for me as there has not been a lot of work. All the server run smooth and in a 40 hour work week I have like 10 hours of work so i'm really bored. I already tried studying but a person can only study a certain amount of hours per day... 
+ Recently though I have had a really good offer on Linked with a big company in my local area. They got a Sysadmin team with more than 20 people. 
+ For me this is a very good opportunity as they are prepared to learn me everything from scratch. So I won't be bored as there is a a lot of work. I will even get the oppurtunity to travel abroad with our sysadmin team to maintain the server park abroad. They even offer the ability to earn certificates. 
+ Not only that, my pay and benefits will also increase significantly. 
+ My problem is now that I feel guilty about turning in my resignation as my manager will be left alone to manage the whole IT infrastructure in my current company. 
+ ​
+ What is the best approach to this situation and how can I turn in my resignation professionally? 
+ ​
+ Many thanks & kind regards!
+    submitted by    /u/Ghostky123  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is mixing Windows servers, DCs, and networking equipment on the same VLAN a good idea?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jymik/is_mixing_windows_servers_dcs_and_networking/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jymik/is_mixing_windows_servers_dcs_and_networking/"/>
+        <updated>2023-01-24T05:57:27.000Z</updated>
+        <summary type="html"><![CDATA[What’re your thoughts on mixing servers, DC VM and network equipment like wireless controllers and APs on the same VLAN?
+    submitted by    /u/Garegin16  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TIFU - as I love annoying scam Indian Call Centre operators]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jx8b8/tifu_as_i_love_annoying_scam_indian_call_centre/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jx8b8/tifu_as_i_love_annoying_scam_indian_call_centre/"/>
+        <updated>2023-01-24T04:36:01.000Z</updated>
+        <summary type="html"><![CDATA[Normally if I get a call from "Microsoft Support" I love to swear at them in Hindi and just basically annoy them.
+ That is all well and good until I got a call from the real "Microsoft Support" trying to close out an old support call. Me being me, I did not let them get that far, I just continued to swear at them and eventually hung up.
+ Oops.
+ It should be interesting at the next monthly meeting with my TAM and Microsoft Account Exec team.
+    submitted by    /u/Mr_Kill3r  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I’m finally making the jump!]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jwwkr/im_finally_making_the_jump/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jwwkr/im_finally_making_the_jump/"/>
+        <updated>2023-01-24T04:17:51.000Z</updated>
+        <summary type="html"><![CDATA[After 5 years at a small full service MSP, where I started with absolutely 0% experience in IT, and have slowly moved to a supervisor position and had been in talks with the owner for me to take over the company when he retires, I just got an offer with a 20% increase in pay and full benefits. I still have one class left before I get my bachelors and no security clearance so I didn’t think I would qualify for many jobs in my area but it turns out my interviewing went better than I expected and I’m just so damn excited to take the next step in my career.
+ Any advice for working in the government sector?
+    submitted by    /u/T_T0ps  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[With all the recent layoffs in tech…]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jwqew/with_all_the_recent_layoffs_in_tech/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jwqew/with_all_the_recent_layoffs_in_tech/"/>
+        <updated>2023-01-24T04:08:29.000Z</updated>
+        <summary type="html"><![CDATA[Remember, that if you die on Monday, your job will be listed on Wednesday. Don’t give your company any more loyalty than they give you. 
+ My employees are great and I do every I can for them. And I know that my boss has my back, and even his boss. But I work for a megacorp… go far enough up and my name means nothing. I’m an employee ID number and an expense on some MBAs spreadsheet. 
+ I’m not advocating that anyone do subpar work, but I’m also saying if you get a significantly better offer strongly consider it, because if the bean counters could clone you, and ship your clone to a lower cost of employment country and maintain the same level of productivity, there would be 3 of you doing your job from a foreign country right now.
+    submitted by    /u/tilhow2reddit  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ever Find A Dead Man's Switch On A Network/Domain?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jwa5k/ever_find_a_dead_mans_switch_on_a_networkdomain/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jwa5k/ever_find_a_dead_mans_switch_on_a_networkdomain/"/>
+        <updated>2023-01-24T03:44:14.000Z</updated>
+        <summary type="html"><![CDATA[I've heard stories online of new IT Admins finding a "dead man's switch" on their network after the previous Admin left, but I've yet to hear it from my actual IT acquaintances; it's always "I know a guy, whose previous boss had cousin that worked at a company...". What I mean by "dead man's switch" is a buried Powershell or Python script set to do something if the IT guy is suddenly fired or their account is disabled. Is this just a tall tale or a unicorn?
+    submitted by    /u/PoniardBlade  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What do you do if you don't know how many hops away a "neighbor" router is in BGP?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jsght/what_do_you_do_if_you_dont_know_how_many_hops/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jsght/what_do_you_do_if_you_dont_know_how_many_hops/"/>
+        <updated>2023-01-24T00:34:32.000Z</updated>
+        <summary type="html"><![CDATA[ChatGPT is an AMAZING study tool but maybe it's affecting my google skills. 
+ The response I'm getting for "what if you don't know the number of hops away when configuring" (as part of a larger ChatGPT "conversation") is: 
+ "You can still configure BGP without knowing the exact number of hops. It's possible to use a 'default' number of hops in the configuration or use a wildcard to match any number of hops. You can also make use of path explored by using the BGP traceroute command." 
+ I know that you can change the ttl value as needed but when you don't know the exact number, do you just estimate (and/or purposely overshoot it?). 
+ I like the idea of using traceroute to count the number of hops but on the internet I think some points can be blocked from being counted in traceroute (or may just the ip is blocked but you can count the "*" instead). I also assume that if there is any AS prepending along the way this number could be off. 
+ Specifically, do you, in practice, just type something like... 
+  neighbor 192.52.100.2 remote-as 65555 neighbor 192.52.100.2 ebgp-multihop 255 
+ and just hope that the neighbor's hop count away is within the max ttl value?
+    submitted by    /u/PrudentAd1132  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Removing devices from Microsoft Location Services]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jsbjo/removing_devices_from_microsoft_location_services/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jsbjo/removing_devices_from_microsoft_location_services/"/>
+        <updated>2023-01-24T00:28:04.000Z</updated>
+        <summary type="html"><![CDATA[I recently had a customer reach out in frustration after one of their sites reported Microsoft services believed they were location in a different market/timezone. They operate co-working sites so there are MANY transient devices coming and going each day. 
+ After having the ISP review the IP Location data submitted to ARIN and a bit of troubleshooting we determined it was ONLY Microsoft and I was able to locate the location service opt-out form: https://account.microsoft.com/privacy/location-services-opt-out
+ Bing maps goes so far as to precisely locate web browser clients to the LAT/LONG of the same companies location in the incorrect market. Google and other services operate correctly.
+ Has anyone else had success having MAC addresses of AP's and layer 3 devices removed from the MS Location database? Any additional roadblocks?
+    submitted by    /u/ccagan  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I like to have fun music for our help desk call queue. Need more ideas.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jryx9/i_like_to_have_fun_music_for_our_help_desk_call/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jryx9/i_like_to_have_fun_music_for_our_help_desk_call/"/>
+        <updated>2023-01-24T00:11:45.000Z</updated>
+        <summary type="html"><![CDATA[I have had Super Mario and currently have Jeopardy. What are some other fun on hold / call queue audios?
+    submitted by    /u/Portugallll  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Timing confusion]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jrjyn/timing_confusion/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jrjyn/timing_confusion/"/>
+        <updated>2023-01-23T23:53:06.000Z</updated>
+        <summary type="html"><![CDATA[Why do timings(Hello, Hold) not have to match to get an EIGRP neighbor adjacency happening, but they do for OSPF?
+    submitted by    /u/Man-in-The-Void  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[USB slot not recognized in MDS 9148S?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jr10q/usb_slot_not_recognized_in_mds_9148s/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jr10q/usb_slot_not_recognized_in_mds_9148s/"/>
+        <updated>2023-01-23T23:30:33.000Z</updated>
+        <summary type="html"><![CDATA[I am running into an issue with some FC switches I am trying to wipe. 
+ Before I write erase the switch I would like to backup the license file as I assume it will be erased as part of the process. But, for some reason I cannot get a FAT32 USB key to mount in the usb port. 
+ I am running 6.2.9a. 
+  
+a cursory search shows this to be a bug in this software version, but I do not have access to download a newer version.
+ is there any other workaround for this bug? 
+ does a write erase actually blow away the license? It is a standard 12 port 16G license. 
+  
+Thanks for the help.
+    submitted by    /u/vertexsys  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[#shorts Synology FS3410 Fan Swap]]></title>
+        <id>https://www.youtube.com/watch?v=zc7AQyZsNq4</id>
+        <link href="https://www.youtube.com/watch?v=zc7AQyZsNq4"/>
+        <updated>2023-01-23T23:26:29.000Z</updated>
+        <author>
+            <name>Lawrence Systems</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Keeping up with the Contracts?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jpnf2/keeping_up_with_the_contracts/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jpnf2/keeping_up_with_the_contracts/"/>
+        <updated>2023-01-23T22:33:00.000Z</updated>
+        <summary type="html"><![CDATA[What tools are you all using to keep up with support contracts for software? Creating calendar events in Outlook seems to be the easiest and most affordable at this time, but curious if there are better options out there.
+    submitted by    /u/adudenameddan  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[transitioning from BYOD]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jpmb1/transitioning_from_byod/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jpmb1/transitioning_from_byod/"/>
+        <updated>2023-01-23T22:31:44.000Z</updated>
+        <summary type="html"><![CDATA[Hi sysadmin,
+ I manage a crew of seasonal temps—25 people or so, (summer months) doing customer service work in the natural resource field at remote rural sites. Age range is class of $current_year to old boomers. 
+ Part of their job is data collection--we use cheap android tablets for this. results are cached and uploaded when they get to a network.
+ For many years we've just let them use their personal phone for work related stuff. I'll text them if there is a call out and I need to reassign their task, or if there is a tornado for instance. It's been fine for everyone except the past couple of years HR has been making noises expressing their worry about the BYOD. We had a retirement in my chain and now I've got the big seat. (Change happens when change happens) anywho, New year—new policy! For my part the personal phone thing freaks me out--the main ones are workplace stalking/creeping and also protecting my staff from having their personal property taken as evidence.
+ ​
+ What should we do?
+ ideas so far--
+ furnish each with a company iPhone and company iPad. phone is for contact, iPad is for data entry.
+ Furnish each with an iPhone and use it for contact and collection. Con of this is old people and fat fingers/data entry/battery life.
+ furnish each with an iPad (cellular) and use it for contact and data entry. Con is they don't have a work number. 
+ I briefed my leadership and IT staff on this and they were both supportive of whatever proposal i make. My boss is an apple fanboy. We've got dollars in the budget to roll this out. 
+ other useful things:
+ org has 500 people on payroll and we all use office 365 in a Windows environment. 
+ I'll have a breakfast burrito.
+    submitted by    /u/Asmallfly  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Seriously, fuck Carbon Black]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jpf6t/seriously_fuck_carbon_black/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jpf6t/seriously_fuck_carbon_black/"/>
+        <updated>2023-01-23T22:23:31.000Z</updated>
+        <summary type="html"><![CDATA[What the hell is their deal? Do they just think they can win by attrition? At this point they are completely blacklisted with our association. There is no way in hell any of the current IT administration will ever use them. Their fucking email spam is relently. They just do not stop.
+ Fuck carbon black
+    submitted by    /u/michaelcmetal  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Has anyone been using ChatGPT to automate some of their networking tasks?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jp6hx/has_anyone_been_using_chatgpt_to_automate_some_of/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jp6hx/has_anyone_been_using_chatgpt_to_automate_some_of/"/>
+        <updated>2023-01-23T22:13:46.000Z</updated>
+        <summary type="html"><![CDATA[God it’s so easy. I’ve already built a simple Infoblox DNS record creator and a multi-threaded ping tool with a few features. I’ve been learning Python anyway because it’s kind of addictive but the AI beats me spending hours on the internet trying to piece together solutions from different forums. 
+ Anyone else been doing this? If so, what have you created?
+    submitted by    /u/Busy-Recipe9840  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 Start Menu Ads and Crapware]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10joq25/windows_11_start_menu_ads_and_crapware/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10joq25/windows_11_start_menu_ads_and_crapware/"/>
+        <updated>2023-01-23T21:55:43.000Z</updated>
+        <summary type="html"><![CDATA[Just wanted to share what I did to disable these random ads in the Windows 11 Pro Start Menu (I found that these apps are not actually installed, they're just place holders... Essentially ads). Check out the following group policy to get rid of these random tiles for TikTok, CandyCrush, Prime Video, WhatsApp, etc...
+ Computer Configuration > Administrative Templates > Windows Components > Cloud Content > Turn off cloud optimized content + Turn off Microsoft consumer experience.
+ Once these are enabled and applied, users who have not yet logged in will not see these upon logging in. For users that have already logged in, the policy seems to have no effect unless you delete the local profile, and have them log back in.
+    submitted by    /u/Hammock-of-Cake  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Router/Firewall for Small Business]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jmz0l/routerfirewall_for_small_business/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jmz0l/routerfirewall_for_small_business/"/>
+        <updated>2023-01-23T20:45:07.000Z</updated>
+        <summary type="html"><![CDATA[TL;DR: Inexperienced IT guy needs to replace a Netgear SRX5308 with something of similar or greater capabilities, and could use pointing in the right direction. 
+ I began working IT at a small organization (~20 people) a couple years ago and was able to learn basic sysadmin stuff with help from reddit. (Handled migrating SBS 2011 to Server 2019, a task which seemed out of my depth at first) But one area of IT knowledge I'm still somewhat lacking in is networking. 
+ I'll start with what I do understand: DNS, DHCP, and VPN for remote access are all handled by our Windows Server. I'm also pretty sure I understand that the hardware is connected like so: Modem -> Router -> Switch -> Server/PCs. 
+ Anyway, our router, a Netgear SRX5308, is EoL and long overdue for a replacement, so I believe I si…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Since I know a lot of company reps lurk here... don't do this.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jmj0n/since_i_know_a_lot_of_company_reps_lurk_here_dont/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jmj0n/since_i_know_a_lot_of_company_reps_lurk_here_dont/"/>
+        <updated>2023-01-23T20:27:04.000Z</updated>
+        <summary type="html"><![CDATA[I received an unsolicited email from N-Able today that started off like this:
+  
+I understand that you or a colleague at <company> is doing some research on server backup technology! I would love to learn more about your role.
+  
+I've mentioned before that my email address is not published anywhere and I've never shared it with any platform with permission to send me marketing crap, much less share it with others for marketing.
+ You can imagine my annoyance when I receive unsolicited email from people trying to sell me things.
+ The part that bugs me is reading between the lines. They know *someone* at <company> is doing "research" but not who. That tells me they're using ZoomInfo (from which I'm opted out but I trust gas station egg salad more than them) or a similar platform to scavenge information from people who brush past their website. 
+ And not knowing who, they decided to shotgun every address they have available for the company. 
+ The truly shit part is that I replied to the message with the very concern I mentioned here and got a 550 error bounceback that tells me they block direct emails (there was a link to a calendar platform to schedule an appointment in the message, screw that). 
+ Of course this is the level of bullshit I expect from SolarWinds.
+    submitted by    /u/Securivangelist  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network automation career path advice]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jlo0z/network_automation_career_path_advice/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jlo0z/network_automation_career_path_advice/"/>
+        <updated>2023-01-23T19:52:22.000Z</updated>
+        <summary type="html"><![CDATA[Past few years I’ve been learning python while working as mainly a voice engineer. I have experience automating things here and there. Some examples of the libraries I’ve been using are: zeep/soap related, pandas, paramiko, netmiko, and recently napalm. I’m curious what the current pulse is like though, and where I should be pivoting my efforts to learn? Is a network automation job worth the hop(personal experience)? Is network automation worth skipping into? Personal experience would be nice to hear.
+ I now have a collection of no starch books I keep buying and am here and there working through them - for at least high level knowledge. I’d like to better prioritize what languages in general that are going to be the next thing when it comes to automation. I can see AI being a critical component to integrate more and more with network automation, but I’d think this landscape would be bottlenecked with baseline comparison API requests than a full AI automated network. I have some ideas to do this currently that involves a hacky method, but I think it could at least give a POC. I digress. I think though, this bring up the matter of how much should I invest in deep learning, machine learning, AI if I stay on the network automation track?
+    submitted by    /u/Optimal_Leg638  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[meraki cloud - radius on prem]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jlao0/meraki_cloud_radius_on_prem/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jlao0/meraki_cloud_radius_on_prem/"/>
+        <updated>2023-01-23T19:37:31.000Z</updated>
+        <summary type="html"><![CDATA[hello, 
+ im looking to do radius auth from meraki wifi / dashboard to an on prem radius server.
+ The AP's will run in proxy mode since the wifi network is completely separate from the corporate network and thus "local mode" from AP direct to RADIUS server across the LAN is not possible. 
+ would it be deemed secure enough to have a destination NAT on the firewall to a RADIUS server in the DMZ, providing only meraki dashboard IP's and RADIUS protocol were permitted to access it?
+ ​
+ thanks
+    submitted by    /u/ChoiceSwearing  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What happens to CAPWAP when over the latency requirement?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jkws1/what_happens_to_capwap_when_over_the_latency/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jkws1/what_happens_to_capwap_when_over_the_latency/"/>
+        <updated>2023-01-23T19:21:38.000Z</updated>
+        <summary type="html"><![CDATA[Our remote work force uses Cisco 1815 teleworker access points to establish capwap over the internet. These allow POE to the desk phones at employees remote location and drop the phones/client traffic back off at our DC. We have seen tons of strange EAP fragment issues with random amounts of workers(nothing consistent). Could this be the CAPWAP latency requirement causing this? The clients do Radius-EAP-TLS authentication to an ISE deployment next to the WLC 5520. 
+ 12916 Expected TLS acknowledge for TLS fragment but received another message
+    submitted by    /u/Salmify  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cisco ISE, Routers, Switches, and Dell laptops with DOT1X Auth issues.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jkpv4/cisco_ise_routers_switches_and_dell_laptops_with/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jkpv4/cisco_ise_routers_switches_and_dell_laptops_with/"/>
+        <updated>2023-01-23T19:13:51.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone experienced Dell laptops not responding to DOT1X Auth? There seems to be an issue with select models that will authenticate as long as you are active. Remove the smart card and be gone so long that is naps and subsequently seems to ignore the switch trying to do DOT1X Auth. Eventually the Auth is failed and the MAC is removed from the switch.
+ User returns to reinsert smart card, wakes screen to log in, but no network connectivity. User has to reboot to acquire network access again. 
+ Not all users or Dell models have this issue. It is an enterprise network, but I am told only 1 site is affected. Hmm
+    submitted by    /u/fsolis629  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dell charging outrageous prices for RAM/Storage on a server build]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jkksj/dell_charging_outrageous_prices_for_ramstorage_on/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jkksj/dell_charging_outrageous_prices_for_ramstorage_on/"/>
+        <updated>2023-01-23T19:08:09.000Z</updated>
+        <summary type="html"><![CDATA[My question for the community is what's the advantage to buying the overpriced drives and RAM from Dell when I can get equivalent hardware for much cheaper. I'd rather buy a couple of extra sticks of RAM and an extra NVMe as cold spares and save thousands, but am I missing some advantage or gotcha? The SKUs I'm looking at are:
+ 400-BKGI
+ 370-AEVP
+ ​
+ Thoughts/suggestions?
+ EDIT: Yes this is for a production system for our organization but we do want to not spend needlessly; specifically 2 Linux KVM virtualization platforms which will be clustered. I've done something similar in the past about 10 years ago and it all worked just fine. It seems Dell has to cover the SKUs we are purchasing from them so it could be a good way to save money. Thanks for all of the replies so far.
+ EDIT2: For contractual reasons, we need to buy Dell servers. Bleghhh. 
+ EDIT3: Super helpful responses, everyone. Thanks! We are mulling our options.
+    submitted by    /u/HikeClimbSki  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Can TCP fragment TLS in such a way that client/server hello message get sliced]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jkhl4/can_tcp_fragment_tls_in_such_a_way_that/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jkhl4/can_tcp_fragment_tls_in_such_a_way_that/"/>
+        <updated>2023-01-23T19:04:38.000Z</updated>
+        <summary type="html"><![CDATA[And just in general how typically fragmentation goes? Ofc TCP is stream, but realistically I feel there is no way client/server hello get sliced midway through, since they are rendered whole at once, so there is no time for TCP to slice. Also there is nothing in the TCP buffer that is waiting to be send when connection is open. 
+ (zero rtt is not considered. assume message does not exceed TCP segment max size)
+ Edit: En-route to work, will answer everyone in an hour or two. A lot of useful info! Thanks everyone
+ Edit2: Thank you, everyone. Yeah, there is no reason not to buffer incoming messages. I think these suboptimizations are just not worth it.
+    submitted by    /u/johnisonpills  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How can I improve redundancy on a network using 2 BGP routers and HSRP?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jkbgt/how_can_i_improve_redundancy_on_a_network_using_2/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jkbgt/how_can_i_improve_redundancy_on_a_network_using_2/"/>
+        <updated>2023-01-23T18:58:15.000Z</updated>
+        <summary type="html"><![CDATA[I'm in a situation where there are 2 routers where 2 different ISPs terminate. Each one advertises our BGP prefix. On the inside, however, it's just HSRP. Outbound traffic goes to the VIP. When one of the ISPs goes down, if that particular router happens to be the HSRP primary the internet will go down. I can restore it if I increase the priority on the other ISP router, but this is a manual intervention.
+ Is there a better approach than this design or anything that can be done to improve it? As far as I'm aware, HSRP has no ability to do anything like route path monitoring.
+ Thanks!
+    submitted by    /u/stealthmodeactive  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The haters were right... I'm wasting my money]]></title>
+        <id>https://www.youtube.com/watch?v=TzntUW34bv8</id>
+        <link href="https://www.youtube.com/watch?v=TzntUW34bv8"/>
+        <updated>2023-01-23T18:23:02.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Broken into Telecom Sales - Any challenges]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jiyux/broken_into_telecom_sales_any_challenges/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jiyux/broken_into_telecom_sales_any_challenges/"/>
+        <updated>2023-01-23T18:04:08.000Z</updated>
+        <summary type="html"><![CDATA[Hey, everyone!
+ I've heard stories of people who've switched their careers from working as engineers or support into Sales. I can imagine the experience and the knowledge accumulated definitely helped. I was wondering:
+ Have you had any challenges in making this transition?
+    submitted by    /u/cezarbarbu97  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is the word "HelpDesk" a derogatory word?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jhlqh/is_the_word_helpdesk_a_derogatory_word/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jhlqh/is_the_word_helpdesk_a_derogatory_word/"/>
+        <updated>2023-01-23T17:10:56.000Z</updated>
+        <summary type="html"><![CDATA[I literally had someone at work say that I should not use the word "HelpDesk" since it is derogatory and demeaning to the service they provide. I should use the word "service center" instead.
+ Is this true?
+    submitted by    /u/BulaChill  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SPAN to Netflow?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jgzs0/span_to_netflow/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jgzs0/span_to_netflow/"/>
+        <updated>2023-01-23T16:46:45.000Z</updated>
+        <summary type="html"><![CDATA[Hey All,
+ I got a few switches that don't support Netflow. Cisco is telling me to configure SPAN and aim it to the IP address of our flow collectors. The collectors are remote to the sites in question. 
+ I'm a bit confused here. I've done span from port to port but not to a remote IP. Would anyone be willing to shed some light on how to get this done? DO i just do SPAN and point it to the upstream palo alto/ firewall that is running netflow monitoring?
+    submitted by    /u/JustAGoatSheep  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why is the interarrival time on FTP packets high?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jgbtq/why_is_the_interarrival_time_on_ftp_packets_high/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jgbtq/why_is_the_interarrival_time_on_ftp_packets_high/"/>
+        <updated>2023-01-23T16:19:10.000Z</updated>
+        <summary type="html"><![CDATA[These graphs: https://imgur.com/trcLVAx.pngare from this text (Characterics of widearea TCP/IP conversations): https://dl.acm.org/doi/pdf/10.1145/115992.116003
+ In the FTP graph, why is there such a high change of the interarrival time being high? I understand that in TELNET the time is usually high because its interactive and the user takes time to type, but in FTP shouldnt the packets just be sent quickly one after another. If the interarrival is high doesnt it indicate congestion
+    submitted by    /u/silenceDogoodd2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Firewalls in VRRP pair with OSPF to edge router?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jfmq3/firewalls_in_vrrp_pair_with_ospf_to_edge_router/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jfmq3/firewalls_in_vrrp_pair_with_ospf_to_edge_router/"/>
+        <updated>2023-01-23T15:50:25.000Z</updated>
+        <summary type="html"><![CDATA[I'm trying to configure a pair of firewalls running Vyos, gw01 and gw02. Each firewall has a ptp OSPF link to the edge router, edge-gw01.
+ gw01 and gw02 are configured with vrrp for the LAN gateway addresses (6 subnets). 3 of those subnets have a stateful firewall, so conntrack-sync is configured between gw01 and gw02.
+ My problem is that both gw01 and gw02 advertise the LAN subnets via OSPF to edge-gw01, but for the subnets with stateful fw, traffic must go to the current vrrp master. 
+ What is the best way to ensure edge-gw01 only imports routes for the LAN subnets from the current VRRP primary?
+ EDIT: The vyous routers each have a /31 to the edge router. If I do nothing, the edge router sees two equal cost routes to LAN subnets, so there’s even chance that external packets hit the vyos that’s in vrrp backup state.
+    submitted by    /u/EinalButtocks  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How do you deal with coworkers that call for one thing and it extends into hour long calls?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jfe2j/how_do_you_deal_with_coworkers_that_call_for_one/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jfe2j/how_do_you_deal_with_coworkers_that_call_for_one/"/>
+        <updated>2023-01-23T15:40:27.000Z</updated>
+        <summary type="html"><![CDATA[Hey everyone, sorry in advance if this is not the right sub to post in but I figured there has to be multiple people in my scenario. I’ve been trying to deal with my lead, whom i’m glad to help out if they actually require help, who will call for a quick question about something but will then address other multiple ongoing issues that my team including myself is assigned to. 
+ At first I was like “ugh that’s my lead, i have to pick up every call….” but lately I’ve been ignoring more and more. When I do pick up their call (sensing the importance), the same cycle begins. 
+ How do I professionally say “don’t bring up other topics, stick to one”?
+    submitted by    /u/Ayeliensfromspace  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Update: I quit! - VIP wants no security - is this the hill I die on?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10jeq7w/update_i_quit_vip_wants_no_security_is_this_the/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10jeq7w/update_i_quit_vip_wants_no_security_is_this_the/"/>
+        <updated>2023-01-23T15:12:10.000Z</updated>
+        <summary type="html"><![CDATA[This is an update from a post I made 4 months ago: Rant: VIP wants No security - is this the hill I die on?
+ You all assured me I wasn't crazy and a lot of you gave really good advice. I was inspired by this post yesterday to come back and give an update. (I feel for that OP, because I could have written most of that myself)
+ So after sharing my rant 4 months ago, I started to take take a look at my resume. I used a career coach who gave great tips on formatting my resume and I started to look for jobs. I had offers upwards of 70k more than I was making, with some even higher if I was looking to relocate (I wasn't). After about a month, a LOT of interviews, and a few offers, I accepted a position that pays considerably more with more wfh, better commute, and better perks. 
+ I gave a full 3…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2 DAC Cables (SFP-H25G-CU3M) doesn't work in dual port network adapter]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10jehtx/2_dac_cables_sfph25gcu3m_doesnt_work_in_dual_port/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10jehtx/2_dac_cables_sfph25gcu3m_doesnt_work_in_dual_port/"/>
+        <updated>2023-01-23T15:02:04.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I'm experiencing a strange issue which doesn't let me work with 25G DAC cables.
+ So, I have Dell R740xd server with the following Network Adapter:
+ Broadcom BCM57414 NetXtreme-E 10Gb/25Gb RDMA Ethernet Controller ( dual port )
+ I'm using the following DAC cables:
+  
+SFP-H25G-CU3M
+ SFP-H10GB-CU3M
+  
+The switch is Cisco Nexus 9K.
+ So, when you connect 2 cables of 10G to the dual port adapter, everything work just fine, and both ports have links.
+ But, when you connect for example, 10G cable on one port and 25G cable on the other port, only the first cable that is connected will get link.
+ same goes for two 25G cables. if you connect just 1 cable of 25G, the port works fine (alone).
+ The network card is high profile if it's matter.
+ we have tried to replace the network card to a brand new one, same issue.
+ I checked with Dell, no hardware issues found. I checked with VMware, no software / configuration issues found.
+ I didn't check with Cisco yet.. maybe there is some kind of limitations on the network adapter? am I missing something? the cables are not supported?
+ Edit: After I limited the port using "speed 10000" the port came up, but as 10G.
+ Thanks!!
+    submitted by    /u/MadHackerTV  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[What is everyone’s setup for portable team/zoom/conference cart?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/10jd9qc/what_is_everyones_setup_for_portable/</id>
@@ -24828,309 +25485,6 @@ I have looked a bit into the Soti platform, but as far as I have understood I ne
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RedSeal tool for network topology and exposure. Opinions? Any OpenSource alternatives?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zv6pw2/redseal_tool_for_network_topology_and_exposure/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zv6pw2/redseal_tool_for_network_topology_and_exposure/"/>
-        <updated>2022-12-25T21:07:42.000Z</updated>
-        <summary type="html"><![CDATA[Team is looking at using RedSeal's on prem tool to map our network out. Supposedly you can ingest firewall rules from your devices into the program and it plots out your network for you, showing you what could potentially be exposed to the internet and on what ports so you can review and shutdown any open holes you're not fully aware about or got lost in bad documentation/poor communication issues.
- It's pretty pricy though, the 1st demo I had looked decent but the inventory side of it i've already accomplished via Netbox. I could do the network topology too via Netbox but that's manually entering things in instead of allowing a tool to go out, grab the firewall rules and ingest it properly. I'm sure there's a ansible script method I could use to poll all that info and feed it up into Netbox's api but that's more work then I have the time for currently.
- Was curious if there were any other open source alternatives to this tool or people's thoughts and opinions on it?
- Mostly a RHEL/Ubuntu shop with some Windows hosts peppered throughout.
-    submitted by    /u/HauntingDebt6336  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I just got UPS APC BX950MI, replace batteries in the future?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zv4xc3/i_just_got_ups_apc_bx950mi_replace_batteries_in/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zv4xc3/i_just_got_ups_apc_bx950mi_replace_batteries_in/"/>
-        <updated>2022-12-25T19:36:53.000Z</updated>
-        <summary type="html"><![CDATA[I am pretty sure the last model was listed as user replaceable, but I now realize this one says its not user replacable but still lists replacement battery for it.
- I just want to know, so I know when the time that will eventually come, comes:
- Is it actually hard to replace, or is it simple and I can do it, but they say its not to cover their butts?
-    submitted by    /u/TheMihle  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to stay motivated with slacking coworkers]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zv4g9k/how_to_stay_motivated_with_slacking_coworkers/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zv4g9k/how_to_stay_motivated_with_slacking_coworkers/"/>
-        <updated>2022-12-25T19:13:27.000Z</updated>
-        <summary type="html"><![CDATA[I am a 31-year-old junior system administrator. 
- Long time lurker here and nonnative English speaker.
- ​
- Prior to my current role I have worked as helpdesk and field support specialist.
- I love computers and am always motivated to play around on my homelab.
- At home I have an ESXi and Hyper-V host with, Windows server with domain stuff, Linux VM’s, OPNsense, Docker, unRAID, VEEAM. I have 11 entry level IT certifications, MCSA, Exchange, LPIC, ITIL, Comptia, CCNA the basic stuff.
- At the moment I work in an office as internal IT in a team with 3 other junior admins. We are the escalation point of the helpdesk which does suck because we still have to do helpdesk work. The helpdesk techs are on the lowest level I have seen in my career, tech and communication wise.
- My coworkers like to waste half of the day talking about Marvel with the helpdesk technicians and all other types of nonsense. (This will not improve with current management and will probably take years to turn around)
- I currently work on IT projects with other teams and my senior colleague which is interesting. But I do not get any useful input from the other junior admins, they prefer slacking off and goofing around. So, I am kind of a one-man army I have only my senior colleague as a sparring partner and he has a full schedule.
- I find it hard to stay motivated, I am the most technically knowledgeable person in IT besides the senior admin and architect. My colleagues do not show any interest in improving and I have to spoon-feed the helpdesk. So it feels like I do all the giving.
- Does anyone have any tips to deal with this?
-    submitted by    /u/DancesWithWolves123o  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Zone / Flow based firewalls other than PaloAlto, Juniper?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zv4app/zone_flow_based_firewalls_other_than_paloalto/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zv4app/zone_flow_based_firewalls_other_than_paloalto/"/>
-        <updated>2022-12-25T19:05:46.000Z</updated>
-        <summary type="html"><![CDATA[I am currently playing around with some alternative but popular platforms like pFsense/OpnSense and feel like they are throwbacks to ASAs with rules defined by intereface/vLAN etc.
- I really love the clean single list style of PaloAlto/Juniper firewalls where a rule is a rule, from and to and it works, vs building rules on a per interface basis to build things up.
- What other platforms are Zone / Flow based and in the small business price range? Any open source options?
-    submitted by    /u/ElectroSpore  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ESXi cluster is down and due to ignorance and not listening to sa/sec team.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zv3pq5/esxi_cluster_is_down_and_due_to_ignorance_and_not/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zv3pq5/esxi_cluster_is_down_and_due_to_ignorance_and_not/"/>
-        <updated>2022-12-25T18:36:07.000Z</updated>
-        <summary type="html"><![CDATA[I work at a place where management seems to think the best way to help people progress is to give (them) helpdesk all of the keys and allow them to learn....I opposed this and so did our main sec guy. 
- We have had issues with techs changing port configs for key systems or taking things out of agg groups because they don't understand what they are used for. Even after these mistakes I would push towards POLP and they would shoot it all down.
- Well today I'm having to rebuild an ESXi cluster due to another issue caused by untrained people having access to key systems. I'm sure when I go to the lead meeting on Wednesday they will still shoot down my suggestions.
- Who else has to deal with this nonsense? I'm all for people leveling up but a production environment is not the place for this.
-    submitted by    /u/rtfmftw  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I Bought a Gaming PC at Best Buy… Am I Dumb?]]></title>
-        <id>https://www.youtube.com/watch?v=jgzI-N_U2hs</id>
-        <link href="https://www.youtube.com/watch?v=jgzI-N_U2hs"/>
-        <updated>2022-12-25T17:34:12.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Make POE device smart?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zv07ke/make_poe_device_smart/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zv07ke/make_poe_device_smart/"/>
-        <updated>2022-12-25T15:32:37.000Z</updated>
-        <summary type="html"><![CDATA[Happy holidays everyone. 
- Does anyone have any ideas to make a POE Pager device thats powered by a POE Switch smart? It needs to be rebooted every week or so and I need a way to do that remotely. I wanted to use a smart plug on a POE injector but the device is plugged into a poe switch and I'm not sure if I unplug/turn off the power to the injector will it cut the power to the device if the input to the injector is POE it will still have power from poe, right?
- Does anyone know of any other alternatives i.e. female to female RJ45 poe passthrough device that can remotely cut and restore power?
-    submitted by    /u/rapmarz96  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Where do I start again in Networking?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zuz2n1/where_do_i_start_again_in_networking/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zuz2n1/where_do_i_start_again_in_networking/"/>
-        <updated>2022-12-25T14:26:45.000Z</updated>
-        <summary type="html"><![CDATA[I was a hands-on Cisco Network Engineer before but I have been away from technology for over 10 years now and feel totally obsolete. I want to be back into the industry and I want to know where do I start again with the current trends in Networking. I would like to learn SDN also and where do I start with it? PS. I’m learning Azure and AWS fundamentals as well to catch up.
-    submitted by    /u/Fun_Pineapple_4057  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A more practical, project based way to learn python and automation in general?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zuyh5d/a_more_practical_project_based_way_to_learn/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zuyh5d/a_more_practical_project_based_way_to_learn/"/>
-        <updated>2022-12-25T13:50:53.000Z</updated>
-        <summary type="html"><![CDATA[I've tried and failed multiple times to learn python via video course and book. Could you guys recommend some kind of practical approach to learn?
- I'd like to gain familiarity with Ansible and Docker/kubernetes too, as we use these in my work environment. I wonder if there is a lab environment I could build that incorporates all these elements.
- I appreciate any tips you could give!
-    submitted by    /u/McBeano72  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows user issues]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zuyepw/windows_user_issues/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zuyepw/windows_user_issues/"/>
-        <updated>2022-12-25T13:46:27.000Z</updated>
-        <summary type="html"><![CDATA[Recently one my windows server got crashed which i managed to recover from last snapshot and since then when user got login they don’t see their all those user settings or data kept on desktop, but we can browse that data if we go inside c:\Users<username>
- Who i can fix it. 
- Ps :- i’m not a hardcore windows administrator
-    submitted by    /u/x0600  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Webfilter for kids laptop]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zuwzn5/webfilter_for_kids_laptop/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zuwzn5/webfilter_for_kids_laptop/"/>
-        <updated>2022-12-25T12:10:43.000Z</updated>
-        <summary type="html"><![CDATA[Rebuilt an old laptop for kid and giving it to him. What is a good webfilter for local install. Ive only ever worked on large enterprise’s systems and installed proxy servers and connected into cloud services etc. Havent installed anything on a laptop in years. Any suggestions recommendations from the community are welcome. Its a single user install with me as the admin.
-    submitted by    /u/No-Menu6048  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Geolocation rules do not apply to Meraki VPN?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zuwtgi/geolocation_rules_do_not_apply_to_meraki_vpn/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zuwtgi/geolocation_rules_do_not_apply_to_meraki_vpn/"/>
-        <updated>2022-12-25T11:58:35.000Z</updated>
-        <summary type="html"><![CDATA[I had posted in the Meraki sub and wanted to get everyone’s thoughts. I have been told that geolocation rules do not apply to people connecting to the VPN and for example if someone tried connecting to our network from a country we block such as North Korea or Russia and they had someone’s credentials they would have access. I can’t see how this would even be possible or even allowed? We require Duo for additional verification but I am sure there are a ton of people that don’t do this.
-    submitted by    /u/kokesnyc  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to fix Google Chrome when it closes automatically after opening it - Como reparar Google Chrome cuando se cierra automáticamente después de abrirlo]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zuw4r5/how_to_fix_google_chrome_when_it_closes/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zuw4r5/how_to_fix_google_chrome_when_it_closes/"/>
-        <updated>2022-12-25T11:06:29.000Z</updated>
-        <summary type="html"><![CDATA[La solución que me ha funcionado ha sido desinstalar Google Chrome e instalar una versión más antigua, Google se ha iniciado correctamente. He desactivado extensiones., actualizado a la última versión y ha vuelto a funcionar correctamente.
- The solution that has worked for me has been to uninstall Google Chrome and install an older version, Google has started correctly. I've disabled extensions, updated to the latest version and it's working fine again.
-    submitted by    /u/Big_Activity549  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA["Could not reconnect all network drives" error after you deploy a policy that contains a mapped drive in Windows 11 Enterprise 21H2]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zuw4mv/could_not_reconnect_all_network_drives_error/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zuw4mv/could_not_reconnect_all_network_drives_error/"/>
-        <updated>2022-12-25T11:06:14.000Z</updated>
-        <summary type="html"><![CDATA[Hi All,
- ​
- I have been testing the Mapped drives Group Policy Pref in Win2k12R2 Domain Controller.
- ​
- I have no problem setting up the mapped drives But I am getting "Could not reconnect all network drives." notification message.
- ​
- how do I troubleshoot why?
- ​
- ​
- GPO Setting:
- ​
- ​
- Under the GPO I have it Set to "Update" 
- ​
- it Points to \\ad.contoso.com\Contoso SharePoint\DeptAdmin 
- ​
- it is set to Reconnect (for persistence)
- ​
- it is Set to Map to M:
- ​
- Under the Common Tab I have :
- ​
- - Item-Level targeting - Ticked
- ​
- ------- Under Targeting I have the Security Group "DeptAdmin" listed
- ​
- ​
- Thanks
-    submitted by    /u/maxcoder88  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[same IP address no matter if VPN is on or off]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zuvtao/same_ip_address_no_matter_if_vpn_is_on_or_off/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zuvtao/same_ip_address_no_matter_if_vpn_is_on_or_off/"/>
-        <updated>2022-12-25T10:42:46.000Z</updated>
-        <summary type="html"><![CDATA[Hello,
- I configured openvpn on Fedora. I know that it's working because when I run a traceroute command, I see the traffic taking another route when I'm connected.
- However, when I try "what is my IP address" in the browser, I see the same IP address, so I'm puzzled.
- Shouldn't the IP address be different too ?
- Thank you !
-    submitted by    /u/Striking-Speech-48  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The call you never want on x-mas eve]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zuvlcy/the_call_you_never_want_on_xmas_eve/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zuvlcy/the_call_you_never_want_on_xmas_eve/"/>
-        <updated>2022-12-25T10:26:06.000Z</updated>
-        <summary type="html"><![CDATA['Twas the night before Christmas just as I was laying into the eggnog that I got a call from the building engineer that no disks were spinning. "The power is out and has been for 2 hours!!" he proclaimed as I thought of the 90 minutes that my UPS's had toiled away in vain. With no promises that power would return soon I pulled the plugs from the PDUs with visions of long bridge calls dancing in my head. 
- Fuck this shit! I proclaim as a user IMs to ask why he can't remote in. 
- On a more serious note.... Any recommendations for drinks while recovering a VXrail with VSAN disks from an unclean shutdown on X-mas day?
-    submitted by    /u/butterbal1  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Merry Christmas From Team Morning Wire I 12.25.22]]></title>
-        <id>f6a41fc3-f078-437e-8870-13825c14d19a</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2022-12-25T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[From all of us at Morning Wire, Merry Christmas!]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why are people all the sudden started using 11.0.0.0/8 as their intranet now?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zuszhe/why_are_people_all_the_sudden_started_using/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zuszhe/why_are_people_all_the_sudden_started_using/"/>
-        <updated>2022-12-25T07:12:41.000Z</updated>
-        <summary type="html"><![CDATA[A lot of ISPs, base network infrastructure companies, or even more common, cloud server providers starts using this public IP as their intranet, why??? Is 10.0.0.0/8 ran out of space? I've seen a post 7 years ago talking about this, and people still doing it, worst, more people is doing it.
- Digression: my organization uses 172.1.0.0-172.11.255.255, I am so confused.
-    submitted by    /u/epxeip  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2022 OS - ReFS or NTFS for DFS File Server what do you recommended?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zus33h/2022_os_refs_or_ntfs_for_dfs_file_server_what_do/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zus33h/2022_os_refs_or_ntfs_for_dfs_file_server_what_do/"/>
-        <updated>2022-12-25T06:09:28.000Z</updated>
-        <summary type="html"><![CDATA[Hi All,
- we currently have about 25TB of files on our old file server. I will migrate to the new file server. But I have file system.
- We have VMWare ESX environment and SAN SSD Storage. 
- 1 - Regardless of space and dedup capabilities, are there any other benefits for using ReFS vs NTFS?
- 2 - Does anyone know if 2022 OS on the REFS file system is supported by Veeam agent ? 
- 3 - Lastly, is ReFS ready for production? Stable?
-    submitted by    /u/maxcoder88  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Network automation folks, quick question.]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zuqazq/network_automation_folks_quick_question/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zuqazq/network_automation_folks_quick_question/"/>
-        <updated>2022-12-25T04:13:44.000Z</updated>
-        <summary type="html"><![CDATA[What are some good home projects I can work on to get “real world” experience. I will like to use modern frameworks and modules that enterprises are using in their network today. 
- I’m starting my automation journey soon and need some ideas! I’ve dabbled with python scripts and ansible in the past but not to much, and will be using gns3 for my topologies.
- Beginner: Intermediate: Advanced:
-    submitted by    /u/sugarfreecaffeine  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
