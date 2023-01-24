@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-24 datetime="2023-01-24T09:08:07.000Z">2023-01-24</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-24 datetime="2023-01-24T09:08:07.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-01-24 datetime="2023-01-24T10:01:48.000Z">2023-01-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-01-24 datetime="2023-01-24T10:01:48.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,29 +34,30 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10k1ed9/scalability_of_vxlan_fabrics/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10k24pf/how_are_you_guys_handling_the_winre_patch_on/"
                         open
                       >
-                        <summary class="article-expander__title">Scalability of VXLAN Fabrics</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10k1ed9/scalability_of_vxlan_fabrics/">
+                        <summary class="article-expander__title">How are you guys handling the WinRE patch on machines?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10k24pf/how_are_you_guys_handling_the_winre_patch_on/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hi, I&#x27;m working with Cisco and Arista VXLAN Fabrics. We usually build them for small and midsize enterprises. Sometimes bigger ones. For me, most DCs have around 50 switches. 
- But, after everything is finished and we take a look in the EVPN table, we find that they can get pretty big. Sadly most customers want &quot;every vlan everywhere!!!11&quot; which certainly won&#x27;t help with scalability. As we have to add a VLAN to 50 switches, even if it&#x27;s only used on 2 switches. 
- After we did dig a bit in scalability and how to minimize table entries (depending on BGP design obviously). We are not sure how big someone could scale a standard VXLAN EVPN Fabric. Someone told me &quot;around 400 switchs, then it gets janky&quot; another one said &quot;we have 2000 switches in a campus VXLAN EVPN fabric, everything is fine&quot;. So, how far can we/you go? What are the limits?
- I&#x27;m not talking about the routing table of the switches, of course some switches will fill their tables earlier than others. But if you use switches with millions of possible entieries, where is the limit?
- I know already that the public clouds don&#x27;t use a DC network like the ones we build. They have &quot;software&quot; on their servers for their fabric and don&#x27;t have all that state in their network. It wouldn&#x27;t scale that big.
-    submitted by    /u/onyx9  
+                              <span>How are you guys handling patching the winRE vulnerability that was found? 
+ Especially if the machine&#x27;s recovery partition is too small.
+ Are you just disabling winRE and deleting the partition?
+ disabling bitlocker, shrinking the windows partition and growing the winRE partition?
+ something else? 
+ Just want to hear what others are doing with this situation
+    submitted by    /u/sniff122  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                &ensp;<span class="article-reading-time">(&hairsp;42
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -67,15 +68,31 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10k0qfo/cable_speed/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10k1upg/the_kerberos_hardening_and_roll_over_the_kerberos/"
                         open
                       >
-                        <summary class="article-expander__title">Cable speed</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10k0qfo/cable_speed/">
+                        <summary class="article-expander__title">the Kerberos Hardening and Roll over the Kerberos decryption key of the &#x60;AZUREADSSO&#x60; computer account</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10k1upg/the_kerberos_hardening_and_roll_over_the_kerberos/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hi there I was wondering if some one could recommend a budget freindly cable tester with the ability to test max cable speed. The cheaper ones I found onaly supports 10Mbps, 100Mbps, 1Gbps. But I would like to test 10Mbps, 100Mbps, 1Gbps, 2.5Gbps, 5Gbps and 10Gbps I am happy to buy second hand
-    submitted by    /u/Efficient-Economy-18  
+                              <span>Hi,
+ ​
+ I have two questions.
+ ​
+ 1- Do I have to roll over the Kerberos decryption key of the AZUREADSSO computer account on prem AD at every 30 days? if yes , how can we automate this process? Or Is there any out-of-box solution for this?
+ ​
+ 2 - if I doing this process during working hours will it break authentication ?
+ ​
+ ​
+ 3 - I have ran the &quot;Check-11Bissues.ps1&quot; script from GitHub to do some prelim investigations. I am getting an warning related to the AZUREADSSOACC computer account.
+ ​
+ ​
+ ​
+ There are 1 objects that do not have msDS-SupportedEncryptionTypes configured or is set to zero. When authenticating to this target, Kerberos will use the DefaultDomainSupportedEncTypes registry value on the authenticating DC to determinte supported etypes. If the registry value is not configured, the default value is 0x27, which means &#x27;use AES for session keys and RC4 for ticket encryption&#x27; - If this target server does not support AES, you must set msDS-SupportedEncryptionTypes to 4 on this object so that only RC4 is used. (Please consider working with your vendor to upgrade or configure this server to support AES. Using RC4 is not recommended) - If this target server does not support RC4, or you have disabled RC4 on DCs, please set DefaultDomainSupportedEncTypes on DCs to 0x18 or msDS-SupportedEncryptionTypes on this object to 0x18 to specify that AES must be used. The target server must support AES in this case. Here are the objects that do not have msDS-SupportedEncryptionTypes configured CN&#x3D;AZUREADSSOACC,OU&#x3D;Server,DC&#x3D;contoso,DC&#x3D;local 
+ ​
+ ​
+ thanks,
+    submitted by    /u/maxcoder88  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;43
                                   min&hairsp;)</span>
@@ -88,15 +105,41 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10jymik/is_mixing_windows_servers_dcs_and_networking/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10k1pl0/intune_mapping_drive_generator_hows_this/"
                         open
                       >
-                        <summary class="article-expander__title">Is mixing Windows servers, DCs, and networking equipment on the same VLAN a good idea?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10jymik/is_mixing_windows_servers_dcs_and_networking/">
+                        <summary class="article-expander__title">Intune mapping drive generator - How&#x27;s this different to regular map in powershell?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10k1pl0/intune_mapping_drive_generator_hows_this/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>What’re your thoughts on mixing servers, DC VM and network equipment like wireless controllers and APs on the same VLAN?
-    submitted by    /u/Garegin16  
+                              <span>Just wondering what&#x27;s this Intune mapping generator here do differently to creating a regular powershell script for mapping drives?
+ I created a powershell script to map drives then persist so stays connected at logon. Just wondering if I should be using this generator to avoid any issues? 
+ Since our devices are only AzureAD joined but connect to on prem share want to make sure no issues going forward
+    submitted by    /u/speckz78  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;42
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10k1olm/best_practice_for_creating_a_windows_10_business/"
+                        open
+                      >
+                        <summary class="article-expander__title">Best practice for creating a windows 10 business image for setting up new PCs faster</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10k1olm/best_practice_for_creating_a_windows_10_business/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey everyone, 
+ i just wanted to know what are the best practices for setting up a windows 10 image or .wim file and deploying that as efficient as possible for a small business of 25 users and little ressources. Im just asking because I&#x27;m curious if there are other better ways. I came from a company which had 3000 Users and we used Microsoft Endpoint Configuration Manager for creating images and deploying them to specific PCs over ethernet.
+ Right now at my new company this is not an option as it would be completely overkill for a small business and cost way too much. What I did instead is set up a virtual machine with windows 10 on my local computer, configure some local policies, install some software and create an image which I then deploy by using usb-sticks and using sample scripts from microsoft for formatting and applying the image. But is this really the best method? What I have to do for every PC after applying the image is updating everything, doing a domain or adding missing drivers which drives me nuts sometimes because sometimes the PC has network problems because of missing drivers, which I then have to add manually. 
+ What I liked about Endpoint Configuration Manager was that you could automate all of these things. Drivers could be added to the task sequence and where loaded from a specific server which the PC connected to while applying the task sequence. Domain join and updates etc. where also all done while applying task sequence. What was left to do for the admin was just to check if everything worked after the PC finished and most of the time, it worked. Is there any similar, cheaper technology or method which can reach the same level of automation?
+    submitted by    /u/Comfortable_Onion318  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;44
                                   min&hairsp;)</span>
@@ -105,20 +148,89 @@
                         </a>
                       </details>
                     </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
-                </h3>
-                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10k1n1z/trouble_with_ad_replication_over_ipsec_vpn/"
+                        open
+                      >
+                        <summary class="article-expander__title">Trouble with AD replication over IPSEC VPN</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10k1n1z/trouble_with_ad_replication_over_ipsec_vpn/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello everyone,
+ i&#x27;m looking for some help with a AD replication trouble.
+ Short story: i got a new customer with an existing AD replication between 2 sites using an IPSec VPN.
+ Friday, 2 of the 3 HDD on the secondary site failed. I had to lend a server replacement and restore the last save. Obviously the AD replication failed at restart and i can&#x27;t figure how to fix this.
+ repadmin /replsummary is telling me that the source server is currently rejecting replication requests
+ ​
+ Well, i&#x27;m sending out an SOS :D
+ ​
+ Sorry for my syntax, i&#x27;m french :o
+    submitted by    /u/Tag-Info  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10k1m35/apple_business_manager_azure_ad_federated/"
+                        open
+                      >
+                        <summary class="article-expander__title">Apple Business Manager - Azure AD federated Authentication</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10k1m35/apple_business_manager_azure_ad_federated/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey first time poster long time lurker and was hoping someone may have done this previously or have more experience with azure apps than myself.
+ I’ve spoke with Apple Support and got a vague “no not possible” answer, however, I feel like it might be, just the management would be on the Azure end.
+ Essentially I’m working to get Apple Business Manager linked to Azure AD so we can take control of personal Apple IDs and reset passwords, etc. when users inevitably lock themselves out. 
+ I’ve done most of the leg work and am now at the point of hitting enable…Speaking to Apple support, I explained that our end goal is to run this as a phased roll out slowly adding users and taking over their Apple ID, the support team said it’s all or nothing and any existing Apple ID that conflict will essentially have 60 days to move information over to a different account before we take control. 
+ Is this really the case? Could I limit who/what the enterprise app can see so we can add users a batch at a time?
+    submitted by    /u/jaackk96  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10k1gkq/365_migration_prep/"
+                        open
+                      >
+                        <summary class="article-expander__title">365 Migration Prep</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10k1gkq/365_migration_prep/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all, we’re preparing to migrate our 365 tenant into the tenant already established by a company that has acquired our company. A third party is doing the actual migration and has carried out a pilot migration which has brought some issues to light, the biggest being that not everything has been migrated over. 
+ Speaking to the third party we have established that they’re using ‘MigrationWiz’ to do the migration and in the help materials they specifically mention that some items are not migrated:
+  
+Calendar notifications
+ Items that do not match folder types
+ Bounce notifications
+ etc
+  
+We are looking for a way to count the items in user mailboxes, excluding the ones that are not migrated so that we can verify what has moved over. I have found the PS cmdlets ‘Get-MailboxFolderStatistics’ and ‘Get-MailboxStatistics’ but neither really do what we need, has anyone done this before/got any suggestions on how we can verify what has migrated please?
+    submitted by    /u/AuthorImaginary1267  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -303,6 +415,108 @@ We&#x27;re working to restore all services as soon as possible. Please check bac
     submitted by    /u/Ghostky123  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;47
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10k1hbw/probably_dumb_question_can_tacacstacacs_be_used/"
+                        open
+                      >
+                        <summary class="article-expander__title">Probably dumb question: Can TACACS/TACACS+ be used without Cisco ISE? Does Cisco ISE always imply TACACS use?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10k1hbw/probably_dumb_question_can_tacacstacacs_be_used/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Can’t tell for sure, this is an ongoing debate.
+    submitted by    /u/PickledBrahmin  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10k1ed9/scalability_of_vxlan_fabrics/"
+                        open
+                      >
+                        <summary class="article-expander__title">Scalability of VXLAN Fabrics</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10k1ed9/scalability_of_vxlan_fabrics/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, I&#x27;m working with Cisco and Arista VXLAN Fabrics. We usually build them for small and midsize enterprises. Sometimes bigger ones. For me, most DCs have around 50 switches. 
+ But, after everything is finished and we take a look in the EVPN table, we find that they can get pretty big. Sadly most customers want &quot;every vlan everywhere!!!11&quot; which certainly won&#x27;t help with scalability. As we have to add a VLAN to 50 switches, even if it&#x27;s only used on 2 switches. 
+ After we did dig a bit in scalability and how to minimize table entries (depending on BGP design obviously). We are not sure how big someone could scale a standard VXLAN EVPN Fabric. Someone told me &quot;around 400 switchs, then it gets janky&quot; another one said &quot;we have 2000 switches in a campus VXLAN EVPN fabric, everything is fine&quot;. So, how far can we/you go? What are the limits?
+ I&#x27;m not talking about the routing table of the switches, of course some switches will fill their tables earlier than others. But if you use switches with millions of possible entieries, where is the limit?
+ I know already that the public clouds don&#x27;t use a DC network like the ones we build. They have &quot;software&quot; on their servers for their fabric and don&#x27;t have all that state in their network. It wouldn&#x27;t scale that big.
+    submitted by    /u/onyx9  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10k0qfo/cable_speed/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cable speed</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10k0qfo/cable_speed/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi there I was wondering if some one could recommend a budget freindly cable tester with the ability to test max cable speed. The cheaper ones I found onaly supports 10Mbps, 100Mbps, 1Gbps. But I would like to test 10Mbps, 100Mbps, 1Gbps, 2.5Gbps, 5Gbps and 10Gbps I am happy to buy second hand
+    submitted by    /u/Efficient-Economy-18  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10jymik/is_mixing_windows_servers_dcs_and_networking/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is mixing Windows servers, DCs, and networking equipment on the same VLAN a good idea?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10jymik/is_mixing_windows_servers_dcs_and_networking/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>What’re your thoughts on mixing servers, DC VM and network equipment like wireless controllers and APs on the same VLAN?
+    submitted by    /u/Garegin16  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -42972,54 +43186,6 @@ I have looked a bit into the Soti platform, but as far as I have understood I ne
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zv7fl4/may_your_holidays_be_escalation_free/"
-                        open
-                      >
-                        <summary class="article-expander__title">May Your Holidays be Escalation Free</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zv7fl4/may_your_holidays_be_escalation_free/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Remembering two years ago when we had a datacenter outage due to a fibre cut in LA (216 strands had to be re-spliced by the provider, *after* hours of excavation trying to get to the pipes because it was so deep, from a holiday backhoe and some poor soul who read a map wrong most likely). This a few hours after the Christmas explosion outside AT&amp;T&#x27;s POP in downtown Nashville, making us think our DC was also under terrorist attack. Good times... time to repaid fibre strands: two days.
- Pouring one out for anyone on call today.
-    submitted by    /u/frellus  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;83
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/zv6wqe/iptables_help/"
-                        open
-                      >
-                        <summary class="article-expander__title">iptables help</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/zv6wqe/iptables_help/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I cannot figure this out for the life of me. I’m trying to transparently proxy my vpn interface (wg) to a squid proxy on the same host. Here is my iptables rule but nothing hits the squid proxy: &#x60;&#x60;&#x60; iptables -t nat -A PREROUTING -i wg0 -p tcp --dport 80 -j DNAT --to-destination 127.0.0.1:3128
- &#x60;&#x60;&#x60;
- My Wireguard interface has these rules. Everything else is stock and no modifications.
- &#x60;&#x60;&#x60;
- iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
- &#x60;&#x60;&#x60;
-    submitted by    /u/jiru443  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;94
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -43089,8 +43255,8 @@ I have looked a bit into the Soti platform, but as far as I have understood I ne
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3994627694">
-        <time id="build-timestamp" datetime="2023-01-24T09:11:56.819Z">2023-01-24T09:11:56.819Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/3995106667">
+        <time id="build-timestamp" datetime="2023-01-24T10:12:43.482Z">2023-01-24T10:12:43.482Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
