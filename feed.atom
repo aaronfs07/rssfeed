@@ -2,10 +2,84 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-01-26T10:12:56.115Z</updated>
+    <updated>2023-01-26T11:10:09.095Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Migrating from Redis to KeyDB]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10lpadk/migrating_from_redis_to_keydb/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10lpadk/migrating_from_redis_to_keydb/"/>
+        <updated>2023-01-26T11:01:20.000Z</updated>
+        <summary type="html"><![CDATA[I posted about KeyDB, a multi-threaded fork of Redis, here already a while ago. We still use it in some cases and find it beneficial.
+ Here are technical details about our other recent migration from Redis. Briefly, we became limited by the per-core performance of the new CPUs, and KeyDB proved to be an easy-to-use drop-in replacement (removing a performance bottleneck we were struggling with).
+ On the other hand, it is quite a specific case and related to our willingness to minimise migration efforts (instead of using sharding, etc.). It would be interesting to see other experiences.
+    submitted by    /u/dshurupov  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Retire exchange server]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10lp89s/retire_exchange_server/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10lp89s/retire_exchange_server/"/>
+        <updated>2023-01-26T10:57:47.000Z</updated>
+        <summary type="html"><![CDATA[Hey All,
+ Has anyone successfully retired they’re onprem exchange server? All our mailboxes are already Office365 hosted. Nearest I can tell it’s only synchronising Active Directory changes and distribution groups. Is there anything else I should be looking out for? What’s the process of decommissioning the server?
+    submitted by    /u/CapableWay4518  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[BGinfo by systeminternals]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10lp77j/bginfo_by_systeminternals/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10lp77j/bginfo_by_systeminternals/"/>
+        <updated>2023-01-26T10:55:44.000Z</updated>
+        <summary type="html"><![CDATA[For every particular Windows machine with BGinfo in use anybody knows if that utility gets active on every boot in order to provide overlay rather than one-shot handling at time when user/administrator strikes Apply from BGinfo gui? I wonder which of these two above applies.
+    submitted by    /u/Biyeuy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RemoteApp and local Excel]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10lp2h0/remoteapp_and_local_excel/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10lp2h0/remoteapp_and_local_excel/"/>
+        <updated>2023-01-26T10:46:27.000Z</updated>
+        <summary type="html"><![CDATA[Hello everyone!
+ Please excuse my limited knowledge.. I'm working for an editor who offers his app through RemoteApp on Windows Server 2019.
+ This software generates Excel reports (through data injection in templates). When we set up those machines a few months ago, I'm 99% positive that, with no Excel installed on the server, when we generated an Excel file, the local Excel (on the users machine) was used. Today, this isn't the case anymore. Users connect to this RemoteApp through RDP.
+ Would you know what I can edit to achieve this? Or is it just me who don't remeber correctly?
+    submitted by    /u/Larich38  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Oh well, I might get fired today]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10lor7j/oh_well_i_might_get_fired_today/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10lor7j/oh_well_i_might_get_fired_today/"/>
+        <updated>2023-01-26T10:23:50.000Z</updated>
+        <summary type="html"><![CDATA[First big mistake in the industry after 5 years being in this company.
+ Long story short, I deleted a keyvault in Azure which was used by a production DB server to encrypt the databases. The keyvault did not have the soft delete feature as it was an "old" one, the feature was not enabled by default back then.
+ Now the database is completely impossible to recover as the backup are also encrypted. We effectively have lost 4 years worth of data give or take.
+ I don't know what will happen to me yet, I know that my boss is pissed off, the CTO is pissed off, and I am pissed off at myself lol.
+ How do you cope with those kind of situations ?
+ Details : 
+ Just giving some context as to why I deleted the fucking keyvault. It had a funny name (not standard at all), with only one key, the key had the name of a server that was deleted since 2020. Turns out the DBA used the same key to encrypt the server that replaced it. 
+ As I was trying to clean up our Azure subscriptions, because we have tons of unused resources, I thought this one was safe to delete.
+ I immediediatly enabled both soft delete and purge protection for all our keyvaults after this mistake.
+    submitted by    /u/HeavenlyRen  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Boss insists on ending remote training]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/10lohic/boss_insists_on_ending_remote_training/</id>
@@ -26207,34 +26281,6 @@ Text "WIRE" to 989898 for your no-cost, no-obligation information kit.]]></summa
  There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!
  Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
     submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Large PST export/import]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/zwt3j9/large_pst_exportimport/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/zwt3j9/large_pst_exportimport/"/>
-        <updated>2022-12-27T23:01:53.000Z</updated>
-        <summary type="html"><![CDATA[Our firm has acquired a smaller firm and one of the new employees has a 73 gb mailbox and it's managed by their on-prem Exchange 2016. They don't have a dedicated IT department and our manager wants us to export the mailbox from their environment and import it into ours, which is Exchange 2013 on-prem.
- Now this would be simple if the size was manageable but it's not and we're trying to avoid .pst corruption and not interested in using any 3rd party apps. I've searched the web, this sub and a few other forums and the consensus is to break the export down into smaller .pst files by either date or folders. Which seems fairly straight forward but I figure I'd ask the experts to see if that's it or if anyone has input on any other workable options.
- Thanks
-    submitted by    /u/WillHavoc  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[freeRADIUS rlm_rest integration]]></title>
-        <id>https://www.reddit.com/r/networking/comments/zwrvuv/freeradius_rlm_rest_integration/</id>
-        <link href="https://www.reddit.com/r/networking/comments/zwrvuv/freeradius_rlm_rest_integration/"/>
-        <updated>2022-12-27T22:14:15.000Z</updated>
-        <summary type="html"><![CDATA[I'm working on integrating my custom app with an HTTP API to serve as the authorization and authentication handler for a freeRADIUS deployment.
- I'm struggling to find any concrete (and reliable) examples of a similar implementation to work from. Anyone familiar with the topic probably already knows how lacking the vendor documentation is for this.
- Anyone here have any experience or good references for this?
-    submitted by    /u/TesNikola  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
