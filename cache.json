@@ -370,6 +370,76 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10pzzvh/outlook_web_access_shared_mailbox_with_online/",
+          "author": null,
+          "description": "Hi,\n I have been looking for any conclusion on Online Archive on a sharedmailbox in OWA, however I can't find any information about it.\n Problem:\n When users are working in the Outlook web, they can only see their personal online archive. When adding a shared mailbox to this user it doesn't add the Online Archive of this shared mailbox.\n    submitted by    /u/WillingBudget3212  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10pzzvh/outlook_web_access_shared_mailbox_with_online/",
+          "publishedOn": "2023-01-31T14:09:51.000Z",
+          "wordCount": 12798,
+          "title": "Outlook Web Access Shared mailbox with Online Archive",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10pzyfo/windows_kmtest_loopback_adapter_sourcing_traffic/",
+          "author": null,
+          "description": "Network guy here. I'm experimenting in a lab environment to test the feasibility of a DR strategy and a \"make it or break it\" caveat that I ran into is that I can't seem to find a way to tell windows to source requests that it initiates FROM the loopback adapter IP.\n Sure, it can listen on the loopback, and take in requests from it... but when I initiate a request FROM the server, it uses the NIC's IP address, which makes sense.. however I want to configure it to source all of these requests from the loopback adapter if possible, routing through the NIC.\n ​\n Example:\n NIC: 10.0.0.100/24 \n Loopback: 172.18.1.100/32\n If I am RDP'd into the server and go to https://www.google.com/, then run a \"netstat -an | findstr 443\", I will see this:\n 10.0.0.100:52143 142.251.40.196:443 ESTABLISHED\n Where I'd like for it to look like this:\n 172.18.1.100:52143 142.251.40.196:443 ESTABLISHED\n ​\n Does anyone know if this is possible?\n    submitted by    /u/akadmin  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10pzyfo/windows_kmtest_loopback_adapter_sourcing_traffic/",
+          "publishedOn": "2023-01-31T14:08:04.000Z",
+          "wordCount": 12978,
+          "title": "Windows KM-TEST loopback adapter - SOURCING traffic possible?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10pzy3w/looking_for_windows_server_equivalent_of_linux/",
+          "author": null,
+          "description": "Hello Fellow Nerds, \n I'm in search of a rough or direct equivalent to the watchdog daemon on Linux systems. \n One Windows-based server I manage has an app that needs to run 24/7 basically, and it will typically lock up after a week or so, requiring us to remote into said server to restart the app. Not too big of a deal, takes a few mins. \n I'm attempting to automate some such tasks in our org and I'm familiar with watchdog on Linux systems and was wondering if anyone knew of an equivalent service for Windows-based server platforms. Something that would simply ping the app or service every X minutes/hours and kill/relaunch the app if it doesn't respond, or if it's hung, etc. \n My Google-fu is normally incredibly strong, but I'm not finding much for this one. \n Any help would be appreciated. Thanks for your time gents and ladies.\n    submitted by    /u/palto-1  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10pzy3w/looking_for_windows_server_equivalent_of_linux/",
+          "publishedOn": "2023-01-31T14:07:39.000Z",
+          "wordCount": 13038,
+          "title": "Looking for Windows Server equivalent of Linux watchdog",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10pzqj4/ms_fixes_an_obvious_ms_defender_problem/",
+          "author": null,
+          "description": "A month ago, I was a new MS Defender Plan 2 customer and had to ask here whether I could duplicate the strict preset spam/phish policies with ones of my own -- because it wasn't possible to enable user notification using the strict presets. The answer was yes, thank you! So I created policies -- otherwise I would have had to review and release all that junk myself. Now three weeks later, Microsoft has fixed that -- you can use the strict presets and enable user notification and release. Good on 'em. https://admin.microsoft.com/AdminPortal/home?ref=MessageCenter/:/messages/MC505088\n    submitted by    /u/jimshilliday  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10pzqj4/ms_fixes_an_obvious_ms_defender_problem/",
+          "publishedOn": "2023-01-31T13:59:03.000Z",
+          "wordCount": 12870,
+          "title": "MS fixes an obvious MS Defender problem",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10pzoob/google_smtp_keeps_resending_hard_bounce/",
+          "author": null,
+          "description": "Google SMTP - now, IMHO, the world's biggest spammer - completely ignores hard bounces from my server and keeps resending the bounced email nonstop as if it were a soft bounce. My logs are filled with Google ignoring the 550 5.7.1 code and resending the hard bounced email for 3 days; has anyone had any success at getting Google to respect hard bounces and not resend them?\n By contrast, Microsoft totally respects them as in when my server hard bounces spam from outlook.com, I never receive it again. Since the drastic bulk of my spam comes from Google's servers, either from Gmail or the Google SMTP or Google API send, if someone has found a way to hard bounce Google successfully, please feel free to share, thanks.\n My logs are filled with the following; Google is clearly resending on a schedule where it tries to deliver the hard bounced email for 3 days at increasing intervals - so I end up getting maybe 20 of these exact same Google retries - until it gives up whereas it should be giving up the moment it receives the 550:\n ​\n *.*.com postfix/cleanup[1326515]: 4P5lys1xZ2zYr67N: reject: header From: Nick Perrett saadnova2007@gmail.com from mail-ej1-f67.google.com[209.85.218.67]; from=saadnova2007@gmail.com to=<*@*.com> proto=ESMTP helo=<mail-ej1-f67.google.com>: 5.7.1 550 Spammer BotX\n    submitted by    /u/Effect_Proud  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10pzoob/google_smtp_keeps_resending_hard_bounce/",
+          "publishedOn": "2023-01-31T13:56:46.000Z",
+          "wordCount": 13088,
+          "title": "Google SMTP keeps resending hard bounce",
+          "imageUrl": "https://external-preview.redd.it/MYEAZOvU4kW33MJIykH6DEdpOuO7WtrfSm-bewJXyXc.jpg?auto=webp&v=enabled&s=a338bc8f346ee0774ce7756986628a600d1f8fd2"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10pzj5l/requiring_users_to_download_mfa_app_and_having/",
+          "author": null,
+          "description": "Hey, just a quick ramble and I am curious how others see this scenario since it is a very common one. We have about 1000 users in our environment, everyone works from home 3 days per week. The users connect to a VPN from home, just like almost every other company.\n We've had MFA rolled out for a long time with SMS authentication, but recently one of the C-suites was targeted in a SIM swap. We're now switching over to an authenticator-based solution which requires users to have an authenticator app on their phones. It has been going well, but we have a small handful of users (about 10) who are adamantly against using their phones for anything work-related. These users all have smartphones, so there is no technical limitation stopping them from being able to install the authenticator app.\n My ideology is that phones, like internet at home, or like transportation to and from work, are all things that an employee are expected to have. Everyone already understands that they can connect to their own home Wifi to then access our VPN and connect to our corporate network, and that is taking some bandwidth from their other devices. I'm not really seeing the difference between those two use cases as we aren't monitoring their phones, or adding any MDM solution to them. They could feel that way but I'd expect them to already feel that way by connecting a corporate laptop to their home network.\n I know most companies provide cell phones or stipends to employees for phone services if they are expected to use their phones for work purposes but no employee is expected to do anything besides receive a 6-digit code to authenticate when logging in to our systems.\n Management requested us to just set up a group for users who refuse to just leave their policy to only require SMS authentication.\n    submitted by    /u/Beznia  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10pzj5l/requiring_users_to_download_mfa_app_and_having/",
+          "publishedOn": "2023-01-31T13:50:03.000Z",
+          "wordCount": 14381,
+          "title": "Requiring users to download MFA app and having users work from home",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10pz4xt/whoever_suggested_admin_by_request_have_a_good/",
+          "author": null,
+          "description": "Admin by request has been so smooth thus far in removing admin rights for people who don’t need it. I almost jumped and said yea. Most users don’t realise their admin rights are gone (because they rarely ever use them) the hardest part was letting them know they need to request admin rights and enter their email when they do so.\n Now it’s so smooth my anxiety of “what if” temporarily died ISN’T THAT AMAZING. If anyone has anything to suggest which also works well feel free to post. I won’t be using it but it may be better for some else.\n Did I mention their break glass, the integration with AAD. You can deploy it with Intune. \n P.S\n If anyone has been laid off remember that your skills are still a global shortage and there is still jobs out their for you\n    submitted by    /u/Professor_Ultronium  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10pz4xt/whoever_suggested_admin_by_request_have_a_good/",
+          "publishedOn": "2023-01-31T13:32:44.000Z",
+          "wordCount": 13045,
+          "title": "Whoever suggested Admin by request have a good day/week/life",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/10pykgn/is_there_a_way_to_verify_unc_hardening/",
           "author": null,
           "description": "I've configured a GPO to apply UNC hardening to a couple of other shared folders that we use besides NETLOGON and SYSVOL. \n I configured MutualAuth and Integrity. I checked the registry on the client machine to verify the paths are there. Outside of checking the registry, is there a way to verify that MutualAuth and Integrity are indeed being enforced now on those shared folders?\n Clients are Windows 10 Pro and servers are 2012 R2.\n Thanks!\n    submitted by    /u/betelguese_supernova  \n [link]   [comments]",
@@ -12218,16 +12288,6 @@
           "wordCount": 24106,
           "title": "Seagate SAS HDD keep failing on Dell PowerEdge",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/100zu2q/how_the_turntables/",
-          "author": null,
-          "description": "Was just reminded of a funny situation I had when I went to battle with a VP of HR a few years ago. He was in charge of migrating us to Workday and completely left IT out of the loop as usual. I called a meeting as they were telling me I had integrate Workday with Active Directory and needed some information. He kept saying everything was fine and they didn’t need to bring us in quite yet. I was pushing to get someone to actually own the project and manage it and he kept pushing back and got really angry when I mentioned that I wasn’t a project manager but had a PMP certification and new enough to know we needed project management on this massive migration. Turns out he didn’t have his PMP and thought I made him look bad. Grudge unlocked.\n We go through the migration and I just manage the …",
-          "link": "https://www.reddit.com/r/sysadmin/comments/100zu2q/how_the_turntables/",
-          "publishedOn": "2023-01-02T01:42:21.000Z",
-          "wordCount": 29525,
-          "title": "How the turntables",
-          "imageUrl": null
         }
       ]
     },
@@ -12909,6 +12969,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/10pzpc7/do_you_have_some_good_memes_about_ipv4ipv6/",
+          "author": null,
+          "description": "I'm making a presentation about the future of IP and I need one good meme. I would be very thankful.\n    submitted by    /u/MatthiasLehmann  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/10pzpc7/do_you_have_some_good_memes_about_ipv4ipv6/",
+          "publishedOn": "2023-01-31T13:57:34.000Z",
+          "wordCount": 12861,
+          "title": "Do you have some good memes about ipv4/ipv6?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/10pyv8b/eveng_best_pki_option_whats_possible/",
           "author": null,
@@ -17937,16 +18007,6 @@
           "publishedOn": "2023-01-02T03:59:24.000Z",
           "wordCount": 22180,
           "title": "Thoughts on Arista campus wifi?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10101c0/how_to_prevent_other_network_traffic_from/",
-          "author": null,
-          "description": "TLDR: I have limited upload bandwidth (25mbps) almost all of which is needed for a live stream. When another device starts using a lot of bandwidth the stream starts dropping. The equipment I have to manage this is a Comcast modem, Linksys LRT224 VPN router, Linksys LGS318P Smart Switch\n Happy New Year!\n Background I run a live stream (and am just the general IT guy) for an aquatic facility. We have 250/25mbps internet through Comcast which unofficially runs closer to 300/30. We also have a 4K/60 live stream which YouTube recommends a minimum bandwidth of 20mbps for 4K/60. Most of the time it works great with no dropped packets, but there are times where packets just start dropping like crazy which I think I have to attribute to someone else using bandwidth. Obviously there's not a lot of …",
-          "link": "https://www.reddit.com/r/networking/comments/10101c0/how_to_prevent_other_network_traffic_from/",
-          "publishedOn": "2023-01-02T01:51:52.000Z",
-          "wordCount": 23892,
-          "title": "How To Prevent Other Network Traffic From Interfering With Live Stream?",
           "imageUrl": null
         }
       ]
