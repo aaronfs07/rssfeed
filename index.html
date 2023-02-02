@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-02-02 datetime="2023-02-02T13:16:57.000Z">2023-02-02</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-02-02 datetime="2023-02-02T13:16:57.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-02-02 datetime="2023-02-02T14:08:30.000Z">2023-02-02</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-02-02 datetime="2023-02-02T14:08:30.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,243 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rqog7/need_help_with_a_ps_script_adding_an_attribute_to/"
+                        open
+                      >
+                        <summary class="article-expander__title">Need help with a PS script adding an attribute to AD</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rqog7/need_help_with_a_ps_script_adding_an_attribute_to/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m working on a script to do this job for me. I&#x27;m running into a variable issue that I&#x27;m hoping someone will know the answer to. Here is my code currently:
+ #Get sAMAccountName and write to array (Change -Identity to * when running against all users)
+ $sam &#x3D; Get-ADUser -Server domain.domain -Filter * -SearchBase &quot;OU dist name&quot; | select sAMAccountName
+ #Write the extensionAttribute1 value for each user in the array
+ foreach ($user in $sam)
+ {
+ Set-ADUser $user.sAMAccountName -Replace @{extensionAttribute1 &#x3D; &quot;$user@thing.thing&quot;}
+ }
+ This works except the resulting attribute is &quot;@{sAMAccountName&#x3D;samaccountname}@thing.thing&quot;
+ Can anyone tell me what syntax to use so that it only uses the samaccountname instead of prefixing the attribute? Compared to a PS veteran I&#x27;m probably making a mess of this...
+    submitted by    /u/drowningadmin  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rqdb7/what_are_some_security_measures_with_low_employee/"
+                        open
+                      >
+                        <summary class="article-expander__title">What are some security measures with low employee annoyance?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rqdb7/what_are_some_security_measures_with_low_employee/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have very basic security at our company of 50-75 employees as it has never been prioritized.
+ During the past few months we made our first baby steps by deploying:
+ - 2FA for domain admins (yes, I don&#x27;t know why this was never a thing, but it tells a story)
+ - On-premise password manager
+ - Bitlocker
+ - Changed some password of domain accounts that hadn&#x27;t been changed in years
+ ​
+ This is all great, but it&#x27;s not much. The management is quite strict about what security measure can be deploye, as it must not be too annoying for employees.
+ What are the next steps to take? Annoying or not.
+    submitted by    /u/disguisedsenior  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rqctf/onboarding_defender_for_endpoint_sanity_check/"
+                        open
+                      >
+                        <summary class="article-expander__title">Onboarding Defender for Endpoint - Sanity Check</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rqctf/onboarding_defender_for_endpoint_sanity_check/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/BYWdLsZzxFC0WxRCWij4_x-MJoP_RZupaZmcuFMZ6Zo.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;2e1edf7e736a06a918df1a34d10bc8b31848c305" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hi all:
+ We&#x27;re migrating from SCEP to Defender for Endpoint and I&#x27;d like some confirmation/guidance on my plan.
+ We&#x27;re fully on-prem and utilize SCCM/MECM with the built in SCEP - no Azure or Intune - yet. 
+ Correct me if I&#x27;m wrong, but in order to deploy Defender for Endpoint, we will need to enable Co-management in SCCM in order to get the devices into Intune, and then onboard the devices into Endpoint via SCCM? 
+ Thanks for any suggestions!
+    submitted by    /u/Hazy_Arc  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rq933/hearing_aid_compatible_headsets/"
+                        open
+                      >
+                        <summary class="article-expander__title">Hearing Aid Compatible Headsets</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rq933/hearing_aid_compatible_headsets/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We currently use a combination of Poly Savi W8210, Savi W9220, and Cisco 561/562 headsets. The Poly say they are Hearing Aid Compatible (HAC) however we have users that complain that they are muffled when used with their hearing aids. Any recommendations on quality HAC headphones? Thanks in advance!
+    submitted by    /u/nerdinitup_exe  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rq6gl/autopilot_usedbased_azure_ad_join_failure/"
+                        open
+                      >
+                        <summary class="article-expander__title">AutoPilot - Used-based Azure AD Join Failure</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rq6gl/autopilot_usedbased_azure_ad_join_failure/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Per the subject, I&#x27;ve been dipping my toes into Autopilot and when it works, it&#x27;s great.
+ We enrolled 10+ devices and they worked exactly how we wanted but we&#x27;ve been aiming to further streamline things so I&#x27;ve been tested by resetting my spare laptop.
+ Unfortunately I&#x27;ve just started running into issues where my spare laptop and another (which just needed to be reset) that have successfully Autopilot in the past (and have had no hardware changes) have suddenly started failing to Autopilot and instead continue with the standard Windows setup.
+ During the Autopilot process CTRL+SHIFT+D simply shows &quot;User-based Azure AD Join - required error event data incomplete or missing&quot;
+ If I check the Event Log I can see
+ &quot;Event ID 704 - Autopilot downloader retrieved an empty profile for DdzZtdPolicyManager&quot; where on devices it&#x27;s been successful in the past we can see &quot;Autopilot downloader retrieved a new profile for DdsZtdPolicyManager.&quot;
+ Unfortunately I&#x27;ve not been able to find anything useful for diagnosing why we&#x27;d get an empty profile. I&#x27;ve tried completely removing the device from Autopilot and AzureAD and then using Get-WindowsAutopilotinfo -Online from OOBE to push the serial and hash again but I continue to experience the same problem. The devices are still present in InTune and have profiled assigned.
+ Just wondered if anyone had any pointers for diagnosing why we&#x27;d retrieve an empty profile before I bang my head on a wall with Microsoft?
+    submitted by    /u/VexedTruly  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rq5ar/how_do_you_people_handle_employee_verification/"
+                        open
+                      >
+                        <summary class="article-expander__title">How do you people handle employee verification when they call in to support?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rq5ar/how_do_you_people_handle_employee_verification/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is there some industry standard way of doing this? Background: typical massive Windows domain and the corp is worldwide. 
+ Have a field in AD with their favorite ice cream flavor? Go to a website and have them use their U2F? Is there a product that can be deployed that ‘just works’?
+ Honestly… just curious what others are doing.
+    submitted by    /u/100100111  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rq3kl/windows_machines_cant_be_pinged_when_accessing/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows machines can&#x27;t be pinged when accessing through OpenVPN (pfsense) when Firewall is on</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rq3kl/windows_machines_cant_be_pinged_when_accessing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello!
+ I&#x27;ve been using both pfSense and Synology&#x27;s OpenVPN server options. Both work great but there is an issue on the pfSense server: when I access with a device through the VPN, it cannot ping or see Windows machines, unless I disable the firewall. But when I use Synology&#x27;s OpenVPN, I don&#x27;t need to disable the firewall. I suppose there&#x27;s a solution that can be applied on the pfSense side, without having to mess around with Windows Firewall rules, but I don&#x27;t know what should I do because I don&#x27;t even know why these Windows machines are blocking that traffic.
+ My pfSense is currently set in this way:
+ - 1 port for WAN.
+ - 3 extra ports for LAN that are bridged to work like a hub/switch. This bridge is the DHCP server.
+ - Firewall rules to allow traffic between the ports on the pfsense mini-pc to the rest of the network. 
+ Everything works just fine but when it comes to openVPN, I have the firewall issue with Windows.
+ Any ideas?
+ Thanks for the help! 🙏
+    submitted by    /u/s1L3nCe_wb  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rpx1l/check_if_dns_is_used_on_specific_dc/"
+                        open
+                      >
+                        <summary class="article-expander__title">Check if DNS is used on specific DC</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rpx1l/check_if_dns_is_used_on_specific_dc/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all - I want to trace if anything DNS related is contacting my 2008 R2 DC. (Because i want to terminate this server for obvious reasons).
+ Is there anything i can do apart from the DNS Debugging Logs feature?
+    submitted by    /u/sticobay  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10rpsu0/what_are_the_minimum_network_requirements_for/"
+                        open
+                      >
+                        <summary class="article-expander__title">What are the minimum network requirements for running RDWeb Apps?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10rpsu0/what_are_the_minimum_network_requirements_for/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are having an issue with one of our EMR apps that connects via RDWeb. We experience intermittent connection issues between the hours of 8-10 AM in the beginning of the month or end of the month.
+ I have been banging my head on the desk for months trying to figure out why this is the case.
+ We have a app company that manages the app and we have an app consultant on site for a few days a week to help with any issues. I have checked the computer resources and nothing (CPU, Ethernet Task Manager tasks) even spikes when it runs or trying to connect.
+ I&#x27;ve run wireshark scans both inside and outside the network. Outside the network it appears to connect via UDP while inside the network it appears to connect via HTTP. Outside the network there is never any problems and the loading takes much quicker.
+ Issues I have encountered are slow typing within the app, having to end the RDS sessions and then connect the users again (sometimes this even chokes at first time login), and of course users not being able to login at all. This also happens on completely random computers throughout the month and NEVER at the same time. 
+ They can hit the RDWeb url just fine and download the RDP app just fine, and we can use all other websites/apps just fine. It&#x27;s just getting in and STAYING in that is an issue.
+ I&#x27;m thinking there has to be a feature that prioritizes who or how many people can continuously connect to this app at the same time or something on the network.
+ I&#x27;m also thinking that it has to do with the fact that we HAVE to use HTTP instead of UDP.
+ Is there anything else we can try to stabilize the connection? Would looking into some event logs on the PCs help?
+    submitted by    /u/moderatenerd  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -785,6 +1022,79 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10rqhwv/mpls_ce_equipment_plugged_into_switchport_instead/"
+                        open
+                      >
+                        <summary class="article-expander__title">MPLS CE equipment plugged into switchport instead of router</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10rqhwv/mpls_ce_equipment_plugged_into_switchport_instead/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m doing a lab for a proof of concept using MPLS. I can get it running without issue if I plug the CE equipment into a gig port on the routers and do an xconnect from end to end. In the lab, not an issue, it just works. CE equipment on each end see each other as neighbors and L2 is good to go.
+ What they want is instead have the customer plug into a switchport and then have the MPLS run on a router SVI from end to end, Router on a Stick style. They want it to be L2, so the CE equipment just sees us as a LAN. And they don&#x27;t want to monkey with the client&#x27;s VLAN tags...what goes in tagged on one side comes out tagged on the other. I can&#x27;t get this to work in the lab.
+ I&#x27;ve tried having the switchport as a trunk and just allow the VLAN associated with the SVI on the router. I&#x27;ve tried it as an all-in trunk. I&#x27;ve tried it as an access port. The CE equipment doesn&#x27;t see each other.
+ Am I missing something, or is this not possible? All of our gear is old and not getting any newer...the routers I&#x27;m using are 3800&#x27;s, the switches aren&#x27;t L3. Here&#x27;s the port configs I&#x27;m using....
+ Router 1:
+ interface GigabitEthernet0/1.2050 description CE1 for VC2050
+ encapsulation dot1Q 2050
+ xconnect 10.30.30.254 2050 encapsulation mpls
+ ;
+ interface Loopback100
+ ip address 10.30.10.254 255.255.255.255
+ Switch 1:
+ description CE1
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 2050
+ switchport mode trunk
+ Router 3:
+ interface GigabitEthernet0/0.2050
+ description CE2 for VC2050
+ encapsulation dot1Q 2050
+ xconnect 10.30.10.254 2050 encapsulation mpls
+ ;
+ interface Loopback100
+ ip address 10.30.30.254 255.255.255.255
+ Switch 2:
+ interface FastEthernet0/24
+ description Uplink to CE2
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 2050
+ switchport mode trunk
+    submitted by    /u/JMFR  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/10rqbi4/drawio_diagrams_autoprovisioning_maps_based_on/"
+                        open
+                      >
+                        <summary class="article-expander__title">draw.io diagrams - auto-provisioning maps based on API data?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10rqbi4/drawio_diagrams_autoprovisioning_maps_based_on/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi 
+ Is there any way to automatically map networking topologies based on JSON / API data pulled from the devices? I&#x27;ve seen scripts convert draw io to JSON etc 
+ In addition, graph terraform state files to draw io rather than manually adding
+    submitted by    /u/skalragg  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46689,27 +46999,6 @@ Get 10% off your first order or Coffee Club subscription with code WIRE: https:/
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/102qcc1/aruba_instant_on_advice/"
-                        open
-                      >
-                        <summary class="article-expander__title">Aruba Instant On advice</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/102qcc1/aruba_instant_on_advice/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I am helping out a small non-profit to upgrade its network. They are pretty budget conscious so looking at the 1930 instant on with a Fortinet fg40f. Ideally looking at 3 switch locations with 5-6 VLANs max. Can the Instant-on do the layer 3 routing or should the firewall do the routing in this environment? Or should I scrap this idea and go with something different?
-    submitted by    /u/monasmith529  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;61
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46886,43 +47175,12 @@ Ability to highlight text
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Lawrence Systems</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;TA7kRX3ihR8"
-                        open
-                      >
-                        <summary class="article-expander__title">How To Troubleshoot and Diagnose Networking Issues Using pfsense</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;TA7kRX3ihR8">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4074880494">
-        <time id="build-timestamp" datetime="2023-02-02T13:20:21.699Z">2023-02-02T13:20:21.699Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4075308265">
+        <time id="build-timestamp" datetime="2023-02-02T14:11:05.209Z">2023-02-02T14:11:05.209Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

@@ -2,10 +2,220 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-02-02T13:20:21.787Z</updated>
+    <updated>2023-02-02T14:11:05.307Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Need help with a PS script adding an attribute to AD]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rqog7/need_help_with_a_ps_script_adding_an_attribute_to/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rqog7/need_help_with_a_ps_script_adding_an_attribute_to/"/>
+        <updated>2023-02-02T14:08:30.000Z</updated>
+        <summary type="html"><![CDATA[I'm working on a script to do this job for me. I'm running into a variable issue that I'm hoping someone will know the answer to. Here is my code currently:
+ #Get sAMAccountName and write to array (Change -Identity to * when running against all users)
+ $sam = Get-ADUser -Server domain.domain -Filter * -SearchBase "OU dist name" | select sAMAccountName
+ #Write the extensionAttribute1 value for each user in the array
+ foreach ($user in $sam)
+ {
+ Set-ADUser $user.sAMAccountName -Replace @{extensionAttribute1 = "$user@thing.thing"}
+ }
+ This works except the resulting attribute is "@{sAMAccountName=samaccountname}@thing.thing"
+ Can anyone tell me what syntax to use so that it only uses the samaccountname instead of prefixing the attribute? Compared to a PS veteran I'm probably making a mess of this...
+    submitted by    /u/drowningadmin  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MPLS CE equipment plugged into switchport instead of router]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10rqhwv/mpls_ce_equipment_plugged_into_switchport_instead/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10rqhwv/mpls_ce_equipment_plugged_into_switchport_instead/"/>
+        <updated>2023-02-02T14:00:19.000Z</updated>
+        <summary type="html"><![CDATA[I'm doing a lab for a proof of concept using MPLS. I can get it running without issue if I plug the CE equipment into a gig port on the routers and do an xconnect from end to end. In the lab, not an issue, it just works. CE equipment on each end see each other as neighbors and L2 is good to go.
+ What they want is instead have the customer plug into a switchport and then have the MPLS run on a router SVI from end to end, Router on a Stick style. They want it to be L2, so the CE equipment just sees us as a LAN. And they don't want to monkey with the client's VLAN tags...what goes in tagged on one side comes out tagged on the other. I can't get this to work in the lab.
+ I've tried having the switchport as a trunk and just allow the VLAN associated with the SVI on the router. I've tried it as an all-in trunk. I've tried it as an access port. The CE equipment doesn't see each other.
+ Am I missing something, or is this not possible? All of our gear is old and not getting any newer...the routers I'm using are 3800's, the switches aren't L3. Here's the port configs I'm using....
+ Router 1:
+ interface GigabitEthernet0/1.2050 description CE1 for VC2050
+ encapsulation dot1Q 2050
+ xconnect 10.30.30.254 2050 encapsulation mpls
+ ;
+ interface Loopback100
+ ip address 10.30.10.254 255.255.255.255
+ Switch 1:
+ description CE1
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 2050
+ switchport mode trunk
+ Router 3:
+ interface GigabitEthernet0/0.2050
+ description CE2 for VC2050
+ encapsulation dot1Q 2050
+ xconnect 10.30.10.254 2050 encapsulation mpls
+ ;
+ interface Loopback100
+ ip address 10.30.30.254 255.255.255.255
+ Switch 2:
+ interface FastEthernet0/24
+ description Uplink to CE2
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 2050
+ switchport mode trunk
+    submitted by    /u/JMFR  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What are some security measures with low employee annoyance?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rqdb7/what_are_some_security_measures_with_low_employee/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rqdb7/what_are_some_security_measures_with_low_employee/"/>
+        <updated>2023-02-02T13:54:49.000Z</updated>
+        <summary type="html"><![CDATA[We have very basic security at our company of 50-75 employees as it has never been prioritized.
+ During the past few months we made our first baby steps by deploying:
+ - 2FA for domain admins (yes, I don't know why this was never a thing, but it tells a story)
+ - On-premise password manager
+ - Bitlocker
+ - Changed some password of domain accounts that hadn't been changed in years
+ ​
+ This is all great, but it's not much. The management is quite strict about what security measure can be deploye, as it must not be too annoying for employees.
+ What are the next steps to take? Annoying or not.
+    submitted by    /u/disguisedsenior  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Onboarding Defender for Endpoint - Sanity Check]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rqctf/onboarding_defender_for_endpoint_sanity_check/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rqctf/onboarding_defender_for_endpoint_sanity_check/"/>
+        <updated>2023-02-02T13:54:09.000Z</updated>
+        <summary type="html"><![CDATA[Hi all:
+ We're migrating from SCEP to Defender for Endpoint and I'd like some confirmation/guidance on my plan.
+ We're fully on-prem and utilize SCCM/MECM with the built in SCEP - no Azure or Intune - yet. 
+ Correct me if I'm wrong, but in order to deploy Defender for Endpoint, we will need to enable Co-management in SCCM in order to get the devices into Intune, and then onboard the devices into Endpoint via SCCM? 
+ Thanks for any suggestions!
+    submitted by    /u/Hazy_Arc  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[draw.io diagrams - auto-provisioning maps based on API data?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10rqbi4/drawio_diagrams_autoprovisioning_maps_based_on/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10rqbi4/drawio_diagrams_autoprovisioning_maps_based_on/"/>
+        <updated>2023-02-02T13:52:24.000Z</updated>
+        <summary type="html"><![CDATA[Hi 
+ Is there any way to automatically map networking topologies based on JSON / API data pulled from the devices? I've seen scripts convert draw io to JSON etc 
+ In addition, graph terraform state files to draw io rather than manually adding
+    submitted by    /u/skalragg  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hearing Aid Compatible Headsets]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rq933/hearing_aid_compatible_headsets/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rq933/hearing_aid_compatible_headsets/"/>
+        <updated>2023-02-02T13:49:13.000Z</updated>
+        <summary type="html"><![CDATA[We currently use a combination of Poly Savi W8210, Savi W9220, and Cisco 561/562 headsets. The Poly say they are Hearing Aid Compatible (HAC) however we have users that complain that they are muffled when used with their hearing aids. Any recommendations on quality HAC headphones? Thanks in advance!
+    submitted by    /u/nerdinitup_exe  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AutoPilot - Used-based Azure AD Join Failure]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rq6gl/autopilot_usedbased_azure_ad_join_failure/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rq6gl/autopilot_usedbased_azure_ad_join_failure/"/>
+        <updated>2023-02-02T13:45:34.000Z</updated>
+        <summary type="html"><![CDATA[Per the subject, I've been dipping my toes into Autopilot and when it works, it's great.
+ We enrolled 10+ devices and they worked exactly how we wanted but we've been aiming to further streamline things so I've been tested by resetting my spare laptop.
+ Unfortunately I've just started running into issues where my spare laptop and another (which just needed to be reset) that have successfully Autopilot in the past (and have had no hardware changes) have suddenly started failing to Autopilot and instead continue with the standard Windows setup.
+ During the Autopilot process CTRL+SHIFT+D simply shows "User-based Azure AD Join - required error event data incomplete or missing"
+ If I check the Event Log I can see
+ "Event ID 704 - Autopilot downloader retrieved an empty profile for DdzZtdPolicyManager" where on devices it's been successful in the past we can see "Autopilot downloader retrieved a new profile for DdsZtdPolicyManager."
+ Unfortunately I've not been able to find anything useful for diagnosing why we'd get an empty profile. I've tried completely removing the device from Autopilot and AzureAD and then using Get-WindowsAutopilotinfo -Online from OOBE to push the serial and hash again but I continue to experience the same problem. The devices are still present in InTune and have profiled assigned.
+ Just wondered if anyone had any pointers for diagnosing why we'd retrieve an empty profile before I bang my head on a wall with Microsoft?
+    submitted by    /u/VexedTruly  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How do you people handle employee verification when they call in to support?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rq5ar/how_do_you_people_handle_employee_verification/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rq5ar/how_do_you_people_handle_employee_verification/"/>
+        <updated>2023-02-02T13:44:01.000Z</updated>
+        <summary type="html"><![CDATA[Is there some industry standard way of doing this? Background: typical massive Windows domain and the corp is worldwide. 
+ Have a field in AD with their favorite ice cream flavor? Go to a website and have them use their U2F? Is there a product that can be deployed that ‘just works’?
+ Honestly… just curious what others are doing.
+    submitted by    /u/100100111  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows machines can't be pinged when accessing through OpenVPN (pfsense) when Firewall is on]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rq3kl/windows_machines_cant_be_pinged_when_accessing/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rq3kl/windows_machines_cant_be_pinged_when_accessing/"/>
+        <updated>2023-02-02T13:41:36.000Z</updated>
+        <summary type="html"><![CDATA[Hello!
+ I've been using both pfSense and Synology's OpenVPN server options. Both work great but there is an issue on the pfSense server: when I access with a device through the VPN, it cannot ping or see Windows machines, unless I disable the firewall. But when I use Synology's OpenVPN, I don't need to disable the firewall. I suppose there's a solution that can be applied on the pfSense side, without having to mess around with Windows Firewall rules, but I don't know what should I do because I don't even know why these Windows machines are blocking that traffic.
+ My pfSense is currently set in this way:
+ - 1 port for WAN.
+ - 3 extra ports for LAN that are bridged to work like a hub/switch. This bridge is the DHCP server.
+ - Firewall rules to allow traffic between the ports on the pfsense mini-pc to the rest of the network. 
+ Everything works just fine but when it comes to openVPN, I have the firewall issue with Windows.
+ Any ideas?
+ Thanks for the help! 🙏
+    submitted by    /u/s1L3nCe_wb  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Check if DNS is used on specific DC]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rpx1l/check_if_dns_is_used_on_specific_dc/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rpx1l/check_if_dns_is_used_on_specific_dc/"/>
+        <updated>2023-02-02T13:32:35.000Z</updated>
+        <summary type="html"><![CDATA[Hi all - I want to trace if anything DNS related is contacting my 2008 R2 DC. (Because i want to terminate this server for obvious reasons).
+ Is there anything i can do apart from the DNS Debugging Logs feature?
+    submitted by    /u/sticobay  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What are the minimum network requirements for running RDWeb Apps?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10rpsu0/what_are_the_minimum_network_requirements_for/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10rpsu0/what_are_the_minimum_network_requirements_for/"/>
+        <updated>2023-02-02T13:26:58.000Z</updated>
+        <summary type="html"><![CDATA[We are having an issue with one of our EMR apps that connects via RDWeb. We experience intermittent connection issues between the hours of 8-10 AM in the beginning of the month or end of the month.
+ I have been banging my head on the desk for months trying to figure out why this is the case.
+ We have a app company that manages the app and we have an app consultant on site for a few days a week to help with any issues. I have checked the computer resources and nothing (CPU, Ethernet Task Manager tasks) even spikes when it runs or trying to connect.
+ I've run wireshark scans both inside and outside the network. Outside the network it appears to connect via UDP while inside the network it appears to connect via HTTP. Outside the network there is never any problems and the loading takes much quicker.
+ Issues I have encountered are slow typing within the app, having to end the RDS sessions and then connect the users again (sometimes this even chokes at first time login), and of course users not being able to login at all. This also happens on completely random computers throughout the month and NEVER at the same time. 
+ They can hit the RDWeb url just fine and download the RDP app just fine, and we can use all other websites/apps just fine. It's just getting in and STAYING in that is an issue.
+ I'm thinking there has to be a feature that prioritizes who or how many people can continuously connect to this app at the same time or something on the network.
+ I'm also thinking that it has to do with the fact that we HAVE to use HTTP instead of UDP.
+ Is there anything else we can try to stabilize the connection? Would looking into some event logs on the PCs help?
+    submitted by    /u/moderatenerd  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Low cost log management and alerting]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/10rplim/low_cost_log_management_and_alerting/</id>
@@ -27937,27 +28147,6 @@ Ability to highlight text
  On ONE (no joke) host, I have 3 separate file servers, 12TB, 25TB and 60 TB. That's actual data, not provisioned disk size. I set up Veeam backup, and the data dedups down to about 40TB total. Clearly there is a crap-ton of duplicate data. Side note: I've never been able to get any sort of vMotion-esqe behavior out of the two hyper-v h…]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How To Troubleshoot and Diagnose Networking Issues Using pfsense]]></title>
-        <id>https://www.youtube.com/watch?v=TA7kRX3ihR8</id>
-        <link href="https://www.youtube.com/watch?v=TA7kRX3ihR8"/>
-        <updated>2023-01-04T01:44:57.000Z</updated>
-        <author>
-            <name>Lawrence Systems</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Aruba Instant On advice]]></title>
-        <id>https://www.reddit.com/r/networking/comments/102qcc1/aruba_instant_on_advice/</id>
-        <link href="https://www.reddit.com/r/networking/comments/102qcc1/aruba_instant_on_advice/"/>
-        <updated>2023-01-04T01:43:56.000Z</updated>
-        <summary type="html"><![CDATA[I am helping out a small non-profit to upgrade its network. They are pretty budget conscious so looking at the 1930 instant on with a Fortinet fg40f. Ideally looking at 3 switch locations with 5-6 VLANs max. Can the Instant-on do the layer 3 routing or should the firewall do the routing in this environment? Or should I scrap this idea and go with something different?
-    submitted by    /u/monasmith529  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>

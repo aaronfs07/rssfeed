@@ -364,16 +364,6 @@
           "wordCount": null,
           "title": "The Homelab Show Episode 82: Server Monitoring",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=TA7kRX3ihR8",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=TA7kRX3ihR8",
-          "publishedOn": "2023-01-04T01:44:57.000Z",
-          "wordCount": null,
-          "title": "How To Troubleshoot and Diagnose Networking Issues Using pfsense",
-          "imageUrl": null
         }
       ]
     },
@@ -409,6 +399,96 @@
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rqog7/need_help_with_a_ps_script_adding_an_attribute_to/",
+          "author": null,
+          "description": "I'm working on a script to do this job for me. I'm running into a variable issue that I'm hoping someone will know the answer to. Here is my code currently:\n #Get sAMAccountName and write to array (Change -Identity to * when running against all users)\n $sam = Get-ADUser -Server domain.domain -Filter * -SearchBase \"OU dist name\" | select sAMAccountName\n #Write the extensionAttribute1 value for each user in the array\n foreach ($user in $sam)\n {\n Set-ADUser $user.sAMAccountName -Replace @{extensionAttribute1 = \"$user@thing.thing\"}\n }\n This works except the resulting attribute is \"@{sAMAccountName=samaccountname}@thing.thing\"\n Can anyone tell me what syntax to use so that it only uses the samaccountname instead of prefixing the attribute? Compared to a PS veteran I'm probably making a mess of this...\n    submitted by    /u/drowningadmin  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rqog7/need_help_with_a_ps_script_adding_an_attribute_to/",
+          "publishedOn": "2023-02-02T14:08:30.000Z",
+          "wordCount": 12919,
+          "title": "Need help with a PS script adding an attribute to AD",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rqdb7/what_are_some_security_measures_with_low_employee/",
+          "author": null,
+          "description": "We have very basic security at our company of 50-75 employees as it has never been prioritized.\n During the past few months we made our first baby steps by deploying:\n - 2FA for domain admins (yes, I don't know why this was never a thing, but it tells a story)\n - On-premise password manager\n - Bitlocker\n - Changed some password of domain accounts that hadn't been changed in years\n ​\n This is all great, but it's not much. The management is quite strict about what security measure can be deploye, as it must not be too annoying for employees.\n What are the next steps to take? Annoying or not.\n    submitted by    /u/disguisedsenior  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rqdb7/what_are_some_security_measures_with_low_employee/",
+          "publishedOn": "2023-02-02T13:54:49.000Z",
+          "wordCount": 12969,
+          "title": "What are some security measures with low employee annoyance?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rqctf/onboarding_defender_for_endpoint_sanity_check/",
+          "author": null,
+          "description": "Hi all:\n We're migrating from SCEP to Defender for Endpoint and I'd like some confirmation/guidance on my plan.\n We're fully on-prem and utilize SCCM/MECM with the built in SCEP - no Azure or Intune - yet. \n Correct me if I'm wrong, but in order to deploy Defender for Endpoint, we will need to enable Co-management in SCCM in order to get the devices into Intune, and then onboard the devices into Endpoint via SCCM? \n Thanks for any suggestions!\n    submitted by    /u/Hazy_Arc  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rqctf/onboarding_defender_for_endpoint_sanity_check/",
+          "publishedOn": "2023-02-02T13:54:09.000Z",
+          "wordCount": 12833,
+          "title": "Onboarding Defender for Endpoint - Sanity Check",
+          "imageUrl": "https://external-preview.redd.it/BYWdLsZzxFC0WxRCWij4_x-MJoP_RZupaZmcuFMZ6Zo.jpg?auto=webp&v=enabled&s=2e1edf7e736a06a918df1a34d10bc8b31848c305"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rq933/hearing_aid_compatible_headsets/",
+          "author": null,
+          "description": "We currently use a combination of Poly Savi W8210, Savi W9220, and Cisco 561/562 headsets. The Poly say they are Hearing Aid Compatible (HAC) however we have users that complain that they are muffled when used with their hearing aids. Any recommendations on quality HAC headphones? Thanks in advance!\n    submitted by    /u/nerdinitup_exe  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rq933/hearing_aid_compatible_headsets/",
+          "publishedOn": "2023-02-02T13:49:13.000Z",
+          "wordCount": 12800,
+          "title": "Hearing Aid Compatible Headsets",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rq6gl/autopilot_usedbased_azure_ad_join_failure/",
+          "author": null,
+          "description": "Per the subject, I've been dipping my toes into Autopilot and when it works, it's great.\n We enrolled 10+ devices and they worked exactly how we wanted but we've been aiming to further streamline things so I've been tested by resetting my spare laptop.\n Unfortunately I've just started running into issues where my spare laptop and another (which just needed to be reset) that have successfully Autopilot in the past (and have had no hardware changes) have suddenly started failing to Autopilot and instead continue with the standard Windows setup.\n During the Autopilot process CTRL+SHIFT+D simply shows \"User-based Azure AD Join - required error event data incomplete or missing\"\n If I check the Event Log I can see\n \"Event ID 704 - Autopilot downloader retrieved an empty profile for DdzZtdPolicyManager\" where on devices it's been successful in the past we can see \"Autopilot downloader retrieved a new profile for DdsZtdPolicyManager.\"\n Unfortunately I've not been able to find anything useful for diagnosing why we'd get an empty profile. I've tried completely removing the device from Autopilot and AzureAD and then using Get-WindowsAutopilotinfo -Online from OOBE to push the serial and hash again but I continue to experience the same problem. The devices are still present in InTune and have profiled assigned.\n Just wondered if anyone had any pointers for diagnosing why we'd retrieve an empty profile before I bang my head on a wall with Microsoft?\n    submitted by    /u/VexedTruly  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rq6gl/autopilot_usedbased_azure_ad_join_failure/",
+          "publishedOn": "2023-02-02T13:45:34.000Z",
+          "wordCount": 13141,
+          "title": "AutoPilot - Used-based Azure AD Join Failure",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rq5ar/how_do_you_people_handle_employee_verification/",
+          "author": null,
+          "description": "Is there some industry standard way of doing this? Background: typical massive Windows domain and the corp is worldwide. \n Have a field in AD with their favorite ice cream flavor? Go to a website and have them use their U2F? Is there a product that can be deployed that ‘just works’?\n Honestly… just curious what others are doing.\n    submitted by    /u/100100111  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rq5ar/how_do_you_people_handle_employee_verification/",
+          "publishedOn": "2023-02-02T13:44:01.000Z",
+          "wordCount": 12931,
+          "title": "How do you people handle employee verification when they call in to support?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rq3kl/windows_machines_cant_be_pinged_when_accessing/",
+          "author": null,
+          "description": "Hello!\n I've been using both pfSense and Synology's OpenVPN server options. Both work great but there is an issue on the pfSense server: when I access with a device through the VPN, it cannot ping or see Windows machines, unless I disable the firewall. But when I use Synology's OpenVPN, I don't need to disable the firewall. I suppose there's a solution that can be applied on the pfSense side, without having to mess around with Windows Firewall rules, but I don't know what should I do because I don't even know why these Windows machines are blocking that traffic.\n My pfSense is currently set in this way:\n - 1 port for WAN.\n - 3 extra ports for LAN that are bridged to work like a hub/switch. This bridge is the DHCP server.\n - Firewall rules to allow traffic between the ports on the pfsense mini-pc to the rest of the network. \n Everything works just fine but when it comes to openVPN, I have the firewall issue with Windows.\n Any ideas?\n Thanks for the help! 🙏\n    submitted by    /u/s1L3nCe_wb  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rq3kl/windows_machines_cant_be_pinged_when_accessing/",
+          "publishedOn": "2023-02-02T13:41:36.000Z",
+          "wordCount": 13236,
+          "title": "Windows machines can't be pinged when accessing through OpenVPN (pfsense) when Firewall is on",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rpx1l/check_if_dns_is_used_on_specific_dc/",
+          "author": null,
+          "description": "Hi all - I want to trace if anything DNS related is contacting my 2008 R2 DC. (Because i want to terminate this server for obvious reasons).\n Is there anything i can do apart from the DNS Debugging Logs feature?\n    submitted by    /u/sticobay  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rpx1l/check_if_dns_is_used_on_specific_dc/",
+          "publishedOn": "2023-02-02T13:32:35.000Z",
+          "wordCount": 12851,
+          "title": "Check if DNS is used on specific DC",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/10rpsu0/what_are_the_minimum_network_requirements_for/",
+          "author": null,
+          "description": "We are having an issue with one of our EMR apps that connects via RDWeb. We experience intermittent connection issues between the hours of 8-10 AM in the beginning of the month or end of the month.\n I have been banging my head on the desk for months trying to figure out why this is the case.\n We have a app company that manages the app and we have an app consultant on site for a few days a week to help with any issues. I have checked the computer resources and nothing (CPU, Ethernet Task Manager tasks) even spikes when it runs or trying to connect.\n I've run wireshark scans both inside and outside the network. Outside the network it appears to connect via UDP while inside the network it appears to connect via HTTP. Outside the network there is never any problems and the loading takes much quicker.\n Issues I have encountered are slow typing within the app, having to end the RDS sessions and then connect the users again (sometimes this even chokes at first time login), and of course users not being able to login at all. This also happens on completely random computers throughout the month and NEVER at the same time. \n They can hit the RDWeb url just fine and download the RDP app just fine, and we can use all other websites/apps just fine. It's just getting in and STAYING in that is an issue.\n I'm thinking there has to be a feature that prioritizes who or how many people can continuously connect to this app at the same time or something on the network.\n I'm also thinking that it has to do with the fact that we HAVE to use HTTP instead of UDP.\n Is there anything else we can try to stabilize the connection? Would looking into some event logs on the PCs help?\n    submitted by    /u/moderatenerd  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/10rpsu0/what_are_the_minimum_network_requirements_for/",
+          "publishedOn": "2023-02-02T13:26:58.000Z",
+          "wordCount": 13301,
+          "title": "What are the minimum network requirements for running RDWeb Apps?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/10rplim/low_cost_log_management_and_alerting/",
           "author": null,
@@ -13028,6 +13108,26 @@
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/networking/comments/10rqhwv/mpls_ce_equipment_plugged_into_switchport_instead/",
+          "author": null,
+          "description": "I'm doing a lab for a proof of concept using MPLS. I can get it running without issue if I plug the CE equipment into a gig port on the routers and do an xconnect from end to end. In the lab, not an issue, it just works. CE equipment on each end see each other as neighbors and L2 is good to go.\n What they want is instead have the customer plug into a switchport and then have the MPLS run on a router SVI from end to end, Router on a Stick style. They want it to be L2, so the CE equipment just sees us as a LAN. And they don't want to monkey with the client's VLAN tags...what goes in tagged on one side comes out tagged on the other. I can't get this to work in the lab.\n I've tried having the switchport as a trunk and just allow the VLAN associated with the SVI on the router. I've tried it as an all-in trunk. I've tried it as an access port. The CE equipment doesn't see each other.\n Am I missing something, or is this not possible? All of our gear is old and not getting any newer...the routers I'm using are 3800's, the switches aren't L3. Here's the port configs I'm using....\n Router 1:\n interface GigabitEthernet0/1.2050 description CE1 for VC2050\n encapsulation dot1Q 2050\n xconnect 10.30.30.254 2050 encapsulation mpls\n ;\n interface Loopback100\n ip address 10.30.10.254 255.255.255.255\n Switch 1:\n description CE1\n switchport trunk encapsulation dot1q\n switchport trunk allowed vlan 2050\n switchport mode trunk\n Router 3:\n interface GigabitEthernet0/0.2050\n description CE2 for VC2050\n encapsulation dot1Q 2050\n xconnect 10.30.10.254 2050 encapsulation mpls\n ;\n interface Loopback100\n ip address 10.30.30.254 255.255.255.255\n Switch 2:\n interface FastEthernet0/24\n description Uplink to CE2\n switchport trunk encapsulation dot1q\n switchport trunk allowed vlan 2050\n switchport mode trunk\n    submitted by    /u/JMFR  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/10rqhwv/mpls_ce_equipment_plugged_into_switchport_instead/",
+          "publishedOn": "2023-02-02T14:00:19.000Z",
+          "wordCount": 13368,
+          "title": "MPLS CE equipment plugged into switchport instead of router",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/10rqbi4/drawio_diagrams_autoprovisioning_maps_based_on/",
+          "author": null,
+          "description": "Hi \n Is there any way to automatically map networking topologies based on JSON / API data pulled from the devices? I've seen scripts convert draw io to JSON etc \n In addition, graph terraform state files to draw io rather than manually adding\n    submitted by    /u/skalragg  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/10rqbi4/drawio_diagrams_autoprovisioning_maps_based_on/",
+          "publishedOn": "2023-02-02T13:52:24.000Z",
+          "wordCount": 12904,
+          "title": "draw.io diagrams - auto-provisioning maps based on API data?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/networking/comments/10rpdff/master_the_http_networking_protocol/",
           "author": null,
           "description": "HTTP, or Hypertext Transfer Protocol, is the backbone of the internet and the foundation of all communication between web browsers and servers. Understanding the basics of HTTP and how it works is essential for anyone working in web development, system administration, or IT in general.\n HTTP is a client-server protocol, meaning that a client (such as a web browser) makes a request to a server, and the server responds with the requested data. HTTP requests and responses are simple text messages, sent over the internet using the TCP/IP protocol. \n Master the HTTP Networking Protocol\n    submitted by    /u/glum-platimium  \n [link]   [comments]",
@@ -18215,16 +18315,6 @@
           "publishedOn": "2023-01-04T04:45:56.000Z",
           "wordCount": 19032,
           "title": "Any folks with undersea cable experience?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/102qcc1/aruba_instant_on_advice/",
-          "author": null,
-          "description": "I am helping out a small non-profit to upgrade its network. They are pretty budget conscious so looking at the 1930 instant on with a Fortinet fg40f. Ideally looking at 3 switch locations with 5-6 VLANs max. Can the Instant-on do the layer 3 routing or should the firewall do the routing in this environment? Or should I scrap this idea and go with something different?\n    submitted by    /u/monasmith529  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/102qcc1/aruba_instant_on_advice/",
-          "publishedOn": "2023-01-04T01:43:56.000Z",
-          "wordCount": 18241,
-          "title": "Aruba Instant On advice",
           "imageUrl": null
         }
       ]
