@@ -2,10 +2,78 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-02-05T13:15:09.643Z</updated>
+    <updated>2023-02-05T14:10:00.598Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Strange Hosts Issue yesterday]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/10ud6fp/strange_hosts_issue_yesterday/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/10ud6fp/strange_hosts_issue_yesterday/"/>
+        <updated>2023-02-05T14:02:57.000Z</updated>
+        <summary type="html"><![CDATA[First of all, here is a layout of this site:
+ ​
+ 3 poweredge 730's, ESXi 6.5
+ A NAS Datastore using iSCSI
+ 1 isolated network switch for communications between the hosts/datastores
+ ​
+ Yesterday, one of our remote sites had the strangest issues, I am still trying to make sense of it.
+ Around 10am, I got a message that one of the hosts had a ConnectionStateAlarm. I remoted in and checked vsphere and sure enough, one of the three hosts at that site had a connection state issue. I acknowledged the alarm and checked the VPN circuit. It was pegged out (some type of NAS backup was running, this is not unusual). I cancelled the backup and the circuit went back to a normal state.
+ I was thinking that host 1 would come back but it never did. I tried signing into ESXi through the web interface for the host, but the connection would time out on the page after putting in my credentials and hitting login. Tried SSH and I would get a connection refused. Logged in through iDRAC, rebooted the host. It came up without issue.
+ So then, this happens on another host, we will call it host 2. Same deal, same site. I also cannot log into ESXi. I ended up getting into the iDRAC and rebooting the host. When it came up, it resynced and all was well. 
+ FAST FORWARD AN HOUR LATER.
+ I get an alarm that the third host is down and that an HA Event had failed. I logged in, one of my datastores is inaccessible and the third host is now down. This one, I cannot even get into the iDRAC, web interface or SSH.
+ I got someone that was near the site to go and reboot the host manually from the rack, it came back up without issue. As for the datastore, I went into the connection & multipathing screen and had to manually mount it back to the first 2 hosts that we rebooted.
+ All is back up and no alarms. I had generated support bundles to have VMWare check on this monday. Wow what a Saturday.
+    submitted by    /u/Weak-Peak1015  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Simulating fault-tolerant distributed network using OMNeT++]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10ud6e3/simulating_faulttolerant_distributed_network/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10ud6e3/simulating_faulttolerant_distributed_network/"/>
+        <updated>2023-02-05T14:02:53.000Z</updated>
+        <summary type="html"><![CDATA[I am trying to simulate a distributed fault-tolerant system consisting of multiple nodes. Each node runs a set of tasks or processes. Tasks communicate with each other by passing messages over the nodes' gates. I want to simulate a fault-tolerant mechanism where a node can fail and the system reconfigures itself by migrating tasks on the faulty node to other healthy nodes. I already developed an algorithm for migrating tasks but I want to test it with OMNeT++. 
+ ​
+ In the NED file, I have defined the network with the different nodes as submodules and tasks as submodules of the nodes (sub-submodules). But I can't connect the tasks with each other. 
+ How can I simulate this behavior? Is there a better simulation tool than OMNeT++ for this use case?
+ Thanks.
+    submitted by    /u/Happy_Shift_3991  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Additive Increase, Decrease]]></title>
+        <id>https://www.reddit.com/r/networking/comments/10ucf9j/additive_increase_decrease/</id>
+        <link href="https://www.reddit.com/r/networking/comments/10ucf9j/additive_increase_decrease/"/>
+        <updated>2023-02-05T13:26:24.000Z</updated>
+        <summary type="html"><![CDATA[In this question we will explore the dynamics of two flows using the AIMD (additive increase, multiplicative decrease) and later AIAD (additive increase, additive
+ decrease) algorithm instead of AIMD. Consider the topology shown in which two hosts A and B are sending packets to D through router R. 
+ The bottleneck link in the path from R to D runs at 10 MB/s (i.e. 10 Megabytes per second). The RTTs from A to D and B to D are 100 ms. Assume that both A and B can
+ communicate with R instantaneously and with arbitrarily large rate. Assume that each packet has a length of 1250 bytes and the buffer on router R can hold 200
+ packets.
+ Suppose that at time t = 0, host A has a congestion window of 999 packets, B has a congestion window of 0, and R’s buffer is empty. You should assume that packet
+ drops are always experienced by the flow with more packets in flight. You should assume that each flow updates its congestion window after each RTT, decreasing it if
+ any packet was dropped, and increasing it otherwise.
+ AIMD: We first consider the evolution of the system when each flow is governed by AIMD, in which the congestion window grows by being incremented and shrinks by
+ being halved (rounding down). In roundtrips 0 through 3, the system evolves as shown in the table below with host A exceeding the given congestion window size and
+ accordingly reducing CWND to half in the next iteration. 
+ Now, suppose that instead we are using an AIAD protocol. In this case, every drop decreases the congestion window by 5 packets (to a minimum of 1 packet) instead
+ of halving the congestion window. What is the congestion windows size of host A at t = 300 RTTs? Give your answer in packets. 
+ The solution states, it should be 300 but I do not understand why and there is nothing else provided.
+ ​
+ Please help!
+    submitted by    /u/FrainBreez_Tv  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How do I see which databases are being used (Microsoft SQL)]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/10uc6j4/how_do_i_see_which_databases_are_being_used/</id>
@@ -27723,33 +27791,6 @@ Black Rifle Coffee Get 10% off your Coffee Club subscription! BlackRifleCoffee.c
  ​
  To some degree, I wonder if this is a lose-lose battle since users have different needs (resolution, scaling, etc.) and then on top of that if you can provision display configurations how does it know which monitor is which?
     submitted by    /u/nkasco  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Troubleshooting the troubleshooter]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/105cody/troubleshooting_the_troubleshooter/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/105cody/troubleshooting_the_troubleshooter/"/>
-        <updated>2023-01-07T02:00:56.000Z</updated>
-        <summary type="html"><![CDATA[I love troubleshooting and resolving issues. Big or small, new or old it doesn’t matter I love a good problem. But now I have a few people report to me and I can already see the trend. 
- They bring me an issue and I solve it! 
- This of course isn’t going to work long term. I need them to resolve issues. 
- I ask questions, but they are typically issue related and tend to lead to a resolution not to the team asking better questions. Any suggestion for switching from troubleshooting issues to troubleshooting troubleshooters?
-    submitted by    /u/OverlyUsedTool  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Implementing WireGuard for enterprise users]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/105ceee/implementing_wireguard_for_enterprise_users/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/105ceee/implementing_wireguard_for_enterprise_users/"/>
-        <updated>2023-01-07T01:48:43.000Z</updated>
-        <summary type="html"><![CDATA[I have been reading about wireguard and it seems to be very promising on the performance side. What is bothering me is that unlike other VPN tunnels where its un/pw authentication based, here you need to configure the public key of each device, meaning you´d have to contact each user one by one to obtain their public key. Isn´t this a big hassle? Has any of you implemented this?
-    submitted by    /u/chris_redz  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
