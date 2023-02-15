@@ -410,6 +410,66 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/112ytzh/ms365_office_app_login_issues_since_monday/",
+          "author": null,
+          "description": "Has anyone else experienced odd login issues in various MS365 Office apps since Monday?\n We've had Outlook being stuck in an infinite login attempt loop until restarted (sometimes it needs two restarts), OneNote not synchronizing Notebooks and not accepting new login attempts as well as OneDrive and even my own Win11 machine requiring a new authentication after a reboot (but those just validate automatically with no password prompts, they just have to be started manually by clicking the \"login again\" prompt). But not everyone is affected and they are rarely the same issues across users.\n Just wondering if it's just our org or if MS has changed anything behind the scenes without checking if their apps still work afterwards (again...)\n    submitted by    /u/Landhund  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/112ytzh/ms365_office_app_login_issues_since_monday/",
+          "publishedOn": "2023-02-15T14:08:36.000Z",
+          "wordCount": 12951,
+          "title": "MS365 Office App Login Issues since Monday",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/112ye01/terminal_solutions_after_oct_2025_office_end_of/",
+          "author": null,
+          "description": "according to microsoft office on all of its versions will no longer be supported on windows servers on oct 2025\n https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI\n which terminates all terminal server solutions like RDS Citrix parallel cockpit etc\n we are currently working with terminal servers supporting thousands of users \n are any of you guys running terminal server solutions? what are you doing about this?\n are we forced to migrate to DAAS solutions or are there any good on prem solutions for this?\n i would love to hear any advice on the matter.\n    submitted by    /u/siftekos  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/112ye01/terminal_solutions_after_oct_2025_office_end_of/",
+          "publishedOn": "2023-02-15T13:48:03.000Z",
+          "wordCount": 13014,
+          "title": "Terminal Solutions after oct 2025 office end of life on windows servers",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/112ychy/adding_pronouns_in_ad_or_office_365/",
+          "author": null,
+          "description": "Is this even possible?\n I have our business asking for this. We have a hybrid AD environment.\n    submitted by    /u/No_Mycologist4488  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/112ychy/adding_pronouns_in_ad_or_office_365/",
+          "publishedOn": "2023-02-15T13:45:56.000Z",
+          "wordCount": 12957,
+          "title": "Adding Pronouns in AD or Office 365",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/112y5ix/is_microsoft_seamless_single_signon_safe_to_use/",
+          "author": null,
+          "description": "Hello there,\n I would like to setting up the SSSO to my organization but I don't know if it secure enough. I have an hybrid environment but without Azure AD-joined devices, my devices only joined to the on-premise AD. I followed the Microsoft documentation and I configured everything: Azure AD Connect, GPO and the Firewall. It is working very well with my test users. \n My settings in a nutshell:\n Azure AD\n  \nPassword hash sync\n  \nGPO (from Microsoft documentation)\n  \nSite to Zone Assignment List\n Allow updates to status bar via script\n SPNEGO (Firefox)\n  \nAZUREADSSO Computer Object on my on-premise AD\n  \nStoring object in OU where is securing against accidental deletion\n msDS-SupportedEncryptionTypes attribute set to AES-256-CTS-HMAC-SHA1-96\n Kerberos delegation is disabled on this object \n  \nAccording to Microsoft documentation it is recommended to update the Kerberos decryption key at least on every 30 day.\n https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso-faq#how-can-i-roll-over-the-kerberos-decryption-key-of-the--azureadsso--computer-account-\n I have not found anything about SSSO on the internet from a security perspective. Can cybercriminals exploit this SSSO capability or is it safe enough? I am wondering about on this because SSSO sends Kerberos ticket over the internet. I don't know if I should worry about that. Maybe I just overthinking.\n Does anyone have experience with Seamless Single Sign-On? Can you share your experience with me?\n Is there anything else I should be aware of?\n    submitted by    /u/Mindless-Ad-4614  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/112y5ix/is_microsoft_seamless_single_signon_safe_to_use/",
+          "publishedOn": "2023-02-15T13:36:23.000Z",
+          "wordCount": 13117,
+          "title": "Is Microsoft Seamless Single Sign-On safe to use?",
+          "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&v=enabled&s=8e9dd29e55be5f9d4be03f8a2ca6dc669418c160"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/112y0i4/how_do_you_test_your_backups/",
+          "author": null,
+          "description": "Hi r/sysadmin\n I'm curious how you all go about testing your backups? We have a medium/large sized environment with ~1000 VMs and a few physical servers (most SQL boxes) that we are backing up regularly. 98% Windows, a very select few Linux. However, we don't have a definitive process for testing these backups beyond requested restores that we have to do as people need them.\n Previously, I used Veeam's SureBackup feature to test backups at my previous job, but here we use Commvault and I don't see a similar feature. There does seem to be some sort of backup validation but Commvault's documentation doesn't match what I'm seeing in our console.\n Using Veeam's SureBackup as a model, I started to build out a sandbox network that would mirror our production network, which I could restore VMs into and then run scripts against them to verify they are working. The point I'm more or less stuck at is the \"scripts to verify they are working\" part. For basic Windows boxes I've got a script that checks for running services, and for all the VMs I'm pulling their reported heartbeat status by VMWare, but this is imperfect and doesn't cover some of our more specialized boxes like Exchange or SQL databases. \n Somewhere along the line I think there will be a human element (IE, you are the admin for this server, your server is currently in the sandbox network, login to it and make sure everything works before it gets torn down) but I'd like to automate as much of this process as possible.\n What approach do you take? Is there a feature in Commvault I've missed or a third party tool that solves the problem? Or do you have better ideas on what to check using various scripts and the like?\n    submitted by    /u/Pugway  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/112y0i4/how_do_you_test_your_backups/",
+          "publishedOn": "2023-02-15T13:29:42.000Z",
+          "wordCount": 13558,
+          "title": "How do you test your backups?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/112xzwm/add_ad_group_to_acl_of_thousands/",
+          "author": null,
+          "description": "EDIT: title is missing \" of folders\" in the end..\n Hi,\n I need to add an AD group to the ACL of thousands of folders, which all have different permissions and inheritance settings. All the folders are subfolders of drive D\n I need all the permissions to stay the same, just one group added with full access. I wrote a powershell script for this. \n Is this the right approach? do you see anything wrong with this?\n $identity = 'domain\\group' $rights = 'FullControl' $inheritance = 'ContainerInherit, ObjectInherit' $propagation = 'None' $type = 'Allow' $ACE = New-Object System.Security.AccessControl.FileSystemAccessRule($identity, $rights, $inheritance, $propagation, $type) Get-ChildItem D: -Recurse -Directory | ForEach-Object{ $acl = get-acl -Path $_.FullName $acl.AddAccessRule($ACE) Set-Acl -Path $_.FullName -AclObject $acl } \n Thanks.\n    submitted by    /u/Takia_Gecko  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/112xzwm/add_ad_group_to_acl_of_thousands/",
+          "publishedOn": "2023-02-15T13:28:47.000Z",
+          "wordCount": 13068,
+          "title": "Add ad group to acl of thousands",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/112xt69/securityviolation_on_boot_ws2022_with_esxi_exsi/",
           "author": null,
           "description": "Windows 2022 VM with secure boot enabled on the VM\n Just did a couple of host upgrades to get ESXI up to the latest and greatest - 21053776\n Just installed the 14/02 Windows update and am getting Security Violation on boot of the two 2022 VMs I have. \n Disabling SecureBoot does allow the VM to start, but there is something going on here....\n    submitted by    /u/Grunger106  \n [link]   [comments]",
