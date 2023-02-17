@@ -49,6 +49,16 @@
       "siteUrl": "https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA",
       "articles": [
         {
+          "id": "https://www.youtube.com/watch?v=XZJc1p6RE78",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=XZJc1p6RE78",
+          "publishedOn": "2023-02-16T18:58:54.000Z",
+          "wordCount": null,
+          "title": "Ch(e)at GPT? - Computerphile",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.youtube.com/watch?v=Xz06zYlQrck",
           "author": null,
           "description": "",
@@ -85,6 +95,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHkYOD-3fZbuGhwsADBd9ZQ",
       "siteUrl": "https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=TweR6S_shiU",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=TweR6S_shiU",
+          "publishedOn": "2023-02-17T00:42:09.000Z",
+          "wordCount": null,
+          "title": "VLOG Thursday 318: pfsense updates, TrueNAS Test Results, Security, Errata, and Q&A",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=qfAnbK5hKbE",
           "author": null,
@@ -364,26 +384,6 @@
           "wordCount": null,
           "title": "VLOG Thursday 314:Cisco Testing, pfsense 23.01RC, Studio Update, Errata, and Q&A",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=lT93hDKRan4",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=lT93hDKRan4",
-          "publishedOn": "2023-01-18T19:16:57.000Z",
-          "wordCount": null,
-          "title": "#shorts  Engenius ECS5512F Switch",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=pNuDtHD1GPI",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=pNuDtHD1GPI",
-          "publishedOn": "2023-01-18T13:06:37.000Z",
-          "wordCount": null,
-          "title": "The Homelab Show Episode 84: Choosing a Linux / FreeBSD Distro VS an Appliance Distro",
-          "imageUrl": null
         }
       ]
     },
@@ -419,6 +419,226 @@
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114ev2i/virtual_machine_vcpu_rightzising/",
+          "author": null,
+          "description": "I just read this article: https://blogs.vmware.com/performance/2017/03/virtual-machine-vcpu-and-vnuma-rightsizing-rules-of-thumb.html\n The examples at the end make it clear how I should rightsize my VMs to align with the physical host. The problem is, we have clusters with ESXi hosts with different # Cores and different # Sockets. For example, in one cluster we have a host with 6 cores (Intel(R) Xeon(R) CPU E5-2620), 8 cores (Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz) and 12 cores (Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz). \n The cluster is EVC enabled with at Intel® \"Sandy Bridge\" Generation. These CPUs typically have 1-4 Cores. (4-6 Extreme, 2-8 Xeon).\n I'm a bit confused how I align my vCPUs in this example. I would assume I align with the host with the least amount of cores, so 6. Btw, we are running ESXi 7.0.3.\n Example 1: VM with 4 vCPUs\n => VM configuration: 1 socket with 4 cores \n Example 2: VM with 8 vCPUs\n => VM configuration: 2 sockets with 4 cores \n Example 3: VM with 16 vCPUs\n => VM configuration: 4 socket with 4 cores \n Am I getting this right?\n    submitted by    /u/TheRealTrinity01  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114ev2i/virtual_machine_vcpu_rightzising/",
+          "publishedOn": "2023-02-17T08:55:40.000Z",
+          "wordCount": 13049,
+          "title": "Virtual machine vCPU rightzising",
+          "imageUrl": "https://external-preview.redd.it/C55eXMp5fO9GvPek1TLDMyc4dYCxYE7xBMPKUpn-DjM.jpg?auto=webp&v=enabled&s=5a767c74c2ea46bf985a1bb65e6a7782e79622d8"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114es78/big_upsi_patched_130_servers_within_one_day/",
+          "author": null,
+          "description": "Hi Folks,\n after 9 years in IT, I had my big upsi moment.\n I was setting up a new WSUS in an environment. It was planned to rollout monthly updates in 4 rings. Test, Auto update 1, Auto update 2, manual update. So far so good. Created the gpo and put the servers in the group.\n Well, yesterday it happened... The downloaded 02.2023 Update was downloaded the day after patchday. So far so good. Only the servers within the Test group installed it. BUT then yesterday, every server just went to the WSUS, installed the updates and rebooted automatically. Even the ones that are in the manual group.\n ​\n The thing that confuses me the most is\n  \nI put in a time, when the servers should NOT restart --> get's ignored\n The updates were planned to be installed at the end of this week + next week\n No matter if I put the \"Configure automatic update\" GPO to option 4 (auto download, install and reboot to schedule) or to option 3 (auto download notify for install), they'll always immediately download and install them.\n  \nI have no clue what's wrong and tried to re-create this behavior in my LAB. So far I don't run into the same issue...\n ​\n Will have a review later today. Guess I better prepare to get a new job...\n    submitted by    /u/LordWolke  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114es78/big_upsi_patched_130_servers_within_one_day/",
+          "publishedOn": "2023-02-17T08:50:02.000Z",
+          "wordCount": 13144,
+          "title": "Big Upsi... Patched 130 Servers within one day",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114dn29/implementing_a_new_domain_setup/",
+          "author": null,
+          "description": "I work at a secure prison facility and I'm looking into expanding my role and responsibilities. Atm, we have antiquated group polices setup on about 100 workstations (used by medical staff) that the county IT people refuses to fix and frequently interrupts work. I have a big meeting with every manager involved and some changes could happen due to finger pointing between us contractors and county officials. \n Essentially my wishlist would be to have county setup a separate domain controller with no original scripts running, so I can implement what I see fit. \n I believe all I would need access to is a server connected to countydomain2 correct? \n I should have no issue swapping user profiles from one domain to the other. I also believe that they will still be able to access their original county controlled emails via outlook correct? \n Am I going about this completely wrong or is there something I'm missing?\n    submitted by    /u/moderatenerd  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114dn29/implementing_a_new_domain_setup/",
+          "publishedOn": "2023-02-17T07:31:16.000Z",
+          "wordCount": 13405,
+          "title": "Implementing a new domain setup",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114djgw/cloud_admin_vs_network_admin_rant/",
+          "author": null,
+          "description": "Edit: Advised this is really just sysadmin v sysadmin so ignore the title?\n Hi all, for starters I am 23 years old who has been working with AWS infrastructure and has just passed the AWS Solutions Architect. I have been working in the cloud for about two years now and essentially I just provide managed services and maintain a few companies cloud infrastructure. I pretty much solve a variety of issues like an MSP would except I am the only employee for 12 hours of the day handling tickets, server maintenance, end-users calling asking me to explain what the \"app\" store is etc etc.\n Anyways tonight, I had received a ticket from a Network admin for one of the companies I provide services for asking for a new server to be created and manually joined to the domain. He asked me to use an AMI (Am…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114djgw/cloud_admin_vs_network_admin_rant/",
+          "publishedOn": "2023-02-17T07:24:40.000Z",
+          "wordCount": 16167,
+          "title": "Cloud Admin vs Network Admin {Rant}",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114dbni/block_standard_users_to_log_in_on_windows_safe/",
+          "author": null,
+          "description": "Hi,\n To block standard users to log in , We are applying below reg key for Win11 Computers via GPO. But its not working. standard users Still log in to computer via safe mode.\n HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System SafeModeBlockNonAdmins REG_DWORD 0x00000001 (1) \n    submitted by    /u/maxcoder88  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114dbni/block_standard_users_to_log_in_on_windows_safe/",
+          "publishedOn": "2023-02-17T07:10:36.000Z",
+          "wordCount": 12794,
+          "title": "Block standard users to log in on Windows Safe mode",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114d7er/smbv1_proxy_production_environment_with_cnc/",
+          "author": null,
+          "description": "Hello guys,\n currently in our production we have a special vlan for cnc machines and a special vlan for clients in the production. Most of the machines are using SMBv1 (you cant change that, because most of them are too old) and I want to implement a SMBv1 Proxy for this.\n The clients access the machines directly over SMBv1 to their network shares to integrate or remove the production files on the machine.\n Unfortunately I dont have the real time to get in the topic so I'm searching for a company which could do that and also maintain this solution (most important part). \n Any idea of companies which do that kind of \"production\" things?\n    submitted by    /u/DarkRider_99  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114d7er/smbv1_proxy_production_environment_with_cnc/",
+          "publishedOn": "2023-02-17T07:03:05.000Z",
+          "wordCount": 12937,
+          "title": "SMBv1 Proxy | Production environment with CNC machines",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114cxoj/dell_laptops_from_factory_always_have_to_be/",
+          "author": null,
+          "description": "I’m sure the consensus here will be that we should always put a clean image on them because of all the bloatware etc… but it hasn’t always been that way. Used to be able to remove a few things, run a couple rounds of windows updates and throw on the domain and it was fine. Seems like for the last couple years we always have to reimage the laptop. If we don’t we have issues with the CPU maxing out at 100% on weird built in system processes. Anyone else see that and/or have a solution for It. It’s also weird that we don’t have to do it on the desktops we get from them.\n For reference we’re a relatively small shop and don’t have put out a ton of laptops all the time. I’d say 2-3 a month. If we didn’t have to do a full reimage, we typically install office 365, sophos AV, ninja RMM client, forticlient VPN, run a round or two of windows updates then add the computer to the domain. I also run Dell command update and remove optimizer.\n Just looking for any suggestions other than reimage them every time. I’ve built MDT servers in the past so I know that’s an option, but don’t think i do enough computers to justify the time investment yet.\n    submitted by    /u/sarnold2245  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114cxoj/dell_laptops_from_factory_always_have_to_be/",
+          "publishedOn": "2023-02-17T06:46:07.000Z",
+          "wordCount": 13380,
+          "title": "Dell laptops from factory always have to be reimaged",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114bmba/how_to_move_to_germany_from_usa_get_30_days_pto/",
+          "author": null,
+          "description": "Following our most recent breakdown-due-to-ridiculous-company-expectations post, I thought I might be able to contribute something. In 2016 I took my Masters of Information Systems degree and shitty grade school German-skills and moved to DE from the US and never looked back. Now that I am enjoying a nice 2 weeks of sick leave for stress reduction, I have time to write out a little something.\n There is a \"Fachkraftmangel\" (lack of skilled work(ers)) in Germany or at least the government thinks so. [The Germans IT guys will correctly explain that their is just a lack of good paying jobs, but we do not have to get into that discussion today] The Fachkraftmangel means that the German visa scheme is very friendly for immigrants with experience and qualfications in certain areas. IT is one of t…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114bmba/how_to_move_to_germany_from_usa_get_30_days_pto/",
+          "publishedOn": "2023-02-17T05:26:26.000Z",
+          "wordCount": 15795,
+          "title": "How to move to Germany (from USA), get 30 days PTO, \"free\" healthcare, and 36 hour work-weeks, and a 50% paycut..",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1149hxr/printers_do_i_suck/",
+          "author": null,
+          "description": "Ive been in the MSP space my entire professional life. 16+ years. I’m pretty comfortable with most things, and feel mighty competent most times. \n But.. I’ve got this client with an assortment of printers. All 5+ years old, some are Xerox Phaser, some HP LJs, they all suck. One phaser says MPC error randomly until you reboot it. One LJ has black streaks (client buys knockoff toner because apparently the legit stuff is too expensive), another LJ prints rainbow like all the cartridges leaked. One HP LJ ghosts images / print. My recommendation is to replace them, or go with MFPs that are proper and under a support contract, but the client just expects me to magically fix all these. \n Is this a legitimate frustration, or is this something an experienced IT admin should be able to do, and do I just suck?\n    submitted by    /u/GhostNode  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1149hxr/printers_do_i_suck/",
+          "publishedOn": "2023-02-17T03:29:48.000Z",
+          "wordCount": 14307,
+          "title": "Printers - Do I suck?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1148nye/slow_cisco_anyconnect_speed/",
+          "author": null,
+          "description": "Our anyconnect speed is painfully slow. 500 up/down at HQ and no matter where I try it from I'm lucky to get over 10Mbps up/down.\n Always been slow on our 5516 and expected much better speed through the new firepower but not much improvement at all.\n Full tunnel (not split tunnel).\n Expect a bit of overhead but whew not that much....\n    submitted by    /u/jws1300  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1148nye/slow_cisco_anyconnect_speed/",
+          "publishedOn": "2023-02-17T02:47:41.000Z",
+          "wordCount": 12907,
+          "title": "Slow Cisco AnyConnect speed",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114723g/m365_retention_policies/",
+          "author": null,
+          "description": "Hi All, \n I have always been confused with the retention policies in M365. So hopefully someone here can clarify this for me. \n If you enable retention policy to retain all data indefinitely in M365 via Microsoft 365 Data Lifecycle Management so it applies globally to all M365 apps (exchange, onedrive, sharepoint etc.). What happens if you disable a user account and remove the license?\n - Will the retention policies be applied to users One Drive?\n - Will the retention policies be applied to users emails? I know its not going to create inactive mailbox but can you still search the emails from/to this users via eDiscovery?\n - What happens after 30 days, 60 days or 90 days when the standard Microsoft retention period (outside M365 Data Lifecycle Management) expires? Will the data get deleted or will the retention policy kick in and all data will still be available via eDiscovery?\n The key here is, I dont care about restoring user data, it is more for compliance/legal purposes so as long as their data is searchable and can be found within e-discovery, I am happy.\n I keep getting conflicting messages from few M365 consultants. Some saying you need to delete the account when the license is still intact otherwise retention policy wont kick in. Others are saying it should apply the retention policy setup globally regardless. I dont want to find it the hard way so im just gathering some information here and there while waiting an official answer from M$.\n    submitted by    /u/Willing_Radio932  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114723g/m365_retention_policies/",
+          "publishedOn": "2023-02-17T01:27:39.000Z",
+          "wordCount": 13482,
+          "title": "M365 Retention Policies",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1145pgu/2_offices_1_ad_dc_site_to_site_vpn_active_and/",
+          "author": null,
+          "description": "Interesting problem I am having. I have looked all around to get this to work but nothing seems to stick out as wrong.\n I have two offices and 1 AD. I am trying to get the remote office to be able to communicate with the AD. I can ping the ip address of the AD from the remote office just fine. However, it will not allow me to Join the AD from the remote office.\n Any suggestions? I'm kind of out of ideas on this one. \n EDIT: I have also changed the dns on the computer I am trying to join to the ip address of the AD.\n    submitted by    /u/Pwnagecoptor  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1145pgu/2_offices_1_ad_dc_site_to_site_vpn_active_and/",
+          "publishedOn": "2023-02-17T00:22:30.000Z",
+          "wordCount": 14143,
+          "title": "2 Offices 1 AD DC. Site to Site VPN Active and Working",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1141uii/how_do_you_manage_more_than_100_computers_and/",
+          "author": null,
+          "description": "This is such a dumb question but how do people manage a bunch of users, servers, and computers within a building or given area?\n I manage at max, maybe 50 computers and 25 servers actively and it gets hard sometimes. I use a mix of AnyDesk for personal machines, Mesh Central, and traditional RDP for more business related systems. \n Sometimes ensuring systems are up to date, secured, deployed correctly, configured with up to date information, etc gets really difficult, I wanna know how y'all do it. \n I have deployed some servers that run by themselves pretty okay; they provide the services they need too and do it well. They auto update, and I automated some of the trivial tasks. But some machines, I feel like I can't leave alone or else they will become problematic. I want to know how y'all manage these kinds of systems or manage a fleet in general. \n I don't even have 100 machines and it seems to be overwhelming at times.\n    submitted by    /u/BouncyPancake  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1141uii/how_do_you_manage_more_than_100_computers_and/",
+          "publishedOn": "2023-02-16T21:37:24.000Z",
+          "wordCount": 14769,
+          "title": "How do you manage more than 100 computers and servers?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1141q4s/please_take_care_of_yourselves_you_only_get_one/",
+          "author": null,
+          "description": "Been seeing a few posts lately about being burnt out or having mental problems. As a person who has depression and ADHD I know the feeling all too well. But I am here to tell you that your job isn’t as important as your life is. Take a day off (or longer if needed) if your feeling down, take a break or two during work and get away from your desk. And please, talk to someone about how your feeling. Weather it’s a psychiatrist, your primary dr, or even a loved one, don’t keep your feelings bottled up. \n You can get through this and things will get better.\n    submitted by    /u/suspectx0  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1141q4s/please_take_care_of_yourselves_you_only_get_one/",
+          "publishedOn": "2023-02-16T21:32:19.000Z",
+          "wordCount": 13640,
+          "title": "Please take care of yourselves. You only get one life but you can always get a new job.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1141117/careful_server_2022_secure_boot_problems_not/",
+          "author": null,
+          "description": "Just a heads-up: Contrary to chatter on the Internet and Microsoft's own patch notes, I have now confirmed the Secure Boot problem caused by KB5022842 (the February 2023 update for Windows Server 2022) also affects installations other than on VMware.\n I have two machines that are running Server 2022 on bare metal, and that are now refusing to boot due to Secure Boot failure. Other machines appear to be unaffected. The two in question boot after Secure Boot is disabled. Both happen to be older desktop-class computers used for software testing purposes, but I wouldn't put money on this problem only affecting non-server class hardware. (HP EliteDesk 800 G2 Mini, Lenovo M93p Tiny; confirmed that both have the latest firmware available.)\n As others have noted, the problem only shows itself on the second reboot after KB5022842 is installed.\n Be careful! I'd be willing to bet that this problem affects a lot more machines than is currently being reported. Might be worth pre-emptive testing to ensure a panic doesn't ensue if Server 2022 machines need to be restarted in the course of business before this problem is fixed.\n    submitted by    /u/SausageEngine  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1141117/careful_server_2022_secure_boot_problems_not/",
+          "publishedOn": "2023-02-16T21:03:33.000Z",
+          "wordCount": 13672,
+          "title": "Careful! Server 2022 Secure Boot problems NOT restricted to just VMware",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/114043j/automaters_how_do_you_do_it/",
+          "author": null,
+          "description": "I am extremely interested in automating some tedious manual tasks I preform on a monthly basis.\n I know a little bit of powershell (I know a little python too) and I have been attempting some test scripts working up towards my actual automation project.\n I'm open to delving into Python or Powershell if any of you experienced automaters think I will have a much easier time of things with one or the other.\n Now this is a windows environment (If powershell didn't make that obvious lol) and I am running into all sorts of permissions and security issues.\n ​\n The eventual goal is to have a script (When does a script turn into a program lol) that can go out to multiple PCs on my network, check the version of an application against the version I specify, and then run an .exe if the version is previous.\n So obviously a program roaming around the network launching executables is not something Windows appreciates.\n ​\n I'm just playing in a test environment at the moment, but I'm starting to have doubts about how anything I ever write would be able to be ran in prod due to security factors.\n ​\n Am I missing something here? I do NOT come from a coding background, I'm more of a Windows/Networking generalist. I feel like learning to automate is a really good step in my career so I want to push myself to learn this. I think there might be a few concepts I'm missing that would make this \"click\" for me.\n ​\n Thank you for your time\n    submitted by    /u/RobotTreeProf  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/114043j/automaters_how_do_you_do_it/",
+          "publishedOn": "2023-02-16T20:24:19.000Z",
+          "wordCount": 15159,
+          "title": "Automaters, how do you do it?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/113zf5p/started_new_job_previous_dude_couldnt_bring/",
+          "author": null,
+          "description": "Wish this sub allowed pics.\n Compaq Proliant M Series. 34GB Hard Drives. Still boots Server 2003. Files dated 1999 (when moved from this server). Dafuq am I going to do with this... Besides not throw it out, too? 🤣\n    submitted by    /u/7eregrine  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/113zf5p/started_new_job_previous_dude_couldnt_bring/",
+          "publishedOn": "2023-02-16T19:54:22.000Z",
+          "wordCount": 15165,
+          "title": "Started new job. Previous dude couldn't bring himself to throw certain things away.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/113zcth/it_appears_microsoft_moved_the_deadline_for_mfa/",
+          "author": null,
+          "description": "“Number matching is a key security upgrade to traditional second factor notifications in Microsoft Authenticator. We will remove the admin controls and enforce the number match experience tenant-wide for all users of Microsoft Authenticator push notifications starting May 8, 2023. We highly recommend enabling number matching in the near term for improved sign-in security. Relevant services will begin deploying these changes after May 8, 2023 and users will start to see number match in approval requests. As services deploy, some may see number match while others don't. To ensure consistent behavior for all users, we highly recommend you enable number match for Microsoft Authenticator push notifications in advance.”\n The AAD Admin portal still shows Feb. 27th though. \n https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-mfa-number-match\n    submitted by    /u/F0rkbombz  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/113zcth/it_appears_microsoft_moved_the_deadline_for_mfa/",
+          "publishedOn": "2023-02-16T19:51:26.000Z",
+          "wordCount": 13701,
+          "title": "It appears Microsoft moved the deadline for MFA number matching back to May 8th, 2023.",
+          "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&v=enabled&s=8e9dd29e55be5f9d4be03f8a2ca6dc669418c160"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/113xnp9/sysadmin_thinks_im_some_elite_hacker/",
+          "author": null,
+          "description": "About 2 years ago the company went through a ransomware attack. At that time I used to be the local domain admin for my warehouse. The attack was traced to somebody's remote account from the head office in New York so it had nothing to do with me or my territory.\n In fact, I warned them of suspicious login attempts to our local APC unit. They ignored it and what happened, happened.\n After that I had no business wanting to be involved with the IT department anymore. I requested that you guys handle everything from New York and just leave me out of it. That is technically what they did, but the IT head said we're going to leave you a local admin account on your own PC just in case you need it for any reason. Okay I don't care, do what you want was my response.\n Now they're beefing up securit…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/113xnp9/sysadmin_thinks_im_some_elite_hacker/",
+          "publishedOn": "2023-02-16T18:39:28.000Z",
+          "wordCount": 17152,
+          "title": "Sysadmin thinks I'm some elite hacker.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/113u1gv/our_company_is_about_it_approve_a_new_work_from/",
+          "author": null,
+          "description": "How's your morning going?\n Bonus: there's a troll in the comments. This day is getting better and better.\n    submitted by    /u/CAPICINC  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/113u1gv/our_company_is_about_it_approve_a_new_work_from/",
+          "publishedOn": "2023-02-16T16:04:34.000Z",
+          "wordCount": 17513,
+          "title": "Our company is about it approve a new \"work from home\" policy that has had 0% input from the IT department, but has acceptable computer use, data management and destruction instructions.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/113t06n/how_do_i_graciously_quit_a_powerful_terrible/",
+          "author": null,
+          "description": "so I got a new job and I'm very happy. I was desperate these past 2-3 weeks as things had gotten more unbearable at my workplace.\n I'm the only system administrator, only IT for an organization. Used to be part of a large IT team in the US, but a part of the company was sold off leaving me as the sole IT person responsible for everything. I was only desktop support but was left with everything to systems I had never had access to, many sites, satellite offices, with all the standard infrastructure in each and me being left at charge of everything.\n Main issue was not that, but that I was also left doing all support, this was driving me crazy, had barely time for any of the advanced tasks. \n The company also kept embarking of fast amount of large projects/changes, that would require a whole…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/113t06n/how_do_i_graciously_quit_a_powerful_terrible/",
+          "publishedOn": "2023-02-16T15:19:21.000Z",
+          "wordCount": 17338,
+          "title": "How do I graciously quit a powerful terrible workplace, found a new job",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/113ru24/ill_work_on_your_printers_all_day_every_day_but/",
+          "author": null,
+          "description": "How do people still use this stuff? Surely there's a better option, one that doesn't require chasing obscure error codes through every workstation each time there's an update. It takes days to get everything working again, only to have it all break next month.\n    submitted by    /u/JollyGentile  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/113ru24/ill_work_on_your_printers_all_day_every_day_but/",
+          "publishedOn": "2023-02-16T14:26:25.000Z",
+          "wordCount": 16954,
+          "title": "I'll work on your printers all day every day, but keep that steaming pile of garbage called QuickBooks far, far away from me.",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/113ribk/how_do_i_create_a_custom_windows_11_iso_with/",
           "author": null,
@@ -12048,416 +12268,6 @@
           "wordCount": 26188,
           "title": "Are monthly drivers and bios update really necessary?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10ficos/sys_admin_with_relatively_little_experience_60/",
-          "author": null,
-          "description": "I will be trained to use Intune and Azure AD in the next coming months through an outside IT consulting company. Our users are mainly on local machines running win 10 home editions, and one of our servers is running 2012 R2. Users are on wifi or a wired connection. We are using Meraki to manage our network equipment, and it seems really useful! Our users are also on Rackspace email, and we will be migrating everyone to outlook accounts. When all the existing PC's are enrolled in intune, I have everyone in azure AD. What are some good practices/concepts to ensure I will be able to manage my company safely and securely for the long term? At my last job, we put them on a specific wifi network to fetch the profiles for some mac devices, as well as a domain AD account disabled to set up our domain. I could be using the wrong terminology so feel free to correct me! I am the only one in my dept, and I have 2 and a half years of IT experience. I have adjusted quite well so far, and I have learned so much already. What can I do do really excel and learn at a quicker pace?\n    submitted by    /u/Background-Raisin-64  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10ficos/sys_admin_with_relatively_little_experience_60/",
-          "publishedOn": "2023-01-18T20:51:27.000Z",
-          "wordCount": 27467,
-          "title": "Sys Admin with relatively little experience, 60 people in the company. What are good practices to secure and back up our existing environment?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10fh1bi/so_youve_decided_to_upgrade_your_2012_r2_servers/",
-          "author": null,
-          "description": "Working as a consultant I've gotten a half dozen requests for help with upgrading 2012 R2 servers this week alone.\n Server 2012 R2 is going end-of-life October 10, 2023 and more concerningly the Azure AD sync tool has stopped working on Server 2012 R2 DCs. So now there's a panic to get these servers upgraded (wheeee!)\n I've got this process down to a science now and wanted to share my experiences. Feel free to add to the list.\n Don't be afraid to ask for help Upgrading this many servers in short order is the kind of thing you can get consultants in to help you with.\n Licensing\n You remembered to buy CALs right?\n You will need adequate Windows Server licenses for all of these upgrades, so make sure you account for that.\n The most common mistake I see is customers forget to buy Windows Serve…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10fh1bi/so_youve_decided_to_upgrade_your_2012_r2_servers/",
-          "publishedOn": "2023-01-18T19:59:27.000Z",
-          "wordCount": 35642,
-          "title": "So you've decided to upgrade your 2012 R2 servers last minute... a Best practice Guide",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10fgqd7/what_to_do_when_you_delete_sidhistory_from_ad_and/",
-          "author": null,
-          "description": "First time poster here. I thought this one might benefit someone frantically Googling in the future.\n Last week we did some AD cleanup as part of a larger project to improve AD security. This included deleting the SIDHistory attribute from users/groups migrated in from other domains around 10 years prior. Didn't expect any issues from this change, because 10 years is super old right!? I had made a lot of other scarier changes in the weeks prior and this one seemed pretty low-risk to me.\n Next day I heard from one of our most sensitive/important departments that they couldn't access a ton of stuff on fileservers. Some of their files had SIDs on the ACLs that were in their SIDHistory from other domains. I didn't even realize you could have those old SIDs in the ACLs and have access work stil…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10fgqd7/what_to_do_when_you_delete_sidhistory_from_ad_and/",
-          "publishedOn": "2023-01-18T19:47:18.000Z",
-          "wordCount": 27201,
-          "title": "What to do when you delete SIDHistory from AD and break file ACLs",
-          "imageUrl": "https://external-preview.redd.it/qjxsP_xlR5Na1CWmUHuRXgXGNaNNht8K5mbXBD9HXCQ.jpg?auto=webp&v=enabled&s=b5b3a3c0d382d94a228fe095d0fabb427321cf9a"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10ffdv2/new_bash_level_unlocked/",
-          "author": null,
-          "description": "We all need a little rant sometimes, and I welcome those in need to this Safe Space. But for the sake of variety, here's a little wholesome post.\n I just reached a new level of Bash proficiency. I've been trying to learn more Bash \"carving\" using awk/sed/cut/head/tail. So, with very little Googling, I just used a grep/awk/sort/uniq/grep -Ev combo to search a DNS server log, only output a few of the most relevant columns, and remove as much clutter as possible. Here's the sanitized version for those who are curious:\n  grep 192.168.2O4.263 /var/log/server.log | awk '{print $4,$5,$6}' | sort | uniq | grep -Ev 'google|gstatic|cloudflare|stripe|wpengine|youtube|doubleclick|instagram|facebook|twitter|tiktok|fontawesome|in.gov|live.com|ytimg|zdassets|zendesk|bing|skype|microsoft|office.net|office.com|msedge|office365|windows.net|azure' \n It was pretty fun to chip away at the rock to find the gems hidden beneath.\n Oh, man! I'm still geeking out about it!\n    submitted by    /u/first_byte  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10ffdv2/new_bash_level_unlocked/",
-          "publishedOn": "2023-01-18T18:54:22.000Z",
-          "wordCount": 28055,
-          "title": "New Bash Level Unlocked",
-          "imageUrl": "https://external-preview.redd.it/vLaW8ZGRGhuSCd9dsM0WHvZT4NGR3j9MgGpHAcyW2hk.gif?format=png8&v=enabled&s=cb1fba39f7274753d4e672f27ddd1619edfc3730"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10ffclq/i_am_looking_for_a_new_job_and_see_one_like_this/",
-          "author": null,
-          "description": "I was looking at new jobs and came across this guy!\n I will not apply for said job, but at the highest pay scale, it comes out to 19.50$ n hour.\n I feel bad for the five applicants who applied, but it seems ridiculous about where it is located and the expectations.\n I am taking my time to find a better job that meets my requirements, but this just seems to add the value of IT when it comes to some companies and how they are not appreciated.\n ​\n https://imgur.com/a/39HCD4w\n    submitted by    /u/007Spy  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10ffclq/i_am_looking_for_a_new_job_and_see_one_like_this/",
-          "publishedOn": "2023-01-18T18:52:55.000Z",
-          "wordCount": 28292,
-          "title": "I am looking for a new job and see one like this, it can be a little bit sad!",
-          "imageUrl": "https://external-preview.redd.it/c8uUgoCmaFc7gqAcGnBDzdr4zAmlDuOylRzivG7Sza4.jpg?auto=webp&v=enabled&s=0be620b83070879e7b59b109ef69a3d35df89b65"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10ff2au/update_my_boss_gave_out_domain_admin_password/",
-          "author": null,
-          "description": "Small update to this post: https://www.reddit.com/r/sysadmin/comments/10a689g/my_manager_just_gave_out_the_admin_password/\n ​\n I ended up sending an email to my bosses boss on Friday night. He called me on Saturday morning, and asked if I could go in and do whatever I needed to do to mitigate the incident.\n Manager was fired yesterday morning. Apparently, they had been looking for a reason to get rid of her for while and they finally had one. \n I am now the interim manager. And have the power to overhaul our systems completely.\n    submitted by    /u/anchordwn  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10ff2au/update_my_boss_gave_out_domain_admin_password/",
-          "publishedOn": "2023-01-18T18:41:45.000Z",
-          "wordCount": 32803,
-          "title": "UPDATE: My boss gave out domain admin password",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10fa4kp/whos_stupid_idea_was_it_to_limit_the_settings_to/",
-          "author": null,
-          "description": "I know this is a dumb rant and I don't know why this bothers me so much but it drives me crazy when I open settings say Windows Updates, I leave it open to monitor that status of the update. Then I go to check some other settings while I wait and it uses the same damn instance as my Windows Update window. Hello Windows there is a reason why I didn't close that. I was still wanted to monitor that in the background Windows. What the hell. \n I thought I was using WindowS not Window.\n (/rant)\n    submitted by    /u/Catsrules  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10fa4kp/whos_stupid_idea_was_it_to_limit_the_settings_to/",
-          "publishedOn": "2023-01-18T15:29:43.000Z",
-          "wordCount": 29124,
-          "title": "Who's stupid idea was it to limit the settings to one instance?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f8lim/when_was_the_last_time_you_dialed_411/",
-          "author": null,
-          "description": "I've been semi-involved in a ticket related to the public facing phone number for one of our grocery stores. According to the ticket, the customer would call the liquor store (physically attached to the side of the grocery store but has a different address), but the call will be sent to the grocery store instead. The customer tried this a few times before eventually giving up and driving to the liquor store. This is when we finally got word of the issue. It turns out, this customer was calling 411, asking for [Business name], and getting routed to a register phone in the grocery store. The register phone would then automatically forward to the office since it's not able to take outside calls.\n ​\n So, my dear Sysadmins, I ask you....when was the last time you (or someone you know) used 411?\n    submitted by    /u/2HornsUp  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f8lim/when_was_the_last_time_you_dialed_411/",
-          "publishedOn": "2023-01-18T14:24:27.000Z",
-          "wordCount": 24825,
-          "title": "When was the last time you dialed 411?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f89j0/onboardingoffboarding_regular_employees/",
-          "author": null,
-          "description": "I am looking for items of capture for onboarding and offboarding employees.\n Name Username/email Platforms neeeded Job Title and function Manager Phone and Phone number \n What else do I need?\n TIA!\n    submitted by    /u/No_Mycologist4488  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f89j0/onboardingoffboarding_regular_employees/",
-          "publishedOn": "2023-01-18T14:09:05.000Z",
-          "wordCount": 25826,
-          "title": "Onboarding/Offboarding Regular employees",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f887c/encrypt_usb_drives/",
-          "author": null,
-          "description": "Any easy way to have users USB drives encrypted? We have a 100% remote work force working through on VPN and use McAfee/Triellix as our endpoint av. Now we just block them 100%. But maybe encryption could get keep us in compliance with our customers.\n    submitted by    /u/pbrontap  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f887c/encrypt_usb_drives/",
-          "publishedOn": "2023-01-18T14:07:21.000Z",
-          "wordCount": 25860,
-          "title": "Encrypt USB drives",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f81v4/08r2dc_questions_regarding_ad_cleanup_migration/",
-          "author": null,
-          "description": "Hello all, \n I have a set of questions that i cant seem to find a detailed answer on so im hoping i might get some information here. In short im taking a 08R2-DC migrating to a Esxi 6.7 hosted WS2016 VM where i would like a \"fresh start\" on rearranging the older AD. \n ​\n I currently have an active AD/Forest that im preparing for a migration over to Microsoft Server 2016, im in the process of cleaning up old objects and folders but im running into issues deleting items that haven't been active or used in quite some time. Im getting a \"you do not have the sufficient privileges to delete \"intern 15-16\" or this is protected from accidental deletion - yet im currently using the domain/sysadmin account.\n This AD has seen several owners prior to my hire 5+ years ago and im trying to strip the AD down to everything minimal in the sense of active users, computers and basic object folder - not extra clutter. I feel getting the AD somewhat back to a fresh start would be easier in the long run, all the permissions and groups need to be revisited as there are groups for folders that a \"S\" would appear in what used to be a user - it annoys me.\n If i can confirm these arent marked for \"accidental deletion\" is there a way to remove them or even set back to default an AD object tree? I dont know if i can afford to create a new AD on the WS2016 or if its possible to migrate only specific workstations or users from the older DC. \n ​\n I do plan on rebuilding all the file folders on the File Server with correct permissions moving forward but im trying to leave as much of the old infrastructure behind as i can without having to migrate over a potential issue. \n ​\n ​\n TLDR; is there a effective way to cleanup old AD DS permissions and broken paths in AD to prepare for a Migration to WS2016 smoothly?\n    submitted by    /u/travvy13  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f81v4/08r2dc_questions_regarding_ad_cleanup_migration/",
-          "publishedOn": "2023-01-18T13:59:39.000Z",
-          "wordCount": 26450,
-          "title": "08R2-DC Questions Regarding AD cleanup & Migration",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f7xzx/automatic_configuration_script_for_proxy_not/",
-          "author": null,
-          "description": "Hello everyone, I'm just looking to see if anyone else has experience this issue and knows a fix. \n We have been upgrading in place from windows 10 to windows 11. We have discovered if the user recently changed their password before the upgrade, then after the upgrade completes. the user can no longer access the internet with a proxy.pac file. If we use a proxy server under internet options, then the device can access the internet. Has anyone else seen this happen during an upgrade?\n    submitted by    /u/quickwhips  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f7xzx/automatic_configuration_script_for_proxy_not/",
-          "publishedOn": "2023-01-18T13:54:24.000Z",
-          "wordCount": 25974,
-          "title": "Automatic Configuration Script for Proxy not working after upgrade to Windows 11",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f7xoy/windstream_isp_down_se_usa/",
-          "author": null,
-          "description": "Anyone else seeing Windstream ISP issues? Just had redundant up-links fail simultaneously at 8:30AM Eastern. Located in Georgia.\n    submitted by    /u/LonePyro  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f7xoy/windstream_isp_down_se_usa/",
-          "publishedOn": "2023-01-18T13:53:59.000Z",
-          "wordCount": 25814,
-          "title": "Windstream ISP down? (SE USA)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f7uph/ansible_automation_for_windows_developer/",
-          "author": null,
-          "description": "I would love to automate the local developer environment setup for my team. Onboarding is a real chore for new hires already; I believe streamlining this portion would help.\n My vision is to use WSL on Windows10 hosts to run Ansible. I would need to install/configure various developer tools [MySQL, Java, Python, Node, Angular, Git, etc.], configure environment/PATH variables, and clone Git repositories containing the project code. \n My question is: is Ansible the right tool for the job?\n If so, any advice on where to start? \n If not, what other options are out there for this use case?\n Thanks in advance!\n    submitted by    /u/searching-crafter  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f7uph/ansible_automation_for_windows_developer/",
-          "publishedOn": "2023-01-18T13:49:54.000Z",
-          "wordCount": 25978,
-          "title": "Ansible Automation for Windows Developer Environment Setup",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f7cjj/which_event_ids_are_generated_from_advanced/",
-          "author": null,
-          "description": "I have a request to enable advanced auditing, but not all events are needed to be logged. I received a list of events that are relevant and needs to be logged. \n I have found articles about which events are generated when certain advanced auditing policies are enabled, but the article is for windows server 2008) and windows 10. \n Does someone know if the events generated from the policies applies to windows server 2012 R2 and windows server 2019?\n    submitted by    /u/Lord__Jashin  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f7cjj/which_event_ids_are_generated_from_advanced/",
-          "publishedOn": "2023-01-18T13:25:34.000Z",
-          "wordCount": 26006,
-          "title": "Which event id's are generated from advanced auditing policies?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f6x9m/controlled_user_access_to_vm_services/",
-          "author": null,
-          "description": "I'm wondering what everyone's thoughts are on the best way to do this. If I have a subnet specifically for vm's what is the best way for users to a access specific services running on a couple of those vm's? \n  \nDo I give the vm a second ip and manage the vm from the vm subnet while the users access it from their subnet and either the host or the vm firewall blocks access to ssh or any unneeded ports to that service on the client subnet.\n Do I go to the firewall level and allow access to the services there. \n Something I haven't mentioned.\n  \nI feel like it's the second option or something I haven't thought of not totally sold on the first option unless it's the way to go.\n    submitted by    /u/Aggravating_Map_8565  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f6x9m/controlled_user_access_to_vm_services/",
-          "publishedOn": "2023-01-18T13:04:26.000Z",
-          "wordCount": 26036,
-          "title": "Controlled User Access to VM Services",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f6kok/kb5020805_cve202237967_so_many_grey_areas/",
-          "author": null,
-          "description": "Hi all, ive been waiting for microsoft to provide the latest update on the july enforcement but the article hasnt been updated.\n Was hoping you could help. We have a number of servers running 2003 and 2008 os with mulitiple applications which end users log into and authenticate.\n In a nutshell must they all either be upgraded to 2019 os for example or off the network??\n Even if the dcs are upgraded the servers would fail?\n How businesses would be ready in 6 mo ths before they all fail???\n    submitted by    /u/Illustrious-Coat-423  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f6kok/kb5020805_cve202237967_so_many_grey_areas/",
-          "publishedOn": "2023-01-18T12:46:53.000Z",
-          "wordCount": 25321,
-          "title": "KB5020805: CVE-2022-37967 - so many grey areas!!!",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f6fa6/dress_code_for_interview/",
-          "author": null,
-          "description": "I've got my first formal in-person interview since I started my new job search!!!!\n My problem is that my last formal interview was in 1987. My current job was an informal interview over dessert and iced tea in 2003. What are the expectations for interview dress? Should I wear my suit & tie? shirt & tie? business casual? It's for a state agency, and they don't list specific dress codes in their employee handbook except to say that dress code is what is appropriate for the position.\n    submitted by    /u/brads-1  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f6fa6/dress_code_for_interview/",
-          "publishedOn": "2023-01-18T12:39:05.000Z",
-          "wordCount": 25896,
-          "title": "Dress Code for Interview",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f60eg/sharepoint_online_pdf_view_blurry_not_sharp/",
-          "author": null,
-          "description": "Hello everyone,\n ​\n I have a big problem, not only with my Tenant, but with all of our customers. Sharepoint Online (my.sharepoint.com) Shows all PDF Files Blurry but only when scrolling, it gets even worse when you scroll down the same document almost up and down.\n However, when I use Firefox or Chrome, the Error does not appear in SharePoint Online (my.sharepoint.com). Can someone reproduce this phenomenon, or am I and my other Managed Devices the only ones experiencing this error?\n Of course, it's marvelous that it's only on the Microsoft Edge, which is used by every single Device I am managing...\n ​\n Glad if someone has a Solution or knows a Fix.\n    submitted by    /u/MaploX  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f60eg/sharepoint_online_pdf_view_blurry_not_sharp/",
-          "publishedOn": "2023-01-18T12:17:21.000Z",
-          "wordCount": 26004,
-          "title": "Sharepoint Online PDF View Blurry / Not Sharp",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f5zd0/keeping_track_of_firewall_aps_and_switch_sw/",
-          "author": null,
-          "description": "How do ya'll currently keep track of firewall sw version, ap's and switch verions?\n    submitted by    /u/dickydotexe  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f5zd0/keeping_track_of_firewall_aps_and_switch_sw/",
-          "publishedOn": "2023-01-18T12:15:46.000Z",
-          "wordCount": 25865,
-          "title": "Keeping track of firewall, AP's and switch sw versions",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f58co/question_about_cves_found_in_msrc/",
-          "author": null,
-          "description": "Hey Guys,\n We're actually working as IT for our MSP company and we wanted to make our Patch Tuesday better.\n For CVE's that are found on MSRC and is tagged as 'Exploitation Less Likely' Do you guys approve this or block this for a month and revisit it again? I know for a fact that CVE's that is tagged as 'Exploitation Detected' and 'Exploitation More Likely' needs to be block.\n Any help would be helpful. Thank you!\n    submitted by    /u/Old-Lion-8520  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f58co/question_about_cves_found_in_msrc/",
-          "publishedOn": "2023-01-18T11:35:27.000Z",
-          "wordCount": 25414,
-          "title": "Question about CVE's found in MSRC",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f4wc0/new_laptops_crashing_after_waking_from_sleep_mode/",
-          "author": null,
-          "description": "Okay what the fuck is going on with new laptops nowadays.\n Most if not all my HP ZBook laptops that I purchase for my users get a BSOD after waking from sleep. I thought it was my Dell Docks first but one user has an elitebook that does the same thing and he only works on it when charging.\n I swap over to Dell because I couldn't figure it out.\n Same. Fucking. Problem.\n ​\n Is sleep mode really this cursed? Do I just turn it off?\n    submitted by    /u/Eskuran  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f4wc0/new_laptops_crashing_after_waking_from_sleep_mode/",
-          "publishedOn": "2023-01-18T11:16:27.000Z",
-          "wordCount": 25379,
-          "title": "New laptops crashing after waking from sleep mode",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f4rym/windows_ignores_the_driver_set_in_the_print_server/",
-          "author": null,
-          "description": "Hello, I have set up a new printer (HP DesignJet T1700).\n It is installed on a Windows print server and I have installed the HP driver. (via TCP/IP-Port)\n I can run the driver on the print server when I open the printer settings.\n ​\n Now there is the phenomenon that some users install the printer and everything runs, others get only the \"Microsoft enhanced Point and Print driver\", even if I change this manually then, this driver remains selected anyway.\n Anybody got some print server experience and is familiar with the problem?\n Thanks for any pointers.\n    submitted by    /u/Infamous_Low_5267  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f4rym/windows_ignores_the_driver_set_in_the_print_server/",
-          "publishedOn": "2023-01-18T11:09:19.000Z",
-          "wordCount": 25509,
-          "title": "Windows ignores the driver set in the print server.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f4kb0/newly_qualified_what_next/",
-          "author": null,
-          "description": "For background, I have been a Windows engineer for 20+ years at this point, all the way from helldesk up to consulting engineer with some architecting experience (its mainly infrastructure based but am expanding my skillsets). Currently I am working a lot with AWS and Azure technologies alongside my Windows experience. I have been messing with some Raspberry Pi devices at home (Pihole/Retropie) for a while and got it into my head to learn Linux to go alongside my Windows knowledge. I have been learning it in my downtime off and on for a while and had been enjoying it. \n Recently we got a client who was using Linux and I was wanting to get more involved. I threw myself into the learning and last week I gained my CompTIA Linux+ certification. During this I realised that really enjoy working with the Linux OS. I am now getting involved with more Linux stuff at work and want to keep going on this side of things. I started thinking about what else is good from a corporate perspective for Linux qualifications. My current thoughts are Red Hat Certified Systems Administrator into Red Hat Certified Systems Engineer, but I don't know if there are other/better options than this?\n Thought I would ask you knowledgeable lot to see what opinions you can offer…\n    submitted by    /u/NecropolisTD  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f4kb0/newly_qualified_what_next/",
-          "publishedOn": "2023-01-18T10:56:57.000Z",
-          "wordCount": 25755,
-          "title": "Newly qualified, what next?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f4jh2/gitlab_critical_security_release_patch_now/",
-          "author": null,
-          "description": "Gitlab has released a critical security release to fix two security issues in git: https://about.gitlab.com/releases/2023/01/17/critical-security-release-gitlab-15-7-5-released/\n I'm not quite sure under which conditions this can be exploited from their blogpost. Please chime in if you know :)\n    submitted by    /u/lotusmotus  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f4jh2/gitlab_critical_security_release_patch_now/",
-          "publishedOn": "2023-01-18T10:55:29.000Z",
-          "wordCount": 26632,
-          "title": "Gitlab Critical Security Release: Patch now",
-          "imageUrl": "https://external-preview.redd.it/ggjcV7qnBlmOlnu0NfKoWdEu0A83EOi9Izk4qth9pTQ.jpg?auto=webp&v=enabled&s=167dd66f16fc621bbccadc3ed9bef9037bb45368"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f49nd/are_documents_stored_as_private_document_in/",
-          "author": null,
-          "description": "These are documents stored through an Office 365/Microsoft 365 subscription through an organization. They have the label of \"Private Document\", but my understanding of Office 365 is a global admin can easily view, even outright modify any and all content, which is leaving me confused. The reason I ask is mainly because I make use of the storage space and other services provided for sometimes things not exactly strictly work related (hey, free and I'm not the one paying), so I want to get some clarification on that point.\n    submitted by    /u/blueredscreen  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f49nd/are_documents_stored_as_private_document_in/",
-          "publishedOn": "2023-01-18T10:38:27.000Z",
-          "wordCount": 25519,
-          "title": "Are documents stored as \"Private Document\" in Microsoft Delve truly so?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f492j/microsoft_authenticator_is_disabled_but_still/",
-          "author": null,
-          "description": "We we Microsoft 2FA disabled in our tenant but in certain situations, it still prompts. It mostly occurs when setting up machines and Windows Hello (we use autopilot) or accessing resources on a mobile device outside of a laptop. If it’s fully disabled, why does it still prompt?\n    submitted by    /u/WestCoasty16  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f492j/microsoft_authenticator_is_disabled_but_still/",
-          "publishedOn": "2023-01-18T10:37:28.000Z",
-          "wordCount": 25525,
-          "title": "Microsoft Authenticator is disabled but still prompts in certain situations.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f3eyg/sharepoint_online_network_shared_drives/",
-          "author": null,
-          "description": "Hi all, \n I'm helping a customer who currently has a NAS with a few network shared drives that are synced up to their respective sharepoint online communicationswebsites. The problem is that files are not synced down to the shared drive from sharepoint online, but files are uploaded automatically from the network drive to sharepoint online. \n Is there anything to do about this, or would it be wiser to just close either sharepoint online or the network share down and tell the users to only use one of them?\n    submitted by    /u/McCuntamean  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f3eyg/sharepoint_online_network_shared_drives/",
-          "publishedOn": "2023-01-18T09:45:21.000Z",
-          "wordCount": 25490,
-          "title": "Sharepoint Online & Network shared drives",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f3dg4/aad_sync_msol_delegation_on_krbtgt/",
-          "author": null,
-          "description": "Hi guys\n Need help about MSOL* account \n It has write access to RBCD on krbtgt account.\n Do you know if i can remove this delegation ? \n btw AADsync doesnt sync krbgt's OU\n    submitted by    /u/sticky--fingers  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f3dg4/aad_sync_msol_delegation_on_krbtgt/",
-          "publishedOn": "2023-01-18T09:42:38.000Z",
-          "wordCount": 25374,
-          "title": "AAD SYNC \"MSOL\" delegation on \"krbtgt\"",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f34hv/do_we_still_need_the_feature_enable_print_info/",
-          "author": null,
-          "description": "So i've walked into a newish job and have been asked by security to check out this vulnerability - i remember deploying this registry key years ago at a different job and it was applied to all servers then.\n Obviously some time has passed, does this registry key still need applying to all servers via GPO or has some MS skullduggery happened under the hood and this is now fixed automagically?\n    submitted by    /u/imrik_of_caledor  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f34hv/do_we_still_need_the_feature_enable_print_info/",
-          "publishedOn": "2023-01-18T09:26:42.000Z",
-          "wordCount": 25482,
-          "title": "Do we still need the FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX registry key for CVE-2017 - 8529?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f2v02/azure_avd_errors_on_weu/",
-          "author": null,
-          "description": "Hi, \n Experiencing multiple errors on starting, deallocating and restarting machines across multiple subscriptions located in WEU.\n ​\n Twitter seems to agree https://twitter.com/AzureSupport \n ​\n Anyone else?\n    submitted by    /u/matt5on  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f2v02/azure_avd_errors_on_weu/",
-          "publishedOn": "2023-01-18T09:09:37.000Z",
-          "wordCount": 25359,
-          "title": "Azure AVD errors on WEU",
-          "imageUrl": "https://external-preview.redd.it/Gv7bVhZdz_qD7eIdR277F2cvSedf2ZnhZEZ1PP7QtJ4.jpg?auto=webp&v=enabled&s=3bb5923c36ec84ebd1e2d7abaecfea51be77bf61"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f2qhn/microsoft_edge_wont_launch/",
-          "author": null,
-          "description": "Dear Admins, \n I have just experienced that multiple of my users cannot open Microsoft Edge. \n Error message \"The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log or use the command-line sxtrace.exe tool for more detail\"\n ​\n Has anyone else got this issue?\n    submitted by    /u/Historical-Rope9843  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f2qhn/microsoft_edge_wont_launch/",
-          "publishedOn": "2023-01-18T09:01:24.000Z",
-          "wordCount": 25404,
-          "title": "Microsoft Edge won´t launch?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f2egw/help_your_opinion_is_appreciated/",
-          "author": null,
-          "description": "Just wanted your opinion, I am system admin at a company, I've worked for a year after college acting as a point of contact between the business and our service provider. I mainly act as a technical filter for a 200 personnel, resolving and escalating issues that are out of my knowledge.\n Just yesterday, the CEO asked me to carwash his new car, am I supposed to do that even though it's not part of my duties. I feel that I am being reduced and humiliated. Yes I am just a graduate, a graduate with speech disability who's determine to work and succeed in IT. \n Please advise on what should I do. Is it right or legal for them to do that, our organization doesn't have union so can't have any support for question. This is a family business.\n    submitted by    /u/Creative-Net-9212  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f2egw/help_your_opinion_is_appreciated/",
-          "publishedOn": "2023-01-18T08:39:06.000Z",
-          "wordCount": 26132,
-          "title": "help your opinion is appreciated",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f2cm3/it_helpdesk_keeps_opening_itself_for_random_users/",
-          "author": null,
-          "description": "Hi guys,\n I have come across a problem I am trying to solve and am completely stumped by it. \n Our estate is mostly Windows 10 ent 21H1. We have had multiple users report that our IT service desk webpage keeps opening itself randomly. \n This morning, I went to see a user and do some digging. In front of me she started typing an email, pressed shift+A and the IT helpdesk web page opened. She closed it, and then went back to her email and pressed shift+A and the helpdesk did not open. Each user reporting the issue says the same thing. There is no consistency as to when it does it or what key combination causes it. \n I have searched the registry for the domain of the helpdesk without the https:// or trailing slashes and nothing came up.\n I have checked all desktop shortcuts for keyboard shortcuts on the helpdesk shortcut, but the user did not even have any shortcuts to the helpdesk in their profile anywhere. \n The user I was with went off on the ward to sort some bits out whilst I dug into the issue, and I asked the other user in the room if they had the same and they said they have had it happen randomly to. It happens on different computers and it does not matter if they use the ward generic account or their account, it happens either way. \n ​\n Has anyone come across this or got any ideas as to where else I can have a look? The bit that has thrown me off is the keyboard combination that triggers it is not static. I am sure I have had this happen to myself as well.\n Thanks!\n    submitted by    /u/fusrohdann  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f2cm3/it_helpdesk_keeps_opening_itself_for_random_users/",
-          "publishedOn": "2023-01-18T08:35:27.000Z",
-          "wordCount": 25878,
-          "title": "IT Helpdesk keeps opening itself for random users",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f243y/clients_causing_100_cpu_on_the_kdc_service/",
-          "author": null,
-          "description": "Hoping someone here might be able to shed some light on an issue i had yesterday that i can't find any answers to. Full disclosure: This is a school network so malicious users are a possibility. \n At 10:16AM yesterday my vmware servers flagged both my domain controllers as red for CPU usage. First it was both DCs, i struggled my way around the first DC trying to find anything that was wrong, i couldn't find any answers, so i restarted it. This resolved the issue on what i'll call DC1, however DC2 stayed at 100% and was now practically unusable, it eventually took about an hour to restart DC2. \n As soon as DC2 went offline, DC1 cpu usage on the LSASS service shot up to 100%, specifically the KDC process. \n I could repeat that process and the 100% cpu usage would move back and forth. If i le…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f243y/clients_causing_100_cpu_on_the_kdc_service/",
-          "publishedOn": "2023-01-18T08:19:52.000Z",
-          "wordCount": 26512,
-          "title": "Client(s) causing 100% CPU on the KDC service.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f1rsh/i_got_hired_as_a_customer_care_manager_today_for/",
-          "author": null,
-          "description": "Hi guys\n So is exactly what the title says. This company took a dip in terms of not having their shit together on the customer care side of things as the person that was previously there fucked up bad (that was said to me in my 2nd interview) so now they want someone who will clearly know how to do the following :\n  \nCreate an easy way of managing tickets\n \nCreate Documentation on what to do for each situation step by step (with flow charts of business processes if I can) and SOPS (standards operating procedures) \n \nFurther refine their FAQs (so as to lower users logging tickets when they can just troubleshoot themselves & find a fix that way too instead of creating extra tickets.\n \nKnow how to utilize SharePoint in creating Response Templates\n \n In their words they simply want it to be a specific way that if 2 New people had to join the company under me, all I would have to do instead of helicopter-ing around them, is literally show them this system of documented procedures and what processes to follow in order to know what to say and who to go to for what information.\n I'm freaking out because whilst I have managed teams before I have never had to create any processes and document stuff.\n  \nAre there any easy Softwares out there to automate Documenting procedures and processes or make this easy to do (free ideally)? \n \nAre their any easy resources to easily learn how to create or custom make SharePoint into a central point of information? \n \nHow do I wing this post? Any words of encouragement will be really welcomed, I can feel the imposter syndrome tingling lol\n \n Any and all advice is welcomed too! \n Thank you so much for reading! \n I will reply as soon as I get a chance!\n    submitted by    /u/The_Chloe_Frazer  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f1rsh/i_got_hired_as_a_customer_care_manager_today_for/",
-          "publishedOn": "2023-01-18T07:58:10.000Z",
-          "wordCount": 26829,
-          "title": "I got hired as a Customer Care Manager today for a company that wants to restructure & I'm freaking out! Send Help pls",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f1rf4/how_to_identify_duplicate_spf_records/",
-          "author": null,
-          "description": "I've been tasked with looking over our DMARC configuration, and it turns out we've exceeded the 10 DNS lookup limit. We are running many Zoho services, and therefore have a couple different SPF includes related to that. \n My question is - can I remove usermail.zohocreator.eu since the DMARCLY SPF lookup shows it inherits the eu.transmail.net records? (see below)\n Appreciate the help!\n  - mydomain.com include:usermail.zohocreator.eu include:eu.transmail.net ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ip4:136.143.168.0/22 ~all ~all include:eu.transmail.net ip4:31.186.226.0/24 ip4:185.20.211.0/24 ip4:185.172.199.128/26 ip4:185.172.199.192/27 ip4:185.172.199.56/29 ip4:136.143.168.0/22 ~all \n    submitted by    /u/CybrSecOps  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f1rf4/how_to_identify_duplicate_spf_records/",
-          "publishedOn": "2023-01-18T07:57:27.000Z",
-          "wordCount": 25979,
-          "title": "How to identify duplicate SPF records?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f1j7r/company_canned_the_project_they_asked_me_to_work/",
-          "author": null,
-          "description": "My business asked me to create and develop a new Microsoft system which usually requires a Microsoft partner to integrate and lots of money. \n I went away learnt the system, created multiple integrations with dashboards and workflows and mimic their current system they used so that everything looked similar. \n I’ve had no support in building it out as they did not want to spend the money. I created a bunch of processes that are connected to the new system which have been successful. \n I eventually rolled the system out to the whole business, I was task to train 100 people individually, and also teach the internal staff how to use the system. \n The business has now done a backflip on their decision and realised that the usability of it is too complex and is wanting to pull the project. \n When I rolled out the project two weeks after I was given multiple project leads that the business deemed important. I felt that during that time I was not able to give the respect my work deserved over the last 12 months. \n The company realised they have under resource me, but now I feel like the last 12 months have been a complete waste of time. I feel like I’ve been set up to fail. \n Don’t get me wrong I learnt a lot of stuff. But now almost all of it won’t come to fruition because they’ve decided this is not the right direction for the business after launch. \n Any advice? Has anyone else been through something like this?\n    submitted by    /u/Kind-Ad-4430  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f1j7r/company_canned_the_project_they_asked_me_to_work/",
-          "publishedOn": "2023-01-18T07:42:31.000Z",
-          "wordCount": 26453,
-          "title": "Company canned the project they asked me to work on for 12 months after the initial role out",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f10pv/what_are_some_things_i_should_learn_to_become_a/",
-          "author": null,
-          "description": "currently i am a jr. and i do all the office 365 administration and setting up new pcs/laptops, network (wifi and other) troubleshooting and handle printer issues and account issue troubleshootins (pw resets, creation, migration) on this other inhouse sofware we use.\n i did PGD in IT, but didnt do the final exams, its been a year now so im sure even if i take the exams ill fail it.. so i was wondering if i should take any other courses under budget increase my skills & knowledge in IT\n    submitted by    /u/SirThunderCock-  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f10pv/what_are_some_things_i_should_learn_to_become_a/",
-          "publishedOn": "2023-01-18T07:11:01.000Z",
-          "wordCount": 25601,
-          "title": "What are some things i should learn to become a Sr. Sys Admin ?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10f05cp/windows_10_searchbar_and_start_button_does_not/",
-          "author": null,
-          "description": "Hi fellow IT Experts,\n ​\n In a Company i Support we get some really strange errors from our clients.\n Suddenly after a restart the Search bar and the Windows Start ( Logo) wont work or is not clickable anymore. I cant see any point that triggers this behavior ( Updates or so ) . These Notebooks are Intune controlled. All are rolled out on the same profile. \n In the last 6 month we hat like 6 Clients with this problem . If you log in with another account on the same machine everything works fine. The only solution to it by now is to clean reinstall Windows.\n Does anyone had/has the same issue or maby knows a fix to this ? \n Thanks in advance.\n    submitted by    /u/Crafty_Distance_1375  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10f05cp/windows_10_searchbar_and_start_button_does_not/",
-          "publishedOn": "2023-01-18T06:20:43.000Z",
-          "wordCount": 25785,
-          "title": "Windows 10 Searchbar and Start Button does not work",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10evxjw/your_most_ridiculous_interview_for_an_it_position/",
-          "author": null,
-          "description": "Most of us have been there, sitting in an interview with somebody of an unknown skill level and during the interview they say or do something crazy. What are some of your top experiences?\n  \nClaimed he had 20+ years of linux experience, couldn't answer basic questions then got angry when we pressed him for actual answers\n Literally googled questions in the interview with a mechanical keyboard, we could all hear it over the phone\n Told us confidently that powershell was a linux-native shell and that Microsoft had just adopted it for their uses\n  \n   submitted by    /u/ClumsyAdmin  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10evxjw/your_most_ridiculous_interview_for_an_it_position/",
-          "publishedOn": "2023-01-18T02:52:49.000Z",
-          "wordCount": 29714,
-          "title": "Your most ridiculous interview for an IT position",
-          "imageUrl": null
         }
       ]
     },
@@ -12609,24 +12419,6 @@
             "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/fc623e20-53cc-4df6-a464-3713a40cb7ca/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=fc623e20-53cc-4df6-a464-3713a40cb7ca&feed=WCb5SgYj"
           },
           "imageUrl": null
-        },
-        {
-          "id": "8b0eb57f-6258-405d-a688-d67e5a3aed19",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "World leaders and elites arrive in Davos for the World Economic Forum’s annual meeting, Illinois sheriffs refuse to enforce a newly passed gun law, and the D.C. Council overrides the mayor’s veto to install a sweeping criminal justice reform law. Get the facts first on Morning Wire. \nGet a FREE report with all the details at https://www.bankonyourself.com/wire",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2023-01-18T09:30:00.000Z",
-          "wordCount": null,
-          "title": "Davos & Gun Law Standoff | 1.18.23",
-          "itunes": {
-            "duration": "00:13:56"
-          },
-          "enclosure": {
-            "length": "13378968",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/6c1dd76f-51a8-47bd-b9a0-7c1d632fdcc6/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=6c1dd76f-51a8-47bd-b9a0-7c1d632fdcc6&feed=WCb5SgYj"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -12635,6 +12427,156 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/114e033/cisco_120gb_ssd_module_alternatives/",
+          "author": null,
+          "description": "Hey there, currently trying to understand the apphosting ports on our Cisco Catalyst 9300 Switches. Relatively new to the whole concept, I am currently wondering, do I need the offical Cisco 120GB SSD module, or does any usb3.0 usb stick suffice? I don’t think I can persuade my boss to buy one of those modules without having a 100% confirmation that we will be using them. A 120GB usb3.0 usb stick on the other hand would be easy to buy for us…\n    submitted by    /u/Phobit  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/114e033/cisco_120gb_ssd_module_alternatives/",
+          "publishedOn": "2023-02-17T07:56:04.000Z",
+          "wordCount": 13045,
+          "title": "Cisco 120GB SSD module - alternatives?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/1146ip0/settle_a_dispute_about_encryption_vpns_and_vm/",
+          "author": null,
+          "description": "Here are the facts of the situation:\n  \nWe are an MSP with a central office that has a backup appliance.\n \nOur customers' servers send data backups to this appliance daily. \n \nOur office and all customers have static IP public IPv4 addresses.\n \nData comes in on TCP 35116 and 35117 which is port forwarded to our backup appliance (see below before you gasp :)\n \n Here is what we do to secure this\n  \nThe office firewall drops all inbound traffic on 35116 and 35117 (actually all ports) unless it is coming from a customer IP address. We maintain an alias in our firewall for customer IP addresses\n \nBackup files are encrypted with a 2048bit key as they are generated at the customer site. They cannot be read without this key\n \nThe connection itself is TLS from the customer server to the backup appliance\n \nThe backup client at the customer sites must have a seperate 2048bit key in order to connect and have Read/Write access to the backup appliance\n \nThe backup appliance is off domain and uses a separate set of credentials from anything else\n \n  \nHere is the debate.\n A coworker is pretty insistent that we should be running these connections over a VPN of some sort. Either OpenVPN, WireGuard, or IPSec maybe. I have countered that since the backups themselves are encrypted AND are being sent over TLS, this is not necessary and would harm performance.\n What do you think? Is adding a site-to-site VPN (with appropriate firewall rules and controls) to this setup worthwhile?\n    submitted by    /u/jacobjkeyes  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/1146ip0/settle_a_dispute_about_encryption_vpns_and_vm/",
+          "publishedOn": "2023-02-17T01:01:32.000Z",
+          "wordCount": 15257,
+          "title": "Settle a dispute about encryption, VPNs, and VM Backups for me",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/1145grk/help_picking_a_fiber_cable/",
+          "author": null,
+          "description": "Hello, I am relocating my office server and firewall 50FT away, and I need to find a optical fiber Cable that is plenum rated and premade, to pull to the new location. I don't have much experience with fiber connections so I'm having trouble finding the right cable to install.\n Here are the connections:\n https://tinypic.host/i/1xSTd\n This is used for gigabit internet.\n Thanks!\n    submitted by    /u/Under_the_shadow  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/1145grk/help_picking_a_fiber_cable/",
+          "publishedOn": "2023-02-17T00:11:32.000Z",
+          "wordCount": 13639,
+          "title": "Help picking a Fiber Cable",
+          "imageUrl": "https://external-preview.redd.it/ImK_UCA9YBxjT6jq0G_8ybeG9MtAmBQEw3GGGn0fP5E.jpg?auto=webp&v=enabled&s=ac4f2191e6b0855cfca2063588747e388de45239"
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/11457lh/blogpost_friday/",
+          "author": null,
+          "description": "It's Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member's new and shiny blog posts.\n Feel free to submit your blog post and as well a nice description to this thread.\n Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/11457lh/blogpost_friday/",
+          "publishedOn": "2023-02-17T00:00:22.000Z",
+          "wordCount": 12974,
+          "title": "Blogpost Friday!",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/1144vl3/reusing_used_customer_premise_equipment/",
+          "author": null,
+          "description": "Who here that works for a major ISP reuses used gear such a cable modems, ONTs, subscriber radios etc on new customers? \n Please explain your reasoning for doing it or not doing it.\n    submitted by    /u/aphlixi0n  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/1144vl3/reusing_used_customer_premise_equipment/",
+          "publishedOn": "2023-02-16T23:45:29.000Z",
+          "wordCount": 1898,
+          "title": "Reusing used customer premise equipment",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/1142eaq/9300_stack_config_sync_failure_when_enabling/",
+          "author": null,
+          "description": "Perhaps someone has seen this before, when I enable the following on the switch stack consisting of two Cisco 9300s, the second switch cannot handle the config sync and reboots itself, showing the error in the log that this is causing the sync issue.\n archive\n path flash:archives/$h\n maximum 14\n write-memory\n I assume this is due to the path, can the standby switch write to flash? or can it not handle the $h variable? I want to set up local config change logging and backups at the very least, because the network team for this org has let it all go to hell, and now I have to fix everything and do it myself, hell they didn't even set up SNMP properly, all the network devices are using RADIUS servers half way around the world away when we have some locally... just a mess.\n Any advise on maybe setting up better management of the local devices is welcome as well, maybe there is an open source solution I can run locally to at least manage the configs?\n    submitted by    /u/misterezekiel  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/1142eaq/9300_stack_config_sync_failure_when_enabling/",
+          "publishedOn": "2023-02-16T22:00:12.000Z",
+          "wordCount": 13767,
+          "title": "9300 stack config sync failure when enabling archives",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/1141s1x/is_ftd_still_really_that_bad/",
+          "author": null,
+          "description": "So I've been in the field for a while now and I'm shifting from networking more into security.\n I've been working with FTDs as well as Checkpoints and Palos for a few years and everywhere I look (especially this sub lol), I can see frequent jokes about the FTD platform.\n I mean, I kinda get it, the platform didn't start out well and was a hot mess until recently when they managed to catch up a bit in my eyes. But when I read the discussions, it seems to me that everybody thinks it's a completely wasteful investment to any deployment.\n So what do you guys think? Is it still that bad as everyone says?\n    submitted by    /u/Front_Ask_9119  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/1141s1x/is_ftd_still_really_that_bad/",
+          "publishedOn": "2023-02-16T21:34:32.000Z",
+          "wordCount": 16244,
+          "title": "Is FTD still really that bad?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/1140yo4/cant_transfer_tftp_files_through_securecrt/",
+          "author": null,
+          "description": "I'm trying to update this cisco 4400 series ios, im using secureCRT, firewall is down, ports and ips are configured, I have the correct filename, I can ping laptop to router, not router to laptop and when I try to copy thr flies over it says timed out\n    submitted by    /u/Valixs  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/1140yo4/cant_transfer_tftp_files_through_securecrt/",
+          "publishedOn": "2023-02-16T21:00:46.000Z",
+          "wordCount": 13125,
+          "title": "can't transfer tftp files through secureCRT",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/113zwzb/anyone_know_this_tool_setupexe_by_patchbox/",
+          "author": null,
+          "description": "It looks really handy tbh, curios about some opinions. I‘m currently using the patchbox already and I am really happy with it.\n https://shop.patchbox.com/products/setup-exe-your-rack-installation-wizard-by-patchbox\n    submitted by    /u/Benni2012  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/113zwzb/anyone_know_this_tool_setupexe_by_patchbox/",
+          "publishedOn": "2023-02-16T20:15:41.000Z",
+          "wordCount": 14170,
+          "title": "Anyone know this tool „Setup.exe“ by Patchbox?",
+          "imageUrl": "https://external-preview.redd.it/Fz8w4gpdl3shjGuAiBY6uUqWB4cNcGyZucz8qFeaDJc.jpg?auto=webp&v=enabled&s=cdcbba18cbf8f63a33d0919c0e197f58dfef6473"
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/113zgk0/cisco_9800l_with_27002800_series_aps/",
+          "author": null,
+          "description": "I'm wondering if anybody has any real world experience with this combination of devices. We're in the process of upgrading from our old 5508 controllers (and 2700/2800 series APs) to a pair of 9800-L WLCs with 9115 APs. Nothing new is in production yet, we're still in the planning phase, and we're trying to figure out how difficult this will be (we're in a manufacturing environment where some sites work 3 shifts and almost never shut down).\n According to this compatibility matrix, it should work. Here's a screenshot of the relevant section.\n I've got one of the 9800s online and I've got a spare 2702 AP that I'm testing with. I've installed 17.3.4c to the WLC installed the specific AP firmware from the table but so far I haven't been able to get them to talk. This very well could be user error so far since I'm not that familiar with this thing yet.\n I'm just wondering if anybody can confirm these work together. This would be much easier if we could just swap out the controllers with the existing APs in place and then swap out the APs one by one (we've got the controllers but the APs aren't due to ship for several months yet). Otherwise this will get convoluted quickly.\n    submitted by    /u/MScoutsDCI  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/113zgk0/cisco_9800l_with_27002800_series_aps/",
+          "publishedOn": "2023-02-16T19:56:06.000Z",
+          "wordCount": 14419,
+          "title": "Cisco 9800-L with 2700/2800 series APs?",
+          "imageUrl": "https://external-preview.redd.it/Q8NKHLEvHKzzOM3CqGAuJUCXGfaZnOElWZ63y7c_9JE.png?auto=webp&v=enabled&s=cf4ebfb127f11a1067f8ca2eba0d6fb7af16226c"
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/113w03s/issues_reaching_l3vpn_endpoint_on_single_iosxr/",
+          "author": null,
+          "description": "I've been facing an issue on a new box where I seem to be unable to communicate with interfaces that are in a management vrf. I haven't run into this on any other device so I'm a bit confused. From what I can tell everything appears like it should work, but I can't get the networks connected to \"CORE-DEVICE\" to talk to Loopback1 on \"DEVICE-A\". Any help or insight would be greatly appreciated. I've been tinkering with this for too long and am lacking ideas.\n  \nThe interface I'm trying to access is a loopback interface - 10.10.1.50.\n I'm using OSPF to sync ldp. \n I see the correct routes and next hop at both ends. \n I am using two route reflectors. \n A traceroute from the primary device(CORE-DEVICE)/location is successful to the first PE(10.10.253.2/10.32.0.0) - then fails after that.\n  \nI h…",
+          "link": "https://www.reddit.com/r/networking/comments/113w03s/issues_reaching_l3vpn_endpoint_on_single_iosxr/",
+          "publishedOn": "2023-02-16T17:28:24.000Z",
+          "wordCount": 15037,
+          "title": "Issues reaching L3VPN endpoint on single IOS-XR device",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/113vm30/dell_n3048p_tacacs_to_cppm_issues/",
+          "author": null,
+          "description": "I've been fighting with this for a few days and am wondering if anyone else has a Dell N3048P using TACACS to hit Clearpass. I haven't been able to find anything searching around on forums or on Aruba/Dell support pages. I believe the issue is with my Dell's AAA configuration. I've tried several variations but nothing has seemed to get past CPPM to hit the Access Tracker. I have services built out for Cisco, Aruba, and Brocade with no issues. \n CPPM is showing a \"warn\" in the event viewer for a failed TacacsServer request. \"Authorization request for unauthenticated user = blahblahblah\". The device is added to CPPM and a device group. I changed the secret in CPPM and then started receiving an error about the secret having a mismatch so that isn't an issue.\n Dell AAA config:\n aaa authentication login \"defaultList\" enable local tacacs\n aaa authentication login \"tacacs\" enable local tacacs\n aaa accounting commands \"dfltCmdList\" start-stop tacacs\n aaa accounting commands \"1\" start-stop tacacs\n aaa accounting commands \"15\" start-stop tacacs\n aaa authorization exec \"dfltExecAuthList\" local tacacs\n ​\n I'm mainly curious if anyone has this setup on their network and might have an easy answer for me. I'm about to call Aruba TAC but I doubt they are going to do anything since the issue seems to be with Dell which we no longer have support on.\n    submitted by    /u/ForceofWilll  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/113vm30/dell_n3048p_tacacs_to_cppm_issues/",
+          "publishedOn": "2023-02-16T17:11:49.000Z",
+          "wordCount": 13278,
+          "title": "Dell N3048P TACACS+ to CPPM issues",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/113vbjt/sonicwall_and_dishy_using_the_same_ips_and/",
+          "author": null,
+          "description": "So, I have been trying to figure out the best way to do this, or even if it is at all possible without re-building the network, which in my case, is not an option.\n ​\n I apologize in advance for the length of this post. It is long because I attempt to explain the context of the problem we have and also to give as much detail on the issue, and explain what we have thought about and solutions that I have already found on reddit but are unable to implement do to our unique situation.\n ​\n So I have stepped into a role where I am tasked to solve this organizations IT issues. I did not design or plan our current setup and I know that our current network subnets do not adhere to industry best practices for business networks.\n ​\n Current Network:\n We have a sonicwall TZ series firewall (non-wirele…",
+          "link": "https://www.reddit.com/r/networking/comments/113vbjt/sonicwall_and_dishy_using_the_same_ips_and/",
+          "publishedOn": "2023-02-16T16:59:33.000Z",
+          "wordCount": 15662,
+          "title": "Sonicwall and dishy using the same IPs and gateway addresses and neither can be changed. is it possible to use dishy on our network if changing our subnet addressing is not an option?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/113s2uq/nvidia_mellanox_onyx_policy_based_routing/",
+          "author": null,
+          "description": "Hi Folks,\n I'm currently trying to figure out my best path forwards with a Firewall migration.\n Diagram\n (Default routes marked by arrows)\n At present no dynamic routing is in use (yes I know). The Legacy Firewall has routes back to the Legacy L3, the Legacy L3 has routes back to the new L3.\n The intent was to use PBR on the new L3 so that subnets could be moved from using the Legacy L3 as their default gateway one at a time, so that the associated VIPs and rules on the Legacy Firewall could be moved individually rather than in one large cut-over migration. (There's a lot of legacy mess and shared VIPs with static NATs that need to be cleaned up as part of the process)\n Now ideally I would like to simply use PBR to override the default gateway and continue to use the routing table for all …",
+          "link": "https://www.reddit.com/r/networking/comments/113s2uq/nvidia_mellanox_onyx_policy_based_routing/",
+          "publishedOn": "2023-02-16T14:37:42.000Z",
+          "wordCount": 13513,
+          "title": "Nvidia (Mellanox) Onyx Policy Based Routing",
+          "imageUrl": "https://external-preview.redd.it/j7Zdpfa0lnlYtX_4caPecxmcdjjBvAj1BTtn2kDMRzE.png?auto=webp&v=enabled&s=436192ff742050865970446d7c0c251baddfe7d7"
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/113rse4/change_subnet_size_on_redistributed_routes/",
+          "author": null,
+          "description": "With BGP, is there a way for my router to receive a /30 route from one peer but ONLY distribute it as a /31 to another peer?\n Long story short, I'm distributing routes with a peer from another company but I'm unable to use AS paths to reliably determine upstream route preferences. The only way I've found is to subnet sizes to determine the preferred path, but I'm currently limited to advertising /31 routes that peer. Since the other company is massive, it takes a lot of effort and paperwork for them to make changes, I'd rather do this on our end if possible.\n Is there a way for my router to receive a /30 route from my network but ONLY distribute it as a /31?\n    submitted by    /u/Jwblant  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/113rse4/change_subnet_size_on_redistributed_routes/",
+          "publishedOn": "2023-02-16T14:24:21.000Z",
+          "wordCount": 14379,
+          "title": "Change Subnet Size on Redistributed routes",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/113r8bx/default_route_change_from_one_gateway_to_another/",
           "author": null,
@@ -18214,186 +18156,6 @@
           "wordCount": 18909,
           "title": "PCI Scan Fail - Need help testing and identifying issue",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10fimvp/client_isolationp2p_blocking_w_flex_aps_cisco_9800/",
-          "author": null,
-          "description": "My team has been tasked with blocking traffic between wireless clients. For our local sites this has been fairly simple as we can enable P2P blocking for the group of APs and be done with it. Unfortunately for Flex Connect sites, this function only works on a per AP basis and is a known limitation. This means that a client on AP1 cannot talk to another client on AP1, but can talk to a client on AP2.\n I've been experimenting a bit with private Vlans as I have a theory that if the APs are in isolated Vlans then they cannot talk to each other and the P2P block should work for the APs themselves, but testing has been slow and there's doubts this could work for our environment on a larger scale. \n Curious to hear what solutions your teams have come up with to enable client isolation. \n Thanks!\n    submitted by    /u/SPNCER  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10fimvp/client_isolationp2p_blocking_w_flex_aps_cisco_9800/",
-          "publishedOn": "2023-01-18T21:03:09.000Z",
-          "wordCount": 18298,
-          "title": "Client isolation/P2P blocking w/ Flex APs (Cisco 9800)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10fi1t8/adding_new_skillset/",
-          "author": null,
-          "description": "Hi guys so im working as a network engineer for a while now (first time working as NE) work load is kinda low right now \n I want to ask which firewall should i focus on? Do i have to focus on a brand specific? I'm interested in Palo Alto and Fortinet. \n Do you have suggestions on which content creator in yt should i watch? I just want to add new skillset in order to get higher salary and better roles .\n    submitted by    /u/Historical-Tip5540  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10fi1t8/adding_new_skillset/",
-          "publishedOn": "2023-01-18T20:39:30.000Z",
-          "wordCount": 18655,
-          "title": "adding new skillset",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10fhib1/hp_c7000_and_ether_speed_problem/",
-          "author": null,
-          "description": "Hello, I have an HP C7000 and connected to my ex3200 switch. When I enter the ether-options speed 100m command for the port of one of the blades, the link is down. I guess this is a case with the c7000. How can I overcome this problem?\n    submitted by    /u/NoneZx  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10fhib1/hp_c7000_and_ether_speed_problem/",
-          "publishedOn": "2023-01-18T20:17:55.000Z",
-          "wordCount": 17848,
-          "title": "HP C7000 and ether speed problem",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10fh56f/reliable_wifi_for_guests_restaurant_devices/",
-          "author": null,
-          "description": "I need some advice, I did a search and I'm seeing some older posts but I'm not sure my needs require small enterprise (Meraki) level solutions.\n I have a few printers & wyze cams that I want on their own network, along with business owner laptops and maybe manager devices. For this I was using a netgear 4 port with wifi which works great since I have 4 hardwired (ethernet) printers in total. I may need to add a printer soon.\n I have a separate Linksys wifi router that I use for guest wifi, but it has no QoS as far as I can tell.. I really need to bandwidth limit this somehow, because modern devices and laptops are saturating my 100/10 Spectrum business cable to the point that music streaming is glitching out.\n I'm looking at Ubiquiti but everything in the stack that would serve my needs is sold out? wtf? Tp-Link omada and a secure router seems to be another route. I just need a simple setup with QoS on guest wifi and reliability and guaranteed bandwidth for actual biz needs.\n What hardware can I get actually order and get right now that won't break the bank and will stand up to 12+ hours a day of medium to light use?\n    submitted by    /u/palindromic  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10fh56f/reliable_wifi_for_guests_restaurant_devices/",
-          "publishedOn": "2023-01-18T20:03:29.000Z",
-          "wordCount": 20208,
-          "title": "Reliable wifi for guests & restaurant devices",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10fdkmz/can_anyone_explain_why_juniper_uses_nat_hairpin/",
-          "author": null,
-          "description": "We currently have a juniper firewall that has several NAT hairpin rules. I understand the hairpin is used to access an internal resource by it's public IP, i just don't understand WHY this is desirable. It also looks like the Juniper requires NAT Hairpin rules for basic routing, which i haven't seen on any other firewall. \n Thanks,\n    submitted by    /u/NaughtyPinata  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10fdkmz/can_anyone_explain_why_juniper_uses_nat_hairpin/",
-          "publishedOn": "2023-01-18T17:44:50.000Z",
-          "wordCount": 18462,
-          "title": "Can anyone explain why Juniper uses NAT hairpin rules?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10fc1lv/aaa_server_with_cisco_ise/",
-          "author": null,
-          "description": "Hello guys!\n I have a quick question regarding the basic processing of the 2FA and AAA on a Cisco Firewall.\n So I have set up 5 different AAA servers and a Cisco ASA with 2FA enabled. \n What I am trying to figure out is, how does the Firewall decide which server of those 5 will be executed(worked on) first? If that makes any sense at all.\n    submitted by    /u/charasin23  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10fc1lv/aaa_server_with_cisco_ise/",
-          "publishedOn": "2023-01-18T16:45:54.000Z",
-          "wordCount": 20080,
-          "title": "AAA server with Cisco ISE.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10f9fs5/fibre_patch_test_100gbps/",
-          "author": null,
-          "description": "Hey All,\n We have a new fibre linked patch panel that links two areas of a building together and we're going for 100gbps fibre. But would like to test that it's actually operating at 100gbps. So anyone know a few ways we could test this?\n ​\n If you could list a few that would be amazing. Just to clarify, it's not an Internet or a WAN connection, just a linked fire patch panel that links to comms rooms together via 100gbps Fibre.\n ​\n Look forward to your responses. Many thanks in advance.\n    submitted by    /u/FineFondant6724  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10f9fs5/fibre_patch_test_100gbps/",
-          "publishedOn": "2023-01-18T15:01:17.000Z",
-          "wordCount": 19238,
-          "title": "Fibre Patch test 100gbps",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10f8nky/network_design_vrrp_setup/",
-          "author": null,
-          "description": "Hello all,\n I posted here about a week ago regarding a design decision for a customer and got a lot of great feedback.\n Now, I been thinking about another aspect of the design and my brain won't let me understand the logic here, here is the design: https://imgur.com/gyI2ihY \n Network setup: \n  \n2 fortigates, HA active/passive. \n 2 switches, will form MLAG with the firewalls. Will also run VRRP and vPC between the switches.\n Three servers connected to both switches\n SVI:s (default gateways for the VLANs) will be terminated on the firewall\n Internet will terminate on the switches. \n Only one ISP circuit, they will handoff two ports from their wan switch, each physical cable will be connected to each switch. \n  \n​\n Now to my question, since the SVI/gateways for the servers will be terminated on the firewall, how will I then configure the VRRP on the switches? The way I've been configuring VRRP before, I always configured the SVI:s and VRRP on the same \"equipment\" (switch/router etc) if that makes sense.. \n So for example, let say we have vlan 200 and a subnet of: 10.200.10.0/24 and I want to configure VRRP on the switches:\n SW1:\n Interface vlan 200\n ip addr 10.200.10.1/24\n vrrp 1 ip 10.200.10.99\n vrrp 1 prio 120\n preempt\n etc... \n SW2:\n Interface vlan 200\n ip addr 10.200.10.2/24\n vrrp 1 ip 10.200.10.99\n preempt\n etc...\n Now, this is if the SVI:s would be terminated on the switches. But I would like to terminate the SVI:s on the firewall and not on the switch. Taking that approach (terminating SVI:s on the firewall): from the switch, I will just create a L2 VLAN and trunk it to the firewall. \n ​\n I know of course that I do not want to terminate the SVI:s on the firewall, I could just terminate the SVIs on the switch and then run VRRP on the switches as well, but I would like to know if what I ask is doable, if so, how and why? \n I could overthink this but please, help me to understand it. \n Thanks!\n    submitted by    /u/donutspro  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10f8nky/network_design_vrrp_setup/",
-          "publishedOn": "2023-01-18T14:26:59.000Z",
-          "wordCount": 20217,
-          "title": "Network design VRRP setup",
-          "imageUrl": "https://external-preview.redd.it/kdijsLB8l3eIUUuhh1u_phxEqn3_i5BAl3YkyN1BncE.jpg?auto=webp&v=enabled&s=a06431af6c2afc784fa33f8f989b82f18894ab8d"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10f8bcv/tcp_window_retraction_when_segment_length_is_less/",
-          "author": null,
-          "description": "In the RFC 7323 there is an example about window retraction:\n https://datatracker.ietf.org/doc/html/rfc7323#appendix-F\n The text also says this:\n  \nThis is a general problem and can happen any time the sender does a write, which is smaller than the window scale factor.\n  \nWhat is that supposed to mean? If in the example instead of sending 40 bytes and then 5 bytes, you instantly sent 130 bytes (window scale factor 128), it would result in window retraction right?\n    submitted by    /u/Agitated_Morning4044  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10f8bcv/tcp_window_retraction_when_segment_length_is_less/",
-          "publishedOn": "2023-01-18T14:11:22.000Z",
-          "wordCount": 18494,
-          "title": "TCP window retraction when segment length is less than scale factor",
-          "imageUrl": "https://external-preview.redd.it/F9QHJAnMOSS8Zyp6CsKkaBjug3rYbWtf6-hIVy2Xm8s.jpg?auto=webp&v=enabled&s=b27ac7abd770630c15fb488fe7ddd842a94a87e4"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10f8554/help_choosing_cat_6_cable/",
-          "author": null,
-          "description": "Hi,\n I am installing about 6 POE Reolink Security Cameras for my dad's restaurant.\n 2 cameras will be mounted outside and 4 will be mounted inside.\n Based on some research, I am told to stay away from CCA material as they can cause issues with CCA cameras. Can anyone guide me which material I should get for my applications? The wiring will run in a drop ceiling and above a kitchen. Also I will probably have some short runs outside (maybe around 10-15ft) and we live in the midwest (USA) where it gets cold so do I need any specific type of cable material for that? Trying to stay in a budget so budget friendly options are appreciated but want to do it right.\n Thank you\n    submitted by    /u/bulls2030  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10f8554/help_choosing_cat_6_cable/",
-          "publishedOn": "2023-01-18T14:03:26.000Z",
-          "wordCount": 19387,
-          "title": "Help choosing CAT 6 cable?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10f66ks/what_are_the_standard_business_routers_that_isps/",
-          "author": null,
-          "description": "Out of curiosity, what are some of the most common ISP provided routers for 1 Gig circuits?\n    submitted by    /u/Ok_Language_5003  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10f66ks/what_are_the_standard_business_routers_that_isps/",
-          "publishedOn": "2023-01-18T12:26:35.000Z",
-          "wordCount": 18491,
-          "title": "What are the standard business routers that ISPs usually provide?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10f4pms/managing_passwords_for_100_network_equipment/",
-          "author": null,
-          "description": "I've worked on a couple of local ISPs now and realized neither of them have a proper way to store equipment passwords, usually it is just a spreadsheet with all equipment login and passwords. This approach poses a security risk, given that if this one document is leaked, the entire network is compromised. Another problem I've seen is that usually they just distribute the admin password to everyone working on the NOC, and so we've encountered a few people doing misconfiguration and also the need to change the master password once that employee leaves the ISP. I've thought about implementing a Radius based approach, where every user would get their own login and password, but I do not know of any \"radius manager\" (let's call it that). So, what is the approach used by your company, what are the recommendations and what are the pros and cons of each method?\n    submitted by    /u/BrunoBlanes  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10f4pms/managing_passwords_for_100_network_equipment/",
-          "publishedOn": "2023-01-18T11:05:27.000Z",
-          "wordCount": 19186,
-          "title": "Managing passwords for 100+ network equipment",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10f26fw/multimode_fiber_setup/",
-          "author": null,
-          "description": "I want to connect to small datacenters in the same building (100 metres), it will be use to connect switches, server, storage (10G, 25G, 40G, 100G). My idea is to pass SMF and MMF , so I can use what I want later. I don't have a lot of experience with fiber, so please correct me if I am wrong. My idea is:\n - 1 patch panel 48 ports LC SMF OS2 UPC in each datacenter\n - 1 patch panel 48 ports LC MMF OM4 UPC in each datacenter\n Do I have to cross the connections? or is it better to cross the patch cable in one side?\n If I have to use MPO connectors for 40G or 100G over MMF, are they compatible with LC patch panels?\n UPC or PC?\n Thanks\n    submitted by    /u/fortixmp  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10f26fw/multimode_fiber_setup/",
-          "publishedOn": "2023-01-18T08:24:16.000Z",
-          "wordCount": 18079,
-          "title": "Multimode fiber setup",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10exled/multisite_switching_and_routing/",
-          "author": null,
-          "description": "I have limited experience in networking and would love some help in better understanding the best way to do this. I plan to eventually hire to have this work done, but I really hate being that guy who doesn't understand what he's asking others to do.\n (Diagram) In our network we have two facilities and a fist full of remote cabinets. Every cabinet has a link to each facility, and both facilities have a connection to each other. Each facility has its own connection to a separate carrier and we have one ASN. The traffic originating from these cabinets must reliably make their way to the internet, with the key risk being a link from cabinet to one facility going down.\n Me, a caveman, thinks I should spec out the high level as:\n  \nInstall layer 3 switches in the cabinets and facilities. Set up RIP.\n Install BGP routers at the facilities, set up VRRP and BGP.\n  \nIs this the right mindset? Are there smarter ways to handle this?\n    submitted by    /u/Wyattwic  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10exled/multisite_switching_and_routing/",
-          "publishedOn": "2023-01-18T04:10:47.000Z",
-          "wordCount": 18445,
-          "title": "Multi-site switching and routing",
-          "imageUrl": "https://external-preview.redd.it/cq8PHev2Q8QDhkdHS2nHzJw-V8QXvu9WhNTogQ9PW9Y.jpg?auto=webp&v=enabled&s=a98651471bd318e9453ff46a093df42407addbf2"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10exh0g/new_to_the_netsec_space_what_is_it_that_makes/",
-          "author": null,
-          "description": "The conventional recommendation I've seen around these parts for years essentially boils down to \"if you can afford a PAN firewall that gives you enough bandwidth for your needs, go with that; otherwise, go with a FortiGate\". Obviously the two vendors are wildly different when you look at price-for-performance... but taking price out of the equation, why is it that we generally prefer Palo Alto around these parts?\n    submitted by    /u/Fiveby21  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10exh0g/new_to_the_netsec_space_what_is_it_that_makes/",
-          "publishedOn": "2023-01-18T04:05:07.000Z",
-          "wordCount": 18749,
-          "title": "New to the NetSec space - what is it that makes Palo Alto firewalls the more \"premium\" option compared to ForiGates?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10excya/vlan_mapping/",
-          "author": null,
-          "description": "Hi All,\n I currently have to buildings that I am trying to bridge with a P2P wireless network ( 50 meters ). Both sites are running their network without any current VLANS set. I am trying to work out how to get the default vlan on each site onto its on VLAN at the remote site so I can configure the WiFI Ap's on each site to have a SSID for the other building.\n Site 1 Site 2 VLAN 1 <===> VLAN 1000 VLAN 2000 <===> VLAN 1\n I have managed switches at both sites. Ideally i would like to have an additional subnet at each site and route between the two locations but I am told one of the applications in use does not support server communication on a different subnet so I am stuck with a odd layer 2 stretch situation.\n Does anyone have any thoughts on how i should approach this?\n Thanks\n    submitted by    /u/newmi18  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10excya/vlan_mapping/",
-          "publishedOn": "2023-01-18T04:00:02.000Z",
-          "wordCount": 18515,
-          "title": "VLAN mapping",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10ew4iq/udld_adventures/",
-          "author": null,
-          "description": "Have 2 pairs of n9ks connected over dark fiber. Ebgp underlay, running vxlan (primary data center to colo). Each pair in vpc.\n I want to connect another n9k (will eventually be another vpc pair but budget/ supply chain issues). The other n9k is at another data center (same company as colo, fiber exists between colo and let’s call it dc3).\n The 2 pairs are ebgp peered physically and ibgp peered between vpc members. \n Plan was to use data center providers network between colo and dc3, add third n9k and have all 5 switches meshed in one /28 segment so we can run vxlan to the 3rd site. \n As soon as the server provider started making changes to one leg of the fiber, all 4 existing n9k switches errored out UDLD. Ports wouldn’t come back up until the transceivers were physically disconnected and reconnected.\n Went all around the world with TAC. They blame the transceivers. Cisco branded ones are on the way and I intend to try again with the new ones; however, do I disable UDLD on the affected interfaces before I try it? These 2 diverse path runs connect the Colo back to hq and redistribute routes to eigrp to (a much larger networks core) and to the internet.\n    submitted by    /u/asofyetundiscovered  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10ew4iq/udld_adventures/",
-          "publishedOn": "2023-01-18T03:01:49.000Z",
-          "wordCount": 19065,
-          "title": "UDLD adventures",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10ew0nc/vmware_nsxnsxt/",
-          "author": null,
-          "description": "Hey Everyone,\n I’m in a new environment where I’m looking to learn the high level principles regarding NSX/T.\n I’m not directly responsible for the provisioning, but I’d like to understand how it works at a high level.\n Would anyone have any recommendations for blogs or consolidated/summarizes documentation?\n I’m trying avoid reading through vendor configuration documentation - but not against it if that’s how it is.\n    submitted by    /u/Spirited_Chipmunk_46  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10ew0nc/vmware_nsxnsxt/",
-          "publishedOn": "2023-01-18T02:57:01.000Z",
-          "wordCount": 18624,
-          "title": "VMware NSX/NSX-T",
-          "imageUrl": null
         }
       ]
     },
@@ -18469,6 +18231,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw",
       "siteUrl": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=h7mNA2L_6Z4",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=h7mNA2L_6Z4",
+          "publishedOn": "2023-02-16T17:59:58.000Z",
+          "wordCount": null,
+          "title": "Intel Wants My Business Back.",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=ykDuoq-MpHg",
           "author": null,
@@ -18787,16 +18559,6 @@
           "publishedOn": "2023-01-19T18:16:54.000Z",
           "wordCount": null,
           "title": "Tommy Hilfiger are Filthy Scammers",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=nr4kmlTr9xw",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=nr4kmlTr9xw",
-          "publishedOn": "2023-01-18T19:44:50.000Z",
-          "wordCount": null,
-          "title": "Ask me why I'm Mining in 2023...",
           "imageUrl": null
         }
       ]
