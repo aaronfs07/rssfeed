@@ -2,10 +2,542 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-02-20T14:11:29.612Z</updated>
+    <updated>2023-02-21T09:13:06.216Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Network drives intermittently not showing up after user is migrated to OneDrive]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117yzro/network_drives_intermittently_not_showing_up/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117yzro/network_drives_intermittently_not_showing_up/"/>
+        <updated>2023-02-21T09:02:14.000Z</updated>
+        <summary type="html"><![CDATA[Previously, our staff users have had a home drive "U:" on one of our file servers. We're currently in the process of migrating these over to OneDrive for Business, but for some staff we're finding that after we've migrated them, they are sometimes not seeing all their other network drives in File Explorer on Windows 10.
+ We currently map network drives using logon scripts - Group Policy Preferences would not be practical as different users need different combinations of network drives - these scripts are batch files with commands like net use v: \\SERVERNAME\SHARENAME$ /PERSISTENT:NO.
+ For the vast majority of users these are working fine but for some reason, intermittently the network drives don't show up in File Explorer. We tried re-running the logon script but that said the drives were already mapped. We went to try mapping the drives using the Map Network Drive wizard in File Explorer, and we found that the wizard could actually see the network drives. This led us to discover that restarting File Explorer made the drives visible.
+ We tried setting the EnableLinkedConnections registry entry (e.g. as per this ServerFault post) but this did not help.
+ We tried enabling NETLOGON debug logging on computers where the incidents were reported, but the NETLOGON debug log didn't show any obvious causes.
+ Can anyone suggest what might be causing this issue and how we can resolve it? Other than having our users restart File Explorer every time their drives go missing?
+    submitted by    /u/danj2k  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Handling Computer Guest Logins in an AzureAD/Intune environment]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117yzp0/handling_computer_guest_logins_in_an/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117yzp0/handling_computer_guest_logins_in_an/"/>
+        <updated>2023-02-21T09:02:05.000Z</updated>
+        <summary type="html"><![CDATA[Hi All,
+ Solo IT officer for a medium sized org here. I need some advice on how to handle guest users in our organisation's AzureAD/InTune environment.
+ I'm quite concerned about the security implications of how it is setup currently.
+ Without getting into too much detail our organisation has clients that walk in off the street and use our computer lab to work on relatively confidential documents.
+ Before my time our we had setup several generic user accounts for non employees to use e.g. guestuser1, guestuser2, etc.. for the guest users which is obviously is going to leave behind traces of the files and logins stored within the user profile from the previous session which is not ideal. So I need to come up with a better solution.
+ Relying on staff to send new user requests for each new guest and having me to create them and assign them office licenses is just going to be way too cumbersome.
+ I need something that will allow guests to login to specific PCs with just access to the web and ms office with minimal intervention from IT.
+ Wondering if anyone has been in a similar boat and what they have tried.
+    submitted by    /u/Wello4500  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I need your help]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117ytsp/i_need_your_help/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117ytsp/i_need_your_help/"/>
+        <updated>2023-02-21T08:51:26.000Z</updated>
+        <summary type="html"><![CDATA[I've been looking for another job and in the past few interviews, I ran into the best issue out there: lack of knowledge. So I need your help in deciding where should I focus my learning efforts. Here are a few topics that I feel I need to know to make the switch:
+  
+ Python scripting (for system administration) - I have no experience (apart from scripting in general (PS))
+ Terraform - I have no experience (apart from IaC in general, while using Bicep)
+ Linux - yeah, no experience here too...
+ Docker/K8 - still nope
+  
+Which one would you choose as the first step? How deep would you go? Would you go all in into Linux, for example, or just learn the basics and go on to the next one?
+    submitted by    /u/Bubbly_Leopard2453  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M365 account keeps getting locked]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117yolj/m365_account_keeps_getting_locked/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117yolj/m365_account_keeps_getting_locked/"/>
+        <updated>2023-02-21T08:41:56.000Z</updated>
+        <summary type="html"><![CDATA[Hello
+ I have an M365 user which account keeps getting locked, 2-3 times a day, and can't find any informations about it in M365 admin audit log.
+ First thought it'll be his mobile phone so asked him to remove the M365 account on it, but account still gets locked.
+ Any idea where I could find a decent log? With maybe more informations on what device (if that is the case) causes the lockout?
+ Thanks !
+    submitted by    /u/KleiDav  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kill a windows process by time]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117ykv9/kill_a_windows_process_by_time/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117ykv9/kill_a_windows_process_by_time/"/>
+        <updated>2023-02-21T08:35:22.000Z</updated>
+        <summary type="html"><![CDATA[Hi there!
+ I have a windows process which occupy 4GB of RAM, and I need it from 9 to 10 o'clock, everyday.
+ Then after 10:00, I need to manually kill it from Task Manager, to retrieve the 4GB of RAM, which I would use for other software. 
+ Is there a way to kill this process at given time, automatically?
+    submitted by    /u/crepuscopoli  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Office 365 Licenses]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117y5yz/office_365_licenses/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117y5yz/office_365_licenses/"/>
+        <updated>2023-02-21T08:09:02.000Z</updated>
+        <summary type="html"><![CDATA[Hi all,
+ My company has finally made the decision to migrate to Office 365/Exchange Online after YEARS of pushing them to undertake the project. We are currently just finishing up some of the prep work on our Exchange such as moving everything over to AD sync, migrating resource rooms etc before we start doing User Mailboxes.
+ One of the questions is what's the best licensing model? We are looking at getting rid of our Anti-Virus and going with Microsoft Defender which comes standard with M365 E3 and M365 E5. My manager has decided to pitch the idea of going with a mixture of Business Standard and Premium with adding on Exchange Online Plan 2 (For some employees), InTune and Microsoft Defender license ON TOP of the business standard and premium.
+ Are there any benefits that the M365 E3/E5 provide over the Business Standard and Premium if we add those extra licenses on top or would it just be smarter to go with the M365 E3 and E5?
+ The manager has pitched massive cost savings but doesn't really make sense to go with Business Standard/Premium with the add on licenses opposed to just forking out the extra money for M365 E3 and E5?
+    submitted by    /u/Blitzening  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ansible to Cisco Nexus for configuration, error - Feature privilege is not enabled]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117y3vu/ansible_to_cisco_nexus_for_configuration_error/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117y3vu/ansible_to_cisco_nexus_for_configuration_error/"/>
+        <updated>2023-02-21T08:05:22.000Z</updated>
+        <summary type="html"><![CDATA[Using AWX tower to configure some snmp and acl in Cisco Nexus devices. 
+ The error was: ansible.module_utils.connection.ConnectionError: Feature privilege is not enabled 
+ using the nxos_config: module. 
+ I'm not very familiar with the setup. Anyone has encountered this before? The account used for configuring has network-admin role assigned, so should have privilege.
+    submitted by    /u/sec_admin  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IT Project Management]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117xoz0/it_project_management/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117xoz0/it_project_management/"/>
+        <updated>2023-02-21T07:38:53.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking to gain project management knowledge in the IT field, what are some courses or certifications that i can carry out? Is it even worth to do a certification in project management or i could just demonstrate that i have the skill
+    submitted by    /u/StrikingPeace  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Should I replace SAS Disks from 2016?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117xkd1/should_i_replace_sas_disks_from_2016/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117xkd1/should_i_replace_sas_disks_from_2016/"/>
+        <updated>2023-02-21T07:30:36.000Z</updated>
+        <summary type="html"><![CDATA[Hey there! 
+ I've got an Supermicro Server at hands, it was set up around 2016, and it has 4 Hitachi Ultrastar SAS drives installed, since they've not been replaced yet I think they're also from 2016, so about 8 years now.
+ We want to use that server as backup storage now, but I'm not sure about the old disks. 
+ My gut feeling is to replace them, even if it will cost some money, but I bet they're going to fail soon and I don't want to buy old rusty rotating disks again and replace them one by one.
+ Maybe someone has some experience here and / or advice? 
+ Thanks in Advance!
+    submitted by    /u/monoceros666  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Just curious: does "I forgot my password" take up as much of your time as in my case?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117x0df/just_curious_does_i_forgot_my_password_take_up_as/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117x0df/just_curious_does_i_forgot_my_password_take_up_as/"/>
+        <updated>2023-02-21T06:55:54.000Z</updated>
+        <summary type="html"><![CDATA[* EDIT: not a rant - I'm just curious \* 
+ I'm a sysadmin at a public school with around 800 students (from 6 to 15 year olds) and 100 teachers.
+ Not a single day goes by without at least 2-3 (but often more) students and/or teachers popping by my office because they forgot their password and need help to figure it out / reset it.
+ I'm just wondering if this is normal in the day and age of 2023? Personally, I never forget my passwords and I'm quite baffled that, at least the teachers (20+ years old) forget their passwords this often.
+ The younger kids may be excused in this case, but grown up people not being able to handle their passwords just strikes me as odd.
+    submitted by    /u/RoamLikeRomeo  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Rant] I learned a valuable lesson the other day about backups]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117wkhp/rant_i_learned_a_valuable_lesson_the_other_day/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117wkhp/rant_i_learned_a_valuable_lesson_the_other_day/"/>
+        <updated>2023-02-21T06:28:47.000Z</updated>
+        <summary type="html"><![CDATA[Even your backups should have backups!
+ Long story short - My UnRaid VM directory yeeted itself out of existence, took my backups on a hot date and just said F it.
+ I went to make some changes on a VM (directly upgrading to Windows 2019 std) and had to reboot in order to accept the changes. The VM went missing - hmm that's odd - No problem! I'll just recover it from an older backup. I have a schedule of 30 days to hold backups, and they're usually overwritten when they reach 15 backups, older ones are deleted afterward.
+ Those were deleted too.
+ No logs.
+ No errors.
+ No error logs.
+ No system logs.
+ No alerts telling me about the missing logs.
+ Nothing.
+ Just an empty folder from my ~/domains/ - and no VM's in sight. I rebuilt the VM from scratch, and I'm on my merry way now. Not sure what happened - the Vendor is hopefully researching into it as it's some abnormal behavior
+ <3 love you all
+    submitted by    /u/ARasool  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Im getting pretty tired of working for technically inept IT Managers]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117w2dy/im_getting_pretty_tired_of_working_for/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117w2dy/im_getting_pretty_tired_of_working_for/"/>
+        <updated>2023-02-21T06:00:11.000Z</updated>
+        <summary type="html"><![CDATA[In the 4 IT jobs I've had (Im a very technical IT middle manager), 3/4 Heads/Directors/CIOs of IT have had absolutely no technical ability whatsoever, they dont even know what Azure or Active Directory is. This applies to both the dev/sysadmin sides of IT.
+ I've only had 1 IT head who was technical and had great soft skills, he we an amazing boss, we could discuss technical details at length, and he knew how to carry himself and represent us in C level meetings, he was amazing. 
+ Why is it that only IT has this issue? Our CFO knows all about the ins and outs of budgets/cashflow and is very knowledge in his field. Our Head of HR knows all about policies etc. Our C level exec of law is VERY knowledge in law.
+ Its not just past jobs either, you wouldnt hire a head of medical surgery that had no idea how to perform any surgery. You wouldnt hire head chef who couldnt cook. Imagine hiring a head of Marketing or Sales who had little to no idea about marketing or sales.
+ I'm not saying you need to be hyper technical about IT to be a CIO, but you at least have to be good at it in some capacity in ADDITION to have good soft, management and leadership skills (just like any other C level position). I'm not advocating hiring a technical person who has crap soft skills btw. 
+ Is it just that finding someone who is technical and has the above skills is to hard to find in IT? So they just hire non technical people to run IT departments because thats all their is in the talent pool?
+    submitted by    /u/ThatAJC88  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux router for forwarding traffic to multiple machines?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117usga/linux_router_for_forwarding_traffic_to_multiple/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117usga/linux_router_for_forwarding_traffic_to_multiple/"/>
+        <updated>2023-02-21T04:50:15.000Z</updated>
+        <summary type="html"><![CDATA[I have been checking out the DPVS project as of recently and some of the layer 4 features seem like they could do quite well for implementing a stateful firewall I could control from a database I can interface with. I have a few machines that each have IPs on my subnet for each application I'm running and a distribution layer switch. 
+ I want to use Bird for announcing my ASN and advertising my unicast subnet (potentially AnyTun package might be used for applications to have lower latency to Europe in the future) and if possible manage to implement /arouteserver for peering with cloud providers which I access frequently to lower IP transit costs. 
+ Since I have no upstream to filter traffic I would be verifying on my own and forwarding to my switch the traffic and letting it manage IPs to destinations to leverage its switching capacity for when my machines will intermingle with each others' applications instead of using up the capacity on my Linux entry and BGP machine. 
+ I apologize for my limited networking knowledge when it comes to design and architecture, but I have the feeling that a software based router would be the best in this scenario, if you guys have any advice for DPDK based open source projects I could leverage or implementing a firewall that could handle reasonable PPS with efficiency on a 2x40Gb/s NIC and 7950x consumer high IPC processor I would be grateful and massively appreciative.
+    submitted by    /u/myselfesteemrocks  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Can't sysprep due to InputApp]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117tzbt/cant_sysprep_due_to_inputapp/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117tzbt/cant_sysprep_due_to_inputapp/"/>
+        <updated>2023-02-21T04:08:18.000Z</updated>
+        <summary type="html"><![CDATA[So I got this error referenced in the article, however I still can't remove the package. Anyone else come across this? Seems to be pretty common lately.
+ https://forums.ivanti.com/s/article/How-to-use-sysprep-to-prepare-a-Windows-10-client-for-imaging?language=en_US
+ Remove-AppxPackage -allusers *InputApp*
+    submitted by    /u/nickcasa  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Backup and restore options]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117tkni/backup_and_restore_options/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117tkni/backup_and_restore_options/"/>
+        <updated>2023-02-21T03:47:59.000Z</updated>
+        <summary type="html"><![CDATA[Company has two domain controllers, a few servers, one major file server. I’ve been with company for a week, and they’re dropping their third party tech support next month; license for backup software just expired I believe (backblaze). Everything is on Microsoft. 
+ I need to set up a backup and restore process. Ideally free or low cost, and low maintenance as I will be only one doing anything tech related. What options do you guys suggest I look into?
+ Thanks in advance for the suggestions
+    submitted by    /u/FormerTimeTraveller  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mobile Device Management - Multiple profiles assigned to the same device]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117ssvf/mobile_device_management_multiple_profiles/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117ssvf/mobile_device_management_multiple_profiles/"/>
+        <updated>2023-02-21T03:09:19.000Z</updated>
+        <summary type="html"><![CDATA[What happens if one adds two profiles and assign them to the same device? Is there typically a warnings message?
+ If it's possible to do assign two profiles to the same device, what happens if there are conflicting restrictions / settings? How about when you delete one of them?
+    submitted by    /u/CampAlternative9839  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Letting go of a network engineer]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117sqzd/letting_go_of_a_network_engineer/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117sqzd/letting_go_of_a_network_engineer/"/>
+        <updated>2023-02-21T03:06:43.000Z</updated>
+        <summary type="html"><![CDATA[Hired a guy, was in desperate need of help, and they can barely figure out the configuration on a switch port if given a simple description of what's needed. It's a level of training I cannot dedicate given the current workload without completely burning out.
+ Its been just over a month and I think I need to pull the plug. The last month has had me at the brink of burn out with basically doing both of our jobs and trying to train them as well. I can see things are not sinking in and can out right see them not paying attention during training sessions.
+ I feel it would be easier going back to solo and looking for a replacement, but does this all seem too soon, or I'm asking/expecting too much? 
+ Expectations were I could assign them switch configuration tasks and they could handle them no problem, as long as proper documentation was provided. It was provided and they seem utterly lost, and I've ended up essentially doing the work.
+    submitted by    /u/Dr_ThunderMD  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is "upstream" the same thing as "provider" in ISP routing terminology?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117qfus/is_upstream_the_same_thing_as_provider_in_isp/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117qfus/is_upstream_the_same_thing_as_provider_in_isp/"/>
+        <updated>2023-02-21T01:15:17.000Z</updated>
+        <summary type="html"><![CDATA[Here is the BGP policy for my ISP:
+ https://bgp.he.net/AS6667#_whois
+ It has a section for "Customers", which shows that the ISP advertises all prefixes to their customers
+ It also has a section for each "Peer", which shows that the ISP advertises its customers prefixes and its own prefixes.
+ AND, the last section is "Upstreams", so is that referring to the ISPs that my ISP is the customer of? 
+ e.g the upstream ISPs advertise their routing tables for my ISP so my ISP can route through them. (my ISP obviously has to pay to them right?)
+    submitted by    /u/Sea_Improvement_1374  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stack vs. Chassis switch?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117q6t2/stack_vs_chassis_switch/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117q6t2/stack_vs_chassis_switch/"/>
+        <updated>2023-02-21T01:03:18.000Z</updated>
+        <summary type="html"><![CDATA[I could use some input from some folks who aren't afraid to call it as they see it, so thanks in advance! 
+ Our main office currently has a pair of 6807XL's in VSS, someday we'll need to replace them. Seems Cisco bumped the EOL by a few years due to supply chain issues, but the topic of lifecycle came up recently. The long story short is: We're not sure we need a chassis platform for this office, but Cisco obviously wants to upsell us and immediately flipped shit when we brought up the idea of running our "data center" off a stack of 9300X's. 
+ I use the term "data center" sparingly since there is no Nexus, fabric, routing protocols, VXLAN, etc. happening. We've got less than a hundred 1G copper and about a dozen 10G fiber ports lit at the moment, a chunk of the copper is MGMT interfaces. …]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Problem with a passive client on cisco vWLC]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117p74z/problem_with_a_passive_client_on_cisco_vwlc/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117p74z/problem_with_a_passive_client_on_cisco_vwlc/"/>
+        <updated>2023-02-21T00:17:41.000Z</updated>
+        <summary type="html"><![CDATA[Hey, guys! I wish someone could lend me some wisdom please! 
+ I have this cenario:
+ vWLC --> core sw --> dist sw --> acess sw --> 12xAP's 1852 --> SSID <-- AP's2852 WGB <-- siemens PLC <-- moving car.
+ the siemens PLC is a passive client with a fixed ip, because we use a virtual WLC i can't activate the passive client option, so there is no arp resquest reaching the PLC, so from time to time the arp cache in the switches gets cleaned and lost connectivity. As a workaround, I created a simple pyhton script that goes into WGB and pings the PLC to generate some traffic, but I need a more professional solution. Do you guys have any suggestion to this issue?
+    submitted by    /u/Euphoric-Tour-7703  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[getting VoIP phones to work with any semblance of reliability?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117n079/getting_voip_phones_to_work_with_any_semblance_of/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117n079/getting_voip_phones_to_work_with_any_semblance_of/"/>
+        <updated>2023-02-20T22:44:29.000Z</updated>
+        <summary type="html"><![CDATA[These things are driving me nuts. I inherited a shit show. No professional site survey before AP deployment. Have multiple zones, that my predecessor installed where apparently one new AP can do the coverage of two old APs. Laptops and mobile work stations do fine with roaming and connectivity. Using Ascom i63 phones with Ruckus R730s, SmartZone as the controller. Phones are on 5Ghz band. Phones register with the pbx. User complaints are poor roaming and "ghost calls" where the phones will ring to a bridged extension but I assume packets arrive late due to high latency (they rarely go over 50ms on the AP) and the phone rings but caller not on the other end.
+ Followed the interrop report from Ruckus/Ascom to set up the WLAN. The client settings and WLAN are exactly like the interop report. Doing wireshark traces does not reveal the problem. Did several Ascom log traces and when I caught the problem, notify Ascom and apparenly we do not have some super duper special docking station which allows me to view the log file. Absolutely livid about that. Getting no real help from Ascom other than they want more Omnipeek traces. 
+ I have been concentrating on one zone at a time. I got them to work better in two zones just by moving the APs further away from each other or deleting one or two. I do my own Netspot surveys and do not find coverage to be the issue. I am thinking more that co channel interference is the big issue here however neither company can point out exactly what the issue is. Does anyone have experience with this? It's the no professional site survey isn't it?
+    submitted by    /u/burns4130  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pay your people]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117ltv8/pay_your_people/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117ltv8/pay_your_people/"/>
+        <updated>2023-02-20T21:57:32.000Z</updated>
+        <summary type="html"><![CDATA[As requested TL;DR Company didn't take their passwords off my server, didn't pay me and found themselves in a hard spot.
+ Some years ago I was brought into a development company(aka all mac computers) The company was run by a guy that couldn't keep it in his pants, and often made business decisions based on "getting some". This included his now x girlfriends pole dancing studio attached to their work.
+ My valuation of the companies security and systems was abismal, they didn't have a server room, cabling was all garbage, firewalls were all swiss cheesed, completely flat network. And to make matters worse the wireless was open from the studio and gave access to the entire company; my valuation was all written and a proposal was put forward to do a few things: Fix the wireing and make an act…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is WAN connectivity more about routing tables than about physical connectivity?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117l61y/is_wan_connectivity_more_about_routing_tables/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117l61y/is_wan_connectivity_more_about_routing_tables/"/>
+        <updated>2023-02-20T21:31:32.000Z</updated>
+        <summary type="html"><![CDATA[I always thought that connecting networks together to form the Internet was just about physical connectivity, but when reading this paper:
+ https://web.mit.edu/6.033/2009/wwwdocs/assignments/InterdomainRouting.pdf
+ It seems that its more about if an ISP is willing to route for other ISPs?
+ e.g Just because two networks or ISPs can easily be connected physically, doesnt automatically mean that they are gonna connect and start routing packets for each other
+    submitted by    /u/Sea_Improvement_1374  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Script to send 3rd party recruiter emails in Gmail directly to SPAM with a GFY canned response]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117jfqo/script_to_send_3rd_party_recruiter_emails_in/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117jfqo/script_to_send_3rd_party_recruiter_emails_in/"/>
+        <updated>2023-02-20T20:22:19.000Z</updated>
+        <summary type="html"><![CDATA[Crossposting this here as it probably impacts a lot of the people in this sub.
+ My resume isn't posted on any of the online sites in the last few years. Still I get spammed daily with at least a dozen emails from 3rd party recruiters offering me this "great" position in a place nowhere near where I live that is not relevant at all to what I do now. I tried unsubscribing but this has zero effect. Clicking the spam button when i receive them also seems to have little effect. I finally wrote a Google Apps Script to punt them right to spam and send them a canned response.
+ If any of you are in the same boat, you're welcome to use my script. Feel free to modify the script to point to your own canned response or create your own list of offending domains. If you have some US based domains I'm missing, message me and I'll get them added.
+ https://github.com/lcreed/FilterBadRecruiters
+    submitted by    /u/qualo2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Does 100G DWDM exist and if so, has anyone used it?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117j5q8/does_100g_dwdm_exist_and_if_so_has_anyone_used_it/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117j5q8/does_100g_dwdm_exist_and_if_so_has_anyone_used_it/"/>
+        <updated>2023-02-20T20:11:35.000Z</updated>
+        <summary type="html"><![CDATA[Pretty much the title. Looking to see if 100G DWDM exists. I've googled it but i'm not clear on the results.
+    submitted by    /u/magic9669  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Employees connecting their own stuff to the company network]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117j23w/employees_connecting_their_own_stuff_to_the/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117j23w/employees_connecting_their_own_stuff_to_the/"/>
+        <updated>2023-02-20T20:07:35.000Z</updated>
+        <summary type="html"><![CDATA[I see this almost in every company. Employees bringing their own stuff like wifi extenders, switches and connect them to the company network without telling IT. When you tell it's not allowed they look weird at you and say that it works fine at their homes... I get so frustrated about this because they never care and keep doing this...
+ Have you experienced this and how do you respond?
+    submitted by    /u/Comfortable-Touch744  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Restrict SSL VPN access to company-issued computers]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117hssw/restrict_ssl_vpn_access_to_companyissued_computers/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117hssw/restrict_ssl_vpn_access_to_companyissued_computers/"/>
+        <updated>2023-02-20T19:18:47.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I am seeking ways to enhance the overall security of our SSL VPN by limiting access to only corporate laptops. We have Sophos UTM9 Firewall.
+ I am considering the option of utilizing SSL VPN with a Certificate. However, I am uncertain about how to configure it. Currently, we have RADIUS authentication with AD and Duo 2FA.
+ Moreover, I am concerned about the possibility of the certificate being exported by end-users, which would enable them to import it into other devices and undermine our efforts to limit access to corporate laptops. 
+ Would it be necessary to implement NPS to achieve this? If yes, how can I configure it?
+ I am open to considering other quick solutions. 
+ Any help or insights on how to accomplish this would be greatly appreciated.
+    submitted by    /u/techno_it  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ChatGPT Has A Serious Problem]]></title>
+        <id>https://www.youtube.com/watch?v=ce616lsed9Y</id>
+        <link href="https://www.youtube.com/watch?v=ce616lsed9Y"/>
+        <updated>2023-02-20T18:52:51.000Z</updated>
+        <author>
+            <name>ColdFusion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[$100 vs $1200 Headphones]]></title>
+        <id>https://www.youtube.com/watch?v=sMTs5bvAsGA</id>
+        <link href="https://www.youtube.com/watch?v=sMTs5bvAsGA"/>
+        <updated>2023-02-20T18:39:29.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What are your Windows 11 plans?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117g2aj/what_are_your_windows_11_plans/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117g2aj/what_are_your_windows_11_plans/"/>
+        <updated>2023-02-20T18:11:30.000Z</updated>
+        <summary type="html"><![CDATA[We're not even looking at it here. With the standard Microsoft Windows OS cycles, Windows 12 will probably be worth getting. But by that time, will we even be using desktop PCs any more?
+ You know, I used to be up on the Windows server releases. Used to, because I can't remember the last time I deployed an app on Windows. Everything is RHEL now. We even deploy MS SQL Server on Linux these days.
+ Has anyone gone all Mac or all Linux on the desktop?
+    submitted by    /u/plazman30  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What do you do with outdated but working equipment?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/117drcb/what_do_you_do_with_outdated_but_working_equipment/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/117drcb/what_do_you_do_with_outdated_but_working_equipment/"/>
+        <updated>2023-02-20T16:59:40.000Z</updated>
+        <summary type="html"><![CDATA[We have two Compellent SC8000 storage arrays that we replaced because they went end of support. They were expensive when we bought them and they still work perfectly fine. It would kill me to recycle them or throw them out, but I don't need 100TB of storage at home and wouldn't want to pay the electric bill after that. Are there any people you sell your old stuff to? Any complications with it seeing that we're a not-for-profit?
+    submitted by    /u/byrontheconqueror  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cisco ASA remote-VPN additional authentication methods.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/117ba3p/cisco_asa_remotevpn_additional_authentication/</id>
+        <link href="https://www.reddit.com/r/networking/comments/117ba3p/cisco_asa_remotevpn_additional_authentication/"/>
+        <updated>2023-02-20T16:02:39.000Z</updated>
+        <summary type="html"><![CDATA[Hey guys! I've implemented remote-VPN on my ASA 5555 and I'm thinking of putting some additional restrictions on users. Is it possible to limit access only to domain users or to hosts that have a PKI certificate?
+    submitted by    /u/puttymonster  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Which Hardware to Choose For pfsense? Netgate VS Protectli, Qotom, Yanling, etc...]]></title>
+        <id>https://www.youtube.com/watch?v=srFPPjBPkVo</id>
+        <link href="https://www.youtube.com/watch?v=srFPPjBPkVo"/>
+        <updated>2023-02-20T15:15:05.000Z</updated>
+        <author>
+            <name>Lawrence Systems</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Peter-principled and need adivce/to vent]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/1178krm/peterprincipled_and_need_adivceto_vent/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/1178krm/peterprincipled_and_need_adivceto_vent/"/>
+        <updated>2023-02-20T14:55:06.000Z</updated>
+        <summary type="html"><![CDATA[Good morning everyone,
+ I work at a small (<15 employees) controls engineering firm. I was originally hired to design SCADA HMI screens and the database backends that collected data. As such as I was really familiar with python (jython 2.5./2.7) which is the scripting language of our SCADA software of choice and SQL. These two topics I am very comfortable with and would rate myself as above-average or better at.
+ As time has gone on I have been exposed to certain network concepts just for deployment of our SCADA systems - IP addressing, firewalls, subnets, and working with Active Directories but just as a means of getting a user source for our SCADA projects, however it was all very surface level, and I only ever learned "just enough" to get things working.
+ Now this is where the issue com…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Help an Automation/Controls guy with some networking wizardry?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/1178ji8/help_an_automationcontrols_guy_with_some/</id>
+        <link href="https://www.reddit.com/r/networking/comments/1178ji8/help_an_automationcontrols_guy_with_some/"/>
+        <updated>2023-02-20T14:53:33.000Z</updated>
+        <summary type="html"><![CDATA[So let me preface this with the fact that I am not a network wizard like some of you out there. That being said, network wizards, please wow me with your mystical knowledge of the interconnects. 
+ So I am looking to set up a network for an industrial application. I will do my best to explain the intended architecture, but fee offer suggestions on this point as well. Starting off, there will be a layer 3 switch capable of inter-VLAN routing. I plan to assign a specific VLAN ID and IP Address to each port. Connected to each port will be a machine consisting of 3-4 lightly managed switches (addresses in the same subnet as the VLAN with the VLANs IP Address as the gateway). Connected to the lightly managed switches will be 40-60 Ethernet/IP devices, including a PLC and, on some machines, a PC.…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reminder... we are only human.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/1178etb/reminder_we_are_only_human/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/1178etb/reminder_we_are_only_human/"/>
+        <updated>2023-02-20T14:47:38.000Z</updated>
+        <summary type="html"><![CDATA[Just putting a reminder out there that we are only human and we do make mistakes.
+ After nearly 20 years of doing this, and recently starting a new role at a new company, I made a rookie mistake by misreading/interpreting a report, and thus making a change that essentially affected nearly 3,000 users in a negative way. I'm probably beating myself up more than I think my superiors are, or will. Regardless, I feel like crap about it, feel like a failure, and need to get out of my own head to move forward.
+ This is going to be a long week.
+ Edit: Wow, this blew up more than I expected it to. No possible way I can respond to everyone, so I just wanted to say... Thanks! As per usual, you guys are awesome! Good news is since I no longer work in a toxic work environment, I bounced back way quicker than I ever expected to. Was back on track (physically, emotionally, and mentally) pretty much by lunchtime. Issue was resolved and just trucking forward on the next item!
+    submitted by    /u/TheRealJewbilly  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anyone else notice a huge amount of spam making it through various filters in the last few days?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/1177z7f/anyone_else_notice_a_huge_amount_of_spam_making/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/1177z7f/anyone_else_notice_a_huge_amount_of_spam_making/"/>
+        <updated>2023-02-20T14:27:41.000Z</updated>
+        <summary type="html"><![CDATA[Was there some big event that I don't know about that could lead to something like this? We have noticed a big uptick in the amount of spam making it to inboxes rather than the junk folder. Looks like it's on Google and Microsoft 365 mostly.
+    submitted by    /u/vainamo-  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Cisco 9500 stackwise and BGP]]></title>
         <id>https://www.reddit.com/r/networking/comments/1177ehv/cisco_9500_stackwise_and_bgp/</id>
@@ -27390,408 +27922,6 @@ so far so good, all files migrated, fileserver can be disabled, however, there a
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Is it common for a NAT router to insert an entry for the FTP data connection?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10iudcx/is_it_common_for_a_nat_router_to_insert_an_entry/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10iudcx/is_it_common_for_a_nat_router_to_insert_an_entry/"/>
-        <updated>2023-01-22T21:11:18.000Z</updated>
-        <summary type="html"><![CDATA[My host is behind a NAT with address and port dependent filtering, but im still able to use ftp with the PORT command, i dont need PASV. 
- I think my NAT router is adding an entry in the NAT that allows the ftp server on port 20 to connect to the address specified in PORT. Is this common? Is this even possible? How else would the server be able to do an active open on my host behind a address and port dependent filtering NAT?
-    submitted by    /u/silenceDogoodd2  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I HATE Batteries! - Converting Wireless to Wired (a cheapskate’s guide)]]></title>
-        <id>https://www.youtube.com/watch?v=bTpKM43VhwA</id>
-        <link href="https://www.youtube.com/watch?v=bTpKM43VhwA"/>
-        <updated>2023-01-22T17:51:37.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long-time Microsoft on-prem sysadm wants to learn cloud MS offerings (M365, Azure AD, etc).]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ip7nj/longtime_microsoft_onprem_sysadm_wants_to_learn/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ip7nj/longtime_microsoft_onprem_sysadm_wants_to_learn/"/>
-        <updated>2023-01-22T17:37:59.000Z</updated>
-        <summary type="html"><![CDATA[Long term Microsoft on-prem sysadm with 30 years of experience (Windows Server, AD, Exchange Server, SharePoint, Office Online, etc.). We are moving to the cloud with Azure AD P2 and Office 365 Business Premium. If I were to start educating myself on these cloud offerings from Microsoft, with the goal of getting certified even, where would I start? is it better to start learning the Office 365 platform first? before venturing into Azure stuff? or should i focus on the Azure ecosystem for starters? I know the two are linked in many ways. I believe we are planning to move to Exchange Online, SharePoint Online, OneDrive, Azure AD, etc. Any maybe look at things like Intune as well. 
- Oh, and does Microsoft have an official education platform these days? I haven't done this in over a decade so I don't even know where to start. This seems like the right place: Microsoft Certifications | Microsoft Learn
-    submitted by    /u/jwckauman  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cyber Essentials and EOL Hardware]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10inxqo/cyber_essentials_and_eol_hardware/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10inxqo/cyber_essentials_and_eol_hardware/"/>
-        <updated>2023-01-22T16:44:29.000Z</updated>
-        <summary type="html"><![CDATA[Hi guys
- I'm just trying to figure this out - but almost everything I'm seeing on the web is coming up about server editions, rather than the underlying hardware.
- ​
- I've been asked to start the process to getting us compliant and certified with Cyber Essentials (not +) - and it's come to my attention that their recently installed DC [done just before I joined the team] almost every piece of hardware in there is EOL.
- Despite the hardware being EOL, they're all running the latest editions of Windows Server.
- Does the hardware support lifecycle bare any relevance to Cyber Essentials, or are we genuinely expected to recycle our servers every 4-5 years?
- I'm mindful that our SAN - which is only managed internally but is on a subnet that can make outgoing Internet access - may be considered in-scope, and this was EOL in 2020.
- Has anyone undertaken this task? Do we have to rebuild the DC with newer kit after only 7 months just to attain compliance?
- ​
- EDIT: Worth noting our DC is where our VPN is hosted - as well as all of our core servers. Our office premise have a site-to-site into the DC. 
- Cheers
-    submitted by    /u/supercilious-pintel  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Low cost tools to monitor and measure network utilization?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10inwjr/low_cost_tools_to_monitor_and_measure_network/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10inwjr/low_cost_tools_to_monitor_and_measure_network/"/>
-        <updated>2023-01-22T16:42:59.000Z</updated>
-        <summary type="html"><![CDATA[We use to have solar winds tools, but the cost drove us to drop them some time ago. Our firewalls do a great job of traffic in and out of the network. But I miss those tools to show bottlenecks and performance.
- What are your thoughts?
-    submitted by    /u/witwim  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Firewall Selection for Data Center]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10imah3/firewall_selection_for_data_center/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10imah3/firewall_selection_for_data_center/"/>
-        <updated>2023-01-22T15:33:57.000Z</updated>
-        <summary type="html"><![CDATA[Hi r/networking, I'm working on a (next gen) firewall solution for a data center (expected ~15k campus users).
- The specs require physical firewalls as opposed to virtual. 
- Vendors I'm currently looking at are: CISCO, Forcepoint, Checkpoint, Palo Alto, Fortinet
- I need to suggest 3 vendors based on technical and commercial viability (budget isn't that tight, but we'd prefer a cheaper solution if the difference in quality isn't really all that). 
- I've been looking at their documentation and data sheets and they all seem to have practically the same features, more or less. 
- ​
-  
-Is there any clear winner among these? What differentiates them in terms of features and performance? They all seem to have the core capabilities of an NGFW: Packet Filtering (Layers 3 & 4), VPN, Stateful Inspection, Application Visibility & Control, Threat Intelligence, IPS.
- Relevant 3rd party benchmarks I'm looking at: Gartner and Cyber Ratings. Should these suffice? Which one should I prioritize? I've heard Cyber Ratings is more relevant since they actually test the hardware.
- Any other reliable sources that can help me evaluate and choose?
- I've heard Palo Alto is the gold standard, but is pricey (they reached out and said we can negotiate), and Fortinet is the most cost-effective and up-and-coming vendor. Is that true? 
- I'm currently leaning towards Forcepoint, since they are making some compelling arguments. They seem to have the best Firewall performance. Some of the main points they mentioned about their NGFW's include: 
- Best malicious signature detection, therefore best IPS/IDS. Apparently this is the most important metric to gauge a firewall's performance?
- Active-Active clustering for high availability 
- Best in the market to protect against evasion attacks
- 
-  
-​
- I would highly appreciate any and all insights based on your experiences and research! I know there's a lot I wrote down, but really need the help. Thanks in advance!
-    submitted by    /u/Additional_Willow_47  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Help convince coworker that this AD/OU Design is better? Or suggest a better design?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ilvd3/help_convince_coworker_that_this_adou_design_is/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ilvd3/help_convince_coworker_that_this_adou_design_is/"/>
-        <updated>2023-01-22T15:15:07.000Z</updated>
-        <summary type="html"><![CDATA[Currently redesigning our OU structure and I feel we might be opting to go for a less than ideal OU structure that was proposed by a co worker given our requirements. I personally feel his has unnecessary OUs for the sake of having OUs and was only suggested to make our to AD look "tidy".
- Main Design Considerations:
-  
-1200 Users.
- 10 different locations.
- Users are rotated between departments and even locations somewhat frequently.
-  
-GPOs currently include:
-  
-Folder Redirection depending on location
- Proxy GPO depending on location
- Printer Mapping depending on department
- Shared Folder Mapping depending on department
-  
-Co worker design: Currently there is a general OU for all PCs so I assume he's planning to keep that as is
-  ->Location A OU --> Finance OU --->Marketing OU (which contains only users and shared folder) --> HR OU -> Location B OU --> IT OU 
- I had suggested that we keep a simple flat structure: 
- -> Location A OU Users objects of users belonging to location A -> Location B OU Users objects of users belonging to location B -> Computers OU --> Servers ---> Location A ---> Location B --> Desktops ---> Location A ---> Location B 
- The main reason for such a simple layout is due to there not being some major difference across departments that would require separate OUs. The main difference between departments at locations is their shared folder mappings and printers, which can be managed by groups instead of OUs. My main concern is that due to the frequent staff rotation, persons are going to have to be moved to the new location OU and be added to their respective department groups every few months to receive their location and department specific GPOs. Is there a structure that gets around this or is just a problem that should be solved with automation?
-    submitted by    /u/yeezy_yeez  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Dark Forest of IT & Secure Systems in the 21st Century]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ijwjt/dark_forest_of_it_secure_systems_in_the_21st/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ijwjt/dark_forest_of_it_secure_systems_in_the_21st/"/>
-        <updated>2023-01-22T13:40:20.000Z</updated>
-        <summary type="html"><![CDATA[submitted by    /u/VysokoAnime  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[With advances like ChatGPT, how do you think AI will change the way we work?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ijt61/with_advances_like_chatgpt_how_do_you_think_ai/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ijt61/with_advances_like_chatgpt_how_do_you_think_ai/"/>
-        <updated>2023-01-22T13:35:21.000Z</updated>
-        <summary type="html"><![CDATA[ChatGPT can now already program mediocre programs and scripts based on the knowledge of 2021. In addition, write decent free texts for the required objective, this includes cover letters for fishing emails.
- I dread to think that script kiddies and cyber criminals will now be able to commit their deeds even more easily. While many private persons, employees and authorities already have problems with worse fishing mails and generally too many private persons, companies and authorities are very much behind in IT issues.
- At the same time, it also offers many opportunities for us, the good side. We can have our code checked again fully automatically, have good templates created, have alternative approaches to our problems,...
-    submitted by    /u/Sam4000der3  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Compensation guidelines/advice for interruption of vacation]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ijab4/compensation_guidelinesadvice_for_interruption_of/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ijab4/compensation_guidelinesadvice_for_interruption_of/"/>
-        <updated>2023-01-22T13:07:41.000Z</updated>
-        <summary type="html"><![CDATA[Just looking for advice or some kind of standard for compensation. I'm on vacation in Thailand for 3 months, sure to return March 1st and my boss/father as it's a family business is saying if the network issue we are having can't be fixed with me talking them through it on the phone I might have to fly home to Canada to make sure it gets fixed. I'm pretty confident I can get it done over the phone but if I have to come back to Canada and then return to Thailand a few days or a week later, on their dime of course, what kind of compensation do you folks think would be fair?
-    submitted by    /u/lokiset  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AV for Android phone]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ij9sd/av_for_android_phone/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ij9sd/av_for_android_phone/"/>
-        <updated>2023-01-22T13:06:57.000Z</updated>
-        <summary type="html"><![CDATA[Not sure if this is the right place to post this. We are reviewing our MDM and are exploring different AV options. I'm using Avast and personally it seems kind of bloated for what we are looking for. Was wondering if y'all had some suggestions.
-    submitted by    /u/morganbo85  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What's the hardest thing you've found to make properly resilient?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10igorg/whats_the_hardest_thing_youve_found_to_make/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10igorg/whats_the_hardest_thing_youve_found_to_make/"/>
-        <updated>2023-01-22T10:30:41.000Z</updated>
-        <summary type="html"><![CDATA[There's always a weak link, right? Even if it's only stuck in your head rather than causing a genuine issue in your environment. Something you just can't make feel reliable enough.
- NTP springs to mind, but that's why NTP was invented right? Wasn't about time syncing, it was always about being confusing and vague.
- And whilst I'm not a DBA, that's always been a right pain in projects I've engaged with, and understandably so, especially at scale.
-    submitted by    /u/BarryTownCouncil  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to change file permission in vxworks?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10iga5s/how_to_change_file_permission_in_vxworks/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10iga5s/how_to_change_file_permission_in_vxworks/"/>
-        <updated>2023-01-22T10:04:57.000Z</updated>
-        <summary type="html"><![CDATA[Is there a command in vxworks similar to chmod of Unix?
-    submitted by    /u/Former_Anxiety_2130  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2023 Outlook: Inflation, Recession & Interest Rates | 1.22.23]]></title>
-        <id>ddf9d176-d73e-4efc-b02d-f65fdad5cc8b</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2023-01-22T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[What is the economic outlook in 2023? We speak to Kenny Polcari, Managing Partner at Kace Capital Advisors  who breaks down everything you need to know about the Fed, rising interest rates, earning season, and personal debt.  Get the facts first on Morning Wire.
-Birch Gold: "No-Cost, No-Obligation FREE Information Kit Text “WIRE"" to 989898"]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apache Guacamole Sign-in Credentials]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ifjzu/apache_guacamole_signin_credentials/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ifjzu/apache_guacamole_signin_credentials/"/>
-        <updated>2023-01-22T09:15:05.000Z</updated>
-        <summary type="html"><![CDATA[Hello guys,
- I have installed Apache Guacamole with this tutorial: https://computingforgeeks.com/install-guacamole-remote-desktop-on-ubuntu-jammy-jellyfish/, 
- and everything was okay until I started the Web UI page for log-in, the username and Password didn't work, I think the issue was with the " user-mapping.xml " I have to change it too many times but it still stuck on it { Invalid Login}
-    submitted by    /u/abdrhmanarar  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Free Training on CompTIA A+ Full Course for those that need it]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10if9d8/free_training_on_comptia_a_full_course_for_those/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10if9d8/free_training_on_comptia_a_full_course_for_those/"/>
-        <updated>2023-01-22T08:55:13.000Z</updated>
-        <summary type="html"><![CDATA[Hi everyone,
- I'm currently delivering free training on the full CompTIA A+ course. The course consists of 20 modules and I will creating a dedicated video for each module. Some of these videos might be a bit long since each video covers a whole module after all.
- I add time stamps in each video for you convenience if your only looking for something specific in a module or only want to refresh on a certain topic so please feel free to make use of them.
- There will be 22 videos for this course, the first is just the 6 min intro explaining the course, the last will be a dedicated exam tips video and then obviously the 18 videos in between will be your modules with the actual course.
- The training should be enough to pass both the international exams for A+ and the other courses I deliver sho…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Can we isolate our office from neighbors network in this situation ?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10if962/can_we_isolate_our_office_from_neighbors_network/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10if962/can_we_isolate_our_office_from_neighbors_network/"/>
-        <updated>2023-01-22T08:54:49.000Z</updated>
-        <summary type="html"><![CDATA[Hi
- this might be silly for you but I really could't find a way to solve it.
- Our small office is like this: All computers > our switch (TP-Link TL-SG2428P) > neighbor unmanaged switch > ISP router.
- ​
- * we couldn't change this topology for now !
- ​
- Everything is running for our users, but I am concered that our computers and theirs are in one network, and this is not good for security in the first place.
- ​
- So I have tried to create a new vlan for our computers, but the result is disconnection from internet !
- ​
- Each thought is valued : )
-    submitted by    /u/LancerJoee  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[Need Help] All my files have been compressed within a zip file]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10iex7e/need_help_all_my_files_have_been_compressed/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10iex7e/need_help_all_my_files_have_been_compressed/"/>
-        <updated>2023-01-22T08:31:38.000Z</updated>
-        <summary type="html"><![CDATA[Hello, I'm currently encountering a huge problem with my files, I've googled a lot but can't seem to find an answer for the issue I'm having.
- I have a lot of files that have been zipped into a WinRar archive. There should be folders and files within it. However, when I open up the winrar archive, there's only a massive single file. How do I revert it back to a state where it's the folders and files again?
- https://gyazo.com/d1091336dcdfc0c9880a434abe0c236f
- https://gyazo.com/8a98c1096e24895d7e43ad3603a1d7f7
-    submitted by    /u/Narrow-Box534  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Phoenix Project]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ieiro/the_phoenix_project/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ieiro/the_phoenix_project/"/>
-        <updated>2023-01-22T08:05:45.000Z</updated>
-        <summary type="html"><![CDATA[I just started reading this book and it’s great, really hits on troubleshooting methodology and the chaos and miscommunications, and the relationship between the Business and IT, in general. It’s an easy and captivating read and I feel like I’m going to get a lot out of it. Just wanted to share. 
- https://www.techtarget.com/whatis/definition/The-Phoenix-Project
-    submitted by    /u/KnotHanSolo  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2700 series APs stuck in downloading state]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10iecvt/2700_series_aps_stuck_in_downloading_state/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10iecvt/2700_series_aps_stuck_in_downloading_state/"/>
-        <updated>2023-01-22T07:55:22.000Z</updated>
-        <summary type="html"><![CDATA[Recently upgraded 2504 WLC from 8.0.152.0 to 8.5.171.0 but after upgrade APs are stuck in downloading state for more than 4 hours. Checked time on wlc — its correct. NTP is not there. After downgrading to 8.0.152.0, APs joined successfully but 3 APs got stuck in downloading state.
- Please help if there’s anything that can be done.
-    submitted by    /u/Beginning_Editor4547  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Name change]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10icnhm/name_change/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10icnhm/name_change/"/>
-        <updated>2023-01-22T06:06:24.000Z</updated>
-        <summary type="html"><![CDATA[Intune was for MDM and some MAM until around 2019
- Then Intune became part of Endpoint Manager
- Now Microsoft has renamed the entire Endpoint Manager to Intune (Oct 2023)
- Did the Xbox people suddenly get in charge of naming everything?
-    submitted by    /u/clickx3  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure Sys Admin Job Interview Help]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ic2zq/azure_sys_admin_job_interview_help/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ic2zq/azure_sys_admin_job_interview_help/"/>
-        <updated>2023-01-22T05:32:13.000Z</updated>
-        <summary type="html"><![CDATA[Hello, great people of sysadmin, I have a job interview on Monday for an Azure Sys Admin position and I can handle myself in Azure just fine. Still, I have never migrated an Onprem location to the cloud. Since I came to my current position where I have been for over a year as an Azure Cloud Admin, we have been on a merger freeze (the company usually buys dozens of small companies a year) and thus I have no experience there. This new job will focus a lot on mergers to the cloud and I wanted to see what are some things that need to be done to onboard an on-premise environment into the cloud or some literature/video for how-to's would be awesome. And just some general tips to ace this interview, usually pretty nervous in interviews.
-    submitted by    /u/Showrunner15  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Computer Name/Domain change]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10ia9qd/computer_namedomain_change/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10ia9qd/computer_namedomain_change/"/>
-        <updated>2023-01-22T03:51:04.000Z</updated>
-        <summary type="html"><![CDATA[“The following error occurred attempting to join the domain” The referenced account is currently locked out and may not be logged on to”
- Hi guys! 
- I’ve been struggling with this one.
- AD join Azure virtual desktops are failing to join the domain when deployed in the host pool or even manually I get the above message. 
- Things I have checked:
- DNS server in the VNET, set to custom, all matches the domain controller and can ping it.
- Disabled the lockout GPO for the admin and still getting that message.
- Any idea why I’m still getting that error message? What am I missing?
- I appreciate any thoughts. 
- Thanks
-    submitted by    /u/Ambitious-Abroad-363  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Power BI automatic refresh failures]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10i9dei/power_bi_automatic_refresh_failures/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10i9dei/power_bi_automatic_refresh_failures/"/>
-        <updated>2023-01-22T03:02:52.000Z</updated>
-        <summary type="html"><![CDATA[Issue: I have Power BI reports that have automatic refreshes scheduled. Sometimes I get messages that my reports have failed to refresh. The failure details are: The last refresh attempt failed because of an internal service error. This usually a transient issue. I never get this issue for the same report back-to-back. If I were to manually refresh the report it would refresh no problem. The problem is random automatic refresh failures. 
- Details: My Power BI files and data sources are located in SharePoint. My Gateway is running on an Azure VM which has access to the ODBC connections needed to connect to the tables where the data is originally located.
- Has anyone come across the same issue? Do you have any idea how to minimize these failures?
-    submitted by    /u/va_bulldog  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This Common Mistake Can Ruin Your Monitor]]></title>
-        <id>https://www.youtube.com/watch?v=FPe3TAKOT9Y</id>
-        <link href="https://www.youtube.com/watch?v=FPe3TAKOT9Y"/>
-        <updated>2023-01-22T03:00:07.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Physical security key as a regular MFA factor in Azure AD?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10i90b9/physical_security_key_as_a_regular_mfa_factor_in/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10i90b9/physical_security_key_as_a_regular_mfa_factor_in/"/>
-        <updated>2023-01-22T02:44:18.000Z</updated>
-        <summary type="html"><![CDATA[Everything I can find about setting up a security key (FIDO2) for Azure AD / Office 365 is about passwordless authentication - you may have a PIN for the YubiKey itself, but no use of the AD/AAD password.
- I'm having trouble figuring out if there is a way to NOT allow passwordless login with a FIDO2 key. For the absolute best security, I'm looking to require a complex password AND use a FIDO2 key (instead of OTP/notification/text/etc) as the 2nd factor, for admins. Is this possible?
-    submitted by    /u/PowerShellGenius  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Recommended solution for AzureAD guest user to RDP azure vm behind bastion]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10i8u4w/recommended_solution_for_azuread_guest_user_to/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10i8u4w/recommended_solution_for_azuread_guest_user_to/"/>
-        <updated>2023-01-22T02:35:25.000Z</updated>
-        <summary type="html"><![CDATA[submitted by    /u/sudo_96  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
