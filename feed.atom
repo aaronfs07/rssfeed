@@ -2,10 +2,221 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-02-22T13:21:48.435Z</updated>
+    <updated>2023-02-22T14:11:51.124Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[iPhones getting 0.0.0.120 IP's in my AP's, and have no Internet. Droids and PC's are fine.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/11907cc/iphones_getting_000120_ips_in_my_aps_and_have_no/</id>
+        <link href="https://www.reddit.com/r/networking/comments/11907cc/iphones_getting_000120_ips_in_my_aps_and_have_no/"/>
+        <updated>2023-02-22T14:10:49.000Z</updated>
+        <summary type="html"><![CDATA[Hey Guys,
+ Having a strange issue. All of the sudden, iPhone users can't get internet through my AP's, although they can connect to them, while Android users, and all of the Windows laptops are fine. I have a mix of Cisco 1702's, 1602's, and 1261's. Have reloaded AP's, changed patch cords, rebooted switches, cleared DHCP, but nothing works. They can associate just fine, they just get no internet and the phone shows IP addresses "0.0.0.x" (i.e. 0.0.0.120, 0.0.0.55, etc...). Checked GPO, nothing applied that would be preventing Apple devices.
+ At this point I have to imagine it's a setting on the devices themselves, but wondering if anyone has ran into anything similar? It's ALL Apple devices, not just one. And again, Android and Windows devices are all just fine.
+    submitted by    /u/RomanDeltaEngin33r  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iPhones getting 0.0.0.120 IP's in my AP's, and have no Internet. Droids and PC's are fine.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/11905t2/iphones_getting_000120_ips_in_my_aps_and_have_no/</id>
+        <link href="https://www.reddit.com/r/networking/comments/11905t2/iphones_getting_000120_ips_in_my_aps_and_have_no/"/>
+        <updated>2023-02-22T14:09:36.000Z</updated>
+        <summary type="html"><![CDATA[Hey Guys,
+ Having a strange issue. All of the sudden, iPhone users can't get internet through my AP's, although they can connect to them, while Android users, and all of the Windows laptops are fine. I have a mix of Cisco 1702's, 1602's, and 1261's. Have reloaded AP's, changed patch cords, rebooted switches, cleared DHCP, but nothing works. They can associate just fine, they just get no internet and the phone shows IP addresses "0.0.0.x" (i.e. 0.0.0.120, 0.0.0.55, etc...). Checked GPO, nothing applied that would be preventing Apple devices.
+ At this point I have to imagine it's a setting on the devices themselves, but wondering if anyone has ran into anything similar? It's ALL Apple devices, not just one. And again, Android and Windows devices are all just fine.
+    submitted by    /u/RomanDeltaEngin33r  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iPhones getting 0.0.0.120 IP's in my AP's, and have no Internet. Droids and PC's are fine.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/119055r/iphones_getting_000120_ips_in_my_aps_and_have_no/</id>
+        <link href="https://www.reddit.com/r/networking/comments/119055r/iphones_getting_000120_ips_in_my_aps_and_have_no/"/>
+        <updated>2023-02-22T14:09:07.000Z</updated>
+        <summary type="html"><![CDATA[Hey Guys,
+ Having a strange issue. All of the sudden, iPhone users can't get internet through my AP's, although they can connect to them, while Android users, and all of the Windows laptops are fine. I have a mix of Cisco 1702's, 1602's, and 1261's. Have reloaded AP's, changed patch cords, rebooted switches, cleared DHCP, but nothing works. They can associate just fine, they just get no internet and the phone shows IP addresses "0.0.0.x" (i.e. 0.0.0.120, 0.0.0.55, etc...). Checked GPO, nothing applied that would be preventing Apple devices.
+ At this point I have to imagine it's a setting on the devices themselves, but wondering if anyone has ran into anything similar? It's ALL Apple devices, not just one. And again, Android and Windows devices are all just fine.
+    submitted by    /u/RomanDeltaEngin33r  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[rsynch block level copy to 2nd site (or better approach?)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/118zwm3/rsynch_block_level_copy_to_2nd_site_or_better/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/118zwm3/rsynch_block_level_copy_to_2nd_site_or_better/"/>
+        <updated>2023-02-22T14:02:41.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ We have DBAs dumping Oracle RMAN backups to an NFS target. We need to replicate those backup files to a 2nd site. The storage devices at each site are different, so we need something that can do host-based replication.
+ The RMAN backups are fulls each night, and looking for something smart enough to not send a full backup to the second site each time. I was looking at rsynch and it has a block level synch option, would that possibly work? 
+ My main concerns are if the full RMAN dumps would trigger rsynch to send a full each time this won't work, but if it's smart enough to only send changed blocks each night this should be workable. The initial full will be the worst in terms of host impact and time, we will seed it locally if possible.
+ Are there better tools for this type of host based copy approach? DBAs do not want a formal agent-based backup app, I understand there are better approaches. Dealing with what we have on hand right now and seeking feedback around rsynch or other 3rd party tools.
+ Thank you!
+    submitted by    /u/AdAntique5099  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iPhones getting 0.0.0.120 IP's in my AP's, and have no Internet. Droids and PC's are fine.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/118zwmh/iphones_getting_000120_ips_in_my_aps_and_have_no/</id>
+        <link href="https://www.reddit.com/r/networking/comments/118zwmh/iphones_getting_000120_ips_in_my_aps_and_have_no/"/>
+        <updated>2023-02-22T14:02:41.000Z</updated>
+        <summary type="html"><![CDATA[Hey Guys,
+ Having a strange issue. All of the sudden, iPhone users can't get internet through my AP's, although they can connect to them, while Android users, and all of the Windows laptops are fine. I have a mix of Cisco 1702's, 1602's, and 1261's. Have reloaded AP's, changed patch cords, rebooted switches, cleared DHCP, but nothing works. They can associate just fine, they just get no internet and the phone shows IP addresses "0.0.0.x" (i.e. 0.0.0.120, 0.0.0.55, etc...). Checked GPO, nothing applied that would be preventing Apple devices.
+ At this point I have to imagine it's a setting on the devices themselves, but wondering if anyone has ran into anything similar?
+    submitted by    /u/RomanDeltaEngin33r  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Log viewing by non-admin]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/118zqdi/log_viewing_by_nonadmin/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/118zqdi/log_viewing_by_nonadmin/"/>
+        <updated>2023-02-22T13:58:00.000Z</updated>
+        <summary type="html"><![CDATA[Good morning! 
+ I was hoping some you more seasoned SA's could help me out. We recently were notified that our Information System Security Officers (ISSO) need to have access to the windows logs on a very small network, which consists of, 6 desktops, and 3 servers. Now, I have log forwarding setup to have the logs sent to our File Server. What would be the best way to get the ISSOs access to the logs on that server without giving them admin accounts?
+    submitted by    /u/Apathetic_SA  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tanium API - AddTags]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/118zkv7/tanium_api_addtags/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/118zkv7/tanium_api_addtags/"/>
+        <updated>2023-02-22T13:53:20.000Z</updated>
+        <summary type="html"><![CDATA[Hey all,
+ I'm trying to work on something using the API for Tanium. I see in their doc: Reference: API Gateway examples (tanium.com) that they share an example: "Perform an action operation (mutation.actionPerform)"
+ I'm just wondering if anyone has translated this into a curl or powershell script?
+ ​
+ In the past, I've only worked with the query API, so something similar to:
+ $h = blahblah
+ { endpoints(filter: {op: CONTAINS, path: "name", value: "' + $h + '"}) { edges { node { id name domainName ipAddress lastLoggedInUser model manufacturer } } } }'
+ ​
+ I'm also wanting to target the endpoints: [ID!] field instead of platform (In the example). I'm not sure however, to piece together the chain: Get the ID, Pass the ID and Add Tag: XXX.
+ ​
+ If you have done, or similar examples, let me know please.
+    submitted by    /u/xstag0  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Does anyone have experience with this service provider?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/118zkic/does_anyone_have_experience_with_this_service/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/118zkic/does_anyone_have_experience_with_this_service/"/>
+        <updated>2023-02-22T13:52:59.000Z</updated>
+        <summary type="html"><![CDATA[Mandatory preface: Yes, I’ve searched through previous posts to no avail. No, I’m not asking for a recommendation (and know there are several posts available for that).
+ With that said, I’m tasked with replacing our on premise PBX and have evaluated several service providers for this purpose.
+ Current contenders include 8x8, RingCentral, GoTo, and Ultatel.
+ I’ve been able to find the information I need to make an informed decision on each of those with the exception of Ultatel.
+ Does anyone have experience with them? How did it go/ how is it going? Their pricing is very aggressive and solution appears to include all the features we need (our requirements for a phone system are pretty simple compared to most).
+ Thanks in advance
+    submitted by    /u/Ape_Escape_Economy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Looking for ideas to reach my cameras behind a private IP]]></title>
+        <id>https://www.reddit.com/r/networking/comments/118zgkr/looking_for_ideas_to_reach_my_cameras_behind_a/</id>
+        <link href="https://www.reddit.com/r/networking/comments/118zgkr/looking_for_ideas_to_reach_my_cameras_behind_a/"/>
+        <updated>2023-02-22T13:49:31.000Z</updated>
+        <summary type="html"><![CDATA[I've got a small setup with a few cameras wired up to a hikvision NCR with an internet breakout through a 4G capable router.
+ The problem is that the provider assigns me a private IP and I set behind their small pool of public IPs hence no capability of reaching my NCR to watch the cameras.
+ The only idea I've had so far is to bring up an L2TP to a third location which has a public IP and bounce my monitoring through there, but looks expensive and complicated.
+    submitted by    /u/Invoalr  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Trying to find a GPO or registry key...]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/118z3j4/trying_to_find_a_gpo_or_registry_key/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/118z3j4/trying_to_find_a_gpo_or_registry_key/"/>
+        <updated>2023-02-22T13:38:48.000Z</updated>
+        <summary type="html"><![CDATA[Ok, on a set of systems, some on the login screen show a set of selection areas on the left:
+ Other User
+ Guest
+ ​
+ But this is not appearing on all systems. Of course, it's appearing on the systems we don't want it and not appearing on the systems we want it on (or at least not all of them). I'm not even sure what those option buttons are called so I've been failing in my googlefu. I'm sure it's a set of GPOs or registry keys that need to be changed that is carrying something over from when they were on local AD to being on Azure.
+ Is there anyone that can point me in the right direction?
+    submitted by    /u/nethfel  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting attendance reports for Microsoft Teams.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/118ysyc/getting_attendance_reports_for_microsoft_teams/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/118ysyc/getting_attendance_reports_for_microsoft_teams/"/>
+        <updated>2023-02-22T13:30:15.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone, please bear with me as I go crazy as I try to get a bit of information in a sane way. I work for a training company with UK gov funding and I need to automate getting the meeting attendance. 
+ I have tried the 0365 reports script, but it only gets random meetings and nothing useful, even if I give it dates.
+ My plan would be to:
+  
+Create alll meetings under a user
+ Get all meetings for that user (they are available on Teams admin, power automate desktop might be a possibility to download them?)
+ use a slightly modified script that we have to populate out attendance sheets.
+  
+Essentially, all it need to do is to automate getting the meeting attendance from team admin (I noticed that downloading the attendance register from teams itself sometimes fails, so I want something durable and the reports on Teams admin are simple and to the point) 
+ Also, all the meetings are team meetings, so that is another limitation.
+ Any ideas?
+    submitted by    /u/FlavioLikesToDrum  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RADIUS authentication of NeDi 2.2c]]></title>
+        <id>https://www.reddit.com/r/networking/comments/118yr9b/radius_authentication_of_nedi_22c/</id>
+        <link href="https://www.reddit.com/r/networking/comments/118yr9b/radius_authentication_of_nedi_22c/"/>
+        <updated>2023-02-22T13:28:50.000Z</updated>
+        <summary type="html"><![CDATA[Greetings my fellow networkers,
+ I've discovered NeDi recently and I tried to set it up in our enterprise environment. I deployed it on a fresh VM with the latest Debian release (v11.6).
+ I installed NeDi via the bash(version 2.2.22) I found on the website which works perfectly but I've been stuck on the RADIUS authentication. Problem is: There is not so much documentation about it and the community forum has its registration for new users currently disabled.
+ I found this snippet of code in the nedi.conf file:
+ # Authentication for GUI users can be set to: # local, sso, pam, radius, ldap or none # Append -pass to specify a password and optional CLI port for device access in Devices-Write (The GUI-username is used, if the User field is left empty) # Add 2nd argument with ldap or radius to assign groups to users which don't exist within NeDi (disabled if empty, minimal access with "usr,") # Be aware that ldap or radius may have problems with passwords containing language specific special characters #guiauth ldap usr,net,dsk,mon,oth, ;guiauth local # Override the Login and Logout URLs (e.g. for your SSO setup) # The defaults will be used if commented # Login URL Logout URL ;authurls User-Profile.php index.php # Set Radiusserver(s) parameters, if selected above # host port secret timeout retries ;radserver localhost 1812 testing123 2 1 
+ It looks pretty straight forward but when I setup the "guiauth" variable to "radius" and configure the "host" and "secret" variable and try to connect to the GUI with one of my test users, I get an error 500 from the server saying that it can't handle the request.
+ I've looked into my RADIUS server's logs (Cisco ISE) and I don't even see the request hitting the server.
+ Am I missing something ? Also, does anyone know how to hash the secret so it doesn't appear in full text in the nedi.conf file ?
+ Cheers to anyone that can help me!
+    submitted by    /u/greetedwithgoodbyes  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[O365 hybrid expired cert and Outlook warning]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/118yllj/o365_hybrid_expired_cert_and_outlook_warning/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/118yllj/o365_hybrid_expired_cert_and_outlook_warning/"/>
+        <updated>2023-02-22T13:24:17.000Z</updated>
+        <summary type="html"><![CDATA[We have an O365 hybrid environment with Azure AD Connect and our public cert has expired. As a result, all my end users see this warning occasionally when opening Outlook. I've been trying to hunt down where I can update this cert. Anyone know where I should be looking?
+ Screenshot of expired cert when launching Outlook: https://imgur.com/KBAZwSj
+    submitted by    /u/versello  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[is corporate IT supposed to be filled with deadweight?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/118yggq/is_corporate_it_supposed_to_be_filled_with/</id>
