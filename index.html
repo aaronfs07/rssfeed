@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-02-28 datetime="2023-02-28T11:06:33.000Z">2023-02-28</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-02-28 datetime="2023-02-28T11:06:33.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-02-28 datetime="2023-02-28T12:19:53.000Z">2023-02-28</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-02-28 datetime="2023-02-28T12:19:53.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,161 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11e4oh2/so_im_handling_dc_upgrades_for_the_first_time/"
+                        open
+                      >
+                        <summary class="article-expander__title">So I&#x27;m handling DC Upgrades for the first time ever and am a little scared with the final steps.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11e4oh2/so_im_handling_dc_upgrades_for_the_first_time/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/AcicTERdM-A10SyoTFCTezmjo8zp-i7zKKvzNLGrh0s.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;e172f2fd953931a99d45f126b30c20cc64d24a66" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Our infrastructure was Server 2012R2 - DC&#x27;s in office and in GCE under different sites - and I&#x27;m upgrading to Server 2022. I&#x27;m including my Powershell scripts to make sure that I&#x27;m doing this properly (and to potentially help others for reference).
+ This is what I&#x27;ve done so far;
+  
+Checked to make sure the Schema version is compatible with Server 2022 (it is)
+  
+Code:
+ Get-ADDomain | fl Name,DomainMode Get-ADForest | fl Name,ForestMode 
+  
+Created the new DC&#x27;s, installed roles
+  
+Code:
+ Install-WindowsFeature -name ad-domain-services,DNS -IncludeManagementTools 
+  
+ Promoted the new VM&#x27;s to DC&#x27;s in AD
+  
+Code:
+ Import-Module ADDSDeployment Install-ADDSDomainController &#x60; -NoGlobalCatalog:$false &#x60; -CreateDnsDelegation:$false &#x60; -Credential (Get-Credential) &#x60; -CriticalReplicationOnly:$false &#x60;…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11e4lak/what_the_hell_is_the_logic_behind_a_security/"
+                        open
+                      >
+                        <summary class="article-expander__title">What the hell is the logic behind a &quot;security image&quot; for login?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11e4lak/what_the_hell_is_the_logic_behind_a_security/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Seems like many of the legacy systems I interact with as a user have this. Banks, web portals for hospitals, and the like. This is where a user logs in with their credentials and then is shown the &quot;security image&quot; they picked out, like an airplane or a flower or some other random object. The page usually says something like &quot;make sure this is your security image!&quot;
+ I can&#x27;t imagine this is supposed to sway those with criminal intent, is it supposed to prevent users from logging in to other accounts?
+    submitted by    /u/TheWheez  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11e43qn/most_detailed_open_source_network_scanner/"
+                        open
+                      >
+                        <summary class="article-expander__title">Most detailed open source network scanner?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11e43qn/most_detailed_open_source_network_scanner/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Im in the search of finding a great preferably free/open source network scanner. With the most detailed i mean one that can scan: Hostnames, manufacturer, Serie number, Hypervisor, hardware, OS, CPU, IP, Domain, appilications Etc... Thank you in advance
+    submitted by    /u/CursedNeeno  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11e3zkp/properly_duplicating_systemd_service/"
+                        open
+                      >
+                        <summary class="article-expander__title">Properly Duplicating Systemd Service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11e3zkp/properly_duplicating_systemd_service/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>we have a dnsdist package installed via yum which came with systemd service file, now we wanna keep existing service + create a new service with different arguments on start, what is the proper way of doing this,
+    submitted by    /u/sukur55  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11e3rf3/migration_manager/"
+                        open
+                      >
+                        <summary class="article-expander__title">Migration Manager</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11e3rf3/migration_manager/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is there any way that i can make migration manager automatically migrate data on a frequent period?
+ Like i want this data every thursday migrated.
+ ​
+ Thanks in advance!
+ ​
+ Regards
+ Jos Barry
+    submitted by    /u/ProckordUser  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11e3j7b/rdsh_sizing_for_heavy_load/"
+                        open
+                      >
+                        <summary class="article-expander__title">RDSH Sizing for heavy load</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11e3j7b/rdsh_sizing_for_heavy_load/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ i wrote a thread some weeks ago about performance issues on our RDS farm. I did some more monitoring and saw that the cpu queue is sometimes a bit to high (about 5 - 10 for a 16 core VM).
+ So i like to spread the user over more servers and read about the sizing guide from microsoft. Our users working with the office programs, ERP System and doing normal surfing and research via MS Edge and Google Chrome. Due to this workload i would say that its categorized in the heavy work load / power users.
+ For that Microsoft says i should use 4 vCPU and about 8 GB RAM per User. Thats beeing said for our about 140 User, i shoud have about 144 vCPUs and 1 TB RAM. Thats seems quite high for me. Usally i dont provision 1:1 CPU ratio. 
+ Microsoft also say, i should not provision more then 2 users per vCPU. Thats still 72 vCPUs for all. Due to the workload i dont get a good ratio about real threats and vCPU (on Hyper-V). 
+ I&#x27;m quite curios about other RDS farms with about the same workload. I read some threats on the internet where 20 Users are on a quad core system with 16 GB RAM. Other wrote that they have 8 Core, 32 GB RAM but just provision it to 4 users. Its quite hard to see the real workload on other infrastructures. 
+ So, could some people tell about their sizing in situation there the users doing a simiar workload?
+ Thanks
+    submitted by    /u/teqqyde  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -442,6 +597,28 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11e3puq/vrf_lite_route_leaking_between_global_and_vrf_lite/"
+                        open
+                      >
+                        <summary class="article-expander__title">Vrf lite route leaking between global and vrf lite</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11e3puq/vrf_lite_route_leaking_between_global_and_vrf_lite/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have a collapsed core in vss, and my L2 access switches are hanging off the collapsed core. The only L3 device is the collapsed core. I would like to separate some network from the global table using vrf lite. I want to start with the oob ports. I checked the Cisco docs but didn&#x27;t find how can leak routes between the global and vrf lite within the same collapsed core switch without sending the traffic to the next hop (provider). It is more like a inter-vlan but one of the SVIs is in global and the other is in vrf lite.
+ Is there an easy and proper way of accomplishing what am trying to do?
+    submitted by    /u/forwardslashroot  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -48306,43 +48483,6 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10omwjj/moronic_monday/"
-                        open
-                      >
-                        <summary class="article-expander__title">Moronic Monday!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10omwjj/moronic_monday/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>It&#x27;s Monday, you&#x27;ve not yet had coffee and the week ahead is gonna suck. Let&#x27;s open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we&#x27;re too embarrassed to ask!
- Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.
- Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
       <section class="daily-content js-toggle-accordions-scope">
@@ -48397,8 +48537,8 @@ Although this …</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4292321492">
-        <time id="build-timestamp" datetime="2023-02-28T11:10:47.706Z">2023-02-28T11:10:47.706Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4292917405">
+        <time id="build-timestamp" datetime="2023-02-28T12:25:01.081Z">2023-02-28T12:25:01.081Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
