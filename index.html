@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-02 datetime="2023-03-02T13:19:41.000Z">2023-03-02</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-02 datetime="2023-03-02T13:19:41.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-02 datetime="2023-03-02T14:02:29.000Z">2023-03-02</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-02 datetime="2023-03-02T14:02:29.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,189 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11g3jg1/on_the_cusp_of_being_fired_for_something/"
+                        open
+                      >
+                        <summary class="article-expander__title">On the cusp of being fired for something ???simplistic???</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11g3jg1/on_the_cusp_of_being_fired_for_something/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ll share as much detail as possible as this problem hasn&#x27;t waivered. Keep in mind this is my first step up from IT specialist to sys admin so bear with me OGs.
+ We are operating on a 2016 Windows Server and this holds all of our drives. The business is about 100 people. In November, I installed the .NET Framework 4.8(KB5020614) and the Update for Windows Server 2016(KB5019964). I have had non-stop issues with connectivity to the drives ever since. The errors string from &quot;local device name is already in use,&quot; to &quot;Target name is incorrect.&quot;
+ I have found limited success in doing ipconfig/release-renew-flushdns. It&#x27;s usually a 50-50 chance that the issue resolves after that. If I use the IP address to the server in the file explorer address bar, it immediately pulls up; its the complete opposite when I try to call it by its name \\server1\. I&#x27;ve checked the DNS and DHCP to see if they&#x27;re properly communicating and there seems to be nothing wrong(not ruling them out).
+ As recent as yesterday, I have started to force our user computers to use a different IP through the IPv4 in adapter options. For instance, I&#x27;ll make 192.168.8.113 go to 192.168.8.204. I have found complete success with this and the most odd part is I can set the user machine back to automatically grabbing an IP address which will revert it to 192.168.8.113 and it instantly works. 
+ It seems like I&#x27;m forcing the previous session to end and renewing the lease on the DHCP ??? I don&#x27;t know but I&#x27;m open to all suggestions as my boss(the owner) grows in irritation. 
+ Thanks ahead of time.
+    submitted by    /u/Zelliion  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11g3be1/determine_prevelance_of_byod/"
+                        open
+                      >
+                        <summary class="article-expander__title">Determine Prevelance of BYOD</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11g3be1/determine_prevelance_of_byod/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all, Company pretty lax in terms of its approach to BYOD.
+ Something that i want to fix. I need to determine which users are utilising BYOD and how they are doing it to work out a plan of action.
+ We use O365 and have DUO+Okta.
+ Ideally, i would like a report of some description that shows logins from non-corporate devices.
+ DUO reports do not give me the hostname of the device the user is logging in from, and i dont believe Azure logins do either. 
+ In an ideal world i would just turn on the posture settings of DUO and see who screams, but that isnt going to go down well.
+ I need to demonstrate the scale of this to upper management so they realise how many people do this and realise the exposure we have with data on personal devices etc etc. 
+ Can anyone think of a good way to determine which devices logins to O365/DUO/Okta are coming from?
+ Was thinking whether the install log from O365 apps gives telemetry of the device its installed on?
+    submitted by    /u/dr-pepper12  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11g3a4g/architecture_input_regarding_hyperv_and_docker/"
+                        open
+                      >
+                        <summary class="article-expander__title">Architecture input regarding Hyper-V and Docker</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11g3a4g/architecture_input_regarding_hyperv_and_docker/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello! I have a question regarding following topic/usecase. 
+ We have here a classic on-prem Environement with a hyper-V cluster and mainly Windows Servers in Production. Now we have a new system that will run &quot;dockerized&quot;, that environement is a composition of 7-8 containers that run together to deliver that service (mysql, redis, nginx and some other images).
+ How do you deal with that &quot;in general&quot; regarding the management of such stuff?
+ Do you create a bunch of linux hosts virtualised inside hyper-V and manage them with some container orchestrator (any tips - can be commercially backed and cost something)? So, something like a virtualized cluster?
+ Do you build something completely &quot;aside&quot; like a bunch of synlogy nas with docker support? or even a complete new hardware cluster?
+ Using windows servers for docker stuff does not make sense imho. 
+ Thanks for any recommendation :)
+    submitted by    /u/funkyferdy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11g3544/secure_but_cost_effective_remote_support_software/"
+                        open
+                      >
+                        <summary class="article-expander__title">Secure but cost effective remote support software?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11g3544/secure_but_cost_effective_remote_support_software/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I support about 200 users in one company but need to support about 100 in other companies. I had been using real VNC but the customers hate it because I&#x27;m not on their computers so they have to invite me and right click is a challenge.
+ I tried out meshcentral and it looks great but the developer may stop working on it.
+ I need something very easy to use like teamviewer but probably more affordable and they seeem like the used car salesman of remote support.
+ I definitely need multi monitor support.
+ Quick assist is free but doesn&#x27;t let you see when the pop up for admin comes up to install something and my users don&#x27;t have local admin rights.
+ Thanks.
+    submitted by    /u/boe_d  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11g2tkf/fido_key_sign_in_to_azuread_powershell_stuck/"
+                        open
+                      >
+                        <summary class="article-expander__title">&quot;FIDO Key&quot; Sign in to AzureAD / PowerShell - Stuck</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11g2tkf/fido_key_sign_in_to_azuread_powershell_stuck/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/Dpy1QJikXR6PQquFFanP0Mq_4KMAYm4Pb2U3POTBVvo.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;62033cb2d01267e304404818d0f3f55c95345d48" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>We want to make FIDO Keys mandatory for all administrative accounts in our tenant. It&#x27;s fairly easy to configure using the new &quot;Authentication Strength&quot; Policy in Conditional Access. 
+ Logging in the Browser works fine. Just PowerShell is stuck. Tried it on several machines, all the same.
+ https://ibb.co/KGtsHxs
+ Anyone experiencing the same or knows how to fix this? I tried in PowerShell7 and it works, but we don&#x27;t have PowerShell 7 installed everywhere.
+    submitted by    /u/Alpha_Seb  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11g2rv6/workspot_and_similar_products/"
+                        open
+                      >
+                        <summary class="article-expander__title">Workspot and similar products</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11g2rv6/workspot_and_similar_products/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We&#x27;re a small cloud consulting firm of about 20 remote full-time and contractors scattered around the usa and world. We want a simple solution for managing our machines without complex maintenance.
+ Has anyone used workspot, or are there other similar services I should check out?
+    submitted by    /u/Fast_Kale1109  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11g2qm1/synology_ds218_not_recognising_any_passwords_when/"
+                        open
+                      >
+                        <summary class="article-expander__title">Synology DS218+ not recognising any passwords when mapping drive, then suddenly it does, why?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11g2qm1/synology_ds218_not_recognising_any_passwords_when/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Ok so while typing what was going to be the original post this has started working, but for no apparent reason. This has now gone from a request for help to a quest of understanding.
+ So a while ago I was doing some fiddling with a client Synology, had created a new backup folder, unmapped the old one, attempted to remap the new one. &quot;Invalid Password&quot;. Ok sure, that happens sometimes, thing is I didn&#x27;t actually need the drive to be mapped as the backup software (backup assist) could see the location and access it with the given details so I figured it&#x27;d be fine. Decided to fix mapping the drive after the next scheduled reboot.
+ Everything was not fine, turns out that despite being able to see and access the NAS, when attempting to actually perform the backup task it would fail as &quot;unable to access the network location&quot;. Keep in mind, all I have done is make a new 2023 subfolder in the backup folder (we&#x27;re MSP, they like it that way) and try to map it back after removing the 2022 folder.
+ So I make a new user, try to map it with that, nope, same thing. Despite being able to log into the device with these same creds that Windows doesn&#x27;t like.
+ After that I restart things, bash my head against the wall a bit, find some other people who had similar problems that came about as the result of a setting change (none of mine have, double and triple checked), so I come here, begin writing my post, and mid way through I decide to try to map it one more time.
+ It fucking works.
+ And I haven&#x27;t even done anything. I didn&#x27;t even have to type the details in, it just immediately worked and mapped it like there&#x27;d never even been a problem.
+    submitted by    /u/TheKingOfSpite  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -763,6 +946,29 @@ What is your favorite way to rise your heart rate?
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11g3epl/itot_convergence_monitoring_industrial_equipment/"
+                        open
+                      >
+                        <summary class="article-expander__title">IT/OT convergence, monitoring industrial equipment in zone 0-1</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11g3epl/itot_convergence_monitoring_industrial_equipment/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>What are best practices when it comes to gaining visibility into OT networks, so that one can start better segmentation and applying more security, and in the end safely extracting data that resides in the OT enviorement? 
+ Im having several discussion with both Cisco, OT vendors and customers regarding the best way to start such projects. Some says that SPAN/RSPAN into Micosoft Defender for IoT or equivalent product is sufficient, others say that SPAN will create problems and one must get Cisco cybervision and switches with sensors.
+ Anyone have experience or some advise on what to keep in mind in different scenarios? I know that the Cisco solution works fine, but in big networks it will get really expensive.
+    submitted by    /u/OLEBRON  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -48601,60 +48807,6 @@ CarZing: Get pre-qualified and find the best deals near you: https://carzing.com
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10qhdrs/gpo_scheduled_task_run_gpo_task_on_1st_of_every/"
-                        open
-                      >
-                        <summary class="article-expander__title">GPO Scheduled Task - Run GPO task on 1st of every month + at logon? Or need help creating a task to run.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10qhdrs/gpo_scheduled_task_run_gpo_task_on_1st_of_every/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey everyone, long story short, I&#x27;ve written a wallpaper powershell that changes the wallpaper for a department every month, but allows the wallpaper to still be changed. Basically if you want a custom wallpaper, you have to change it every month. It is what it is, no enforcement on that.
- ​
- Onto the question, I have everything scripted out with powershell basically checking the date, and if the date passes the 1st, it will run a script that changes registry to give a new wallpaper. The wallpapers are different every month.
- ​
- I&#x27;m basically at the final step, everything works locally on my machine, however I&#x27;m having an issue and can&#x27;t figure it out logically what to do next. The Scheduled task I run locally has it &#x27;Run whether user is logged on or not&quot; and it&#x27;s set to not store password…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Linus Tech Tips</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;4ug_KYlnfws"
-                        open
-                      >
-                        <summary class="article-expander__title">I Will MAKE It Fit!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;4ug_KYlnfws">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -48662,8 +48814,8 @@ CarZing: Get pre-qualified and find the best deals near you: https://carzing.com
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4314453853">
-        <time id="build-timestamp" datetime="2023-03-02T13:26:33.339Z">2023-03-02T13:26:33.339Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4314850911">
+        <time id="build-timestamp" datetime="2023-03-02T14:12:16.204Z">2023-03-02T14:12:16.204Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

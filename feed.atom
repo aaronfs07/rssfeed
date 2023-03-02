@@ -2,10 +2,143 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-03-02T13:26:33.440Z</updated>
+    <updated>2023-03-02T14:12:16.289Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[On the cusp of being fired for something ???simplistic???]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11g3jg1/on_the_cusp_of_being_fired_for_something/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11g3jg1/on_the_cusp_of_being_fired_for_something/"/>
+        <updated>2023-03-02T14:02:29.000Z</updated>
+        <summary type="html"><![CDATA[I'll share as much detail as possible as this problem hasn't waivered. Keep in mind this is my first step up from IT specialist to sys admin so bear with me OGs.
+ We are operating on a 2016 Windows Server and this holds all of our drives. The business is about 100 people. In November, I installed the .NET Framework 4.8(KB5020614) and the Update for Windows Server 2016(KB5019964). I have had non-stop issues with connectivity to the drives ever since. The errors string from "local device name is already in use," to "Target name is incorrect."
+ I have found limited success in doing ipconfig/release-renew-flushdns. It's usually a 50-50 chance that the issue resolves after that. If I use the IP address to the server in the file explorer address bar, it immediately pulls up; its the complete opposite when I try to call it by its name \\server1\. I've checked the DNS and DHCP to see if they're properly communicating and there seems to be nothing wrong(not ruling them out).
+ As recent as yesterday, I have started to force our user computers to use a different IP through the IPv4 in adapter options. For instance, I'll make 192.168.8.113 go to 192.168.8.204. I have found complete success with this and the most odd part is I can set the user machine back to automatically grabbing an IP address which will revert it to 192.168.8.113 and it instantly works. 
+ It seems like I'm forcing the previous session to end and renewing the lease on the DHCP ??? I don't know but I'm open to all suggestions as my boss(the owner) grows in irritation. 
+ Thanks ahead of time.
+    submitted by    /u/Zelliion  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IT/OT convergence, monitoring industrial equipment in zone 0-1]]></title>
+        <id>https://www.reddit.com/r/networking/comments/11g3epl/itot_convergence_monitoring_industrial_equipment/</id>
+        <link href="https://www.reddit.com/r/networking/comments/11g3epl/itot_convergence_monitoring_industrial_equipment/"/>
+        <updated>2023-03-02T13:57:07.000Z</updated>
+        <summary type="html"><![CDATA[What are best practices when it comes to gaining visibility into OT networks, so that one can start better segmentation and applying more security, and in the end safely extracting data that resides in the OT enviorement? 
+ Im having several discussion with both Cisco, OT vendors and customers regarding the best way to start such projects. Some says that SPAN/RSPAN into Micosoft Defender for IoT or equivalent product is sufficient, others say that SPAN will create problems and one must get Cisco cybervision and switches with sensors.
+ Anyone have experience or some advise on what to keep in mind in different scenarios? I know that the Cisco solution works fine, but in big networks it will get really expensive.
+    submitted by    /u/OLEBRON  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Determine Prevelance of BYOD]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11g3be1/determine_prevelance_of_byod/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11g3be1/determine_prevelance_of_byod/"/>
+        <updated>2023-03-02T13:52:52.000Z</updated>
+        <summary type="html"><![CDATA[Hi all, Company pretty lax in terms of its approach to BYOD.
+ Something that i want to fix. I need to determine which users are utilising BYOD and how they are doing it to work out a plan of action.
+ We use O365 and have DUO+Okta.
+ Ideally, i would like a report of some description that shows logins from non-corporate devices.
+ DUO reports do not give me the hostname of the device the user is logging in from, and i dont believe Azure logins do either. 
+ In an ideal world i would just turn on the posture settings of DUO and see who screams, but that isnt going to go down well.
+ I need to demonstrate the scale of this to upper management so they realise how many people do this and realise the exposure we have with data on personal devices etc etc. 
+ Can anyone think of a good way to determine which devices logins to O365/DUO/Okta are coming from?
+ Was thinking whether the install log from O365 apps gives telemetry of the device its installed on?
+    submitted by    /u/dr-pepper12  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Architecture input regarding Hyper-V and Docker]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11g3a4g/architecture_input_regarding_hyperv_and_docker/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11g3a4g/architecture_input_regarding_hyperv_and_docker/"/>
+        <updated>2023-03-02T13:51:16.000Z</updated>
+        <summary type="html"><![CDATA[Hello! I have a question regarding following topic/usecase. 
+ We have here a classic on-prem Environement with a hyper-V cluster and mainly Windows Servers in Production. Now we have a new system that will run "dockerized", that environement is a composition of 7-8 containers that run together to deliver that service (mysql, redis, nginx and some other images).
+ How do you deal with that "in general" regarding the management of such stuff?
+ Do you create a bunch of linux hosts virtualised inside hyper-V and manage them with some container orchestrator (any tips - can be commercially backed and cost something)? So, something like a virtualized cluster?
+ Do you build something completely "aside" like a bunch of synlogy nas with docker support? or even a complete new hardware cluster?
+ Using windows servers for docker stuff does not make sense imho. 
+ Thanks for any recommendation :)
+    submitted by    /u/funkyferdy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Secure but cost effective remote support software?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11g3544/secure_but_cost_effective_remote_support_software/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11g3544/secure_but_cost_effective_remote_support_software/"/>
+        <updated>2023-03-02T13:45:08.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I support about 200 users in one company but need to support about 100 in other companies. I had been using real VNC but the customers hate it because I'm not on their computers so they have to invite me and right click is a challenge.
+ I tried out meshcentral and it looks great but the developer may stop working on it.
+ I need something very easy to use like teamviewer but probably more affordable and they seeem like the used car salesman of remote support.
+ I definitely need multi monitor support.
+ Quick assist is free but doesn't let you see when the pop up for admin comes up to install something and my users don't have local admin rights.
+ Thanks.
+    submitted by    /u/boe_d  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA["FIDO Key" Sign in to AzureAD / PowerShell - Stuck]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11g2tkf/fido_key_sign_in_to_azuread_powershell_stuck/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11g2tkf/fido_key_sign_in_to_azuread_powershell_stuck/"/>
+        <updated>2023-03-02T13:30:20.000Z</updated>
+        <summary type="html"><![CDATA[We want to make FIDO Keys mandatory for all administrative accounts in our tenant. It's fairly easy to configure using the new "Authentication Strength" Policy in Conditional Access. 
+ Logging in the Browser works fine. Just PowerShell is stuck. Tried it on several machines, all the same.
+ https://ibb.co/KGtsHxs
+ Anyone experiencing the same or knows how to fix this? I tried in PowerShell7 and it works, but we don't have PowerShell 7 installed everywhere.
+    submitted by    /u/Alpha_Seb  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Workspot and similar products]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11g2rv6/workspot_and_similar_products/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11g2rv6/workspot_and_similar_products/"/>
+        <updated>2023-03-02T13:28:07.000Z</updated>
+        <summary type="html"><![CDATA[We're a small cloud consulting firm of about 20 remote full-time and contractors scattered around the usa and world. We want a simple solution for managing our machines without complex maintenance.
+ Has anyone used workspot, or are there other similar services I should check out?
+    submitted by    /u/Fast_Kale1109  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Synology DS218+ not recognising any passwords when mapping drive, then suddenly it does, why?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11g2qm1/synology_ds218_not_recognising_any_passwords_when/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11g2qm1/synology_ds218_not_recognising_any_passwords_when/"/>
+        <updated>2023-03-02T13:26:23.000Z</updated>
+        <summary type="html"><![CDATA[Ok so while typing what was going to be the original post this has started working, but for no apparent reason. This has now gone from a request for help to a quest of understanding.
+ So a while ago I was doing some fiddling with a client Synology, had created a new backup folder, unmapped the old one, attempted to remap the new one. "Invalid Password". Ok sure, that happens sometimes, thing is I didn't actually need the drive to be mapped as the backup software (backup assist) could see the location and access it with the given details so I figured it'd be fine. Decided to fix mapping the drive after the next scheduled reboot.
+ Everything was not fine, turns out that despite being able to see and access the NAS, when attempting to actually perform the backup task it would fail as "unable to access the network location". Keep in mind, all I have done is make a new 2023 subfolder in the backup folder (we're MSP, they like it that way) and try to map it back after removing the 2022 folder.
+ So I make a new user, try to map it with that, nope, same thing. Despite being able to log into the device with these same creds that Windows doesn't like.
+ After that I restart things, bash my head against the wall a bit, find some other people who had similar problems that came about as the result of a setting change (none of mine have, double and triple checked), so I come here, begin writing my post, and mid way through I decide to try to map it one more time.
+ It fucking works.
+ And I haven't even done anything. I didn't even have to type the details in, it just immediately worked and mapped it like there'd never even been a problem.
+    submitted by    /u/TheKingOfSpite  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Losing tracking data on SSO sign ups]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/11g2ll5/losing_tracking_data_on_sso_sign_ups/</id>
@@ -28983,29 +29116,6 @@ Verizon is horrdendous unless you're talking wireless-only.
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GPO Scheduled Task - Run GPO task on 1st of every month + at logon? Or need help creating a task to run.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10qhdrs/gpo_scheduled_task_run_gpo_task_on_1st_of_every/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10qhdrs/gpo_scheduled_task_run_gpo_task_on_1st_of_every/"/>
-        <updated>2023-02-01T01:58:11.000Z</updated>
-        <summary type="html"><![CDATA[Hey everyone, long story short, I've written a wallpaper powershell that changes the wallpaper for a department every month, but allows the wallpaper to still be changed. Basically if you want a custom wallpaper, you have to change it every month. It is what it is, no enforcement on that.
- ​
- Onto the question, I have everything scripted out with powershell basically checking the date, and if the date passes the 1st, it will run a script that changes registry to give a new wallpaper. The wallpapers are different every month.
- ​
- I'm basically at the final step, everything works locally on my machine, however I'm having an issue and can't figure it out logically what to do next. The Scheduled task I run locally has it 'Run whether user is logged on or not" and it's set to not store password…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I Will MAKE It Fit!]]></title>
-        <id>https://www.youtube.com/watch?v=4ug_KYlnfws</id>
-        <link href="https://www.youtube.com/watch?v=4ug_KYlnfws"/>
-        <updated>2023-02-01T01:56:10.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
         </author>
     </entry>
 </feed>
