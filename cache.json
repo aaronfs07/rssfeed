@@ -410,6 +410,56 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11h09ak/unless_production_is_at_an_absolute_stand_still/",
+          "author": null,
+          "description": "This is happening across probably five or six vendors over the last year. Like the title says, if it isn't a critical P1 outage, the vendors seem to express zero interest in coming to a resolution for my problem in a timely fashion.\n With currently two of my tools from two different vendors that we are paying good money for, there's so many issues that are affecting the usability of the tool that it's practically worthless in it's current state and we are paying hundreds of thousands of dollars for a tool that we can't use because of issues with it. I have had to reach out to our CSM multiple times for both companies because the support technician keeps on saying that he will get back to me by the end of the day but two days later I haven't heard anything. I reach out to the CSM, and then magically within a few hours I have a support engineer beating down my digital door asking when we can schedule a phone call. The phone call takes place, I give them what they need, they say that they will get back to me. 2 days goes by with not a peep from them. Re-engage the CSM, and the cycle repeats. \n With our firewall vendor, it takes an average of 8 days for a resolution, even the most simple of changes. I've brought this up to management multiple times and they say that we don't have the manpower right now to take our firewall duties in house nor do we have the manpower to research and negotiate a contract with a different firewall management company.\n I don't know if it's a staffing shortage or just poor management, but this is incredibly frustrating because I have management at my company asking why these issues aren't resolved yet and I hate shrugging my shoulders and telling them that I'm in a perpetual state of waiting for support to get their act together but it's the truth.\n    submitted by    /u/_twokoolfourskool2_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11h09ak/unless_production_is_at_an_absolute_stand_still/",
+          "publishedOn": "2023-03-03T13:03:46.000Z",
+          "wordCount": 13586,
+          "title": "Unless production is at an absolute stand still, and none of my vendors that I work with are getting back to me when they say they will be getting back to me or responding to me in a reasonable amount of time.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11h094g/hybrid_question/",
+          "author": null,
+          "description": "I am dealing with a cert issue on our on prem exchange 2016 server. Our main email domain is different than what was used on-prem also. Newbusinessname.com vs OBN.com (if that makes sense). The cert on the on-prem machine is for the OBN.com and half our users don't even have that alias anymore, just the newbusinessname.com as their primary. There are no mailboxes on it, it is just a smtp server at this point or used to create new accounts. Accounts are on-prem by synced to Azure. All email is using Exchange online. First, do I even need this on-prem server? Second, what is the real need of an on-prem server? I am guessing I need it to handle the on-prem accounts email attributes. \n I am just tired of cert errors and users being prompted for passwords for the old exchange server that just sits there and relays an email every now and then.\n    submitted by    /u/EmbarrassedLemon  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11h094g/hybrid_question/",
+          "publishedOn": "2023-03-03T13:03:33.000Z",
+          "wordCount": 13210,
+          "title": "Hybrid Question",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11h000t/im_trying_to_create_a_bash_script_who_takes/",
+          "author": null,
+          "description": "So I've written this code with help of google but it's not working. The arguments are not getting passed to the internal variables when i run the script. please help me guys, what is the issue here? the sample code is working fine which is provided here: https://www.geeksforgeeks.org/how-to-pass-and-parse-linux-bash-script-arguments-and-parameters/ Using getopts to parse arguments and parameters but the code which I've written not working,\n #/bin/sh while getopts url:user:pass:db:s3:out: option do case \"${option}\" in url)URL=${OPTARG};; user)USERNAME=${OPTARG};; pass)PASS=${OPTARG};; db)DB=${OPTARG};; s3)S3=${OPTARG};; out)OUT=${OPTARG};; esac done echo \"DB URL : $URL\" echo \"DB Username : $USERNAME\" echo \"DB Password : ********\" echo \"DB Name : $DB\" echo \"S3 Bucket Name : $S3\" echo \"Backup Initiated\" echo \"MySQL Dump Started\" mysqldump -h $URL -u $USERNAME -p$PASS $DB --max_allowed_packet=1G > $OUT-$(date \"+%d-%b-%Y\").sql echo \"Dump Completed, Compressing the dump file...\" zip $($OUT-$(date \"+%d-%b-%Y\")).sql.zip -9 $($OUT-$(date \"+%d-%b-%Y\")).sql echo \"Compression done, Copying the compressed file to AWS S3 bucket\" aws s3 cp $OUT-$(date \"+%d-%b-%Y\").sql.zip s3://$S3 echo \"Copy process to AWS S3 bucket done!\" rm $OUT-$(date \"+%d-%b-%Y\").* echo \"Bakcup Finished, Thank you\" echo \"©dcgmechanics\" \n ​\n Please tell me what Am i doing wrong here, Thank you!\n    submitted by    /u/DCGMechanics  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11h000t/im_trying_to_create_a_bash_script_who_takes/",
+          "publishedOn": "2023-03-03T12:52:04.000Z",
+          "wordCount": 13351,
+          "title": "I'm trying to create a bash script who takes variables as parameter, like run.sh -url https://url.com -user admin -pass pass123, hope you get my point.",
+          "imageUrl": "https://external-preview.redd.it/kVnBrWGTrbn8IcPl7jUrXtEdtv9OiF6cB5yvHuhS0DQ.jpg?auto=webp&v=enabled&s=3d1e12b29962c29b283f923a8285f732781426f8"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11gzz18/creating_a_windows_virtual_environment/",
+          "author": null,
+          "description": "What's the best way to go about recreating Python's virtual environment functionality, for a nice fresh Windows install? \n I'm looking to create a persistent, separate clone of my installation that can handle its own program installs, config, etc without affecting my \"clean\" install. \n If it sounds like I want Windows Sandbox, kind of - but I want it persistent. I know I could make a recovery image of my current windows install, but I'm trying to AVOID needing to restore to a previous date, and I want to use both 'environments'. I considered using a VM with an image of my setup, but AFAIK I'd end up with significantly reduced performance. Lastly, I know SOME applications allow you to install to single users, but some of the tools I need required admin. \n The end goal is to keep my work tools separate, along with their associates config / dependencies / quirks within Windows; while my \"main\" environment stays clean and proper. \n I know very little about Docker, but I wondered if I could put all those apps&dependencies into a container, and run them that way?\n Appreciate any input.\n    submitted by    /u/Stock_Rush2555  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11gzz18/creating_a_windows_virtual_environment/",
+          "publishedOn": "2023-03-03T12:50:43.000Z",
+          "wordCount": 13253,
+          "title": "Creating a windows virtual environment?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11gzx5r/m365_admin_centre_down/",
+          "author": null,
+          "description": "Can't login, we're all seeing an IIS runtime error.\n Can't see anything on the MSFT365Status Twitter account, obviously can't check the status on the admin centre either.\n    submitted by    /u/bluehairminerboy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11gzx5r/m365_admin_centre_down/",
+          "publishedOn": "2023-03-03T12:48:08.000Z",
+          "wordCount": 12938,
+          "title": "M365 admin centre down?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/11gz5r0/technician_training_matrix/",
           "author": null,
           "description": "Morning Everyone,\n We’ve recently hired a couple of Helpdesk technicians and looking to document their training needs as well as training that has been provided. \n Just wondering if anyone has a templated document that they currently use before I start building one. Appreciate every business is different. \n Just don’t want to re-invent the wheel so to speak. \n Cheers,\n    submitted by    /u/hodgey87  \n [link]   [comments]",
@@ -12598,36 +12648,6 @@
           "wordCount": 13177,
           "title": "Moving archived file stubs without rehydrating",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10rc0ud/migrating_100_tb_windows_share/",
-          "author": null,
-          "description": "I'm in the process of migrating 100TB share to our new storage (Isilon A200). The LUNS are currently configured as one big LUN inside of VMware as 1 DS. I'd like to break this up to reduce data loss in the event we have failures and also to simplify our backups (VEEAM).\n Looking for advice on how I should separate this at the SAN level / VMware / Microsoft level ?\n My initial thoughts are:\n  \n10 x 10 TB LUNS\n 10 x 10 TB DataStores VMF6 (I don't think vvols add any value but maybe I'm wrong ?) \n Leverage Storage Spaces on Wiindows to consolidate the disks into one virtual disk ?\n Separate the data into separate basic disks and use DFS-N to present the share as a unified share ?\n \n  \nI have no experience with Storage Spaces but am quite familiar with LVM on linux so shouldn't be an issue. DFS I have a good handle on.\n Thanks!\n    submitted by    /u/guilly08  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10rc0ud/migrating_100_tb_windows_share/",
-          "publishedOn": "2023-02-02T00:59:19.000Z",
-          "wordCount": 13549,
-          "title": "Migrating 100 TB Windows Share",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10rbiom/have_you_ever_seen_an_spf_record_like_this/",
-          "author": null,
-          "description": "https://mxtoolbox.com/SuperTool.aspx?action=mx%3abridgeig.com&run=toolpage\n  v=spf1 redirect=3ch3rswv._spf._d.mim.ec \n The redirects just go on and on listing hundreds of IPs and include things like\n %{i}._spf.mta.salesforce.com %{i}._ip.%{h}._ehlo.%{d}._spf.vali.email \n EDIT: Is there a better way to handle going over 10 lookups?\n    submitted by    /u/daweinah  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10rbiom/have_you_ever_seen_an_spf_record_like_this/",
-          "publishedOn": "2023-02-02T00:37:41.000Z",
-          "wordCount": 13331,
-          "title": "Have you ever seen an SPF record like this?",
-          "imageUrl": "https://external-preview.redd.it/jZpZRd73MYSOs58Ic8qoUNc0yKmMDf6gjaeRHZlHTwo.jpg?auto=webp&v=enabled&s=51e67d43b498bda7e53da247857a07a6c9bd1635"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/10rbcan/imaging_restoringbackup/",
-          "author": null,
-          "description": "It’s been years since I’ve been involved with imaging disks. I might’ve used a boot up disk called “Norton” (not the antivirus) ~15 years ago to create images of disks and to restore them to other computers of matching hardware.\n It’s been so long that I’ve been out of the disk managing game and doing a quick google search really either steers me down using Windows tools (doesn’t seem to work) or paid third party tools (can’t find anything boot up like I used before)\n What would you recommend for disk cloning/managing?\n    submitted by    /u/Demasterpl1  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/10rbcan/imaging_restoringbackup/",
-          "publishedOn": "2023-02-02T00:30:19.000Z",
-          "wordCount": 13393,
-          "title": "Imaging Restoring/Backup",
-          "imageUrl": null
         }
       ]
     },
@@ -13309,6 +13329,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/11h0ego/isp_circuits/",
+          "author": null,
+          "description": "Is anyone buying or able to buy 25g circuits from their ISPs? I’m evaluating gear and wondering if it’s all 10 and 100g being sold or if ISPs are selling 25g circuits too.\n    submitted by    /u/EVPN  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/11h0ego/isp_circuits/",
+          "publishedOn": "2023-03-03T13:10:33.000Z",
+          "wordCount": 12989,
+          "title": "ISP Circuits",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/11gze64/huawei_imaster_nce_as_a_radius_for_wlc/",
           "author": null,
