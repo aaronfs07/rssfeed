@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-05 datetime="2023-03-05T09:57:41.000Z">2023-03-05</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-05 datetime="2023-03-05T09:57:41.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-05 datetime="2023-03-05T12:11:59.000Z">2023-03-05</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-05 datetime="2023-03-05T12:11:59.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,160 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11ivoix/issues_setting_up_fastiron_fcx648shpoe/"
+                        open
+                      >
+                        <summary class="article-expander__title">Issues setting up Fastiron FCX648S-HPOE</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11ivoix/issues_setting_up_fastiron_fcx648shpoe/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I purchased an older switch off of ebay in order to upgrade my internet network at my home. I know enough to be dangerous, but I&#x27;m running into issues setting this up in my home network. 
+ For my main controller, I&#x27;m running an Ubiquiti Dream Machine Pro at 192.168.1.1. I have a few other subnets off of that, but this one for this switch is 192.168.4.0/24.
+ I set the ip address of the switch as 192.168.4.2 255.255.255.0
+ I set the default router of the switch to 192.168.4.1
+ I then setup the dhcp-server pool...
+ ip dhcp-server enable ip dhcp-server pool home network 192.168.4.0 255.255.255.0 excluded address 192.168.4.1 192.168.4.10 excluded address 192.168.4.100 192.168.4.254 dhcp-default-router 192.168.4.2 dns-server 192.168.1.1 lease 1 0 0 deploy 
+ After setting this, I can run &#x60;show ip dhcp-server address-pools&#x60; and it shows me the correct configuration and that I have one active lease for the dhcp server pool, but for whatever reason either i&#x27;m missing something from here or i&#x27;ve done something wrong that just above my scope of knowledge. Either way, i&#x27;m looking for help. 
+ Anything you can contribute I would greatly appreciate.
+    submitted by    /u/bondoli  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11ivimu/something_went_wrong_in_windows_10/"
+                        open
+                      >
+                        <summary class="article-expander__title">&quot;Something went wrong&quot; in Windows 10</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11ivimu/something_went_wrong_in_windows_10/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I got an error message
+ &quot;Something went wrong. We could not sign you in. If this error persists, contact your sysadmin and provide the error code 80070005. Server message: access is denied.&quot;
+ Please advise (this is my PC and I am supposed to be the sysadmin). 
+    submitted by    /u/GraciousReformer  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11ive71/audio_over_rdp_in_2023/"
+                        open
+                      >
+                        <summary class="article-expander__title">Audio over RDP in 2023?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11ive71/audio_over_rdp_in_2023/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>During the 2020 lockdowns we got fairly settled with a remote working configuration that involves our remote team using RDP on a thin client of sorts, remotely controlling a remote Windows 11 Pro workstation (via a VPN). We then either use a work smartphone for VOIP calls, or using remote audio redirection via RDP. Remote audio redirection works OK if latency is low (under 30ms), but we now have someone who has over 150ms ping to their remote workstation. Unfortunately this causes VOIP calls to have a LOT of lag (probably about 1000ms latency or more) and is generally not great. Before I send out another smartphone, I wanted to do a little bit of digging to see if there are better remote audio solutions available.
+ When doing some research I found that some people were experimenting with to passing through a USB audio device, but I can&#x27;t seem to find a way to do this on a Windows 11 Pro workstation - I enabled the group policy option for RemoteFX USB passthrough on my client PC but I still can&#x27;t seem to find this as an option.
+ Other people have suggested installing VOIP software on the local machine - but having to flip flop between the local and remote environment sounds really annoying.
+ The last thing I&#x27;ve discovered is a tool called sound-over-rdp, but I can&#x27;t seem to find any feedback as to whether it&#x27;s a good tool or not. It also is a little bit on the expensive side of things, would rather not drop nearly $3k AUD for 5 users / servers.
+ I did also find an open source project called USBIP-Win that allows for USB redirection, but it seems pretty complex. I had a quick look at their github and I&#x27;m not quite sure it&#x27;d solve my issue to be honest.
+ Any suggestions on the best practices from here would be greatly appreciated!
+    submitted by    /u/stephendt  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11iv8tb/what_os_are_you_running_in_your_workplace_setting/"
+                        open
+                      >
+                        <summary class="article-expander__title">What OS are you running in your workplace setting?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11iv8tb/what_os_are_you_running_in_your_workplace_setting/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Our work is running mostly Windows 10 enterprise with the latest 2H22 version. I have patching and updates through Intune turned on. Is anyone pushing machines to run windows 11 enterprise? Or not bothering for a couple years? Just wanted your honest feedback. We have a few employees who really wanted W11 and like it. They barley see a difference. Just looking for honest feedback if pushing W11 is good or not. Thank you!
+    submitted by    /u/dave_in_IT27  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11iuprm/what_sort_of_responsibilities_do_you_expect_your/"
+                        open
+                      >
+                        <summary class="article-expander__title">What sort of responsibilities do you expect your first level helpdesk to undertake?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11iuprm/what_sort_of_responsibilities_do_you_expect_your/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Title, basically.
+    submitted by    /u/Wholikesguava  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;46
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11iupam/best_practices_for_pagefile_on_an_exchange_server/"
+                        open
+                      >
+                        <summary class="article-expander__title">Best practices for pagefile on an Exchange server 2019</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11iupam/best_practices_for_pagefile_on_an_exchange_server/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ ​
+ ​
+ There are a lot of recommendations about the sizing of the windows page file. What I am looking for is the correct placement.
+ ​
+ We are using SSD disks on storage inside VMWare Environment.
+ ​
+ My questions are :
+ ​
+ 1- Adding page files to other disks may increase performance up to the maximum ?
+ ​
+ 2- if I put the Windows Page File (Pagefile.sys) on the same disk where database or log files are located. is it correct ?
+ ​
+ thanks,
+ Kind regards,
+    submitted by    /u/maxcoder88  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46572,29 +46726,6 @@ Does Teams need to be updated? Does Team just suck? Is this a service issue with
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10szkdf/working_for_a_defense_contractor_us/"
-                        open
-                      >
-                        <summary class="article-expander__title">Working for a defense contractor (US)?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10szkdf/working_for_a_defense_contractor_us/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Can anyone share what it&#x27;s like working for a defense contractor? I&#x27;m in a city with a large military presence and I get hit up by recruiters hiring for defense contractors all the time. 
- I&#x27;m not opposed to working for one but my fear is the bureaucracy and process. I&#x27;m in a very large organization right now and don&#x27;t like the sheer size and complexity of the environment just to get something done. I&#x27;m afraid a defense contractor would be the same simply because they&#x27;re working with the military. 
- I don&#x27;t have a clearance but don&#x27;t think I&#x27;d have a problem getting one.
-    submitted by    /u/ssherman68  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;51
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46719,80 +46850,6 @@ Any other point that they consider necessary to implement...
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10szove/windows_10_specify_number_of_cached_logons/"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows 10: Specify number of cached logons.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10szove/windows_10_specify_number_of_cached_logons/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;8e9dd29e55be5f9d4be03f8a2ca6dc669418c160" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>We set this policy to 2 cached logons via GPO so that assigned laptop users would not lose their cached credentials if a second account was used for any reason.
- I looked in the local registry to verify that the setting is configured and it is.
- Cached domain logon information - Windows Server | Microsoft Learn 
- HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ 
-  
-Value name: CachedLogonsCount
-  
-Values of 0-50 are valid and it is set as &quot;2&quot; and the laptop has been restarted, but only one logon is being cached. If &quot;run as&quot; is used with a second account, the original user is no longer able to logon offline. 
- Is there anything else than needs to be done to make this work?
- Is there any method to view which user account or accounts logons are currently cached on a device?
-    submitted by    /u/Real_Lemon8789  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10szk26/should_i_force_all_traffic_through_the_corp_vpn/"
-                        open
-                      >
-                        <summary class="article-expander__title">Should I force all traffic through the corp VPN?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10szk26/should_i_force_all_traffic_through_the_corp_vpn/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have seen comments in various places about not routing everything from the client through the corp vpn because it becomes a bottleneck for things like zoom meetings.
- But this seems like the easiest thing to setup. And we have less than 50 people at the company for now. Should I be considering not forcing all traffic through the vpn(when they have it on)? And if so... how? Right now our endpoints are public and we use ip whitelisting. So forcing all traffic through the vpn means I just have to whitelist the VPN. Doing selective traffic I assume means I have to somehow tell the client what to send to the VPN and what not to...
-    submitted by    /u/jack_of-some-trades  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/10syxm9/the_entry_for_this_years_most_obfuscative_request/"
-                        open
-                      >
-                        <summary class="article-expander__title">The Entry for This Years Most Obfuscative Request</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/10syxm9/the_entry_for_this_years_most_obfuscative_request/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>[4:49 PM] ******* Hi Anon. Am I allowed to install Steam to my laptop? It&#x27;s a software for hosting engagement activities with colleagues.
-    submitted by    /u/Ernest_Walker  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;47
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46831,8 +46888,8 @@ Values of 0-50 are valid and it is set as &quot;2&quot; and the laptop has been 
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4335735818">
-        <time id="build-timestamp" datetime="2023-03-05T11:09:31.442Z">2023-03-05T11:09:31.442Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4336003286">
+        <time id="build-timestamp" datetime="2023-03-05T12:22:39.105Z">2023-03-05T12:22:39.105Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
