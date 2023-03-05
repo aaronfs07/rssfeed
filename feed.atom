@@ -2,10 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-03-05T09:11:51.001Z</updated>
+    <updated>2023-03-05T10:12:26.925Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[DKIM office 365 troubleshooting]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11itcpm/dkim_office_365_troubleshooting/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11itcpm/dkim_office_365_troubleshooting/"/>
+        <updated>2023-03-05T09:57:41.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I have 1 email address linked to a custom domain. The domain is hosted on name.com, and the email is hosted via Microsoft365
+ I'm able to send and receive mail from within my outlook client just fine.
+ I followed the "Enabling DKIM" guide from learn.microsoft on the following link:
+ https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide
+ Additionally, I also followed the github guide on https://github.com/duocircle/Office365-Setup-DKIM-DMARC-SPF
+ By following the guides, I added 2 DNS records for my custom domain, and waited 24h to verify this in the dashboard. After 24h the verification succeeded, and the tool at https://security.microsoft.com/dkimv2 reported that DKIM was set up successfully. 
+ However, 48h later, messages received from this email address still report 
+ dkim=fail (no key for signature) 
+ In the header.
+ SPF and ARC are both reported as pass.
+ I tried to verify the DKIM records via an external tool (https://mxtoolbox.com/SuperTool.aspx?action=dkim), which reports:
+  No DKIM Record found 
+ Could it be that I need to publish another TXT record with the shape?
+ v=DKIM1; p=76E629F05F70 9EF665853333 EEC3F5ADE69A 2362BECE4065 8267AB2FC3CB 6CBE 
+ And if so, does anyone know where to get this kind of information?
+ I'm out of ideas on what to try, to make the DKIM check succeed.
+    submitted by    /u/jefmeijvis  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Join PC to domain assessment check?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11it5w9/join_pc_to_domain_assessment_check/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11it5w9/join_pc_to_domain_assessment_check/"/>
+        <updated>2023-03-05T09:46:37.000Z</updated>
+        <summary type="html"><![CDATA[I wonder if there is a way to enforce a condition through GPO that if someone want to join PC to domain without Mcafee app being installed in the targeted PC it will prevent them from joining them to domain it's like assessment checking if the application exist then it can be joined to domain.
+ Other ways AFAIK deploying through SCCM, but I wonder if there are assessment check or conditions before joining to domain or am just dreaming. 
+ This task should be performed by our Helpdesk support team but sometimes they tend to forget to install the application manually in the targeted PC. 
+ Your insight is much appreciated
+    submitted by    /u/DashRyde  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Velo 510 LTE interface disappears]]></title>
+        <id>https://www.reddit.com/r/networking/comments/11it0fq/velo_510_lte_interface_disappears/</id>
+        <link href="https://www.reddit.com/r/networking/comments/11it0fq/velo_510_lte_interface_disappears/"/>
+        <updated>2023-03-05T09:37:45.000Z</updated>
+        <summary type="html"><![CDATA[Hi guys, 
+ I’ve got this odd issue the with the VMware sdwan / Velocloud Edge 510-LTE. I have about 150 and randomly they drop their LTE interface. It’s just not there. The debug thinks so too. A reboot doesn’t fix, firmware upgrade doesn’t fix. I have to pull the power for a bit and reconnect to resolve. Across my fleet I’ve got usually about 5 with this issue. The SP can’t work it out and VMware’s reply is it’s not a priority so they get to it one day.
+ Curious if anyone seen this ? I though initially heat related but I’ve demonstrated it’s isn’t. 
+ Cheers 
+ Matt
+    submitted by    /u/Material_Ad_3743  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MS365 user account - how do you fully rename user account and overcome problems with device profile]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/11isgfi/ms365_user_account_how_do_you_fully_rename_user/</id>
@@ -27840,65 +27899,6 @@ Values of 0-50 are valid and it is set as "2" and the laptop has been restarted,
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Schools resolution to slow internet]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/10swqi9/schools_resolution_to_slow_internet/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/10swqi9/schools_resolution_to_slow_internet/"/>
-        <updated>2023-02-03T22:04:42.000Z</updated>
-        <summary type="html"><![CDATA[I had a hilarious scenario at a school I provide IT support for.. Its one of those things that happen in IT where if I were to tell someone they would instantly think it was bs. And in the moment you don't quite believe whats happening yourself.
- So, this school they have a 40mbps VDSL line. As you can imagine with over 200 devices on the network at times this is pretty slow. Today the download speed was 0.4 mbps with a 800ms ping. How they survive on this I will never know. I'm constantly trying to get them to upgrade to fibre but they just do not have the budget to do that. There network equipment is a mess too, they have a Dell Sonicwall router about 12 year old and Cisco switches from about 10 years ago. They recently upgraded a couple of switches to unifi and how have unifi ac pro access points.
- ​
- Today I was going round seeing if anyone had any issues in their classrooms and a staff member approached me asking why they had been asked to turn off ALL devices in their class. I walked around and everybody was turning all their devices off, it felt like apocalypse scene in a movie. The person who told them to turn everything off I went and asked her why this had happened and her response was "I needed to download a large file and the internet is too slow". I couldn't stop laughing. I had never heard of anything so outrageous in my life. The funny thing was, 75% devices dropped off the network and the speed was 2mbps download. 
- ​
- Its so hard working with schools to improve their tech when they quite literally don't have the budget to upgrade stuff. They upgraded their servers a couple years ago but that was because they literally failed constantly.
- ​
- Thought this story was too funny not to share.
-    submitted by    /u/aaronf151  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Eve-NG v5 N9K instability]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10swib1/eveng_v5_n9k_instability/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10swib1/eveng_v5_n9k_instability/"/>
-        <updated>2023-02-03T21:55:42.000Z</updated>
-        <summary type="html"><![CDATA[Hi everyone
- I lost the last 3 days trying to get a lab of 8 N9Kvs to stay online and as soon as I fired up my old eve-ng v2 it worked fine. I transferred the n9k image from v2 to v5 so it’s the exact same image.
- Any idea why v5 would be so much less stable for me?
-    submitted by    /u/-FDT-  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Friday Afternoon Update | 2.3.23]]></title>
-        <id>b7639c85-bd4b-414d-bec5-17755dc67fcc</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2023-02-03T21:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
-PajamaGram: Order today and SAVE 25%, use code ‘NUDE’ https://www.pajamagram.com/]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Is there any worldwide Cellular Data Plan for Business?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10svese/is_there_any_worldwide_cellular_data_plan_for/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10svese/is_there_any_worldwide_cellular_data_plan_for/"/>
-        <updated>2023-02-03T21:11:58.000Z</updated>
-        <summary type="html"><![CDATA[we are planing to build a wireless system to go, with Cisco Meraki Hardware. As Internet Breakout, we want a cellular gateway. Because we need this system all around the world, to have quick and easy wireless access for a bunch of people.
- Is there any service provider that offers you the option to have an unlimited data plan, for all around the world?
- Are satellites maybe an option? 
- I'm open to all kind of Ideas!
-    submitted by    /u/DavidKrb  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
