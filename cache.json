@@ -334,16 +334,6 @@
           "wordCount": null,
           "title": "VLOG Thursday 317:TrueNAS Testing, AI Hype Things, Security, Errata, and Q&A",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=FSt3H3nZ3Vc",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=FSt3H3nZ3Vc",
-          "publishedOn": "2023-02-08T23:16:48.000Z",
-          "wordCount": null,
-          "title": "#shorts The Team Testing and Validating pfsense HA Setups",
-          "imageUrl": null
         }
       ]
     },
@@ -379,6 +369,46 @@
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11nnaqv/windows_firewall_resets_program_permissions_after/",
+          "author": null,
+          "description": "Hi!\n I use WSL2 Ubuntu distribution for my development stuff and sometimes i need to access my Windows's localhost from WSL. There is an IP in /ets/resolv.conf that can be used to access Windows but firewall blocks all requests from WSL by default, after some digging i could not find a way to fix it with firewall rules so i tried to disable firewall just for WSL's virtual network adapter and it worked.\n Here is powershell command, that i use: Set-NetFirewallProfile -Profile Public -DisabledInterfaceAliases \"vEthernet (WSL)\"\n I does the thing as i said but the problem is that every time i disable/enable firewall with it, firewall spits out permission prompts for every program that i already permitted before. Sometimes it is very annoying, especeially when permissions are reset for my DLNA and network sharing sevices and i can no longer access my PC via local network.\n Is there something that i'm doing wrong? Would appreciate any advice on how to configure firewall to allow outbound requests from WSL environment without having to explicitly set permissions for every program again every time.\n    submitted by    /u/john_daw  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11nnaqv/windows_firewall_resets_program_permissions_after/",
+          "publishedOn": "2023-03-10T12:02:55.000Z",
+          "wordCount": 13161,
+          "title": "Windows firewall resets program permissions after disabling it on WSL network adapter",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11nmnux/interteam_communication_is_nonexistant/",
+          "author": null,
+          "description": "Some background - our IT hierarchy is siloed so we have Ops/Support/CRM/Cloud/Sec\n All the above make changes/decisions that we here in support are not consulted or have any input on - we only find out when the shit hits the fan - how do I go about remeding this so my guys aren't always firefighting - I'm not the TL (our TL in non-technical) But I'm the \"go to\" guy when it comes to issues. \n ​\n Any & all suggestions appreciated!\n    submitted by    /u/DMLR  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11nmnux/interteam_communication_is_nonexistant/",
+          "publishedOn": "2023-03-10T11:32:28.000Z",
+          "wordCount": 13164,
+          "title": "Inter-team communication is non-existant",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11nmkyl/suggestion_on_enterprise_gis_server_hardware_sys/",
+          "author": null,
+          "description": "submitted by    /u/lazazael  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11nmkyl/suggestion_on_enterprise_gis_server_hardware_sys/",
+          "publishedOn": "2023-03-10T11:28:27.000Z",
+          "wordCount": 13238,
+          "title": "suggestion on enterprise gis server hardware sys req?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11nmism/microsoft_365_m365_sign_in_issues_the_past_two/",
+          "author": null,
+          "description": "Has anyone else noticed a big uptick in Microsoft 365 sign in issues reported the past two weeks for people running Windows?\n ​\n Various apps from Word, Outlook, Excel to OneDrive all repeatedly prompting to sign in with their M365 credentials over and over. \n ​\n Not seeing any pattern to as it seems to be impacting all Windows clients from local AD joined, AD joined with AADconnect sync, AzureAD Joined, Windows Hello, Regular password, or even basic workgroup. All same problem all in the past two weeks all different M365 tenants.\n ​\n ​\n The workaround is to \n  \nopen Word and click File - Account - Sign out all accounts\n \nThen log off, log back in as a different local admin account and delete the folder: C:\\Users\\<username of the user with the issue>\\AppData\\Local\\Packages\\Microsoft.AAD.BrokerPluginxxxxx\\\n \nThen reboot and log back in to Windows profile and sign back into the apps again.\n \n ​\n But even with that some people get the problem again the following day.\n ​\n Anyone else seeing this?\n    submitted by    /u/CupOfTeaWithOneSugar  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11nmism/microsoft_365_m365_sign_in_issues_the_past_two/",
+          "publishedOn": "2023-03-10T11:25:16.000Z",
+          "wordCount": 13154,
+          "title": "Microsoft 365 M365 sign in issues the past two weeks (Windows)",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/11nlxjx/what_types_of_network_views_do_you_create_that/",
           "author": null,
@@ -12944,6 +12974,16 @@
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/networking/comments/11nncuj/best_way_to_restrict_a_user_to_establish_ssl_vpn/",
+          "author": null,
+          "description": "Regardless of which firewall we are using from one of the popular brands like Fortinet, Palo Alto, Cisco, or Sophos Fortinet, PA, Cisco or Sophos, what is the best way to allow a user to establish SSL VPN from only a specific device?\n While researching, I found that many of the admins suggest using PKI certificate-based authentication. However, I am concerned about the downsides of using a cert-based VPN.\n Firstly, certificates have a limited lifespan, which means I will have to monitor the age of all issued certificates continually. \n This could mean a lot of effort, especially if we have so many VPN users.\n Secondly, not all regular users are knowledgeable enough to install a certificate on their device, which would mean that I would have to bring the device in to have the certificate installed. This could be a repetitive process because the certificate has a definite lifespan.\n Given these concerns, I wanted to ask the community: what is the best way to restrict SSL VPN access to specific devices while avoiding the downsides of cert-based VPN? Are there any alternative methods or best practices that I should consider? \n Any insights or recommendations would be appreciated.\n    submitted by    /u/techno_it  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/11nncuj/best_way_to_restrict_a_user_to_establish_ssl_vpn/",
+          "publishedOn": "2023-03-10T12:05:35.000Z",
+          "wordCount": 13326,
+          "title": "Best way to restrict a user to establish SSL VPN from specific device?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/networking/comments/11nj4po/moving_san_traffic_from_seperated_network_over/",
           "author": null,
           "description": "As I am a storage/vmware admin at my current role and our network team is looking into moving away from our current network setup. We are currently using Xtreme switches and core and moving on the Fabric. \n While my SAN switches are now not routed over the core and are different from my TOR switches. My 4 SAN switches are running standalone, 2 in each datacenter connected to each other. \n Now with Fabric incomming our network team want to use the same switch for TOR and SAN network both routed over the core, is this a good idea ? \n Currently i'm running a test cluster with a vmware host connected to 2 frabric switches for TOR & SAN and that traffic is running over our old core X8 back to our old SAN switch and our storage appliances. What I am seeing atm is there are only a few test VM's running on that host, but the latency is high. I wonder if this setup is a good idea or if it's better to keep SAN completaly seperated from the other traffic like it is in our current setup.\n    submitted by    /u/CBAken  \n [link]   [comments]",
@@ -18231,16 +18271,6 @@
           "publishedOn": "2023-02-09T00:58:21.000Z",
           "wordCount": 13954,
           "title": "Do you bother submitting bugs or opening tickets for things you've already worked around?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10xfblk/favorite_lte_to_serial_console_oobm_solutions/",
-          "author": null,
-          "description": "My boss was asking me for budget requests and I pitched getting an LTE to serial and/or ethernet OOBM solution for some of our more critical sites to reduce the chance of a drive-of-shame misconfiguration scenario as the sprawl of our critical locations has slowly grown from a 10 minute drive to a 30 minute drive. \n Neither of us has much experience with these above the small business level, what solutions do you all use? What features should I be looking for? We're probably looking at 4-6 sites, with 2-8 devices at each site that we'd want to access.\n    submitted by    /u/Captainpatch  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10xfblk/favorite_lte_to_serial_console_oobm_solutions/",
-          "publishedOn": "2023-02-09T00:00:43.000Z",
-          "wordCount": 13372,
-          "title": "Favorite LTE to serial console OOBM solutions?",
           "imageUrl": null
         }
       ]
