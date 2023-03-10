@@ -2,10 +2,138 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-03-10T09:13:33.796Z</updated>
+    <updated>2023-03-10T10:14:04.081Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Stange connection issue Veeam v12 to newly build Linux Repository]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11nl0z9/stange_connection_issue_veeam_v12_to_newly_build/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11nl0z9/stange_connection_issue_veeam_v12_to_newly_build/"/>
+        <updated>2023-03-10T10:04:32.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ This has been something I've been breaking my head over the last few days:
+ - Newly installed VEEAM v12 server on Server 2022, no firewall active, 3 NIC's in an LACP trunk. VLAN dedicated for the connection to the backup repo, VLAN for management of the backup server.
+ - Newly installed Linux repository server, firewall disabled (for testing), installation of veeam agent went fine through SSH, LACP bond of 4 NIC's untagged in backup VLAN.
+ - I can SSH into the linux repo from the BS, no problem.
+ - Trying to create a backup gives a connection error on port 2501 and it fails.
+ - netstat on the linux host shows a connection from BS ip to host on port 2500 and 2502... 
+ netsstat -tulpna | grep veeam
+ tcp6 0 0 192.168.30.11:2500 192.168.30.10:65210ESTABLISHED 21672/veeamagent
+ tcp6 0 0 192.168.30.11:6162 192.168.30.10:65311ESTABLISHED 20282/veeamtranspor
+ tcp6 0 156 192.168.30.11:2502 192.168.30.10:65313 ESTABLISHED 21881/veeamagent
+ ​
+ Any suggestions on the cause?
+    submitted by    /u/Ams197624  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How often do you run a full backup?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11nkz9n/how_often_do_you_run_a_full_backup/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11nkz9n/how_often_do_you_run_a_full_backup/"/>
+        <updated>2023-03-10T10:01:50.000Z</updated>
+        <summary type="html"><![CDATA[Most backup software lets you do synthetic backups where your client backup is "incremental forever" but every so often a full backup is assembled.
+ How often are you running those full backups and especially with workloads that are large but with a low change rate where you're just backing up the same TBs of data every time you take a full backup.
+ I guess there's no right answer just trying to read the room on where it's headed.
+ Jas
+    submitted by    /u/MusicWallaby  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Open Sharing Thread - March 10, 2023]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11nkysq/weekly_open_sharing_thread_march_10_2023/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11nkysq/weekly_open_sharing_thread_march_10_2023/"/>
+        <updated>2023-03-10T10:01:14.000Z</updated>
+        <summary type="html"><![CDATA[There is a great deal of user-generated content out there, from scripts and software to tutorials and videos, but we've generally tried to keep that off of the front page due to the volume and as a result of community feedback. There's also a great deal of content out there that violates our advertising/promotion rule, from scripts and software to tutorials and videos.
+ We have received a number of requests for exemptions to the rule, and rather than allowing the front page to get consumed, we thought we'd try a weekly thread that allows for that kind of content. We don't have a catchy name for it yet, so please let us know if you have any ideas!
+ In this thread, feel free to show us your pet project, YouTube videos, blog posts, or whatever else you may have and share it with the community. Commercial advertisements, affiliate links, or links that appear to be monetization-grabs will still be removed.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Replacing LastPass Enterprise with Keeper]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11nkxfl/replacing_lastpass_enterprise_with_keeper/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11nkxfl/replacing_lastpass_enterprise_with_keeper/"/>
+        <updated>2023-03-10T09:59:24.000Z</updated>
+        <summary type="html"><![CDATA[Since The Breach Of All Breaches in December October August, we have been investigating alternatives to LastPass.
+ So far we've explored Bitwarden and 1Password, and I've also had a couple of brief flings with NordPass and Dashlane. None of them come up to feature parity with LastPass, but 1Password's security architecture was compelling.
+ However, last week I came across Keeper, and it's the first product I've found that is enterprisey enough to have everything we're after, without being a full blown PAM/PAW solution like CyberArk. 
+ The features we're after are:
+  
+Azure AD integration for login and user provisioning
+ Custom templates for records
+ Granular sharing
+ Ease of use for 'normal' users
+ Actually secure
+  
+Does anyone having any experience with Keeper to either say they'd recommend it, or recommend completely avoiding it?
+ I've heard bad things about their Firefox plugin, but I will be doing a trial personally to validate that.
+ Also, does anyone know of any in depth security assessments carried out by independent security experts that can validate that their security architecture is good?
+    submitted by    /u/snacky_puppy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best Programming Language for writing scripts to run on other computers?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11nkm15/best_programming_language_for_writing_scripts_to/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11nkm15/best_programming_language_for_writing_scripts_to/"/>
+        <updated>2023-03-10T09:41:40.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking to write small programs most likely with simple GUIs that I can put on other computers. (For now just simple things like editing a value in .ini or .xml files, etc). Python is my go-to but since that requires having Python installed on the PC it's running on...
+ Is it worth trying to learn batch or PowerShell, or seeing if I can transform Python scripts into .exes? Or perhaps something else entirely?
+    submitted by    /u/kirbynumber2  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MS365 - SPAM Email Question]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11nkit9/ms365_spam_email_question/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11nkit9/ms365_spam_email_question/"/>
+        <updated>2023-03-10T09:36:41.000Z</updated>
+        <summary type="html"><![CDATA[One of our clients is experiencing an issue I haven't come across often on MS365.
+ There is a shared mailbox used by the sales team. Periodically they'll get hit with waves of 50-100 per hour bounce-back notifications or "Mail Delivery Failure" messages. It's all mail servers responding with limited details, as in they don't include the original message, and from what I can tell the headers are not original so I can't glean much info.
+ I'm still not 100% certain if this is originating with us. I'd like to confirm if someone has gained access to the outgoing SMTP and is sending from our mail server or if it's spoofed emails being bounced back to our spoofed email address.
+ Does anyone have any helpful advice?
+ The only useful info I've found so far on the backend is that "Real-Time Detections" show the incoming "Mail Delivery Failure" emails as quarantined malware emails. It lists us as the recipient and the mail servers as the senders.
+ Where do I go from here?
+    submitted by    /u/monkey7168  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I ****ing love my job!]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11nkf9v/i_ing_love_my_job/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11nkf9v/i_ing_love_my_job/"/>
+        <updated>2023-03-10T09:31:15.000Z</updated>
+        <summary type="html"><![CDATA[I often see rants here about working conditions. So here is mine!
+ I LOVE my job. We have a strong development team that is super fun! We go for drinks, talk shop, talk smack and in general have a good time! We support each other when we need to complain about feces for brains business people and help each other when needed.
+ My job itself is very challenging and I get a lot of freedom in developing our infrastructure. The expertise in our team is skyhigh and I learn everyday. Every few months when I look back and I am amazed at how much I learned. I am allowed to make mistakes, no hard feelings. 
+ Our team leads have vision for the future and know how to communicate this. As far as I can tell this vision is in line with the developments in our field.
+ I get to be responsible for processes and I get to criticize policy and processes. If spearhead an effort to change something people listen with an open mind. Often people will think along with me and enable me to actually make a difference. 
+ I work exclusively with Linux systems we fully administer ourselves. The only windows in my life is the labtop because thats policy. 
+ The lunch at work is cheap and amazing in quality for what you pay. 
+ Sure there are bad days and good days. The business is terrible at software development lifecycle. We get involved way too late. There are large problems with understaffing in our team. But in general the good far outweighs the bad. 
+ I LOVE my job.
+    submitted by    /u/5k4nda1  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Thousands of digitalocean IP addresses ssh attacking one of my servers.]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/11nk1fj/thousands_of_digitalocean_ip_addresses_ssh/</id>
@@ -27843,30 +27971,6 @@ Robust change management (file based so it's git compatible)
  This automatically enables the API to listen on every layer 3 interface on the switch... EXCEPT Management1. This is problematic, because we use the IPs of the Management1 interfaces for DNS across all of our TOR switches, and using a spreadsheet just isn't acceptable in my environment. 
  Does anyone know a way to enable the API on a management interface? Is it even possible? I'm going open a case with Arista to ask about it, but figured I would also try you fine folks too.
     submitted by    /u/commence_jigglin  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[#shorts  Synology Surveillance Station & Amcrest Project]]></title>
-        <id>https://www.youtube.com/watch?v=ckTxfpwlsnA</id>
-        <link href="https://www.youtube.com/watch?v=ckTxfpwlsnA"/>
-        <updated>2023-02-08T22:00:05.000Z</updated>
-        <author>
-            <name>Lawrence Systems</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Slow ISP Speeds 1G - 10G - 1G]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10xbhqr/slow_isp_speeds_1g_10g_1g/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10xbhqr/slow_isp_speeds_1g_10g_1g/"/>
-        <updated>2023-02-08T21:33:21.000Z</updated>
-        <summary type="html"><![CDATA[I'm getting slow speed tests from every test site of about 200 Mb down but can hit 900+ Mb up.
- ISP fiber comes in to their switch, and then runs 1G CAT6 to my firewall. My firewall has a 10G fiber connection to a Cisco switch, and this switch goes out via 1G Ethernet to my network. Nothing else is connected to this switch at this time.
- My ISP has suggested that I enable flow control on my switch, but my 10G link shouldn't be getting anything over 1G since that's what it has further upstream and downstream, right? Would flow control really do anything in this setup?
- https://i.imgur.com/hHSnb0T.png
-    submitted by    /u/PineTreesSmellGood  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
