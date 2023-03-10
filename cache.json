@@ -380,6 +380,26 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11nlxjx/what_types_of_network_views_do_you_create_that/",
+          "author": null,
+          "description": "What do you use to document your network visually? What types of views do you create? Do you need any view to show to your boss (you know, to feel informed and 'in control')? Are you using any of them for NOC display or do you prefer dashboards like Grafana?\n The customer I am helping right now has created some simple diagrams about memory, CPU etc for switches, some temperature sensors from the server room, and UPC battery levels as tracked in the software they use for monitoring. This is, however, some really old version of the software and the view with diagrams needs to be scrolled so no use in displaying them on the monitor screen. Also, they need something to show/display to the boss which is rather general, and colorful but 'not too alarming' (should not be screaming about some newly detected problem too early, more like day average situation overview).\n Any advice? What would you put on the 'boss dashboard' about your network? What type of view would you do just to help you/your colleagues do their job?\n    submitted by    /u/Wrzos17  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11nlxjx/what_types_of_network_views_do_you_create_that/",
+          "publishedOn": "2023-03-10T10:55:06.000Z",
+          "wordCount": 13181,
+          "title": "What types of network views do you create that you find most useful? Are you more into Visio or Grafana?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11nlhlm/trying_to_set_up_a_ha_cluster_for_my_network_but/",
+          "author": null,
+          "description": "Hi all, I hope I'm allowed to ask this here, if not please let me know where I might be able to find help. \n I started an internship a few months ago and was tasked with setting up a HA cluster with a few test servers, after about 2 or 3 weeks I figured it out and got it set up. Keep in mind I am studying Computer Science, so my knowledge on networking and system administration is limited, honestly not sure why they gave me this work to do. \n Now a few days ago they gave me access to a live server they want me to set up and I ran into an error I don't know how to fix. \n I am using two Window server 2019 and running mssql 2019. I wanted to set up the failover cluster, but when running the validate configuration wizard, I get this error:\n DHCP status for network interface 'servername'.'domainname' - Ethernet0 differs from network Cluster Network 1.\n The servername and domainname is filled in, but I just left it blank for security reasons \n I have tried googling the problem, but I'm not getting any luck there. Also no one in the office knows how to work with databases, and the one guy that does kinda know what is going on, is very busy with other stuff so I can't bother him too much.\n    submitted by    /u/Kaptain_Krazy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11nlhlm/trying_to_set_up_a_ha_cluster_for_my_network_but/",
+          "publishedOn": "2023-03-10T10:30:33.000Z",
+          "wordCount": 13438,
+          "title": "Trying to set up a HA cluster for my network but I'm getting an error I don't understand",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/11nl0z9/stange_connection_issue_veeam_v12_to_newly_build/",
           "author": null,
           "description": "Hi,\n This has been something I've been breaking my head over the last few days:\n - Newly installed VEEAM v12 server on Server 2022, no firewall active, 3 NIC's in an LACP trunk. VLAN dedicated for the connection to the backup repo, VLAN for management of the backup server.\n - Newly installed Linux repository server, firewall disabled (for testing), installation of veeam agent went fine through SSH, LACP bond of 4 NIC's untagged in backup VLAN.\n - I can SSH into the linux repo from the BS, no problem.\n - Trying to create a backup gives a connection error on port 2501 and it fails.\n - netstat on the linux host shows a connection from BS ip to host on port 2500 and 2502... \n netsstat -tulpna | grep veeam\n tcp6 0 0 192.168.30.11:2500 192.168.30.10:65210ESTABLISHED 21672/veeamagent\n tcp6 0 0 192.168.30.11:6162 192.168.30.10:65311ESTABLISHED 20282/veeamtranspor\n tcp6 0 156 192.168.30.11:2502 192.168.30.10:65313 ESTABLISHED 21881/veeamagent\n ​\n Any suggestions on the cause?\n    submitted by    /u/Ams197624  \n [link]   [comments]",
@@ -18221,26 +18241,6 @@
           "publishedOn": "2023-02-09T00:00:43.000Z",
           "wordCount": 13372,
           "title": "Favorite LTE to serial console OOBM solutions?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10xdqq5/nexus_6248_upgrade_guide/",
-          "author": null,
-          "description": "Hi everyone. Old skool lurker here. So as the title states. I have inherited a mess for lack of better terms. I have been tasked with upgrading the dated FI 6248’s on this network I am on. What I am looking for, is some type of upgrade guide on which parts should be upgraded first. Like, chassis => iom => blade? Or opposite? Mix? Or it doesn’t matter?\n I have looked online and I have been unable to find anything. Is this one of those “ancient networking secrets”? Or is that I am just a terrible googler(is that even a term??) \n This is my first time having to perform an upgrade on the FIs, as the VM guys usually handles that. But, since there are no VM guys, well, you get the idea. Any help would be greatly appreciated. Thanks.\n    submitted by    /u/-_-Ehh_Idgaf_NeWay  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10xdqq5/nexus_6248_upgrade_guide/",
-          "publishedOn": "2023-02-08T22:59:04.000Z",
-          "wordCount": 13234,
-          "title": "Nexus 6248 upgrade guide",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10xdgp9/enabling_the_arista_eos_api_on_a_management/",
-          "author": null,
-          "description": "We're attempting to automate some common TOR switch configurations to save time. We decided to roll with the native Arista API, which is enabled as follows: \n management api http-commands no shutdown \n This automatically enables the API to listen on every layer 3 interface on the switch... EXCEPT Management1. This is problematic, because we use the IPs of the Management1 interfaces for DNS across all of our TOR switches, and using a spreadsheet just isn't acceptable in my environment. \n Does anyone know a way to enable the API on a management interface? Is it even possible? I'm going open a case with Arista to ask about it, but figured I would also try you fine folks too.\n    submitted by    /u/commence_jigglin  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10xdgp9/enabling_the_arista_eos_api_on_a_management/",
-          "publishedOn": "2023-02-08T22:48:26.000Z",
-          "wordCount": 13175,
-          "title": "Enabling the Arista EOS API on a management interface?",
           "imageUrl": null
         }
       ]
