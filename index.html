@@ -22,48 +22,11 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-11 datetime="2023-03-11T10:09:53.000Z">2023-03-11</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-11 datetime="2023-03-11T10:09:53.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-11 datetime="2023-03-11T11:50:56.000Z">2023-03-11</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-11 datetime="2023-03-11T11:50:56.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11ogiwr/why_do_different_ip_geolocation_services_provide/"
-                        open
-                      >
-                        <summary class="article-expander__title">Why do different IP geolocation services provide different answers?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11ogiwr/why_do_different_ip_geolocation_services_provide/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I wanted to find out where the servers of a wbesite I am connected to are and I tried a geolocation service. I found that different geolocation services provide different answer. How do these geolocation services work and why do they provide different answers?
- This website looks into several geolocation services at once:
- https://www.iplocation.net/ip-lookup/146.75.117.140
-    submitted by    /u/yolofreeway  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -75,6 +38,76 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11oi9e0/looking_for_an_identity_management_directory/"
+                        open
+                      >
+                        <summary class="article-expander__title">Looking for an identity management / directory / single-sign-on solution</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11oi9e0/looking_for_an_identity_management_directory/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Client has about 75,000 users that need access to between 2 and 6 platforms each. Currently we run a SAML IDP with a custom authentication process that reads from multiple databases, no central user storage or management, authentication is a function of a matching email existing in certain locations and the values of various database columns.
+ There is no single source of truth for user information. Would like to store users in one place along with roles/permissions management. We transmit some of these as SAML attributes currently, sending what is relevant to each service provider.
+ Most of these users are low value, not paying customers or employees and the client deemed Okta too expensive, I don&#x27;t think they&#x27;d go above $0.25 per user but they&#x27;ll happily pay tens of thousands for us to set up something free.
+ It&#x27;s not exactly my wheelhouse and I&#x27;d be doing this entirely on my own with a restrictive timeline/budget so I need some advice. Would like to stick with SAML auth since I know it works on all things users need access to and I have a decent understanding of it at this point. Could Azure AD suit these needs? That&#x27;s my 2nd choice after Okta but the presentation to me as a developer isn&#x27;t as clear.
+ I&#x27;m leaning towards a cloud product recommendation and help setting it up vs something we&#x27;ll have to install, configure, host and maintain, because of the severely limited resources, but may have to go with something self-hosted due to budget constraints.
+    submitted by    /u/overdoing_it  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11ohqha/chatgpt_instructions_not_clear/"
+                        open
+                      >
+                        <summary class="article-expander__title">ChatGPT - Instructions not clear</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11ohqha/chatgpt_instructions_not_clear/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Write a powershell script to block a specific app on startup while logging into a terminal service profile
+ # Define the name of the app to be blocked
+ $appName &#x3D; &quot;ExampleApp.exe&quot;
+ ​
+ # Get the path to the startup folder for the current user&#x27;s Terminal Service profile
+ $profilePath &#x3D; (Get-ItemProperty -Path &quot;HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon&quot; -Name &quot;Shell&quot;).Shell
+ ​
+ # If the startup folder exists, check if the app is already there
+ if (Test-Path $profilePath) {
+ $appPath &#x3D; Join-Path $profilePath $appName
+ if (Test-Path $appPath) {
+ Write-Host &quot;The app is already blocked on startup.&quot;
+ exit
+ }
+ }
+ ​
+ # If the app is not there, create a shortcut to it and add it to the startup folder
+ $appShortcut &#x3D; (New-Object -ComObject WScript.Shell).CreateShortcut(&quot;$profilePath\$appName.lnk&quot;)
+ $appShortcut.TargetPath &#x3D; &quot;C:\Program Files\ExampleApp\ExampleApp.exe&quot;
+ $appShortcut.Save()
+ Write-Host &quot;The app has been blocked on startup.&quot;
+ \&#x60;&#x60;&#x60;
+ ​
+ ​
+ This script first defines the name of the app to be blocked. It then gets the path to the startup folder for the current user&#x27;s Terminal Service profile from the registry. If the startup folder exists, the script checks if the app is already there, and if so, it exits. If the app is not there, it creates a shortcut to the app and adds it to the startup folder. Finally, the script outputs a message indicating that the app has been blocked on startup.
+    submitted by    /u/Forward-Fact-5472  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -170,6 +203,43 @@
                             <span class="media-object__text">
                               <span>I have a windows server with a data volume that’s over 200TB that I need to back up. I am aware of MS 64TB VSS limitation and my go to Veeam backup won’t work. Is there any software out there that would allow me to backup this volume? I am backing up to a storage server running FreeNAS. Any suggestions would be much appreciated
     submitted by    /u/nacona164  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11ogiwr/why_do_different_ip_geolocation_services_provide/"
+                        open
+                      >
+                        <summary class="article-expander__title">Why do different IP geolocation services provide different answers?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11ogiwr/why_do_different_ip_geolocation_services_provide/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I wanted to find out where the servers of a wbesite I am connected to are and I tried a geolocation service. I found that different geolocation services provide different answer. How do these geolocation services work and why do they provide different answers?
+ This website looks into several geolocation services at once:
+ https://www.iplocation.net/ip-lookup/146.75.117.140
+    submitted by    /u/yolofreeway  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;43
                                   min&hairsp;)</span>
@@ -46175,83 +46245,6 @@ Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ 
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10yakou/blogpost_friday/"
-                        open
-                      >
-                        <summary class="article-expander__title">Blogpost Friday!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10yakou/blogpost_friday/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>It&#x27;s Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member&#x27;s new and shiny blog posts.
- Feel free to submit your blog post and as well a nice description to this thread.
- Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10yah2m/never_ipv6/"
-                        open
-                      >
-                        <summary class="article-expander__title">Never IPv6?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10yah2m/never_ipv6/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/pk8P6hzligFoJSen2SaIja8BdkN7DbW7c1CAddquTG0.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;6891747db5fd51e6dff1f5aaac21abab665c4cbe" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>There are at least couple of people over in /r/IPv6 that regard some networking administrators as IP Luddites for refusing to accept IPv6. 
- We have all heard how passionate some are about IPv6. I would like some measure of how many are dispassionate. I&#x27;d like to get some unfiltered insight into how hard-core networking types truly feel about the technical merits of IPv6. 
- Which category are you in?
-  
-I see no reason to move to IPv4 for any reason whatsoever. Stop touching my cheese.
- I will move to IPv6, though I find the technical merits insufficient.
- I will move to IPv6, and I find the technical merits sufficient.
- This issue is not the idea of IPv6 (bigger addresses, security, mobility, etc.); It&#x27;s IPv6 itself. I would move, if I got something better than IPv6.
-  
-Please feel free to add your own category.
-    submitted by    /u/RedoTCPIP  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;57
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/10ya34t/how_do_you_actually_remove_brokenjunk/"
-                        open
-                      >
-                        <summary class="article-expander__title">How do you actually remove broken/junk environmental variables from a Cisco Catalyst switch?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/10ya34t/how_do_you_actually_remove_brokenjunk/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;ve got a switch in rommon that has a bunch of crap in the environmental variables (set) I can&#x27;t get rid of, and Google isn&#x27;t helping me find an answer.
- Delete and unset are valid commands on rommon, but both of these commands fail to remove the junk. I think the switch was saying they don&#x27;t exist or it was read only for these variables or something. 
- Example; One of the variables is &quot;BOOT-&#x3D;packages.conf&quot;. Notice the typo. There&#x27;s a bunch of stuff like this all configured.
-    submitted by    /u/Erediv  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46290,8 +46283,8 @@ Please feel free to add your own category.
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4391990989">
-        <time id="build-timestamp" datetime="2023-03-11T11:09:29.796Z">2023-03-11T11:09:29.796Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4392244715">
+        <time id="build-timestamp" datetime="2023-03-11T12:21:04.645Z">2023-03-11T12:21:04.645Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

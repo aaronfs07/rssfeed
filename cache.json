@@ -380,6 +380,26 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11oi9e0/looking_for_an_identity_management_directory/",
+          "author": null,
+          "description": "Client has about 75,000 users that need access to between 2 and 6 platforms each. Currently we run a SAML IDP with a custom authentication process that reads from multiple databases, no central user storage or management, authentication is a function of a matching email existing in certain locations and the values of various database columns.\n There is no single source of truth for user information. Would like to store users in one place along with roles/permissions management. We transmit some of these as SAML attributes currently, sending what is relevant to each service provider.\n Most of these users are low value, not paying customers or employees and the client deemed Okta too expensive, I don't think they'd go above $0.25 per user but they'll happily pay tens of thousands for us to set up something free.\n It's not exactly my wheelhouse and I'd be doing this entirely on my own with a restrictive timeline/budget so I need some advice. Would like to stick with SAML auth since I know it works on all things users need access to and I have a decent understanding of it at this point. Could Azure AD suit these needs? That's my 2nd choice after Okta but the presentation to me as a developer isn't as clear.\n I'm leaning towards a cloud product recommendation and help setting it up vs something we'll have to install, configure, host and maintain, because of the severely limited resources, but may have to go with something self-hosted due to budget constraints.\n    submitted by    /u/overdoing_it  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11oi9e0/looking_for_an_identity_management_directory/",
+          "publishedOn": "2023-03-11T11:50:56.000Z",
+          "wordCount": 13300,
+          "title": "Looking for an identity management / directory / single-sign-on solution",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11ohqha/chatgpt_instructions_not_clear/",
+          "author": null,
+          "description": "Write a powershell script to block a specific app on startup while logging into a terminal service profile\n # Define the name of the app to be blocked\n $appName = \"ExampleApp.exe\"\n ​\n # Get the path to the startup folder for the current user's Terminal Service profile\n $profilePath = (Get-ItemProperty -Path \"HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" -Name \"Shell\").Shell\n ​\n # If the startup folder exists, check if the app is already there\n if (Test-Path $profilePath) {\n $appPath = Join-Path $profilePath $appName\n if (Test-Path $appPath) {\n Write-Host \"The app is already blocked on startup.\"\n exit\n }\n }\n ​\n # If the app is not there, create a shortcut to it and add it to the startup folder\n $appShortcut = (New-Object -ComObject WScript.Shell).CreateShortcut(\"$profilePath\\$appName.lnk\")\n $appShortcut.TargetPath = \"C:\\Program Files\\ExampleApp\\ExampleApp.exe\"\n $appShortcut.Save()\n Write-Host \"The app has been blocked on startup.\"\n \\```\n ​\n ​\n This script first defines the name of the app to be blocked. It then gets the path to the startup folder for the current user's Terminal Service profile from the registry. If the startup folder exists, the script checks if the app is already there, and if so, it exits. If the app is not there, it creates a shortcut to the app and adds it to the startup folder. Finally, the script outputs a message indicating that the app has been blocked on startup.\n    submitted by    /u/Forward-Fact-5472  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11ohqha/chatgpt_instructions_not_clear/",
+          "publishedOn": "2023-03-11T11:21:56.000Z",
+          "wordCount": 13238,
+          "title": "ChatGPT - Instructions not clear",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/11ogb5z/laptop_touchpad_issues/",
           "author": null,
           "description": "Hello fellow admins! I'm experiencing the strangest issue with my Lenovo Slim 7 Carbon. Intermittant touchpad operation. It just seems to 'lose' my finger. I thought maybe it's dirty, or dirty fingers, but for some reason, I'll be moving my pointer and suddenly it stops. I then have to wait for it to decide to work again. No issue with using multi-fingers to scroll, zoom, etc. Just the single finger Has anyone else experienced this? As you can imagine, this has made remote access more challenging than usual when I can't use a mouse.\n    submitted by    /u/WhiskyEchoTango  \n [link]   [comments]",
@@ -17915,36 +17935,6 @@
           "publishedOn": "2023-02-10T01:25:40.000Z",
           "wordCount": 14436,
           "title": "Please, somebody, help me make this work! Combine two networks.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10yakou/blogpost_friday/",
-          "author": null,
-          "description": "It's Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member's new and shiny blog posts.\n Feel free to submit your blog post and as well a nice description to this thread.\n Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10yakou/blogpost_friday/",
-          "publishedOn": "2023-02-10T00:00:09.000Z",
-          "wordCount": 12963,
-          "title": "Blogpost Friday!",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10yah2m/never_ipv6/",
-          "author": null,
-          "description": "There are at least couple of people over in /r/IPv6 that regard some networking administrators as IP Luddites for refusing to accept IPv6. \n We have all heard how passionate some are about IPv6. I would like some measure of how many are dispassionate. I'd like to get some unfiltered insight into how hard-core networking types truly feel about the technical merits of IPv6. \n Which category are you in?\n  \nI see no reason to move to IPv4 for any reason whatsoever. Stop touching my cheese.\n I will move to IPv6, though I find the technical merits insufficient.\n I will move to IPv6, and I find the technical merits sufficient.\n This issue is not the idea of IPv6 (bigger addresses, security, mobility, etc.); It's IPv6 itself. I would move, if I got something better than IPv6.\n  \nPlease feel free to add your own category.\n    submitted by    /u/RedoTCPIP  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10yah2m/never_ipv6/",
-          "publishedOn": "2023-02-09T23:55:55.000Z",
-          "wordCount": 17064,
-          "title": "Never IPv6?",
-          "imageUrl": "https://external-preview.redd.it/pk8P6hzligFoJSen2SaIja8BdkN7DbW7c1CAddquTG0.jpg?auto=webp&v=enabled&s=6891747db5fd51e6dff1f5aaac21abab665c4cbe"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/10ya34t/how_do_you_actually_remove_brokenjunk/",
-          "author": null,
-          "description": "I've got a switch in rommon that has a bunch of crap in the environmental variables (set) I can't get rid of, and Google isn't helping me find an answer.\n Delete and unset are valid commands on rommon, but both of these commands fail to remove the junk. I think the switch was saying they don't exist or it was read only for these variables or something. \n Example; One of the variables is \"BOOT-=packages.conf\". Notice the typo. There's a bunch of stuff like this all configured.\n    submitted by    /u/Erediv  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/10ya34t/how_do_you_actually_remove_brokenjunk/",
-          "publishedOn": "2023-02-09T23:39:47.000Z",
-          "wordCount": 13087,
-          "title": "How do you actually remove broken/junk environmental variables from a Cisco Catalyst switch?",
           "imageUrl": null
         }
       ]

@@ -2,10 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-03-11T11:09:29.894Z</updated>
+    <updated>2023-03-11T12:21:04.743Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Looking for an identity management / directory / single-sign-on solution]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11oi9e0/looking_for_an_identity_management_directory/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11oi9e0/looking_for_an_identity_management_directory/"/>
+        <updated>2023-03-11T11:50:56.000Z</updated>
+        <summary type="html"><![CDATA[Client has about 75,000 users that need access to between 2 and 6 platforms each. Currently we run a SAML IDP with a custom authentication process that reads from multiple databases, no central user storage or management, authentication is a function of a matching email existing in certain locations and the values of various database columns.
+ There is no single source of truth for user information. Would like to store users in one place along with roles/permissions management. We transmit some of these as SAML attributes currently, sending what is relevant to each service provider.
+ Most of these users are low value, not paying customers or employees and the client deemed Okta too expensive, I don't think they'd go above $0.25 per user but they'll happily pay tens of thousands for us to set up something free.
+ It's not exactly my wheelhouse and I'd be doing this entirely on my own with a restrictive timeline/budget so I need some advice. Would like to stick with SAML auth since I know it works on all things users need access to and I have a decent understanding of it at this point. Could Azure AD suit these needs? That's my 2nd choice after Okta but the presentation to me as a developer isn't as clear.
+ I'm leaning towards a cloud product recommendation and help setting it up vs something we'll have to install, configure, host and maintain, because of the severely limited resources, but may have to go with something self-hosted due to budget constraints.
+    submitted by    /u/overdoing_it  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ChatGPT - Instructions not clear]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11ohqha/chatgpt_instructions_not_clear/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11ohqha/chatgpt_instructions_not_clear/"/>
+        <updated>2023-03-11T11:21:56.000Z</updated>
+        <summary type="html"><![CDATA[Write a powershell script to block a specific app on startup while logging into a terminal service profile
+ # Define the name of the app to be blocked
+ $appName = "ExampleApp.exe"
+ ​
+ # Get the path to the startup folder for the current user's Terminal Service profile
+ $profilePath = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name "Shell").Shell
+ ​
+ # If the startup folder exists, check if the app is already there
+ if (Test-Path $profilePath) {
+ $appPath = Join-Path $profilePath $appName
+ if (Test-Path $appPath) {
+ Write-Host "The app is already blocked on startup."
+ exit
+ }
+ }
+ ​
+ # If the app is not there, create a shortcut to it and add it to the startup folder
+ $appShortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$profilePath\$appName.lnk")
+ $appShortcut.TargetPath = "C:\Program Files\ExampleApp\ExampleApp.exe"
+ $appShortcut.Save()
+ Write-Host "The app has been blocked on startup."
+ \```
+ ​
+ ​
+ This script first defines the name of the app to be blocked. It then gets the path to the startup folder for the current user's Terminal Service profile from the registry. If the startup folder exists, the script checks if the app is already there, and if so, it exits. If the app is not there, it creates a shortcut to the app and adds it to the startup folder. Finally, the script outputs a message indicating that the app has been blocked on startup.
+    submitted by    /u/Forward-Fact-5472  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Why do different IP geolocation services provide different answers?]]></title>
         <id>https://www.reddit.com/r/networking/comments/11ogiwr/why_do_different_ip_geolocation_services_provide/</id>
@@ -27521,55 +27573,6 @@ Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ 
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Blogpost Friday!]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10yakou/blogpost_friday/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10yakou/blogpost_friday/"/>
-        <updated>2023-02-10T00:00:09.000Z</updated>
-        <summary type="html"><![CDATA[It's Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member's new and shiny blog posts.
- Feel free to submit your blog post and as well a nice description to this thread.
- Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Never IPv6?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10yah2m/never_ipv6/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10yah2m/never_ipv6/"/>
-        <updated>2023-02-09T23:55:55.000Z</updated>
-        <summary type="html"><![CDATA[There are at least couple of people over in /r/IPv6 that regard some networking administrators as IP Luddites for refusing to accept IPv6. 
- We have all heard how passionate some are about IPv6. I would like some measure of how many are dispassionate. I'd like to get some unfiltered insight into how hard-core networking types truly feel about the technical merits of IPv6. 
- Which category are you in?
-  
-I see no reason to move to IPv4 for any reason whatsoever. Stop touching my cheese.
- I will move to IPv6, though I find the technical merits insufficient.
- I will move to IPv6, and I find the technical merits sufficient.
- This issue is not the idea of IPv6 (bigger addresses, security, mobility, etc.); It's IPv6 itself. I would move, if I got something better than IPv6.
-  
-Please feel free to add your own category.
-    submitted by    /u/RedoTCPIP  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How do you actually remove broken/junk environmental variables from a Cisco Catalyst switch?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/10ya34t/how_do_you_actually_remove_brokenjunk/</id>
-        <link href="https://www.reddit.com/r/networking/comments/10ya34t/how_do_you_actually_remove_brokenjunk/"/>
-        <updated>2023-02-09T23:39:47.000Z</updated>
-        <summary type="html"><![CDATA[I've got a switch in rommon that has a bunch of crap in the environmental variables (set) I can't get rid of, and Google isn't helping me find an answer.
- Delete and unset are valid commands on rommon, but both of these commands fail to remove the junk. I think the switch was saying they don't exist or it was read only for these variables or something. 
- Example; One of the variables is "BOOT-=packages.conf". Notice the typo. There's a bunch of stuff like this all configured.
-    submitted by    /u/Erediv  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
