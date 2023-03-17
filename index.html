@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-16 datetime="2023-03-16T14:11:20.000Z">2023-03-16</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-16 datetime="2023-03-16T14:11:20.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-17 datetime="2023-03-17T08:44:09.000Z">2023-03-17</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-17 datetime="2023-03-17T08:44:09.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,586 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tlddb/best_practices_rename_domain_administrator/"
+                        open
+                      >
+                        <summary class="article-expander__title">Best Practices - rename domain administrator account to a new name</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tlddb/best_practices_rename_domain_administrator/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;8e9dd29e55be5f9d4be03f8a2ca6dc669418c160" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Hi,
+ I&#x27;d like to rename the Administrator account as, you know, Best Practices. I&#x27;ve found the MS article like below.
+ https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-d--securing-built-in-administrator-accounts-in-active-directory
+ ​
+ What is the best way to do this and has anyone had any issues doing this?
+ Has anyone done this? Run into any troubles?
+    submitted by    /u/maxcoder88  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tjwg6/moral_ethical_issue_about_company_product_ever/"
+                        open
+                      >
+                        <summary class="article-expander__title">Moral / ethical issue about company product ever held you back on an offer?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tjwg6/moral_ethical_issue_about_company_product_ever/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>tldr; ever said no to a job out of pure concern for the product the company offers 
+ I was contacted by a company recently for a job that looks quite neat.
+ As I looked into the company I found out it is a (huge) debt collection agency. If they collected debts only from companies I&#x27;d probably be fine.
+ But they also collect from the normal day to day person, say some poor sod just getting behind on bills due to unfortunate circumstances ending up collection horrible interest rates and something that was a couple hundred ends up in the thousands. I&#x27;d sort of be making money from making people miserable. Call me a bleeding heart or whatever, but that&#x27;s the way it is.
+ So I decided that just wouldn&#x27;t fly with me.
+ I&#x27;ve worked with things that may be considered unethical as well, legal intercept amongst others, but all I ever heard were people conspiring on fraud of various kinds. I was fine with that.
+ So, boiled down, I wonder if anyone else ever said no to a job due to the product the company offers?
+    submitted by    /u/TyphoidJaneDoeMary  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tj2cs/powershell_script_to_remotely_update_firmware_on/"
+                        open
+                      >
+                        <summary class="article-expander__title">Powershell Script to Remotely Update Firmware on Brother Printers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tj2cs/powershell_script_to_remotely_update_firmware_on/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>While this does not work for all models or configurations of Brother printers, it can be a lifesaver so I thought I would share: 
+ # Set your printer&#x27;s IP address and model number $PrinterIP &#x3D; &quot;192.168.1.100&quot; $PrinterModel &#x3D; &quot;HL-L8360CDW&quot; # Define the URL for the firmware download page $FirmwareURL &#x3D; &quot;https://support.brother.com/g/b/downloadtop.aspx?c&#x3D;us&amp;lang&#x3D;en&amp;prod&#x3D;$($PrinterModel.ToLower())_eus&quot; # Get the latest firmware version from Brother&#x27;s website $LatestFirmwareInfo &#x3D; (Invoke-WebRequest -Uri $FirmwareURL -UseBasicParsing).Links | Where-Object { $_.href -like &quot;*.firm&quot; } | ForEach-Object { @{ Version &#x3D; $_.innerText.Trim() -replace &#x27;[^0-9.]&#x27;, &#x27;&#x27;; DownloadUrl &#x3D; $_.href } } | Sort-Object -Descending -Property Version | Select-Object -First 1 if (!$LatestFirmwareInfo) { Write-Host &quot;Could…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tiyyk/how_do_you_answer_when_someone_asks_what_does_a/"
+                        open
+                      >
+                        <summary class="article-expander__title">How do you answer when someone asks “What does a SysAdmin do?” without getting too technical?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tiyyk/how_do_you_answer_when_someone_asks_what_does_a/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Someone asked me this and my answer made them look more confused lol. Just curious to what others say.
+    submitted by    /u/x_Furious_x  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11th0jr/online_training_is_this_the_norm_now/"
+                        open
+                      >
+                        <summary class="article-expander__title">Online training - is this the norm now?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11th0jr/online_training_is_this_the_norm_now/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>(This really needs an “old man yells at clouds” flair. Can we get that added, mods?) 
+ I’m having to take an online class for a new PaaS thing we’re getting at work, and apart from the actual content kicking my butt, the so-called teaching method is driving me nuts… I need to have two browser windows open, one with the course material and videos and one with the lab environment, and an ebook open in its own app; the course material references the book, and the book directs the labs. 
+ I haven’t taken any classes in probably 15 years because I learn best by doing not trying to ingest knowledge with no application, and I’m finding the whole experience to be less than optimal; jumping between three different environments breaks concentration, videos aren’t conducive to skipping back to review info, and I don’t feel I’m learning anything. I have two big monitors on my desk, which should be enough space for all this but it still feels inefficient. 
+ My boss tells me I should take more classes when (if? Lol) I complete this one, but quite frankly, if this is the new normal for online learning it sucks.
+    submitted by    /u/Any_Particular_Day  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tgus5/til_you_can_see_all_of_your_office_versions_in/"
+                        open
+                      >
+                        <summary class="article-expander__title">TIL: You can see all of your Office versions in config.office.com and update them to the latest Monthly Enterprise channel to help with CVE-2023-23397.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tgus5/til_you_can_see_all_of_your_office_versions_in/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>If you go to this link and turn this on, this portal will be populated (over time) with all of your Office versions, additionally show workstations that are behind on security updates.
+ You don&#x27;t need Intune for this either, I guess it works based on the UPNs logging into your tenant to the O365 Apps.
+ You can then also go into &#x27;Servicing&#x27; &gt; &#x27;Monthly Enterprise&#x27; &gt; and roll out the latest version to a set amount of PCs (or all) and set a deadline of say 1 day to get updated. You probably would not want to do that every month, but there is flexibility.
+ This may be old news, but I logged onto a dozen different clients and they did not have it turned on, so I guess not a lot of people know about it.
+ Link: https://config.office.com/officeSettings/inventory
+ More info: https://learn.microsoft.com/en-us/deployoffice/admincenter/inventory
+    submitted by    /u/SoMundayn  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;46
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tgmyw/as_a_manager_how_would_you_setup_a_on_call/"
+                        open
+                      >
+                        <summary class="article-expander__title">As a manager how would you setup a on call schedule. (24/5 environnement , weekend mostly off) with 4 team members?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tgmyw/as_a_manager_how_would_you_setup_a_on_call/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I would like some recommendations on how would be a good thing for everyone. Here&#x27;s some scenario I consider : 1 week on per person with rotation each week. 
+ Designed by day. Ex Monday, Tuesday #1 / Wednesday, Thursday #2 / Friday and weekend (in case of major emergency or major patch) #3
+ 4 off and rotate so everyone has a week off at some point.
+ Half week #1 and #2 then #3 and #4
+ Any other suggestions and what would be the best in your opinion? 
+ Take good care guys,
+ Edit because I realized some crucial information was missing.
+ The production is running 24/5 but our team is working 8-5 with 1 hour lunch break abd 15 min break AM/PM. Our team don&#x27;t really need to be on premises 24/7.
+ Concerning weekends. It would only be for a major update of something risky I also give the option t…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;61
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11tl2hd/juniper_switching_how_does_it_compare_with/"
+                        open
+                      >
+                        <summary class="article-expander__title">Juniper switching, how does it compare with competitors?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11tl2hd/juniper_switching_how_does_it_compare_with/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So my investigations are still running.
+ What I have collected so far:
+  
+Ubiquiti is a few steps below professional grade brands, as a whole
+ Aruba series gets a lot of fans and seems to be a good overall solution
+ Juniper Mist APs growing strong
+ FortiXXX strong on firewalls, weaker on switching
+  
+This brings me to these ideas:
+  
+Use Fortigate for firewalling
+ Use one-brand setup for switching, to keep things easier to manage
+  
+At this stage, I miss some thoughts about Juniper switches..... Is there any user who has an experience with these devices?
+    submitted by    /u/_ReeX_  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11tjtxn/perimeter_and_internal_firewalls/"
+                        open
+                      >
+                        <summary class="article-expander__title">Perimeter and internal firewalls</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11tjtxn/perimeter_and_internal_firewalls/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all!
+ I’ve been hired as a network engineer somehow and they want to build a new DC. My boss is requesting my input on having perimeter and internal (local network facing) firewalls. However as per my understanding, the main idea of that is for the DMZ, and we don’t have any need for it currently since all of our public services are in the cloud. Is having 4 firewalls worth it in that case? Are there any other use cases?
+ ISP ——&gt; Perimeter FW ——&gt; DMZ ——&gt; Internal FW ——&gt; Network 
+ Right now we purchased 2 Fortigate firewalls for the perimeter, and we’re thinking of adding 2 Palo Alto FW’s.
+    submitted by    /u/Eequal  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-16 datetime="2023-03-17T03:46:27.000Z">2023-03-16</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-16 datetime="2023-03-17T03:46:27.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tg66q/mdm_for_windows_for_non365_org/"
+                        open
+                      >
+                        <summary class="article-expander__title">MDM for Windows for non-365 org?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tg66q/mdm_for_windows_for_non365_org/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all,
+ We&#x27;re mainly Macs (managed by Mac only MDM), but have a handful of Win devices that aren&#x27;t managed atm. Normally I&#x27;d go straight to Intune, but since our org doesn&#x27;t run on M365 (Apps for biz is the highest we go), Intune isn&#x27;t the best option price wise. So looking for recommendations for other Win MDMs.
+  
+Hexnode looks interesting, and is cheaper than Intune.
+ Scalefusion is a hard no due to their sales tactics.
+ Managengine is a no due to some reviews in this sub...plus it&#x27;s more expensive than Intune.
+  
+   submitted by    /u/Sasataf12  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11tfqal/why_does_wsus_show_multiple_defender_updates_as/"
+                        open
+                      >
+                        <summary class="article-expander__title">Why does WSUS show multiple Defender updates as needed?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11tfqal/why_does_wsus_show_multiple_defender_updates_as/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Instead of only showing the latest definition as needed, it shows multiple versions (at least 5).
+ Even when you manually update the definitions to the latest, the older versions still show as needed in the WSUS console instead of disappearing as superseded. 
+ Is there a fix for this?
+    submitted by    /u/Real_Lemon8789  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t9q9u/anyone_else_have_a_software_blacklist/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone else have a software blacklist</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t9q9u/anyone_else_have_a_software_blacklist/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Fellow Sysadmins I need a laugh this week. I’m currently interviewing for a full time remote job. Got to the final round of a MSP and when I mentioned tech stacks they begrudgingly admitted their customers are heavy ibm legacy Java enterprise web applications users and the ticketing system is BMC remedy from 2009. 
+ These systems have caused so much grief over the years I simply could not imagine working on them full time. The amount of security advisories alone can send your teams mental state to oblivion. 
+ I felt bad turning them down but the hiring manager was very professional about it. Even mentioned hiring staff was becoming increasingly difficult as young or old hires are well aware these products reputation precedes them. The support teams are anemic and on a month to month biases vulnerabilities could pile higher than a dung beetle rolling shit. Anyone else have a vendor they simply won’t work anymore, with would love to hear why humorous or not.
+    submitted by    /u/lemmycaution0  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;52
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t6rm9/psa_when_put_together_a_terrible_network_please/"
+                        open
+                      >
+                        <summary class="article-expander__title">PSA: When put together a terrible network, please don’t also program all static IPs inside the devices themselves…</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t6rm9/psa_when_put_together_a_terrible_network_please/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I’ve been working with this one client for a few years. They’re a break fix client, and I was trying to get them to approve some network improvements at one of their sites. It had an EoLed routers, switches, APs, the works. Additionally, the whole network was flat (a single subnet for their security system as well as their guest devices), and full of holes: ports 22, 80, 443, were open. They had some vulnerable VPN server running as well… it was a mess, and the whole thing needed to be overhauled, if not just dumped gasoline on. 
+ Because there was a pile on of vendors who had performed work on this network over the years, there was also, of course, zero documentation. 
+ When I went to segment the network, almost every device that had been installed had a static IP that was set inside of a password protected console. The job which should have taken a couple of days quickly turned into a nightmare. I had to track down ghost vendors. We had to call alarm companies. I had to get in touch with the people who installed a stupid TV remote, which only they had software to manage. After I called them, they asked why they “couldn’t access the TV remote’s management directly via the public IP address?”
+ I learned to hate the static IP with a passion.
+ So here’s my public service announcement: please set your damn static IPs via the router’s DHCP sever! That way they’re easier to manage if you need to move things around.
+    submitted by    /u/rb3po  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;57
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t49mp/cve202323397_outlook_patching_script/"
+                        open
+                      >
+                        <summary class="article-expander__title">CVE-2023-23397 Outlook Patching Script</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t49mp/cve202323397_outlook_patching_script/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I wrote a PowerShell script to patch our various versions of Office in one go. I figured that I would share. It may take some tweaking to work in you environment if you are using non-ProPlus versions of 2013, 2016, 2019, or 2021.
+ We use Windows Update for Business with a generous Quality Update deferral period. I wrote this script with that in mind so the deferral period gets temporarily disabled. I also threw in a similar function if you are using WSUS.
+ As always, never run random code from a stranger on production systems. Test it on a non-prod machines until you are confident that it will work for you.
+ # Install PSWindowsUpdate PowerShell module if needed if (!(Get-Module -Name PSWindowsUpdate -ListAvailable)) { Write-Output &quot;PSWindowsUpdate module not found. Installing module...&quot; In…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;51
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t218p/what_is_the_best_way_to_learn_intune/"
+                        open
+                      >
+                        <summary class="article-expander__title">What is the best way to learn intune ?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t218p/what_is_the_best_way_to_learn_intune/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello everyone,
+ My situation is this: I started in a service desk a few days ago and I&#x27;m completely &quot;new&quot; to it. therefore I have very little or no knowledge and practice of certain concepts, application, architecture,… my boss asked me to follow a project which mainly concerns intune. so what i want to know is what is the best and efficient way to learn intune. Udemy? Youtube ? thanks for your help guys
+    submitted by    /u/neofelis08  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;46
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t1r78/vendors_with_good_customer_support/"
+                        open
+                      >
+                        <summary class="article-expander__title">Vendors with good customer support</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t1r78/vendors_with_good_customer_support/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Make a comment with the name of a vendor that has good customer support. Please do not include any other details, just the name of the company. Thank you.
+    submitted by    /u/oaklandsuperfan  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;49
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t12cs/microsoft_365_copilot/"
+                        open
+                      >
+                        <summary class="article-expander__title">Microsoft 365 Copilot</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t12cs/microsoft_365_copilot/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Introducing Microsoft 365 Copilot | Microsoft 365 Blog
+ (120) Introducing Microsoft 365 Copilot | Your Copilot for Work - YouTube
+ This is a game changer, and it&#x27;s a great tool to improve productivity. I wonder how much Microsoft will charge for this, and maybe they will come up with E7 and E9 licenses soon.
+    submitted by    /u/dany20mh  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;6
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t0p19/automated_documentation_tool/"
+                        open
+                      >
+                        <summary class="article-expander__title">Automated Documentation Tool</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t0p19/automated_documentation_tool/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Has anyone used this or know of anything similar/better? 
+ I need to up my documentation game and it&#x27;d be easier for me to do if it would just map out the process I do as I do it.
+    submitted by    /u/Zumcddo  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;47
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11sxysw/workplace_from_hell_i_gave_my_2_week_what_to_do/"
+                        open
+                      >
+                        <summary class="article-expander__title">Workplace from hell, I gave my 2 week what to do if bullied about consulting?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11sxysw/workplace_from_hell_i_gave_my_2_week_what_to_do/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So if any remember my story I was a desktop support tech that ended up being single IT person for an organization as “network administrator” with a small raise with no training hand off or help. I believe I have been trying to do the job of about 5 ppl. Initially I even stayed full nighters and work next day without sleep. There was so much demand and pretty much have been treated like garbage. There have been many crying alone days and near a complete mental breakdown. I found a new job and gave my notice and what I feared would happen is happening. They will try to bully me into a consulting deal. I gave them one and a half week notice as I had not clearance yet from new job. They’re saying I have a moral obligation to stay longer to train someone since I’m the only person that knows these systems for years. I told them I will write all documentation necessary. I know they prob asked their lawyer as a lot of legal terminology is used when talking with me so that tells me they’ve been asking their in house lawyer what are their options. They tried to promise matching salary and hiring more ppl but I don’t trust them and they’re bullies. I’m glad I didn’t tell them where I’m going as I’m starting to see their ugly character hidden thinking about ways to threaten me in one way or another. Idk how they do it as I know they’ve bullied others that have resigned into something similar. But I want nothing to do with them. I need to focus on my new job. They’re saying things will break and I leave them in a very bad position.
+ Any advice is appreciated to how to handle this situation. I know once I finally say no to everything they will look for ways to threaten me or get back at me or get me in the hook w signing something that will make me liable. All advice is appreciated.
+    submitted by    /u/dazzledtamarind  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11swghk/is_this_safe/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is this safe...</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11swghk/is_this_safe/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I found one of our switch cabinets is earthed with an earth wire connected to the earth of standard power plug connected to the power bar in the rack. Is this standard? It&#x27;s the first time I&#x27;ve seen it connected like that. Should I report it as something that needs correcting?
+    submitted by    /u/SnooPies751  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;47
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11sw3ij/which_companys_customer_support_has_been/"
+                        open
+                      >
+                        <summary class="article-expander__title">Which company’s customer support has been irritating you lately?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11sw3ij/which_companys_customer_support_has_been/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>For me AT&amp;T will always be near the top of my list. It’s like every time I want to activate a phone it’s a new kind of request they have never handled before and confuses the hell out of them. Also why is the phone call quality to the phone company always so bad? AT&amp;T Internet down? Good look using the “express ticketing” system! You need an “asset ID” to get started and as far as I can tell that information has never been provided to me. Have you ever tried navigating the AT&amp;T portal. It may as well be in an alien language. In one location we have a smaller company that resells AT&amp;T service and a network engineer answers the phone by the third ring. I highly recommend buying AT&amp;T from a company with better customer service. 
+ A lot of companies just want to kick the ticket back to you by always asking for more stuff. After a week of that, we usually figure out the solution on our own, or just give up. Jamf has been irritating me by doing this lately. 
+ Microsoft? They have never resolved an issue for me. I don’t even try to get help from them anymore. 
+ Ring Central. My “customer success manager” doesn’t respond to my emails and has never followed through with anything they promised…not once. 
+ Shout out to Meraki for being available 24/7 and their level 1 support really knows their stuff. 
+ Which company has been pissing you off recently?
+    submitted by    /u/oaklandsuperfan  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;66
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11svtte/anyone_work_with_av_techs_architectural_sound/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone work with AV techs &amp; Architectural sound / video techs?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11svtte/anyone_work_with_av_techs_architectural_sound/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I don&#x27;t mean to add to the rants here but I&#x27;ve encountered plenty in education and judicial settings.
+ First off, they&#x27;re perfectly fine with telling me that an issue is my problem because &quot;IT&quot; yet nearly all of their equipment needs to involve me at some point. Microphone not working? Must be IT&#x27;s problem. Can&#x27;t pick up that person in class? IT&#x27;s problem. Then they give shitty customer service when users need help with their system. Finally, send it to their &quot;vendor&quot; who basically does everything for them. 
+ Oh, you have 30k of equipment in a shitty rack not mounted to anything with NO ventilation, and yet you wonder why your BiAmp goes berserk when it&#x27;s burning itself up in the rack you spec&#x27;d, with zero space between components?
+ And the arrogance... I started out remodeling auditoriums. I know the technologies they use. The issues they&#x27;re trying to solve have existed for decades.
+ Yet, they never report directly to IT, they report to someone who thinks their shit is magic and they are exalted from on high.
+ Does anyone have good strategies to:
+ 1) Hold them accountable for their work product?
+ 2) Understand that this is a PARTNERSHIP, not an IT vs AV fight?
+ 3) Help their managers understand that they are not gods
+ Thanks everyone for letting me blow off some steam.
+ /rant
+    submitted by    /u/woojo1984  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;58
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -1032,6 +1612,343 @@ Any suggestions?
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11tec87/noob_that_needs_help_with_sts_vpn_can_ping/"
+                        open
+                      >
+                        <summary class="article-expander__title">Noob that needs help with StS VPN - Can ping gateway from one site but not the other</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11tec87/noob_that_needs_help_with_sts_vpn_can_ping/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am attempting to host a Windows shared drive across a StS VPN. Below is the network configuration along with IPs. I am also pretty new to this so go easy on me lol
+ ​
+ Site 1 - Where Shared Drive will be hosted. 
+ USG Pro4 - 
+ Server Address: 76.XXX.XX.XX
+ Shared Remote Subnets: 10.0.5.0/24
+ Remote IP 108.XX.XX.XXX
+ Key Exchange Version: IKEv2
+ Encryption: AES-256
+ Hash: SHA1
+ DH Group: 14 
+ Options for PFS and Route Based VPN checked, Route distance &quot;30&quot;
+ ___
+ Site 2 - Needs access to Shared Drive 
+ Datto DNA Appliance 
+ Local Ispec ID: 108.XX.XX.XXX (Same as &quot;Remote IP&quot;)
+ Remote ISpec ID: 76.XXX.XX.XX (Same as &quot;Server Address from Site-1) 
+ Remote Subnets: 192.168.1.0/24
+ IKE Mode: IKEv2
+ Encryption Algorithm: AES-256
+ Hash: SHA1
+ DH Group: Group 14: 2048 bit
+ (Option for &quot;Dynamic Phase 2&quot; disabled, Dead Peer Detection Enabled)
+ ​
+ With this current configuration I can ping the gateway of Site 2 from Site 1 but I cannot ping vice versa and I am starting to get frustrated. It&#x27;s confusing as there are multiple differences in language between the options. 
+ Perhaps there is a better option?
+ Any ideas would be greatly and thoroughly appreciated. Thank you in advance!
+    submitted by    /u/Squally93  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11tckpi/mtp24_polarity/"
+                        open
+                      >
+                        <summary class="article-expander__title">MTP-24 Polarity</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11tckpi/mtp24_polarity/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://external-preview.redd.it/0xWbGNJXfii9fStkWcxuwCTXG-EqeoOfHrFlW7gzjGA.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;fc48a0d433a6989391319d5e8ed693d8917bd12b" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>I recently implemented some ties between a small number of racks in a DC using FS 24 fibre MTP polarity solution. We used all SMOF components (standardising on SMOF in the DC) consisting of: 24F Type A Cassette  24F Type A trunk cable  24F Type AF Cassette. This works and allows standard A-B patch cables on either end when patching. Essentially Port 1 maps to Port 2 on the remote cassette (rolling the fibre). However, there was a bit of confusion during installation as each A cassette had to match with an AF.
+  
+I understand polarity with the 3 solutions for MTP-12 (Method A, B, C). Are these exactly the same for MTP-24? 
+ Could we have achieved the same result using 2x 24F Type A cassettes, and a 24F Type C trunk cable in between? 
+ What are others doing for inter-rack patching in the DC - sticking with straight-through 1-1 polarity (A/A/A solution) and using A-A patch cables on one end, or using the inter-rack MTP to roll the fibre (either with a A/A/AF or A/C/A solution)?
+  
+I&#x27;m also looking to break out some 400G and 100G ports to 4x100G and 4x10G respectively.
+ My understanding is I would use a QDD-4X100G-LR-S or QSFP-4X10G-LR-S connecting to a 3 x 8F MTP cassette (each cassette could break out 3 ports from the switch) using a MTP-12 Type A trunk cable. Is this the best way of breaking out ports to 4x standard duplex LC connectors?
+    submitted by    /u/0b3erver  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;47
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11tasye/blogpost_friday/"
+                        open
+                      >
+                        <summary class="article-expander__title">Blogpost Friday!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11tasye/blogpost_friday/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>It&#x27;s Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member&#x27;s new and shiny blog posts.
+ Feel free to submit your blog post and as well a nice description to this thread.
+ Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11t9wuy/issues_with_weathermap_integration_librenms/"
+                        open
+                      >
+                        <summary class="article-expander__title">Issues with Weathermap Integration LibreNMS</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11t9wuy/issues_with_weathermap_integration_librenms/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I just installed weathermap for librenms and i&#x27;m having an issue where the links show 0% usage all the time. I have snmp enabled on the ports of these devices , traffic is passing and i added the correct links. Fairly new to linux.
+    submitted by    /u/Lordchaosxxx  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11t7l61/is_it_possible_i_am_missing_something_about_a/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is it possible I am missing something about a question I received about a user taking a VOIP/SIP phone home with them?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11t7l61/is_it_possible_i_am_missing_something_about_a/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The question asked is how will the phone be able to use vLAN tagging if taken out of the enterprise network and used in a home five environment?
+ My answer was that as long as it isn’t statically assigned, the phone would follow any DHCP / Network settings of the home office environment.
+ Am I missing anything here? This was raised by a young person, so, wondering if it’s a possibility a gap on their end or if I’ve missed something?
+    submitted by    /u/ueeediot  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11t60cn/cannot_ssh_into_cisco_n540x_router/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cannot SSH into Cisco N540X Router</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11t60cn/cannot_ssh_into_cisco_n540x_router/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello all,
+ I am in the process of deplyoing a Cisco N540X Router to a customer network and the customer cannot access it via SSH. The Loopback1 interface is used to access via SSH. 
+ I have pasted the relevant config below:
+ ​
+ !
+ username test
+ group root-lr
+ group cisco-support
+ secret router
+ !
+ line default
+ exec-timeout 10 0
+ access-class ingress VTY-ACL
+ session-limit 10
+ session-timeout 100
+ transport input ssh
+ ​
+ ! Restrict vty access to permitted range.
+ ipv4 access-list VTY-ACL
+ 10 remark MAIN_RANGE permit tcp 10.1.80.0 0.0.8.255 any eq 22
+ 20 permit tcp 10.1.80.0 0.0.8.255 any eq ssh
+ 30 remark Global Links and Loopbacks, INBAND-MGMT 10.9.0.0/24 Switch Range
+ 40 permit tcp 10.8.0.0 0.1.255.255 any eq ssh
+ 50 remark INBAND-MGMT Router Range
+ 60 permit tcp 10.1.48.0 0.0.15.255 a…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;47
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11t1qk6/looking_for_guidance_on_address_being_routed_out/"
+                        open
+                      >
+                        <summary class="article-expander__title">Looking for guidance on address being routed out to the internet using two different routers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11t1qk6/looking_for_guidance_on_address_being_routed_out/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>At my company, we have two routers and two internet service providers. One is supposed to be a backup circuit while the other is our main one. Some addresses get routed out of our backup while others use our main. The reason why this is an issue is that our backup ISP is having issues and is affecting our customers. On our switch before the router we have a static address pointing to a VRF. I do know we should maybe use VRRP between the routers.
+    submitted by    /u/Senior_Kiwi_586  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11t1dmb/ipsec_vpn_and_cisco_firepower_1120/"
+                        open
+                      >
+                        <summary class="article-expander__title">IPsec VPN and Cisco Firepower 1120</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11t1dmb/ipsec_vpn_and_cisco_firepower_1120/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ We are trying to connect a Mac OS device with an &#x27;integrated&#x27; Cisco IPsec client to FP FW, but we are unable to find an option for doing so. Officially, only Anyconnect SSL VPN is supported, but in theory, if the FW supports site to site VPN, it should also support IPsec VPN. Does anyone have experience with it?
+    submitted by    /u/ElKekec  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11syvm3/connectivity_to_svi_on_a_vxlan_evpn_leaf_from/"
+                        open
+                      >
+                        <summary class="article-expander__title">Connectivity to SVI on a VxLAN EVPN leaf from indirectly connected hosts</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11syvm3/connectivity_to_svi_on_a_vxlan_evpn_leaf_from/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m running a VxLAN EVPN fabric with Cisco NX-OS 9.3(11), which has a DCI to a legacy DC (DC1) I&#x27;m migrating away from. The DCI setup uses EVPN multisite for the border-gateways in the new DC (DC2) and vanilla vPC VTEPs in DC1. I&#x27;m transitioning from a classic setup in DC1 with VRRP on the SVIs, to distributed anycast-gateway in DC2. The plan was to stitch the vlans between DCs via the border-gateways, then per vlan when half the hosts are migrated shutdown the VRRP SVI and bring up the anycast-gateway SVI.
+ I&#x27;ve realised that for vlans I&#x27;ve stitched across the DCI, I can&#x27;t reach the anycast-gateway address from hosts in the legacy DC. The VTEPs in the new DC just don&#x27;t advertise EVPN routes for those interfaces. I guess this makes sense conceptually, as the anycast-gateway is intended for hosts directly connected to the leaf. However I do need some hosts in the legacy DC to route via an SVI on the border-leafs in the new DC as part of the migration process.
+ As a workaround I tried spinning up an SVI with VRRP on the border-leafs in DC2, which I thought would be a valid workaround which I could then transition to anycast-gateway once the vlan was emptied from DC1. But the SVI is suspended as soon as I remove fabric forwarding mode anycast-gateway from the SVI config.
+ Is this a known behaviour in VxLAN EVPN with anycast-gateway, that you can&#x27;t combine a FHRP and anycast-gateway on the same leaf? Or perhaps a specific limitation with Cisco NX-OS?
+ I was hoping to avoid having to extend all of the L3VPN constructs to the vPC VTEPs in DC1 as this is a manually managed DC (new DC is operated with Apstra) and this would increase the complexity.
+    submitted by    /u/Notworker  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;47
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11swubr/sending_break_command_through_console_switch/"
+                        open
+                      >
+                        <summary class="article-expander__title">Sending Break Command Through Console Switch</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11swubr/sending_break_command_through_console_switch/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m hoping someone has come across this hurdle before. 
+ We are using Avocent ACS8000 Console Switch which uses Termviewer to show console connections. When trying to perform password recovery on an NX-OS by sending the break command CTRL + ] it closes the termviewer rather than sending the command through the terminal. 
+ I have seen some forums suggesting sending the break command by using the options menu in the termviewer, but there is no menu for these termviewer windows inside the console switch gui&#x27;s.
+    submitted by    /u/keeganb2000  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11swmg9/simmulate_a_high_latency_network/"
+                        open
+                      >
+                        <summary class="article-expander__title">simmulate a high latency network</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11swmg9/simmulate_a_high_latency_network/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>hi all 
+ This might seem like a stupid question , but we have an app at work the misbehaves under some conditions but only when the latency is high. i&#x27;ve tried to set up a spot with bad wifi connection but it&#x27;s a bit hit and miss, and difficult to quantify... is there any way i could simulate this. i&#x27;m running a unifi stack on the network at work, but i have an edge router and access to a bunch of other equipment if needed , problem is i dont know where to start looking. 
+ ​
+ if it makes differnece the (android) device we run the app on has both wifi and Ethernet 
+ ​
+ Any help or hints appreciated
+    submitted by    /u/corosuske  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;46
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11svonh/cisco_3860_is_not_honoring_write_mem_or_copy/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco 3860 is not honoring write mem or copy running-config startup-config</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11svonh/cisco_3860_is_not_honoring_write_mem_or_copy/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have a Cisco 3860. I have configured it so much that I have it all memorized and down to a couple minutes at this point.
+ I configure the switch and everything works.
+  
+I add my trunk port
+ I add everything to the right vlans
+ I give the switch an ip address
+  
+And boom, internet flowing and access to everything is there!
+ So I try copy running-config startup-config then reload. My configuration is gone.
+ I re configure and try write memory and reoad. Then all config is gone.
+ So I re config and try write mem and copy running config back to back. Every time it says it is writing the config.
+ What can I look at to hopefully solve this problem? Thanks.
+ Answer;
+ https://www.reddit.com/r/Cisco/comments/11sw2hb/comment/jcfvrva/?utm_source&#x3D;share&amp;utm_medium&#x3D;web2x&amp;context&#x3D;3
+    submitted by    /u/BooImAMeanGhost  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
                         data-accordion-key="https://www.reddit.com/r/networking/comments/11sv2vq/a_really_simple_config_could_anyone_create_a_file/"
                         open
                       >
@@ -1280,6 +2197,121 @@ Any suggestions?
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;44
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11sqaj3/fanless_cisco_switch_for_av_devices/"
+                        open
+                      >
+                        <summary class="article-expander__title">Fanless Cisco Switch for AV devices</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11sqaj3/fanless_cisco_switch_for_av_devices/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi guys. I&#x27;m trying to determine the best purchase option for an IDF that will house a switch that will need 5 ports to connect AV equipment to. As we only need 5 ports, I&#x27;m looking at the Cisco Catalyst 9200 Compact 12-Port PoE+ Switch | C9200CX-12P-2X2G-A switch which is fanless . I don&#x27;t know anymore about specifics i.e. exactly what AV equipment, power requirements.
+ Will this suit our needs? Also, is it likely to be rackable in some way (I can&#x27;t tell)?
+    submitted by    /u/hweb47  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Lawrence Systems</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;jV1fFyyhceg"
+                        open
+                      >
+                        <summary class="article-expander__title">VLOG Thursday 322:Tom At Comptia, Lab Testing, Errata, and Q&amp;A</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;jV1fFyyhceg">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;eFnj7LvhvR4"
+                        open
+                      >
+                        <summary class="article-expander__title">I Bought the Last One Apple Ever Made...</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;eFnj7LvhvR4">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Computerphile</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;32bC33nJR3A"
+                        open
+                      >
+                        <summary class="article-expander__title">Automata &amp; Python - Computerphile</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;32bC33nJR3A">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -3230,6 +4262,45 @@ I&#x27;ve successfully upgraded my ASDM from 7.12 to 7.18. Why&#x27;s ASA like t
     submitted by    /u/OTonConsole  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >CISA Cybersecurity Advisories</button>
+                  <a class="source-heading__link" href="https://www.cisa.gov/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="/node/17648"
+                        open
+                      >
+                        <summary class="article-expander__title">#StopRansomware: LockBit 3.0</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-075a">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>SUMMARY
+Note: this joint Cybersecurity Advisory (CSA) is part of an ongoing #StopRansomware effort to publish advisories for network defenders that detail ransomware variants and ransomware threat actors. These #StopRansomware advisories include recently and historically observed tactics, techniques, and procedures (TTPs) and indicators of compromise (IOCs) to help organizations protect against ransomware. Visit stopransomware.gov to see all #StopRansomware advisories and to learn more about other ransomware threats and no-cost resources.
+Actions to take today to mitigate cyber threats from ransomware:
+Prioritize remediating known exploited vulnerabilities.
+Train users to recognize and report phishing attempts.
+Enable and enforce phishing- resistant multifactor authentication.
+The Federal …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;15
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -45804,488 +46875,6 @@ Cynch: Download the Cynch app and get your first tank exchange for just $10 with
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11380d9/i_need_to_buy_and_serve_several_ip_addresses_at/"
-                        open
-                      >
-                        <summary class="article-expander__title">I need to buy and serve several IP addresses, at least 100, what are the requirements?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11380d9/i_need_to_buy_and_serve_several_ip_addresses_at/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello!
- I am a developer, so I do not have much knowledge in networking or datacenters.
- My application requires multiple IP addresses, currently I rent some on premise servers, and using docker container my microservices work each one with their own IP address.
- I want to buy my own IP addresses so I don&#x27;t depend on the availability of my current provider, but I do not know where to start.
- - Do I need a local server?
- - Can I just purchase a pool of IP addresses and use them with any cloud provider?
- ​
- I would appreciate any help from you guys, hope you have a nice day
-    submitted by    /u/Square_Stretch_5811  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1136gxa/im_having_an_issue_with_a_vlan_not_seeing_my/"
-                        open
-                      >
-                        <summary class="article-expander__title">I&#x27;m having an issue with a VLAN not seeing my firewall</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1136gxa/im_having_an_issue_with_a_vlan_not_seeing_my/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello,
- ​
- Im hoping someone might be able to help me figure out an issue I am having configuring a Cisco switch.
- ​
- So, first, I am not Cisco certified and overall have very little experience configuring Cisco switches. 
- ​
- The issue that I am running into is kind of strange. I am not able to get to my firewall from one of my VLANS.
- ​
- My test environment is like this
- ​
- ​
- Switch 1 (core switch) 192.168.0.10
- Switch 2 (access switch) 192.168.0.11
- Switch 3 (access switch) 192.168.0.12
- Firewall 192.168.0.6
- ​
- PC1 192.168.0.100
- PC2 192.168.0.110
- PC3 192.168.3.110
- ​
- I can ping everything from both PC1, PC2 and the Core switch. 
- I can ping both PC1 and PC2 and the core switch from PC3, however, I cannot ping both access switches and the firewall from PC3.
- ​
- I have an SVI configured with the IP address 192.168.3.1 on VLAN 30 on my Core switch. 
- I have a computer plugged directly into port 4 on the Core switch, but I cannot ping firewall. 
- ​
- I have been reading article after article and I know I have to be missing something stupid here. 
- ​
- I thought maybe it was because I didn&#x27;t have layer 3 enabled, so as a test, I even configured port 4 with the IP address 192.168.3.1 and enabled routing, but I still get the exact same results.
- ​
- I have a static route setup for 0.0.0.0 0.0.0.0 to forward traffic to 192.168.0.6 (firewall).
- I am able to get out to the internet from both PC1 and PC2 just fine, just not PC3.
- ​
- Furthermore, if I log into my switches web portal, I can switch to VLAN30 and I can ping out directly from the switch, but I still cannot ping either access switch or the firewall from the Core switch on VLAN30
- ​
- ​
- Any help would be so very gratefully appreciated. 
- Thank you so much in advance!
- Edit: Solved!
-    submitted by    /u/six6sickx  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;47
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1136bk0/diagramming_done_right_seeking_advice_on_network/"
-                        open
-                      >
-                        <summary class="article-expander__title">Diagramming Done Right: Seeking Advice on Network Rack Software for a Modest Data Center</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1136bk0/diagramming_done_right_seeking_advice_on_network/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello fellow network engineers!
- I&#x27;m currently tasked with deploying a modest data center, and I&#x27;m looking for some recommendations on software to create network rack diagrams that include cabling and airflow.
- I&#x27;d like to create professional-looking diagrams that accurately reflect the constraints of our data center, and I&#x27;m hoping to get some input from the community on the best tools for the job. Whether you&#x27;re a seasoned pro or just starting out in the field, I&#x27;d love to hear what software you use and why you prefer it.
- Thanks in advance for your help and suggestions!
-    submitted by    /u/Skaffen-_-Amtiskaw  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1135qfa/update_fs_representative_reaches_out_after/"
-                        open
-                      >
-                        <summary class="article-expander__title">UPDATE: FS Representative reaches out after previous post.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1135qfa/update_fs_representative_reaches_out_after/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/ORG6jltL3WV5ggd-q64M-_j5J7pNEZnYvO2eU9ehC9U.png?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;afdaa9406ae5cedb79544cf0b7fbedc2e0241937" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Last week I posted this thread, titled &quot;Microsoft taps FS for campus switches after Dell fails to deliver.&quot;
- In that post, I included an email sent to me from my account manager at FS. A few of the people in that thread brought up the idea that FS may not have had permission to reveal the skype(?) chatlog between them and the purchaser. For example;
-  
-– pmormr commented:
-  
-They won&#x27;t be working with Microsoft for long if their account managers are treating the deal as a non-consensual marketing exercise. That email if it circled back to legal would blow up the deal and possibly get them sued where I work.
-  
-– Newdles commented:
-  
-Yeah, expect Microsoft to kill this deal now. There are Microsoft employees here. Whoever sent this email should also be fired for terrible privacy practices.…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;55
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1135eq0/n9ks_100gb_dac_qsfp100gaoc15m_in_link_not_connect/"
-                        open
-                      >
-                        <summary class="article-expander__title">N9K&#x27;s 100GB DAC QSFP-100G-AOC15M in link not connect</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1135eq0/n9ks_100gb_dac_qsfp100gaoc15m_in_link_not_connect/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have a 100GBs DAC cable (multiple) and I am testing them between two n9k&#x27;s. The Ports recognize the DAC on both ends. However link stays in not connect. Neither port is err-dsiabled or stp blocked. Am I missing something.
-    submitted by    /u/RestinRIP1990  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1134d8r/traffic_being_dropped_on_aci_from_2_out_of_3/"
-                        open
-                      >
-                        <summary class="article-expander__title">Traffic being dropped on ACI from 2 out of 3 subnets</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1134d8r/traffic_being_dropped_on_aci_from_2_out_of_3/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello everyone,
- I am wondering if anyone can give me any suggestions here. I have traffic coming into let&#x27;s say VLAN10, hitting a firewall (I see this being passed), exiting via VLAN20, hitting the VLAN interface on ACI, and then not hitting the actual gateway of the destination subnet. 
- In a working traceroute I see: VLAN10 &gt;&gt; Firewall (static route out) &gt;&gt; ACI VLAN20 Interface &gt;&gt; Dest. Subnet Gateway &gt;&gt; Destination IP.
- Not working: VLAN10 &gt;&gt; Firewall (static route out) &gt;&gt; ACI VLAN20 Interface &gt;&gt; Timeout 
- Does anyone have any suggestions as to what can I check here? I am not very familiar with ACI. (The source is the same core router, different l3 vlans all taking the same path).
-    submitted by    /u/n0treallyanengineer  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11346z4/fortinet_trainingcertification_in_portugal/"
-                        open
-                      >
-                        <summary class="article-expander__title">Fortinet Training/Certification in Portugal</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11346z4/fortinet_trainingcertification_in_portugal/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi guys, 
- My boss told me to check the fortinet training/certification system, to start more in depth work with some client&#x27;s firewalls. 
- I&#x27;ve researching about it in their website, but is a bit confusing. So if someone who has more experience with i, could help me aswering some questions would be great. 
- 1- Do I need to complete NSE 1-3 to do 4-6? Or any other above?
- 2- I&#x27;m from Portugal, and I can&#x27;t find where to do the certification, if it is online or presencial in some partner.
- 3 - The Courses in the differents levels, give general technical concepts in addition to the tools from the fortinet catalog? 
- Thanks in advance for the help.
-    submitted by    /u/Naive_Corgi  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11346ij/mpls_questions_in_atts_avpn/"
-                        open
-                      >
-                        <summary class="article-expander__title">MPLS questions in AT&amp;Ts AVPN</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11346ij/mpls_questions_in_atts_avpn/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We currently control our L3 in our at&amp;t’s avpn offering. We have gre (mGRE) tunnels and bgp feeding various services via afi to various sites. Some sites even have various other types of encryption. From my understanding, typically the site rtr does NOT have MPLS config, though we still have MPLS qos config on each site rtr, along with the hub having MPLS qos config. Our hub feeds into another MPLS network we own - after collectors - so I’d presume, if the marking is kept, that it could be used for our campus MPLS qos (I think that’s the teams thought here). However, peeling back the onion, it was revealed to me by AT&amp;T, that each site doesnt necessarily have a COS profile ordered with them , which would explain some of the asymmetrical issues seen while traffic went through AVPN - maybe. My question is, if we are hopping around at layer 3 already, would MPLS markings still be seen or matter by AT&amp;Ts underlay somewhere? Even with just the basic GRE traffic, I’d figure that qos markings would be copied over maintained? Right now, I think the profile not being set as being the problem / waste.
- At a higher level to this, it seems like there’s a possibility that whoever architected the design so that we control L3, traded off the QoS perk gained from MPLS. Hopefully not.
-    submitted by    /u/Fruitlful_waste  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;46
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11328ro/changing_subnet_from_1921680023_to_22/"
-                        open
-                      >
-                        <summary class="article-expander__title">Changing Subnet from 192.168.0.0/23 to /22</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11328ro/changing_subnet_from_1921680023_to_22/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Noob question and I have a lot more research to do... 
- Problem: Running out of DHCP addresses
- Current setup with /23 is 192.168.0.0/23 for static IP addresses and 192.168.1.0/23 is for DHCP. We are looking into VLANS to help alleviate our available IP issue, but as a quick fix to more immediately alleviate this issue.. Could we go to /22 and can we specify the next subnet? i.e. could we do 192.168.21.0/22 or does it have to be 192.168.3.0/22 (do the subnets need to increase incrementally or can they be manually defined)?
- We don&#x27;t want to use subnet 3 because we have a site in our WAN that currently uses 192.168.3.0/24
-    submitted by    /u/Dollywup  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1131sen/hidden_traffic_windows/"
-                        open
-                      >
-                        <summary class="article-expander__title">Hidden traffic Windows</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1131sen/hidden_traffic_windows/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey, on a windows company machine I run Wireshark and see some traffic on destination port 161, it is ongoing. I wanted to determine the application or PID behind it, but I cannot see the same traffic on either netstat or TCP View sysinternal.
- Any ideas why the traffic is visible in Wireshark but not in netstat/TCP?
- Any recommendations on what I could try doing?
-    submitted by    /u/shut_up_Meg_gig  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1130uvu/iperf3_retransmits_weirdness_in_my_network/"
-                        open
-                      >
-                        <summary class="article-expander__title">iperf3 retransmits weirdness in my network</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1130uvu/iperf3_retransmits_weirdness_in_my_network/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello Networking Gurus! 
- I had some recent network speed issues so I pulled out my trusty iperf3 to try and diagnose and I found something I am hoping you can help me with. I have a server in my office and other in my basement, about 75 feet of cable run between them. When I run iperf3 as the server on my basement linux (fedora) server and the client on my laptop I see lots (200,000+) of retr (retransmits). But when I do the reverse where the iperf3 server is in my office and the client is in the basement, I get few to no retr. This is very consistent, lots of retr going in one direction (office to basement) but few going the other way (basement to office). I have also run iperf3 server and client both on servers in my basement using the same switch as basement to office and that’s also pretty clean, few if any retr. 
- Does this point to a bad cable? Bad switch? Bad ends on the cables? What would you do to diagnose and clear this up?
- Thanks in advance for your wisdom and guidance!
-    submitted by    /u/shcjrb  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;49
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1130074/whats_your_toughts_about_lufthansa_fiber_cable_cut/"
-                        open
-                      >
-                        <summary class="article-expander__title">whats your toughts about Lufthansa (Fiber cable cut).</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1130074/whats_your_toughts_about_lufthansa_fiber_cable_cut/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/JE5v1BJsIlc2DiVs1rwqi6CLE49u9lcH1SVOoMRTF3k.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;33c976ac80d2e510adedeb2468bbfe3c6cb0fc2a" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>All flights from Lufthansa world wide is staying on the ground. Because of a single point of failure.
- Late yesterday afternoon, a drill cut four fiber optic cables from Deutsche Telekom during third-party construction work on a rail line in Frankfurt. As a result, Lufthansa is also experiencing IT problems.
- Two cables have already been repaired overnight by our technical team and many customers are already back online. We are continuing to work at high pressure on the repairs. The situation is improving continuously.
- Europes biggest carrier, shouldnt they have a backup / ha in place? 
- https://www.reuters.com/article/lufthansa-it-fault-cause/damaged-glass-fibre-cables-cause-of-lufthansa-it-failure-company-says-idUSS8N34H0E6
- I do not know anything about, the fiber Company, there might be the only cables delivering internet in that area, but seems like this could be avoided?
-    submitted by    /u/mobz84  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;60
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112xkhb/ipv6_wont_have_internet_on_wan_router_but_it_does/"
-                        open
-                      >
-                        <summary class="article-expander__title">IPV6 wont have internet on WAN Router, but it does have IPV6 internet if i connect to GPON Router.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112xkhb/ipv6_wont_have_internet_on_wan_router_but_it_does/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello, first time posting here, i hope i do post on the right flair. 
- So, i have a TP Link EC230-G1 that my friend gave to me, and it worked perfectly, except it wont give internet access to IPV6, while IPV4 does give internet, while it doesnt matter much to me but it kinda bothers me. Initially i tought this might be a DHCP conflict, so i assigned a slight difference of IPV6 address (like it ended with 9F i change it with 8F) to my Router (set as static ipv6 address), it does change, but then it would still not work, im at a loss of any solution here. My main GPON Router is Huawei HG8245H5.
- I really hope there is a solution to this problem :D
-    submitted by    /u/admkukuh  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112wzv1/two_independent_dynamic_routing_processes_within/"
-                        open
-                      >
-                        <summary class="article-expander__title">Two independent dynamic routing processes within one network</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112wzv1/two_independent_dynamic_routing_processes_within/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>For traffic separation purposes (customer vs company internal) I need to have two dynamic routing processes that do not exchange routes with each other.
- The routing devices will only be part of one dynamic routing process each. However they share a central subnet so they will see all routing packages that go over that network.
- My first idea was OSPF but I don&#x27;t know if I can have two completely disjunct areas. EIGRP is not an option as there are non-Cisco devices involved. 
- Any idea what would be my best option here?
-    submitted by    /u/NazgulNr5  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112wta3/netconf_on_huawei/"
-                        open
-                      >
-                        <summary class="article-expander__title">Netconf on Huawei</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112wta3/netconf_on_huawei/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi,
- ​
- currently facing issue with Huawei routers regarding netconf. I need to configure netconf on huawei devices, however i find that documentation on this subject is very limited and i couldn&#x27;t find any usefull information.
- ​
- I have an AR2200 router with firmware version from 2020 (V200R010), and according to this document, netconf should be somehow available on this device but i&#x27;m just not able to configure it in any way, nor am i able to connect to it with the netconf protocol (using -p 830 or -s netconf).
- ​
- Is anyone familiar with Huawei devices in general, or does anyone know what devices support netconf and how to configure it?
- ​
- Thanks for any help, i&#x27;m really clueless at this point :-(
-    submitted by    /u/YakubCZE  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112szg9/vxlan_can_i_map_multiple_vlans_to_a_single_vni/"
-                        open
-                      >
-                        <summary class="article-expander__title">VXLAN - can I map multiple VLANs to a single VNI? Can they overlap and map to different VXLANs across switchports?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112szg9/vxlan_can_i_map_multiple_vlans_to_a_single_vni/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/zLJ7QpAGIHOm4ulYlM8D68RVSIcP7ET9Hg5_nof_XdE.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;a2c61edb7eadccabb5b299cd19eaa35eaefd344a" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Can&#x27;t find an answer to this as every example has a 1:1 mapping.
- ​
- Consider a L3 leaf switch with 2 trunk ports. They serve different tenants I want to keep isolated. Eth1 connects to a baremetal server owned by A, Eth2 connects to a bare metal server owned by tenant B.
- Furthermore, each tenant wants to create their own self-service isolated networks for their VMs/Docker containers. Or they could just go and configure a vanilla Linux VLAN interface on their box to send their own VLAN tagged traffic on an arbitrary subnet. I don&#x27;t want to restrict this...
- Now normally I&#x27;d say A gets X vlans, B gets Y vlans, these are your subnets. But there aren&#x27;t enough VLANs to go by, also, I don&#x27;t want to restrict it to one server... I want the same L2 domain no matter which rack or switch the server…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112sc9q/sdwan_do_we_need_to_install_id_cert_on_wan_edge/"
-                        open
-                      >
-                        <summary class="article-expander__title">[sd-wan] Do we need to install ID cert on wan edge devices?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112sc9q/sdwan_do_we_need_to_install_id_cert_on_wan_edge/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>For the vbond, vmanage and vsmart, we do a certificate signing request, send it off to the CA server and the CA server gives a ID cert. This is to be done for each of the controllers.
- On the videos I am watching, the same is not done for the vedge devices. Only the root cert is copied into the vedge and installed. 
- My question is, do the vedges need a ID cert? And if so, how does it get generated?
- If we don’t need a ID cert, then what’s the purpose of the root cert in the vedge?
-    submitted by    /u/careless130  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112ptik/network_boundaries/"
-                        open
-                      >
-                        <summary class="article-expander__title">Network Boundaries</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112ptik/network_boundaries/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey all. Happy after valentines day. I&#x27;ve got a problem eating at me. And yes I realize I should leave the shit at work. But. 
- I have engagement (tehe) with a vendor on a project recently. They provide SaaS for my company. We are trying to stand up a new site to site. Problem is we don&#x27;t see the tunnel (policy based) come up. My next steps were to do an embedded pcap as I am not seeing any traffic from the host at the firewall. I send an email to the vendor saying I see no traffic each time we test... but then after I explicitly point at the host in one of my emails we see an icmp request come across the fw about an hour later. Following I get an email from their pm asking me to explain steps I see in the network and they are requesting an additional resource to look at our network. 
- Now the question. And don&#x27;t get me wrong, this is indeed ego related, but my ego isnt that big (is it?). 
- Previously when setting up the site to site, I worked with a respectable sounding network engineer. Would it be wrong to reach out to him and ask him what the hell? (Respectfully.) The problem is that the traffic never leaves the host. We have routes out and they proved it via ping. 
- TLDR: I want to hear about times that you all took back alleys to get things accomplished. Or do we all just play the follow along and provide pcap when requested?
-    submitted by    /u/Stillbleedblue  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;46
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46560,1019 +47149,6 @@ Yeah, expect Microsoft to kill this deal now. There are Microsoft employees here
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11379w2/is_anyone_else_seeing_an_uptick_in_outlook_issues/"
-                        open
-                      >
-                        <summary class="article-expander__title">Is anyone else seeing an uptick in Outlook issues regarding Needing Password?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11379w2/is_anyone_else_seeing_an_uptick_in_outlook_issues/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>submitted by    /u/hxcjosh23  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;50
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1136coz/microsoft_is_now_pestering_people_to_download/"
-                        open
-                      >
-                        <summary class="article-expander__title">Microsoft is now pestering people to download Edge on their phones when using the Outlook app</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1136coz/microsoft_is_now_pestering_people_to_download/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/f7AEukQPR208xuLAfN5maHjL2P7DjaOwBUwyOQ0ZLTA.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;14ab8014035e386ea7d29b9c4d8a4afc88fd2ecb" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Clicked on a link within the Outlook app on my iPhone and I get this lovely prompt to download and use Edge to view the link. This had to be in a recent update because Outlook used to open your default browser.
- https://i.imgur.com/x1O7db7.jpg
- I know I can just click to use my default browser and move on with my life, but I can’t help but wonder the confusion this will cause people who now think they have to download a new app/browser in order to view a link.
-    submitted by    /u/chenew  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1135aqj/google_rejecting_all_mail/"
-                        open
-                      >
-                        <summary class="article-expander__title">Google rejecting all mail</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1135aqj/google_rejecting_all_mail/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>About a week ago Google started rejecting all mail from my domain. We have since started using DKIM and DMARC. Any ideas how to get google to reevaluate our domain and allow messages?
-    submitted by    /u/perk_683  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;49
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11338bi/name_the_tools_you_cant_live_without/"
-                        open
-                      >
-                        <summary class="article-expander__title">Name the tools you can&#x27;t live without!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11338bi/name_the_tools_you_cant_live_without/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>What are the tools that must be always available on your computer? As a SA, I need of course several ones, but there are a couple, that I can&#x27;t do without:
- Random Password Generator (Maybe not a very well known tool, but recommend it)
- Putty
- Notepad++
- 7zip
- Curious to see what others have to share.
-    submitted by    /u/Holiday_Project_  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;55
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11308te/apc_dead/"
-                        open
-                      >
-                        <summary class="article-expander__title">🤦‍♂️🤦‍♂️ APC dead</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11308te/apc_dead/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So one of our site has a down apc. We literally have hundreds of the replacement battery on back order and spend months replacing them because we don’t know when they will die. We have a lot of apc units but someone decided it’s not worth getting the monitoring card. So sites will go down for a day or two till the tech goes out to replace the battery. The funny thing that one tech said was 
- “They are suppose to check it monthly”
- Mind you these are office worker with high turn over. They either don’t know what to look for or did not receive proper training. Unless the apc panel changed, I don’t think it show the condition of the battery. No one knows when it’ll die. How is visually checking the panel any indication of when the battery needs to be replace
-    submitted by    /u/NSummerz  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;50
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11301g7/is_anyone_actually_seeing_ie_disabled_from_the/"
-                        open
-                      >
-                        <summary class="article-expander__title">Is anyone actually seeing IE disabled from the Feb Windows/Edge updates?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11301g7/is_anyone_actually_seeing_ie_disabled_from_the/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;ll keep it short. We have a (bad) vendor who was very late in providing Edge support. For that reason we have held off on disabling IE. Lots of testing has been done and we believed we were ready for the disabling of IE yesterday. 
- Only... it does not appear to have happened? We have applied the latest Windows security and Edge updates but IE still works. We are not running one of the unaffected versions of Windows 10. 22H2 on the Feb 14 builds with latest Edge updates can still launch IE. 
- Anyone else seeing this? I am just trying to ensure we didn&#x27;t miss something here.
-    submitted by    /u/Top_Banana6292  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;46
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112ytzh/ms365_office_app_login_issues_since_monday/"
-                        open
-                      >
-                        <summary class="article-expander__title">MS365 Office App Login Issues since Monday</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112ytzh/ms365_office_app_login_issues_since_monday/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Has anyone else experienced odd login issues in various MS365 Office apps since Monday?
- We&#x27;ve had Outlook being stuck in an infinite login attempt loop until restarted (sometimes it needs two restarts), OneNote not synchronizing Notebooks and not accepting new login attempts as well as OneDrive and even my own Win11 machine requiring a new authentication after a reboot (but those just validate automatically with no password prompts, they just have to be started manually by clicking the &quot;login again&quot; prompt). But not everyone is affected and they are rarely the same issues across users.
- Just wondering if it&#x27;s just our org or if MS has changed anything behind the scenes without checking if their apps still work afterwards (again...)
-    submitted by    /u/Landhund  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112ye01/terminal_solutions_after_oct_2025_office_end_of/"
-                        open
-                      >
-                        <summary class="article-expander__title">Terminal Solutions after oct 2025 office end of life on windows servers</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112ye01/terminal_solutions_after_oct_2025_office_end_of/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>according to microsoft office on all of its versions will no longer be supported on windows servers on oct 2025
- https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI
- which terminates all terminal server solutions like RDS Citrix parallel cockpit etc
- we are currently working with terminal servers supporting thousands of users 
- are any of you guys running terminal server solutions? what are you doing about this?
- are we forced to migrate to DAAS solutions or are there any good on prem solutions for this?
- i would love to hear any advice on the matter.
-    submitted by    /u/siftekos  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112ychy/adding_pronouns_in_ad_or_office_365/"
-                        open
-                      >
-                        <summary class="article-expander__title">Adding Pronouns in AD or Office 365</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112ychy/adding_pronouns_in_ad_or_office_365/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Is this even possible?
- I have our business asking for this. We have a hybrid AD environment.
-    submitted by    /u/No_Mycologist4488  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112y5ix/is_microsoft_seamless_single_signon_safe_to_use/"
-                        open
-                      >
-                        <summary class="article-expander__title">Is Microsoft Seamless Single Sign-On safe to use?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112y5ix/is_microsoft_seamless_single_signon_safe_to_use/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;8e9dd29e55be5f9d4be03f8a2ca6dc669418c160" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hello there,
- I would like to setting up the SSSO to my organization but I don&#x27;t know if it secure enough. I have an hybrid environment but without Azure AD-joined devices, my devices only joined to the on-premise AD. I followed the Microsoft documentation and I configured everything: Azure AD Connect, GPO and the Firewall. It is working very well with my test users. 
- My settings in a nutshell:
- Azure AD
-  
-Password hash sync
-  
-GPO (from Microsoft documentation)
-  
-Site to Zone Assignment List
- Allow updates to status bar via script
- SPNEGO (Firefox)
-  
-AZUREADSSO Computer Object on my on-premise AD
-  
-Storing object in OU where is securing against accidental deletion
- msDS-SupportedEncryptionTypes attribute set to AES-256-CTS-HMAC-SHA1-96
- Kerberos delegation is disabled on this object 
-  
-According to Microsoft documentation it is recommended to update the Kerberos decryption key at least on every 30 day.
- https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso-faq#how-can-i-roll-over-the-kerberos-decryption-key-of-the--azureadsso--computer-account-
- I have not found anything about SSSO on the internet from a security perspective. Can cybercriminals exploit this SSSO capability or is it safe enough? I am wondering about on this because SSSO sends Kerberos ticket over the internet. I don&#x27;t know if I should worry about that. Maybe I just overthinking.
- Does anyone have experience with Seamless Single Sign-On? Can you share your experience with me?
- Is there anything else I should be aware of?
-    submitted by    /u/Mindless-Ad-4614  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112y0i4/how_do_you_test_your_backups/"
-                        open
-                      >
-                        <summary class="article-expander__title">How do you test your backups?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112y0i4/how_do_you_test_your_backups/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi r/sysadmin
- I&#x27;m curious how you all go about testing your backups? We have a medium/large sized environment with ~1000 VMs and a few physical servers (most SQL boxes) that we are backing up regularly. 98% Windows, a very select few Linux. However, we don&#x27;t have a definitive process for testing these backups beyond requested restores that we have to do as people need them.
- Previously, I used Veeam&#x27;s SureBackup feature to test backups at my previous job, but here we use Commvault and I don&#x27;t see a similar feature. There does seem to be some sort of backup validation but Commvault&#x27;s documentation doesn&#x27;t match what I&#x27;m seeing in our console.
- Using Veeam&#x27;s SureBackup as a model, I started to build out a sandbox network that would mirror our production network, which I could restore VMs into and then run scripts against them to verify they are working. The point I&#x27;m more or less stuck at is the &quot;scripts to verify they are working&quot; part. For basic Windows boxes I&#x27;ve got a script that checks for running services, and for all the VMs I&#x27;m pulling their reported heartbeat status by VMWare, but this is imperfect and doesn&#x27;t cover some of our more specialized boxes like Exchange or SQL databases. 
- Somewhere along the line I think there will be a human element (IE, you are the admin for this server, your server is currently in the sandbox network, login to it and make sure everything works before it gets torn down) but I&#x27;d like to automate as much of this process as possible.
- What approach do you take? Is there a feature in Commvault I&#x27;ve missed or a third party tool that solves the problem? Or do you have better ideas on what to check using various scripts and the like?
-    submitted by    /u/Pugway  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112xzwm/add_ad_group_to_acl_of_thousands/"
-                        open
-                      >
-                        <summary class="article-expander__title">Add ad group to acl of thousands</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112xzwm/add_ad_group_to_acl_of_thousands/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>EDIT: title is missing &quot; of folders&quot; in the end..
- Hi,
- I need to add an AD group to the ACL of thousands of folders, which all have different permissions and inheritance settings. All the folders are subfolders of drive D
- I need all the permissions to stay the same, just one group added with full access. I wrote a powershell script for this. 
- Is this the right approach? do you see anything wrong with this?
- $identity &#x3D; &#x27;domain\group&#x27; $rights &#x3D; &#x27;FullControl&#x27; $inheritance &#x3D; &#x27;ContainerInherit, ObjectInherit&#x27; $propagation &#x3D; &#x27;None&#x27; $type &#x3D; &#x27;Allow&#x27; $ACE &#x3D; New-Object System.Security.AccessControl.FileSystemAccessRule($identity, $rights, $inheritance, $propagation, $type) Get-ChildItem D: -Recurse -Directory | ForEach-Object{ $acl &#x3D; get-acl -Path $_.FullName $acl.AddAccessRule($ACE) Set-Acl -Path $_.FullName -AclObject $acl } 
- Thanks.
-    submitted by    /u/Takia_Gecko  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112xt69/securityviolation_on_boot_ws2022_with_esxi_exsi/"
-                        open
-                      >
-                        <summary class="article-expander__title">SecurityViolation on Boot WS2022 with ESXI EXSI 21053776 / Latest Windows Update?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112xt69/securityviolation_on_boot_ws2022_with_esxi_exsi/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Windows 2022 VM with secure boot enabled on the VM
- Just did a couple of host upgrades to get ESXI up to the latest and greatest - 21053776
- Just installed the 14/02 Windows update and am getting Security Violation on boot of the two 2022 VMs I have. 
- Disabling SecureBoot does allow the VM to start, but there is something going on here....
-    submitted by    /u/Grunger106  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112xpfk/projecting_sysadmin_careers_1520_years_it/"
-                        open
-                      >
-                        <summary class="article-expander__title">Projecting SysAdmin careers 15-20 years - IT Infrastructure in Space</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112xpfk/projecting_sysadmin_careers_1520_years_it/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey all. 
- So I&#x27;ve been trying to think about my career in a 10-15 or maybe 15-20 year span. I know it&#x27;s a controversial idea, but I look at the developments in the space and satellite industry and can&#x27;t help but see this era as the verge of a massive breakout of space infrastructure. 
- So that got me thinking, what does an IT infrastructure look like to a space faring civilization when there are regular trips to a lunar colony? How would you deploy software to an MECM distribution point on the moon? How would you handle a Domain Controller in deep space?
- I&#x27;ve tried looking for early research on this idea without much success. Does anybody know of any reading material on the subject? Or possibly any writings on interfacing with a remote site that has unreliable or inconsistent communication times?
-    submitted by    /u/Existing-Strength-21  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112xafx/cloud_password_vaults/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cloud password vaults.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112xafx/cloud_password_vaults/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Do you guys use a centrally managed password vault? Do you have any opinion on passwords to the kingdom stored in the cloud?
-    submitted by    /u/mrZygzaktx  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112x9ta/dr_plan_when_you_are_99_in_the_cloud/"
-                        open
-                      >
-                        <summary class="article-expander__title">DR plan when you are 99% in the cloud</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112x9ta/dr_plan_when_you_are_99_in_the_cloud/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi Guys, how do you go about designing and testing a DR plan when your core applications /services are in the cloud. Do you just explain in your DR plan that you are relying on the SAAS vendor DR plan or should we realistically have a plan if for example if google workspace was to go down? 
- The reason we go with SAAS providers is they will have 1000 times better DR than we could afford but I find we are being asked to provide a DR plan for our business and am finding it difficult to articulate this.
-    submitted by    /u/dantralee  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112x746/cisco_meraki_not_letting_s2s_tunnel_linked_to_vpn/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cisco meraki not letting s2s tunnel linked to vpn from same network</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112x746/cisco_meraki_not_letting_s2s_tunnel_linked_to_vpn/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Infra :
- Hardware vpn , switches , ap &#x3D; Colorado Same &#x3D; California 
- No special vlans or anything 
- So we have a hardware vpn in Colorado that has a s2s connection to azure. Usually when you are on prem and on the same network as your vpn, you should be able to access the same assets as if you connected to vpn remotely.
- It won’t let me connect to azure s2s and when trying to connect to vpn in Colorado from California.
- Is there a setting , I have to switch on and off to get access to tunnels from onsite. I feel like should be a very basic setting , and it should just let you always have access to azure subnets if your on prem
-    submitted by    /u/esisenore  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112w3lt/fortinet_ha_upgrade/"
-                        open
-                      >
-                        <summary class="article-expander__title">Fortinet HA Upgrade</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112w3lt/fortinet_ha_upgrade/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey All, I have a bit of a situation, I have been upgrading Fortinet firewalls in HA for over a decade and last night was the first time I had a fail, The slave firewall upgraded but the Master did not, at present I have Master on 7.2.2 and slave on 7.2.4 (Note that the slave is now the master).
- My thinking is to remove the heart beat(HA) cables and then connect directly to the original master (on 7.2.2) and upgrade it to 7.2.4 thereafter start the boot sequence and get the firewalls back in order with HA cables. I have made no changes since last night.
- Call logged with Fortinet but they are taking forever to respond. Anyone run into a similar issue and can offer some advice?
-    submitted by    /u/Tp0303  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112vinc/how_do_you_stay_motivatedfocused_enough_to_keep/"
-                        open
-                      >
-                        <summary class="article-expander__title">How do you stay motivated/focused enough to keep your skills up to date and acquire new ones?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112vinc/how_do_you_stay_motivatedfocused_enough_to_keep/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So I&#x27;ve been thinking about this a lot lately (gods save us...): How do you stay motivated/focused and interested enough to keep your skills up to date and learn new skills? What&#x27;s your tricks?
- I&#x27;ve noticed as I&#x27;ve both gotten older and have been in this field of ours for damn near 25 years, absorbing new knowledge and learning new systems/skills that I haven&#x27;t worked with before is becoming more and more difficult. I struggle maintaining enough of a focus to keep at it, and also notice that my retention is pretty abysmal. Case in point, these days I&#x27;m trying to shove a lot of MS&#x27; Power Platform-skills into my head, since I&#x27;ll be working a lot on that due to a move to Dynamics 36 that we&#x27;re currently underway on.
- But I find it damn hard to actually do, even though I&#x27;m interested in what the Power Platform can do in terms of data management and automation.
-    submitted by    /u/bukkithedd  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112vb5i/igel_thin_client_license_model/"
-                        open
-                      >
-                        <summary class="article-expander__title">IGEL Thin Client license model</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112vb5i/igel_thin_client_license_model/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey,
- Kind of odd question but I hope someone can help me understand it.. as far as I know, IGEL reworked their license model recently and I&#x27;m not sure if it still works for our planned enviroment.
- We have around 10-15 Thin Clients, mostly in warehouses where it&#x27;s rather dirty and since we swapped out most office PCs in 2021, I have a bunchload of old systems that I want to rework into TCs to replace our current &quot;infrastructure&quot; which consists mostly of 7-10 year old actual thin clients with a self-&quot;constructed&quot; Linux version. Latter one wasn&#x27;t documented at all by it&#x27;s creator who hase left us in the meantime.
- So around the middle of 2022 I got 4 IGEL licenses to test and that worked pretty fine so far, we decided for the UDP / USB-Version and had no problems occur and the remote assistence etc. helped a lot. I had to put the topic aside for a while now due to other more urgend topics and since we lack staff right now. 
- I read somewhere that IGEL reworked their license modell and it&#x27;s no longer &quot;Buy once, get 1 year of support and that&#x27;s it. More support costs but you can use the thin client without support&quot;. Considering the rather dirty enviroment and that our current &quot;Solution&quot; produces no monthly/yearly cost (except a device fails after years of usage) I doubt that I&#x27;ll get the OK for a yearly subscription model.
- So could someone break down the new system or if I understood it wrong and my planned system/setup would still work?
-    submitted by    /u/Interesting-Gear-819  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112tqd6/portable_virus_scanner_with_offline_virus_patterns/"
-                        open
-                      >
-                        <summary class="article-expander__title">Portable virus scanner with offline virus patterns</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112tqd6/portable_virus_scanner_with_offline_virus_patterns/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi there,
- a customer of ours has a CNC machine with a possible malware infection. The machine is completely offline and runs on Windows XP. They transfer NC files from a domain-joined PC to the machine with an USB stick.
- We recently got an AV alert from the PCs AV solution, because it found an infected Autorun.inf on the stick. I&#x27;ve re-formatted the stick, but the issue reoccured soon after, which implies that the CNC machine is infected.
- We&#x27;d like to scan the CNC machine, but so far haven&#x27;t found a virus scanner which fits our needs: 
-  
-Lightweight and portable
- Usable without internet connection (with up to date virus patterns)
- Compatible with XP
-  
-Does anyone know a fitting software?
-    submitted by    /u/achtchaern  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112tm9a/gpo_ublock_origin_on_firefox/"
-                        open
-                      >
-                        <summary class="article-expander__title">GPO - uBlock origin on firefox</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112tm9a/gpo_ublock_origin_on_firefox/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello, 
- I am a student sysadmin and I’m trying to get that gpo working.
- I would like a GPO that is disable ublock only for certain website on Mozilla firefox 
- The gpo for now only install it on every computer, I eared that I might use JSON but I don’t understand it very well 
- Please help
-    submitted by    /u/CranberryOld5039  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112tkjp/scheduled_powershell_jobs/"
-                        open
-                      >
-                        <summary class="article-expander__title">Scheduled PowerShell jobs</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112tkjp/scheduled_powershell_jobs/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We use PowerShell scripts to manage and sync several different parts of our infrastructure. Some of these scripts just run using privileges credentials. Currently we&#x27;re still running them manually.
- What is the suggestion for centrally managing and scheduling these scripts, yet still maintaining security due to the required elevated credentials?
-    submitted by    /u/Bad_Mechanic  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112tk4m/aita_leaving_the_company/"
-                        open
-                      >
-                        <summary class="article-expander__title">AITA - Leaving the company</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112tk4m/aita_leaving_the_company/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Ive been working at a company for roughly 8 years now, they are a multi, multi million £ company.
- Started off in support but slowly became senior. Now im the only person in the company who can deploy, support, update the majority of our applications and services. And the only person who has access and knowledge to handle the hardware/azure it all sits on.
- Ive been pushing for fair pay for about 6 years but constantly been give the typical HR spoof (you&#x27;re not worth that much, we dont have spare funding, the company isnt in the right place... ect) 
- I handed my notice in today and im leaving them no documentation or training any replacement.
-    submitted by    /u/Hazza9286  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112timy/api_transation_timout_occurs_after_increment/"
-                        open
-                      >
-                        <summary class="article-expander__title">API transation timout occurs after increment timeout on IIS server</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112timy/api_transation_timout_occurs_after_increment/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello everyone!
- ​
- I&#x27;m writing to you because I can&#x27;t figure out this odd behavior:
- We changed the IIS server&#x27;s timeout setting from 90 seconds to 250 seconds.
- The appliance is placed on the back of an Azure LB with a 240-second timeout.
- Since the change, we have observed numerous transation timeouts where none had previously been reported.
- When the previous settings have been restored, everything was back to normal.
- Do you know why this peculiar behavior is occurring?
- ​
- Thanks
-    submitted by    /u/fabryx2021  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112tcn8/how_much_do_default_windows_server_logs_record/"
-                        open
-                      >
-                        <summary class="article-expander__title">How much do default windows server logs record?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112tcn8/how_much_do_default_windows_server_logs_record/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi sysadmins, I had quick question about logging on Windows servers. By default (i.e no SIEMs, no IDS, no firewall), how much info does a windows server log about any devices that connect to it? More specifically, is it possible for me to find which devices connected to it within a certain hour last week?
- Specifically the machine in question is a mail server running mdaemon. Someone sent an email from the organization&#x27;s account with stolen credentials. We are trying to find the IP (and any other info if possible) for whoever connected to it. If windows server logs the IPs of all incoming requests, then it should be trivial to cross reference those requests with timestamp on the email right?
-    submitted by    /u/saadjumani  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112su35/apc_smart_ups_not_connected_after_windows_update/"
-                        open
-                      >
-                        <summary class="article-expander__title">APC Smart UPS not connected after Windows Update</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112su35/apc_smart_ups_not_connected_after_windows_update/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Im having weird issues with APC UPSes lately. We connect them via USB to our Servers (Windows Server with Hyper-V).
- PowerChute gives us the notification that the UPS connection is not established via our Monitoring. We have tried everything so far. Reinstalling the Software, Replugging the UPS (which sometimes works), Rebooting the OS and so on. Nothing really helps.
- ​
- I know the UPS is connected to the server. If I uninstall the APC UPS Driver, then the UPS gets detected by Windows and the battery symbol appears in the taskbar.
- ​
- Doesnt matter what Windows Server it is. The problem happens on any of our Servers. Randomly I would say. Its really frustrating because you cant seem to fix it remotely.I dont wanna go on site to check the UPSes myself. Not with 100 clients.
- ​
- Anyone else having that issue? Or maybe someone has found a fix?
-    submitted by    /u/One-Garage6348  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112s4lk/how_much_to_customize_my_shell_environment/"
-                        open
-                      >
-                        <summary class="article-expander__title">How much to customize my shell environment?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112s4lk/how_much_to_customize_my_shell_environment/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>New to linux or sysadmin, and new to organizing myself and scripts and env. I am setting up aliases and bash functions for making my life easy at work. I plan to use git to save my work in a repo within a branch having a name &quot;common&quot; for common things and another branch with name of that of the company I am working for, and to which the laptop belongs, where I will save/commit company specific stuff.
- I see that I am spending a lot of my free time in customizing things. Shell variables, aliases, bash functions, writing scripts to help me login to different envs (Azure, AWS, local Servers etc) easily. Aliases to execute frequent long commands. Functions to execute commands with parameters.
- Wanted to understand, that since this is the beginning for me to customize my env for myself, is it Okay to spend a considerable amount of time in the process? I am hoping that my current way of customizing will help me in future companies also, where I can clone this repo, switch to an old companies branch, take what should be taken from common (probably all), and then create a new branch with the new company name and add that company specific stuff there.
- Will doing things this way, which would make things heavily customized in the future, and might need some maintainence overhead too, is a good idea? Or is there a better way?
-    submitted by    /u/Conradiin  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;46
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112rj08/looking_for_a_tool_like_grc_it_asset_management/"
-                        open
-                      >
-                        <summary class="article-expander__title">Looking for a tool like GRC &amp; IT asset management</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112rj08/looking_for_a_tool_like_grc_it_asset_management/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi everyone,
- I&#x27;m starting a new position as a CISO in a company where the IS is very complex... and partially unknown by the internal management team... (parts of the IS are externally managed)
- As I progress by interviews or self discovering, I&#x27;m looking for a tool where I could:.
-  
-create assets by type and tags (human, server, network, data, workflow, geographical plant, supplier ...)
- 
-bind them together
- 
-provide a visual representation for assets with dependencies and relations between them 
- 
-and for the GRC part, ability to add controls to some assets, based on applicable regulations (GDPR, for ex.). 
- 
- Do you know some tool or combination of native tool with plugin which could achieve this ? 
- Thanks
-    submitted by    /u/ph8l33p  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;43
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112pu4u/sftp_transfer/"
-                        open
-                      >
-                        <summary class="article-expander__title">SFTP Transfer</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112pu4u/sftp_transfer/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;m trying to setup a batch script to transfer files from a remote server that is on a DMZ/non-domain joined to the local machine. If I were to utilize a batch script like below, I&#x27;d need to share the particular remote folder?
- I have a batch script to call out where the below script is located.
- C:\&quot;Program Files (x86)&quot;\WinSCP\winscp.exe /console /script&#x3D;C:\Scripts\script2.txt /log&#x3D;&quot;C:\temp\WinSCP.log&quot;
- # Automatically abort script on errors option batch abort #Disable overwrite confirmations that conflict with the previous option confirm off # Connect using a password open sftp://user:password@ft.domain.com -hostkey&#x3D;&quot;&quot;ssh-rsa 2048 key&quot;&quot; # Change remote directory cd H:/usr/ # Force binary mode transfer option transfer binary # Download file to the local directory # This will download any .txt file and delete it from the source once the transfer is done. The file will be downloaded to \\Fileserver\Fileshare get -delete *.txt \\server\userfolder # Disconnect close # Exit WinSCP exit 
- So far I&#x27;ve been getting permissions denied errors so.
-    submitted by    /u/PathS3lector  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Morning Wire</button>
-                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="b0d0ed60-8224-414f-bc91-1c68cc402abb"
-                        open
-                      >
-                        <summary class="article-expander__title">Wednesday Afternoon Update | 2.15.23</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="2b2bd0df-fc80-41b1-8471-c5f82387ef6e"
-                        open
-                      >
-                        <summary class="article-expander__title">More Teen Girls Suicidal &amp; Inflation Remains High | 2.15.23</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>A new report from the CDC shows an increasing number of teenage girls have considered suicide, Inflation slows slightly but still takes a tool on the consumer, and NYC’s Wealthiest are being driven out of the city by crime and high taxes. Get the facts first with Morning Wire.
-Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.
-Genucel: Use code &quot;WIRE&quot; and save an extra 10% off your ENTIRE purchase: https://genucel.com/WIRE</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Lawrence Systems</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;qfAnbK5hKbE"
-                        open
-                      >
-                        <summary class="article-expander__title">TrueNAS Core 13.03 VS TrueNAS Scale 22.12.0 iSCSI / NFS / SMB Performance Review 2023</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;qfAnbK5hKbE">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;CHRzL4HFs9w"
-                        open
-                      >
-                        <summary class="article-expander__title">The Homelab Show Episode 88:Q&amp;A Plus ChatGPT in the Homelab</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;CHRzL4HFs9w">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Linus Tech Tips</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;ykDuoq-MpHg"
-                        open
-                      >
-                        <summary class="article-expander__title">GPU Tier List - Nvidia Edition!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;ykDuoq-MpHg">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-02-14 datetime="2023-02-15T02:39:21.000Z">2023-02-14</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-02-14 datetime="2023-02-15T02:39:21.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112neyw/cisco_mobility_express_setup_mesh_aps/"
-                        open
-                      >
-                        <summary class="article-expander__title">cisco mobility express setup mesh APs</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112neyw/cisco_mobility_express_setup_mesh_aps/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Looking for advise how to join Cisco AP into existing mobility express. I need to join in mesh mode. To avoid Ethernet cables. All of them are powered by PoE adapter next to them. ME is running on 2x AIR-AP3802I-E-K9 where One is controller and second is wired access point(this will be ROOT for other wireless) AP that i need to deploy as wireless points of network are: 3x AIR-CAP3702E-E-K9. &amp; 3x AIR-AP2802I-E-K9. Also if possible to deploy AIR-CAP1702I-E-K9 v02 (these old devices am not sure if can be used here) 
- So 1x controller ME 3802i + 2x RAP mesh ap 3802i +2802i +5 x MAP mesh from others( these can be upgraded to 5 more)
-    submitted by    /u/Own-Salary-985  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/112ncfu/wan_drops_once_a_day/"
-                        open
-                      >
-                        <summary class="article-expander__title">WAN drops once a day</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/112ncfu/wan_drops_once_a_day/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have been trying to figure out the best method to test and troubleshoot this issue I&#x27;m seeing. Every day around the same time, one of our sites&#x27; (public high school) bandwidth drops to nothing for about 15 minutes. I ran iperf tests on repeat and logged the output across the WAN to the site and I was getting around 1.8Gbits/s on a 2Gbits/s connection. Right around the time the students leave the bandwidth tanked in iperf (just across the WAN to the DC) and on speedtest.net to 30Mbits/s for between 5 and 15 minutes. Seems to happen each day around that time and then just clears up.
- I have smokeping running and that looks clean and never shows a change. I don&#x27;t drop regular ping packets but if I run a faster fping I do see between 1%-4% packet loss around that time. Interfaces on my router are clear. Nothing in the logs of the routers on either side. Something tells me it&#x27;s the WAN provider but I am out of ideas on what to test or how to prove the issue further. I plan on reaching out to them tomorrow to see if they can seen anything on their side but I know that will be tough to get them to research it. Any recommendations on what else to try and test?
- TIA!
-    submitted by    /u/mcflyatl  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;51
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/112n0ad/career_advice_for_sysadmins/"
-                        open
-                      >
-                        <summary class="article-expander__title">Career advice for sysadmins</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/112n0ad/career_advice_for_sysadmins/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>From today&#x27;s IT Pro Tuesday newsletter:
- Career wisdom for sysadmins, compliments of HouseCravenRaw: 
-  
-Irreplaceable is unpromotable
- Documentation is king
- Know your exits (rollback plan, etc.)
- Always get a CYA
- Toot your own horn—modesty doesn&#x27;t make money
- ‘No’ is a complete sentence
- Stability is paramount—don&#x27;t aim for newest or best, aim for reliable and dependable
- Cattle, not pets
- Make sure your cattle are self-minding—the less fiddling and doting and button-pressing you need to do, the better
- Make your own roadmap, be it your career or your department, have a direction and test it
- When you do a thing, understand why you are doing it. Google might give you an answer, but it doesn&#x27;t give you comprehension. Running a StackOverflow solution without understanding what&#x27;s going on will only lead to more problems in the future
- Don&#x27;t stay in one place too long
- Test your parachute, be it a tape backup or a rollback plan or a snapshot
-  
-   submitted by    /u/da4  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;47
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47580,8 +47156,8 @@ Irreplaceable is unpromotable
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4437996082">
-        <time id="build-timestamp" datetime="2023-03-16T14:11:54.415Z">2023-03-16T14:11:54.415Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4445948452">
+        <time id="build-timestamp" datetime="2023-03-17T09:12:41.274Z">2023-03-17T09:12:41.274Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
