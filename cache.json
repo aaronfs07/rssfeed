@@ -370,6 +370,126 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11ts6jr/idrac_8_and_openjdk/",
+          "author": null,
+          "description": "We are running a few older Dell servers that run iDrac 8 and use the java web start for remote viewing. We have been trying to move to openJDK for our Java needs. Has anyone had any luck getting these older iDracs to work with openJDK? I have tried to download a version of OpenJDK 8 (tried both MSI and zip), neither had the javaws.exe. I then tried OpenWebStart, that threw an error when opening the virtual console screen. \n If you have a solution, would be greatly appreciated.\n    submitted by    /u/rubber_duck13  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11ts6jr/idrac_8_and_openjdk/",
+          "publishedOn": "2023-03-17T14:10:26.000Z",
+          "wordCount": 12964,
+          "title": "iDrac 8 and OpenJDK",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11ts43t/bootable_hard_drive_erase_software_that_supports/",
+          "author": null,
+          "description": "Hi,\n I am looking for a hard drive erase bootable program that is free and will wipe the hard drive securely. I want one that supports UEFI so switching bios to legacy mode isn't required. Does anyone have any recommendations? I tried Dban but that looks to require legacy boot.\n    submitted by    /u/pod31232153  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11ts43t/bootable_hard_drive_erase_software_that_supports/",
+          "publishedOn": "2023-03-17T14:07:48.000Z",
+          "wordCount": 1942,
+          "title": "Bootable Hard Drive Erase Software that supports UEFI",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11trz9q/how_to_delete_room_meeting_in_outlook_create_by/",
+          "author": null,
+          "description": "The employee is out for a few weeks but people want to book the Room for something else but can't do it.\n Is there a way to do in from Exchange? I couldn't find anything.\n I tried adding the Room calendar to my calendar. I can see the meeting but there's no option to cancel although I have added myself for Full Access.\n    submitted by    /u/psychoticapex  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11trz9q/how_to_delete_room_meeting_in_outlook_create_by/",
+          "publishedOn": "2023-03-17T14:02:27.000Z",
+          "wordCount": 12956,
+          "title": "How to delete Room Meeting in Outlook create by another person?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11trypl/are_we_ready_for_windows_11/",
+          "author": null,
+          "description": "Got tasked today with creating a technical plan to find out if our enterprise is ready for Windows 11. \n The obvious stuff I can think of (hardware requirements, is software compatible). \n But what are other things to consider or any caveats?\n We have 99 percent of Windows 10 already, with some Windows 7 for specific tasks. \n Any thoughts?\n    submitted by    /u/aPieceOfMindShit  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11trypl/are_we_ready_for_windows_11/",
+          "publishedOn": "2023-03-17T14:01:54.000Z",
+          "wordCount": 12903,
+          "title": "Are we ready for Windows 11?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11try6x/cve202323397_connectwise_control/",
+          "author": null,
+          "description": "Thought I would post this in case others haven’t thought to leverage Connectwise to install the Office update for CVE-2023-23397. We have 700 on premise domain joined Windows 10 machines in offices and remote/home locations. Moving to Intune soon but not there yet.\n Here's what we have done making it a breeze:\n  \nNotified staff that any MS Office applications left open on the screen would shut down @ 11:00 when we sent the command.\n WOL all office based devices\n Highlighted all machines in Connectwise and sent the command below\n  \n\"C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\OfficeC2RClient.exe\" /update user displaylevel=false forceappshutdown=true \n  \nAny machines online updated there and then including machines not logged into.\n For the 300 or so machines not turned on, as and when they have been coming online, they have checked in with Connectwise and the original queued command has then run updating office.\n  \nAlong with using https://config.office.com/ to track progress, In Connectwise we have also used a custom property to store the office version/build and then scope a session group to this to keep track of unpatched versions.\n Command for Custom Property: \n Get-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration' | Select-Object -ExpandProperty VersionToReport \n Session Group – Subgroup expression (remember to update refresh custom properties):\n IIF (CustomProperty4 LIKE '*16130.20306', 'PATCHED', IIF (CustomProperty4 LIKE '*16026.20238', 'PATCHED', IIF (CustomProperty4 LIKE '*15928.20298', 'PATCHED', IIF (CustomProperty4 LIKE '*15601.20578', 'PATCHED', IIF (CustomProperty4 LIKE '*14931.20944', 'PATCHED', 'NOT PATCHED'))))) \n    submitted by    /u/mythumbsclick  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11try6x/cve202323397_connectwise_control/",
+          "publishedOn": "2023-03-17T14:01:24.000Z",
+          "wordCount": 13221,
+          "title": "CVE-2023-23397 - ConnectWise Control",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11truky/looking_for_a_microsoft_defender_experts_on/",
+          "author": null,
+          "description": "Good Afternoon,\n I was reviewing Microsoft Defenders 'Experts on Demand' costings, and have seen this has now been rebranded to Microsoft Defender Experts for Hunting.\n After talking to the Microsoft Defender Experts for Hunting team, it seems we're not eligible for a few reasons.\n So my question, does anyone have any alternatives to the 'Microsoft Defender Experts on Demand' option, to support our Microsoft Defender environment in for any scenarios where incidents are too advanced for our inhouse IT.\n I am not looking for an alternative to 'Microsoft Defender Experts for Hunting', just the 'Microsoft Defender Experts on Demand' option.\n Kind Regards,\n Max.\n    submitted by    /u/justlittleme123  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11truky/looking_for_a_microsoft_defender_experts_on/",
+          "publishedOn": "2023-03-17T13:57:33.000Z",
+          "wordCount": 12995,
+          "title": "Looking For A Microsoft Defender 'Experts on Demand' Replacement",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11trra5/addressing_ddos_attacks_longterm/",
+          "author": null,
+          "description": "Hi all!\n I'm the developer and owner of a web application that's grown in popularity (and so visibility) over the past few years. In the last month or so, this has brought something new our way with a series of what I'm quite certain are DDoS attacks. Nothing that would crash Facebook, but HTTP requests for our landing and login pages at a rate of ~1000/second without follow-up for the page's resources. Attacks are happening maybe a few times a week.\n I've been building an IP blacklist from the points of origin, am rate-limiting these pages by IP, and have split login onto its own server, so that when these pages get flooded most of our users are not impacted. All of that has done a lot to mitigate the effects of these attacks.\n What's the long-term game, though? Should I be concerned that we're seeing regular attacks, or is this just a product of seeing more traffic? Are there other measures I should be taking? Can I be a better citizen of the internet by reporting points of origin to somewhere?\n Thank you so much for your thoughts on this!\n    submitted by    /u/base736  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11trra5/addressing_ddos_attacks_longterm/",
+          "publishedOn": "2023-03-17T13:53:56.000Z",
+          "wordCount": 13655,
+          "title": "Addressing DDoS attacks long-term?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11trlgi/any_tips_on_keeping_server_racks_cleanand_tidy/",
+          "author": null,
+          "description": "I've been an admin for a few years now, but despite my efforts it seems like the back side of our server racks always end up a mess. When I have the time, I will go through and try and clean up cables and get everything looking nice and neat, but I find it very frustrating since it seems like I keep making shortsighted decisions that I have to fix later on. \n I used to have a similar problem to this back when I did more development work. I would struggle with naming classes and variables, but I eventually learned that using standards and good principles helped me get past those issues. Is there some sort of equivalent for server racks? It feels like an odd question but, I'm running out of ideas here... I'm also getting tired of having to unplug a bunch of stuff before I can slide a server out for maintenance.\n To provide some context I'm mostly dealing with Poweredge servers, with a few other oneoff devices mixed in.\n    submitted by    /u/Pipin_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11trlgi/any_tips_on_keeping_server_racks_cleanand_tidy/",
+          "publishedOn": "2023-03-17T13:47:22.000Z",
+          "wordCount": 13141,
+          "title": "Any tips on keeping server racks cleanand tidy?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11trkzp/exchange_server_2019_cpu_crashed_at_100/",
+          "author": null,
+          "description": "Hi, \n I am posting this issue here for visibility. Early this morning, our exchange 2019 cu12 Jan SU crashed due to high CPU usage. I checked event viewer and saw two errors as the one shown below per second for 11 seconds before the server crashed. \n An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The TLS connection request has failed.\n Event ID 36874 Schannel source. \n This occurred last Thursday. I am currently installing the latest SU...\n Have you experienced this issue? \n Thanks!\n    submitted by    /u/ceantuco  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11trkzp/exchange_server_2019_cpu_crashed_at_100/",
+          "publishedOn": "2023-03-17T13:46:50.000Z",
+          "wordCount": 13162,
+          "title": "Exchange Server 2019 CPU crashed at 100%",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11trk1y/do_you_use_the_preset_security_policies_in_eop/",
+          "author": null,
+          "description": "I enabled this yesterday for one of my clients. Now they’re getting quarantine notices. I think I like my policies better. You?\n    submitted by    /u/pkokkinis  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11trk1y/do_you_use_the_preset_security_policies_in_eop/",
+          "publishedOn": "2023-03-17T13:45:44.000Z",
+          "wordCount": 12851,
+          "title": "Do you use the Preset security policies in EOP for Office 365?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11tr5u6/wikis_what_do_you_use/",
+          "author": null,
+          "description": "I’m working with OneNote as the “Wiki” for use at the IT Department and while it works, I feel there might be better options, so I’d like to hear about what else is out there.\n    submitted by    /u/Computer_Classics  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11tr5u6/wikis_what_do_you_use/",
+          "publishedOn": "2023-03-17T13:29:56.000Z",
+          "wordCount": 13064,
+          "title": "Wikis, What Do You Use?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11tr3pi/developing_it_department_sops_from_scratch/",
+          "author": null,
+          "description": "I have some general questions about development of SOP documentation for an SMB, 3 person staff. I have Googled IT SOP and browsed examples, but wonder if there is a more standard list of recommended SOPs that I could develop for myself. \n -What areas should have an SOP?\n -What other documentation would be considered standard or mandatory?\n    submitted by    /u/JLoose111  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11tr3pi/developing_it_department_sops_from_scratch/",
+          "publishedOn": "2023-03-17T13:27:49.000Z",
+          "wordCount": 12905,
+          "title": "Developing IT Department SOPs from scratch",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/11tqqdd/my_pcs_in_my_active_directory_do_not_connect_to/",
           "author": null,
           "description": "Hello my friends !! \n Here is the background: \n I have about 15 workstations in my infrastructure. \n I have a primary and a secondary active directory. \n The FSMO roles seem to be well configured, and yet some PCs are randomly connecting to the secondary active directory. \n ​\n I can't figure out why this is happening and would like to force all my PCs to connect to the primary ad only.\n Do you have a solution? \n ​\n Thanks for your help! \n Sorry for bad english :)\n    submitted by    /u/Ill-Response2444  \n [link]   [comments]",
@@ -18428,16 +18548,6 @@
           "wordCount": 13291,
           "title": "Should I be concerned about MPLS backbone uplinks?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/113ebyy/old_nortel_optera_docssoftware/",
-          "author": null,
-          "description": "Greetings,\n Does anyone happen to have old Nortel Optera manuals / management software hiding in their personal archives? \n I have a network history lab that I am trying to bootstrap and I am needing to activate some Optera gear (5100 in particular).\n I worked with the Optera platforms in the early days but I cannot locate my PDFs or software archives for them.\n I know that Optera IP went to Ciena - but I had moved out of optical by that point - so I don't have a relationship with them.\n I am hoping that being many years out of date - some of this would be available without too much fuss. \n This is a completely non-commercial exercise - just trying to restore some items from my past as a hobby (I have the hardware, just no software/docs).\n ​\n Thanks!\n    submitted by    /u/Designer-Moose-7226  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/113ebyy/old_nortel_optera_docssoftware/",
-          "publishedOn": "2023-02-16T01:22:56.000Z",
-          "wordCount": 13120,
-          "title": "Old Nortel Optera docs/software",
-          "imageUrl": null
         }
       ]
     },
@@ -18446,6 +18556,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDMnCGlkv4gyFGZo_ZT3atg",
       "siteUrl": "https://www.youtube.com/channel/UCDMnCGlkv4gyFGZo_ZT3atg",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=Wy2gEUWxGLA",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=Wy2gEUWxGLA",
+          "publishedOn": "2023-03-17T13:35:59.000Z",
+          "wordCount": null,
+          "title": "Windows Central Podcast LIVE | Episode 304 | March 17th 2023",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=-3d8IbmY1OU",
           "author": null,
