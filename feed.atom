@@ -2,10 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-03-19T09:11:34.832Z</updated>
+    <updated>2023-03-19T10:12:04.855Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Apache Server: HTTP/2 issues]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11vha3v/apache_server_http2_issues/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11vha3v/apache_server_http2_issues/"/>
+        <updated>2023-03-19T10:01:42.000Z</updated>
+        <summary type="html"><![CDATA[I've just set up a small Apache VM and enabled the HTTP/2 module as described in the documentation (HTTP/2 guide). To test it out, the recommendation is to use the non-browser client curl. However, I'm noticing some strange issues.
+ When curl is told to use HTTP2 (curl --http2), Apache writes 2 lines in the access.log instead of the usual single line. Moreover, the date of the 1st line is completely wrong (sometimes even empty) and the protocol of 2nd line is HTTP/1.1 instead of the expected HTTP/2:
+ 192.168.122.1 - - [31/Dec/1969:21:00:00 -0300] "GET / HTTP/2.0" 200 10922 "-" "curl/7.74.0" 192.168.122.1 - - [19/Mar/2023:04:55:34 -0300] "GET / HTTP/1.1" 101 10967 "-" "curl/7.74.0" 
+ Here's a couple more examples of such issues in access.log:
+ 192.168.122.1 - - "GET / HTTP/2.0" 200 10922 "-…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IP Tools - a Network Managing App]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11vh1g7/ip_tools_a_network_managing_app/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11vh1g7/ip_tools_a_network_managing_app/"/>
+        <updated>2023-03-19T09:49:04.000Z</updated>
+        <summary type="html"><![CDATA[Hello! So for the past couple of months I have been developing an app that contains many IP Tools including LAN Scanning and Wi-Fi Scan.The app is currently in early access and I would love to hear your opinion about this and any suggestions for improvement are very welcome :) https://play.google.com/store/apps/details?id=com.iptools.networkmanager.pk
+    submitted by    /u/panos42  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SEC/Finra updates]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11vh0wi/secfinra_updates/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11vh0wi/secfinra_updates/"/>
+        <updated>2023-03-19T09:48:12.000Z</updated>
+        <summary type="html"><![CDATA[Anybody else tasked with staying FINRA compliant? They are requiring WORM storage and a few other things. 
+ How do you approach this for a multi location finance company with cloud backups
+    submitted by    /u/Forward-Fact-5472  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Automate Excel data]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/11vgv5v/automate_excel_data/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/11vgv5v/automate_excel_data/"/>
+        <updated>2023-03-19T09:39:28.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/EmoryCadet  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Avoid single point of failure using reverse proxy]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/11vgand/avoid_single_point_of_failure_using_reverse_proxy/</id>
@@ -27719,41 +27769,6 @@ If we disconnect the Dock, use LAN, all works fine.
  I have a tracking system called Mosys. It is run on an intel nuc (rehoused with custom software). It feeds data back to one of our network switches via ethernet- which we then send to the server that processes the data. Since this is mounted on a camera, there are a lot of benefits of wireless transmission. While it is a pc (running a flavor of linux) I wanted to know my options for running wireless signal from this pc to our ethernet switch. The pc has usb ports which already support mouse/usb. It also has an ethernet…]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10% Of Our Windows 10 Systems Fail Updates]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/114ygcr/10_of_our_windows_10_systems_fail_updates/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/114ygcr/10_of_our_windows_10_systems_fail_updates/"/>
-        <updated>2023-02-17T21:41:47.000Z</updated>
-        <summary type="html"><![CDATA[Two years ago I posted about failing Windows 10 machines failing updates Unfortunately and frustratingly, we are still seeing this problem in our environment. If anything, it seems like the issue has gotten worse. The only fix that helps temporarily for most systems is to push a in place upgrade task sequence via SCCM. This seems to correct whatever component store/SXS corruption initially, but the problem is it seems like for many systems, the problem resurfaces in a month or two. We've since had two Premier tickets with Microsoft without any identification of a root cause. We have looked for various underlying trends such as build process, PC model, installed features/software, antivirus, etc but have been unable to pin it down. We're still using WSU, but we don't believe the issue is on the update server side. It just seems that at some point these machines get corrupted and no amount of SFC or DISM will fix them. In place repair will fix them but only temporarily. Anybody else deal with similar issues? It's frustrating to deal with in an environment where 100% patch compliance is expected.
-    submitted by    /u/jdbst56  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What is best way to span a network over a road]]></title>
-        <id>https://www.reddit.com/r/networking/comments/114y9n4/what_is_best_way_to_span_a_network_over_a_road/</id>
-        <link href="https://www.reddit.com/r/networking/comments/114y9n4/what_is_best_way_to_span_a_network_over_a_road/"/>
-        <updated>2023-02-17T21:33:54.000Z</updated>
-        <summary type="html"><![CDATA[I've been setting up networking (internet and cameras) for a small hotel and restaurant in the Caribbean for the past 3 years. They started off small (just 1 building) but they keep growing. They own about a whole acre of land where they keep building small "bungalows" and container rooms. Now they decided to buy the property across the street and covert it to another 5 rooms for the hotel. They want internet and IP cameras across the street. The "street" is unpaved, and the other property is 84 feet from the office where I keep the modem and router. I'm leaning toward using Cat 6 or fiber to span this distance. My business partner wants to use a Ubiquity air max bridge. I haven't set one of these up, so I don't know how reliable or complicated they are. Theres no vegetation in the line of sight, but it rains a lot. Currently I use a Huwei LTE modem/router with 3 Unifi AP's. I think I am going to add a load balancing router so I can use two ISPs for more consistency and speed. 
- The owner said we could bury a conduit if we want. Also I could hypothetically use the utility poles to span cable (is that a good idea)? I want something thats going to work 99% of the time. I don't live down there so if theres a problem, I have to call and walk someone (usually with very little IT experience) through how to reset a device or trouble shoot. I need reliability.
- I do want to future proof this. If you bury conduit, how deep do you normally go and what diameter do you use? Would you use fiber, Cat 6 cable or a wireless bridge? I really appreciate any help you can offer.
-    submitted by    /u/Stevogangstar  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[pfSense Plus 23.01 Release & Upgrade Review]]></title>
-        <id>https://www.youtube.com/watch?v=iE8zm_EbnZw</id>
-        <link href="https://www.youtube.com/watch?v=iE8zm_EbnZw"/>
-        <updated>2023-02-17T21:13:06.000Z</updated>
-        <author>
-            <name>Lawrence Systems</name>
         </author>
     </entry>
 </feed>
