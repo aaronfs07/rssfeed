@@ -22,11 +22,224 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-22 datetime="2023-03-22T12:19:19.000Z">2023-03-22</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-22 datetime="2023-03-22T12:19:19.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-22 datetime="2023-03-22T13:12:33.000Z">2023-03-22</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-22 datetime="2023-03-22T13:12:33.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yirft/stp_broken_port_by_type_inconsistency/"
+                        open
+                      >
+                        <summary class="article-expander__title">STP BROKEN port by TYPE Inconsistency</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yirft/stp_broken_port_by_type_inconsistency/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>HI! I&#x27;m trying to move a fiber connexion at work from a router port to a switch port so we can remove some redundant legacy router. Here is the the general idea:
+ from:
+ Provider fiber -&gt; Media converter -&gt; Router -&gt; Switch (access port) -&gt; Firewall cluster vlan interface (via trunk port from switch) 
+ to:
+ Provider fiber -&gt; Media converter -&gt; Switch (access port) -&gt; Firewall cluster vlan interface (via trunk port from switch) 
+ Now when I plug the media converter port to my access port, STP reports port BROKEN for &quot;Shr *TYPE_Inc&quot; so it doesn&#x27;t work. My understanding is that the other end is trunking and im doing access port so it&#x27;s expected behavior. 
+ Now can someone confirm if I&#x27;m understanding this correctly and why this is working fine when connected to a router port? Also works if I skip the switch and plug directly into the port of one of the firewalls in the cluster (probably same reason why it works on router port).
+ Switch port config:
+ interface GigabitEthernet1/0/18 description 160-VLAN switchport access vlan 160 switchport mode access speed 100 end 
+ Router port config:
+ interface GigabitEthernet0/0/0 description WAN ip address x.x.x.x 255.255.255.248 ip nat outside speed 100 no negotiation auto 
+ What throws me off it when the media converter is plugged to my switch, the other end (what I see as gtw) can ping my firewall interface correctly but I can&#x27;t ping them (again, that gtw). 
+ Thank you!
+    submitted by    /u/Casgrain  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yhuj8/l2_pseudowire_emulation_simplified_design/"
+                        open
+                      >
+                        <summary class="article-expander__title">L2 pseudowire emulation - Simplified design</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yhuj8/l2_pseudowire_emulation_simplified_design/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello community, I’m seeking some assistance in a setup for replication of a L2 pseudowire service.
+ Scenario: I have a 10G fibre that carries the following:
+  
+Untagged: General traffic, multiple subnets, routed
+ VLAN1998: customer X branch 1
+ VLAN1999: customer X branch 2
+  
+What’s at the other end of this fiber is not really relevant but for context it is a CMTS (Cable Modem Termination System) and then downstream of that multiple cable modems. This is also not a production environment, the goal here is for me to troubleshoot something downstream of the CMTS, on the cable modem itself but I need the full environment to replicate. Because this is a lab, it is all fairly low volume (about 100 Mbps).
+ The 2 VLANs are essentially customer LAN extensions where the customer purchases a circui…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yggzi/cisco_ncs55a124qx_experiences/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco NCS-55A1-24QX experiences?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yggzi/cisco_ncs55a124qx_experiences/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We&#x27;ve been recommend this unit to replace one of our aging transit routers. I was originally quoting the NCS-5501 but this has more capacity and more 100Gb ports at a MUCH cheaper price due to some heavy Cisco discounts. 
+ The thing is of course is it&#x27;s quite a new device. Anyone here been using one of these and have any warnings I should make note of? 
+ I&#x27;ll be using it as a Transit router/route reflector on a MPLS (LDP) network. Replacing our ASR1002. 
+ Thanks
+    submitted by    /u/Busbyuk  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yfu3y/share_openswan_site_to_site_vpn_on_a_centos/"
+                        open
+                      >
+                        <summary class="article-expander__title">Share Openswan Site to Site VPN on a Centos Server with Other Servers in a VPC</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yfu3y/share_openswan_site_to_site_vpn_on_a_centos/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I use digital ocean for cloud services and have an Ipsec Site to Site VPN Setup on one of my servers/droplets to an external network that i do not control.
+ I have other servers that are in a VPC with the first server but they are not able to access the Site to Site Network. How do i make them access it? I want to share the first servers access with them perhaps through some routing or proxy or any other means.
+ Please help or point me in the right direction.
+    submitted by    /u/dzagey  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yewb0/if_you_have_two_ebgp_edge_routers_how_are_routes/"
+                        open
+                      >
+                        <summary class="article-expander__title">If you have two eBGP edge routers how are routes shared internally?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yewb0/if_you_have_two_ebgp_edge_routers_how_are_routes/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>In a network where there are two eBGP internet edge routers how are routes shared internally? Which protocol is used?
+ Thank you
+    submitted by    /u/Ok_Language_5003  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11ydkim/mtp_fiber_getting_started/"
+                        open
+                      >
+                        <summary class="article-expander__title">MTP Fiber - Getting Started</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11ydkim/mtp_fiber_getting_started/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have a massive fiber job coming up with just over a 1000 strands of fiber to terminate. I&#x27;ve kicked around the idea of MTP Fiber on large jobs. This one, I think Id rather do MTP for the time savings alone. 
+ What connectors and tools do you all recommend??
+    submitted by    /u/RedDot4679  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11ybw6j/singal_fluctuation_on_module_which_range_is_normal/"
+                        open
+                      >
+                        <summary class="article-expander__title">Singal fluctuation on Module (Which range is normal).</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11ybw6j/singal_fluctuation_on_module_which_range_is_normal/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello, all experts I&#x27;m seeking your experience with sfp signal fluctuation and some troubleshooting.
+ The question here, what is the normal range that is acceptable with our module, example its fluctuation between 0.5 to 1 or below that?
+ As I am monitoring my 10KM sfp x4 I saw that 3x sfp fluctuate between 0.5 and 1 with 30mins timeframe, and 1 fluctuate 0.5 to 1.8 with 30 minutes timeframe.
+ Module: TR-FF13L-N00 50gb/s 1311 LC10KM(SMF) 
+ Thanks, you.
+    submitted by    /u/Davit24  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/11y7ce2/i_have_2_devices_connected_to_my_meraki_z3/"
+                        open
+                      >
+                        <summary class="article-expander__title">I have 2 devices connected to my Meraki Z3 Teleworker, both in different subnets. How come Device A is able to discover Device B?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11y7ce2/i_have_2_devices_connected_to_my_meraki_z3/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So some context. This is to do with NDI.
+ I have Device A (a camera) connected to port 1 and Device B (my PC) connected to port 2. Device A was statically configured with an incorrect IP, where as Device B has an IP that falls within my network.
+ On Device B I am able to discover Device A. I&#x27;m assuming this is done through multicast, but if both devices are in separate networks, and Device A doesn&#x27;t even have a gateway, how is it possible that there&#x27;s discovery?
+    submitted by    /u/PsyduckAF  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -38,6 +251,158 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11yiqlp/skills_for_an_upcoming_it_intern/"
+                        open
+                      >
+                        <summary class="article-expander__title">Skills for an upcoming IT intern?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11yiqlp/skills_for_an_upcoming_it_intern/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey Everyone
+ Long time lurker and this is my first time posting on here. I am 20M and will be graduating with my BSIT this December. As part of our degree program we are required to complete an internship. I recently received a job offer as an Intern where I will be working directly under a Senior Sys admin. I am a little bit nervous as this is not only my first job in IT but also my first Job in a professional office environment. I really want to do a good job and be a valuable member of the team but I am a little bit unsure what skills/technologies I am expected to be competent in as the job description was quite vague. I feel comfortable with basic stuff like configuring VMs and basic network troubleshooting but I definitely still have a lot to learn. I was wondering if anyone here could give me some advice as to what I should become familiar with before I start in May? What tools/technology’s do sysadmins use daily that would make me stand out if I am familiar with? Any advice anyone could provide would be greatly appreciated. Sorry for any formatting mistakes as I am on mobile. Thank you.
+    submitted by    /u/theusualtechguy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11yij8p/meraki_issues_after_upgrading_mx_firmware_to_17104/"
+                        open
+                      >
+                        <summary class="article-expander__title">Meraki issues after upgrading MX firmware to 17.10.4</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11yij8p/meraki_issues_after_upgrading_mx_firmware_to_17104/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Just wanted to check if anyone else is seeing issues after upgrading Meraki MX (MX100) firmware to 17.10.4? We upgraded over the weekend and since then we&#x27;ve seen a lot of connectivity issues with client applications. E.G Our live chat operator console can&#x27;t reach the server, Sage Applications are unable to talk to Sage, one of our dev&#x27;s has had issues reaching Debian, etc.
+ Going to roll back this evening but anyone else experiencing issues?
+ ​
+ Edit - Similar issues found here - PSA - Beware MX firmware upgrade from 17.10.2 to 17.10.4 : meraki (reddit.com) 
+    submitted by    /u/thisisrossonomous  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11yiivv/windows_10_eosl_date/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows 10 EoSL date</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11yiivv/windows_10_eosl_date/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are trying to plan for the demise of Windows 10.
+ Does anyone know whether there will be another version of Windows 10 after 22H2? I can&#x27;t find a yes, or no, anywhere.
+ https://learn.microsoft.com/en-us/windows/release-health/release-information says 22H2 ends on 13 May 2025, buy says nothing about any future releases.
+ https://www.theverge.com/2021/11/16/22785452/microsoft-windows-10-future-feature-updates-annual-2022 says 14 October 2025, but I don&#x27;t know where they get that date from.
+ https://arstechnica.com/gadgets/2021/11/microsoft-will-continue-supporting-windows-10-with-yearly-feature-updates/ also says October 2025, but again I don&#x27;t know where that date comes from. 
+ There a few other sites with October 2025 as well.
+ So Microsoft says a hard end date for 22H2. But will there be a future release? And where does the October 2025 date come from?
+ Any links to sources, especially Microsoft, would be most helpful. Thanks
+    submitted by    /u/ZAFJB  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11yi93e/migrating_dhcp_from_load_balance_to_hot_standby/"
+                        open
+                      >
+                        <summary class="article-expander__title">Migrating DHCP from Load Balance to Hot Standby</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11yi93e/migrating_dhcp_from_load_balance_to_hot_standby/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have two Windows servers (running Server 2022) handling DHCP in a load balance scenario currently. We&#x27;d like to migrate to hot standby in order to troubleshoot some issues we are having with some clients.
+ What is the process for doing so? Would we need to modify the existing IP helper commands we have on VLANS that are pointed to those two DHCP servers? Thanks!
+    submitted by    /u/Hazy_Arc  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11yhtx5/protips_for_handling_split_dns_requests_with/"
+                        open
+                      >
+                        <summary class="article-expander__title">Protips for handling Split DNS Requests with Windows Server</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11yhtx5/protips_for_handling_split_dns_requests_with/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi there, 
+ ​
+ I&#x27;ve got the follwoing problem. 
+ ​
+ We have a customer who fused with another Company. 
+ They are connected via IPSEC and some resources like Ticketing system is only available via Internal IP example: ticket.corp.com -&gt; 10.10.10.10
+ Some resources for Marketing and such are hosted in Azure like marketing.corp.com -&gt; 20.30.40.50
+ Now.
+ ​
+ If I create a Zone on my DNS Server which holds corp.com then I need to add all known A records and such, right ?
+ Zonetransfer isn&#x27;t an option since the other corp still has another MSP and they aren&#x27;t really of the fastest type.
+ ​
+ What would be a good route here ?
+    submitted by    /u/Legal_Ambition4060  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11yhfpz/xlsm_api_calls_broken/"
+                        open
+                      >
+                        <summary class="article-expander__title">.xlsm api calls broken</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11yhfpz/xlsm_api_calls_broken/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>More of an FYI, haven’t seen this mentioned yet, but Defender Security Intelligence version 1.385.757.0 breaks the ASR rule “Block Win32 API Calls from Offic Macro”
+ This seems to impact .Xlsm spreadsheets that have api calls. If anyone remembers that issue in January where .lnk files got deleted by the definitions update, this is the same vibe but doesn’t seem to be reported by Microsoft yet. 
+ Also, if anyone has a workaround I’d love that :)
+    submitted by    /u/The_Lemmings  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -623,159 +988,6 @@ I&#x27;ve done a set of updates manually since applying the above settings. I&#x
     submitted by    /u/LoverOfLanguage  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;49
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yggzi/cisco_ncs55a124qx_experiences/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cisco NCS-55A1-24QX experiences?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yggzi/cisco_ncs55a124qx_experiences/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We&#x27;ve been recommend this unit to replace one of our aging transit routers. I was originally quoting the NCS-5501 but this has more capacity and more 100Gb ports at a MUCH cheaper price due to some heavy Cisco discounts. 
- The thing is of course is it&#x27;s quite a new device. Anyone here been using one of these and have any warnings I should make note of? 
- I&#x27;ll be using it as a Transit router/route reflector on a MPLS (LDP) network. Replacing our ASR1002. 
- Thanks
-    submitted by    /u/Busbyuk  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yfu3y/share_openswan_site_to_site_vpn_on_a_centos/"
-                        open
-                      >
-                        <summary class="article-expander__title">Share Openswan Site to Site VPN on a Centos Server with Other Servers in a VPC</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yfu3y/share_openswan_site_to_site_vpn_on_a_centos/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I use digital ocean for cloud services and have an Ipsec Site to Site VPN Setup on one of my servers/droplets to an external network that i do not control.
- I have other servers that are in a VPC with the first server but they are not able to access the Site to Site Network. How do i make them access it? I want to share the first servers access with them perhaps through some routing or proxy or any other means.
- Please help or point me in the right direction.
-    submitted by    /u/dzagey  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11yewb0/if_you_have_two_ebgp_edge_routers_how_are_routes/"
-                        open
-                      >
-                        <summary class="article-expander__title">If you have two eBGP edge routers how are routes shared internally?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11yewb0/if_you_have_two_ebgp_edge_routers_how_are_routes/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>In a network where there are two eBGP internet edge routers how are routes shared internally? Which protocol is used?
- Thank you
-    submitted by    /u/Ok_Language_5003  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11ydkim/mtp_fiber_getting_started/"
-                        open
-                      >
-                        <summary class="article-expander__title">MTP Fiber - Getting Started</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11ydkim/mtp_fiber_getting_started/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have a massive fiber job coming up with just over a 1000 strands of fiber to terminate. I&#x27;ve kicked around the idea of MTP Fiber on large jobs. This one, I think Id rather do MTP for the time savings alone. 
- What connectors and tools do you all recommend??
-    submitted by    /u/RedDot4679  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11ybw6j/singal_fluctuation_on_module_which_range_is_normal/"
-                        open
-                      >
-                        <summary class="article-expander__title">Singal fluctuation on Module (Which range is normal).</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11ybw6j/singal_fluctuation_on_module_which_range_is_normal/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello, all experts I&#x27;m seeking your experience with sfp signal fluctuation and some troubleshooting.
- The question here, what is the normal range that is acceptable with our module, example its fluctuation between 0.5 to 1 or below that?
- As I am monitoring my 10KM sfp x4 I saw that 3x sfp fluctuate between 0.5 and 1 with 30mins timeframe, and 1 fluctuate 0.5 to 1.8 with 30 minutes timeframe.
- Module: TR-FF13L-N00 50gb/s 1311 LC10KM(SMF) 
- Thanks, you.
-    submitted by    /u/Davit24  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11y7ce2/i_have_2_devices_connected_to_my_meraki_z3/"
-                        open
-                      >
-                        <summary class="article-expander__title">I have 2 devices connected to my Meraki Z3 Teleworker, both in different subnets. How come Device A is able to discover Device B?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11y7ce2/i_have_2_devices_connected_to_my_meraki_z3/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So some context. This is to do with NDI.
- I have Device A (a camera) connected to port 1 and Device B (my PC) connected to port 2. Device A was statically configured with an incorrect IP, where as Device B has an IP that falls within my network.
- On Device B I am able to discover Device A. I&#x27;m assuming this is done through multicast, but if both devices are in separate networks, and Device A doesn&#x27;t even have a gateway, how is it possible that there&#x27;s discovery?
-    submitted by    /u/PsyduckAF  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -47907,53 +48119,6 @@ Epic Will: Use Promo Code &#x27;WIRE&#x27; for 10% off your Will: https://www.ep
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/117qfus/is_upstream_the_same_thing_as_provider_in_isp/"
-                        open
-                      >
-                        <summary class="article-expander__title">Is &quot;upstream&quot; the same thing as &quot;provider&quot; in ISP routing terminology?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/117qfus/is_upstream_the_same_thing_as_provider_in_isp/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Here is the BGP policy for my ISP:
- https://bgp.he.net/AS6667#_whois
- It has a section for &quot;Customers&quot;, which shows that the ISP advertises all prefixes to their customers
- It also has a section for each &quot;Peer&quot;, which shows that the ISP advertises its customers prefixes and its own prefixes.
- AND, the last section is &quot;Upstreams&quot;, so is that referring to the ISPs that my ISP is the customer of? 
- e.g the upstream ISPs advertise their routing tables for my ISP so my ISP can route through them. (my ISP obviously has to pay to them right?)
-    submitted by    /u/Sea_Improvement_1374  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/117q6t2/stack_vs_chassis_switch/"
-                        open
-                      >
-                        <summary class="article-expander__title">Stack vs. Chassis switch?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/117q6t2/stack_vs_chassis_switch/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I could use some input from some folks who aren&#x27;t afraid to call it as they see it, so thanks in advance! 
- Our main office currently has a pair of 6807XL&#x27;s in VSS, someday we&#x27;ll need to replace them. Seems Cisco bumped the EOL by a few years due to supply chain issues, but the topic of lifecycle came up recently. The long story short is: We&#x27;re not sure we need a chassis platform for this office, but Cisco obviously wants to upsell us and immediately flipped shit when we brought up the idea of running our &quot;data center&quot; off a stack of 9300X&#x27;s. 
- I use the term &quot;data center&quot; sparingly since there is no Nexus, fabric, routing protocols, VXLAN, etc. happening. We&#x27;ve got less than a hundred 1G copper and about a dozen 10G fiber ports lit at the moment, a chunk of the copper is MGMT interfaces. …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;54
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47961,8 +48126,8 @@ Epic Will: Use Promo Code &#x27;WIRE&#x27; for 10% off your Will: https://www.ep
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4489768337">
-        <time id="build-timestamp" datetime="2023-03-22T12:22:33.400Z">2023-03-22T12:22:33.400Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4490270071">
+        <time id="build-timestamp" datetime="2023-03-22T13:16:36.228Z">2023-03-22T13:16:36.228Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
