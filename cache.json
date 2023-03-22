@@ -360,6 +360,96 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yk38h/domain_user_and_unc_path_access/",
+          "author": null,
+          "description": "Reposting because Reddit spam filter decided it was spam and I didn't realize T__T.\n Hi All,\n Is it possible to somehow allow a user to a specific UNC path through an application (an ERP we provide access to has shared files/folders configured at a UNC path; it's required to be implemented this way through the ERP); however to *NOT* allow the user to navigate to the UNC path via Windows file explorer?\n So, for example, let's say there is a PDF attached in the ERP system for a specific user at path \\\\server00\\folder1\\file1.pdf and if the user is within the ERP system, they attempt to access the PDF, it launches whatever the PDF application is and they are able to view the PDF successfully. However, we do not want the user to navigate manually to the path \\\\server00\\folder\\file1.pdf as there maybe something within \\\\server00 that we do not want the user to have access to.\n I can *probably* do individual permissions per user and it will work however...it's over ~400 users and managing that will be a nightmare...\n Ideally, I'd like to turn off UNC path access but allow it through the ERP application access. I know you can turn off UNC access via GPO and I tested this already but then it breaks the access through the ERP application when the user is logged in as well.\n Thanks for any feedback!\n    submitted by    /u/ryujin350z  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yk38h/domain_user_and_unc_path_access/",
+          "publishedOn": "2023-03-22T14:04:12.000Z",
+          "wordCount": 13335,
+          "title": "Domain User and UNC Path Access",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yk1mo/blocking_all_outbound_smb_connections_to/",
+          "author": null,
+          "description": "First post here so be gentle 😁 We are a small MSP with aboud 1300 Windows 10/11 endpoints ranging from standalone, local AD domain joined, AzureAD joined and servers spread over around 80 customers. In order to prevent attacks like CVE-2023-23397 we want to block all outgoing SMB connections that are not going to private cidr ranges (10.0.0.0/8, 172.16.0.0, etc..) entirely, blocking this attack vector for future vulnerabilities like this one. Preferably we would like to use the Windows firewall for this, because we have no control over home routers and blocking these connections from home workers using company laptops. We can however control the Windows firewall rules using powershell on all of our endpoints, but I cant seem to block outbound SMB connections at all. We want to deploy firewall rules using this example powershell:\n New-NetFirewallRule -DisplayName \"Block SMB connections to public IP subnets\" -Direction Outbound -Protocol TCP -RemotePort 139,445 -RemoteAddress \"0.0.0.0-9.255.255.255\",\"11.0.0.0-172.15.255.255\",\"172.32.0.0-192.167.255.255\",\"192.169.0.0-255.255.255.255\" -Action Block \n It adds the block rule on top of the list wwith outbound rules, but somehow SMB connections keep working, even if I add our local NAS device to the RemoteAddress list.\n  \nWindows firewall is enabled\n Rule is present in all profiles\n ChatGPT had no useful tips for me 🫣\n  \nAnyone know how to do this using Windows firewall?\n    submitted by    /u/cfvr  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yk1mo/blocking_all_outbound_smb_connections_to/",
+          "publishedOn": "2023-03-22T14:02:35.000Z",
+          "wordCount": 13302,
+          "title": "Blocking all outbound SMB connections to non-private networks",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yjzmq/maximum_password_age_does_changing_this_in_a_gpo/",
+          "author": null,
+          "description": "Hi,\n We had one domain that had a different password expiration setting from our others. I changed the policy so that now they are all the same. However, my own Password Expires information is still set based on the old setting.\n Does this just take a while and eventually my expiration date will update to reflect the new setting? Or does the expiration date get set when you change the password and it won't reflect the new setting until I change it next?\n Thanks.\n    submitted by    /u/kelemvor33  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yjzmq/maximum_password_age_does_changing_this_in_a_gpo/",
+          "publishedOn": "2023-03-22T14:00:48.000Z",
+          "wordCount": 13080,
+          "title": "Maximum Password Age - Does changing this in a GPO affect existing credentials?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yjxx2/does_scoutsuite_work_with_an_o365_business/",
+          "author": null,
+          "description": "i cant get it to work with a tenant that has business premium license. on tenants with e3 it works just fine.\n    submitted by    /u/Inner-Wall5937  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yjxx2/does_scoutsuite_work_with_an_o365_business/",
+          "publishedOn": "2023-03-22T13:59:13.000Z",
+          "wordCount": 12933,
+          "title": "does scoutsuite work with an o365 business premium license?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yjjit/which_openjdk_version_to_install_v8_v11_v17/",
+          "author": null,
+          "description": "Hi,\n I am not a developer and not very familiar with how it all works. I just need to install OpenJDK on some devices.\n We are deploying OpenJDK from Adoptium. No issues there.\n But I want to understand the differences between the various version.\n I understand that it is advisable to install the LTS version. That is fine.\n However, which version?\n If I install version 17. Will it be backwards compatible with apps requiring version 8? Can it break something if I upgrade from version 8 to 17?\n I can install them one next to the other. But what would be the use-case for that? Isn't it cleaner to just keep one version installed?\n For someone that is not familiar with Java, it is very confusing. Hope some of you can shed some light on it. Would be highly appreciated.\n Thank you\n    submitted by    /u/dinci5  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yjjit/which_openjdk_version_to_install_v8_v11_v17/",
+          "publishedOn": "2023-03-22T13:43:55.000Z",
+          "wordCount": 13392,
+          "title": "Which OpenJDK version to install (v8, v11, v17, ...) ?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yjfuw/cisco_anyconnect_on_windows_11/",
+          "author": null,
+          "description": "Trying to set up my workplace VPN on my laptop, I’ve used AnyConnect on my phone and iPad and in the past on chromebook, and its always fairly easy but windows 11 is giving me headaches.\n Hopefully someone here might be able to help..\n On mobile devices: Sign in with work credentials, it sends a 2FA auth to my phone, I accept/enter 2fa cade, and the VPN gets turned on\n On Windows, i go to the app and it takes me to Windows VPN settings.\n I set it up, enter my login info, then try to connect and it never tries to get my 2FA code, it’ll make the attempt but then says it failed or timed out.\n Does anyone know how to get 2FA to work with Windows 11 on Cisco AnyConnect VPN? \n TIA\n    submitted by    /u/Dramatic_Jicama6186  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yjfuw/cisco_anyconnect_on_windows_11/",
+          "publishedOn": "2023-03-22T13:40:10.000Z",
+          "wordCount": 13139,
+          "title": "CISCO Anyconnect on Windows 11",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yjegw/it_asset_inventory/",
+          "author": null,
+          "description": "Hello! What software do you use to inventory company assets? I know asset explorer From altair, servicenow, sysaids… anything else? Thanks, in advance 🙂\n    submitted by    /u/JordiML  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yjegw/it_asset_inventory/",
+          "publishedOn": "2023-03-22T13:38:40.000Z",
+          "wordCount": 13196,
+          "title": "IT Asset inventory",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yjdpm/mdm_solution_lots_of_iphones/",
+          "author": null,
+          "description": "What is everybody using for MDM? Specifically in an organization that is heavily iOS for phones and Windows for laptops? Meraki seems to be okay, but nothing to write home about.\n    submitted by    /u/adudenameddan  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yjdpm/mdm_solution_lots_of_iphones/",
+          "publishedOn": "2023-03-22T13:37:49.000Z",
+          "wordCount": 13068,
+          "title": "MDM solution? Lots of iPhones",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/11yj9lo/bitlocker/",
+          "author": null,
+          "description": "Hi, I never used Bitlocker before, please forgive me if my question is too naive. Is it possible to deploy full disk encryption AFTER os is already installed (eg. on a laptop)?\n Or is this a step than one should be accomplish right in installation process?\n I'm referring to Windows10/11 oses.\n Thankyou\n    submitted by    /u/g-simon  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/11yj9lo/bitlocker/",
+          "publishedOn": "2023-03-22T13:33:23.000Z",
+          "wordCount": 13206,
+          "title": "Bitlocker",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/11yiqlp/skills_for_an_upcoming_it_intern/",
           "author": null,
           "description": "Hey Everyone\n Long time lurker and this is my first time posting on here. I am 20M and will be graduating with my BSIT this December. As part of our degree program we are required to complete an internship. I recently received a job offer as an Intern where I will be working directly under a Senior Sys admin. I am a little bit nervous as this is not only my first job in IT but also my first Job in a professional office environment. I really want to do a good job and be a valuable member of the team but I am a little bit unsure what skills/technologies I am expected to be competent in as the job description was quite vague. I feel comfortable with basic stuff like configuring VMs and basic network troubleshooting but I definitely still have a lot to learn. I was wondering if anyone here could give me some advice as to what I should become familiar with before I start in May? What tools/technology’s do sysadmins use daily that would make me stand out if I am familiar with? Any advice anyone could provide would be greatly appreciated. Sorry for any formatting mistakes as I am on mobile. Thank you.\n    submitted by    /u/theusualtechguy  \n [link]   [comments]",
@@ -13217,6 +13307,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/11yk5iw/can_you_have_2_separate_subnets_on_1_switch/",
+          "author": null,
+          "description": "I have a router with:\n  \nPort A - 10.0.0.1/24\n Port B - 10.0.1.1/24 \n  \nI only have 1 switch. If I have 2 hosts connected to the switch:\n  \nHost 1 - 10.0.0.2/24\n Host 2 - 10.0.1.2/24 \n  \nWill this work?\n    submitted by    /u/Ok_Language_5003  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/11yk5iw/can_you_have_2_separate_subnets_on_1_switch/",
+          "publishedOn": "2023-03-22T14:06:25.000Z",
+          "wordCount": 13088,
+          "title": "Can you have 2 separate subnets on 1 switch?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/11yj5eb/using_broker_to_buy_ip_block/",
+          "author": null,
+          "description": "has anyone done this? any pitfalls? concerns? things to look out for? thanks!\n    submitted by    /u/Shujolnyc  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/11yj5eb/using_broker_to_buy_ip_block/",
+          "publishedOn": "2023-03-22T13:28:49.000Z",
+          "wordCount": 13044,
+          "title": "using broker to buy ip block?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/11yirft/stp_broken_port_by_type_inconsistency/",
           "author": null,
