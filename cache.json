@@ -310,6 +310,116 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123oavj/unable_to_write_to_mounted_efs_volume_in_ecs/",
+          "author": null,
+          "description": "I've been struggling for a few days with this one and can't seem to understand what I may be doing wrong.\n I am learning Terraform and put together a (terribly formatted albeit functional) template which deploys all my resources successfully with no issues. I have the following EFS policy attached to each file system (there are 3):\n  \ndata \"aws_iam_policy_document\" \"sq-efs-data-policy-doc\" { \n statement { \n effect = \"Allow\" \n principals { \n type = \"AWS\" \n identifiers = [\"*\"] \n } \n actions = [ \n \"elasticfilesystem:ClientRootAccess\", \n \"elasticfilesystem:ClientMount\", \n \"elasticfilesystem:ClientWrite\" \n ] \n resources = [aws_efs_file_system.data_fs.arn] \n } \n }\n  \n​\n    submitted by    /u/AMercifulHello  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123oavj/unable_to_write_to_mounted_efs_volume_in_ecs/",
+          "publishedOn": "2023-03-27T14:21:42.000Z",
+          "wordCount": 13059,
+          "title": "Unable to write to mounted EFS volume in ECS container",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123o8zn/suggestion_regarding_active_directory/",
+          "author": null,
+          "description": "Hi, I'm newbie to the world of cybersecurity/sysadmin. As for my university internship, I have to implement a siem in a company network with a microsoft on premise Active Directory. I would like to know what are the main siems that can be implemented to check device logs within this network. I've seen solutions like grayLog and wazuh but I don't know if they can be efficient as far as this business case is concerned. Thank you for those who will have the patience to answer me and explain the reasons.\n    submitted by    /u/Empty-Interaction441  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123o8zn/suggestion_regarding_active_directory/",
+          "publishedOn": "2023-03-27T14:19:52.000Z",
+          "wordCount": 13088,
+          "title": "Suggestion regarding active directory",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123o6su/question_windows_11_is_cancelling_print_jobs_if/",
+          "author": null,
+          "description": "Has anyone run into this yet? It is very frustrating for our users. We recently started deploying Windows 11 machines and ran into this issue.\n ​\n If the user sends a print job to our Ricoh MP C3003, then sends another print job before the first one finishes, there is a high change that they receive an error popup and then half the job gets cancelled.\n ​\n I unfortunately do not have the exact wording of the message or where it is coming from. It disappears too quickly for them to get a screenshot. They said it says \"Error Printing\", followed by the file name and I think it is popping up from the print task tray icon. There is nothing in the event viewer for these that I can find.\n ​\n None of our Windows 10 boxes are experiencing this issue but all of the Windows 11 machines have at least once. Our printers are on a 2016 print server. We've reconfigured a couple to go directly to the printer instead but that didn't seem to help any. I believe it is happening on all of our printers, but the Ricoh is the only one I have log proof of.\n ​\n Googling \"Error Printing Windows 11\" isn't really giving me anything useful as you could imagine. Any assistance would be greatly appreciated.\n    submitted by    /u/spiritcrusher  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123o6su/question_windows_11_is_cancelling_print_jobs_if/",
+          "publishedOn": "2023-03-27T14:17:36.000Z",
+          "wordCount": 13352,
+          "title": "[Question] Windows 11 is cancelling print jobs if multiple jobs are sent",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123o4hg/certs_for_windows_server_options/",
+          "author": null,
+          "description": "I know Microsoft stopped any Server certs after 2016. I just started my sysadmin role a little over a year ago and would like to dig deeper and learn more about Server. I've got some experience in my position building VMs in Server 2019, upgrading from Server 2012 R2 to 2019, and am responsible for monthly patching via WSUS. Maybe that's good enough, but I feel like I lack the knowledge when issues do arise with servers.\n What options or resources are out there I can get more in-depth knowledge like a Microsoft Server cert, even if I don't get a cert out of it?\n    submitted by    /u/zooguycity  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123o4hg/certs_for_windows_server_options/",
+          "publishedOn": "2023-03-27T14:15:12.000Z",
+          "wordCount": 1988,
+          "title": "Certs for Windows Server options",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123o2fi/cheap_fc_san_with_raid_controller_for_my_lab/",
+          "author": null,
+          "description": "Hello,\n for my lab I need a cheap SAN solution to create some LUNs and map them to two servers via FC.\n I need these features:\n - RAID Controller supporting RAID5\n - fits SAS HDDs (I have some lying around here)\n - at least 2 FC Ports (2 Gbit should be enough)\n - WebGUI for configuration / creating LUNs etc\n - Price ~500$ without disks\n - At least basic features working without license (I dont need replication, encryption, deduplication etc.)\n Most used/refurbished stuff I found needs some legacy software which has to be licensed. \n I would be happy for recommendations!\n Thanks\n JCR\n    submitted by    /u/jcr1985  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123o2fi/cheap_fc_san_with_raid_controller_for_my_lab/",
+          "publishedOn": "2023-03-27T14:12:55.000Z",
+          "wordCount": 13102,
+          "title": "Cheap FC SAN with RAID Controller for my lab",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123nyzw/dmarc/",
+          "author": null,
+          "description": "Are there instances where DKIM/DMARC isn't necessary?\n    submitted by    /u/QuadrupleAntlers  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123nyzw/dmarc/",
+          "publishedOn": "2023-03-27T14:09:16.000Z",
+          "wordCount": 13092,
+          "title": "DMARC",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123ntkn/just_realized_we_lack_even_basic_av/",
+          "author": null,
+          "description": "This has been interesting month as I'm noticing more and more lack of things from the previous admin and frankly the lack of documentation is driving me crazy.\n I want to see what licenses and software we have and I can't any on SharePoint his email or documentation.\n I can't believe we have no av so I ask what's a good and relatively inexpensive for a small to mid sized business?\n    submitted by    /u/Abject_Serve_1269  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123ntkn/just_realized_we_lack_even_basic_av/",
+          "publishedOn": "2023-03-27T14:03:28.000Z",
+          "wordCount": 13245,
+          "title": "Just realized we lack even basic av",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123nsl2/teams_calling/",
+          "author": null,
+          "description": "Hopefully a nice simple question but we have a customer looking to move to a VoIP phone system (Teams is the preferred option at the moment), however they have a particular requirement for some sort of loud speaker in their Factory, the current system has some sort of configuration so that if the extension in the factory is rung it triggers essentially an alarm buzzer that can be heard over all of the manufacturing equipment. \n Has anyone come across something similar that might work with Teams or VoIP systems to make the ringer very loud.\n    submitted by    /u/rio688  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123nsl2/teams_calling/",
+          "publishedOn": "2023-03-27T14:02:24.000Z",
+          "wordCount": 13224,
+          "title": "Teams Calling",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123nixt/email_forwarding_error/",
+          "author": null,
+          "description": "We are running Microsoft Exchange Version 15.0 build 1497.2 on Windows Server 2012.\n We have an internal mailbox that forwards all emails to a contact on a different domain. So all emails to user@in.com are forwarded to user@out.com. User is a member of a distribution group, group@in.com. So when an email is sent to group@in.com it sends it to user@in.com which then forwards it to user@out.com.\n The error occurs when user@out.com sends an email to group@in.com. It sends correctly to everyone else, but when it tries to forward to user@out.com it sends a 550:\n  \nuser@out.com\n host URL [IP]\n SMTP error from remote mail server after end of data:\n 550 permanent failure for one or more recipients (user@out.com:blocked)\n  \nAfter testing, it gives the same error when user@out.com directly sends to user@in.com. They receive all emails to group@in.com sent by other users.\n I assume there is some sort of recursive error that flags it as spam because it is trying to forward an email from itself to itself. Other than just having them not use user@out.com to send emails to group@in.com, does anyone have any idea how to fix this?\n    submitted by    /u/skunkboy72  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123nixt/email_forwarding_error/",
+          "publishedOn": "2023-03-27T13:51:57.000Z",
+          "wordCount": 13264,
+          "title": "Email forwarding error",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123nhum/i_have_a_sys_admin_interview_in_a_few_hours_and/",
+          "author": null,
+          "description": "I’ve been in IT Support for almost two years now and I just said why not and I started applying to jobs for Sys Admin positions. Luckily, HR called me few days ago and I passed the HR interview and she pushed my application to the hiring manager and I have a phone interview with him in two hours.\n Im kinda nervous since I’ve been wanting to move up from help desk and Im worried I’ll either sound to nervous or I get caught with some difficult questions from him. \n Any advice or tips?? This is almost double my current shitty IT support salary and my work does not really get acknowledged here.\n    submitted by    /u/tallsexcc  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123nhum/i_have_a_sys_admin_interview_in_a_few_hours_and/",
+          "publishedOn": "2023-03-27T13:50:40.000Z",
+          "wordCount": 13547,
+          "title": "I have a Sys Admin interview in a few hours and I’m nervous.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123n7no/azure_ad_connectivity_issues/",
+          "author": null,
+          "description": "Anyone else getting slow or no responses inside the portal?\n    submitted by    /u/scottisnthome  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123n7no/azure_ad_connectivity_issues/",
+          "publishedOn": "2023-03-27T13:39:16.000Z",
+          "wordCount": 13799,
+          "title": "Azure AD Connectivity Issues",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/123mob2/patch_management_software/",
           "author": null,
           "description": "Is there any patch management software that can effectively manage CentOS 6/7, Ubuntu 16.04, and 20.04? I've tried JetPatch and ManageEngine Patch Plus, but they lack support for CentOS 6 and it's causing issues.\n    submitted by    /u/Extension_Concept954  \n [link]   [comments]",
@@ -12888,16 +12998,6 @@
           "wordCount": 13628,
           "title": "What is the standard speed for smb large file transfer in gigabit router-ethernet 7200rpm hard drive?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11c223e/kleopatra_powershell_syntax_question/",
-          "author": null,
-          "description": "I am attempting to write a PowerShell script capable of decrypting several files located throughout several sub-folders, but I haven't yet found a good example of syntax capable of doing that function. I have reviewed the Kleopatra documentation guides and did not see examples for this. \n Any and all help would be greatly appreciated!\n    submitted by    /u/Moonfiya  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11c223e/kleopatra_powershell_syntax_question/",
-          "publishedOn": "2023-02-26T01:42:11.000Z",
-          "wordCount": 12952,
-          "title": "Kleopatra + PowerShell: Syntax Question",
-          "imageUrl": null
         }
       ]
     },
@@ -13849,6 +13949,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/123ob0h/no_degree_no_experience_but_certs/",
+          "author": null,
+          "description": "I’m 23 In Atlanta. I Have No Degree And No Experience But I Do Have A Net+ Cert.. I’ve Been Trying To Get A Job In This Field But It Seems Almost Impossible Right Now. These Companies Seem To Only Want 5 Plus Years Of Experience (But If I Can’t Get A Job How Am I Supposed To Have). Is Net+ Not Enough For Even A Entry Level Tech. Position Or Should I Just Go For My CCNA As Well?\n    submitted by    /u/Careless_Change5452  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/123ob0h/no_degree_no_experience_but_certs/",
+          "publishedOn": "2023-03-27T14:21:51.000Z",
+          "wordCount": 13206,
+          "title": "No Degree, No Experience. But Certs",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/123d884/authentication_for_routers/",
           "author": null,
