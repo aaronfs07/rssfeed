@@ -2,10 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-03-27T09:12:57.781Z</updated>
+    <updated>2023-03-27T10:13:05.923Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Moronic Monday - March 27, 2023]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/123i5is/moronic_monday_march_27_2023/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/123i5is/moronic_monday_march_27_2023/"/>
+        <updated>2023-03-27T10:00:38.000Z</updated>
+        <summary type="html"><![CDATA[Howdy, /r/sysadmin!
+ It's that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I've taken over responsibility for posting these weekly threads so you don't have to worry about anything except your comments!
+    submitted by    /u/AutoModerator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M365 quarantine mails sent to users]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/123hyce/m365_quarantine_mails_sent_to_users/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/123hyce/m365_quarantine_mails_sent_to_users/"/>
+        <updated>2023-03-27T09:50:27.000Z</updated>
+        <summary type="html"><![CDATA[Currently racking my brain over the following.
+ Since last week or so, our end users have been getting automated emails from microsoft 365, stating emails have been put in quarantaine. These mails are all legit, but we want to stop sending these emails to the end users.
+ Ive had a dig through the m365 security section, and changed up the anti phish, spam, and malware policies to use the 'adminonlyaccesspolicy', which does not send emails to the end users, but to no avail apparently. 
+ Anyone able to point me in the right direction?
+    submitted by    /u/auxiliary1  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Incoming email bypassing attachment filter rules]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/123hu1v/incoming_email_bypassing_attachment_filter_rules/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/123hu1v/incoming_email_bypassing_attachment_filter_rules/"/>
+        <updated>2023-03-27T09:44:27.000Z</updated>
+        <summary type="html"><![CDATA[I have an attachment filter rule on my M365 tenant that Quarantines HTML attachments, as the overwhelming majority are phishing messages. There was a previous edge case that allowed attachments with trailing periods to bypass the rule, which with the help of some redditors I solved with a little regex (see this archived thread). My successful rule looks like this in the M365 Exchange Admin:
+ Apply this rule if Is received from 'Outside the organization' and has an attachment file name that matches these text patterns: '\.htm\.$' or '\.html\.$' or '\.inetloc\.$' or '\.htm$' or '\.html$' or '\.inetloc$' 
+ But now I'm seeing another edge case where attachments with encoded filenames are also bypassing the rule. I determined that the encoding for .htm and .html are "odG1s?=" and "odG0=?=", so I added them to the rule, but they are still getting through:
+ Apply this rule if Is received from 'Outside the organization' and has an attachment file name that matches these text patterns: '\.htm\.$' or '\.html\.$' or '\.inetloc\.$' or '\.htm$' or '\.html$' or '\.inetloc$' or 'odG1s?=$' or 'odG0=?=$' 
+ The email source looks like this:
+ ----==_mimepart_63f7bea11ed79_334ad8611585 Content-Type: application/html Content-Transfer-Encoding: UTF-8 Content-Disposition: attachment; Filename="=?UTF-8?B?NjUzNC5odG0=?=" <script language="javascript"> document.write(unescape('<redacted>'));</script> ----==_mimepart_63f7bea11ed79_334ad8611585-- 
+ Any ideas on how to get the existing rule to recognize these types of attachments? Or do I just need to write another one that looks at the Content-Disposition header separately, not depending on Microsoft's interpretation of it?
+    submitted by    /u/JohnEDee  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blocking TCP445/SMB connections]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/123hfpw/blocking_tcp445smb_connections/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/123hfpw/blocking_tcp445smb_connections/"/>
+        <updated>2023-03-27T09:23:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello there,
+ I've been trying to implement Microsoft recommended rules to block TCP445/SMB connections.
+ We have VPN set up, to connect to Azure Wirtual Network (our whole domain structure is in Azure).
+ So i created a GPO with the following firewall rules:
+  
+ Block all inbound SMB 445 (made no changes here)
+  Block outbound Guest/Public SMB 445 (made no changes here)
+  Allow outbound Domain/Private SMB 445 (changed Remote Port to Local Port and Scope Remote to Scope Local and typed in virtual network address range)
+  Block outbound Domain/Private SMB 445 (changed Remote Port to Local Port)
+ Security connection rules (made no changes here)
+  
+Gpupdate /force works fine, so i guess its all good? Did i do that correctly?
+ ​
+ Also thinking about Network security: Restrict NTLM: NTLM authentication in this domain.
+ I've been tracking NTLM\Operational in event viewer, but there are no logs.
+ Does that mean i can set the value to one of the Deny ones?
+ ​
+ Please keep in mind I'm a newbie, thank you.
+    submitted by    /u/myg0t_Defiled  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Restricting users to send email only distribution email - Exchange]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/123gvnt/restricting_users_to_send_email_only_distribution/</id>
@@ -28390,64 +28465,6 @@ So what I did is I unplugged every drive, I installed Windows on new m2 ssd, con
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Palo Alto vWire MAC flapping between interfaces (Catalyst C9300 and Nexus9K)]]></title>
-        <id>https://www.reddit.com/r/networking/comments/11bx3lm/palo_alto_vwire_mac_flapping_between_interfaces/</id>
-        <link href="https://www.reddit.com/r/networking/comments/11bx3lm/palo_alto_vwire_mac_flapping_between_interfaces/"/>
-        <updated>2023-02-25T22:02:15.000Z</updated>
-        <summary type="html"><![CDATA[Hey everyone,
- We're receiving MAC flapping notifications between two vWire interfaces on our C9300 (stacked). When a host MAC address starts to flap between interfaces, their connection stops working until the passive vWire connection is disabled. 
- Is this due to a misconfiguration? Does vWire need to be in port-channel/VPC between the active/passive firewall? Something like Po1 and Po2 on the C9300 and Po1 and Po2 on the Nexus for active/passive firewalls?
- MAC flapping between interface Te1/1/6 & Te2/1/6 (vWire) on the C9300.
- When I run the command 'show mac address table | include 1/12' on Nexus2 or 'show mac address table | include 2/1/6' on the C9300, I see MAC addresses that shouldn't be on there. These MAC addresses should be listed under the active firewall connections Te1/1/6 a…]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 10/11 - Screen Lock Timer]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/11bwzmm/windows_1011_screen_lock_timer/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/11bwzmm/windows_1011_screen_lock_timer/"/>
-        <updated>2023-02-25T21:57:58.000Z</updated>
-        <summary type="html"><![CDATA[Hi all, 
- I work in IT for a company that has in the last few months been plagued by an update that has made it so nearly every computer we own now auto-locks after 2-5 minutes. We have opened up a support ticket with Microsoft and they deny anything is wrong, but other companies have agreed with us that this is new and is affecting them as well.
- To try and bypass this new "feature" we have tried: 
-  
-rolling back the update - Didn't work
- modifying power plan settings - didn't work 
- Power plan advanced settings - didn't work
- 
- Windows settings - didn't work
- Various registry edits - didn't work*
- Disabling Windows Dynamic Lock (this is normally disabled by our policy anyway, but that's a whole other story) - didn't work
- Disabling Dell Optimiser on computers that have it - Didnt work
-  
-There are no settings in our Azure AD tenant, group policy, or on-prem domain that pertain to screen saver and screen lock timers
- * we did find a registry key that disables the computer's ability to lock entirely (including using Win+L), but this poses a security issue for obvious reasons and so we aren't going this route. 
- So far the only thing I have found was earlier today when I was working on this issue is that my windows screen saver settings auto default back to five minutes even after changing the settings AND modifying the registry key to set the screen saver up to 15 minutes.
- I also found that my computer's screen will lock after 2 minutes but when I boot in safe mode it goes. up to 5. 
- We now have upper management breathing down our necks because everyone is complaining about this issue and the CIO is trying to fend everyone off the best they can while we figure this out but nothing is working.
- Does anybody have ANY ideas because we're at wits end here.
-    submitted by    /u/RandomnessPrevails04  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Prepping for the next few years]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/11bwla5/prepping_for_the_next_few_years/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/11bwla5/prepping_for_the_next_few_years/"/>
-        <updated>2023-02-25T21:41:23.000Z</updated>
-        <summary type="html"><![CDATA[I'm currently a network admin at a school district. My goal is to be the tech director/supervisor. I have a few years before my current boss retires. 
- What can I start doing now to prep myself to be in that role? I am currently learning new things I have never been exposed to before such as some project planning, working more directly with vendors, and handling my first e-rate project. 
- Books, podcasts, real life advice will all be appreciated.
-    submitted by    /u/Daddyfatsak40  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>

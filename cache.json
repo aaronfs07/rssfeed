@@ -310,6 +310,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123i5is/moronic_monday_march_27_2023/",
+          "author": null,
+          "description": "Howdy, /r/sysadmin!\n It's that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I've taken over responsibility for posting these weekly threads so you don't have to worry about anything except your comments!\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123i5is/moronic_monday_march_27_2023/",
+          "publishedOn": "2023-03-27T10:00:38.000Z",
+          "wordCount": 13006,
+          "title": "Moronic Monday - March 27, 2023",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123hyce/m365_quarantine_mails_sent_to_users/",
+          "author": null,
+          "description": "Currently racking my brain over the following.\n Since last week or so, our end users have been getting automated emails from microsoft 365, stating emails have been put in quarantaine. These mails are all legit, but we want to stop sending these emails to the end users.\n Ive had a dig through the m365 security section, and changed up the anti phish, spam, and malware policies to use the 'adminonlyaccesspolicy', which does not send emails to the end users, but to no avail apparently. \n Anyone able to point me in the right direction?\n    submitted by    /u/auxiliary1  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123hyce/m365_quarantine_mails_sent_to_users/",
+          "publishedOn": "2023-03-27T09:50:27.000Z",
+          "wordCount": 13077,
+          "title": "M365 quarantine mails sent to users",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123hu1v/incoming_email_bypassing_attachment_filter_rules/",
+          "author": null,
+          "description": "I have an attachment filter rule on my M365 tenant that Quarantines HTML attachments, as the overwhelming majority are phishing messages. There was a previous edge case that allowed attachments with trailing periods to bypass the rule, which with the help of some redditors I solved with a little regex (see this archived thread). My successful rule looks like this in the M365 Exchange Admin:\n Apply this rule if Is received from 'Outside the organization' and has an attachment file name that matches these text patterns: '\\.htm\\.$' or '\\.html\\.$' or '\\.inetloc\\.$' or '\\.htm$' or '\\.html$' or '\\.inetloc$' \n But now I'm seeing another edge case where attachments with encoded filenames are also bypassing the rule. I determined that the encoding for .htm and .html are \"odG1s?=\" and \"odG0=?=\", so I added them to the rule, but they are still getting through:\n Apply this rule if Is received from 'Outside the organization' and has an attachment file name that matches these text patterns: '\\.htm\\.$' or '\\.html\\.$' or '\\.inetloc\\.$' or '\\.htm$' or '\\.html$' or '\\.inetloc$' or 'odG1s?=$' or 'odG0=?=$' \n The email source looks like this:\n ----==_mimepart_63f7bea11ed79_334ad8611585 Content-Type: application/html Content-Transfer-Encoding: UTF-8 Content-Disposition: attachment; Filename=\"=?UTF-8?B?NjUzNC5odG0=?=\" <script language=\"javascript\"> document.write(unescape('<redacted>'));</script> ----==_mimepart_63f7bea11ed79_334ad8611585-- \n Any ideas on how to get the existing rule to recognize these types of attachments? Or do I just need to write another one that looks at the Content-Disposition header separately, not depending on Microsoft's interpretation of it?\n    submitted by    /u/JohnEDee  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123hu1v/incoming_email_bypassing_attachment_filter_rules/",
+          "publishedOn": "2023-03-27T09:44:27.000Z",
+          "wordCount": 13331,
+          "title": "Incoming email bypassing attachment filter rules",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/123hfpw/blocking_tcp445smb_connections/",
+          "author": null,
+          "description": "Hello there,\n I've been trying to implement Microsoft recommended rules to block TCP445/SMB connections.\n We have VPN set up, to connect to Azure Wirtual Network (our whole domain structure is in Azure).\n So i created a GPO with the following firewall rules:\n  \n Block all inbound SMB 445 (made no changes here)\n  Block outbound Guest/Public SMB 445 (made no changes here)\n  Allow outbound Domain/Private SMB 445 (changed Remote Port to Local Port and Scope Remote to Scope Local and typed in virtual network address range)\n  Block outbound Domain/Private SMB 445 (changed Remote Port to Local Port)\n Security connection rules (made no changes here)\n  \nGpupdate /force works fine, so i guess its all good? Did i do that correctly?\n ​\n Also thinking about Network security: Restrict NTLM: NTLM authentication in this domain.\n I've been tracking NTLM\\Operational in event viewer, but there are no logs.\n Does that mean i can set the value to one of the Deny ones?\n ​\n Please keep in mind I'm a newbie, thank you.\n    submitted by    /u/myg0t_Defiled  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/123hfpw/blocking_tcp445smb_connections/",
+          "publishedOn": "2023-03-27T09:23:00.000Z",
+          "wordCount": 13269,
+          "title": "Blocking TCP445/SMB connections",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/123gvnt/restricting_users_to_send_email_only_distribution/",
           "author": null,
           "description": "We have more than one Helpdesk instances in our company. A user can log a call by sending an email to the Helpdesk address communicated within the company as a result a ticket will be created automatically by the Helpdesk system. Let me say we have Helpdesk1@sysadmin.com for IT, Helpdesk2@sysadmin.com for finance etc. Here’s the problem: Some users will send an email to Helpdesk1, for an IT issue but they’ll cc helpdesk2. This as a result will create 2 tickets on both the IT and finance system. And will also notify finance and IT about the ticket even though it’s not needed. Is there a way to create a rule on Exchange to restrict users to be able to send to one address only at once and not to both at the same time? NB: We always educate our users not to send to both Helpdesk addresses at once since each serves a different purpose..\n    submitted by    /u/PersonalTie49  \n [link]   [comments]",
@@ -12718,26 +12758,6 @@
           "wordCount": 19400,
           "title": "Junior dev got promoted to technical lead of senior devs - PLEASE HELP MY DEAR FRIENDS!",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11bwzmm/windows_1011_screen_lock_timer/",
-          "author": null,
-          "description": "Hi all, \n I work in IT for a company that has in the last few months been plagued by an update that has made it so nearly every computer we own now auto-locks after 2-5 minutes. We have opened up a support ticket with Microsoft and they deny anything is wrong, but other companies have agreed with us that this is new and is affecting them as well.\n To try and bypass this new \"feature\" we have tried: \n  \nrolling back the update - Didn't work\n modifying power plan settings - didn't work \n Power plan advanced settings - didn't work\n \n Windows settings - didn't work\n Various registry edits - didn't work*\n Disabling Windows Dynamic Lock (this is normally disabled by our policy anyway, but that's a whole other story) - didn't work\n Disabling Dell Optimiser on computers that have it - Didnt work\n  \nThere are no settings in our Azure AD tenant, group policy, or on-prem domain that pertain to screen saver and screen lock timers\n * we did find a registry key that disables the computer's ability to lock entirely (including using Win+L), but this poses a security issue for obvious reasons and so we aren't going this route. \n So far the only thing I have found was earlier today when I was working on this issue is that my windows screen saver settings auto default back to five minutes even after changing the settings AND modifying the registry key to set the screen saver up to 15 minutes.\n I also found that my computer's screen will lock after 2 minutes but when I boot in safe mode it goes. up to 5. \n We now have upper management breathing down our necks because everyone is complaining about this issue and the CIO is trying to fend everyone off the best they can while we figure this out but nothing is working.\n Does anybody have ANY ideas because we're at wits end here.\n    submitted by    /u/RandomnessPrevails04  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11bwzmm/windows_1011_screen_lock_timer/",
-          "publishedOn": "2023-02-25T21:57:58.000Z",
-          "wordCount": 15032,
-          "title": "Windows 10/11 - Screen Lock Timer",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11bwla5/prepping_for_the_next_few_years/",
-          "author": null,
-          "description": "I'm currently a network admin at a school district. My goal is to be the tech director/supervisor. I have a few years before my current boss retires. \n What can I start doing now to prep myself to be in that role? I am currently learning new things I have never been exposed to before such as some project planning, working more directly with vendors, and handling my first e-rate project. \n Books, podcasts, real life advice will all be appreciated.\n    submitted by    /u/Daddyfatsak40  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11bwla5/prepping_for_the_next_few_years/",
-          "publishedOn": "2023-02-25T21:41:23.000Z",
-          "wordCount": 13622,
-          "title": "Prepping for the next few years",
-          "imageUrl": null
         }
       ]
     },
@@ -18848,16 +18868,6 @@
           "wordCount": 14349,
           "title": "IPv6 prefix delegation from two ISPs / IPs (not BGP)",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11bx3lm/palo_alto_vwire_mac_flapping_between_interfaces/",
-          "author": null,
-          "description": "Hey everyone,\n We're receiving MAC flapping notifications between two vWire interfaces on our C9300 (stacked). When a host MAC address starts to flap between interfaces, their connection stops working until the passive vWire connection is disabled. \n Is this due to a misconfiguration? Does vWire need to be in port-channel/VPC between the active/passive firewall? Something like Po1 and Po2 on the C9300 and Po1 and Po2 on the Nexus for active/passive firewalls?\n MAC flapping between interface Te1/1/6 & Te2/1/6 (vWire) on the C9300.\n When I run the command 'show mac address table | include 1/12' on Nexus2 or 'show mac address table | include 2/1/6' on the C9300, I see MAC addresses that shouldn't be on there. These MAC addresses should be listed under the active firewall connections Te1/1/6 a…",
-          "link": "https://www.reddit.com/r/networking/comments/11bx3lm/palo_alto_vwire_mac_flapping_between_interfaces/",
-          "publishedOn": "2023-02-25T22:02:15.000Z",
-          "wordCount": 14479,
-          "title": "Palo Alto vWire MAC flapping between interfaces (Catalyst C9300 and Nexus9K)",
-          "imageUrl": "https://external-preview.redd.it/nP0Hvpvd9rp-nLn-P2JGI8vee-9f_c8kcoo79h1T0kw.png?auto=webp&v=enabled&s=e3a110a02470d8903cfc0f0113082275dd7ea2cf"
         }
       ]
     },

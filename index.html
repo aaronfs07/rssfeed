@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-27 datetime="2023-03-27T08:53:18.000Z">2023-03-27</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-27 datetime="2023-03-27T08:53:18.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-27 datetime="2023-03-27T10:00:38.000Z">2023-03-27</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-27 datetime="2023-03-27T10:00:38.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,117 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/123i5is/moronic_monday_march_27_2023/"
+                        open
+                      >
+                        <summary class="article-expander__title">Moronic Monday - March 27, 2023</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/123i5is/moronic_monday_march_27_2023/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Howdy, /r/sysadmin!
+ It&#x27;s that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I&#x27;ve taken over responsibility for posting these weekly threads so you don&#x27;t have to worry about anything except your comments!
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/123hyce/m365_quarantine_mails_sent_to_users/"
+                        open
+                      >
+                        <summary class="article-expander__title">M365 quarantine mails sent to users</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/123hyce/m365_quarantine_mails_sent_to_users/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Currently racking my brain over the following.
+ Since last week or so, our end users have been getting automated emails from microsoft 365, stating emails have been put in quarantaine. These mails are all legit, but we want to stop sending these emails to the end users.
+ Ive had a dig through the m365 security section, and changed up the anti phish, spam, and malware policies to use the &#x27;adminonlyaccesspolicy&#x27;, which does not send emails to the end users, but to no avail apparently. 
+ Anyone able to point me in the right direction?
+    submitted by    /u/auxiliary1  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/123hu1v/incoming_email_bypassing_attachment_filter_rules/"
+                        open
+                      >
+                        <summary class="article-expander__title">Incoming email bypassing attachment filter rules</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/123hu1v/incoming_email_bypassing_attachment_filter_rules/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have an attachment filter rule on my M365 tenant that Quarantines HTML attachments, as the overwhelming majority are phishing messages. There was a previous edge case that allowed attachments with trailing periods to bypass the rule, which with the help of some redditors I solved with a little regex (see this archived thread). My successful rule looks like this in the M365 Exchange Admin:
+ Apply this rule if Is received from &#x27;Outside the organization&#x27; and has an attachment file name that matches these text patterns: &#x27;\.htm\.$&#x27; or &#x27;\.html\.$&#x27; or &#x27;\.inetloc\.$&#x27; or &#x27;\.htm$&#x27; or &#x27;\.html$&#x27; or &#x27;\.inetloc$&#x27; 
+ But now I&#x27;m seeing another edge case where attachments with encoded filenames are also bypassing the rule. I determined that the encoding for .htm and .html are &quot;odG1s?&#x3D;&quot; and &quot;odG0&#x3D;?&#x3D;&quot;, so I added them to the rule, but they are still getting through:
+ Apply this rule if Is received from &#x27;Outside the organization&#x27; and has an attachment file name that matches these text patterns: &#x27;\.htm\.$&#x27; or &#x27;\.html\.$&#x27; or &#x27;\.inetloc\.$&#x27; or &#x27;\.htm$&#x27; or &#x27;\.html$&#x27; or &#x27;\.inetloc$&#x27; or &#x27;odG1s?&#x3D;$&#x27; or &#x27;odG0&#x3D;?&#x3D;$&#x27; 
+ The email source looks like this:
+ ----&#x3D;&#x3D;_mimepart_63f7bea11ed79_334ad8611585 Content-Type: application/html Content-Transfer-Encoding: UTF-8 Content-Disposition: attachment; Filename&#x3D;&quot;&#x3D;?UTF-8?B?NjUzNC5odG0&#x3D;?&#x3D;&quot;  document.write(unescape(&#x27;&#x27;)); ----&#x3D;&#x3D;_mimepart_63f7bea11ed79_334ad8611585-- 
+ Any ideas on how to get the existing rule to recognize these types of attachments? Or do I just need to write another one that looks at the Content-Disposition header separately, not depending on Microsoft&#x27;s interpretation of it?
+    submitted by    /u/JohnEDee  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/123hfpw/blocking_tcp445smb_connections/"
+                        open
+                      >
+                        <summary class="article-expander__title">Blocking TCP445/SMB connections</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/123hfpw/blocking_tcp445smb_connections/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello there,
+ I&#x27;ve been trying to implement Microsoft recommended rules to block TCP445/SMB connections.
+ We have VPN set up, to connect to Azure Wirtual Network (our whole domain structure is in Azure).
+ So i created a GPO with the following firewall rules:
+  
+ Block all inbound SMB 445 (made no changes here)
+  Block outbound Guest/Public SMB 445 (made no changes here)
+  Allow outbound Domain/Private SMB 445 (changed Remote Port to Local Port and Scope Remote to Scope Local and typed in virtual network address range)
+  Block outbound Domain/Private SMB 445 (changed Remote Port to Local Port)
+ Security connection rules (made no changes here)
+  
+Gpupdate /force works fine, so i guess its all good? Did i do that correctly?
+ ​
+ Also thinking about Network security: Restrict NTLM: NTLM authentication in this domain.
+ I&#x27;ve been tracking NTLM\Operational in event viewer, but there are no logs.
+ Does that mean i can set the value to one of the Deny ones?
+ ​
+ Please keep in mind I&#x27;m a newbie, thank you.
+    submitted by    /u/myg0t_Defiled  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -47686,68 +47797,6 @@ So what I did is I unplugged every drive, I installed Windows on new m2 ssd, con
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11bwzmm/windows_1011_screen_lock_timer/"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows 10/11 - Screen Lock Timer</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11bwzmm/windows_1011_screen_lock_timer/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi all, 
- I work in IT for a company that has in the last few months been plagued by an update that has made it so nearly every computer we own now auto-locks after 2-5 minutes. We have opened up a support ticket with Microsoft and they deny anything is wrong, but other companies have agreed with us that this is new and is affecting them as well.
- To try and bypass this new &quot;feature&quot; we have tried: 
-  
-rolling back the update - Didn&#x27;t work
- modifying power plan settings - didn&#x27;t work 
- Power plan advanced settings - didn&#x27;t work
- 
- Windows settings - didn&#x27;t work
- Various registry edits - didn&#x27;t work*
- Disabling Windows Dynamic Lock (this is normally disabled by our policy anyway, but that&#x27;s a whole other story) - didn&#x27;t work
- Disabling Dell Optimiser on computers that have it - Didnt work
-  
-There are no settings in our Azure AD tenant, group policy, or on-prem domain that pertain to screen saver and screen lock timers
- * we did find a registry key that disables the computer&#x27;s ability to lock entirely (including using Win+L), but this poses a security issue for obvious reasons and so we aren&#x27;t going this route. 
- So far the only thing I have found was earlier today when I was working on this issue is that my windows screen saver settings auto default back to five minutes even after changing the settings AND modifying the registry key to set the screen saver up to 15 minutes.
- I also found that my computer&#x27;s screen will lock after 2 minutes but when I boot in safe mode it goes. up to 5. 
- We now have upper management breathing down our necks because everyone is complaining about this issue and the CIO is trying to fend everyone off the best they can while we figure this out but nothing is working.
- Does anybody have ANY ideas because we&#x27;re at wits end here.
-    submitted by    /u/RandomnessPrevails04  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;50
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11bwla5/prepping_for_the_next_few_years/"
-                        open
-                      >
-                        <summary class="article-expander__title">Prepping for the next few years</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11bwla5/prepping_for_the_next_few_years/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;m currently a network admin at a school district. My goal is to be the tech director/supervisor. I have a few years before my current boss retires. 
- What can I start doing now to prep myself to be in that role? I am currently learning new things I have never been exposed to before such as some project planning, working more directly with vendors, and handling my first e-rate project. 
- Books, podcasts, real life advice will all be appreciated.
-    submitted by    /u/Daddyfatsak40  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47815,30 +47864,6 @@ There are no settings in our Azure AD tenant, group policy, or on-prem domain th
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11bx3lm/palo_alto_vwire_mac_flapping_between_interfaces/"
-                        open
-                      >
-                        <summary class="article-expander__title">Palo Alto vWire MAC flapping between interfaces (Catalyst C9300 and Nexus9K)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11bx3lm/palo_alto_vwire_mac_flapping_between_interfaces/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/nP0Hvpvd9rp-nLn-P2JGI8vee-9f_c8kcoo79h1T0kw.png?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;e3a110a02470d8903cfc0f0113082275dd7ea2cf" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Hey everyone,
- We&#x27;re receiving MAC flapping notifications between two vWire interfaces on our C9300 (stacked). When a host MAC address starts to flap between interfaces, their connection stops working until the passive vWire connection is disabled. 
- Is this due to a misconfiguration? Does vWire need to be in port-channel/VPC between the active/passive firewall? Something like Po1 and Po2 on the C9300 and Po1 and Po2 on the Nexus for active/passive firewalls?
- MAC flapping between interface Te1/1/6 &amp; Te2/1/6 (vWire) on the C9300.
- When I run the command &#x27;show mac address table | include 1/12&#x27; on Nexus2 or &#x27;show mac address table | include 2/1/6&#x27; on the C9300, I see MAC addresses that shouldn&#x27;t be on there. These MAC addresses should be listed under the active firewall connections Te1/1/6 a…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47846,8 +47871,8 @@ There are no settings in our Azure AD tenant, group policy, or on-prem domain th
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4530715659">
-        <time id="build-timestamp" datetime="2023-03-27T09:12:57.634Z">2023-03-27T09:12:57.634Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4531254356">
+        <time id="build-timestamp" datetime="2023-03-27T10:13:05.832Z">2023-03-27T10:13:05.832Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
