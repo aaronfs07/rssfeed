@@ -320,6 +320,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/124n2dq/how_to_securely_distribute_user_credentials_after/",
+          "author": null,
+          "description": "I want to hear your opinions and best practices how to securely send out new usernames and initial passwords to about 1000 external users. \n My first guess was to make the announcement of the account migration, tell them the new format to figure out the username themselves (it's just firstname.lastname@domain) and send each an email with just the password without further context, so the information from one email is not enough. If I could encrypt the emails, it would be perfect, but I don't have the users public keys, as they are external. Though I have limited knowledge about email security, so please educate me. \n Is there another way to get the passwords to the users securely or is it \"good enough\" to just send them separately? (Passwords need to be changed upon first login.)\n Thank you! \n Disclaimer: I'm not the one responsible for the user migration, I just administrate the first service that wants to use the new AD.\n    submitted by    /u/Aveludic  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/124n2dq/how_to_securely_distribute_user_credentials_after/",
+          "publishedOn": "2023-03-28T12:22:44.000Z",
+          "wordCount": 13245,
+          "title": "How to securely distribute user credentials after migrating from on prem to Azure B2C AD?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/124mna2/win10_enterprise_custom_logon_features/",
+          "author": null,
+          "description": "This is largely an experimental process, somewhat proof of concept, somewhat applicable to our work environment, either way it's my first time working with enterprise images.\n Basically I've been tasked with building a standalone media console, and I've been given some creative license to see exactly how much I can do with it. So far I've managed most of what I need to do without much issue, but I'm running into some confusion when it comes to the Custom Logon and embedded boot features on enterprise. To a degree this is a (multi-app) kiosk deployment, we don't want it especially obvious that it's running windows, so we want to suppress all the boot UI and windows logon UI with autologin to a locked down account, we have an application we want to use for the shell in place of explorer and lock down any breakout keys.\n I've made a few custom images and managed to sort out all the users and automated oobe features I need, now I'm moving onto the lockdown/embedded features portion. Pouring through the documentation on all the customlogon and embedded features from Microsoft, I'm not getting much of a direct answer as to when and how to deploy them, has anyone here worked with them before?\n Will these deploy properly if they're apart of an answer.xml configured in WSIM and installed from a custom image? Do they need to be configured in WinPE and built into the image from there? Can they be implemented to the OS from a provisioning package after initial deployment?\n Any help is greatly appreciated\n    submitted by    /u/Miserable-Entrance-8  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/124mna2/win10_enterprise_custom_logon_features/",
+          "publishedOn": "2023-03-28T12:05:12.000Z",
+          "wordCount": 13506,
+          "title": "Win10 Enterprise Custom Logon features",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/124mdfx/microsoft_licensing_hyperv_servers_and_sql_server/",
+          "author": null,
+          "description": "Hi All,\n I'm having a big headache trying to work out how Microsoft licensing works for our Hyper-V implementation, especially with regard to SQL server.\n We have two independent Hyper-V clusters, each consisting of 3x 32-core single CPU hypervisors. Under normal operation our VMs are distributed between the two clusters. In a disaster scenario, we can manually bring up the VMs from one cluster onto the other.\n What I want to find out is:\n  \nDo I need Windows Server licenses for each guest VM, or just for the physical hypervisors?\n If I want to run a 4-vcpu SQL server VM on one cluster, what SQL license do I need to buy?\n  \nI asked the person inside our org who I consider to be the most Hyper-V expert and they said that they run physical SQL servers to avoid having to think about this...\n If anyone can help me figure it out I'd be most thankful. We already have enough server datacenter licenses with SA to cover our current VM load if it is one license per VM, but I'd like to know this for sure...\n Thanks!\n    submitted by    /u/eidercollider  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/124mdfx/microsoft_licensing_hyperv_servers_and_sql_server/",
+          "publishedOn": "2023-03-28T11:53:37.000Z",
+          "wordCount": 13275,
+          "title": "Microsoft licensing - Hyper-V servers and SQL server",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/124m44m/office_asking_users_to_repair_office_upon_launch/",
+          "author": null,
+          "description": "For the past 2-3 months maybe longer we are noticing throughout a couple different companies that random users will launch their outlook or office in the morning and get the warning the office needs to repair.\n These devices stretch from brand new clean installs to ones that have been working for years. The weird thing is 1-2 reboots will \"Fix\" the issue and not ask for that anymore and they can continue on with their work.\n We are struggling as we can't locate anything to indicate what the problem is. If it's our security software that maybe blocking some communications. Is anyone else having the same issue? Google searches just bring up clean install or go through the repair process but we need a deeper dive.\n Thanks\n    submitted by    /u/kermitdafrog83  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/124m44m/office_asking_users_to_repair_office_upon_launch/",
+          "publishedOn": "2023-03-28T11:41:56.000Z",
+          "wordCount": 13260,
+          "title": "Office - Asking users to repair office upon launch",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/124l11a/resources_for_migrating_a_voip_solution_to/",
           "author": null,
           "description": "Good morning! I know i should be complaining about users or the stress of my job, but i'd like to interrupt with a question about infrastructure. I've got a use case where its a small operation (<50 users) with a full 365 system running business standard licenses for all users. \n A few years ago I migrated our physical PBX system into the cloud, and it works just fine, but as the integration into the microsoft environment has gotten smoother, i'm investigating the option of moving from a third-party VOIP to skype for business. \n I know microsoft has mostly good documentation, but i'm more interested if anyone here uses skype in a similar environment and what your feedback/experience has been. I'm asking here because I'm not interested in a sales pitch, i want to know what it's like from people who manage it or at the very least built/configured it into your organization.\n Thanks!\n    submitted by    /u/kwirl  \n [link]   [comments]",
@@ -13088,26 +13128,6 @@
           "wordCount": 14625,
           "title": "PDQ vs NinjaOne vs ME vs Pulseway vs InTune",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11cxdx8/first_login_process/",
-          "author": null,
-          "description": "Wondering if anyone has any fancy tricks to walk a user through first time logon. There are several things that would be super helpful from setting up MFA to pointing them in the direction of SharePoint, sending them to our quick cyber security reminders video, etc. I could always create a batch file or something with a script flag and send them to a checklist or SharePoint communication site. Just wondering if there’s something more “elegant”.\n    submitted by    /u/pleasecontinuetohold  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11cxdx8/first_login_process/",
-          "publishedOn": "2023-02-27T00:12:40.000Z",
-          "wordCount": 13304,
-          "title": "First Login Process",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11cwqj5/enterprise_level_ad_management/",
-          "author": null,
-          "description": "I work as a global engineer for a pretty massive company. We have several different domains spanning across the globe. Im currently wanting to reign that management in some. I absolutely want individual admins to retain full management of their sites. But not be able to go outside of their realm. Many of these sites are OUs under a domain, so domain admin gives full reign across enterprise level organization. Right now, it's a real cluster f.\n Im looking at a few different products that will allow us to centrally manage AD and Group Policy using a more delegated approach and added auditing. Pulling away from traditional AD tools and bringing things home to a central interface. \n I would love to hear some suggestions from other admins on what they are using or have used, pros and cons.\n    submitted by    /u/relentlessme41  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11cwqj5/enterprise_level_ad_management/",
-          "publishedOn": "2023-02-26T23:45:34.000Z",
-          "wordCount": 14212,
-          "title": "Enterprise Level AD Management",
-          "imageUrl": null
         }
       ]
     },
@@ -14041,6 +14061,36 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/124mru0/oportunidad_de_negocios/",
+          "author": null,
+          "description": "Estoy buscando personas con mentalidad de crecimiento y ganas de progresar que quieran escuchar un negocio que los ayude a generar ingresos desde sus casas. \n Si te interesa comunícate conmigo, es una oportunidad única y solo te va a llevar un par de minutos escuchar de que se trata.\n Quizás es esta la oportunidad que estas esperando para darle un giro a tu vida.\n ¿Te la vas a perder?\n inakiniezet@gmail.com\n    submitted by    /u/External-Release-848  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/124mru0/oportunidad_de_negocios/",
+          "publishedOn": "2023-03-28T12:10:39.000Z",
+          "wordCount": 1975,
+          "title": "OPORTUNIDAD DE NEGOCIOS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/124lukr/iam_for_network_devices/",
+          "author": null,
+          "description": "Good evening I'm looking for Identify and access management system to be used in our Network, we used ACS, but as you know it's obsolete and end of life, I see some suggestions to use clearpass instead of ACS, but unfortunately I can't find a demo test, could you please suggest one of IAM for Radius/Tacacs solution, and any one here used window server as IAM for Cisco devices\n    submitted by    /u/Mysterious-Apple-423  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/124lukr/iam_for_network_devices/",
+          "publishedOn": "2023-03-28T11:29:46.000Z",
+          "wordCount": 1975,
+          "title": "IAM for network devices",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/124lbov/connecting_apple_macbooks_to_radius_configured/",
+          "author": null,
+          "description": "Hi there,\n Our corporate network is configured to use Radius to authenticate devices connecting to the meraki network.\n We have a security group that all machines are a part of that allow authentication to the radius server.\n I have placed the macbook in this group and it is still unable to connect, it gets prompted for a username and password which it shouldn't do, it should automatically connect.\n I am new to networking macbooks in corporate environments, does anyone have any experience with this? Much appreciated.\n    submitted by    /u/rkidmason96  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/124lbov/connecting_apple_macbooks_to_radius_configured/",
+          "publishedOn": "2023-03-28T11:10:21.000Z",
+          "wordCount": 13218,
+          "title": "Connecting Apple Macbooks to Radius configured Corporate network",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/124l8kg/how_routers_encapsulate_smaller_packets_to/",
           "author": null,
@@ -19309,16 +19359,6 @@
           "publishedOn": "2023-02-27T01:01:47.000Z",
           "wordCount": 13932,
           "title": "Flow Export on Debian Router Using FRR",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11cx314/moronic_monday/",
-          "author": null,
-          "description": "It's Monday, you've not yet had coffee and the week ahead is gonna suck. Let's open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we're too embarrassed to ask!\n Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.\n Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11cx314/moronic_monday/",
-          "publishedOn": "2023-02-27T00:00:15.000Z",
-          "wordCount": 13117,
-          "title": "Moronic Monday!",
           "imageUrl": null
         }
       ]
