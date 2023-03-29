@@ -2,10 +2,116 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-03-29T12:25:14.077Z</updated>
+    <updated>2023-03-29T13:20:05.089Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Is on-prem spam filtering dead?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/125nw55/is_onprem_spam_filtering_dead/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/125nw55/is_onprem_spam_filtering_dead/"/>
+        <updated>2023-03-29T13:19:16.000Z</updated>
+        <summary type="html"><![CDATA[I have a zimbra setup that uses SpamAssassin (and clamav) and I recently tried adding some commercial data feeds from SpamHaus.
+ It seems to work decently and we haven't heard anything about FPs.
+ However, we also have Barracuda devices on-prem and it seems they are pretty much useless at this point. There's no way to add a "score" to a hit on an RBL like I can in SpamAssassin, nor can I install custom modules that utilize stuff like SpamHaus's HBL.
+ Barracuda has left these devices out to die, seemingly. There are no updates forthcoming since a couple of years, according to my co-worker.
+ A while ago, I looked at Titan and it was basically the same as Barracuda.
+ It seems, nobody wants to develop mail-screening for on-prem anymore. But what's the point of SSL and end-to-end encryption, if your mail goes through a 3rd-party first anyway?
+    submitted by    /u/rainer_d  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disabling specific port forwarding]]></title>
+        <id>https://www.reddit.com/r/networking/comments/125nuzp/disabling_specific_port_forwarding/</id>
+        <link href="https://www.reddit.com/r/networking/comments/125nuzp/disabling_specific_port_forwarding/"/>
+        <updated>2023-03-29T13:18:00.000Z</updated>
+        <summary type="html"><![CDATA[I have a cisco router that I am managing (or learning to manage). In my NAT translations, I can see this entry 
+ Pro Inside global Inside local Outside local Outside global
+ tcp X.X.X.X:9443 172.16.2.142:9443 --- ---
+ tcp X.X.X.X:443 172.16.2.142:443 --- --- 
+ (X.X.X.X stands for my public IP) I want to disable forwarding port 443 so I did run; 
+ no ip nat inside source static tcp 172.16.2.142 443 X.X.X.X 443 
+ But I get the error; 
+ %Translation not found 
+ Is there anything I'm missing? I'm still new to Cisco, using the Cisco ISR-C1111. I've tried interchanging inside with outside in the command but I still get the same error. Please help thanks.
+    submitted by    /u/Mosesmbadi  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SFP module: weird signal]]></title>
+        <id>https://www.reddit.com/r/networking/comments/125nfnh/sfp_module_weird_signal/</id>
+        <link href="https://www.reddit.com/r/networking/comments/125nfnh/sfp_module_weird_signal/"/>
+        <updated>2023-03-29T13:00:45.000Z</updated>
+        <summary type="html"><![CDATA[Hey guys, weird specific question: I checked the signal of my SFP module with an oscilloscope and saw that sometimes I have a pulse additional to the TTL signal I want to transmit, which is very unhandy, because I just want to count pulses with another device for my application, so basically just use the sfp as laser sending TTL pulses. Is this some sort of synchronisation pulse and is there any way to supress this via programming adapters etc?
+ The module is "CWDM-SFP1G-ZX" from FS and the board is the "SFP experimenter board v2 kit" from sysmocom.
+ Thanks in advance!
+    submitted by    /u/RauteHSV  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Standby Battery System (Separate from UPS)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/125nemm/standby_battery_system_separate_from_ups/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/125nemm/standby_battery_system_separate_from_ups/"/>
+        <updated>2023-03-29T12:59:45.000Z</updated>
+        <summary type="html"><![CDATA[Im thinking something that is almost like a UPS for our UPS, or a battery generator that would sit between our data closet power and the building power. Anyone have any recommendations for a system like this? 
+ We have our UPSs, of course, and we have a generator, but the generator is old doesnt always fire. Facilities has worked on it, and they can usually get it up in running in 20 minutes or less, which is fine for getting the offices working but not adequate for keeping everything from going down. We are getting ready to start major construction, so that will mean periodic power outages, and I have been told "Just fix it". Im working to compel facilities to replace the generator, but I want to pursue a second solution as well.
+    submitted by    /u/say592  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How would you go about deploying location with huge storage (250 ip cameras and video archive expected to be 3 month deep)?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/125mxuo/how_would_you_go_about_deploying_location_with/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/125mxuo/how_would_you_go_about_deploying_location_with/"/>
+        <updated>2023-03-29T12:40:00.000Z</updated>
+        <summary type="html"><![CDATA[[not 1st world country, we don't have fancy integrators]
+ This location does need a printserver, domain controller and all the other basic stuff (which implies virtualization), but all that combined could be, potentially, hosted on a pretty weak hardware (with HA of some sorts of course).
+ That video surveillance monstrosity is a whole new level though or to be specific - storage for all that.
+ Maybe if that's not the right place to ask someone can redirect me to appropriate sub.
+    submitted by    /u/xCharg  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2 Tier Aruba Architecture advice]]></title>
+        <id>https://www.reddit.com/r/networking/comments/125mtdy/2_tier_aruba_architecture_advice/</id>
+        <link href="https://www.reddit.com/r/networking/comments/125mtdy/2_tier_aruba_architecture_advice/"/>
+        <updated>2023-03-29T12:34:36.000Z</updated>
+        <summary type="html"><![CDATA[Hi, 
+ I'm starting to getting more into Networking and now have to present my first Topology to my boss to then execute it.
+ Can someone give me some hints on where I can Improve ?
+ ​
+ Topology is as following:
+ 6 x Access Switches Aruba 1960 Instant ON 48G 2SFP+ 
+ Attached on each:
+ 6x Aruba Instant On AP25
+ All Switches will be connected Redundant to either (depending on deliverablitly) via 1Gig
+ 3x 6300F Aruba CX (due to need of SFP+ Interfaces)
+ or
+ 2x 6300M with 24 SFP+ Interfaces (Then Link to Access will be 10Gig.)
+ Aruba CX Stack will be VSX. 
+ All VLAN's (About 6) will be trunked to a Sophos UTM which will be doing Inter VLAN Routing.
+ ​
+ Is there something I can / need to improve ?
+    submitted by    /u/Legal_Ambition4060  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hyper-V manager unable to connect another hyper-v server]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/125ml54/hyperv_manager_unable_to_connect_another_hyperv/</id>
@@ -59,6 +165,20 @@
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is your environment like this]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/125lccq/is_your_environment_like_this/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/125lccq/is_your_environment_like_this/"/>
+        <updated>2023-03-29T11:37:33.000Z</updated>
+        <summary type="html"><![CDATA[This is a bit of a rant, but I'm just wondering: I work for a small company with 700 users and 15 offices. We have 65 VMs (VMware environment) spread across multiple locations, Cisco switches, Fortigate firewalls and APs, UPSs, EMC SANs, Dell servers, Veeam Backup, Wasabi, SharePoint, OneDrive, O365 Mail (hybrid), Power BI, and 100 iPads (with a subpar MDM). The list could go on and on, and my point here is that we have only one IT director, one system administrator/network administrator/security person (me), and three helpdesk folks. One of the helpdesk people is amazing, but the other two just float by.
+ My question is this: I've been here for 8 years, and I've noticed that we get zero training, everything is a dumpster fire that needs to be put out, management doesn't listen to important security changes that need to be made, and there are no policies in place, such as an email policy, internet policy, BYOD policy, etc. (I have sent all of these to management and HR for approval, but they just don't write back.) The culture here, as in the people, is great; I've never worked with such an array of awesome people. However, they don't seem to care about any structure or advancement of learning of any kind. I just constantly feel behind the eight ball and can never get caught up to even have time for training. 
+ Has anyone else's workplace been like this? If so, what did you do to change it?
+    submitted by    /u/dickydotexe  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
         </author>
     </entry>
     <entry>
@@ -29448,38 +29568,6 @@ At this point I lose anywhere between 5 and 10 pings and then the connection com
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I barely find time to eat and shit, most of my days off are spent catching up on shit I can't get to in a regular 10 hour day.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/11dstj1/i_barely_find_time_to_eat_and_shit_most_of_my/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/11dstj1/i_barely_find_time_to_eat_and_shit_most_of_my/"/>
-        <updated>2023-02-28T01:16:19.000Z</updated>
-        <summary type="html"><![CDATA[We used to be able to shit post, is that no longer the case? https://i.imgflip.com/7cow9z.jpg
-    submitted by    /u/Few-Suggestion6889  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft dns.msftncsi.com not responding to query from Main Office ("No Internet" issue)]]></title>
-        <id>https://www.reddit.com/r/networking/comments/11dsced/microsoft_dnsmsftncsicom_not_responding_to_query/</id>
-        <link href="https://www.reddit.com/r/networking/comments/11dsced/microsoft_dnsmsftncsicom_not_responding_to_query/"/>
-        <updated>2023-02-28T00:55:14.000Z</updated>
-        <summary type="html"><![CDATA[Hello /networking! 
- I've been fighting the classic "no internet" globe at our primary location for 2 years. It seems to rear it's ugly head every 6-10 months and of course this Monday was a classic explosion of multiple computers not allowing Outlook to function even though the internet was connected. I've spent hours...nay days on this. 
- Our standard fix has been:
-  
-`sfc /scannow` `DISM /Online /Cleanup-Image /RestoreHealth` [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet] EnableActiveProbing set to 1 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator] NoActiveProbe set to 0 `[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator] DisablePassivePolling set to 1 restart computer 
-  
-I finally realized that an nslookup with "server 131.107.255.255" to any request fails...pcap shows no response from the server what-so-ever. Confirmed the traffic is being passed by the firewall and no clear blocks from anti-virus. 
- I can do a DNS request all day from other networks and IPs. I have access to a number of sites and all of them respond instantly to a dns query to the classic nds.msftncsi.com IP. Any recommendations on how to find out if MS is blacklisting my primary site IP? Who/how do I contact Microsoft regarding this?
- The above fixes have worked previously but of course today, something has changed and 3 computers continue to not function even after the fixes. I do not have IPv6 running on this network. Thoughts? Suggestions? Thanks for any rabbit holes I may not have run down. This has me frustrated and stumped. I think the fact that DNS isn't responding is my smoking gun but I don't know how to take it to the next level.
-    submitted by    /u/jimusik  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
