@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-31 datetime="2023-03-31T11:01:23.000Z">2023-03-31</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-31 datetime="2023-03-31T11:01:23.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-31 datetime="2023-03-31T12:06:53.000Z">2023-03-31</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-31 datetime="2023-03-31T12:06:53.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,136 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/127j3n6/data_breach_litigation/"
+                        open
+                      >
+                        <summary class="article-expander__title">Data Breach Litigation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/127j3n6/data_breach_litigation/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>My company recently experienced its second data breach in the past six months. All the information I’ve received so far is hearsay, but it seems that upper management is considering outsourcing security to a third party company and firing the internal security team. It’s been almost two weeks since the incident stopped, but we are all somehow still employed.
+ The team was advised by the C-Suite that we are primary witnesses to the incident and that we may be involved in the litigation process from customers. It seems that I may be questioned by lawyers in the future based on my testimony. We have been asked to prepare a statement and timeline of the work we have completed near the incident.
+ I’ve completely given up on having any future with this company and I am doing just what I need to do to stay on payroll as long as possible while I look for another job. I do not trust anything my employer says/does.
+ Has anyone ever had to testify on behalf of their company? Do I really have to? 
+ Would the statement I create affect my future unemployment claim? Also, if this goes legal, does this mean my job has a reason to keep me on payroll longer?
+    submitted by    /u/PupSparky420  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/127ip5d/certificate_authorites_question/"
+                        open
+                      >
+                        <summary class="article-expander__title">Certificate Authorites Question</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/127ip5d/certificate_authorites_question/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>There is a self signed root CA&#x27;s installed on my machine (windows) in order for company to monitor secured traffic when routed through the company VPN or proxy.
+ I am running Firefox with no proxy configured (not using system proxy) and am not connected to any company VPN.
+ I am able to make a secure connection to some websites where a &#x27;normal&#x27; trusted CA is issued. However, there are some websites where the custom installed root CA (Forcepoint Cloud) is being used. 
+ Sometimes a website where a trusted CA is issued will change to the custom CA when I refresh the page and visa versa with no other changes be made. Sometimes this happens, sometimes it doesn&#x27;t
+ I don&#x27;t understand how when I am not connected to VPN or making requests through the proxy that I am sometimes being issued with certificates signed by the custom root CA.
+ What is going on here?
+    submitted by    /u/LegitimateManager1  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/127ibav/quickbooks_2023_and_the_dns_server_service/"
+                        open
+                      >
+                        <summary class="article-expander__title">QuickBooks 2023 and the DNS Server service</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/127ibav/quickbooks_2023_and_the_dns_server_service/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have a customer running QuickBooks 2023 on a RDS that is also a DC. I know it isn&#x27;t ideal, but its a single-server environment. Its also a hosted VM. If you are one of those &quot;QB doesn&#x27;t work on a VM&quot; people, please do not respond to this thread. It normally works fine, I have many customers on this scenario, including other DC/RDS combo VMs and the only issue is the conflict with the DNS server service. 
+ Anyone familiar with this topic knows there are two fixes to the service conflict:
+ 1 - netsh int ipv4 add excludedportrange commands
+ 2 - script having the QuickBooksDB## service start BEFORE the DNS Server service
+ ​
+ OK, so hopefully we&#x27;re on the same page here. Now to the NEW issue.
+ For this customer, an earlier version of QuickBooks was working fine with the script-service-start-order workaround, for years. Then we upgrade to QuickBooks 2023. I know the number in the service name changed, I accounted for that. 
+ The new issue with QB2023 is not that the QuickBooksDB33 service doesn&#x27;t start - it does. The issue is severe slowness in the QuickBooks program when the DNS Server service is running. Stop that service, QuickBooks runs well again. I have tried the excludedportrange commands (yes for the dynamic port listed in Database Service Manager) and port 8019, both TCP and UDP. I have tried the &quot;starting services in the proper order&quot; workaround, this does not work either. 
+ I&#x27;ve researched and beat up on this issue for hours. Asking other Redditors is my last attempt before telling the customer they need two hosted servers so I can move the AD roles and DNS off of the RDS. Has anyone else experienced this with specifically QuickBooks 2023 on a DC?
+    submitted by    /u/mbrown705  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/127i9eq/filtering_defender_for_cloud_app_to_only_sites/"
+                        open
+                      >
+                        <summary class="article-expander__title">Filtering Defender for Cloud App to only sites where users login?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/127i9eq/filtering_defender_for_cloud_app_to_only_sites/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We just started using Defender for Cloud App to try and wrap our heads around all of the cloud base apps our employees are using. The problem is, unsurprisingly, it returns a list of thousands of cloud apps. Is there a way to filter this list down to only those cloud apps that our employees are signing into? Those are the ones I am most worried about and would want to have greater control over.
+    submitted by    /u/kingofcats78  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/127i13y/dism_hangs_when_using_appendimage/"
+                        open
+                      >
+                        <summary class="article-expander__title">DISM Hangs when using /Append-Image</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/127i13y/dism_hangs_when_using_appendimage/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Been banging my head against a wall trying to work this one out so any help appreciated. 
+ Creating a custom .wim where it has some different Windows versions on for a user to select as part of a custom bootable ISO.
+ I&#x27;m running the following command:
+ dism /Append-Image /ImageFile:C:\MasterWIMS\22H2\Master\install.wim /CaptureDir:C:\MOUNT /Name:&quot;Windows 11 Home&quot; 
+ However the output from Command Prompt is the following:
+ Deployment Image Servicing and Management tool Version: 10.0.19041.844 
+ It never gets any further. The logs show nothing after the following line:
+ 2023-03-31 12:11:25, Info DISM DISM.EXE: Succesfully registered commands for the provider: GenericImagingManager. 
+ Am I doing something wrong? If I try on another machine it will work 9 times out of 10. Is there something that blocks the command that I&#x27;m not seeing?
+    submitted by    /u/succyberg  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -553,6 +683,32 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/127i59y/evpn_virtual_appliance_for_lab_purposes/"
+                        open
+                      >
+                        <summary class="article-expander__title">EVPN virtual appliance for lab purposes</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/127i59y/evpn_virtual_appliance_for_lab_purposes/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all,
+ What is the best platform to learn EVPN on in a virtual environment? I was thinking I should get some cisco CSRv&#x27;s going but this can get rather resource intensive.
+ Is there a better alternative to learning EVPN on a virtual platform? Preferably cisco, but I am open to alternatives.
+ I have had a setup with Cumulus networks and their virtual appliance, but the problem there was the fact that in my opinion it&#x27;s a very niche player with little adoption in the real world.
+ Preferably something that can be run in VMWare or EVE-NG, if at all possible.
+ Any recommendations?
+    submitted by    /u/Case_Blue  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -48989,8 +49145,8 @@ Cynch: Download the Cynch app and get your first tank exchange for just $10 with
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4574411771">
-        <time id="build-timestamp" datetime="2023-03-31T11:09:42.272Z">2023-03-31T11:09:42.272Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4574971944">
+        <time id="build-timestamp" datetime="2023-03-31T12:22:10.667Z">2023-03-31T12:22:10.667Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
