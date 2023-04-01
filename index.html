@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-01 datetime="2023-04-01T13:09:41.000Z">2023-04-01</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-01 datetime="2023-04-01T13:09:41.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-01 datetime="2023-04-01T14:02:50.000Z">2023-04-01</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-01 datetime="2023-04-01T14:02:50.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,56 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/128nclc/msrdc_shortcut_parameters/"
+                        open
+                      >
+                        <summary class="article-expander__title">Msrdc shortcut parameters?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/128nclc/msrdc_shortcut_parameters/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I need some help as I would like to understand what the /l (that’s a lowercase L), /p and /r options mean when launching a Remote Desktop session
+ If I look at the shortcut to launch a Remote Desktop session, it looks similar to (some info redacted):
+ C:\Program Files\Remote Desktop\msrdc.exe [path to .rdp file] /u:[username@domain] /l:2 /p:13421 /r:3 /n:”Desktop”
+ I have tried donkz.nl and the MS website as well as general googling but have not been able to find an answer
+ Can anyone assist or point me to a page with the info? Many thanks
+    submitted by    /u/Sam_649  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/128n6bh/how_are_cloud_computers_kept_online_247/"
+                        open
+                      >
+                        <summary class="article-expander__title">How are cloud computers kept online 24/7</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/128n6bh/how_are_cloud_computers_kept_online_247/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>When I have multiple computers I can create clusters (maybe with a technology like k8s), and with a bit of work, I can be sure to have near 100% service uptime. Meaning no matter what, even if something happens, another computer is going to handle the requests and everything will be 100% transparent to the end user. That&#x27;s because the service was designed to handle such cases, maybe by running inside docker, allowing state recovery, and whatnot.
+ But here I am wondering about cloud services (AWS and Azure for example). If my knowledge is up to date, these guys have big machines (like terabytes of RAM and tens of cores on a single motherboard), and they use a hypervisor to split these into smaller VM, that they can then rent.
+ But in such a case, they cannot run a single VM on different computers right ? So what do they do if one of their computer suddenly has a break down ? If their architecture is designed like I described in the previous paragraph, then all the VM on that machine suddenly shutdown, and their services are no longer available ? So there is now way that they can promise near 100% machine uptime ?
+ And even if you keep your machine 100% healthy, with zero internet downtime, you have your own generator in case of electric failure, how to you update your hypervisor ? Wouldn&#x27;t they need a reboot from time to time ? And if you need to change components, how do you move a running VM from one machine to another ?
+ I am not a sys admin btw, I do datascience and AI, so way more math and way less programming, but I am deeply interested in how they solved the problem, so don&#x27;t hesitate to start from the basics, and many thanks for your time.
+    submitted by    /u/prumf  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -483,6 +533,32 @@ I was going to see if maybe there was a firmware update or something that caused
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/128mrd1/commercialpublic_signing_a_radius_cert_for_wifi/"
+                        open
+                      >
+                        <summary class="article-expander__title">Commercial/Public signing a radius cert for wifi connections in an office?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/128mrd1/commercialpublic_signing_a_radius_cert_for_wifi/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve been scratching my head on this for the last few years on a security point for this.
+ Now I hear some folks are doing this? Anything I&#x27;m missing here?
+ So lets say I do commercially sign my radius cert company.xy
+ Folks using my wifi APs with SSID: mycoy will use this to access the network.
+ But someone sets up a rogue AP with the same SSID: mycoy and also commercially signs their radius cert: company.xy. My wifi clients get fooled and take the bait? 
+ I&#x27;m currently using a private CA for my radius. And distribute the CA to the wifi clients.
+    submitted by    /u/accessdenied65  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -48655,55 +48731,6 @@ Epic Will &quot;Get 10% OFF your Will! EpicWill.com/WIRE&quot;</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11gny06/what_is_your_favorite_website_other_than_reddit/"
-                        open
-                      >
-                        <summary class="article-expander__title">What is your favorite website other than Reddit? ;)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11gny06/what_is_your_favorite_website_other_than_reddit/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>What is your favorite website to visit?
- I have a few
- https://gegeek.com/
- Radio.garden 
- https://www.pcstats.com/
- I don&#x27;t think I could live without working while listening to music.
-    submitted by    /u/zdevilinside  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11gndgl/biggest_security_flaw_by_company_focused_on/"
-                        open
-                      >
-                        <summary class="article-expander__title">Biggest Security flaw by company focused on Security Controllers</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11gndgl/biggest_security_flaw_by_company_focused_on/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>TL;DR at the bottom.
- EDIT: I decided to blur out the company name. If people are concerned and want to know the name, then please message me. If a moderator allows the use of their name in this post, then I might add it back in.
- I&#x27;m posting this here because I find it hilarious. I&#x27;ve brought up the issue in 2 separate phone calls to the company, and 3 separate tickets on their online site. This all started toward the end of the summer of 2021.
- Disclaimer: All this was done on a personal demo controller, purposefully meant for testing work. No malicious activity was purposefully done.
- As a software consultant, I have to work with everything, and when I got assigned to work on a project working with *** security controllers, I ran into one of the biggest security flaws that even a high s…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -48711,8 +48738,8 @@ Epic Will &quot;Get 10% OFF your Will! EpicWill.com/WIRE&quot;</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4583354608">
-        <time id="build-timestamp" datetime="2023-04-01T13:12:02.577Z">2023-04-01T13:12:02.577Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4583580857">
+        <time id="build-timestamp" datetime="2023-04-01T14:09:04.863Z">2023-04-01T14:09:04.863Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
