@@ -2,10 +2,106 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-04-04T10:11:33.867Z</updated>
+    <updated>2023-04-04T11:09:05.423Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[aws backup vault lock question]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12bfhwn/aws_backup_vault_lock_question/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12bfhwn/aws_backup_vault_lock_question/"/>
+        <updated>2023-04-04T11:02:43.000Z</updated>
+        <summary type="html"><![CDATA[I have read the docs but need confirmation before I proceed with some testing of the lock (worm) feature. For example, assume I put a vault in compliance mode, let the grace period expire and my data retention is set to min 5 days and max 10 days. I understand I cannot delete backups or modify retention ever. But if I cease making backups will all the backups in the vault eventually expire and delete? Hope my question makes sense.
+    submitted by    /u/umetukah  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pulseway Pro to Teams Migration - Bait and Switch]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12bf32s/pulseway_pro_to_teams_migration_bait_and_switch/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12bf32s/pulseway_pro_to_teams_migration_bait_and_switch/"/>
+        <updated>2023-04-04T10:44:32.000Z</updated>
+        <summary type="html"><![CDATA[So it begins... warning to anyone using Pulseway Pro below:
+ We have used Pulseway Pro since 2012 with 10 system licenses, a couple of days ago I received this e-mail:
+  
+My name is <removed for privacy>, your Account Manager at Pulseway. I'm here to ensure you use Pulseway to its fullest potential and help answer any questions. 
+ PRO VS TEAM (FEATURE DIFFERENCE) -(Removed Table for formatting) 
+ Once you create a new instance, we can set up a call with our Technical team to help you transfer all your endpoints from the old to the new instance. 
+ Frequently Asked Questions:- 
+ 1. Do I have to pay a fee or anything extra?
+ No, we will not charge you anything extra. We will migrate your license to the new plan. No fees. 
+ 2. Do I have to pay extra in the future?
+ No, we will match your exist…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ikev2 tunnel issues]]></title>
+        <id>https://www.reddit.com/r/networking/comments/12besdk/ikev2_tunnel_issues/</id>
+        <link href="https://www.reddit.com/r/networking/comments/12besdk/ikev2_tunnel_issues/"/>
+        <updated>2023-04-04T10:30:52.000Z</updated>
+        <summary type="html"><![CDATA[Hi!
+ Having this really annoying issue trying to get a remote site to establish a tunnel to a Catalyst 8000v in Azure. I keep getting a no proposal chosen error but as best I can see, the proposals match as do the transform sets... it has me stumped.
+ Here's the error text from both sides, followed below by the config for each end of the tunnel. I've omitted some of the config that's not relevant and to take out some sensitive data.
+ ​
+ Does anyone have any suggestions as to where I have gone wrong here ?
+ routerA
+ *Apr 4 10:10:54.087: IKEv2:(SESSION ID = 3,SA ID = 1):Sending Packet [To <AZURE>:4500/From <IP_ADDRESS>:4500/VRF i0:f0] Initiator SPI : D666F39632C84013 - Responder SPI : 8FB24B9B2B9A3F88 Message id: 3 IKEv2 INFORMATIONAL Exchange REQUEST Payload contents: ENCR *Apr 4 10:10:54.0…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SNMP resolution for Juniper devices]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12ber6j/snmp_resolution_for_juniper_devices/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12ber6j/snmp_resolution_for_juniper_devices/"/>
+        <updated>2023-04-04T10:29:26.000Z</updated>
+        <summary type="html"><![CDATA[Hi, sorry if this is a stupid question. I've been thrown into this by my ankles and I'm having to learn a lot really fast so I'm making mistakes left and right.
+ I'm trying to get an SNMP walk of a Juniper firewall. I know that in order for your SNMP walks to "resolve" the OIDs (ie, say "SNMPv2-MIB::sysDescr.0" instead of "iso.3.6.1.2.1.1.1.0"), you need to give SNMPWALK.exe a set of MIBs. So, fine, I got a bunch and then supplemented that with the Juniper MIBs I could find from LibreNMS's GitHub.
+ After doing that the 1.3.6.1.2.1 OIDs resolve, but the enterprise OIDs (1.3.6.1.4.1) still don't -- I see this:
+ SNMPv2-SMI::enterprises.2636.3.1.15.1.11.8.5.1.0 = Timeticks: (0) 0:00:00.00
+ SNMPv2-SMI::enterprises.2636.3.1.15.1.11.9.1.0.0 = Timeticks: (0) 0:00:00.00
+ SNMPv2-SMI::enterprises.2636.3.1.15.1.11.9.1.1.0 = Timeticks: (0) 0:00:00.00
+ SNMPv2-SMI::enterprises.2636.3.1.15.1.12.2.1.0.0 = Timeticks: (0) 0:00:00.00
+ The SNMPWALK command I'm using is:
+ snmpwalk -M "C:\MIBs" -v2c -c myjunipercommunitystring the.firewall.ip.address "1"
+ Any insight on this would be hugely appreciated. I understand this might be an odd question; please don't ask why I'm trying to do this when there are better tools available.
+ This is, unfortunately, how I need to do it.
+    submitted by    /u/ghoststart  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How do you set expiration date for files shared from Sharepoint / Onedrive? (The expiration date for shared links is not appearing as per microsoft documentation)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12beqo8/how_do_you_set_expiration_date_for_files_shared/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12beqo8/how_do_you_set_expiration_date_for_files_shared/"/>
+        <updated>2023-04-04T10:28:41.000Z</updated>
+        <summary type="html"><![CDATA[We have "anyone" links disabled. We are sharing out to an external approved company, however, I do not see the ability to set an expiration date when generating links for share.
+ I see we do not have any expiration time set in sharepoint settings, but users are claiming they have to keep regenerating links because clients are getting "This link has expired" after X amount of days (they don't know the exact timeframe)
+ Any ideas on how I can make expiration less links for our userbase without having to set up guest access for these external clients?
+    submitted by    /u/Catcakes1988  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How does Windows Server limit number of VMs?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12bency/how_does_windows_server_limit_number_of_vms/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12bency/how_does_windows_server_limit_number_of_vms/"/>
+        <updated>2023-04-04T10:24:07.000Z</updated>
+        <summary type="html"><![CDATA[Windows Server 2022 Standard edition indicates that we can have 2 VMs at most. One of Microsoft's web pages explains how to create VMs by using Hyper-V manager. As far as I understand, that 2 VMs limitation is applied on the Hyper-V manager. But, is Windows going to stop me from installing VirtualBox on it, and create as many VMs as I want on it? How is that limitation working? Why would I pay extra money for Datacenter edition while there is VirtualBox option?
+    submitted by    /u/tcak555  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Azure dynamic group Syntax Rule - Help]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/12bedia/azure_dynamic_group_syntax_rule_help/</id>
@@ -29298,20 +29394,6 @@ The preference is for white box switches, and only Arista fits that requirement 
         <updated>2023-03-05T23:44:18.000Z</updated>
         <summary type="html"><![CDATA[If you woke up tomorrow as a fresh sysadmin, what skills and technologies would you prioritise learning/mastering? How would you focus your time and energy?
     submitted by    /u/Mental-volt  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pointless Effort]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/11jfs5g/pointless_effort/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/11jfs5g/pointless_effort/"/>
-        <updated>2023-03-05T22:20:02.000Z</updated>
-        <summary type="html"><![CDATA[TLDR; current infrastructure is not fit for purpose - implemented by a predecessor.
- I have been asked to design a new super duper infrastructure fit for the business needs - great that's something interesting to sink my teeth into.
- ....to then be told OTR that no matter how good my design is that this project will be farmed out to a consultancy to do the design for us - seems like a great use of my time.
-    submitted by    /u/Senior_Conclusion102  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
