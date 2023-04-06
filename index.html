@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-06 datetime="2023-04-06T11:05:45.000Z">2023-04-06</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-06 datetime="2023-04-06T11:05:45.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-06 datetime="2023-04-06T11:59:19.000Z">2023-04-06</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-06 datetime="2023-04-06T11:59:19.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,52 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12dhzha/tools_to_explore_remote_filesystems/"
+                        open
+                      >
+                        <summary class="article-expander__title">tools to explore remote filesystems</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12dhzha/tools_to_explore_remote_filesystems/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>is there any file manager/explorer similar to windows explorer that can connect to remote servers(windows server core)
+    submitted by    /u/Level_Fennel8071  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12dhsv2/is_it_dell_or_windows_11/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is it Dell or Windows 11?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12dhsv2/is_it_dell_or_windows_11/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So I have been running my Dell Precision 5820 workstation for a few days now. It has a Intel Xeon W-2133 CPU (6/12 3.60Ghz base clock). I am running Windows 11 22H2 fully patched and am using SSDs and have 32GB of RAM. 
+ And I have been noticing when I push the system to do heavy tasks that the CPU performance at 90% CPU load across all threads hovers around 3.45Ghz, I never see it hit 3.60Ghz or its boost of 3.90Ghz. 
+ The bios settings are set to default, Speedstep and TurboBoost are enabled and the bios is on the latest version. 
+ I wonder if its a Dell thing or a Microsoft Windows 11 thing? 
+ Thanks,
+    submitted by    /u/SmoothRunnings  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -414,6 +460,34 @@ By utilizing social media platforms like Twitter, LinkedIn, and Facebook to conn
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12dblwz/theres_only_one_thing_keeping_one_of_our_server/"
+                        open
+                      >
+                        <summary class="article-expander__title">There&#x27;s only one thing keeping one of our Server 2012R2&#x27;s DC&#x27;s around and I don&#x27;t know how to resolve</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12dblwz/theres_only_one_thing_keeping_one_of_our_server/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>With the 2012R deadline approaching I upgraded everything to 2022, and rebuilt out DC&#x27;s in the process. I was ready to decommission the final 2012R2 DC but when testing via a shutdown, I experienced an outage. 
+ Our intranet, hosted on Google Cloud on Ubuntu, requires a sign in with an active directory credential to access (email address + password via LDAP). Despite changing the IP of the VM&#x27;s DNS server to match our new DC&#x27;s (one on GCP and one on prem), the moment I turn off the old DC is the moment authentication on this server fails, and staff instead get an &quot;Internal Server Error&quot; page from apache. 
+ Digging into the apache config, I can see the authentication is using LDAP, with the following section;
+ ## Active Directory AuthBasicProvider ldap AuthLdapBindDN readonly@int.domain.net AuthLdapBindPassword AuthLdapBindURL ldap://int.domain.net:3268/?userPrincipleName?sub 
+ Three things about this;
+ 1 - Even though the AD account it&#x27;s using to authenticate has the absolute minimum access, I don&#x27;t like how the password is stored in plain text. Is this a requirement for such a setup?
+ 2 - What configures that ldap:// and how do I get it to point to the new DC&#x27;s? Is this configured vía our public DNS instead? Or is not DNS at all?? 
+ 3 - Doing some digging online I discovered that it&#x27;s possible to &quot;automatically authenticate&quot; via their user account if the credentials match (meaning they don&#x27;t have to enter them in). Is this only possible on Windows/will it break a manual username/password entry? We have some Macs around.
+    submitted by    /u/segagamer  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
                         data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12d925m/it_at_a_non_profit/"
                         open
                       >
@@ -429,6 +503,37 @@ By utilizing social media platforms like Twitter, LinkedIn, and Facebook to conn
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;46
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Windows Central</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCDMnCGlkv4gyFGZo_ZT3atg">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;hwq_lsBuSdA"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows Central Podcast LIVE | Episode 307 | April 6th 2023</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;hwq_lsBuSdA">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -48414,27 +48519,6 @@ Their extensive effort was about 3.5 hours. No technical explanation. Probably r
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11lgf2p/in_your_experiences_what_percentage_of_the_time/"
-                        open
-                      >
-                        <summary class="article-expander__title">In your experiences, what percentage of the time has a simple reboot fixed user issues?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11lgf2p/in_your_experiences_what_percentage_of_the_time/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>In my experience, it&#x27;s about 35%
-    submitted by    /u/Rubbs_Is_Real  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;46
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -48544,93 +48628,6 @@ NVA-Primary-NIC 10.0.1.10
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11lg0uo/rant_wednesday/"
-                        open
-                      >
-                        <summary class="article-expander__title">Rant Wednesday!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11lg0uo/rant_wednesday/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>It&#x27;s Wednesday! Time to get that crap that&#x27;s been bugging you off your chest! In the interests of spicing things up a bit around here, we&#x27;re going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
- There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that&#x27;s been pissing you off or getting on your nerves!
- Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11lfqif/stuck_on_a_routing_issue/"
-                        open
-                      >
-                        <summary class="article-expander__title">Stuck on a routing issue</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11lfqif/stuck_on_a_routing_issue/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello, I&#x27;m lets say a little rusty on routing, was just looking for conformation. sorry if my terminology is not spot on.
- I have an layer 3 switch (Aruba 8320) at the core of my network, it is doing all the routing and is configured with the final route as 0.0.0.0 0.0.0.0 172.16.0.18 (my firewall), however I want to re-route the traffic from VLAN 66 (10.66.0.0/21) to another device (different interface on firewall, as I can enable a captive portal for that vlan only). if these two devices are directly connected I assume the I do the following to re-route the traffic.
- Configure firewall interface: 192.16.30.5/29
- Configure layer 3 switch interface: 192.168.30.6/29
- Configure route in layer 3 switch: ip route 10.66.0.0/21 192.168.30.5
- the bit I&#x27;m unsure of is do I need to configure a vlan for 19.168.30.0/29
- interface vlan 30
- description Guest_Wireless_VLAN
- ip address 192.168.30.2/29
- active-gateway ip mac e2:ff:5e:ac:09:07
- active-gateway ip 192.168.30.1
- and change the route to: ip route 10.66.0.0/21 192.168.30.1 or keep it the same
- Thanks
-    submitted by    /u/Nomis-43  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;48
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11lf18n/network_changes_risk_management/"
-                        open
-                      >
-                        <summary class="article-expander__title">Network Changes - Risk Management</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11lf18n/network_changes_risk_management/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello, I would like to know your opinion regarding how change and risk management is done in your organizations. I am particularly interested in risk management (not security risk but potential impacts due to change).
- The ITIL framework is useful however there is an element that I struggle with, potential customers impacts, normally when defining potential, we might think as the worst case scenario, but even small simple changes could have big potential impact if we consider a typo when adding a new policy in an existing vrf, someone might say deleting or modifying policies are riskier, and I would normally agree, but when it comes to typos, missing a statement, wrong IP, community tag, etc, could have severe consequences.
- In my organization we have defined these categories to come with a number, the number will fall under ITIL thresholds, P1-P4, these are the categories:
- Potential Customer Impact, it is based on the activity being performed and the amount of customers potentially impacted.
- Type Element, it is a grouping that depends on type of element, for example, a core IP layer element would have higher value than a Voice or Data(Application layer) element.
- Service Area, based on the geographical area that the element is providing services, example, it could be region of a country, a state, it could be within a city.
- Service Density, amount of actual services that the element is supporting.
- As you can see, Type, Service Area and Service Density are based on the element where the work is going to be performed, but the Potential Customer Impact is based on the activity itself only.
- My struggle is finding a good balance in the risk management for the activity itself as there are many details like typos or missing small pieces of configuration that could create a big impact even though the activity itself could be a simple one. 
- How does your organization manage risk from changes? What ideas can you share with me based on the above?
- Thanks in advance.
-    submitted by    /u/muhepd  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;54
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -48638,8 +48635,8 @@ NVA-Primary-NIC 10.0.1.10
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4628252571">
-        <time id="build-timestamp" datetime="2023-04-06T11:09:08.496Z">2023-04-06T11:09:08.496Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4628803716">
+        <time id="build-timestamp" datetime="2023-04-06T12:21:12.903Z">2023-04-06T12:21:12.903Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
