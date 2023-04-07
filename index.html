@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-07 datetime="2023-04-07T13:05:29.000Z">2023-04-07</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-07 datetime="2023-04-07T13:05:29.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-07 datetime="2023-04-07T14:03:02.000Z">2023-04-07</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-07 datetime="2023-04-07T14:03:02.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,159 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12emch4/virtual_windows_11_desktop/"
+                        open
+                      >
+                        <summary class="article-expander__title">Virtual Windows 11 Desktop</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12emch4/virtual_windows_11_desktop/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>For various reasons, I need to start some trials with Windows 365. In looking at the cost for what they consider &#x27;standard&#x27; the 41.00 per month seems a bit high. I would like costs to be in the 20 to 25 per month if possible. I&#x27;m wondering if they are other vendors in this space doing anything similar that are reputable with similar specs. Windows 11 is a must, but it does not need to connect to local resources. Essentially, a Windows desktop accessible from any standard internet-connected computer. Ideally, I don&#x27;t want to host my own hardware, the environment would be desktop as a service. It may just be this is what the market is and that&#x27;s fine, but I wanted to cast a wider net and make sure I&#x27;m not missing something.
+    submitted by    /u/Mortalus2020  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12em6hl/am_i_getting_fucked_friday_april_7th_2023_coffee/"
+                        open
+                      >
+                        <summary class="article-expander__title">Am I Getting Fucked Friday, April 7th 2023, Coffee Cake Edition</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12em6hl/am_i_getting_fucked_friday_april_7th_2023_coffee/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Brought to you by r/sysadmin &#x27;Trusted VARs&#x27;: /u/SquizzOC and /u/bad0seed with Trusted Telecom Broker /u/Each1Teach1x27/ for Telecom and /u/Necessary_Time in Canada.
+ As always, PMs welcome with your questions any time, not just Fridays.
+ This weekly thread is here for you to discuss vendor expectations, software questions, pricing, and quotes of services, licensing, support, deployment and hardware. Last Post: March 31st.
+ Required Info for accurate answers:
+  
+Part Number - of utmost importance
+ Manufacturer/vendor
+ Service Type and Location
+ Quantity (as applicable)
+  
+All questions welcome, keep in mind that there are of course more pieces to this IT puzzle we can dig out of the box
+  
+Cloud Services - Security, configurations, deployment, management, consulting services, and migrations
+ Server configs and quote answers
+ Storage Vendor options, alternatives, details and selection
+ Network infrastructure - overlay software, segmentation, routers, switches, load balancing, APs…
+ Security - Access Management, firewalls, MFA, cloud DNS, layer 7 services, antivirus, email, DLP….
+ User gear - Usually you should buy the quote you have unless the quantity is +50 units
+ Bandwidth - Internet, MPLS, dark fiber, carrier SD-WAN, Broadband, and 4G LTE
+ Voice - MS Teams Direct Routing, SIP, Hosted VoIP, PRI etc.
+  
+   submitted by    /u/bad0seed  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12em5l3/usercomputer_accounts_vs_domain_controllers/"
+                        open
+                      >
+                        <summary class="article-expander__title">User/computer accounts vs domain controllers -- msDS-SupportedEncryptionTypes</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12em5l3/usercomputer_accounts_vs_domain_controllers/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>All DCs are currently W2K16, but will be swapped out for all W2K19 in a few months. All DCs support only &quot;RC4, AES 128, AES 256&quot; encryption types (no DES). 
+ Some AD accounts (mostly computer objects for Linux systems with Centrify agent installed) support only &quot;DES, RC4&quot;.
+ Some other accounts (also Centrify systems) support &quot;DES, RC4, AES128, AES256&quot;. The rest (vast majority Windows systems, nothing lower than W2K12R2/Win10) of accounts don&#x27;t support DES at all. 
+ Question 1: Without the DCs supporting for DES, is having &quot;DES&quot; as a supported type on a bunch of computer objects an actual risk item? We are logging everything into Splunk and there are zero events indicating DES is in use. These accounts turned up in an internal audit, but the actual risk seems non-existent. We will remediate them anyway but I&#x27;m wanting to be clear on the risk for management discussions. 
+ Question 2: Right now in Splunk I see AES in use, but also RC4 being used, even involving systems that have support for AES128 and AES256. I think I&#x27;ve read that once we switch to W2K19 DCs this behavior will change, and the DCs will start negotiating with the highest encryption level available. Is that accurate? We want to work towards phasing out RC4, so if the above is true, we should immediately see a big drop in RC4 traffic after we swap out our DCs this summer.
+    submitted by    /u/BrettStah  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12em5g1/email_privacy/"
+                        open
+                      >
+                        <summary class="article-expander__title">Email privacy ?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12em5g1/email_privacy/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>My friend works for Amazon. From what i understand work emails are private so no one outside of the network should know what it is right ? Well my friend received an email from someone outside of the network and they called him the N word . The person made a brand new email with the N word in it as well. Is there anything he can do about this ? Seems like there should be some kind of privacy protocol in place.
+    submitted by    /u/MediumSuspicious8336  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12elzk1/ultravnc_authentication_rejected/"
+                        open
+                      >
+                        <summary class="article-expander__title">UltraVNC: &quot;Authentication Rejected&quot;</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12elzk1/ultravnc_authentication_rejected/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>A group policy was pushed out after removing the final legacy application (or so we thought).
+ We we changed Network Security:LAN Manager Authentication Level to &quot;Send NTLMv2 response only. Refuse LM and NTLM.&quot; After this, the help desk lost the ability to use UltraVNC for remote desktop support. Obviously, we don&#x27;t want to enable the old insecure policy just for VNC.
+ Does anybody know how to force UltraVNC to use NTLMv2? My Google-Fu is failing me.
+    submitted by    /u/junkman21  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12eliv9/seeking_headset_for_smart_hands_work/"
+                        open
+                      >
+                        <summary class="article-expander__title">Seeking headset for smart hands work</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12eliv9/seeking_headset_for_smart_hands_work/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am start on a project where I will be in server rooms deploying new systems. In the process I talk to the NOC and other engineers. The fan noise level is high. I wear noise canceling earphones,but their mic gets more noise than me. I tried some ear protection ear buds and they do the noise reduction, but their mics are not good
+ Whet does the brain trust here like for voice comms in server rooms.
+    submitted by    /u/StudioDroid  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;45
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -48346,66 +48499,10 @@ Black Rifle Coffee: &quot;Get 10% off your Coffee Club subscription! BlackRifleC
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-08 datetime="2023-03-09T01:23:26.000Z">2023-03-08</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-08 datetime="2023-03-09T01:23:26.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11menab/backup_ipsec_tunnels/"
-                        open
-                      >
-                        <summary class="article-expander__title">Backup IPSec Tunnels</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11menab/backup_ipsec_tunnels/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Preface: Inherited setup
- We are a smallish organisation with 20 sites + 1 Datacenter headend all on MPLS. We currently have all the backup IPSec tunnels terminating on the core router (network core and MPLS headend) in the DC but I am looking to move the tunnels to a new/repurposed router to avoid SPOF.
- We have onprem (Datacenter) domain controllers and Office365/Azure AD in a hybrid setup.
- Hardware:
- Core router - Juniper SRX4600 in HA
- Repurposed Router - Juniper SRX1500 in HA
- The SRX4600 is beastly enough to handle the existing and future tunnels but I am just looking at a cleaner way to tie everything in. FYI - We are in locked in for a further 3 years with our MPLS provider.
- What is everyone doing nowadays with backup tunnels (besides ditching MPLS altogether for SDWAN and SASE/CASB :))
-    submitted by    /u/smeego78  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4638442588">
-        <time id="build-timestamp" datetime="2023-04-07T13:13:33.309Z">2023-04-07T13:13:33.309Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4638807495">
+        <time id="build-timestamp" datetime="2023-04-07T14:09:59.757Z">2023-04-07T14:09:59.757Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
