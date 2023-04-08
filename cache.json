@@ -370,6 +370,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12fkgke/enhanced_filtering_for_connectors_o365_third/",
+          "author": null,
+          "description": "Hi there.\n We currently utilize Barracuda for our Third Party Spam Filtering. MX->Barracuda->O365.\n The only inbound connector we have is scoped to only accept mail from Barracuda IPs.\n Mail Rule to set the SCL to -1 when mail is received from Barracuda IPs to ensure O365 scanning is bypassed.\n We recently upgraded our Microsoft Licensing which allows additional email security on the O365 Side. \n While Barracuda does a pretty good job at keeping the bad-guys away, I'm considering layering *some* of the scanning/security such that any email that comes into our organization, first passes through Barracuda for Scans, then an additional scan is done at the O365 level before delivering to the user mailbox.\n Seeing the recommendation is to enable Enhanced Filtering.\n https://campus.barracuda.com/product/emailgatewaydefense/doc/96023002/enhanced-connectors-vs-mail-flow-rules-for-spam-filtering/\n ​\n https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#what-happens-when-you-enable-enhanced-filtering-for-connectors\n ​\n https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud#scenario-1---mx-record-points-to-third-party-spam-filtering\n ​\n I'm assuming this is a modification to the existing inbound connector to enable Skip Listing, and the SkipIPs then become a list of IPs that Barracuda uses - essentially allowing us to keep the scoping in place for the connector to only allow Barracuda IPs. We would then 'remove' the SCL-1 rule.\n While this might come with some additional management - I can see the benefits of having an integrated filter in place (Impersonation etc etc).\n Anyone else setup this way? Pros? Cons? lessons learned?\n Appreciate the help.\n    submitted by    /u/kingjames2727  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12fkgke/enhanced_filtering_for_connectors_o365_third/",
+          "publishedOn": "2023-04-08T12:26:30.000Z",
+          "wordCount": 2284,
+          "title": "Enhanced Filtering for Connectors / O365 / Third Party Spam Filtering",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/12fjwjo/career_advice/",
           "author": null,
           "description": "Hey Everyone. \n I joined this company around 1.5 years ago. Great company, nice people and 100% remote. I was hired to manage a Windows environment and some small Azure related projects. Down the road last year, a few key people in the company quit and I had to step up to take more responsibilities especially for managing other cloud environments (AWS/Linux and some DevOps) and I was told at that time that they'll look into getting a raise for me. I also got a few Azure/AWS certs and spent many extra hours to learn and manage these environments. Although, besides the regular 5% annual raise, there haven't been any discussions around the raise. I really enjoy my time working here but I have been told by others to start looking somewhere else but my experience has been very good with the company, and also having imposter syndrome to apply elsewhere. Would like some advice on where to go from here. Thanks! Location: ON, CA. Sal: C$60k\n    submitted by    /u/informate11  \n [link]   [comments]",
@@ -13068,16 +13078,6 @@
           "wordCount": 15954,
           "title": "A coworker got the (manager) promotion over me",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11n956j/how_is_this_possible/",
-          "author": null,
-          "description": "How many times have you had this happen:\n You have contact with a client (email, phone, or ticket) and you try to fix (or at least find out) the issue. You ask them - let me remind you they work on 'system x' eight hours or more a day - and they can't tell you what it's supposed to do, and what it isn't doing that makes it 'broken'. How is that remotely possible.\n    submitted by    /u/Cjdamron75  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11n956j/how_is_this_possible/",
-          "publishedOn": "2023-03-10T00:29:22.000Z",
-          "wordCount": 15331,
-          "title": "How is this possible...",
-          "imageUrl": null
         }
       ]
     },
@@ -18603,16 +18603,6 @@
           "publishedOn": "2023-03-10T01:49:22.000Z",
           "wordCount": 13371,
           "title": "Has anyone here had any luck getting Arista cEOS running in EVE-NG as a docker container?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11n9enh/copying_a_file_to_a_client_computer_over_a_vpn/",
-          "author": null,
-          "description": "Hi!\n I installed an ER8411 VPN router in our office and I configured an IPsec VPN. My client device is a Windows 10 PC on another network. It connects to the VPN using TheGreenBow.\n I get good speeds, around 70 MB/s for file transfer, which is good for me.\n The problem I have is weird, and probably something I don't know. When I try copying a file from any remote device to my local client, it will allocate the client's ram for the size of that file. If I start a 5GB file copy, quickly the Ram usage will ramp up by 5GB. I need to transfer 60GB files, so that's a big issue. Once the transfer is done, it DOES NOT free the ram...\n I do not have that problem if I launch a copy from another drive or a local NAS.\n Any idea or explaination?\n Thanks!\n    submitted by    /u/Remy4409  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11n9enh/copying_a_file_to_a_client_computer_over_a_vpn/",
-          "publishedOn": "2023-03-10T00:40:12.000Z",
-          "wordCount": 13466,
-          "title": "Copying a file to a client computer over a VPN loads up RAM and never empty it, what can I do?",
           "imageUrl": null
         }
       ]

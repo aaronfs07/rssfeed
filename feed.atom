@@ -2,10 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-04-08T12:19:16.198Z</updated>
+    <updated>2023-04-08T13:11:47.492Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Enhanced Filtering for Connectors / O365 / Third Party Spam Filtering]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12fkgke/enhanced_filtering_for_connectors_o365_third/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12fkgke/enhanced_filtering_for_connectors_o365_third/"/>
+        <updated>2023-04-08T12:26:30.000Z</updated>
+        <summary type="html"><![CDATA[Hi there.
+ We currently utilize Barracuda for our Third Party Spam Filtering. MX->Barracuda->O365.
+ The only inbound connector we have is scoped to only accept mail from Barracuda IPs.
+ Mail Rule to set the SCL to -1 when mail is received from Barracuda IPs to ensure O365 scanning is bypassed.
+ We recently upgraded our Microsoft Licensing which allows additional email security on the O365 Side. 
+ While Barracuda does a pretty good job at keeping the bad-guys away, I'm considering layering *some* of the scanning/security such that any email that comes into our organization, first passes through Barracuda for Scans, then an additional scan is done at the O365 level before delivering to the user mailbox.
+ Seeing the recommendation is to enable Enhanced Filtering.
+ https://campus.barracuda.com/product/emailgatewaydefense/doc/96023002/enhanced-connectors-vs-mail-flow-rules-for-spam-filtering/
+ ​
+ https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#what-happens-when-you-enable-enhanced-filtering-for-connectors
+ ​
+ https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud#scenario-1---mx-record-points-to-third-party-spam-filtering
+ ​
+ I'm assuming this is a modification to the existing inbound connector to enable Skip Listing, and the SkipIPs then become a list of IPs that Barracuda uses - essentially allowing us to keep the scoping in place for the connector to only allow Barracuda IPs. We would then 'remove' the SCL-1 rule.
+ While this might come with some additional management - I can see the benefits of having an integrated filter in place (Impersonation etc etc).
+ Anyone else setup this way? Pros? Cons? lessons learned?
+ Appreciate the help.
+    submitted by    /u/kingjames2727  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Career advice]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/12fjwjo/career_advice/</id>
@@ -28547,37 +28575,6 @@ What’s worse is I was given permission from our other coworkers on the team to
  The boss says the decision was not his and leadership/hr overruled him.
  I may give it a few months to see how things pan out but I’ll likely leave if I can find an employer who’ll match or beat my benefits.
     submitted by    /u/Exotic-Start-5039  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Copying a file to a client computer over a VPN loads up RAM and never empty it, what can I do?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/11n9enh/copying_a_file_to_a_client_computer_over_a_vpn/</id>
-        <link href="https://www.reddit.com/r/networking/comments/11n9enh/copying_a_file_to_a_client_computer_over_a_vpn/"/>
-        <updated>2023-03-10T00:40:12.000Z</updated>
-        <summary type="html"><![CDATA[Hi!
- I installed an ER8411 VPN router in our office and I configured an IPsec VPN. My client device is a Windows 10 PC on another network. It connects to the VPN using TheGreenBow.
- I get good speeds, around 70 MB/s for file transfer, which is good for me.
- The problem I have is weird, and probably something I don't know. When I try copying a file from any remote device to my local client, it will allocate the client's ram for the size of that file. If I start a 5GB file copy, quickly the Ram usage will ramp up by 5GB. I need to transfer 60GB files, so that's a big issue. Once the transfer is done, it DOES NOT free the ram...
- I do not have that problem if I launch a copy from another drive or a local NAS.
- Any idea or explaination?
- Thanks!
-    submitted by    /u/Remy4409  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How is this possible...]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/11n956j/how_is_this_possible/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/11n956j/how_is_this_possible/"/>
-        <updated>2023-03-10T00:29:22.000Z</updated>
-        <summary type="html"><![CDATA[How many times have you had this happen:
- You have contact with a client (email, phone, or ticket) and you try to fix (or at least find out) the issue. You ask them - let me remind you they work on 'system x' eight hours or more a day - and they can't tell you what it's supposed to do, and what it isn't doing that makes it 'broken'. How is that remotely possible.
-    submitted by    /u/Cjdamron75  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>

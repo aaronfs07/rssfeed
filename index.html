@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-08 datetime="2023-04-08T12:04:28.000Z">2023-04-08</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-08 datetime="2023-04-08T12:04:28.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-08 datetime="2023-04-08T12:26:30.000Z">2023-04-08</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-08 datetime="2023-04-08T12:26:30.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,43 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12fkgke/enhanced_filtering_for_connectors_o365_third/"
+                        open
+                      >
+                        <summary class="article-expander__title">Enhanced Filtering for Connectors / O365 / Third Party Spam Filtering</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12fkgke/enhanced_filtering_for_connectors_o365_third/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi there.
+ We currently utilize Barracuda for our Third Party Spam Filtering. MX-&gt;Barracuda-&gt;O365.
+ The only inbound connector we have is scoped to only accept mail from Barracuda IPs.
+ Mail Rule to set the SCL to -1 when mail is received from Barracuda IPs to ensure O365 scanning is bypassed.
+ We recently upgraded our Microsoft Licensing which allows additional email security on the O365 Side. 
+ While Barracuda does a pretty good job at keeping the bad-guys away, I&#x27;m considering layering *some* of the scanning/security such that any email that comes into our organization, first passes through Barracuda for Scans, then an additional scan is done at the O365 level before delivering to the user mailbox.
+ Seeing the recommendation is to enable Enhanced Filtering.
+ https://campus.barracuda.com/product/emailgatewaydefense/doc/96023002/enhanced-connectors-vs-mail-flow-rules-for-spam-filtering/
+ ​
+ https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors#what-happens-when-you-enable-enhanced-filtering-for-connectors
+ ​
+ https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud#scenario-1---mx-record-points-to-third-party-spam-filtering
+ ​
+ I&#x27;m assuming this is a modification to the existing inbound connector to enable Skip Listing, and the SkipIPs then become a list of IPs that Barracuda uses - essentially allowing us to keep the scoping in place for the connector to only allow Barracuda IPs. We would then &#x27;remove&#x27; the SCL-1 rule.
+ While this might come with some additional management - I can see the benefits of having an integrated filter in place (Impersonation etc etc).
+ Anyone else setup this way? Pros? Cons? lessons learned?
+ Appreciate the help.
+    submitted by    /u/kingjames2727  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -47680,33 +47717,6 @@ Cynch: &quot;First tank exchange for $10! Download the Cynch app and use promo c
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11n9enh/copying_a_file_to_a_client_computer_over_a_vpn/"
-                        open
-                      >
-                        <summary class="article-expander__title">Copying a file to a client computer over a VPN loads up RAM and never empty it, what can I do?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11n9enh/copying_a_file_to_a_client_computer_over_a_vpn/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi!
- I installed an ER8411 VPN router in our office and I configured an IPsec VPN. My client device is a Windows 10 PC on another network. It connects to the VPN using TheGreenBow.
- I get good speeds, around 70 MB/s for file transfer, which is good for me.
- The problem I have is weird, and probably something I don&#x27;t know. When I try copying a file from any remote device to my local client, it will allocate the client&#x27;s ram for the size of that file. If I start a 5GB file copy, quickly the Ram usage will ramp up by 5GB. I need to transfer 60GB files, so that&#x27;s a big issue. Once the transfer is done, it DOES NOT free the ram...
- I do not have that problem if I launch a copy from another drive or a local NAS.
- Any idea or explaination?
- Thanks!
-    submitted by    /u/Remy4409  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47804,28 +47814,6 @@ What’s worse is I was given permission from our other coworkers on the team to
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11n956j/how_is_this_possible/"
-                        open
-                      >
-                        <summary class="article-expander__title">How is this possible...</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11n956j/how_is_this_possible/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>How many times have you had this happen:
- You have contact with a client (email, phone, or ticket) and you try to fix (or at least find out) the issue. You ask them - let me remind you they work on &#x27;system x&#x27; eight hours or more a day - and they can&#x27;t tell you what it&#x27;s supposed to do, and what it isn&#x27;t doing that makes it &#x27;broken&#x27;. How is that remotely possible.
-    submitted by    /u/Cjdamron75  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;51
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47833,8 +47821,8 @@ What’s worse is I was given permission from our other coworkers on the team to
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4645102265">
-        <time id="build-timestamp" datetime="2023-04-08T12:19:16.111Z">2023-04-08T12:19:16.111Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4645350100">
+        <time id="build-timestamp" datetime="2023-04-08T13:11:47.402Z">2023-04-08T13:11:47.402Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
