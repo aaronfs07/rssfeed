@@ -2,10 +2,135 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-04-10T13:13:39.420Z</updated>
+    <updated>2023-04-10T14:10:21.362Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare proxied DNS + internal split-brain DNS - what am I missing??]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12hjo41/cloudflare_proxied_dns_internal_splitbrain_dns/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12hjo41/cloudflare_proxied_dns_internal_splitbrain_dns/"/>
+        <updated>2023-04-10T14:00:13.000Z</updated>
+        <summary type="html"><![CDATA[We recently had a switch in our website hosting provider and I'm hitting my head against the wall on what I'm missing here. Everything works externally, but we have a split-brain DNS setup in our internal network. It's been set up that way for a long time and it's not something I can completely remove unfortunately, at least not right now.
+ So externally, www.domain.com resolves and is proxied through Cloudflare and life is good. (see screenshot in attached album)
+ Internally, however, is where things aren't currently working. Our previous hosting provider had a trusted CA issued cert installed on the origin server, and so we could simply point our internal DNS to the same public IP that CF was pointed to and everything would work fine. This new hosting provider insists on having a self signed cert on their side however. Why this is I'm still trying to figure out in my continued discussions with them, but for now that's what we've got and obviously that causes issues with 'site unsecure' warnings if we set it up like we had done before.
+ So what I was trying to do is simply point our internal DNS to the CF proxied route, and per here and here I was under the impression I could simply create a CNAME entry for www.domain.com and point it to www.domain.com.cdn.cloudflare.net. (see screenshot in attached album). But clearly I'm still missing something because even with that things aren't working - Chrome gives an "ERR_NAME_NOT_RESOLVED" error even though NSLOOKUP seems to resolve to the CF IP's just fine (again, see screenshots in attached album). 
+ Anyone dealt with a similar issue before? Thank you!!
+ https://imgur.com/a/9KxZlFI
+    submitted by    /u/ohlin5  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Computer stipend for engineers]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12hjhga/computer_stipend_for_engineers/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12hjhga/computer_stipend_for_engineers/"/>
+        <updated>2023-04-10T13:53:28.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I was wondering if anyone here had a computer stipend for certain departments in your companies ? 
+ I am trying to find out the pro/cons for letting engineers have their own stipend to pick out their computers vs we pick out their computers .
+ Either way they would be required to have intune and follow compliance policies. It’s only a matter of whether they tell us what they want and we order it or we pick what they use.
+ Would love to hear experiences and pro/cons
+    submitted by    /u/esisenore  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[upgraded Hyper-V VM from Config level 5 to 9.0 and hyper-v created VMs from its snapshot that throw errors?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12hjdyn/upgraded_hyperv_vm_from_config_level_5_to_90_and/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12hjdyn/upgraded_hyperv_vm_from_config_level_5_to_90_and/"/>
+        <updated>2023-04-10T13:49:46.000Z</updated>
+        <summary type="html"><![CDATA[Hey all,
+ I upgrade a VM from Configuration level 5.0->9.0 and it worked fine, except hyper-v didnt remove the snapshots, instead it created 4 VM's off the VM's snapshot. VM's that when i try to delete says it doesnt exist, or throws an error when trying to open. 
+ https://imgur.com/a/aT3srwc
+ ​
+ I'm not sure what to do about this? I cant delete, or 'open' them i just get errors. Any ideas?
+    submitted by    /u/Fizgriz  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to find network automation positions ?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/12hjcnf/how_to_find_network_automation_positions/</id>
+        <link href="https://www.reddit.com/r/networking/comments/12hjcnf/how_to_find_network_automation_positions/"/>
+        <updated>2023-04-10T13:48:18.000Z</updated>
+        <summary type="html"><![CDATA[Hey,
+ Quick question, how do I go about finding network engineer roles which are more focused on network automation ? I'm barely getting any matches on job boards when I search "network automation" and "netdevops". 90% of the traditional senior/network engineer roles I see just say python or ansible is a plus.
+ From what it looks like I may have to just get lucky ? and find a company that either is about to start this journey or already has started and looking for engineers to join the team.
+ I'm using indeed and linkedin for my job searches.
+ Thanks!!
+    submitted by    /u/ExternalBrilliant388  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DoctorGPT brings GPT into production for error diagnosing]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12hj38i/doctorgpt_brings_gpt_into_production_for_error/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12hj38i/doctorgpt_brings_gpt_into_production_for_error/"/>
+        <updated>2023-04-10T13:38:14.000Z</updated>
+        <summary type="html"><![CDATA[DoctorGPT is a lightweight self-contained binary that monitors your application logs for problems and diagnoses them. 
+ I kicked-off the project after running some experiments which showed that GPT4 does a pretty good job diagnosing errors in logs if given enough context. 
+ Thoughts and feedback are very much appreciated!
+    submitted by    /u/99tacoscontodo  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My colleague died and I got promoted to head of IT, could use some advice]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12hiyo2/my_colleague_died_and_i_got_promoted_to_head_of/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12hiyo2/my_colleague_died_and_i_got_promoted_to_head_of/"/>
+        <updated>2023-04-10T13:33:23.000Z</updated>
+        <summary type="html"><![CDATA[Hi All,
+ I have been lurking for some time, and now could really use some good advice.
+ The story is, we are a retail chain with around 15 stores, 2 offices and a large online presence. I came onboard about 3 years ago with the responsibility for our ERP, Azure hosting and web team. The other guy took care of all hardware, some support and the odd jobs that came up. Between us we also took care of all the different hardware and software people use. We have around 200 employees across parttime to fulltime.
+ The other guy was beginning to slack a bit, came in late and did not always do his tasks, so the CEO had made a plan with me where I should be the head of IT in 6 to 12 months and we should hire more people, at minimum a Sysadmin and a Supporter.
+ We had not yet presented the plan for my colleague.
+ Yesterday they found my colleague dead in his apartment, and I got a call from the CEO about it, where he stated that I was now head of IT and should start as soon as possible.
+ My plan is to start securing we have access to all the systems he worked with, and create a common password database in something like Bitwarden. Then talk to all the different departments about what projects they had going on, and how to get support moving forward.
+ I could really use some advise, where would you guys start?
+ Rest in piece other guy, I will keep your lasts sessions online for as long ass possible. You will be missed.
+    submitted by    /u/TheLoneTechGuy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[On call support]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12hiwp8/on_call_support/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12hiwp8/on_call_support/"/>
+        <updated>2023-04-10T13:31:16.000Z</updated>
+        <summary type="html"><![CDATA[Hi guys. I've recently became a father, and with that a huge problem came up. When I'm on call, I can't have my phone waking up my newborn daughter every two hours or so. With that said what are your strategies to avoid this? Sleep on the couch? /s
+ I think it should be a quite common issue with it people :)
+    submitted by    /u/hugocard  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Urgent helpdesk ticket because iHeartRadio website is down]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12hikze/urgent_helpdesk_ticket_because_iheartradio/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12hikze/urgent_helpdesk_ticket_because_iheartradio/"/>
+        <updated>2023-04-10T13:18:23.000Z</updated>
+        <summary type="html"><![CDATA[Happy Monday everyone
+ EDIT: Their back-end is down. Music doesn't play, console opens to debugger, 504 gateway timeout.
+    submitted by    /u/Stratbasher_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Azure Slowness - East US]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/12hibd0/azure_slowness_east_us/</id>
