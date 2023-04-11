@@ -2,10 +2,104 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-04-11T13:15:00.559Z</updated>
+    <updated>2023-04-11T14:10:34.140Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Infrastructure monitoring, open source]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12il0ww/infrastructure_monitoring_open_source/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12il0ww/infrastructure_monitoring_open_source/"/>
+        <updated>2023-04-11T14:09:31.000Z</updated>
+        <summary type="html"><![CDATA[Looking at starting fresh with an open source solution for monitoring our physical stack. Juniper switches, Palo Alto firewalls, Dell (iDRAC) and HP (iLo) servers. Running VMWare and Proxmox in case that matters. 
+ If you had to do it all over, what would you use? 
+ Requirements: Open source (free), alerting + graphing
+ Current options I'm considering:
+ Nagios 
+ Prometheus/Grafana - Used this before, but not thrilled with the idea of having to find/spin up the exporters for all the different hardware we're using
+ Checkmk
+ Zabbix
+    submitted by    /u/TheIglu  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[You guys are the best]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12ikxv9/you_guys_are_the_best/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12ikxv9/you_guys_are_the_best/"/>
+        <updated>2023-04-11T14:06:20.000Z</updated>
+        <summary type="html"><![CDATA[One day I was scrolling in this Reddit and came across a post asking about “best back up software” and so many of you guys brought up Veeam. So I got the community edition and this alone has made my life so much easier you don’t even understand. Previously we were using an outdated version of BEXE by veritas and veeam blows this out of the water. Just wanted to show you guys a little appreciation since I know we don’t get it often as Sys admins again thank you.
+    submitted by    /u/xDiedrich  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Aruba 2530 and Aruba 6000 VLAN.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/12ikxke/aruba_2530_and_aruba_6000_vlan/</id>
+        <link href="https://www.reddit.com/r/networking/comments/12ikxke/aruba_2530_and_aruba_6000_vlan/"/>
+        <updated>2023-04-11T14:06:03.000Z</updated>
+        <summary type="html"><![CDATA[I feel like a complete moron even asking this question. We bought some new Aruba switches and we have an old legacy system that's on a completely different network as our main network.
+ Our main network is 192.168.195.0/24 and the software uses 192.168.2.0/24.
+ All I'm trying to get is give access to the second network on our switches so we can access both networks.
+    submitted by    /u/RW2005  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Office 365 RMS vs Code based email]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12ikxjd/office_365_rms_vs_code_based_email/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12ikxjd/office_365_rms_vs_code_based_email/"/>
+        <updated>2023-04-11T14:06:01.000Z</updated>
+        <summary type="html"><![CDATA[Hello Everyone,
+ I have been searching all over the web, Microsoft and Reddit and I can't seem to find the answer to this issue...
+ I have a client that requested O365 email encryption. I set them up with a E3 license to do so. When they first went to send encrypted emails, Outlook said that Information Protection was not enabled on their tenant. I used Powershell to enable and now they can send out encrypted emails.
+ The issue is, instead of the email arriving where they can open it in a browser with a code... they get an email that requires the Information protection viewer and a Microsoft account.
+ This is obviously to much for most recipients to be able to handle (I know... trust me... I know...).
+ Here is the thing, when I send an encrypted email out of our organization it arrives in the code/web format. However, when my client sends it... it's always a .rpmsg and requires the viewer to open.
+ Does anyone know what I need to change to make it use the code/web version?
+    submitted by    /u/g2tegsown  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Help with management contracts in ACI (Feels like this should be simple, but...)]]></title>
+        <id>https://www.reddit.com/r/networking/comments/12ikek1/help_with_management_contracts_in_aci_feels_like/</id>
+        <link href="https://www.reddit.com/r/networking/comments/12ikek1/help_with_management_contracts_in_aci_feels_like/"/>
+        <updated>2023-04-11T13:46:29.000Z</updated>
+        <summary type="html"><![CDATA[I had a request from our security folks to look into disabling HTTPS access on the spines and leaves in our ACI environment if we don't use it. To the best of my knowledge, we don't use the object store browser on the leaves themselves, we really only use the web interface on the APICs. I reached out to TAC and they recommended creating a new set of contracts and EPGs for in-band and out-of-band, applying a filter to block HTTPS to the contracts, and adding the leaves and spines to those new EPGs for in-band and out of band.
+ I went ahead and built this and moved some leaves into the new EPGs, and the block works for out-of-band (e.g. I can nc -zv <leaf_OOB_address> 443 and get no response), but not in-band, and it's not clear why. Initially my thought was to set the filter to block 443 as a source port and add the contract as a provided contract, which seems to be what works for the OOB port. On the in-band EPG, I did the same thing, adding a filter for source port 443 > any and setting my new contract as a provided contract. That did not work, so I've since tried adding a filter for any > dest port 443, changing it to a consumed contract instead of provided, etc. I've opened up a TAC case, but they took a look at what I had configured and said it seemed right, so they're waiting on feedback from a higher level engineer to see if there's something additional needed.
+ Does it sound like there's something I'm missing?
+    submitted by    /u/AlmavivaConte  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to professionally tell a cold call or cold emailing vendor to f**k off?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12ikb83/how_to_professionally_tell_a_cold_call_or_cold/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12ikb83/how_to_professionally_tell_a_cold_call_or_cold/"/>
+        <updated>2023-04-11T13:42:52.000Z</updated>
+        <summary type="html"><![CDATA[I know multiple versions this answer exist somewhere, but I wanted to ask it again. 
+ What is a good way to tell a vendor who keeps emailing you to fuck off once and for all?
+ What have you used that worked? 
+ What have you used that you really should not have used? 
+ All answers are acceptable. 
+ I REALLY REALLY want them to get the message if you catch my drift. Hopefully some answers will help sysadmins all over the world.
+    submitted by    /u/Rouge_Outlaw  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Recommendation on faxserver]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/12ijiyh/recommendation_on_faxserver/</id>
@@ -156,6 +250,19 @@
  At work, we're HEAVILY focused on implementing Agile. For my day-to-day work, it's been a COMPLETE AND UTTER failure. For all my project work, it's also been an utter disaster, mostly because I don't work on any custom development projects. It's all infrastructure upgrade stuff and COTS upgrades.
  I can obviously continue to use my hybrid method. But I'm curious if anyone is following a time management system that helps organize the insanity.
     submitted by    /u/plazman30  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[O365 Group Calendars Randomly Missing]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12iimvh/o365_group_calendars_randomly_missing/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12iimvh/o365_group_calendars_randomly_missing/"/>
+        <updated>2023-04-11T12:42:50.000Z</updated>
+        <summary type="html"><![CDATA[I'm starting to get several tickets in for O365 Group Calendars going missing all of a sudden within Outlook Desktop Client. I assume this is probably due to an Outlook update but while I'm going down the rabbit hole figure I'd ask if anyone else is dealing with this?
+ Edit: Fixed the issue by having them log out of their Outlook Account and Back in. Easy enough.
+    submitted by    /u/xintonic  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
@@ -28489,23 +28596,6 @@ What are the different job descriptions/options, what's the difference day-to-da
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How do i create a landing Page for employees]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/11pw6li/how_do_i_create_a_landing_page_for_employees/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/11pw6li/how_do_i_create_a_landing_page_for_employees/"/>
-        <updated>2023-03-13T01:26:59.000Z</updated>
-        <summary type="html"><![CDATA[(Emglish is my 2nd language, apologies)
- Hi, I am basically the only IT Guy in this place so I handle everything from preventing hacks to right down creating sites and password resets..
- Logic here is: that guy knows IT lets ask him to do all the work that is related to computer 
- So can someone please help me with this, if you have any experience.
- Basically my employer wants to setup a landing page on all the pcs in out company, so when someone opens a browser they get this site as the homepage to they can just open all the company sites without going around asking for links..
- Something similar to linktree
-    submitted by    /u/SirThunderCock-  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
