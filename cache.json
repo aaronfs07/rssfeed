@@ -359,6 +359,56 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12luy0h/domain_controller_not_in_domain_anymore/",
+          "author": null,
+          "description": "Hello everyone ! I hope you have a better read only Friday than me ! \n One of our domain controller which is physical computer installed in a other site far away from my office, has no trust relation with our Active Directory, so it’s impossible for us to access it anymore. It happened after a “little” mistake was made. Basically this server is gonna be replaced and we need to clone it and redeploy it on a new VM in our hyperV cluster, for a specific software installed on it. So the clone was done, using disk2vhd cloning C: of that server, and mounted on a new VM, the new vm wasn’t connected with network until the IP was changed, but to change the name of that new VM, it was needed to downgrade the VM from DC to non DC, and to do this it had to be connected to the network, and it’s at that moment where we had the conflict, which made our physical machine loose the trust relationship and removed itself from our AD.\n Has anyone of you an idea on how to make the physical server re join our AD and being able to connect on it ? Beside going physically on site where the server is located which is a 6 hour drive from office. We can’t connect with any AD account because no trust relation, and no local account possible because it’s a domain controller.\n Sorry for my bad English, not my native language,\n    submitted by    /u/Femboy6372819  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12luy0h/domain_controller_not_in_domain_anymore/",
+          "publishedOn": "2023-04-14T12:03:47.000Z",
+          "wordCount": 13426,
+          "title": "Domain Controller not in domain anymore",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12lurq8/service_for_monitoring_your_external_ip_adresses/",
+          "author": null,
+          "description": "Hello im looking for a program or service or whatever tool that can be in ubuntu or docker so i could monitor IP's on ovs stack. Basically i have a file that updates every 2 minutes with ip's that change and i need a way to monitor them so i dont get false alarms when an ip is removed. So i would get something like ICMP ping failed for 10.10.10.19 or smthng like that if the ip is down and not when its removed.\n    submitted by    /u/Late_Employment2209  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12lurq8/service_for_monitoring_your_external_ip_adresses/",
+          "publishedOn": "2023-04-14T11:57:14.000Z",
+          "wordCount": 2179,
+          "title": "Service for monitoring your external IP adresses from a file.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12ludmq/automate_deletion_of_aws_ebs_snapshots_older_than/",
+          "author": null,
+          "description": "We transitioned to a new backup solution for saas backups, we still need to retain backups for 2 years, new solution has no life cycle what to clear from old native snapshots, I’m looking to automate deletion of ebs snapshots older than 2 years and want to run it monthly so it clears anything older than 730 days, does this require any lambda automation or does aws life cycle manager help here? Thank you\n    submitted by    /u/Koyander  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12ludmq/automate_deletion_of_aws_ebs_snapshots_older_than/",
+          "publishedOn": "2023-04-14T11:40:55.000Z",
+          "wordCount": 2168,
+          "title": "Automate deletion of aws ebs snapshots older than year",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12ltv1t/trouble_setting_up_intune_on_lenovo_tablet/",
+          "author": null,
+          "description": "submitted by    /u/Solid_Flamingo109  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12ltv1t/trouble_setting_up_intune_on_lenovo_tablet/",
+          "publishedOn": "2023-04-14T11:19:05.000Z",
+          "wordCount": 13275,
+          "title": "Trouble setting up Intune on Lenovo Tablet",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12lts52/browser_homepage_policies/",
+          "author": null,
+          "description": "So hi,\n i am somewhat lost about how to proceed here.\n for as long as i can remember, i had no problem to propagate a specific website as startpage/homepage via policy, including those that are defined as \"preferred\" or \"not locked\", be it either per group policy for edge & chrome, or policies.json in Firefox.\n what exactly happens when a new policy, defined as \"preferred\" or \"not locked\" is applied, but a different setting already exists for a user?\n because all of sudden, i am getting a heap load of complaints, that for two different customers, and two different browsers (edge & firefox), the browser does not load the correct new startpage we have set per policy. for one customer, in edge it's set per GPO and for the other customer, in firefox it's set via policies.json.\n for firefox i was able to verify, one user has the old homepage set in his profile prefs.js. when i remove this, the policy applies as it should. the user didn't change anything homepage related on his end, he doesn't even touch firefox at all as he prefers edge. all users i talked to assert they have not set another homepage, and still there seem to be some user-specific changes to said setting. is there any way a differing setting could end up in the user-specific settings by other means?\n anyways, it appears the per-user-setting has priority. did this behaviour change recently? because i can't remember i've ever had this much trouble with policies like these before, and since 1-2 month ago, an alarming amount of people report this problem...\n    submitted by    /u/azra1l  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12lts52/browser_homepage_policies/",
+          "publishedOn": "2023-04-14T11:15:37.000Z",
+          "wordCount": 2355,
+          "title": "Browser homepage policies",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/12ltex2/windows_10_generating_thousands_of_eventcode_4674/",
           "author": null,
           "description": "As the title says - and only one workstation out of 4 that are getting the same group policy is doing it. This was only discovered after finding that the logs had been filling up for over a year and auto-archiving, ending up generating over 840GB of logs over that time span. I can't find any reason for this system to be doing this.\n The other systems don't have ANY logs related to SeBackupPrivilege. Anyone have any ideas on what might be happening? So far my searches have turned up nothing useful.\n For reference, in a 24 hour period, the unaffected systems generate about 76,000 Security Log events - whereas the affected system is about double that, and the extra 76,000 are all related to SeBackupPrivilege.\n I will not be able to provide any actual logs due to the company policy, but still hope someone has some ideas on what it could be.\n    submitted by    /u/saegiru  \n [link]   [comments]",
@@ -12767,16 +12817,6 @@
           "wordCount": 14423,
           "title": "Single server hosting everything on domain?",
           "imageUrl": "https://external-preview.redd.it/YH8gNap4KoGcFgyFYrNZ86fXmYfRn6pa7uuwIlZkjEE.jpg?auto=webp&v=enabled&s=8e9dd29e55be5f9d4be03f8a2ca6dc669418c160"
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11sd5yp/what_is_the_point_of_support_contract_response/",
-          "author": null,
-          "description": "If you pay premium for support for faster response SLAs, and all they have to do to \"satisfy\" that SLA is send a canned response email within the allotted time (or maybe a quick clarifying question), and then screw off for several hours before actually providing support on the phone or remote session, why bother paying? Microsoft of course is the biggest offender, but lately Veeam does it too, and likely several others.\n Edit: my complaint isn't about techs being lazy or whatever, I'm talking about the enormous gulf between marketing and support capacity\n    submitted by    /u/communads  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11sd5yp/what_is_the_point_of_support_contract_response/",
-          "publishedOn": "2023-03-15T23:32:30.000Z",
-          "wordCount": 1983,
-          "title": "What is the point of support contract response time SLAs?",
-          "imageUrl": null
         }
       ]
     },
@@ -13098,6 +13138,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/12lu91k/question_about_sfp_passwords_protection_for/",
+          "author": null,
+          "description": "Does anyone know if setting the password for SFP to FFFFFFFF (when manufacturing) the same thing as the SFP being unprotected?\n We want the SFPs that we order to be re-codeable with any sfp programmer without knowing the password.\n    submitted by    /u/barhom  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/12lu91k/question_about_sfp_passwords_protection_for/",
+          "publishedOn": "2023-04-14T11:35:24.000Z",
+          "wordCount": 2143,
+          "title": "Question about SFP passwords (protection for re-coding)",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/12lr93f/how_did_you_fall_in_love_with_networking_if_you/",
           "author": null,
@@ -18026,26 +18076,6 @@
           "publishedOn": "2023-03-16T10:33:21.000Z",
           "wordCount": 13170,
           "title": "Fanless Cisco Switch for AV devices",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11sde8n/good_companies_for_network_engineers_in_canada/",
-          "author": null,
-          "description": "There will obviously be more posts relating to American companies as the US population is 10x that of Canada.\n So for Canadian network engineers, please let me know of good companies to work for in our role. If you prefer not to say the company, the industry would be good.\n I feel like outside of the big banks and American companies with Canadian branches, it’s slim pickings for decent paying network engineering jobs. I live in Toronto but still feel this way.\n Hopefully I’m proven wrong with your stories/experiences.\n    submitted by    /u/Prestigious-Shame-36  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11sde8n/good_companies_for_network_engineers_in_canada/",
-          "publishedOn": "2023-03-15T23:41:51.000Z",
-          "wordCount": 13764,
-          "title": "Good companies for network engineers in Canada",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11sczol/unmanaged_vs_managed_switches_at_the_perimeter/",
-          "author": null,
-          "description": "We are in the process of upgrading our perimeter from Palo Alto to Forcepoint with multiple ISP connections. In the process, we are wanting to put a bridge between the firewall and the ISP so we can take advantage of the extra IPs in a /29 or /28 if needed. I've recommended managed switches for these locations as many of them are automated sites with no personnel. I'm getting pushback on 2 issues. Our security consultant is recommending we put in unmanaged switches. They are cheaper, they can't be compromised from the Internet (cue scary music) and if a redundant link goes out you just ship out another cheap switch. Secondly, if we did go with the managed switch option, he is insisting that the OOB mgmt port doesn't plug into our trusted network but instead goes through the firewall. Apparently plugging it straight into the trusted network would immediately cause a security audit to fail. Thoughts on these 2 items?\n    submitted by    /u/joshuamichaelsanders  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11sczol/unmanaged_vs_managed_switches_at_the_perimeter/",
-          "publishedOn": "2023-03-15T23:25:34.000Z",
-          "wordCount": 16096,
-          "title": "Unmanaged vs managed switches at the perimeter.",
           "imageUrl": null
         }
       ]
