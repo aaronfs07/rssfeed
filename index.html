@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-15 datetime="2023-04-15T08:54:10.000Z">2023-04-15</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-15 datetime="2023-04-15T08:54:10.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-15 datetime="2023-04-15T10:04:14.000Z">2023-04-15</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-15 datetime="2023-04-15T10:04:14.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,103 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12mxa4d/setting_up_a_ikev2_psk_server_on_ubuntu_server/"
+                        open
+                      >
+                        <summary class="article-expander__title">Setting up a IKEv2 PSK server on Ubuntu server behind a router</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12mxa4d/setting_up_a_ikev2_psk_server_on_ubuntu_server/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello! 
+ I&#x27;ve been trying for a few days to setup a IKEv2 PSK (for simplicity) VPN server. This server should run as a virtual machine on a proxmox deployment. I&#x27;ve disabled proxmox&#x27;s firewall for this specific machine 
+ The host is behind a Mikrotik CRS326 router, on which i have configured port forwarding for ports 500 and 4500 UDP to the VPN server (at 192.168.1.7) in the dstnat chain, the firewall rules to allow traffic on those ports via the UDP ports are also in place. 
+ The current /etc/ipsec.conf config is this one: 
+ config setup
+ charondebug&#x3D;&quot;ike 1, knl 1, cfg 0&quot;
+ uniqueids&#x3D;no
+ ​
+ conn ikev2-vpn
+ auto&#x3D;add
+ compress&#x3D;no
+ type&#x3D;tunnel
+ keyexchange&#x3D;ikev2
+ fragmentation&#x3D;yes
+ forceencaps&#x3D;yes
+ ike&#x3D;aes256-sha1-modp1024,3des-sha1-modp1024!
+ esp&#x3D;aes256-sha1,3des-sha1!
+ dpdaction&#x3D;clear
+ dpddelay&#x3D;300s
+ rekey&#x3D;no
+ left&#x3D;%any
+ leftid&#x3D;192.168.1.7
+ leftcert&#x3D;/etc/ipsec.d/certs/vpn-server-cert.pem
+ leftsendcert&#x3D;always
+ leftsubnet&#x3D;0.0.0.0/0
+ right&#x3D;%any
+ rightid&#x3D;%any
+ rightauth&#x3D;eap-mschapv2
+ rightdns&#x3D;192.168.1.1
+ rightsourceip&#x3D;10.20.30.0/24
+ rightsendcert&#x3D;never
+ eap_identity&#x3D;%identity
+ ------------------------------------------------------------------------------------------
+ When i try to connect i see exactly one packet on port 500 on mikrotik&#x27;s counter for firewall rules, well, NAT rules in this case and that&#x27;s it, nothing more, the phone i&#x27;m testing this with gives up and states &quot;disconnected&quot;, the whole process take 1-2 seconds. 
+ I really have 0 idea what i did wrong.
+    submitted by    /u/Ginnungagap_Void  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;44
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12mx3th/cis_benchmark_ubuntu_2204_build_kit/"
+                        open
+                      >
+                        <summary class="article-expander__title">CIS Benchmark Ubuntu 22.04 Build Kit</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12mx3th/cis_benchmark_ubuntu_2204_build_kit/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello guys. Anyone here has a downloadable copy of the CIS Benchmark Build kit for Ubuntu 22.04?
+    submitted by    /u/PersimmonEmergency  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12mw750/spamhero/"
+                        open
+                      >
+                        <summary class="article-expander__title">SpamHero?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12mw750/spamhero/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is anyone here using SpamHero? Trying to decide between them and SpamTitan. Their pricing seems reasonable compared to SpamTitan, but I want to see if anyone has comments (good or bad) about their service.
+    submitted by    /u/fraxis  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;43
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46105,31 +46202,6 @@ Hexnode looks interesting, and is cheaper than Intune.
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/11t6rm9/psa_when_put_together_a_terrible_network_please/"
-                        open
-                      >
-                        <summary class="article-expander__title">PSA: When put together a terrible network, please don’t also program all static IPs inside the devices themselves…</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/11t6rm9/psa_when_put_together_a_terrible_network_please/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I’ve been working with this one client for a few years. They’re a break fix client, and I was trying to get them to approve some network improvements at one of their sites. It had an EoLed routers, switches, APs, the works. Additionally, the whole network was flat (a single subnet for their security system as well as their guest devices), and full of holes: ports 22, 80, 443, were open. They had some vulnerable VPN server running as well… it was a mess, and the whole thing needed to be overhauled, if not just dumped gasoline on. 
- Because there was a pile on of vendors who had performed work on this network over the years, there was also, of course, zero documentation. 
- When I went to segment the network, almost every device that had been installed had a static IP that was set inside of a password protected console. The job which should have taken a couple of days quickly turned into a nightmare. I had to track down ghost vendors. We had to call alarm companies. I had to get in touch with the people who installed a stupid TV remote, which only they had software to manage. After I called them, they asked why they “couldn’t access the TV remote’s management directly via the public IP address?”
- I learned to hate the static IP with a passion.
- So here’s my public service announcement: please set your damn static IPs via the router’s DHCP sever! That way they’re easier to manage if you need to move things around.
-    submitted by    /u/rb3po  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;57
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46264,29 +46336,6 @@ I&#x27;m also looking to break out some 400G and 100G ports to 4x100G and 4x10G 
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/11t7l61/is_it_possible_i_am_missing_something_about_a/"
-                        open
-                      >
-                        <summary class="article-expander__title">Is it possible I am missing something about a question I received about a user taking a VOIP/SIP phone home with them?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/11t7l61/is_it_possible_i_am_missing_something_about_a/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>The question asked is how will the phone be able to use vLAN tagging if taken out of the enterprise network and used in a home five environment?
- My answer was that as long as it isn’t statically assigned, the phone would follow any DHCP / Network settings of the home office environment.
- Am I missing anything here? This was raised by a young person, so, wondering if it’s a possibility a gap on their end or if I’ve missed something?
-    submitted by    /u/ueeediot  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;45
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46294,8 +46343,8 @@ I&#x27;m also looking to break out some 400G and 100G ports to 4x100G and 4x10G 
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4707037583">
-        <time id="build-timestamp" datetime="2023-04-15T09:10:16.351Z">2023-04-15T09:10:16.351Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4707253532">
+        <time id="build-timestamp" datetime="2023-04-15T10:10:49.971Z">2023-04-15T10:10:49.971Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

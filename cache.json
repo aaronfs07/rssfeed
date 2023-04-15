@@ -339,6 +339,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12mxa4d/setting_up_a_ikev2_psk_server_on_ubuntu_server/",
+          "author": null,
+          "description": "Hello! \n I've been trying for a few days to setup a IKEv2 PSK (for simplicity) VPN server. This server should run as a virtual machine on a proxmox deployment. I've disabled proxmox's firewall for this specific machine \n The host is behind a Mikrotik CRS326 router, on which i have configured port forwarding for ports 500 and 4500 UDP to the VPN server (at 192.168.1.7) in the dstnat chain, the firewall rules to allow traffic on those ports via the UDP ports are also in place. \n The current /etc/ipsec.conf config is this one: \n config setup\n charondebug=\"ike 1, knl 1, cfg 0\"\n uniqueids=no\n ​\n conn ikev2-vpn\n auto=add\n compress=no\n type=tunnel\n keyexchange=ikev2\n fragmentation=yes\n forceencaps=yes\n ike=aes256-sha1-modp1024,3des-sha1-modp1024!\n esp=aes256-sha1,3des-sha1!\n dpdaction=clear\n dpddelay=300s\n rekey=no\n left=%any\n leftid=192.168.1.7\n leftcert=/etc/ipsec.d/certs/vpn-server-cert.pem\n leftsendcert=always\n leftsubnet=0.0.0.0/0\n right=%any\n rightid=%any\n rightauth=eap-mschapv2\n rightdns=192.168.1.1\n rightsourceip=10.20.30.0/24\n rightsendcert=never\n eap_identity=%identity\n ------------------------------------------------------------------------------------------\n When i try to connect i see exactly one packet on port 500 on mikrotik's counter for firewall rules, well, NAT rules in this case and that's it, nothing more, the phone i'm testing this with gives up and states \"disconnected\", the whole process take 1-2 seconds. \n I really have 0 idea what i did wrong.\n    submitted by    /u/Ginnungagap_Void  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12mxa4d/setting_up_a_ikev2_psk_server_on_ubuntu_server/",
+          "publishedOn": "2023-04-15T10:04:14.000Z",
+          "wordCount": 13241,
+          "title": "Setting up a IKEv2 PSK server on Ubuntu server behind a router",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12mx3th/cis_benchmark_ubuntu_2204_build_kit/",
+          "author": null,
+          "description": "Hello guys. Anyone here has a downloadable copy of the CIS Benchmark Build kit for Ubuntu 22.04?\n    submitted by    /u/PersimmonEmergency  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12mx3th/cis_benchmark_ubuntu_2204_build_kit/",
+          "publishedOn": "2023-04-15T09:56:44.000Z",
+          "wordCount": 2108,
+          "title": "CIS Benchmark Ubuntu 22.04 Build Kit",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12mw750/spamhero/",
+          "author": null,
+          "description": "Is anyone here using SpamHero? Trying to decide between them and SpamTitan. Their pricing seems reasonable compared to SpamTitan, but I want to see if anyone has comments (good or bad) about their service.\n    submitted by    /u/fraxis  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12mw750/spamhero/",
+          "publishedOn": "2023-04-15T09:12:58.000Z",
+          "wordCount": 12987,
+          "title": "SpamHero?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/12mvtas/can_you_track_the_source_of_a_wifi_direct/",
           "author": null,
           "description": "I've had malware pushed onto a couple of devices by this method. I've just learned that MAC are always randomised when using Direct, so that's a dead end. Would anyone know if there is anyway to trace it? I'm looking at other ways of identifying the source but want to check in case there is anything to look out for from this.\n    submitted by    /u/WholeStrategy7007  \n [link]   [comments]",
@@ -12657,16 +12687,6 @@
           "wordCount": 15460,
           "title": "Anyone else have a software blacklist",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11t6rm9/psa_when_put_together_a_terrible_network_please/",
-          "author": null,
-          "description": "I’ve been working with this one client for a few years. They’re a break fix client, and I was trying to get them to approve some network improvements at one of their sites. It had an EoLed routers, switches, APs, the works. Additionally, the whole network was flat (a single subnet for their security system as well as their guest devices), and full of holes: ports 22, 80, 443, were open. They had some vulnerable VPN server running as well… it was a mess, and the whole thing needed to be overhauled, if not just dumped gasoline on. \n Because there was a pile on of vendors who had performed work on this network over the years, there was also, of course, zero documentation. \n When I went to segment the network, almost every device that had been installed had a static IP that was set inside of a password protected console. The job which should have taken a couple of days quickly turned into a nightmare. I had to track down ghost vendors. We had to call alarm companies. I had to get in touch with the people who installed a stupid TV remote, which only they had software to manage. After I called them, they asked why they “couldn’t access the TV remote’s management directly via the public IP address?”\n I learned to hate the static IP with a passion.\n So here’s my public service announcement: please set your damn static IPs via the router’s DHCP sever! That way they’re easier to manage if you need to move things around.\n    submitted by    /u/rb3po  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11t6rm9/psa_when_put_together_a_terrible_network_please/",
-          "publishedOn": "2023-03-16T21:25:06.000Z",
-          "wordCount": 17021,
-          "title": "PSA: When put together a terrible network, please don’t also program all static IPs inside the devices themselves…",
-          "imageUrl": null
         }
       ]
     },
@@ -17880,16 +17900,6 @@
           "publishedOn": "2023-03-16T23:24:11.000Z",
           "wordCount": 13254,
           "title": "Issues with Weathermap Integration LibreNMS",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11t7l61/is_it_possible_i_am_missing_something_about_a/",
-          "author": null,
-          "description": "The question asked is how will the phone be able to use vLAN tagging if taken out of the enterprise network and used in a home five environment?\n My answer was that as long as it isn’t statically assigned, the phone would follow any DHCP / Network settings of the home office environment.\n Am I missing anything here? This was raised by a young person, so, wondering if it’s a possibility a gap on their end or if I’ve missed something?\n    submitted by    /u/ueeediot  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11t7l61/is_it_possible_i_am_missing_something_about_a/",
-          "publishedOn": "2023-03-16T21:57:25.000Z",
-          "wordCount": 13431,
-          "title": "Is it possible I am missing something about a question I received about a user taking a VOIP/SIP phone home with them?",
           "imageUrl": null
         }
       ]
