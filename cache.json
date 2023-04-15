@@ -339,6 +339,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12n1x73/azure_ad_brute_force_account_lockouts/",
+          "author": null,
+          "description": "Evening all,\n Wondering if anyone has dealt with this issue and how they approached it. We have a few users who are being constantly locked out by brute force attempts (about 50 attempts every hour). The users have MFA so we aren't too concerned about them gaining access but finding it frustrating having to constantly unlock the accounts. We have conditional access policies in place but because the conditional access takes effect after first factor it doesn't prevent the lockout. I have reached out to our Contact at Microsoft for some advice also but thought I would check in here as well for any other ideas\n Thanks in advance\n    submitted by    /u/pughj9  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12n1x73/azure_ad_brute_force_account_lockouts/",
+          "publishedOn": "2023-04-15T13:10:28.000Z",
+          "wordCount": 2200,
+          "title": "Azure AD brute force account lockouts",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12n1fc0/system_status_dashboard_annoncements/",
+          "author": null,
+          "description": "Hi, Looking to see what tool(s) people use to let users know the status of key systems within an enterprise. We use HaloITSM but I dont think it has a means of showing outages/status etc. Do you have any good solutions?\n    submitted by    /u/C64Poke  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12n1fc0/system_status_dashboard_annoncements/",
+          "publishedOn": "2023-04-15T12:52:56.000Z",
+          "wordCount": 2131,
+          "title": "System Status dashboard / annoncements",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12n0qhb/telnet_connection_issues_could_not_open/",
+          "author": null,
+          "description": "Hi,\n I'm experimenting with Telnet in a home lab setting, I'd like to connect to another machine from my main laptop and I'm having the following issue: I get the message “Connecting to 192.168.0.62… Could not open connection to the host, on port 23: Connect failed”.\n Here is a breakdown.\n ​\n  \nI want to connect with Laptop 1 to Laptop 2.\n Laptop 1: Windows 10 / IP address 192.168.0.55.\n Laptop 2: Windows 10 / IP address 192.168.0.62.\n Both are connected to the same wireless network.\n When attempting to use Telnet on Laptop 1 to connect to Laptop 2, I get the following message in CMD, with admin privileges, “Connecting to 192.168.0.62… Could not open connection to the host, on port 23: Connect failed”. \n Telnet client is activated on both machines.\n Firewall settings on Laptop 1 enable me to use Telnet. I tested this and was able to connect to another machine, a Linux laptop, on the same network, without any issue. I totally disabled the firewall on Laptop 2, and I’m still having issues when using Telnet.\n I can connect to Laptop 2 using RDP on Laptop 1.\n Rebooting did not solve the issue.\n \n  \nHas anyone run into this issue before or have any suggestions? Cheers!\n    submitted by    /u/Level-Worth-7962  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12n0qhb/telnet_connection_issues_could_not_open/",
+          "publishedOn": "2023-04-15T12:28:07.000Z",
+          "wordCount": 2305,
+          "title": "Telnet connection issues: \"Could not open connection to the host, on port 23: Connect Failed\"",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/12n0758/rfc_abuse_security_hostmaster/",
           "author": null,
           "description": "TL;DR: setup and monitor the RFC compliant email addresses like Abuse and Webmaster! \n Long:\n I recently dealt with a website that was compromised. There was a credit card stealer script embedded on the webserver. The script was caught by our antivirus software on a user PC they they went to buy something on this website. My user raised a ticket and I investigated. I knew nothing about this vendor of ours besides the domain. I queried the domain registrar for the owner email address and got the private registration proxy one. Armed with this information I fired a quick email to the following addresses about the security incident:\n  \nRegistrar proxy\n abuse@\n security@\n webmaster@\n hostmaster@\n support@ \n  \nThe IT team of the vendor resolved the issue and I got a thank you email from them.\n However, of all these, only the webmaster@ address worked, the rest bounced back. I have come across this more frequently as new generation of sysadmins xome onboard, they don't know about this. So please, setup an alias or shared mailbox to monitor these accounts!\n    submitted by    /u/brainstormer77  \n [link]   [comments]",
@@ -17941,16 +17971,6 @@
           "wordCount": 13386,
           "title": "Noob that needs help with StS VPN - Can ping gateway from one site but not the other",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11tckpi/mtp24_polarity/",
-          "author": null,
-          "description": "I recently implemented some ties between a small number of racks in a DC using FS 24 fibre MTP polarity solution. We used all SMOF components (standardising on SMOF in the DC) consisting of: 24F Type A Cassette <> 24F Type A trunk cable <> 24F Type AF Cassette. This works and allows standard A-B patch cables on either end when patching. Essentially Port 1 maps to Port 2 on the remote cassette (rolling the fibre). However, there was a bit of confusion during installation as each A cassette had to match with an AF.\n  \nI understand polarity with the 3 solutions for MTP-12 (Method A, B, C). Are these exactly the same for MTP-24? \n Could we have achieved the same result using 2x 24F Type A cassettes, and a 24F Type C trunk cable in between? \n What are others doing for inter-rack patching in the DC - sticking with straight-through 1-1 polarity (A/A/A solution) and using A-A patch cables on one end, or using the inter-rack MTP to roll the fibre (either with a A/A/AF or A/C/A solution)?\n  \nI'm also looking to break out some 400G and 100G ports to 4x100G and 4x10G respectively.\n My understanding is I would use a QDD-4X100G-LR-S or QSFP-4X10G-LR-S connecting to a 3 x 8F MTP cassette (each cassette could break out 3 ports from the switch) using a MTP-12 Type A trunk cable. Is this the best way of breaking out ports to 4x standard duplex LC connectors?\n    submitted by    /u/0b3erver  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11tckpi/mtp24_polarity/",
-          "publishedOn": "2023-03-17T01:01:00.000Z",
-          "wordCount": 14023,
-          "title": "MTP-24 Polarity",
-          "imageUrl": "https://external-preview.redd.it/0xWbGNJXfii9fStkWcxuwCTXG-EqeoOfHrFlW7gzjGA.jpg?auto=webp&v=enabled&s=fc48a0d433a6989391319d5e8ed693d8917bd12b"
         }
       ]
     },
