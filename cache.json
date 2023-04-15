@@ -339,6 +339,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12myek3/ntlm_v1/",
+          "author": null,
+          "description": "Hello all,\n I have a strange case with NTLM.\n I've configured my domain controllers, servers & clients to use LAN Manager Authentication Level : Send NTLMv2 response only, Refuse LM & NTLM.\n I've double checked everything, even in the registry LSA -> Lmcompatibility is 5. \n If I look into the domain controllers security event viewer, I still see pretty much events with NTLM v1 successful logons (event 4624). I think that this is because of certain computers which aren't using the FQDN to connect to a share. \n I'm just worried why it still shows me NTLM v1.... All the devices are W10, W11 & W2016 and as I understood, it should enforce NTLM v2.\n Do I miss something ? \n ​\n Thanks in advance\n    submitted by    /u/BelgiumBDW  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12myek3/ntlm_v1/",
+          "publishedOn": "2023-04-15T10:54:25.000Z",
+          "wordCount": 2208,
+          "title": "NTLM v1",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12myc2g/microsoft_identity_manager_install_question/",
+          "author": null,
+          "description": "Hi all.\n I've installed MIM many times but this will be the first install with a multi server instance (active and standby)\n Ive installed SharePoint on one server. But i need to install Mim on another server. So when trying to install SharePoint. I am trying to connect to the database. But it says I selected a single server farm.\n So my question is. When selecting the role in SharePoint install on initial server. Which option should I select?\n None of the options seem close to what I want.\n Thanks in advance.\n    submitted by    /u/Fearnie85  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12myc2g/microsoft_identity_manager_install_question/",
+          "publishedOn": "2023-04-15T10:51:17.000Z",
+          "wordCount": 13102,
+          "title": "Microsoft identity manager install question...",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12mxwe0/moving_mailboxes_from_tenant_o365_to_tenant_o365/",
+          "author": null,
+          "description": "Im using basic migrationwiz licenses to move from an acquired company to our O365 hybrid tenant. They both sync to AD. I don't need to move their domain to ours as they will be using our same domain. I wanted to leave the domain and mx records intact and just foward the email for a week, then worry about moving it later. I can't seem to get an answer as to whether I can do a full migration without moving the mxrecords or domain. Anyone else ever do this?\n    submitted by    /u/jennylee525  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12mxwe0/moving_mailboxes_from_tenant_o365_to_tenant_o365/",
+          "publishedOn": "2023-04-15T10:31:40.000Z",
+          "wordCount": 2184,
+          "title": "MOving mailboxes from tenant O365 to tenant O365 using BitTitan",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/12mxa4d/setting_up_a_ikev2_psk_server_on_ubuntu_server/",
           "author": null,
           "description": "Hello! \n I've been trying for a few days to setup a IKEv2 PSK (for simplicity) VPN server. This server should run as a virtual machine on a proxmox deployment. I've disabled proxmox's firewall for this specific machine \n The host is behind a Mikrotik CRS326 router, on which i have configured port forwarding for ports 500 and 4500 UDP to the VPN server (at 192.168.1.7) in the dstnat chain, the firewall rules to allow traffic on those ports via the UDP ports are also in place. \n The current /etc/ipsec.conf config is this one: \n config setup\n charondebug=\"ike 1, knl 1, cfg 0\"\n uniqueids=no\n ​\n conn ikev2-vpn\n auto=add\n compress=no\n type=tunnel\n keyexchange=ikev2\n fragmentation=yes\n forceencaps=yes\n ike=aes256-sha1-modp1024,3des-sha1-modp1024!\n esp=aes256-sha1,3des-sha1!\n dpdaction=clear\n dpddelay=300s\n rekey=no\n left=%any\n leftid=192.168.1.7\n leftcert=/etc/ipsec.d/certs/vpn-server-cert.pem\n leftsendcert=always\n leftsubnet=0.0.0.0/0\n right=%any\n rightid=%any\n rightauth=eap-mschapv2\n rightdns=192.168.1.1\n rightsourceip=10.20.30.0/24\n rightsendcert=never\n eap_identity=%identity\n ------------------------------------------------------------------------------------------\n When i try to connect i see exactly one packet on port 500 on mikrotik's counter for firewall rules, well, NAT rules in this case and that's it, nothing more, the phone i'm testing this with gives up and states \"disconnected\", the whole process take 1-2 seconds. \n I really have 0 idea what i did wrong.\n    submitted by    /u/Ginnungagap_Void  \n [link]   [comments]",
