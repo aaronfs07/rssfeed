@@ -340,6 +340,26 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12rnanb/what_would_you_do_trying_to_let_users_pause/",
+          "author": null,
+          "description": "I'd like to have either nightly reboots or a group policy to kick off stale sessions, so I'm not so scared to interrupt anyone's Latenight work when I reboot once a month on patch Tuesday I am fairly new and don't want to become \"that guy\" ( Don't come at me, yes I do them manually for now, but only because I have blatantly refused to work with WSUS and my IT director hasn't seen the modern way in action yet Patching servers in a modern way with Azure Security Center - MSEndpointMgr .)\n But developers do sometimes run queries that last overnight via a local install of ssms on the remote server over RDP. \n Can anyone think of a couple ways for them to postpose the pending reboot of the servers they are expecting to use overnight but only for a 24 hour period? A desktop icon would be sick that runs a scheduled task that skips the otherwise pending reboot. Bonus points if instead a user can instead exclude themselves from a group policy that logs off idle connections albeit for a 24 hour period.\n ​\n Thanksies\n    submitted by    /u/Consistent_Chip_3281  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12rnanb/what_would_you_do_trying_to_let_users_pause/",
+          "publishedOn": "2023-04-19T09:31:01.000Z",
+          "wordCount": 14888,
+          "title": "What would you do? Trying to let users pause server reboots so developers don't hate me.",
+          "imageUrl": "https://external-preview.redd.it/rimdCHQDBbxCZKAQ6vvjcpbKTrDG0AL8MWjUKuvqhGg.jpg?auto=webp&v=enabled&s=b136471024de22e0140894a008a740ea322af597"
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12rn8jv/get_round_windows_updates_being_blocked_by_local/",
+          "author": null,
+          "description": "Hi All\n We have approx 100 laptops on 3rd party sites ( all different site owners) where the internet is managed by the customer that are blocking Windows updates from being accessible. We have asked to be whitelisted but proving a pain to get them to do.\n We dont have a WSUS server as all laptops are in AzureAD and we are headless ( no servers any more). \n I am hence wondering if way(s) around as assume its being blocked either via proxy, wan ( domain name eg windowsupdate.microsoft.com ) being accessible. \n Happy to consider a paid solution (subject to cost).\n Thanks in advance.\n    submitted by    /u/slewis_1972  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12rn8jv/get_round_windows_updates_being_blocked_by_local/",
+          "publishedOn": "2023-04-19T09:28:26.000Z",
+          "wordCount": 2239,
+          "title": "Get round windows updates being blocked by local network provider?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/12rmpfu/backup_in_pull_configuration_questions/",
           "author": null,
           "description": "Hi!\n We have some production servers and would like to change the backup method from push (the servers currently upload the backups it makes to an SFTP server), to PULL, so we have a remote server, which will run Truenas Core, and will pull the backups of the production server.\n This is usually done with Rsync via SSH, but the cybersecurity team is worried that if the backup server gets compromised, the ssh credentials could be used to open a remote shell in the production server.\n The backup server would be really isolated, only accessible via our corporate VPN and to the production server to grab the backups. But still, if a bad actor could get access to the corporate VPN, somehow get the credentials to the backup server, they could get the SSH keys used to do the rsync job and remote into the production server.\n Is there any way we could prevent this? maybe using other kind of software so we don't have to open SSH access between the production and backup servers?\n The production servers are mainly linux but some windows servers aswall. Is there any way a user could be make in linux so not only the user has access to just the backups, but is not able to execute other commands?\n    submitted by    /u/bullerwins  \n [link]   [comments]",
@@ -407,6 +427,26 @@
           "publishedOn": "2023-04-19T06:36:03.000Z",
           "wordCount": 2201,
           "title": "Excel experts, how do you do your reports?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12rj93m/creating_a_remote_win_11_inplace_upgrade/",
+          "author": null,
+          "description": "I'm trying to deploy a Windows 11 In Place Upgrade with our software deployment tool. The prep is already done, ISO extracted, batch file with all the params created. \n When I manually execute the batch file that basically says \n setup.exe /auto upgrade /DynamicUpdate disable /showoobe none /Telemetry disable\n it asks me for admin credentials and after entering them with 2 clicks it just does the upgrade. When I'm logged in as an admin it just shows the user access control window with Yes / No and does it. But that credential request shouldn't come up for regular users, obviously. \n When I execute this batch file from the deployment service however it just doesn't do anything. The deployment script runs forever and never logs what went wrong. Doesn't matter if I use a silent parameter or not. \n My guess is that the problem is in the context in which the file gets executed. And I have tried all the contexts I could think of. I assume I'm missing a vital part in the logic chain here that prevents me from seeing the solution. \n Further info: The setup.exe and files are hosted on a file share that can be read-accessed by anyone. The batch file is on the deployment repository and gets downloaded to the client PC when executing. \n And I've had a similar issue with a different software deployment tool already when I wanted to put a simple shortcut on the desktop of users on a PC as an admin. It feels like that was a similar context issue back then.\n    submitted by    /u/NoobCanoeWork  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12rj93m/creating_a_remote_win_11_inplace_upgrade/",
+          "publishedOn": "2023-04-19T06:18:54.000Z",
+          "wordCount": 2392,
+          "title": "Creating a remote Win 11 InPlace Upgrade",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/12rieef/is_this_a_valid_use_for_sensitivty_labels/",
+          "author": null,
+          "description": "Good morning everyone.\n I hope I am not too annoying with my questions lately.\n I am having some problems with Azure Information Protection and the valid applications.\n From what I am reading, it seems to work together with data classification and data loss prevention.\n Which means, if a certain document could contain PII, It can detect this and recommend or apply a sensitivity label on that document, making sure whenever it might leave the company, that the data will be unusable for everyone outside of the company.\n It's a defense mechanism, which extrudes outwards, into the public world.\n I've seen examples, where they only use 3-5 Labels with encryption and/or watermarking. This makes total sense to me, as I have worked with PII before.\n My boss now heard this and thinks, that this will solve all of our problems.\n He told me to create 5 sensitivity labels, for each personnel group of our company. From the CEO to the normal employee. Everyone should get access to documents with a certain sensitivty label, but not others.\n From what he described, he wants a protection, which goes inwards. His example shows, that the he is very wary about his employees.\n No watermarking or data classification. Just encrypt everything and make sure, that no normal employee has access to sensitive documents from his team lead or above.\n This feels wrong to me. I haven't found any example, where Information Protection was used like this. And with that I have a thousand questions and possible outcomes in my mind, because I feel like that it won't stay at 5 labels. In the end I might have to create a label for every project.\n I've seen the quote, that Information Protection are permissions, which move with the documents. But I feel like that my example is a bit \"extreme\".\n Has anybody used this before like this? Is this a valid use for Information Protection or is there another solution?\n    submitted by    /u/Shibocat  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/12rieef/is_this_a_valid_use_for_sensitivty_labels/",
+          "publishedOn": "2023-04-19T05:39:15.000Z",
+          "wordCount": 2453,
+          "title": "Is this a valid use for sensitivty labels / Information Protection?",
           "imageUrl": null
         },
         {
@@ -12608,26 +12648,6 @@
           "wordCount": 14248,
           "title": "Receiving Locked IPhones",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11wxnn8/do_i_have_a_leak_somewhere/",
-          "author": null,
-          "description": "Whenever we have a new hire, it occurs without fail that we'll get a spoofed email claiming to be from the CEO of the company asking for a favor (gift card related) from the new hire. These are getting caught by our anti-phish/anti-spam filters, but how are they getting new hire information so quickly? \n I have a theory that it could be related to HR in some way or another. We use BambooHR to supplement our HR department. Any advice or similar experiences? Guessing it's going to be a phone call to our BambooHR provider.\n    submitted by    /u/GrimmBro3  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11wxnn8/do_i_have_a_leak_somewhere/",
-          "publishedOn": "2023-03-20T22:05:23.000Z",
-          "wordCount": 14562,
-          "title": "Do I have a leak somewhere?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/11wwrt2/exec_flagging_conversations_that_include_her/",
-          "author": null,
-          "description": "To save time, when referencing this individual, we use her initials. She brought it up to us that she's been flagging these conversations and said it needs to stop. We need to type out her full name. I have mixed feelings about how this was handled. What would you do if this was your boss?\n    submitted by    /u/SuperSiayuan  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/11wwrt2/exec_flagging_conversations_that_include_her/",
-          "publishedOn": "2023-03-20T21:35:08.000Z",
-          "wordCount": 14941,
-          "title": "Exec flagging conversations that include her initials",
-          "imageUrl": null
         }
       ]
     },
@@ -12769,6 +12789,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/12ro14o/dr_testing_how_confident_are_you/",
+          "author": null,
+          "description": "In light of Southwest’s recent firewall whoopsie-daisy, how confident are you in your network’s resiliency?\n I can say that I have worked places where there was DR, DR was “tested”, but it’s never truly DR- always some service here or there that pointed to an IP instead of hostname or had something similar hardcoded somewhere… static routes instead of dynamic routing.. many of these things having been band-aids/ad-how fixes but forgotten about and never revisited.\n    submitted by    /u/hootsie  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/12ro14o/dr_testing_how_confident_are_you/",
+          "publishedOn": "2023-04-19T10:04:18.000Z",
+          "wordCount": 13248,
+          "title": "DR Testing - How confident are you?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/12rlrr6/strange_traceroute_path/",
           "author": null,
@@ -17687,26 +17717,6 @@
           "publishedOn": "2023-03-20T22:50:36.000Z",
           "wordCount": 13940,
           "title": "Feedback on planned network design for a restaurant",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11wxpn3/acl_configuration_questions/",
-          "author": null,
-          "description": "Hey everyone,\n I've been struggling recently on making up a (what should be) simple network topology. Link is here: https://imgur.com/a/unD88qC\n For background: 1. I want PC 1, 2, and 4 to be able to talk to each other 2. All PCs within their own boundary should be able to talk to the other PCs within that boundary only (with the exception of above)\n  \nI can not modify the IP addresses already assigned (everything is on a 192.168.1.0/24). I can change the gateways.\n \nI can not modify the switch attached to 1.50 and 1.75, assume its an out-of-box L2 switch\n \n I'd like to use ACLs to complete this by controlling the outgoing traffic from each layer 3 switch. (i.e Fa0/4 with an out ACL to stop PC5 from reaching outside its boundary).\n To my understanding one (of many) would look like (middle switch):\n interface FastEthernet0/10\n ip access-group TO_NORTH out\n !\n ...\n ip access-list extended TO_NORTH\n permit ip host 192.168.1.3 host 192.168.1.50\n permit ip host 192.168.1.1 host 192.168.1.50\n !\n I recognize there's an implicit deny at the bottom, that should cover anything not listed from \"leaving\" the \"boundary\". After I apply this ACL to the port, for some reason all traffic no matter the source or destination still passes through that switch, port, and ACL as if it was never applied.\n ​\n I think i've dug my mind into a rabbit's hole and have confused myself over what I believe should be rather easy. Do I need to have routing enabled or GW set somewhere specific? \n if there's any more info i can provide, lmk\n Thank you\n    submitted by    /u/Hox6  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11wxpn3/acl_configuration_questions/",
-          "publishedOn": "2023-03-20T22:07:13.000Z",
-          "wordCount": 13561,
-          "title": "ACL configuration questions",
-          "imageUrl": "https://external-preview.redd.it/gDQ5mjNsWyV8jxx7GiymsRO0YHClBlzbY9dmL7xCIQY.jpg?auto=webp&v=enabled&s=092a018e50d116ab999f0bfdb76b832f319a255a"
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/11wxgp2/netbox_server_specs_for_executing_ansible/",
-          "author": null,
-          "description": "Hey there,\n I have a NetBox server with 2 CPUs and 8GB of RAM. It also runs a webhook handler specific to NetBox. These webhooks will make basic changes via Ansible, like update a port description or change a port's mode based on updates to interfaces. However, there have been times where I've tried to update 10+ interfaces at a time, which will then cause the webhook handler to take on 10 webhooks/execute 10 scripts at the same time. This seems to spike CPU usage for varying amounts of time, depending on the number of interfaces I attempted to update. The spike causes the VM console to freeze up and often causes some of the webhooks to not execute properly.\n I'm just curious if anyone else is using their NetBox server as a webhook handler, and if so, what specs it's deployed with to get it to work smoothly. I made a post in r/Netbox, but figured I'd add it here as well for exposure.\n    submitted by    /u/nst_hopeful  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/11wxgp2/netbox_server_specs_for_executing_ansible/",
-          "publishedOn": "2023-03-20T21:59:04.000Z",
-          "wordCount": 13728,
-          "title": "NetBox Server - Specs for Executing Ansible Playbooks via Webhooks?",
           "imageUrl": null
         }
       ]
