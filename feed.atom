@@ -2,10 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-04-23T11:08:34.870Z</updated>
+    <updated>2023-04-23T12:20:22.755Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Planning for ADCS - Need help]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12w67ry/planning_for_adcs_need_help/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12w67ry/planning_for_adcs_need_help/"/>
+        <updated>2023-04-23T12:02:31.000Z</updated>
+        <summary type="html"><![CDATA[I'm currently researching the implementation of ADCS in our infrastructure.
+ Our infra contains 2 main offices (Site1, Site2) connected via site-to-site VPN connection (different location in the same city) and both have AD running under 2 DCs on each site. In the coming months, we'll be having 2 extra branch offices (in different locations) as well.
+ From what I'm reading, the best case scenario is to go with a two-tier PKI ADCS consisting of: 
+  
+CA-01 - RootCA - No domain-joined, running on a VM and shut down.
+ CA-02 - Subordindate CA - Domain-joined running on physical server - Site1
+ CA-03 - Subordindate CA - Domain-joined running on physical server - Site2
+  
+The use for ADCS is to provide user/computer authentication on the local network (LAN, WiFi), user authentication for VPN/Remot…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Help changing Amazon s3 object urls]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/12w5sn7/help_changing_amazon_s3_object_urls/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/12w5sn7/help_changing_amazon_s3_object_urls/"/>
+        <updated>2023-04-23T11:46:09.000Z</updated>
+        <summary type="html"><![CDATA[Hi there got a file I have had in a public bucket for a while and recently had to replace it, normally what I have done is just download the file modify it keeping the same file name then delete whats in the bucket and reupload to s3 and the url would be the same as the filename is untouched. I went to do this recently though and the old url isnt accessible "The specified key does not exist". How can I change the url of the object to what it used to be so its accessible from the old url??? Any help would be awesome as I am stumped on how to do it
+    submitted by    /u/Equinox_234  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Raising Domain Functional Level from 2008 to 2016. Do domain joined devices need to match as well as DCs?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/12w4t9n/raising_domain_functional_level_from_2008_to_2016/</id>
@@ -27205,47 +27235,6 @@ Epic Will: "Get 10% OFF your Will! EpicWill.com/WIRE"]]></summary>
         <summary type="html"><![CDATA[I know it's a stupid question. But I can't recall reading anywhere that STP root bridges or bridge IDs are checked when forwarding traffic.
  But in a recent test I saw that when the bridge I'd was changed, the traffic although on directly connected links didn't go anywhere. After disabling STP the bridge ID upstream reverted to the expected value and then traffic worked fine.
     submitted by    /u/Pain-in-the-ARP  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JR IT Needing Advice Cable Managing and Labeling Switches and Patch Cables in Server Rack, and making Network Map]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/12143sy/jr_it_needing_advice_cable_managing_and_labeling/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/12143sy/jr_it_needing_advice_cable_managing_and_labeling/"/>
-        <updated>2023-03-25T00:13:55.000Z</updated>
-        <summary type="html"><![CDATA[I hope this is the correct subreddit for asking this question. I looked at r/networking and figured my questions are far too basic for professionals, as I am a beginner in the profession, with 2 years of experience and no certs asking beginner/intermediate questions, and figured this subreddit was more appropriate.
- The Equipment We Have:
- Three servers, all of them are desktop in form factor, an 8 camera PoE NVR with none of its cabling coming from our main switch, a 24 port Trendnet TEG-S24g, and three 48 port category 5 patch panels. Sitting on top of everything in the server rack is an itty bitty Arris Surfboard modem hooked up to a consumer Asus router from a few years ago. (Yes, I know we shouldn't be using a consumer hardware, and I am working to address that, but I am stuck with it…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Golden image]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/1213tgy/golden_image/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/1213tgy/golden_image/"/>
-        <updated>2023-03-25T00:03:46.000Z</updated>
-        <summary type="html"><![CDATA[We are currently using golden images for our system due to some legacy banking software that takes a significant amount of time to configure (around 15-20 minutes). These images also include pre-installed software such as Microsoft Office, Adobe, and Citrix.
- For other programs, i have created PowerShell scripts that help desk technicians use to pick and choose which programs to install based on the user's job title.
- To create these golden images, we use Hyper-V to create a checkpoint, then Sysprep and boot to WinPE. We then use DISM capture-image commands to capture the WIM file.
- However, I was wondering if there is a more efficient way to automate the image capture process
-    submitted by    /u/Boguscylinder  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Is there really no viable solution to do NLOS like 900mhz used to do? What are NLOS situations doing now? Crazy times.]]></title>
-        <id>https://www.reddit.com/r/networking/comments/1212h1b/is_there_really_no_viable_solution_to_do_nlos/</id>
-        <link href="https://www.reddit.com/r/networking/comments/1212h1b/is_there_really_no_viable_solution_to_do_nlos/"/>
-        <updated>2023-03-24T23:16:18.000Z</updated>
-        <summary type="html"><![CDATA[I come from the Novell NE2000 10base2 coax era. Wifi was really hot stuff. Then when they brought us low cost 900mhz wifi bridges in the 90's that was great. Then about 10 years ago, they stopped making that band equipment, gave it away to the power grid or something.
- There seems to be so many applications for NLOS service, really hard to believe it's completely unavailable... unless we want to pay $250+ a piece for 10-20 year old used equipment on ebay.
- Nothing NLOS commercially available any longer, without spending thousands?
-    submitted by    /u/CommandOdd4843  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
