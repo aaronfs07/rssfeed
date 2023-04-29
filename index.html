@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-29 datetime="2023-04-29T07:50:14.000Z">2023-04-29</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-29 datetime="2023-04-29T07:50:14.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-29 datetime="2023-04-29T09:53:41.000Z">2023-04-29</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-29 datetime="2023-04-29T09:53:41.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,24 +34,31 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/132modu/do_you_have_a_separate_vlan_for_server_hw_and_mgmt/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/132os84/troubleshooting_login_timeout_on_a_windows_10/"
                         open
                       >
-                        <summary class="article-expander__title">Do you have a separate vlan for server hw and mgmt?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/132modu/do_you_have_a_separate_vlan_for_server_hw_and_mgmt/">
+                        <summary class="article-expander__title">Troubleshooting login timeout on a Windows 10 workstation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/132os84/troubleshooting_login_timeout_on_a_windows_10/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>We are in a process of resubnetting the whole network and we have mgmt vlan for as it says management. We do not have much on prem hws (40ip would be more than enought) and our contractor said if its separated from everything else it wouldnt be an issue to use it for iscsi and nvme over tcp.
- Whats you opinion on this?
-    submitted by    /u/Smotino1  
+                              <span>Hi, right now I am unable to login (locally) on my Win10 workstation. I see the &quot;spinning circle&quot; but it definitely hanged.
+ I have OpenSSH server installed on my workstation, so I&#x27;d like to try solving the problem without rebooting (which will definitely works!)
+ I just killed all my Firefox&#x27;s processes with taskkill, shutdown a couple of Virtualbox VM machines (which were running totally fine!).
+ I just noticed that tasklist is unable to complete, it stops at
+ ​
+ System Idle Process System Registry smss.exe csrss.exe 
+ Powershell Get-Process is working fine (it shows all processes).
+ If it happened to you, how would you approach it?
+ Forgot to mention: I am also unable to login through RDP
+    submitted by    /u/g-simon  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;7
                                   min&hairsp;)</span>
@@ -64,45 +71,25 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/132lwf2/isis_adjacency_not_forming_between_cisco_and/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/132okv3/veeam_backup/"
                         open
                       >
-                        <summary class="article-expander__title">IS-IS Adjacency Not Forming Between Cisco and Juniper in Lab has me stumped</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/132lwf2/isis_adjacency_not_forming_between_cisco_and/">
+                        <summary class="article-expander__title">Veeam backup</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/132okv3/veeam_backup/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I&#x27;m learning ISIS and have an IS-IS Lab in EVE-NG and I&#x27;ve run to something that has me stumped. 
- I have 4 routers in the lab. R1 is Cisco and R2, R3 and R4 are Juniper. The topology is basically 
- R1&#x3D;&#x3D;&gt;R2&#x3D;&#x3D;&gt;R3&#x3D;&#x3D;&gt;R4
- I have configured VLAN 2 on an SVI on the Juniper and Cisco switches, with trunk links between them. I can ping all the way from R1 to R4 with no problem. 
- Routers 2, 3 and 4 all have adjacencies to each other. R1 only has an adjacency to R2 but &#x60;show isis neighbors&#x27; shows R3 and R4 as being in the INIT stage. I&#x27;ve checked the MTU, even changed it and I&#x27;m getting the same behavior. I&#x27;ve put my configs below, and I&#x27;m hoping the experts here can point me in the right direction, what am I missing here? 
- R1 
- Current configuration : 3554 bytes
- ​
- hostname R1
- ​
- spanning-tree …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;10
+                              <span>Hi folks,
+ I&#x27;ve seen a lot of talk about veeam here and have taken the plunge into testing it out. I&#x27;ve started getting everything set up and will test backups further down the road but thought I&#x27;d ask y&#x27;all first before spending too much time. 
+ I&#x27;m looking to backup Azure vms running MSSQL, and those servers have separate managed disks containing the MDF, LDF, and daily backups. Would veeam for azure also backup those managed disks or is it just going to grab the vm and it&#x27;s OS drive?
+    submitted by    /u/Shaggy_The_Owl  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
                                   min&hairsp;)</span>
                             </span>
                           </div>
                         </a>
                       </details>
                     </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
-                </h3>
-                <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
@@ -193,6 +180,71 @@ Enterprise support downgraded to basic support. Start pushing &quot;Enterprise P
     submitted by    /u/_Tityrus_  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/132modu/do_you_have_a_separate_vlan_for_server_hw_and_mgmt/"
+                        open
+                      >
+                        <summary class="article-expander__title">Do you have a separate vlan for server hw and mgmt?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/132modu/do_you_have_a_separate_vlan_for_server_hw_and_mgmt/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We are in a process of resubnetting the whole network and we have mgmt vlan for as it says management. We do not have much on prem hws (40ip would be more than enought) and our contractor said if its separated from everything else it wouldnt be an issue to use it for iscsi and nvme over tcp.
+ Whats you opinion on this?
+    submitted by    /u/Smotino1  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/132lwf2/isis_adjacency_not_forming_between_cisco_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">IS-IS Adjacency Not Forming Between Cisco and Juniper in Lab has me stumped</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/132lwf2/isis_adjacency_not_forming_between_cisco_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m learning ISIS and have an IS-IS Lab in EVE-NG and I&#x27;ve run to something that has me stumped. 
+ I have 4 routers in the lab. R1 is Cisco and R2, R3 and R4 are Juniper. The topology is basically 
+ R1&#x3D;&#x3D;&gt;R2&#x3D;&#x3D;&gt;R3&#x3D;&#x3D;&gt;R4
+ I have configured VLAN 2 on an SVI on the Juniper and Cisco switches, with trunk links between them. I can ping all the way from R1 to R4 with no problem. 
+ Routers 2, 3 and 4 all have adjacencies to each other. R1 only has an adjacency to R2 but &#x60;show isis neighbors&#x27; shows R3 and R4 as being in the INIT stage. I&#x27;ve checked the MTU, even changed it and I&#x27;m getting the same behavior. I&#x27;ve put my configs below, and I&#x27;m hoping the experts here can point me in the right direction, what am I missing here? 
+ R1 
+ Current configuration : 3554 bytes
+ ​
+ hostname R1
+ ​
+ spanning-tree …</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;10
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -45385,27 +45437,6 @@ Paint Your Life: Text WIRE to 87204 to get 20% off.</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1270mni/zone_based_firewall_rules/"
-                        open
-                      >
-                        <summary class="article-expander__title">Zone based Firewall rules</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1270mni/zone_based_firewall_rules/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi, I need help and I hope you guys can give me any ideas, or suggestions. I am fairly new to networking.(migrated from helpdesk)) One of my tasks is to clean the configuration of branch office routers. Most of them have outdated configs, especially regarding zone-based firewall rules. Now I am trying to go through all routers and to understand how they were designed(from a zone-based firewall perspective)(there is no proper documentation - so I have to reverse engineer this thing) . Is there any easier way to do this? Most of the time I end up with paper and a pan and I try to do draw a scheme. Any suggestions? Is there software out there that can map this stuff.? I could suggest buying it if it would provide a better way to document everything.
-    submitted by    /u/mishadib  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;50
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45529,58 +45560,6 @@ Paint Your Life: Text WIRE to 87204 to get 20% off.</span>
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1270ih2/new_print_server_ip/"
-                        open
-                      >
-                        <summary class="article-expander__title">New Print Server IP</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1270ih2/new_print_server_ip/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We&#x27;re slowly moving all of our servers from their current subnet (192.168.10.0) to a new subnet (192.168.50.0) and we&#x27;re looking to migrate the print server next. We were wondering what issues might arise and what would be the best way to swap the IP so that it doesn&#x27;t interfere with our Employees. All of the printers are maintaining their current IP addresses.
-    submitted by    /u/Duveng1  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Linus Tech Tips</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;chBrDqnimSo"
-                        open
-                      >
-                        <summary class="article-expander__title">Explain This To Me... WHO is Buying Giant Laptops??</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;chBrDqnimSo">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45588,8 +45567,8 @@ Paint Your Life: Text WIRE to 87204 to get 20% off.</span>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4837993711">
-        <time id="build-timestamp" datetime="2023-04-29T09:10:21.823Z">2023-04-29T09:10:21.823Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4838216014">
+        <time id="build-timestamp" datetime="2023-04-29T10:10:39.276Z">2023-04-29T10:10:39.276Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
