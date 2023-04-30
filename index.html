@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-30 datetime="2023-04-30T08:59:42.000Z">2023-04-30</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-30 datetime="2023-04-30T08:59:42.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-30 datetime="2023-04-30T10:00:19.000Z">2023-04-30</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-30 datetime="2023-04-30T10:00:19.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,56 +34,37 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/133k5ol/question_about_datagrams_and_ip_header/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/133l5w2/dcdiag_systemlog_error_0x0000168e_eventid_5774/"
                         open
                       >
-                        <summary class="article-expander__title">Question about datagrams and IP header</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/133k5ol/question_about_datagrams_and_ip_header/">
+                        <summary class="article-expander__title">Dcdiag systemlog error 0x0000168e, eventid 5774. Same local domain name as company website.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/133l5w2/dcdiag_systemlog_error_0x0000168e_eventid_5774/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hello everyone,
- I&#x27;m recently started learning about datagrams and IP header and I&#x27;m confused for now. To be specific, If we&#x27;re sending datagram without fragmentation, I wanted to ask in which fields router is going to change their contents?
- I know that (I would post a picture of ip header but I can&#x27;t) IP header constists vers, hlen, type of service, total length, ident, flags, fragment offset, ttl, type, header checksum, source IP address, destination IP address, IP options, padding and beginning of payload (data). So again, speaking of regular datagram sending without fragmentation, in which fields the content will be changed?
+                              <span>After deomote old domain controller i get tgis error in dcdiag on second domain controller.
  ​
- Also, what is the difference if we would do that with fragmentation?
-    submitted by    /u/DragonEmpero  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/133i4kv/wan_failover_for_office_with_3_uplinks_and/"
-                        open
-                      >
-                        <summary class="article-expander__title">WAN failover for office with 3 uplinks and dynamic routing</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/133i4kv/wan_failover_for_office_with_3_uplinks_and/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So I got this small bit of &quot;what&#x27;s best way to implement this&quot; for a small business.
- There&#x27;s 3 WAN uplinks, from different providers - main one&#x27;s fiber, second&#x27;s through a point to point wifi high speed link and 3rd one is a last resort SIM modem with static IPv4.
- There&#x27;s no ISP support to run a dynamic protocol on either of the 3.
- R1 must dial a PPPoE connection with auth, then receive static IPv4 on pppoe1 interface. Same for R2. Both can also get a /48 IPv6, but that&#x27;s for another time. R3 has a static IPv4.
- Magic question here being: what dynamic protocol could be used between each of the 3 &quot;R&quot; edge routers and FW1 so that:- 0.0.0.0/0 is redistributed, but removed from advertisements should the PPPoE link fail- order priority remains the same (traffic flows through R1, should that fail, through R2 or - finally - through R3 as last resort)
- Initially thinking running IBGP between FW1 and each R router, but with a default originate, the session will always put 0.0.0.0/0 in the session no matter if the link is up or down, or with a &quot;redistribute connected route-map X&quot;, with route-map X permitting just interface pppoe1, but I&#x27;m pretty sure such advertisement won&#x27;t include the 0.0.0.0/0 in it.
- Any other alternatives/protocols just for the default route ?
- From a vendor perspective, all items involved - R1,R2,R3,FW1 - are Linux machines (VMs with NICs in passthrough mode), so any dynamic protocol supported by FRRouting is a go.
- LE: for a topology quick view - https://freeimage.host/i/H8L9ZFe
-    submitted by    /u/McScrappinson  
+  
+The dynamic registration of the DNS record &#x27;_ldap._tcp.company.com. 600 IN SRV 0 100 389 dc1.company.com.&#x27; failed on the following DNS server: 
+ DNS server IP address: company website ip server 
+ Returned Response Code (RCODE): 5 
+ Returned Status Code: 9017 
+ For computers and users to locate this domain controller, this record must be registered in DNS. 
+ USER ACTION 
+ Determine what might have caused this failure, resolve the problem, and initiate registration of the DNS records by the domain controller. To determine what might have caused this failure, run DCDiag.exe. To learn more about DCDiag.exe, see Help and Support Center. To initiate registration of the DNS records by this domain controller, run &#x27;nltest.exe /dsregdns&#x27; from the command prompt on the domain controller or restart Net Logon service. 
+ Or, you can manually add this record to DNS, but it is not recommended. 
+  
+​
+ local domain controller has the same name as the company&#x27;s website.
+ Message to ignore or do something about it?
+    submitted by    /u/oinkoff  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -96,19 +77,20 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/133g22d/are_meraki_switches_legit_any_major_limitations/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/133l559/lack_of_understanding_sysadmin_role_from_family/"
                         open
                       >
-                        <summary class="article-expander__title">Are Meraki switches legit? Any major limitations?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/133g22d/are_meraki_switches_legit_any_major_limitations/">
+                        <summary class="article-expander__title">Lack of understanding SysAdmin role from family</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/133l559/lack_of_understanding_sysadmin_role_from_family/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>We currently use a mix of Catalyst switches, most 3850s (and some 9300s and some older switches).
- We have about 200 access switches in total in the environment. We are looking at replacing about 150 of them in the next 2 years.
- One of my team members wants to go full Meraki. We already use their APs and their MX firewalls. 
- I and others on the team are resultant as we sometimes have needed more advanced policy-based routing and such on the Catalysts. On the other hand, we have a mish-mash of versions, routes, etc across the environment. 
- Would a full investment in Meraki make sense, or are we tying our own hands?
-    submitted by    /u/ITdirectorguy  
+                              <span>Over the last few years I feel like I&#x27;m in a constant battle of having to justify:
+ •Why I need to make changes out of hours in a Production environment.
+ •Why I can&#x27;t walk out during an Incident to do chores.
+ •Why I can&#x27;t give an answer on how long something will take.
+ This has only become worse since switching from a hybrid to WFH role, I try explaining it to my family but they have little understanding and the cycle repeats itself.
+ Does anyone else find themselves in a similar situation and how do you handle it?
+    submitted by    /u/Smeg84  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;7
                                   min&hairsp;)</span>
@@ -117,20 +99,59 @@
                         </a>
                       </details>
                     </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
-                </h3>
-                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/133ko39/it_carrer_better_in_australia_or_hong_kong/"
+                        open
+                      >
+                        <summary class="article-expander__title">IT carrer better in Australia or Hong Kong?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/133ko39/it_carrer_better_in_australia_or_hong_kong/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am currently living in Sydney and working as a EUC engineer (level 3 support). I do hold a Hong Kong permanent resident card and have full working rights in HK, In Australia I have a full working rights visa for 5 years during which I will get the permanent residency. I want to build career in IT and maybe start my own business after like 5-7 years of experience. I came to Sydney as a student in 2017 and did my bachelor of Network security. started working as service desk in 2020 and went back to HK the same year and worked as IT consultant, learned SCCM, PowerShell and a bit of Azure on that role, came back to Sydney a year ago and started working on level 3 support.
+ I need advice on if I should continue my career in Australia or should i move back to HK. The tax is really high In Australia compared to HK.
+    submitted by    /u/Solti_  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/133kc0t/llms_store_data_using_vector_db_why_and_how/"
+                        open
+                      >
+                        <summary class="article-expander__title">LLMs store data using Vector DB. Why and how ?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/133kc0t/llms_store_data_using_vector_db_why_and_how/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Traditionally, computing has been deterministic, which refers to the inherent consistency, repeatability, and provability of outcomes in data processing. This is because the output strictly adheres to the programming logic (code written by software developers).
+ #LLMs leverage similarity search to process information. During the training phase, LLMs identify similarities among text tokens and create an extensive neural network to capture these patterns. These patterns are then represented in a high-dimensional vector space, allowing for a more nuanced understanding of textual data.
+ When processing user input, input sentence is converted into a vector. The OpenAI model then searches for the nearest tokens in the multi-dimensional space, using the shortest distance as a measure of similarity. There is no developers doing the coding to write different logic. Each sentence is following same vector search process.
+ Below I show how a sentence is transform into a vector. The model (all-MiniLM-L6-v2) in this example is using 768 dimensions. OpenAI has its own API endpoint that do similar processing (text-embedding-ada-002) with 1536 dimensions.
+ &gt;&gt;&gt; from sentence_transformers import SentenceTransforme 
+ &gt;&gt;&gt; sentences &#x3D; [&quot;We are at the dawn of a new era...&quot;, &quot;Each sentence is converted&quot;]
+ &gt;&gt;&gt; model &#x3D; SentenceTransformer(&#x27;sentence-transformers/all-MiniLM-L6-v2&#x27;) 
+ &gt;&gt;&gt; embeddings &#x3D; model.encode(sentences) 
+ &gt;&gt;&gt; print(embeddings) [[-9.31226462e-03 -5.73424622e-03 2.18255073e-02 -8.62214249e-03 -1.94084086e-02 2.32371558e-02 -3.61166969e-02 -5.94260842e-02 8.96405503e-02 8.60120635e-03 .... .... ] [... .... ]] 
+ This is a newsletter explaining Large Language Model and Semantic Web, contract and compare with legacy RDBMS terms. Hoping to enable enterprise tech people to have a smooth transition to AI era. 
+ Newsletter : Data Matters, in AI era.
+    submitted by    /u/Antony_Ma  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -245,6 +266,99 @@
  2) Is the physical data center dead?
  3) Did the infrastructure as code revolution actually happen?
  If you reply, please note the size of your org and industry (e.g. 1000 employees, insurance)
+    submitted by    /u/ITdirectorguy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/133k5ol/question_about_datagrams_and_ip_header/"
+                        open
+                      >
+                        <summary class="article-expander__title">Question about datagrams and IP header</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/133k5ol/question_about_datagrams_and_ip_header/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello everyone,
+ I&#x27;m recently started learning about datagrams and IP header and I&#x27;m confused for now. To be specific, If we&#x27;re sending datagram without fragmentation, I wanted to ask in which fields router is going to change their contents?
+ I know that (I would post a picture of ip header but I can&#x27;t) IP header constists vers, hlen, type of service, total length, ident, flags, fragment offset, ttl, type, header checksum, source IP address, destination IP address, IP options, padding and beginning of payload (data). So again, speaking of regular datagram sending without fragmentation, in which fields the content will be changed?
+ ​
+ Also, what is the difference if we would do that with fragmentation?
+    submitted by    /u/DragonEmpero  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/133i4kv/wan_failover_for_office_with_3_uplinks_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">WAN failover for office with 3 uplinks and dynamic routing</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/133i4kv/wan_failover_for_office_with_3_uplinks_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So I got this small bit of &quot;what&#x27;s best way to implement this&quot; for a small business.
+ There&#x27;s 3 WAN uplinks, from different providers - main one&#x27;s fiber, second&#x27;s through a point to point wifi high speed link and 3rd one is a last resort SIM modem with static IPv4.
+ There&#x27;s no ISP support to run a dynamic protocol on either of the 3.
+ R1 must dial a PPPoE connection with auth, then receive static IPv4 on pppoe1 interface. Same for R2. Both can also get a /48 IPv6, but that&#x27;s for another time. R3 has a static IPv4.
+ Magic question here being: what dynamic protocol could be used between each of the 3 &quot;R&quot; edge routers and FW1 so that:- 0.0.0.0/0 is redistributed, but removed from advertisements should the PPPoE link fail- order priority remains the same (traffic flows through R1, should that fail, through R2 or - finally - through R3 as last resort)
+ Initially thinking running IBGP between FW1 and each R router, but with a default originate, the session will always put 0.0.0.0/0 in the session no matter if the link is up or down, or with a &quot;redistribute connected route-map X&quot;, with route-map X permitting just interface pppoe1, but I&#x27;m pretty sure such advertisement won&#x27;t include the 0.0.0.0/0 in it.
+ Any other alternatives/protocols just for the default route ?
+ From a vendor perspective, all items involved - R1,R2,R3,FW1 - are Linux machines (VMs with NICs in passthrough mode), so any dynamic protocol supported by FRRouting is a go.
+ LE: for a topology quick view - https://freeimage.host/i/H8L9ZFe
+    submitted by    /u/McScrappinson  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/133g22d/are_meraki_switches_legit_any_major_limitations/"
+                        open
+                      >
+                        <summary class="article-expander__title">Are Meraki switches legit? Any major limitations?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/133g22d/are_meraki_switches_legit_any_major_limitations/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We currently use a mix of Catalyst switches, most 3850s (and some 9300s and some older switches).
+ We have about 200 access switches in total in the environment. We are looking at replacing about 150 of them in the next 2 years.
+ One of my team members wants to go full Meraki. We already use their APs and their MX firewalls. 
+ I and others on the team are resultant as we sometimes have needed more advanced policy-based routing and such on the Catalysts. On the other hand, we have a mish-mash of versions, routes, etc across the environment. 
+ Would a full investment in Meraki make sense, or are we tying our own hands?
     submitted by    /u/ITdirectorguy  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;7
@@ -44574,28 +44688,6 @@ I have created a ticket for Microsoft support as I&#x27;m suspecting this is one
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/127zpkz/does_perl_technical_debt/"
-                        open
-                      >
-                        <summary class="article-expander__title">does perl &#x3D; technical debt?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/127zpkz/does_perl_technical_debt/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I had a interview today for a senior sys admin position. They mentioned that they are using perl ALOT. I&#x27;ve used perl but probably not in at least a decade, I&#x27;ve been using shell, python, powershell but maybe that&#x27;s just my environment. I&#x27;ve been at the same place for a long time now and we are small but very up to date.
- I came away feeling like they likely have lots of technical debt but based mainly on the perl comment. Are people still writing in perl much?
-    submitted by    /u/Capable_Friend9277  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;49
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -44668,8 +44760,8 @@ I have created a ticket for Microsoft support as I&#x27;m suspecting this is one
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4843525629">
-        <time id="build-timestamp" datetime="2023-04-30T09:09:51.661Z">2023-04-30T09:09:51.661Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4843760068">
+        <time id="build-timestamp" datetime="2023-04-30T10:11:01.682Z">2023-04-30T10:11:01.682Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

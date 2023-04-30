@@ -2,10 +2,88 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-04-30T09:09:51.760Z</updated>
+    <updated>2023-04-30T10:11:01.800Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Dcdiag systemlog error 0x0000168e, eventid 5774. Same local domain name as company website.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/133l5w2/dcdiag_systemlog_error_0x0000168e_eventid_5774/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/133l5w2/dcdiag_systemlog_error_0x0000168e_eventid_5774/"/>
+        <updated>2023-04-30T10:00:19.000Z</updated>
+        <summary type="html"><![CDATA[After deomote old domain controller i get tgis error in dcdiag on second domain controller.
+ ​
+  
+The dynamic registration of the DNS record '_ldap._tcp.company.com. 600 IN SRV 0 100 389 dc1.company.com.' failed on the following DNS server: 
+ DNS server IP address: company website ip server 
+ Returned Response Code (RCODE): 5 
+ Returned Status Code: 9017 
+ For computers and users to locate this domain controller, this record must be registered in DNS. 
+ USER ACTION 
+ Determine what might have caused this failure, resolve the problem, and initiate registration of the DNS records by the domain controller. To determine what might have caused this failure, run DCDiag.exe. To learn more about DCDiag.exe, see Help and Support Center. To initiate registration of the DNS records by this domain controller, run 'nltest.exe /dsregdns' from the command prompt on the domain controller or restart Net Logon service. 
+ Or, you can manually add this record to DNS, but it is not recommended. 
+  
+​
+ local domain controller has the same name as the company's website.
+ Message to ignore or do something about it?
+    submitted by    /u/oinkoff  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lack of understanding SysAdmin role from family]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/133l559/lack_of_understanding_sysadmin_role_from_family/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/133l559/lack_of_understanding_sysadmin_role_from_family/"/>
+        <updated>2023-04-30T09:59:13.000Z</updated>
+        <summary type="html"><![CDATA[Over the last few years I feel like I'm in a constant battle of having to justify:
+ •Why I need to make changes out of hours in a Production environment.
+ •Why I can't walk out during an Incident to do chores.
+ •Why I can't give an answer on how long something will take.
+ This has only become worse since switching from a hybrid to WFH role, I try explaining it to my family but they have little understanding and the cycle repeats itself.
+ Does anyone else find themselves in a similar situation and how do you handle it?
+    submitted by    /u/Smeg84  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IT carrer better in Australia or Hong Kong?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/133ko39/it_carrer_better_in_australia_or_hong_kong/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/133ko39/it_carrer_better_in_australia_or_hong_kong/"/>
+        <updated>2023-04-30T09:30:35.000Z</updated>
+        <summary type="html"><![CDATA[I am currently living in Sydney and working as a EUC engineer (level 3 support). I do hold a Hong Kong permanent resident card and have full working rights in HK, In Australia I have a full working rights visa for 5 years during which I will get the permanent residency. I want to build career in IT and maybe start my own business after like 5-7 years of experience. I came to Sydney as a student in 2017 and did my bachelor of Network security. started working as service desk in 2020 and went back to HK the same year and worked as IT consultant, learned SCCM, PowerShell and a bit of Azure on that role, came back to Sydney a year ago and started working on level 3 support.
+ I need advice on if I should continue my career in Australia or should i move back to HK. The tax is really high In Australia compared to HK.
+    submitted by    /u/Solti_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LLMs store data using Vector DB. Why and how ?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/133kc0t/llms_store_data_using_vector_db_why_and_how/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/133kc0t/llms_store_data_using_vector_db_why_and_how/"/>
+        <updated>2023-04-30T09:10:09.000Z</updated>
+        <summary type="html"><![CDATA[Traditionally, computing has been deterministic, which refers to the inherent consistency, repeatability, and provability of outcomes in data processing. This is because the output strictly adheres to the programming logic (code written by software developers).
+ #LLMs leverage similarity search to process information. During the training phase, LLMs identify similarities among text tokens and create an extensive neural network to capture these patterns. These patterns are then represented in a high-dimensional vector space, allowing for a more nuanced understanding of textual data.
+ When processing user input, input sentence is converted into a vector. The OpenAI model then searches for the nearest tokens in the multi-dimensional space, using the shortest distance as a measure of similarity. There is no developers doing the coding to write different logic. Each sentence is following same vector search process.
+ Below I show how a sentence is transform into a vector. The model (all-MiniLM-L6-v2) in this example is using 768 dimensions. OpenAI has its own API endpoint that do similar processing (text-embedding-ada-002) with 1536 dimensions.
+ >>> from sentence_transformers import SentenceTransforme 
+ >>> sentences = ["We are at the dawn of a new era...", "Each sentence is converted"]
+ >>> model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2') 
+ >>> embeddings = model.encode(sentences) 
+ >>> print(embeddings) [[-9.31226462e-03 -5.73424622e-03 2.18255073e-02 -8.62214249e-03 -1.94084086e-02 2.32371558e-02 -3.61166969e-02 -5.94260842e-02 8.96405503e-02 8.60120635e-03 .... .... ] [... .... ]] 
+ This is a newsletter explaining Large Language Model and Semantic Web, contract and compare with legacy RDBMS terms. Hoping to enable enterprise tech people to have a smooth transition to AI era. 
+ Newsletter : Data Matters, in AI era.
+    submitted by    /u/Antony_Ma  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Question about datagrams and IP header]]></title>
         <id>https://www.reddit.com/r/networking/comments/133k5ol/question_about_datagrams_and_ip_header/</id>
@@ -26603,19 +26681,6 @@ I have created a ticket for Microsoft support as I'm suspecting this is one of t
  I might be returning to the job market at 37-38. I'm a little weary on that, but at the same time I'm not going to let myself be mistreated or exploited.
  Just tell me if I'm insane or not for doing this.
     submitted by    /u/USS_Frontier  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[does perl = technical debt?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/127zpkz/does_perl_technical_debt/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/127zpkz/does_perl_technical_debt/"/>
-        <updated>2023-03-31T21:14:45.000Z</updated>
-        <summary type="html"><![CDATA[I had a interview today for a senior sys admin position. They mentioned that they are using perl ALOT. I've used perl but probably not in at least a decade, I've been using shell, python, powershell but maybe that's just my environment. I've been at the same place for a long time now and we are small but very up to date.
- I came away feeling like they likely have lots of technical debt but based mainly on the perl comment. Are people still writing in perl much?
-    submitted by    /u/Capable_Friend9277  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
