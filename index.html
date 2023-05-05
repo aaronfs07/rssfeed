@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-05 datetime="2023-05-05T10:39:28.000Z">2023-05-05</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-05 datetime="2023-05-05T10:39:28.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-05 datetime="2023-05-05T11:59:06.000Z">2023-05-05</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-05 datetime="2023-05-05T11:59:06.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,139 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/138jhyv/as_a_sysadmin_whats_your_favorite_tool/"
+                        open
+                      >
+                        <summary class="article-expander__title">As a SysAdmin, what’s your favorite tool?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/138jhyv/as_a_sysadmin_whats_your_favorite_tool/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Im torn between scripting in PowerShell which I’m really bad at and PDQ Inventory/Deploy Yours?
+    submitted by    /u/AlejoMSP  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/138j9q5/better_translated_teams_transcriptions/"
+                        open
+                      >
+                        <summary class="article-expander__title">Better translated teams transcriptions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/138j9q5/better_translated_teams_transcriptions/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi guys,
+ Since the current translated subtitles in teams are not up to professional standards (misinterpreting company names and stuff) I’ve been looking into better working alternatives.
+ I haven’t been able to find anything really, azure cognitive services seemed cool but damn, that’s a whole rabbithole 
+ Does anyone have an idea? 
+ It needs to be translated live and be displayed somewhat accurately. Or is the built-in teams version the best I’ll get?
+ Thanks 😀
+    submitted by    /u/TommyTheOneAndOnly  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/138j7v1/windows_built_in_security_or_purchase_av/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows built in security or purchase AV?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/138j7v1/windows_built_in_security_or_purchase_av/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So I inherited my current Sysadmin role for a small company and they relied on the built-in Microsoft defender for their AV protection. I&#x27;ve always use a 3rd party like Kaspersky endpoint security or ESET NOD32. What are y&#x27;alls experience with only relying on Microsoft defender, is it enough?
+    submitted by    /u/jclopez12413  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/138iys5/work_around_for_boxsynology_cloudsync_403/"
+                        open
+                      >
+                        <summary class="article-expander__title">Work around for Box/Synology CloudSync 403 Forbidden error</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/138iys5/work_around_for_boxsynology_cloudsync_403/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Original post
+ Box and Synology are still working on the issue, and I believe are in some sort on dialogue.
+ Synology developers posted in the Box Forum.
+ Expanding on the behaviour they noticed, I played with the API url from the CloudSync authentication popup and worked out that modifying the &amp;state parameter to html-encode http:// to http%3A%2F%2F solves the problem. The modified URL needs to be loaded from the pop-up window, not from a different browser window, so a little console trickery is needed...
+ Below are the steps to replicate my workaround: 
+  
+Open CloudSync
+ Click the + icon to create a new link
+ Select Box and click Next
+ The popup authentication window appears (with the 403 Forbidden error)
+ Copy the entire URL
+ Pressed Ctrl-Shift-I to bring up the Browser Developer Tools
+ Switch to the console tab
+ Type the following into the console (note the single apostrophe at the end):
+ self.location &#x3D; ‘
+ Paste the URL copied in step 5
+ Locate &amp;state&#x3D;http://x.x.x.x:5000 at the end of the URL and change it to:
+ &amp;state&#x3D;http%3A%2F%2Fx.x.x.x:5000 (i.e. replacing the first : with %3A and each / with %2F. Don’t change anything else)
+ Type a closing ’
+ Press enter
+ The Box authentication window should appear and you should be able to grant permission successfully.
+ 
+ My sync is up and running after 8 days and lots of inconvenience.
+ And now we wait for an official fix!
+    submitted by    /u/neillsun  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/138iv2o/migrating_chromefirefox_to_enterprise_versions/"
+                        open
+                      >
+                        <summary class="article-expander__title">Migrating Chrome/Firefox to Enterprise versions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/138iv2o/migrating_chromefirefox_to_enterprise_versions/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We&#x27;ve been patching Chrome and Firefox via SCCM for quite some time now and more recently started using Tenable security scanning. Tenable has been finding Chrome and Firefox installs in the C:\Users space which SCCM has not been targetting. The collections I have only find Chrome/Firefox in Program Files that SCCM itself would have deployed. I have now created some Configuration items to locate these user installs and I want to convert these to the enterprise browser versions. My issue is how do I handle bookmarks? If I uninstall the browser from the C:\User they will lose their bookmarks. I&#x27;ve been researching how to backup bookmarks and restore them in an automated way but I haven&#x27;t found a great answer. Has anyone else gone through this?
+    submitted by    /u/MarceTek  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -44515,62 +44648,6 @@ Balance of Nature: Get 35% off your first order as a preferred customer. Use pro
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12d31xp/cisco_systems_pulled_out_of_russia_and_destroyed/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cisco Systems pulled out of russia and destroyed $23.42m worth of equipment</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12d31xp/cisco_systems_pulled_out_of_russia_and_destroyed/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://external-preview.redd.it/i3jZOhats1KTaXhRgvMqa_ViB-qsCdOsoFNRpj6xXQM.jpg?auto&#x3D;webp&amp;v&#x3D;enabled&amp;s&#x3D;4c10f6c2747e6bb64049062533fc39b0e874826e" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Cisco Systems announced it would cease sales in the Russian market in March 2022. Three months later, the company refused to renew its licenses. In addition, at the same time, the American manufacturer announced its withdrawal from Russia and Belarus.
- As it became known, Cisco Systems decided to physically destroy spare parts, product demonstrations, equipment and even furniture. 
- Your thoughts on this?
- https://gagadget.com/en/business/232400-cisco-systems-pulled-out-of-russia-and-destroyed-2342m-worth-of-equipment/
-    submitted by    /u/Similar_Printer  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;51
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Lawrence Systems</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;3JGyDyPbGzo"
-                        open
-                      >
-                        <summary class="article-expander__title">#shorts Setting UniFi &amp; Synology Projects Before Deployment is Messy Business...</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;3JGyDyPbGzo">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -44578,8 +44655,8 @@ Balance of Nature: Get 35% off your first order as a preferred customer. Use pro
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4892738355">
-        <time id="build-timestamp" datetime="2023-05-05T11:09:25.206Z">2023-05-05T11:09:25.206Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/4893293801">
+        <time id="build-timestamp" datetime="2023-05-05T12:20:25.304Z">2023-05-05T12:20:25.304Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
