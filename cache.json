@@ -214,16 +214,6 @@
           "wordCount": null,
           "title": "The Homelab Show Episode 94: More Home Assistant Tips, Trick, and Ideas!",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=xp6g-8VS06M",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=xp6g-8VS06M",
-          "publishedOn": "2023-04-07T21:21:33.000Z",
-          "wordCount": null,
-          "title": "How Much Memory Does ZFS Need and Does It Have To Be ECC?",
-          "imageUrl": null
         }
       ]
     },
@@ -259,6 +249,16 @@
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13ain7r/sieve_script_help/",
+          "author": null,
+          "description": "We're finally implementing a ticket system at work because I'm getting some additional manpower in the support department. The plan is to have an e-mail address \"support@ourcompany.com\" that pumps the tickets into the ticketing system (osTicket) and only accepts mail from us to prevent other people from creating random tickets.\n The support of our mail hoster said we could create rules for this using the Sieve language. I've tried multiple variations that should imo get this done, but it's not working.\n Current version of the script:\n if address :contains :domain \"from\" [\"ourcompany.com\", \"ourcompany2.com\", \"ourcompany3.com\"] { keep; stop; } else { discard; } \n I've tried with :matches :domain and with :contains :all but sending test mail from an outlook.com address still lets through the e-mail. I also tried with if not address ... discard; but that yields the same, unsatisfying, result.\n Has anyone run into this before?\n Edit: I accomplished what I wanted to do, even if not in the exact way I'd have liked.\n I created two ticket filters in osTicket to do this. I need two filters because if I only apply the second filter, all e-mail gets rejected for some reason and no tickets are created.\n Filter 1: \"E-Mail accept\" \n Priority: 1 Stop execution on filter match: Yes Filter any of criteria: User Email contains \"ourcompany.com\" User Email contains \"ourcompany2.com\" User Email contains \"ourcompany3.com\" Do: Set help topic to \"Support\" \n Filter 2: \"E-Mail reject\"\n Priority: 2 Stop execution on filter match: No Filter any of criteria: User Email NOT contains \"ourcompany.com\" User Email NOT contains \"ourcompany2.com\" User Email NOT contains \"ourcompany3.com\" Do: Disable notification on new ticket Discard ticket \n    submitted by    /u/electric_medicine  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13ain7r/sieve_script_help/",
+          "publishedOn": "2023-05-07T09:26:43.000Z",
+          "wordCount": 2419,
+          "title": "Sieve script help",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/13aghts/i_have_no_idea_of_what_i_am_doingthey_expect_from/",
           "author": null,
@@ -12278,16 +12278,6 @@
           "wordCount": 17427,
           "title": "KnowB4 chaos | Help me draft an email to shut them up and showing how serious training classes are!",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/12ezlhc/dkim_wont_rescan_my_dns_for_record/",
-          "author": null,
-          "description": "Hi, I'm trying to setup my DKIM on a domain, but cannot enable it because I get the DNS record error saying that you need to setup the record on the registrar side. I've done all that, but the \"Last checked date\" is 4 days old and I can't find a way to manually recheck.\n Does anyone know how to manually refresh or initiate the DNS check for DKIM?\n    submitted by    /u/thatguyinss  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/12ezlhc/dkim_wont_rescan_my_dns_for_record/",
-          "publishedOn": "2023-04-07T21:13:49.000Z",
-          "wordCount": 13521,
-          "title": "DKIM won't rescan my DNS for record?",
-          "imageUrl": null
         }
       ]
     },
@@ -17209,16 +17199,6 @@
           "publishedOn": "2023-04-07T23:52:08.000Z",
           "wordCount": 13842,
           "title": "Calculating average bps based on interface counters and uptime",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/12ezrek/anyconnect_certificate_expired/",
-          "author": null,
-          "description": "I totally made a goof ball mistake at work today and allowed our Anyconnect certificate that is signed by a external CA roll into expiration starting tomorrow. I have already submitted a new certificate request to our Licensing Team however it will not be available until next Monday. As of result, the anyconnect agents will not be able not trust the portal and wont be able to successfully connect over the weekend. Furthermore, we do not have a PKI in place to use an internal CA to quickly provide a trusted certificate either..Is there any way to train the clients to trust a specific expired cert? Or is there perhaps any other way I can get around this issue until I can get my certificate renewed in a few days? Any advice would be helpful.\n    submitted by    /u/BlueberryThick  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/12ezrek/anyconnect_certificate_expired/",
-          "publishedOn": "2023-04-07T21:19:25.000Z",
-          "wordCount": 14005,
-          "title": "AnyConnect Certificate Expired",
           "imageUrl": null
         }
       ]
