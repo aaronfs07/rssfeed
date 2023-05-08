@@ -250,6 +250,86 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13boqs5/guest_network_to_wan_firewall_security/",
+          "author": null,
+          "description": "Hello, I am interested in what other orgs are allowing on their Guest Network to WAN firewall rules. We have our guest network segregated by VLAN and it cannot communicated with any other internal networks. However, our Guest to WAN (internet) firewall rule only allows HTTP/HTTPS and a few other web and email related ports. Lately we have had some people complain about certain smart phone apps not working on the guest wifi. After doing some digging I found that some apps require other ports to be allowed in order to fully work. One example is the Sonic Drive-In app, it would not allow you to get to the check out screen. When I did a packet trace it showed port 5671 was blocked. I opened it as a test and now the app works. I have a few other apps with similar connection issues.\n Does anyone just allow Guest to WAN with ANY service allowed? If so, do you consider this safe from a cybersecurity standpoint?\n    submitted by    /u/Cheesedoff  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13boqs5/guest_network_to_wan_firewall_security/",
+          "publishedOn": "2023-05-08T13:13:31.000Z",
+          "wordCount": 2319,
+          "title": "Guest Network to WAN - Firewall Security",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13boltm/whitelisting_email_domain_for_voip_services/",
+          "author": null,
+          "description": "This is a bit on the rant side, so please forgive the length.\n Got a client using Barracuda for mail security. All emails from the voicemail service are getting quarantined. Barracuda clearly notes it is an SPF issue, and sure enough when checking it on MXTOOLBOX the SPF record is misconfigured and there are no DKIM or DMARC records associated with that email domain. Client wants to whitelist that address/domain. I hate doing this since hackers always try to spoof email with voicemail subjects, better to do this correctly and safely.\n So I open a ticket and get the VOIP 1st tier, send them the exact error on MXTOOLBOX and tell them to send that to the department that handles your email/dns and correct it. They insist no one else has this issue, and anyway you can just put that address on t…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13boltm/whitelisting_email_domain_for_voip_services/",
+          "publishedOn": "2023-05-08T13:07:59.000Z",
+          "wordCount": 2599,
+          "title": "Whitelisting Email Domain for VOIP Services",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13bolhx/advice_guide_on_deploying_new_win11_devices/",
+          "author": null,
+          "description": "I have 5 new Dell computers I need to get setup for end users. However, the situation is a little unusual so I am looking for advice on what you all would do in this situation. \n Some important info:\n  \nThe devices are being deployed to a brand-new network (no other end devices)\n We are not using any directory system (AD, Azure, LDAP, etc), and implementing them is out of the question unfortunately. \n I am aware how annoying this is lol. I have tried to suggest using azure + intune, but was shut down.\n \n I do not have a central server to use, just the 5 devices (one of which is for me to do testing, so really only 4 to deploy to users)\n The devices will eventually need to be CMMC compliant\n  \nHere is what I need advice on:\n  \nWhat is the best way to configure an base image that contains all configuration changes, driver updates, etc? \n I have looked into NinjaOne RMM, Canonical MaaS, MeshCentral, and MDT. I have used MaaS and MeshCentral before, but most likely these won't be approved for me to use. I have never used MDT before and it seems like a lot to get into and I am in somewhat of a time crunch to deploy the machines.\n \n I also will need to get the basic day-to-day applications installed for the users, I'm not sure if it would be best to bake them into the build, or install them manually on each device after the fact \n Im new to Windows management, is there a way to install programs with a script? I have heard of chocolatey being similar to Linux package management.\n \n  \nI'm sure I'm forgetting to include something, so I may edit or make a comment. Any help is greatly appreciated.\n Also, in advance to the suggestions to convince my manager to give me some leeway on choosing what tools I use, I have tried and he won't budge.\n    submitted by    /u/Scout764  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13bolhx/advice_guide_on_deploying_new_win11_devices/",
+          "publishedOn": "2023-05-08T13:07:39.000Z",
+          "wordCount": 2479,
+          "title": "Advice / Guide on deploying new Win11 devices.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13bokx3/need_a_network_scanning_tool/",
+          "author": null,
+          "description": "Given a list of 2000 public end point hostnames which are responding on port 80, I am looking for a tool that could crunch though them, capture HTTP response code (I made it this far), get the page title, and if the response is a 301 redirect, capture the final URL (to determine whether the redirect was just to an HTTPS endpoint, or whether its redirecting to another site altogether.\n Capturing information about the SSL certificates (if any) would also be helpful (whether their self-signed, issued from our CA, or issued from commercial CA), but not required.\n Ideally this would all be stored in a database so that the same hosts don't need to be scanned over and over.\n I started down this rabbit hole with a Laravel app, but once I got to the point of capturing redirects I figured, \"you know, maybe this tool already exists\".\n I want a final output that's easy to search and summarize.\n ​\n Any ideas?\n    submitted by    /u/AdhessiveBaker  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13bokx3/need_a_network_scanning_tool/",
+          "publishedOn": "2023-05-08T13:07:02.000Z",
+          "wordCount": 2311,
+          "title": "Need a network scanning tool",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13bok7d/water_in_feederelectrical_room/",
+          "author": null,
+          "description": "I have a room where the cable internet comes in and houses electrical panels and a large transformer. I noticed a puddle of water on the floor the other day. Looks like it came out of a utility conduit (6-8 inch) that comes out of the cement flooring. Looks like they sealed it with foam insulation previously. We had the cable company look but they said there was no signs of water on the outside. The conclusion is there must be some area in the conduit under the foundation that allowed water to seep in. The suggestion was to rip out the foam insulation and re-seal it rather than trenching into the foundation. Though I don't feel foam insulation is going to be watertight. I am also concerned about our cable/internet cables just soaking in water long term. \n Has anyone dealt with a similar situation? Do you have any suggestion or should I not be concerned?\n    submitted by    /u/LibtardsAreFunny  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13bok7d/water_in_feederelectrical_room/",
+          "publishedOn": "2023-05-08T13:06:17.000Z",
+          "wordCount": 2305,
+          "title": "Water in Feeder/electrical room",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13boj0e/setting_up_a_new_domainexchange/",
+          "author": null,
+          "description": "I have a customer who in their turn have a customer using MAPI for a custom build app that only supports Outlook 2003. They finally allow me to move them to Exchange 2019, but now they find out this app for this Very Important Customer (like, 80% of their revenue) will no longer work because Exchange 2019 is not friends with Outlook 2003. The original dev (from 2000 or so) left that company, so no one wants to touch it.\n  \n The compromise management found is that I will set-up a new 2008R2 DC, a domain on its own, with an Exchange 2010, and a new mail domain, to host the single mailbox necessary for Outlook 2003. Like this the customer's Exchange can migrate to 2019 and the customer's customer can keep using the app until they found someone to re-write the source in ten years or so.\n  \n Sigh.\n    submitted by    /u/YellowOnline  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13boj0e/setting_up_a_new_domainexchange/",
+          "publishedOn": "2023-05-08T13:05:05.000Z",
+          "wordCount": 2298,
+          "title": "Setting up a new Domain/Exchange",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13boi2n/how_do_i_setup_monitoring_to_ping_my_phone/",
+          "author": null,
+          "description": "We never had any monitoring, I recently implemented zabbix but its still not mature for our needs and we have a requierment to have 24/7 alerts incase our physical infrastructure gets critical alerts (nutanix/vmware/couple HV servers)\n I want to setup monitoring to ping my phone, is it possible? how far fetched is it?\n    submitted by    /u/TreeBug33  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13boi2n/how_do_i_setup_monitoring_to_ping_my_phone/",
+          "publishedOn": "2023-05-08T13:04:06.000Z",
+          "wordCount": 2207,
+          "title": "how do i setup monitoring to ping my phone",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13bo6uc/is_there_any_learning_source_to_learn_windows_nt/",
+          "author": null,
+          "description": "I'm trying to find some books, and other sources to get in depth knowledge of the windows OS, and since it is huge, and has many features, services, tools, etc. It's really hard to just find everything. I have been somewhat a \"poweruser\" of windows for years, and still I find many new things to me, that shocks me.\n    submitted by    /u/mikulastehen  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13bo6uc/is_there_any_learning_source_to_learn_windows_nt/",
+          "publishedOn": "2023-05-08T12:52:00.000Z",
+          "wordCount": 2217,
+          "title": "Is there any learning source to learn Windows (NT kernel) as a whole?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/13bn5qq/smtp_relay_reccomendations/",
           "author": null,
           "description": "So we're setting up an on Prem Exchange Server 2019 deployment for a customer. However our external IP assigned by the ISP is on a black list. Seems to be a running theme for this ISP. \n Can anyone recommend a paid SMTP relay service that we can use with Exchange?\n    submitted by    /u/eviloni  \n [link]   [comments]",
@@ -12368,26 +12448,6 @@
           "wordCount": 18349,
           "title": "What are your experiences with counter-offers?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/12g3rqo/open_source_network_monitoring_tool/",
-          "author": null,
-          "description": "i dont know if im at the right community,\n I want to monitor my network devices like a router, switch AP mobile phones laptops etc etc.\n i found PRTG, solarwinds but they are very expensive... what I want is to monitor network devices at my company.\n ​\n GUI based monitoring tool or program is what im looking for\n need to monitor devices and network\n    submitted by    /u/Solidsneakers_  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/12g3rqo/open_source_network_monitoring_tool/",
-          "publishedOn": "2023-04-09T00:43:29.000Z",
-          "wordCount": 15036,
-          "title": "open source network monitoring tool",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/12g3dcf/oath_hardware_tokens_for_office_365/",
-          "author": null,
-          "description": "Hello all. Has any used this before? HR will not let our employee's use their cell phones to authenticate logging in to check their email because they are hourly (eye roll). Any good recommendation? Hybrid On-Prime to Azure Connects AD environment P1.\n    submitted by    /u/autpbg1  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/12g3dcf/oath_hardware_tokens_for_office_365/",
-          "publishedOn": "2023-04-09T00:25:44.000Z",
-          "wordCount": 2108,
-          "title": "OATH Hardware Tokens for Office 365",
-          "imageUrl": null
         }
       ]
     },
@@ -12925,6 +12985,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/13bnv3k/possible_to_route_different_vlans_across_2_l3/",
+          "author": null,
+          "description": "I overheard a network engineer vendor we work with describe a proposed topology I didn't quite understand. Two distinct networks each with their own respective VLANs would be connected by L3 switches across an MPLS link using only SVIs, so something like a /30 only between the edge switches like so is what I'm presuming. I tried to do this in PacketTracer but couldn't get it to work, so I assume I'm missing something:\n interface GigabitEthernet0/1 description SITE2_EDGE_SW-SITE1_EDGE_SW switchport mode trunk switchport trunk allowed vlan 100 ! interface Vlan100 description SITE2_EDGE_SW ip address 192.168.20.1 255.255.255.252 ! interface Vlan10 description PC_VLAN ip address 10.0.10.0 255.255.255.0 \n Is it possible to simply route traffic from SITE2 that is destined for VLANS at SITE1 across an SVI like this? Normally I would have done this using a non switchport physical interface that I assigned a /30 ip address to Gi0/1 instead of doing it across L2 trunk, but I could easily be missing something obvious. \n Is it possible to route traffic from, say, the PC_VLAN in SITE2 on 10.0.10.0 out through Gi0/1 to a SITE1 VLAN on a different subnet like 10.0.100.0 using a L2 trunk?\n    submitted by    /u/72dragonses  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/13bnv3k/possible_to_route_different_vlans_across_2_l3/",
+          "publishedOn": "2023-05-08T12:38:21.000Z",
+          "wordCount": 2361,
+          "title": "Possible to route different VLANs across 2 L3 switches using only SVIs?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/13bkjwo/good_router_modems/",
           "author": null,
