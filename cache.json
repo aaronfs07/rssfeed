@@ -250,6 +250,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13cmerk/rsa/",
+          "author": null,
+          "description": "Trying to use windows mfa it gives unsuccessful connection to RSA SecurID access\n    submitted by    /u/aski12476  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13cmerk/rsa/",
+          "publishedOn": "2023-05-09T11:04:52.000Z",
+          "wordCount": 2155,
+          "title": "Rsa",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13cmaae/broken_sbs_dns_ad/",
+          "author": null,
+          "description": "I've been quite smug about maintaining two SBS 2011 systems since 2012, through all & every weirdo issue they've had. Today I was humbled by a loss of DNS into AD in one of the SBS servers, I was going nowhere, into the wee hours.\n So Chattie & I went for it. \n Question 17 (still no results) the AI threw up an old Server Fault post along with several others.\n https://serverfault.com/questions/566304/dns-event-id-4000-on-sbs-2011\n Chattie: The command nltest /sc_change_pwd:<fqdn> is used to reset the secure channel password between a domain controller and the domain. \n The secure channel password is used to encrypt all communications between the domain controller and the domain. \n If the secure channel password becomes out of sync between the domain controller and the domain, then you may experience problems \n with Active Directory replication, authentication, and other services that rely on Active Directory.\n ​\n UnNamed Fella: We solved this issue by running the following command on our domain server:\n nltest /sc_change_pwd:<fqdn>\n Afterwards we had to restart the server.\n ​\n Chattie: You should replace <fqdn> with the fully qualified domain name of the domain controller. \n For example, if the domain controller’s fully qualified domain name is dc1.contoso.com, \n then you would run the command nltest /sc_change_pwd:dc1.contoso.com.\n ​\n Me: we were both wrong. Here is the results of two attempts - the last just using the domain:\n C:\\Windows\\system32>nltest /sc_change_pwd:tcib-sbs.tcib.local\n I_NetLogonControl failed: Status = 1355 0x54b ERROR_NO_SUCH_DOMAIN\n Better: \n C:\\Windows\\system32>nltest /sc_change_pwd:tcib.local\n Flags: 0\n Connection Status = 0 0x0 NERR_Success\n The command completed successfully.\n nltest. I must get that tattooed somewhere . . .\n So, Guestdc if that's your name, I've no idea where you pulled that from, but I owe you.\n Thanks.\n    submitted by    /u/Sudsguts  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13cmaae/broken_sbs_dns_ad/",
+          "publishedOn": "2023-05-09T10:59:20.000Z",
+          "wordCount": 2419,
+          "title": "Broken SBS DNS & AD",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13clvh1/how_to_upgrade_a_standalone_vmware_esxi/",
+          "author": null,
+          "description": "We have 2 esxi hosts one is on version 5.7 the other is on 7.0. I tried following a YouTube video which walks through a command line upgrade after downloading the appropriate upgrade file from VMware support site, but it did not work. Would it be easier to get vcenter and do this? I'm not sure why they never utilize vcenter before.\n    submitted by    /u/jclopez12413  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13clvh1/how_to_upgrade_a_standalone_vmware_esxi/",
+          "publishedOn": "2023-05-09T10:37:36.000Z",
+          "wordCount": 2210,
+          "title": "How to upgrade a standalone VMware esxi.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/13cl6n1/does_help_desk_write_their_own_automatic_script/",
           "author": null,
           "description": "I read that learning how to write scripts (powershell, bash, or python) can help remove repetition tasks, like creating tickets, reset passwords, etc. However, there are platforms that can do just that. Not to mention the time to find, learn, & write these specific scripts (I can't find videos or step-by-step tutorials for it). \n Since help desk job are suppose to be for short-term only, do you think learning to automate is still worth it? Any use of them for sysadmin and network admin?\n    submitted by    /u/Su33er_A99  \n [link]   [comments]",

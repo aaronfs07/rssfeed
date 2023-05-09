@@ -2,10 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-05-09T10:12:16.186Z</updated>
+    <updated>2023-05-09T11:09:21.249Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Rsa]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13cmerk/rsa/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13cmerk/rsa/"/>
+        <updated>2023-05-09T11:04:52.000Z</updated>
+        <summary type="html"><![CDATA[Trying to use windows mfa it gives unsuccessful connection to RSA SecurID access
+    submitted by    /u/aski12476  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Broken SBS DNS & AD]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13cmaae/broken_sbs_dns_ad/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13cmaae/broken_sbs_dns_ad/"/>
+        <updated>2023-05-09T10:59:20.000Z</updated>
+        <summary type="html"><![CDATA[I've been quite smug about maintaining two SBS 2011 systems since 2012, through all & every weirdo issue they've had. Today I was humbled by a loss of DNS into AD in one of the SBS servers, I was going nowhere, into the wee hours.
+ So Chattie & I went for it. 
+ Question 17 (still no results) the AI threw up an old Server Fault post along with several others.
+ https://serverfault.com/questions/566304/dns-event-id-4000-on-sbs-2011
+ Chattie: The command nltest /sc_change_pwd:<fqdn> is used to reset the secure channel password between a domain controller and the domain. 
+ The secure channel password is used to encrypt all communications between the domain controller and the domain. 
+ If the secure channel password becomes out of sync between the domain controller and the domain, then you may experience problems 
+ with Active Directory replication, authentication, and other services that rely on Active Directory.
+ ​
+ UnNamed Fella: We solved this issue by running the following command on our domain server:
+ nltest /sc_change_pwd:<fqdn>
+ Afterwards we had to restart the server.
+ ​
+ Chattie: You should replace <fqdn> with the fully qualified domain name of the domain controller. 
+ For example, if the domain controller’s fully qualified domain name is dc1.contoso.com, 
+ then you would run the command nltest /sc_change_pwd:dc1.contoso.com.
+ ​
+ Me: we were both wrong. Here is the results of two attempts - the last just using the domain:
+ C:\Windows\system32>nltest /sc_change_pwd:tcib-sbs.tcib.local
+ I_NetLogonControl failed: Status = 1355 0x54b ERROR_NO_SUCH_DOMAIN
+ Better: 
+ C:\Windows\system32>nltest /sc_change_pwd:tcib.local
+ Flags: 0
+ Connection Status = 0 0x0 NERR_Success
+ The command completed successfully.
+ nltest. I must get that tattooed somewhere . . .
+ So, Guestdc if that's your name, I've no idea where you pulled that from, but I owe you.
+ Thanks.
+    submitted by    /u/Sudsguts  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to upgrade a standalone VMware esxi.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13clvh1/how_to_upgrade_a_standalone_vmware_esxi/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13clvh1/how_to_upgrade_a_standalone_vmware_esxi/"/>
+        <updated>2023-05-09T10:37:36.000Z</updated>
+        <summary type="html"><![CDATA[We have 2 esxi hosts one is on version 5.7 the other is on 7.0. I tried following a YouTube video which walks through a command line upgrade after downloading the appropriate upgrade file from VMware support site, but it did not work. Would it be easier to get vcenter and do this? I'm not sure why they never utilize vcenter before.
+    submitted by    /u/jclopez12413  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Migrating SVI to new core]]></title>
         <id>https://www.reddit.com/r/networking/comments/13cl8x0/migrating_svi_to_new_core/</id>
