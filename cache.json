@@ -260,6 +260,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13gdoox/cannot_access_my_webserver_on_my_local_network/",
+          "author": null,
+          "description": "I am trying to access my web server I made on my local network, but I keep getting \"ERROR_CONNECTION_REFUSED\" whenever I try to access it. However - it works outside of my home network, i.e. my phone.\n I have tried all the basic troubleshooting steps like rebooting, clearing cache, flushing Windows DNS resolver cache, even gone as far as nuking my PC and re-installing Windows. It is absolutley baffeling.\n My web server is being hosted on a VM in TrueNAS Core, running Ubuntu Server 22.04.2 LTS, and all the usual other packages, i.e. Apache2, MySQL, etc etc. It is a fully functioning server, as I say I can access it from outside of my home network perfectly fine.\n I am not sure if it is the culprit, but I do have a Raspberry Pi on my network running Pi-hole. I have tried to whitelist my domain, disable it, change upstream DNS server between Google and Cloudflare, but to no avail. I've even tried removing it from the network all together.\n    submitted by    /u/Notleks_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13gdoox/cannot_access_my_webserver_on_my_local_network/",
+          "publishedOn": "2023-05-13T10:16:30.000Z",
+          "wordCount": 2394,
+          "title": "Cannot access my webserver on my local network, but can outside.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/13gd5bj/radius_nps_8021x/",
           "author": null,
           "description": "Hi everyone !!\n First I'm new in admin/network (student/1st y internship in admin) and I try my best to learn the fundamentals sorry if I ask dumb question !\n I have a thesis to do for my school year and my subject is about the implementation of RADIUS server and 802.1X for wired et wireless (via VPN too) connection to network.\n I have 3 questions :\n Is it possible to do a \"full\" virtualization of this infrastructure ? I want something like packet tracer do(or GNS3 but never used it before) to configure 802.1X on switch port, a windows server with NAPS->NPS fonctionnality, test wired and wireless login.\n I belive it's possible to do 802.1X on packet tracer but for the windows server configuration ? It's possible to create VM on packet tracer, or the 'graphical' interface on the computers is enough ?\n 2) Ok for local connection, what about VPN ? It's something I'm learning on my own but never install/configure one from now, is it difficult to link with RADIUS ?\n 3) For now I want to build my own classic RADIUS lab but I think I'm screwed to do it in entreprise... Because we have a hybrid/full cloud infrastructure in Azure AD. I think it's a total another lvl of difficulty . Does anyone know more about this ?\n I'm not alone in my entreprise, we have a provider to take care of network tasks et management but he is not often there and I don't dare to ask basic question :(\n I'm trying to be very proactive on the subject (it's for october so it's pretty soon I think), I will keep you up about this !\n Thanks\n    submitted by    /u/MrlyKing  \n [link]   [comments]",
@@ -317,6 +327,16 @@
           "publishedOn": "2023-05-13T04:52:51.000Z",
           "wordCount": 2300,
           "title": "Can a QR code be used to deploy MDM profiles?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13g712g/best_practice_for_dmz_authentication/",
+          "author": null,
+          "description": "Note: the system this post refers to is on premise.\n I'm not a sysadmin, so I could be wrong about this, but it seems wrong to me that to RDP into the computers in the DMZ, I need to remember/maintain a local windows account for each computer in the DMZ (we have several dozen). These accounts' passwords also expire after a month, which makes managing the accounts even more difficult. I have searched the web for what is considered best practice, and I haven't been able to find anything I can understand. I've seen a few posts about Read Only Domain Controllers and Jump Servers, but as a non sysadmin, I'm having a hard time understanding these.\n Now that you understand my question, let me give you a brief explanation of our system.\n The system is entirely on prem. At the front, we have a load balancer with a public IP. This is what our customers connect to. Behind the load balancer, we have the DMZ. The DMZ contains a number of windows server VMs running IIS. Behind the DMZ, we have our AD network. This is where our application and database server are. It's also where the computers used by our staff are.\n As a user of the system, my computer is in the AD network. As I mentioned earlier, I sometimes need to RDP into a server in the DMZ. Ideally, I would just use my AD credentials to authenticate, but that doesn't work because the DMZ is not part of the AD network.\n So, could you please tell me if the best way to connect to the servers in the DMZ is via local windows accounts? Another thing I'd like to know is, is a DMZ even necessary? Why can't the load balancer just route to the appropriate computer in the AD network?\n    submitted by    /u/Personal-Drama-8446  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13g712g/best_practice_for_dmz_authentication/",
+          "publishedOn": "2023-05-13T04:22:47.000Z",
+          "wordCount": 2524,
+          "title": "Best Practice for DMZ Authentication?",
           "imageUrl": null
         },
         {
@@ -12368,26 +12388,6 @@
           "wordCount": 2239,
           "title": "Starting an AWS Migration - looking for lessons learned on a personal level",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/12l9o0j/found_out_that_the_l1s_have_been_setting_up_scan/",
-          "author": null,
-          "description": "have a couple of remote sites that don't have much in terms of infra, mostly a PC and a little MFP\n discovered that someone has setup all of the little MFP's to connect to google to auth and relay the email so it would land in the users mailbox. I've mentioned that it's probably not the greatest setup and that we should be relaying off of something that we use or actually pay for but it seems to be going over their heads.\n ​\n I've sorta looked around with the google TOS and can't really find too much aside from the link below, is there something else that i'm missing or am i just crying wolf?\n ​\n https://policies.google.com/terms?hl=en-US#toc-permission\n ​\n EDIT - I do have the solutions and proposed that we bounce it off our internal server/M365 or an external SMTP service that we use, but it's been deaf ears. I know there are bigger fish to fry than this however is there anything to be concerned about in terms of licensing/privacy/policy etc? I've already hummed and hawed about how bounching it off of a third party isn't exactly the most secure and know that it's google, they will pretty much own a copy of anything we scan, but deaf ears. \n    submitted by    /u/sneakattaxk  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/12l9o0j/found_out_that_the_l1s_have_been_setting_up_scan/",
-          "publishedOn": "2023-04-13T22:41:29.000Z",
-          "wordCount": 2309,
-          "title": "found out that the L1's have been setting up scan to email by bouncing it off Google",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/12l97kp/the_leaker_of_secret_us_documents_was_air/",
-          "author": null,
-          "description": "Teixeira served in a junior position, but he had access to an internal Defense Department computer network for top-secret information, called the Joint Worldwide Intelligence Communications System, according to a U.S. official familiar with the matter. That access would have allowed him the ability to read and potentially to print documents classified at the same level as many of the leaked files. \n https://www.washingtonpost.com/national-security/2023/04/13/suspect-pentagon-documents-leak/\n  \nAccording to WaPo the leaker of secret documents was a NG technology support staffer, basically a junior sysadmin. The guy is 21 years old and probably going to spend the rest of his life in prison as a traitor. A reminder to everyone with access to secrets to not be stupid.\n    submitted by    /u/efxhoy  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/12l97kp/the_leaker_of_secret_us_documents_was_air/",
-          "publishedOn": "2023-04-13T22:32:19.000Z",
-          "wordCount": 2212,
-          "title": "The leaker of secret US documents was Air National Guard technology support staffer",
-          "imageUrl": null
         }
       ]
     },
@@ -17283,16 +17283,6 @@
           "publishedOn": "2023-04-14T00:00:17.000Z",
           "wordCount": 2167,
           "title": "Blogpost Friday!",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/12la4r5/throttling_on_docsis_31_after_sip_call_gate_closur/",
-          "author": null,
-          "description": "So, I work as a network architect and my and my colleagues have run into something we’ve never seen before. Figured it’s time to attempt to crowdsource a solution. \n We have a Arris E6000 running docsis 3.1 and sip with a global DQoS for the service flow. For some unknown reason whenever a call is made, immediately after the phone is hung up and the gate is closed the internet speed it throttled down to exactly 33Mbps. This last for. Early 9 minutes on the dot. It happens every single time. If the phone is left off the hook and the call is disconnected from the far end, the throttling does not occur. As soon as the receiver is hung up, the throttling occurs. \n This happens on multiple versions of of the E6000 firmware, it happens on any modem running SIP, it happens on any speed config, it happens with a standalone sip service flow config (note the call does not use the sip service flow and instead still uses the DQoS), it happens with different modem configs. \n It’s a head scratcher for sure.\n    submitted by    /u/Barumamook  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/12la4r5/throttling_on_docsis_31_after_sip_call_gate_closur/",
-          "publishedOn": "2023-04-13T22:54:07.000Z",
-          "wordCount": 2290,
-          "title": "Throttling on docsis 3.1 after SIP call gate closur",
           "imageUrl": null
         }
       ]
