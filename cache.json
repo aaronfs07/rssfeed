@@ -270,6 +270,96 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j3jfi/dell_support_have_a_severe_quality_decrease_for/",
+          "author": null,
+          "description": "For several years we had a dedicated Dell rep and hardware specialist and they knew us extremely well. Every question we had they got us a quick answer, and knew how it tied in to our current products. \n Somewhere around 2021 we started getting new reps every 6 months who don't know anything and they just constantly try to sell us stuff. Our questions are rarely answered accurately and when they finally start to understand our needs we get a new rep. Is this happening with anyone else? Or maybe just the new norm since covid?\n    submitted by    /u/Startronz  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j3jfi/dell_support_have_a_severe_quality_decrease_for/",
+          "publishedOn": "2023-05-16T12:16:22.000Z",
+          "wordCount": 2315,
+          "title": "Dell support have a severe quality decrease for anyone else lately?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j3ddq/powershell_cheat_sheet_covers_key_topics_such_as/",
+          "author": null,
+          "description": "Hi all, \n Just wanted to share a PowerShell cheat sheet that covers key topics such as objects, regular expressions, operators, and tips and best practices for working with this powerful task automation tool. \n This PowerShell cheat sheet is a brief but handy guide to navigating PowerShell, whether as a beginner or as a seasoned administrator.\n https://www.stationx.net/powershell-cheat-sheet/\n    submitted by    /u/josh252  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j3ddq/powershell_cheat_sheet_covers_key_topics_such_as/",
+          "publishedOn": "2023-05-16T12:08:49.000Z",
+          "wordCount": 2285,
+          "title": "PowerShell Cheat Sheet - covers key topics such as objects, regular expressions, operators, and tips and best practices for working with",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j34jq/having_issues_encrypting_files_with_rsa_public/",
+          "author": null,
+          "description": "I generate an RSA key-pair with:\n openssl genrsa -out private.pem 2048\n Then I extract the public key out of it with:\n openssl rsa -in private.pem -pubout > public.pem\n I create a file with some data:\n echo \"hello world\" > data.txt\n Then I try encrypting the file with my public key:\n openssl rsautl -encrypt -inkey public.pem -in data.txt > encrypted_data.enc\n I get this nonzero output:\n unable to load Private Key 8433539904:error:09FFF06C:PEM routines:CRYPTO_internal:no start line:/AppleInternal/Library/BuildRoots/97f6331a-ba75-11ed-a4bc-863efbbaf80d/Library/Caches/com.apple.xbs/Sources/libressl/libressl-3.3/crypto/pem/pem_lib.c:694:Expecting: ANY PRIVATE KEY\n file command tells me that my public key is ASCII text, not sure if that's the correct encoding and whether or not it's causing an …",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j34jq/having_issues_encrypting_files_with_rsa_public/",
+          "publishedOn": "2023-05-16T11:58:38.000Z",
+          "wordCount": 2405,
+          "title": "Having issues encrypting files with RSA public key generated with openssl. Tells me \"unable to load Private Key\"",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j32bf/cisco_unity_and_exchange_issue/",
+          "author": null,
+          "description": "We are currently having an issue with our Cisco Unity server communicating with our on prem Exchange server. Cisco TAC says that according to the logs from the RTMT that Unity is timing out when communicating with Exchange, but not every time. Voicemails seem to be coming through quickly enough but when you mark the voicemail read in outlook, the message indicator light does not clear or if it does clear, it may take 15 - 20 minutes. We haven't found any outstanding issues on our exchange server. Any thoughts on what to check? Thanks!\n    submitted by    /u/Lbrown1371  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j32bf/cisco_unity_and_exchange_issue/",
+          "publishedOn": "2023-05-16T11:55:56.000Z",
+          "wordCount": 2308,
+          "title": "Cisco Unity and Exchange Issue",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j2uzf/question_sid_of_azure_groups_how/",
+          "author": null,
+          "description": "submitted by    /u/MethosReborn  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j2uzf/question_sid_of_azure_groups_how/",
+          "publishedOn": "2023-05-16T11:46:21.000Z",
+          "wordCount": 2306,
+          "title": "Question - SID of Azure Groups - how?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j2eyf/microsoft_store_app_updates_are_not_working_while/",
+          "author": null,
+          "description": "Hi all,\n Our company blocked the Microsoft Store for users on their Windows 11 laptops. Within the landscape they use a vulnerability scanning tool and there is a vulnerability in the AV1 Video Extension, so an update is needed from version 1.1.52851.0 to 1.1.60961.0.\n I tried to update the app with the following options, without any luck:\n  \nSetting Catalog -> Auto update apps in Store\n \nPro active remediation script that checks the version and if outdated, run the following:\n $namespaceName = \"root\\cimv2\\mdm\\dmmap\" $className = \"MDM_EnterpriseModernAppManagement_AppManagement01\" $wmiObj = Get-WmiObject -Namespace $namespaceName -Class $className $result = $wmiObj.UpdateScanMethod()\n \nDeploy the AV1 Video Extension within Intune apps\n \nWinget. Installed Winget and executed the command below:\n Winget upgrade -h --id Microsoft.AV1VideoExtension_8wekyb3d8bbwe --force\n \n Winget Output = no applicable upgrade found, while its still on the old version.\n So i tried different things without luck. I also tried it on another laptop with the Microsoft Store available, and then i can upgrade using the command below and it will updated to the latest version 1.1.60961.0 . Whats happening here?\n $namespaceName = \"root\\cimv2\\mdm\\dmmap\" \n $className = \"MDM_EnterpriseModernAppManagement_AppManagement01\" $wmiObj = Get-WmiObject -Namespace $namespaceName -Class $className $result = $wmiObj.UpdateScanMethod()\n    submitted by    /u/coldburn89  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j2eyf/microsoft_store_app_updates_are_not_working_while/",
+          "publishedOn": "2023-05-16T11:24:10.000Z",
+          "wordCount": 2410,
+          "title": "Microsoft Store App updates are not working while App Store is blocked by GPO",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j2d8m/server_2016_windows_updates_totally_borked_on_one/",
+          "author": null,
+          "description": "Bit of a 'rubber ducky' post here. I believe I've covered all the usual stuff before lighting candles, drawing floor markings and taking up day drinking. \n We've a few servers on one host (smallish firm) and our main App is hosted on this particular 2016 VM. However, it has really thrown the toys out of the pram with updates. \n ​\n  \nI've tried manually installing updates from the M U Catalog. Constantly getting - 0x80070490 in Event Log. \n I've manually - restarted services, renamed Catroot2 and SoftwareDistribution folders, reset winsock, rebooted. \n Tried a trusty script which does the above and more, which has worked previously for other servers and workstations (Stop services, rename folders, rename previous log, reset updates services, re-registered DLLs, cleared regkeys, reset winsock, reset BITS Transfers, and start services).\n I've removed AV and Malware protection just in case but that changed nothing.\n  \n​\n Beginning to think it's a blow it away and start over job but that's a bit of a nightmare with it being our main LOB app. Plus the time and costs to get the supplier to install and shift to a new VM. Usually the bottom 3 in that list of 4 has worked in my previous experiences but this just will not play ball. The other 2016 VMs are humming along nicely, 2019 all good and W10 machines all patched fine. \n Any other ideas before I start making phone calls?\n    submitted by    /u/SlapshotTommy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j2d8m/server_2016_windows_updates_totally_borked_on_one/",
+          "publishedOn": "2023-05-16T11:21:41.000Z",
+          "wordCount": 2452,
+          "title": "Server 2016 - Windows Updates totally borked on one server",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j27zb/am_i_living_in_backwards_world/",
+          "author": null,
+          "description": "I am not an IT guy. I understand computers, i like data, but I'm a front office guy at a financial firm. I am convinced that our back office tech and IT teams are completely incompetent, but i don't know what to do about it.\n We have a useless website that is supposed to be a CRM, but it doesn't integrate with a single piece of microsoft 365 (which is being paid for to be used by every single member of every firm) and theres no adobe integration to the sharepoint. Everything is done manually, by us at the front office. My job is supposed to be sales, but i spend 90% of my time doing admin. \n Notionally, I understand how this tech is supposed to work... we pass adobe documents around for new data, which is integrated to the website via sharepoint lists, then we pull 3rd party data from APIs to fill the gaps. In practice, I don't know who's job it should be to actually build this shit and who is responsible for the failures of the current system. \n It seems like nobody is even speaking my language and I need to hear experts tell me that what I am envisioning is normal, its not difficult, and I'm not crazy.\n Ive taken on the mentality of \"if you want something done right, do it yourself\" to try and build little automations the best i can, but barely anything sticks. \n Is this an lost cause? Should I simply give up and hope that my bosses hire more admin to keep this glaring issue out of sight and out of mind, or should i be concerned that without these basic process management systems in place, our business will never scale?\n    submitted by    /u/Onedoorrr  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j27zb/am_i_living_in_backwards_world/",
+          "publishedOn": "2023-05-16T11:14:07.000Z",
+          "wordCount": 2505,
+          "title": "AM I LIVING IN BACKWARDS WORLD?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13j25km/azure_bulk_tool_for_non_techies_conferences_and/",
+          "author": null,
+          "description": "Lets think about a confernce or visitors, I want a tool (webpage ideally) that I can restrict and give to certain \"front of house\" or reception staff to create temporary short term access (24hrs , 3 days etc) that provide limited services (like internet) etc, by placing them in a group in the AAD / AD (which will be defined when I setup the tool). \n I believe I have seen a tool like this before, something they can use to create these accounts, or bulk upload too. Its then a portal the receptionist can utilise.\n Has to be idiot proof (so to speak) and be very \"wizardy\" in its simplicity. \n Anyone know of such tools? Or recommendations?\n    submitted by    /u/Glittering-Event-208  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13j25km/azure_bulk_tool_for_non_techies_conferences_and/",
+          "publishedOn": "2023-05-16T11:10:29.000Z",
+          "wordCount": 2335,
+          "title": "Azure Bulk Tool for Non Techies - Conferences and Vistors....",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/13j1p1n/mistakenly_mounted_ntfs_iscsi_disk_to_esxi_as/",
           "author": null,
           "description": "Yes, I am the idiot and I 100% see it. But is there ANY recovery method available to fix this?\n Basically, on a NAS there were multiple iSCSI mount points in a target LUN from a NAS. 2 mount points with the same disk space. 1 was originally mounted into a Windows server as NTFS.\n I was trying to mount the second mount point into ESXI as Datastore and realized soon enough that it was the wrong disk that got formatted. \n Is there ANY way I can revert this and try to save the data for the NTFS volume? As this was a backup point, there are no copies for the data on this drive. I have not deleted the Datastore from the esxi as there is a warning it will try to delete all data (trying to preserve any more writes on it) :(\n    submitted by    /u/matrixrice  \n [link]   [comments]",
@@ -12568,16 +12658,6 @@
           "wordCount": 2136,
           "title": "IT Security Stack - What software/hardware is everyone using to secure your environment",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/12ouq78/pour_one_out_for_the_netflix_admins_right_now/",
-          "author": null,
-          "description": "Final update: https://twitter.com/netflix/status/1647774237896368130?t=45eqpJBOf1MxgNRwA_djZQ&s=19\n @Netflix: To everyone who stayed up late, woke up early, gave up their Sunday afternoon… we are incredibly sorry that the Love is Blind Live Reunion did not turn out as we had planned. We're filming it now and we'll have it on Netflix as soon as humanly possible. Again, thank you and sorry.\n Love is Blind is doing a live event. ~Apparently this is their first live event / episode.~ this is not the first live event.\n Servers are down, no one can connect. They communicated 15 minutes until online and now it's been 20.\n Oof.\n Update: 28 minutes in and still down\n Update 2: 43 minutes in, still down. The hosts posted an update on Instagram saying they're working on it still\n Update 3: 57 minutes in, still down. Maybe they have an internal go live at 6pm pst, one hour in?\n Update 4: 62 minutes in, still down. We're in this for the long haul. This is bad lmao especially since they have the cast there just awkwardly waiting until they can stream it live\n Update 5: 75 minutes in, still down. All influencers are now streaming from their Instagram accounts and it looks like chaos\n Update 6: POSSIBLE FIX: PLAY THE EPISODE 12 AND FAST FORWARD TO THE ENDING. THEN ITLL SAY NEXT EPISODE AND PLAY\n Update 7: Well, it played for about 2 minutes live and then crashed again\n I was able to get in after 86 minutes. Now I can't get in again. Some people are streaming it off their phone on TikTok and IG\n apparently Netflix canceled the live stream and they're just recording it to post later. Not sure how true this is but it seems it is, they're going ahead with the event. \n Back to just loading\n    submitted by    /u/hngfff  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/12ouq78/pour_one_out_for_the_netflix_admins_right_now/",
-          "publishedOn": "2023-04-17T00:20:04.000Z",
-          "wordCount": 2393,
-          "title": "Pour one out for the Netflix admins right now",
-          "imageUrl": null
         }
       ]
     },
@@ -17435,26 +17515,6 @@
           "publishedOn": "2023-04-17T07:20:28.000Z",
           "wordCount": 3066,
           "title": "Sudden loss of NFS/NIS/Autofs connectivity between hosts within a VLAN.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/12ou5re/moronic_monday/",
-          "author": null,
-          "description": "It's Monday, you've not yet had coffee and the week ahead is gonna suck. Let's open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we're too embarrassed to ask!\n Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.\n Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/12ou5re/moronic_monday/",
-          "publishedOn": "2023-04-17T00:00:18.000Z",
-          "wordCount": 2197,
-          "title": "Moronic Monday!",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/12ot14s/persite_asns_neededdesirable_multiple_multihomed/",
-          "author": null,
-          "description": "BGP novice here. Our growing company will soon be opening a secondary office/datacenter in a different geographic region. Our primary site/headquarters is currently single-homed and uses provider-assigned IP addresses, but will soon be multi-homed and our new site will be multi-homed from day one. Each site will be served by local ISPs that do not operate outside their respective regions. We will be getting full BGP tables from each ISP.\n Each site will have unique IPv6/IPv4 prefixes. There will be VPN tunnels between the two sites, but no direct/dedicated connectivity.\n Would there be any advantages to having a separate ASN for each site? Would there be any disadvantages other than additional RIR fees?\n I am aware of something that Cisco calls \"neighbor allow-as\". Would we need to use something like that if the two sites share an ASN, or would the simple fact that they are announcing unique prefixes ensure that their use of a shared ASN doesn't get treated as a BGP loop?\n If it matters, we hope to implement RPKI from the start and we wouldn't want the secondary site to have a ROA (Route Origin Authorization) that would allow it to announce prefixes used by the headquarters or vice versa. (Such as could happen accidentally due to misconfiguration, or if the site were to suffer a security breach.) My cursory understanding is that we will be able to have distinct ROAs for each site with only the prefixes assigned to that site, but I it would be great if someone could confirm that for me.\n Thanks in advance for any insight!\n    submitted by    /u/centristfringe  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/12ot14s/persite_asns_neededdesirable_multiple_multihomed/",
-          "publishedOn": "2023-04-16T23:20:09.000Z",
-          "wordCount": 2373,
-          "title": "Per-Site ASNs Needed/Desirable? (Multiple Multi-homed Sites Without Direct Connectivity to Each Other)",
           "imageUrl": null
         }
       ]
