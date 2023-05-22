@@ -22,163 +22,11 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-22 datetime="2023-05-22T12:19:58.000Z">2023-05-22</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-22 datetime="2023-05-22T12:19:58.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-22 datetime="2023-05-22T13:11:58.000Z">2023-05-22</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-22 datetime="2023-05-22T13:11:58.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13opbr3/vdsl_2_compatible_with_vdsl/"
-                        open
-                      >
-                        <summary class="article-expander__title">Vdsl 2 compatible with Vdsl?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13opbr3/vdsl_2_compatible_with_vdsl/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey, the merchant claimed the vdsl2 modem + router (D-Link n300) should work with my vdsl connection but doesn&#x27;t seem that way, does it not have backwards compatibility to normal vdsl? Tried reconfiguring it a few times since the isp technican literally said he doesn&#x27;t know much about this stuff when asked him about certain checkboxes relating to them and just tried to shove in their router for absurd price lol
-    submitted by    /u/ThatsAScam  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13op9tm/i_got_a_domain_with_a_dns_on_dnsexit_for_person/"
-                        open
-                      >
-                        <summary class="article-expander__title">I got a domain with a dns on dnsexit for person use, and connected it to Public ip when I tried pinging it while connectee to network I got a different public IP.when I tried out of network I got request timeout. I am a total noob when it comes to this stuff so I think my isp is blocking it somehow</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13op9tm/i_got_a_domain_with_a_dns_on_dnsexit_for_person/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I got a domain with a dns on dnsexit for person use, and connected it to Public ip when I tried pinging it while connectee to network I got a different public IP.when I tried out of network I got request timeout. I am a total noob when it comes to this stuff so I think my isp is blocking it somehow
-    submitted by    /u/Inevitable_gamer01  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13oombv/vpn_gateway_ufw_killswitch_port_forwarding/"
-                        open
-                      >
-                        <summary class="article-expander__title">VPN Gateway + UFW killswitch + port forwarding</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13oombv/vpn_gateway_ufw_killswitch_port_forwarding/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello! I&#x27;m trying to set up a VPN gateway (using LXD containers). I&#x27;m using ufw for killswitch service. Almost all is working except for port forwarding. &#x60;&#x60;&#x60;
-  ┌─────────────────────────┐ ┌────────────────────────────┐ │ SECOND CONTAINER │ │ OVPN CLIENT CONTAINER │ │ │ │ │ ┌─────────────┐ │ 192.168.1.3 │ LAN │ 192.168.1.2 │ VPN TUNNEL │ │ │ gw:192.168.1.2 eth0├────────────────────┤eth0 tun0 ├──────────────────┤ VPN NODE │ │ │ │ │ │ │ │ HTTP test server in │ │ │ └──┬──────────┘ │ 8107 port │ │ │ │ └─────────────────────────┘ └────────────────────────────┘ │ xxxxxxxxxxxx xxxx xxx xxx x xx INTERNET x xxx xxx xxxx xxxx xxxxx 
- &#x60;&#x60;&#x60;
- In my VPN gateway I have:
- ufw rules &#x60;&#x60;&#x60; 192.168.1.0/24 ALLOW Anywhere
- 192.168.1.0/24 ALLOW OUT Anywhere Anywhere ALLOW OUT Anywhere on tun0  1194/tcp ALLOW OUT Anywhere #vpn remote address &#x60;&#x60;&#x60;
- before.rules extract:  *nat :POSTROUTING ACCEPT [0:0] :PREROUTING ACCEPT [0:0] -A PREROUTING -i eth0 -p tcp --dport 8701 -j DNAT --to-destination 192.168.1.3 -A POSTROUTING -s 192.168.1.0/24 -o tun0 -j MASQUERADE COMMIT  I can access http://192.168.1.3:8701 directly, but I cannot access http://192.168.1.2:8107
- So, what am I doing wrong?
-    submitted by    /u/old-mike  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13olwpb/cisco_cct_cert/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cisco CCT Cert</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13olwpb/cisco_cct_cert/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi! 
- I am going to Cisco Live in Las Vegas and have signed up for the CCT (Cisco Certified Technician) exam.
- Have been working with networking for about 6 years and feel like I have a good knowledge in the field, but I guess there is still a lot of exam specific things I should look into before going. 
- Does anyone have recommendations to content that could be helpful for this?
-    submitted by    /u/yetipants  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13olier/beginners_question_on_crimping_tools/"
-                        open
-                      >
-                        <summary class="article-expander__title">Beginners question on crimping tools</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13olier/beginners_question_on_crimping_tools/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi guys. A few years ago I bought a crimping tool which worked great. I&#x27;m wanting to go through my cables now and replace with cat 6.
- So I bought the cable and some pass through connectors as I heard they were easier, None of the cables I made worked so I looked back at the advert for the tool and it says not compatible with cat 6, I&#x27;ve now read they are thicker with staggered connectors. Am I ok to carry on using the tool I have with cat 5e rj45 connectors but cat 6 cable as I don&#x27;t need the full 10gbs. I was just going to buy another crimping tool but most of the Amazon adverts say they are suitable for all sizes but how can they be if the Cat 6 ones are staggered 🤔 Thanks.
-    submitted by    /u/steveuk23  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13okzzu/where_can_i_learn_about_doubledip_radius/"
-                        open
-                      >
-                        <summary class="article-expander__title">Where can I learn about double-dip RADIUS?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13okzzu/where_can_i_learn_about_doubledip_radius/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;m struggling to find much information on this topic. Can anyone point me towards good resources on double-dip RADIUS for wholesale subscriber management.
- Thank you!
-    submitted by    /u/Ok_Language_5003  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -190,6 +38,204 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13oqjuz/windows_vlan_tagging_not_working_on_lenovo/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows vlan tagging not working on lenovo thunderbolt 4 workstation dock</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13oqjuz/windows_vlan_tagging_not_working_on_lenovo/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am trying to get vlan working on lenovo thunderbolt dock. It is connected to tagged port passing multiple vlan and native lan using unifi switch. When i connect my Lenovo laptop or Dell xps 13 laptop I am able to use ethernet port without any issues including other features of thunderbolt port but i get connected to native vlan.
+ When I go to windows and add vlan id to the network adapter, I do not get an ip assigned and it shows as unidentified network. If I had one laptop to use with the dock, I could have kept the port as untagged. I have the latest firmware on the dock along with drivers on both laptops.
+ Previously i was using USB c dock and was able to use the feature without any issue. Any idea what can be the issue? Hopefully its not the dock, contains realtek ethernet port.
+    submitted by    /u/kan84  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13oqere/0x80070490_element_not_found/"
+                        open
+                      >
+                        <summary class="article-expander__title">0x80070490 Element Not Found</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13oqere/0x80070490_element_not_found/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ We were having an issue with installing Feb 2023 .Net for Windows Server 2019 and also some Windows Server 2019 CU&#x27;s. Fixes that we found online included the below, none of which worked: 
+  
+Running sfc /scannow (never runs, always says a reboot is pending, even when we found a fix around this running sfc /scannow did nothing
+ Running various DISM commands that were recommended didnt&#x27;t get us anywhere
+ Tried extracting the update /cab files and installing them individually using DISM
+  
+My colleague found a fix which I am sharing here:
+  
+Take ownership of the following registry key then delete it:
+  
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\DriverOperations\0 2. Reboot the server - Sometimes the server will go through in percentages so let it be till it&#x27;s completed, it can take 5 or 10 minutes 3. Try installing .Net Framework again - Upon a reboot, Windows will indicate with a &quot;We couldn&#x27;t complete the updates&quot; message that it couldn&#x27;t install the update but it will continue installing it anyway 4. Install the latest CU - After a reboot it will be stuck on &quot;Working on updates: 100% Complete&quot; for 7- hours so leave the server to finish updating overnight
+    submitted by    /u/SCCMConfigMgrMECM  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13oqdi6/80090016_outlookteamsonedrive_error_after_mb/"
+                        open
+                      >
+                        <summary class="article-expander__title">80090016: Outlook/Teams/OneDrive Error after MB replacement</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13oqdi6/80090016_outlookteamsonedrive_error_after_mb/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi.
+ I have a c-level user who just had his XPS motherboard replaced (2nd time in 18 months). After logging in, his Outlook, Teams and OneDrive are not connecting. Error is https://i.imgur.com/2QxOJCr.png
+ The official Dell doc on this issues says to rename C:\users\\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy, then reboot. But this isn&#x27;t working. I have also renamed the other folder in that article, with no luck. 
+ I&#x27;ve done a lot of googling on this issue and most responses say renaming the AAD folder above and rebooting fixed the issue.
+ The TPM module is working according to powershell &quot;get-tpm&quot;. 
+ Anyone got any other tips to try? The last resort seems to be re-creating the user profile.
+    submitted by    /u/miyo360  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13oq94z/an_opensource_ticketing_system/"
+                        open
+                      >
+                        <summary class="article-expander__title">An open-source ticketing system</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13oq94z/an_opensource_ticketing_system/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>For our startup, we plan to provide technical support through some kind of ticketing system (necessarily free and open-source, since we are not planning to pay for Zendesk/Jira right now).
+ What options can you advise if on the client side we want to see a simple window with online chat, and on our side the system with tickets, some information about the client (mail, country, etc.). If there will even be some metrics and a way to measure them - great. In general, free and more or less working analogue of Zendesk/Jira for text messaging.
+ I&#x27;m thinking to do it via bot in Telegram, but I&#x27;m not sure if it will be convenient if there will be more than 100 clients.
+    submitted by    /u/xX_INGVAR_Xx  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13oq1oo/w11_22h2_uac_prompt_and_rdp_credentials_hang/"
+                        open
+                      >
+                        <summary class="article-expander__title">(W11 22H2) UAC Prompt and RDP Credentials hang after clicking OK then do nothing - Intermittently</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13oq1oo/w11_22h2_uac_prompt_and_rdp_credentials_hang/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve been having a really strange issue with UAC and RDP for quite a while now and wondered if anyone else had come across similar
+ Most of the time I&#x27;ll &#x27;Run as Administrator&#x27;, UAC prompt pops up, enter my admin credentials and no problems, same with RDP I&#x27;ll enter my credentials to login and connect in (not run as admin in that scenario, just a standard RDP process)
+ However every so often with no pattern I&#x27;ll open a UAC or RDP prompt, enter my credentials and click OK and they just completely freeze up, UAC will eventually quit out after 5-10 minutes without opening anything, if I try and interact with the RDP prompt it sometimes comes up with &#x27;Credential manager UI host is not responding&#x27;
+ If I simply restart my PC it all works fine for a bit again before breaking again hours/days/weeks later out of the blue
+ I&#x27;ve rebuilt my PC (I say PC, it&#x27;s actually a VM) several times from scratch and it always comes back to haunt me eventually, happened with various Windows 10 builds and now I&#x27;m on Windows 11 22H2 but still the same and I&#x27;ve checked I&#x27;m fully up to date with Windows Update
+ Does anyone have any ideas as it is starting to annoy me!
+    submitted by    /u/k6kaysix  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13opot2/icedid_macro_ends_in_nokoyawa_ransomware/"
+                        open
+                      >
+                        <summary class="article-expander__title">IcedID Macro Ends in Nokoyawa Ransomware</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13opot2/icedid_macro_ends_in_nokoyawa_ransomware/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Threat actors have moved to other means of initial access, such as ISO files combined with LNKs or OneNote payloads, but some appearances of VBA macro’s in Office documents can still be seen in use.
+ https://thedfirreport.com/2023/05/22/icedid-macro-ends-in-nokoyawa-ransomware/
+    submitted by    /u/TheDFIRReport  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13opgur/need_out_of_my_current_position_lost_all/"
+                        open
+                      >
+                        <summary class="article-expander__title">Need out of my current position, lost all motivation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13opgur/need_out_of_my_current_position_lost_all/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Backstory:
+ Previously I was a system engineer working in a devops environment, apart of sustainment and test team. I enjoyed this position because I was always learning something new, and the work was never stagnant. I ended up leaving to finish up my bachelor’s in a remote position.
+ Now having completed my bachelor’s, and even before then, I have lost all motivation in this role. The overall company environment isn’t completely horrible but it is severely lacking( the people are nice). Overall the lack of job motivation has also pushed into my self learning. In my previous role, I always had the urge to self learn to stay on top of the environment I was working on.
+ I feel like I’m stuck in this role. In the past few months I have had overall positive interviews but no bites. Usually because my clearance is still processing or lacked skill in one area leaving me has the “silver trophy winner”.
+ Tl;dr: Current role I lost all motivation, but feel like I’m stuck
+    submitted by    /u/Character-Goose4258  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13opd49/admin_rights/"
+                        open
+                      >
+                        <summary class="article-expander__title">Admin Rights</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13opd49/admin_rights/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Fellow It folk, what is common practice for a new admin on the network, are they granted full privileges on day one?
+    submitted by    /u/Macpilz  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -706,6 +752,179 @@ Updated May 17, 2023: Today we are starting rollout for Authenticator Lite (in O
   
 Authenticator Lite (in Outlook) is a feature that allows your users to complete multi-factor authentication for their work or school account using Outlook on their iOS or Android device. This feature will be enabled on June 9th for all tenants that have not disabled it. If you do not wish for this feature to be enabled on June 9th, move the state to ‘disabled’ or set user include and exclude groups prior to June 9th.
     submitted by    /u/rpodric  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13opv04/seeking_advice_ccie_enterprise_or_further/"
+                        open
+                      >
+                        <summary class="article-expander__title">Seeking Advice: CCIE Enterprise or Further Security Certifications?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13opv04/seeking_advice_ccie_enterprise_or_further/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello everyone,
+ I&#x27;m currently working in a dual role as a Network Security Engineer and Network Engineer, and I hold CCNP Enterprise (ENARSI), CCNP Security (SNCF), and CCSE - Checkpoint certifications. My daily work involves dealing with Checkpoint, ASA, FMC, as well as Cisco routers and switches. I come from a smaller country where complex routing needs seem to be dwindling as many networks are transitioning to firewall-focused designs, with exceptions for configurations like DMVPN.
+ Both network security and routing are areas that I am passionate about, but I&#x27;m at a crossroads in terms of my career progression. My daily tasks involve a lot of security-related work, but the routing experience I&#x27;m gaining is mainly limited to BGP. I&#x27;m continuously reading documentation, learning, and lab…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13opbr3/vdsl_2_compatible_with_vdsl/"
+                        open
+                      >
+                        <summary class="article-expander__title">Vdsl 2 compatible with Vdsl?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13opbr3/vdsl_2_compatible_with_vdsl/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey, the merchant claimed the vdsl2 modem + router (D-Link n300) should work with my vdsl connection but doesn&#x27;t seem that way, does it not have backwards compatibility to normal vdsl? Tried reconfiguring it a few times since the isp technican literally said he doesn&#x27;t know much about this stuff when asked him about certain checkboxes relating to them and just tried to shove in their router for absurd price lol
+    submitted by    /u/ThatsAScam  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13op9tm/i_got_a_domain_with_a_dns_on_dnsexit_for_person/"
+                        open
+                      >
+                        <summary class="article-expander__title">I got a domain with a dns on dnsexit for person use, and connected it to Public ip when I tried pinging it while connectee to network I got a different public IP.when I tried out of network I got request timeout. I am a total noob when it comes to this stuff so I think my isp is blocking it somehow</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13op9tm/i_got_a_domain_with_a_dns_on_dnsexit_for_person/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I got a domain with a dns on dnsexit for person use, and connected it to Public ip when I tried pinging it while connectee to network I got a different public IP.when I tried out of network I got request timeout. I am a total noob when it comes to this stuff so I think my isp is blocking it somehow
+    submitted by    /u/Inevitable_gamer01  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13oombv/vpn_gateway_ufw_killswitch_port_forwarding/"
+                        open
+                      >
+                        <summary class="article-expander__title">VPN Gateway + UFW killswitch + port forwarding</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13oombv/vpn_gateway_ufw_killswitch_port_forwarding/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello! I&#x27;m trying to set up a VPN gateway (using LXD containers). I&#x27;m using ufw for killswitch service. Almost all is working except for port forwarding. &#x60;&#x60;&#x60;
+  ┌─────────────────────────┐ ┌────────────────────────────┐ │ SECOND CONTAINER │ │ OVPN CLIENT CONTAINER │ │ │ │ │ ┌─────────────┐ │ 192.168.1.3 │ LAN │ 192.168.1.2 │ VPN TUNNEL │ │ │ gw:192.168.1.2 eth0├────────────────────┤eth0 tun0 ├──────────────────┤ VPN NODE │ │ │ │ │ │ │ │ HTTP test server in │ │ │ └──┬──────────┘ │ 8107 port │ │ │ │ └─────────────────────────┘ └────────────────────────────┘ │ xxxxxxxxxxxx xxxx xxx xxx x xx INTERNET x xxx xxx xxxx xxxx xxxxx 
+ &#x60;&#x60;&#x60;
+ In my VPN gateway I have:
+ ufw rules &#x60;&#x60;&#x60; 192.168.1.0/24 ALLOW Anywhere
+ 192.168.1.0/24 ALLOW OUT Anywhere Anywhere ALLOW OUT Anywhere on tun0  1194/tcp ALLOW OUT Anywhere #vpn remote address &#x60;&#x60;&#x60;
+ before.rules extract:  *nat :POSTROUTING ACCEPT [0:0] :PREROUTING ACCEPT [0:0] -A PREROUTING -i eth0 -p tcp --dport 8701 -j DNAT --to-destination 192.168.1.3 -A POSTROUTING -s 192.168.1.0/24 -o tun0 -j MASQUERADE COMMIT  I can access http://192.168.1.3:8701 directly, but I cannot access http://192.168.1.2:8107
+ So, what am I doing wrong?
+    submitted by    /u/old-mike  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13olwpb/cisco_cct_cert/"
+                        open
+                      >
+                        <summary class="article-expander__title">Cisco CCT Cert</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13olwpb/cisco_cct_cert/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi! 
+ I am going to Cisco Live in Las Vegas and have signed up for the CCT (Cisco Certified Technician) exam.
+ Have been working with networking for about 6 years and feel like I have a good knowledge in the field, but I guess there is still a lot of exam specific things I should look into before going. 
+ Does anyone have recommendations to content that could be helpful for this?
+    submitted by    /u/yetipants  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13olier/beginners_question_on_crimping_tools/"
+                        open
+                      >
+                        <summary class="article-expander__title">Beginners question on crimping tools</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13olier/beginners_question_on_crimping_tools/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi guys. A few years ago I bought a crimping tool which worked great. I&#x27;m wanting to go through my cables now and replace with cat 6.
+ So I bought the cable and some pass through connectors as I heard they were easier, None of the cables I made worked so I looked back at the advert for the tool and it says not compatible with cat 6, I&#x27;ve now read they are thicker with staggered connectors. Am I ok to carry on using the tool I have with cat 5e rj45 connectors but cat 6 cable as I don&#x27;t need the full 10gbs. I was just going to buy another crimping tool but most of the Amazon adverts say they are suitable for all sizes but how can they be if the Cat 6 ones are staggered 🤔 Thanks.
+    submitted by    /u/steveuk23  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13okzzu/where_can_i_learn_about_doubledip_radius/"
+                        open
+                      >
+                        <summary class="article-expander__title">Where can I learn about double-dip RADIUS?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13okzzu/where_can_i_learn_about_doubledip_radius/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m struggling to find much information on this topic. Can anyone point me towards good resources on double-dip RADIUS for wholesale subscriber management.
+ Thank you!
+    submitted by    /u/Ok_Language_5003  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -44175,29 +44394,6 @@ Birch Gold: No-Cost, No-Obligation FREE Information Kit Text “WIRE&quot;&quot;
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/12vp862/software_that_you_love_andor_makes_your_job_easier/"
-                        open
-                      >
-                        <summary class="article-expander__title">Software that you love and/or makes your job easier</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/12vp862/software_that_you_love_andor_makes_your_job_easier/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>List&#x27;em! 
- I don&#x27;t get to or have to do it much anymore but I enjoy watching Spacesniffer scan drives that are full. Cleaning them up and scanning again. 
- Endpoint Central (previously Desktop Central) system patching is relaxing once the patches are verified not to crash everything.
-    submitted by    /u/juitar  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -44205,8 +44401,8 @@ Birch Gold: No-Cost, No-Obligation FREE Information Kit Text “WIRE&quot;&quot;
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5045692689">
-        <time id="build-timestamp" datetime="2023-05-22T12:21:16.163Z">2023-05-22T12:21:16.163Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5046250557">
+        <time id="build-timestamp" datetime="2023-05-22T13:13:57.232Z">2023-05-22T13:13:57.232Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

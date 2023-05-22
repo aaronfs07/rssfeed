@@ -2,10 +2,148 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-05-22T12:21:16.255Z</updated>
+    <updated>2023-05-22T13:13:57.318Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Windows vlan tagging not working on lenovo thunderbolt 4 workstation dock]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13oqjuz/windows_vlan_tagging_not_working_on_lenovo/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13oqjuz/windows_vlan_tagging_not_working_on_lenovo/"/>
+        <updated>2023-05-22T13:11:58.000Z</updated>
+        <summary type="html"><![CDATA[I am trying to get vlan working on lenovo thunderbolt dock. It is connected to tagged port passing multiple vlan and native lan using unifi switch. When i connect my Lenovo laptop or Dell xps 13 laptop I am able to use ethernet port without any issues including other features of thunderbolt port but i get connected to native vlan.
+ When I go to windows and add vlan id to the network adapter, I do not get an ip assigned and it shows as unidentified network. If I had one laptop to use with the dock, I could have kept the port as untagged. I have the latest firmware on the dock along with drivers on both laptops.
+ Previously i was using USB c dock and was able to use the feature without any issue. Any idea what can be the issue? Hopefully its not the dock, contains realtek ethernet port.
+    submitted by    /u/kan84  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[0x80070490 Element Not Found]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13oqere/0x80070490_element_not_found/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13oqere/0x80070490_element_not_found/"/>
+        <updated>2023-05-22T13:06:11.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ We were having an issue with installing Feb 2023 .Net for Windows Server 2019 and also some Windows Server 2019 CU's. Fixes that we found online included the below, none of which worked: 
+  
+Running sfc /scannow (never runs, always says a reboot is pending, even when we found a fix around this running sfc /scannow did nothing
+ Running various DISM commands that were recommended didnt't get us anywhere
+ Tried extracting the update /cab files and installing them individually using DISM
+  
+My colleague found a fix which I am sharing here:
+  
+Take ownership of the following registry key then delete it:
+  
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\DriverOperations\0 2. Reboot the server - Sometimes the server will go through in percentages so let it be till it's completed, it can take 5 or 10 minutes 3. Try installing .Net Framework again - Upon a reboot, Windows will indicate with a "We couldn't complete the updates" message that it couldn't install the update but it will continue installing it anyway 4. Install the latest CU - After a reboot it will be stuck on "Working on updates: 100% Complete" for 7- hours so leave the server to finish updating overnight
+    submitted by    /u/SCCMConfigMgrMECM  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[80090016: Outlook/Teams/OneDrive Error after MB replacement]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13oqdi6/80090016_outlookteamsonedrive_error_after_mb/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13oqdi6/80090016_outlookteamsonedrive_error_after_mb/"/>
+        <updated>2023-05-22T13:04:42.000Z</updated>
+        <summary type="html"><![CDATA[Hi.
+ I have a c-level user who just had his XPS motherboard replaced (2nd time in 18 months). After logging in, his Outlook, Teams and OneDrive are not connecting. Error is https://i.imgur.com/2QxOJCr.png
+ The official Dell doc on this issues says to rename C:\users\<userdir>\AppData\Local\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy, then reboot. But this isn't working. I have also renamed the other folder in that article, with no luck. 
+ I've done a lot of googling on this issue and most responses say renaming the AAD folder above and rebooting fixed the issue.
+ The TPM module is working according to powershell "get-tpm". 
+ Anyone got any other tips to try? The last resort seems to be re-creating the user profile.
+    submitted by    /u/miyo360  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[An open-source ticketing system]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13oq94z/an_opensource_ticketing_system/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13oq94z/an_opensource_ticketing_system/"/>
+        <updated>2023-05-22T13:00:10.000Z</updated>
+        <summary type="html"><![CDATA[For our startup, we plan to provide technical support through some kind of ticketing system (necessarily free and open-source, since we are not planning to pay for Zendesk/Jira right now).
+ What options can you advise if on the client side we want to see a simple window with online chat, and on our side the system with tickets, some information about the client (mail, country, etc.). If there will even be some metrics and a way to measure them - great. In general, free and more or less working analogue of Zendesk/Jira for text messaging.
+ I'm thinking to do it via bot in Telegram, but I'm not sure if it will be convenient if there will be more than 100 clients.
+    submitted by    /u/xX_INGVAR_Xx  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[(W11 22H2) UAC Prompt and RDP Credentials hang after clicking OK then do nothing - Intermittently]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13oq1oo/w11_22h2_uac_prompt_and_rdp_credentials_hang/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13oq1oo/w11_22h2_uac_prompt_and_rdp_credentials_hang/"/>
+        <updated>2023-05-22T12:51:06.000Z</updated>
+        <summary type="html"><![CDATA[I've been having a really strange issue with UAC and RDP for quite a while now and wondered if anyone else had come across similar
+ Most of the time I'll 'Run as Administrator', UAC prompt pops up, enter my admin credentials and no problems, same with RDP I'll enter my credentials to login and connect in (not run as admin in that scenario, just a standard RDP process)
+ However every so often with no pattern I'll open a UAC or RDP prompt, enter my credentials and click OK and they just completely freeze up, UAC will eventually quit out after 5-10 minutes without opening anything, if I try and interact with the RDP prompt it sometimes comes up with 'Credential manager UI host is not responding'
+ If I simply restart my PC it all works fine for a bit again before breaking again hours/days/weeks later out of the blue
+ I've rebuilt my PC (I say PC, it's actually a VM) several times from scratch and it always comes back to haunt me eventually, happened with various Windows 10 builds and now I'm on Windows 11 22H2 but still the same and I've checked I'm fully up to date with Windows Update
+ Does anyone have any ideas as it is starting to annoy me!
+    submitted by    /u/k6kaysix  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Seeking Advice: CCIE Enterprise or Further Security Certifications?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/13opv04/seeking_advice_ccie_enterprise_or_further/</id>
+        <link href="https://www.reddit.com/r/networking/comments/13opv04/seeking_advice_ccie_enterprise_or_further/"/>
+        <updated>2023-05-22T12:42:51.000Z</updated>
+        <summary type="html"><![CDATA[Hello everyone,
+ I'm currently working in a dual role as a Network Security Engineer and Network Engineer, and I hold CCNP Enterprise (ENARSI), CCNP Security (SNCF), and CCSE - Checkpoint certifications. My daily work involves dealing with Checkpoint, ASA, FMC, as well as Cisco routers and switches. I come from a smaller country where complex routing needs seem to be dwindling as many networks are transitioning to firewall-focused designs, with exceptions for configurations like DMVPN.
+ Both network security and routing are areas that I am passionate about, but I'm at a crossroads in terms of my career progression. My daily tasks involve a lot of security-related work, but the routing experience I'm gaining is mainly limited to BGP. I'm continuously reading documentation, learning, and lab…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IcedID Macro Ends in Nokoyawa Ransomware]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13opot2/icedid_macro_ends_in_nokoyawa_ransomware/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13opot2/icedid_macro_ends_in_nokoyawa_ransomware/"/>
+        <updated>2023-05-22T12:35:17.000Z</updated>
+        <summary type="html"><![CDATA[Threat actors have moved to other means of initial access, such as ISO files combined with LNKs or OneNote payloads, but some appearances of VBA macro’s in Office documents can still be seen in use.
+ https://thedfirreport.com/2023/05/22/icedid-macro-ends-in-nokoyawa-ransomware/
+    submitted by    /u/TheDFIRReport  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Need out of my current position, lost all motivation]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13opgur/need_out_of_my_current_position_lost_all/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13opgur/need_out_of_my_current_position_lost_all/"/>
+        <updated>2023-05-22T12:25:53.000Z</updated>
+        <summary type="html"><![CDATA[Backstory:
+ Previously I was a system engineer working in a devops environment, apart of sustainment and test team. I enjoyed this position because I was always learning something new, and the work was never stagnant. I ended up leaving to finish up my bachelor’s in a remote position.
+ Now having completed my bachelor’s, and even before then, I have lost all motivation in this role. The overall company environment isn’t completely horrible but it is severely lacking( the people are nice). Overall the lack of job motivation has also pushed into my self learning. In my previous role, I always had the urge to self learn to stay on top of the environment I was working on.
+ I feel like I’m stuck in this role. In the past few months I have had overall positive interviews but no bites. Usually because my clearance is still processing or lacked skill in one area leaving me has the “silver trophy winner”.
+ Tl;dr: Current role I lost all motivation, but feel like I’m stuck
+    submitted by    /u/Character-Goose4258  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Admin Rights]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13opd49/admin_rights/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13opd49/admin_rights/"/>
+        <updated>2023-05-22T12:21:27.000Z</updated>
+        <summary type="html"><![CDATA[Fellow It folk, what is common practice for a new admin on the network, are they granted full privileges on day one?
+    submitted by    /u/Macpilz  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vdsl 2 compatible with Vdsl?]]></title>
         <id>https://www.reddit.com/r/networking/comments/13opbr3/vdsl_2_compatible_with_vdsl/</id>
@@ -26530,20 +26668,6 @@ Birch Gold: No-Cost, No-Obligation FREE Information Kit Text “WIRE"" to 989898
  So I’m hoping someone here maybe has a copy of it somewhere. Any ideas? 
  Thanks in advance.
     submitted by    /u/argus25  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Software that you love and/or makes your job easier]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/12vp862/software_that_you_love_andor_makes_your_job_easier/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/12vp862/software_that_you_love_andor_makes_your_job_easier/"/>
-        <updated>2023-04-23T00:32:00.000Z</updated>
-        <summary type="html"><![CDATA[List'em! 
- I don't get to or have to do it much anymore but I enjoy watching Spacesniffer scan drives that are full. Cleaning them up and scanning again. 
- Endpoint Central (previously Desktop Central) system patching is relaxing once the patches are verified not to crash everything.
-    submitted by    /u/juitar  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
