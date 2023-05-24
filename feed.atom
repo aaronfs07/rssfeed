@@ -2,10 +2,81 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-05-24T10:12:01.853Z</updated>
+    <updated>2023-05-24T11:09:30.639Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Gravityzone "scan email archives"]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13qhuy5/gravityzone_scan_email_archives/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13qhuy5/gravityzone_scan_email_archives/"/>
+        <updated>2023-05-24T10:37:44.000Z</updated>
+        <summary type="html"><![CDATA[Hi there,
+ We've been using Gravityzone endpoint for the past month now. A common alert we see on reports are PST trojan alerts. The trouble is it occasionally deletes the users entire PST file, and of course most don't know how to check their quarantine despite being shown how to many times...
+ Is it worth turning off scanning of email archives? I only use webmail myself, and most of the spam filtering should be done by Google first before arriving in Outlook, so I doubt this is a feature our users will need.
+    submitted by    /u/SlickRazer  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PowerShell Script for Automating Intune Enrollment of Azure-joined Devices]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13qhtwe/powershell_script_for_automating_intune/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13qhtwe/powershell_script_for_automating_intune/"/>
+        <updated>2023-05-24T10:36:11.000Z</updated>
+        <summary type="html"><![CDATA[Hey all,
+ If you're managing a large number of Azure-joined devices, you're probably well aware that manually enrolling each one into Intune can be quite time-consuming. To streamline this process, I've put together a PowerShell script that automates it.
+ Here's an overview of the script's functions:
+ Creates an MDM Key: The script generates an MDM key if it doesn't already exist.
+ Enables Automatic MDM Enrollment: It sets up automatic MDM enrollment using Azure AD credentials.
+ Generates Necessary Registry Keys: These keys are essential for the enrollment process.
+ Initiates Group Policy Update: It forces a group policy update using the gpupdate /force command.
+ Defines Enrollment URLs: The script assigns the required MDM enrollment URLs.
+ Automates Device Enrollment: It calls upon deviceenroller.exe to automatically enroll the device in MDM.
+ You can find the full script here: https://github.com/fKryptek/Intune/blob/main/EnrollToIntune.ps1
+ As with any script you find online, I highly recommend reviewing it, tailoring it to your needs, and testing it within a controlled environment before deploying it on a larger scale.
+ I'm interested in hearing about your experiences with the script, as well as any modifications or improvements you might suggest. If you encounter any problems or have questions, please let me know.
+ Looking forward to your feedback.
+ If you'd like to buy me a coffee for my efforts : https://www.buymeacoffee.com/bobbyhalford
+ P.S.: Keep in mind, the effectiveness of this script may vary based on your Azure AD and Intune setup. Always customize and test in your own environment.
+    submitted by    /u/kryptekgfx  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Exchange Hybrid Computer Object SELF permissions issue with Microsoft Defender for Endpoint Enrollment]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13qhrfu/exchange_hybrid_computer_object_self_permissions/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13qhrfu/exchange_hybrid_computer_object_self_permissions/"/>
+        <updated>2023-05-24T10:32:10.000Z</updated>
+        <summary type="html"><![CDATA[Hi all, I have a weird issue, it seems some patch CU or other mitigation for Exchange 2016 has made a change to the SELF security on its computer object in Active Directory.
+ The issue we have is SELF does not have rights to read or “write to personal information “ Which stops the correct enrolment of MDE as it needs to write a certificate to the personal store on the server. 
+ Anyone else have this issue or would mind checking perms on their computer account object see if the default view has more than “change password” and “special”
+ I want to change the perms but don’t want to bork the server. 
+ My lab server has has normal permissions to SELF such as “Create All Child Objects” “Delete all child objects” “validate write to DNS host name” “read personal information “ “write personal information” “special”
+ Any help would be greatly appreciated.
+ Thanks.
+    submitted by    /u/Murphy1138  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cisco IOS-XR interface naming conventions]]></title>
+        <id>https://www.reddit.com/r/networking/comments/13qhow1/cisco_iosxr_interface_naming_conventions/</id>
+        <link href="https://www.reddit.com/r/networking/comments/13qhow1/cisco_iosxr_interface_naming_conventions/"/>
+        <updated>2023-05-24T10:28:22.000Z</updated>
+        <summary type="html"><![CDATA[I am trying to make sense of the interface names on a Cisco routers. For example if the interface name is Gi0/0/0/1, is the naming convention rack/slot/module/port? Or this again changes based on the router model.
+ PS: I tried searching this on Google but since I have no idea what I am searching for I do not trust those results.
+    submitted by    /u/lordFourthHokage  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[What is wrong with Google Admin Toolbox Check MX?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/13qhdv7/what_is_wrong_with_google_admin_toolbox_check_mx/</id>
@@ -27675,38 +27746,6 @@ All of these "fixes" work when the kiosk account normally but stops working when
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why choose Sysprep Audit mode?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/12xzk7n/why_choose_sysprep_audit_mode/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/12xzk7n/why_choose_sysprep_audit_mode/"/>
-        <updated>2023-04-24T22:51:10.000Z</updated>
-        <summary type="html"><![CDATA[Hey guys. I’m knees deep in a cloning project for 17 laptops using Clonezilla and I’m wondering why you would use Sysprep in audit mode. 
- In my case- all my laptops that are getting imaged are all the same model. 
- After I’m done building my reference image, I plan on Sysprepping with /oobe/generalize and shutdown options. (I’ll also make sure I delete the user I’ve been using to install everything and create a new “offline account” to run sysprep so as not to trigger the Windows Store from interfering with Sysprep. Before reboot I’ll clone. 
- Let’s say after I sysprep, I realize I forgot a piece of software, or want to tweak a setting. 
- Wouldn’t it be just as easy to boot into the oobe, make any changes and sysprep again rather than going into Audit mode? You can sysprep the same image 1001 times now. Perhaps Audit mode was a better option when sysprep was limited to 3 times?
- Looking for an easy explanation of why/when to use Audit mode in sysprep. 
- Thanks guys!
- Edit to ask another question:
- Can you unbox a new laptop with an OEM image of Windows 10 , customize then sysprep it? Or do you need to install a Volume Lic version of your own on the new laptop? I have a MAK license.
-    submitted by    /u/javajo91  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[UPS recommendation]]></title>
-        <id>https://www.reddit.com/r/networking/comments/12xyire/ups_recommendation/</id>
-        <link href="https://www.reddit.com/r/networking/comments/12xyire/ups_recommendation/"/>
-        <updated>2023-04-24T22:14:03.000Z</updated>
-        <summary type="html"><![CDATA[Currently we had a unit that went bad on us swollen batteries and found moisture looking into an alternative due to quite a backorder of these unites. Current unit SMART5000XFMRXL willing to switch from Tripp-lite looked into some of the APCs but would love to hear from folks here!
-    submitted by    /u/rootj0  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
