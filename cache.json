@@ -290,6 +290,56 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13remeu/weird_edge_auto_sign_in_issue_mdt_vs_autopilot/",
+          "author": null,
+          "description": "Hi All\n We have come across this weird issue auto signing into Edge default profile . Currently we deploy devices using on premise MDT. When a device joins the domain, it checks in with Group Policy and applies the following user GPs\n • Force users to sign-in to use the browser\n • Configure whether a user always has a default profile automatically signed in with their work or school account\n • Force synchronization of browser data and do not show the sync consent prompt\n • Hide the First-run experience and splash screen\n This works great and Edge signs in perfectly. \n We are 99% setup now with Intune – albeit hybrid – I know the consensus on this is not ideal, but we have it working perfectly with AOVPN and bar a few hacky things, its works reliably. The same GPs are in play, Same OUs and …",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13remeu/weird_edge_auto_sign_in_issue_mdt_vs_autopilot/",
+          "publishedOn": "2023-05-25T11:00:16.000Z",
+          "wordCount": 2752,
+          "title": "Weird Edge auto sign in issue - MDT vs Autopilot",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13reljf/ping_times_between_australia_and_new_york/",
+          "author": null,
+          "description": "This might seem very odd. But my isp is telling me that a ping of 240ms+ (some times up to 320) between servers here (Melbourne Australia) and servers in New York (Ithica) is \"normal\" the time jump when doing a trace rout from NY only jumps from like 12ms to 240ms when it hits the backbone routers in Indonesia before like 4 more hops to our servers here. \n Does this in fact seem \"normal\" ... or am I loosing my brain ? Having issues with apps timing out because of this... ISP is trying to tell me that sort of ping time is \"normal\" .. Ill shut up if it is.. just means I'm going to have to do a deep dive to fig out why things are now timing out between these two points when they have been running fine for years...\n    submitted by    /u/tempestkitty  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13reljf/ping_times_between_australia_and_new_york/",
+          "publishedOn": "2023-05-25T10:59:08.000Z",
+          "wordCount": 2375,
+          "title": "Ping times between Australia and New York",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13re9fg/unable_to_renew_m_teams_exploratory_license_from/",
+          "author": null,
+          "description": "so we got a few (I think 10) Teams licenses as part of our Legacy Silver partnership with M$ in 2021 and they expired this week. I understand that now if we want to continue to use it, we need to purchase the license, this is fine. But it looks like this type of license cannot be renewed for the same email address, it requires me to create new profile and my past conversations/history get (apparently) lost. Ever happened to any of you? What am I doing wrong?\n Is there a way to download conversation history from Teams if my license expired?\n    submitted by    /u/Wrzos17  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13re9fg/unable_to_renew_m_teams_exploratory_license_from/",
+          "publishedOn": "2023-05-25T10:41:30.000Z",
+          "wordCount": 2340,
+          "title": "Unable to renew M$ Teams Exploratory license from Legacy Silver benefits of M$ partnership",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13rdund/smb_network_design_dual_wanrouter/",
+          "author": null,
+          "description": "SMB with 2 ISPs currently for redundancy and throughput (Xfinity and ATT Fiber) 1gig/1gig and 1gig/35mbps.\n Currently have a garbage Peplink Balance 20. Maxes at 150-200mbps throughput and really HIGH latency.\n Have about 15-20 users concurrently (up to 100 devices), all network traffic is mainly CRM/ERP software which is all web based and 15 or so VOIP Phones.\n Debating between Netsense, Fortinet, Cisco, etc. Want DUAL WAN capability with load balancing.\n Fortinet 60f or 80F is what I've been leaning more towards. What are you thoughts? Price is a main concern for owners, but quality is most important in terms of up time. This will be self administered and i'm a techy guy but we're not doing anything fancy on the network.\n Just lots of traffic of all kinds, nothing huge data file wise, just mainly lost of secure web traffic for our cloud hosted CRM/ERP/ETC.\n Will need to add about 4-6 Wireless AP's throughout the building so also something that has a Wireless AP solution would be great.\n    submitted by    /u/Flashy-Economics2290  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13rdund/smb_network_design_dual_wanrouter/",
+          "publishedOn": "2023-05-25T10:19:42.000Z",
+          "wordCount": 2400,
+          "title": "SMB Network Design - DUAL WAN/ROUTER",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13rdt40/hyperv_failovercluster_live_migration_only/",
+          "author": null,
+          "description": "Hey guys\n I have a strange behavior with a system I added to my Windows Server Hyper-V Failover Cluster in Server 2022.\n The servers have nearly the same configuration - the CPUs are a Intel Xeon Gold and Intel Xeon Silver:\n Cluster with Server 1 and Server 2 (the new Server).\n Behavior not working:\n  \nVM is on Server1 and I want to Live Migrate to Server 2\n not working, because of \"processor specific features\" - but the CPU compatibility mode from the VM is activated\n  \nBehavior working:\n  \nIf I shutdown the VM and do a fast failover from Server 1 to Server 2 it's working and I can start and work with the VM\n \nIf I do then a failover from Server 2 to Server 1 it's working\n \nA switch back from Server 1 to Server 2 is working as well\n \nWhen the VM is on Server 2 I can restart and shutdown the VM and after starting again I'm able to live migrate to Server 1\n \n At this point it's not working anymore:\n  \nWhen I shutdown or restart the VM on Server 1, I'm not able to do a failover to Server 2 (see behavior not working - processor specific features)\n  \nServer1 and Server2 have the same Hyper-V Manager settings and I already tried with a new, from scratch, installed Windows VM.\n Where is the difference? Why is the normal failover working as long as the machine is moved in shutdown state and failovered while it's running until it's shutdown/restart on a different server (Server 1).\n I found something about Bios/Driver differences but since both servers are not equal, I have differences.\n Greetz Ovrld\n    submitted by    /u/47kOverlord  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13rdt40/hyperv_failovercluster_live_migration_only/",
+          "publishedOn": "2023-05-25T10:17:18.000Z",
+          "wordCount": 2518,
+          "title": "Hyperv Failovercluster Live Migration only possible after I fast moved in shutdown state until I shutdown the system",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/13rdmy2/layer_2_vs_layer_3_switches/",
           "author": null,
           "description": "If i want to configure inter vlan Routing, do i need a layer 3 Switch? Or can i also use a Router and a layer 2 Switch?\n    submitted by    /u/reddit0r_9  \n [link]   [comments]",
@@ -13523,6 +13573,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/13rem9l/ethersam_frame_loss_rate_question/",
+          "author": null,
+          "description": "The Frame Loss Rate for EtherSAM testing (EXFO FTB1 880V2 Netblazer) is expressed as, for example, 1.0E-03. Which by my maths is 0.001. But what? is it a percentage? Is it that many errors per second. We just do it as pass/fail but it would be nice to know what it relates too. Appreciate your help.\n    submitted by    /u/uselesstosser  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/13rem9l/ethersam_frame_loss_rate_question/",
+          "publishedOn": "2023-05-25T11:00:06.000Z",
+          "wordCount": 2298,
+          "title": "EtherSAM Frame Loss Rate question",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/13rdx3b/dual_wan_router/",
+          "author": null,
+          "description": "Looking to replace a Peplink Balance 20 for a company that has 2 1gig/1gig ISP connections. Have 15-20 users concurrently and most webtraffic is secure CRM/ERP cloud site access offsite.\n What would be the bet enterprise grade Dual WAN Routers that are easy to administer and don't have all the fancy functions? We have very basic network and security needs, and really don't store any data onsite. Everything is in Vendor Cloud's.\n Will also need to deploy wireless AP's so something that talks to eachother for setup and administration would be great.\n Price sensitive. Would be deploying 4-6 AP's throughout the building, indoors.\n    submitted by    /u/Flashy-Economics2290  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/13rdx3b/dual_wan_router/",
+          "publishedOn": "2023-05-25T10:23:16.000Z",
+          "wordCount": 2343,
+          "title": "DUAL WAN Router",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/13rdohf/ethernetserial_to_fiber_optic_converter/",
           "author": null,
