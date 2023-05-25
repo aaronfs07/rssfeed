@@ -86,6 +86,16 @@
       "siteUrl": "https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ",
       "articles": [
         {
+          "id": "https://www.youtube.com/watch?v=MKXenl6lATc",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=MKXenl6lATc",
+          "publishedOn": "2023-05-25T12:17:42.000Z",
+          "wordCount": null,
+          "title": "VLOG Thursday 332: MSPGeekCON debrief, pfsense, Tech Talk, and Live Q&A",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.youtube.com/watch?v=gAcDOuXyCDA",
           "author": null,
           "description": "",
@@ -289,6 +299,36 @@
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13rgxbr/its_a_problem_with_your_network_no_it_isnt/",
+          "author": null,
+          "description": "I don't think our network is infallible. Once in a while, sure, it's something on our network! But I've been spending a ridiculous amount of time lately trying to prove to third party support that various issues are not \"network problems\". It's their default go-to and it's pissing me off.\n These are examples that have taken a ridiculous amount of my time over just the past month:\n  \nNew POS system at a remote location, network blamed for equipment going down for several days. Turns out to be a licensing renewal issue on their end. No apologies for their mistake. It ended up happening AGAIN at another location later.\n MDM system stops allowing certain IT staff to enroll mobile devices properly. \"Must be something you did on your end\" - ends up being a change they made on their end.\n SSO for a third-party app stops working randomly one night - \"Must be a network issue on your end\" - spend hours trying to troubleshoot and nothing our end changed, turns out to be a bad coding change on their end.\n Outlook add-in for large CRM stops working for certain employees, but not others. \"It's your Outlook version\" - prove that it isn't by having a user with access to all orgs try all in the same instance of Outlook. This is still a pending issue and can't get them to accept responsibility.\n  \nI know I'm preaching to the choir here but I'm so sick of it. Wasting all kinds of time trying to prove to first level support dumbasses that read scripts all day to let me talk to someone who knows what the hell they're talking about. Even escalating just leads to more dumbasses that won't accept responsibility for issues.\n    submitted by    /u/Jaymesned  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13rgxbr/its_a_problem_with_your_network_no_it_isnt/",
+          "publishedOn": "2023-05-25T12:49:34.000Z",
+          "wordCount": 2526,
+          "title": "\"It's a problem with your network\" - NO, IT ISN'T!",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13rgw5g/pdf_and_email_security_issue/",
+          "author": null,
+          "description": "We have Adobe Reader on most of our systems because one of the main applications that we use here requires it. The only problem is the company that makes the software wants us to run very old versions of Adobe Reader because of compatibility with their product. I don't know if it's laziness on their end but not being able to update our PDF software is a risk on our end. I know the normal response is usually get another vendor, but trust me when I tell you this is not an option.\n I'm worried about PDF attachments that come through email. I am really at a loss how to handle this. Keep AR at older versions but protect against email attachments. Just saying it makes me feel stupid. I know the answer is \"you want to keep a vulnerable version of AR but you want to security as well?\" I hear you. I'm just looking for possible solutions right now. How would you guys handle this email issue? Thanks.\n    submitted by    /u/notta_3d  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13rgw5g/pdf_and_email_security_issue/",
+          "publishedOn": "2023-05-25T12:48:08.000Z",
+          "wordCount": 2400,
+          "title": "PDF and Email Security Issue",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13rgjc9/why_do_we_have_to_use_private_pki_for_smime/",
+          "author": null,
+          "description": "I'm not a cryptography expert, nor am I a sysadmin. But I'm playing around with PKI (mostly mostly client auth/sign), but I think a relatable example that most sysadmins will get is PKI use for S/MIME.\n Yes, you can pay $50/email address to some certificate authority, but many will also roll out their own PKI. It all depends on the use case of course, do you just need non-repudiation for internal use, or do you want outside recipients to verify emails.\n But it's 2023. Let's Encrypt lets you get DV certificates for free, but those certificates only support TLS server/client authentication EKUs.\n Why can't we have free validated S/MIME certificates (and other types of certificates)?\n Why can't we have our own CA for a domain, and have our \"local root\" signed by a \"real\" CA just like any other intermediate CA, so we can generate our own certificates that work on our own domains? Servers would need to also serve intermediate certificates that are under our control so the chain can be fully built since those links are missing in browser/computer root stores, but that's just a few extra bytes.\n    submitted by    /u/zachlab  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13rgjc9/why_do_we_have_to_use_private_pki_for_smime/",
+          "publishedOn": "2023-05-25T12:31:51.000Z",
+          "wordCount": 2425,
+          "title": "Why do we have to use private PKI for S/MIME?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/13rg4ob/how_do_i_detect_if_a_process_has_been_idle_for_15/",
           "author": null,
@@ -13623,6 +13663,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/13rh5c9/really_specific_question/",
+          "author": null,
+          "description": "So there are two buildings. Instead of paying for internet for both buildings we use a wireless bridge from one building to the other. I need to access a HA server I have setup down there. So the way it is all set up is:\n ISP > Eero Mesh Network > Wireless Bridge\n  \nAnother Eero Mesh Network > HA server.\n  \nDo you have any suggestions on how to access the the HA server from the first Eero network? The wireless bridge doesn't seem to share the LAN or have any port forwarding options in the web interface.\n    submitted by    /u/Commercial-Ad7729  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/13rh5c9/really_specific_question/",
+          "publishedOn": "2023-05-25T12:59:40.000Z",
+          "wordCount": 2337,
+          "title": "Really specific question…",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/13rg6e6/is_lacp_mlag_lacp_supposed_to_have_seconds_of/",
           "author": null,
