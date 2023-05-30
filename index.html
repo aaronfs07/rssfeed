@@ -22,11 +22,168 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-30 datetime="2023-05-30T13:14:01.000Z">2023-05-30</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-30 datetime="2023-05-30T13:14:01.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-30 datetime="2023-05-30T14:08:52.000Z">2023-05-30</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-30 datetime="2023-05-30T14:08:52.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vrcmc/dell_os10_dhcp_snooping/"
+                        open
+                      >
+                        <summary class="article-expander__title">Dell OS10 DHCP snooping</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vrcmc/dell_os10_dhcp_snooping/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, has anyone had any experience with getting DHCP snooping working on Dell OS10?
+ I have a pair of S5232F-ON running OS10 10.5.5.3 configured as a VLT pair.
+ The manual is pretty vague on DHCP snooping - it says all you have to do is configure &quot;ip dhcp snooping trust&quot; on the uplink that faces the DHCP server, and then enable &quot;ip dhcp snooping&quot; globally. I&#x27;ve tried this, and as soon as I turn on DHCP snooping globally, attached systems can&#x27;t get DHCP any more. As soon as I turn off snooping, DHCP works again.
+ Support say that as no bugs have been reported with DHCP snooping, it must be that I&#x27;ve misconfigured the switch. This is entirely possible but not very helpful!
+ If anyone knows how to make it work for sure, I&#x27;d be very interested.
+ Thanks!
+    submitted by    /u/eidercollider  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vqh05/having_trouble_with_an_iptables_dnat_policy_due/"
+                        open
+                      >
+                        <summary class="article-expander__title">Having trouble with an iptables DNAT policy due to bridged connection</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vqh05/having_trouble_with_an_iptables_dnat_policy_due/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Background: I&#x27;m running Proxmox with one physical interface, eno1, and two virtual interfaces, vmbr0 and vmbr1. vmbr0 is bridged to eno1 for a few VMs/containers to sit directly on my LAN. vmbr1 is a private Proxmox LAN and is NAT&#x27;d through vmbr0 to access the internet. I have a web server on 10.1.0.5:443 and have a DNAT rule in iptables to achieve port forwarding:
+ iptables -t nat -A PREROUTING -i vmbr0 -p tcp -m tcp --dport 443 -j DNAT --to-destination 10.1.0.5:443 
+ The problem is that when traffic comes in from the bridged devices, this rule ends up applying since it&#x27;s coming in on vmbr0 and then getting forwarded out. How I can make this rule apply only to packets that originally come from eno1 or distinguish it in some other way? I&#x27;d prefer not to just put exceptions for each individual bridged IP. I&#x27;m still pretty new to iptables so any help or clarification for any misunderstandings I may be having is very appreciated.
+    submitted by    /u/Grandfather-Paradox  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/"
+                        open
+                      >
+                        <summary class="article-expander__title">BGP routing with cradlepoint and cell providers?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have pretty stringent SLAs with my customer so I am looking at getting extra Internet insurance. 
+ I have two DIA circuits to two diverse providers, diverse entry points into the building and diverse paths all the way to the providers POPs. I am doing BGP to each and advertising out a /24 so I feel pretty confident in the resiliency of this design but I am really adverse to taking a SLA hit. 
+ I am curious if I was to add two cradle points and BGP peer with the cell providers and advertise out the /24 as a third and fourth backup option is even possible and if anyone has done this. 
+ TIA
+    submitted by    /u/kjp12_31  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/"
+                        open
+                      >
+                        <summary class="article-expander__title">Ruckus ICX 7150-48P and 3Com 4500 - Optical link up one one side only</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi everyone, 
+ I am working on this old network infrastucture and I am trying to replace some 3Com 4500 with Ruckus ICX 7150-48P. While doing some tests I found out that if I connect this two models of switches together with a patch cord everything works fine, but if I try to use a fiber link, the status led one the port lights up only on one switch, the 3Com.
+ I have tried every possible combination of SFP module, tried to configure the ports in many ways but nothing seems to work.
+ I wanna ask if in your opinin it is possible that these switches are just not compatible because I have tried replacing both switches, one at the time, with various ones and always worked except in this one condidion.
+    submitted by    /u/No_Resolution2122  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/"
+                        open
+                      >
+                        <summary class="article-expander__title">VTP and Vlans</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>In an exercise for my school, we are supposed to configure VTP and later on Vlans. It said to configure them on the vtp server switch and then the clients would also be configured. But it doesn&#x27;t seem to happen. Did I not understand something ? Am I doing it completely wrong ?Please help me. Thanks in advance
+    submitted by    /u/Paval1s  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/"
+                        open
+                      >
+                        <summary class="article-expander__title">Enterprise DDI - DHCP/DNS/IPAM Solutions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All,
+ I am currently examining the DDI market and would like to know about the existing standards and trends. Specifically, I am interested in cloud-based solutions or cloud-managed options available.Currently, our organization lacks an IPAM system, and DHCP and DNS functions are handled by the AD DCs. In addition to Infoblox, BlueCat, and EfficientIP, I am curious to know about other notable players in the market. (I would like to avoid Infoblox due to its high cost.)
+ I am not looking for an overlay solution to manage DNS and DHCP on the AD DCs. Rather, I am interested in a separate solution that can remove the DNS and DHCP roles from the AD DCs entirely.
+ Objective is to streamline infrastructure by separating the DHCP and DNS responsibilities from the AD DCs and consolidating them within a comprehensive DDI solution. Solution will be internal only, no public facing DNS, split-horizon, etc..
+ EDIT: Looking for enterprise solution with vendor support, no DIY with Netbox and BIND/KEA
+    submitted by    /u/One_Business7791  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -38,6 +195,121 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vr2xf/telco_technician_looking_to_move_into_network/"
+                        open
+                      >
+                        <summary class="article-expander__title">Telco Technician looking to move into Network Engineering and similar fields.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vr2xf/telco_technician_looking_to_move_into_network/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello Everyone,
+ I am currently a Telecommunications technician at a data center and have been working on trying to move my career foreward. I think I am mostly looking for any ideas, tips and tricks, and/or a curriculum on how to best make the move into network engineering or a similar field. I love the trouble shooting part of my job but the long drives to my work place and the physical wear and tear on my body are starting to beat me down. I have an extremely strong knowledge on anything layer 1 and have been working on passing a JNCIA cert. However I feel that may be a waste of time. I am toying with the idea of reaching out to a recruiter and seeing what they could find me and see if any companies are willing to take on someone like me to train up. 
+ I was originally a fiber splicer technician working ISP and OSP, until I got my current job. However I feel my current title is very undescriptive of what is expected of me. I work closely with our in house Cloud, Neteng, and syseng teams and have picked up small bits of knowledge along the way. I&#x27;ve attempted to move into the department but management of my department has a hard time working well with others and is seeming to be blocking me. I would love to get work that can be WFH at least part of the time as I now have a one year old and want to be around more than I currently am. ( I work 5 days most of the time, 10 hours with 4-5 hours of travel depending on traffic. ) Any and all advice would be welcome. Thank you all so much. 
+ TLDR: Telecommunications technician with layer 1 experience looking to move into the Networking field. Looking for thoughts and opinions on how to make the move.
+    submitted by    /u/AllDaGouda  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vqv8b/chrome_blocked_via_windows_defender_in_a_firm_of/"
+                        open
+                      >
+                        <summary class="article-expander__title">Chrome blocked via Windows defender in a firm of almost 1500 users</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vqv8b/chrome_blocked_via_windows_defender_in_a_firm_of/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So ystd somehow chrome got deleted from every users computer in our firm, a Windows defender popup came right before saying detected virus on chrome. I am guessing someone messed up and added chrome under defender block list? Or there can be something else behind this shitshow
+ Imagine 1500 users emailing and calling for chrome, was a complete shitshow
+    submitted by    /u/kakkrot95  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vqr8q/selling_old_printers/"
+                        open
+                      >
+                        <summary class="article-expander__title">Selling old printers?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vqr8q/selling_old_printers/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have been looking at some various vendors that buy IT assets and so far, none of them have mentioned purchasing printers. We just went through a printer refresh (switching from buying printers outright to leasing) so I am stuck with these old printers that preceded me when they decided owning the printers was the play. Does anyone have any experience or ideas about selling some large printers? I am talking Kyocera TASKalfa 6053ci with a finisher level of printer.
+    submitted by    /u/T0rr4  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vqnn4/anyway_to_remove_the_cloud_storage_option_in_teams/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyway to remove the &quot;Cloud Storage&quot; option in Teams?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vqnn4/anyway_to_remove_the_cloud_storage_option_in_teams/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have users who are only allowed to save things to an internal server share but users are trying to save to the location below instead. Anyway to unlink/Remove this?
+ ​
+ https://imgur.com/a/sGM3HSD
+    submitted by    /u/SysAdminAccount1  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vqnam/sysvol_and_netlogon_not_replicating_2012_and_2019/"
+                        open
+                      >
+                        <summary class="article-expander__title">SYSVOL and NETLOGON not replicating 2012 and 2019</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vqnam/sysvol_and_netlogon_not_replicating_2012_and_2019/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I manage a grumpy 2012DC (DC1) that intermittently freezes and requires a hard reset to resolve. I&#x27;m in the process of attempting to replace it with a new 2019 server (DC2) following this petri.com guideline for DC migration. I stopped just prior to Step 6 &quot;Demote your old domain controller&quot; because I noticed that the SYSVOL and NETLOGON shared didn&#x27;t exist on DC2.
+ On DC2 I can view GP objects when I open Group Policy Management, but when I attempt to edit any of them I receive an error &quot;Failed to open Group Policy Object... The system cannot find the path specified.&quot;
+ Running dcdiag tests all return &quot;passed test&quot; EXCEPT SystemLog which returns, &quot;EventID: 0x00000422
+ The processing of Group Policy failed. Windows attempted to read the file \\CIL.local\sysvol\CIL.local\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\gpt.ini from a domain controller and was not successful. Group Policy settings may not be applied until this event is resolved.&quot; 
+ Can anyone out there provide some guidance on how to troubleshoot this? Much appreciated.
+    submitted by    /u/TexasJoey  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -712,114 +984,6 @@ Any additional recommendations or insights would be greatly appreciated!
  A ticket was assigned over to me to work with a third-party technician to install the MX95 and get WAN connectivity up and running (VLANs and DHCP IP scopes were pre-configured) The ticket was made by our PM and was relatively vague. 
  It was titled router deployment and the notes just i…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;10
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/"
-                        open
-                      >
-                        <summary class="article-expander__title">BGP routing with cradlepoint and cell providers?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have pretty stringent SLAs with my customer so I am looking at getting extra Internet insurance. 
- I have two DIA circuits to two diverse providers, diverse entry points into the building and diverse paths all the way to the providers POPs. I am doing BGP to each and advertising out a /24 so I feel pretty confident in the resiliency of this design but I am really adverse to taking a SLA hit. 
- I am curious if I was to add two cradle points and BGP peer with the cell providers and advertise out the /24 as a third and fourth backup option is even possible and if anyone has done this. 
- TIA
-    submitted by    /u/kjp12_31  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/"
-                        open
-                      >
-                        <summary class="article-expander__title">Ruckus ICX 7150-48P and 3Com 4500 - Optical link up one one side only</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi everyone, 
- I am working on this old network infrastucture and I am trying to replace some 3Com 4500 with Ruckus ICX 7150-48P. While doing some tests I found out that if I connect this two models of switches together with a patch cord everything works fine, but if I try to use a fiber link, the status led one the port lights up only on one switch, the 3Com.
- I have tried every possible combination of SFP module, tried to configure the ports in many ways but nothing seems to work.
- I wanna ask if in your opinin it is possible that these switches are just not compatible because I have tried replacing both switches, one at the time, with various ones and always worked except in this one condidion.
-    submitted by    /u/No_Resolution2122  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/"
-                        open
-                      >
-                        <summary class="article-expander__title">VTP and Vlans</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>In an exercise for my school, we are supposed to configure VTP and later on Vlans. It said to configure them on the vtp server switch and then the clients would also be configured. But it doesn&#x27;t seem to happen. Did I not understand something ? Am I doing it completely wrong ?Please help me. Thanks in advance
-    submitted by    /u/Paval1s  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/"
-                        open
-                      >
-                        <summary class="article-expander__title">Enterprise DDI - DHCP/DNS/IPAM Solutions</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi All,
- I am currently examining the DDI market and would like to know about the existing standards and trends. Specifically, I am interested in cloud-based solutions or cloud-managed options available.Currently, our organization lacks an IPAM system, and DHCP and DNS functions are handled by the AD DCs. In addition to Infoblox, BlueCat, and EfficientIP, I am curious to know about other notable players in the market. (I would like to avoid Infoblox due to its high cost.)
- I am not looking for an overlay solution to manage DNS and DHCP on the AD DCs. Rather, I am interested in a separate solution that can remove the DNS and DHCP roles from the AD DCs entirely.
- Objective is to streamline infrastructure by separating the DHCP and DNS responsibilities from the AD DCs and consolidating them within a comprehensive DDI solution. Solution will be internal only, no public facing DNS, split-horizon, etc..
- EDIT: Looking for enterprise solution with vendor support, no DIY with Netbox and BIND/KEA
-    submitted by    /u/One_Business7791  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -46377,52 +46541,6 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1349ll0/monitoring_solution_and_what_do_you_monitor/"
-                        open
-                      >
-                        <summary class="article-expander__title">Monitoring solution... and what do you monitor?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1349ll0/monitoring_solution_and_what_do_you_monitor/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Good morning,
- I&#x27;ve been a long time Zabbix user for monitoring. Though I recently discovered an issue with my Zabbix that basically means I need to re-install the whole thing. And that amount of work has made me question if I I should go a paid solution.
- What are people using to monitor servers and networking. And what do you manage.
- I am testing PRTG, and when I did a scan of a VM I started wondering, what do I actually need to check on a VM, is just space of drive and some services enough?
- Cheers.
-    submitted by    /u/daven1985  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13497ok/windows_pro/"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows Pro</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13497ok/windows_pro/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Has anyone noticed win 11 pro machines are now showing as a business edition? Maybe it&#x27;s just us
-    submitted by    /u/rarscl  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46430,8 +46548,8 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5121946326">
-        <time id="build-timestamp" datetime="2023-05-30T13:14:17.575Z">2023-05-30T13:14:17.575Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5122539642">
+        <time id="build-timestamp" datetime="2023-05-30T14:10:01.290Z">2023-05-30T14:10:01.290Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
