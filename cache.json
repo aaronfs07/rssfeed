@@ -260,6 +260,76 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13wn8r6/client_not_receiving_forgot_password_or_mfa_code/",
+          "author": null,
+          "description": "I'm an IT consultant and one of my clients is having a weird issue that is causing me to tear my hair out. I run my clients through SpamTitan for email spam and phishing support. One of my clients is currently not receiving any Forgot Password emails or MFA code emails. Nothing is showing up in either the SpamTitan logs or the Exchange Online message trace. I've contacted the vendors and spoken with them *as they were sending the emails out*, and we have not received anything, nor have they shown up in logs. Has anyone else experienced anything like this? Anyone have any ideas? I'm at a complete loss right now.\n    submitted by    /u/syphonblue  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13wn8r6/client_not_receiving_forgot_password_or_mfa_code/",
+          "publishedOn": "2023-05-31T14:05:11.000Z",
+          "wordCount": 2370,
+          "title": "Client not receiving \"Forgot Password\" or MFA code emails",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13wn7eb/does_the_extra_cache_on_the_amd_x3d_chips_help/",
+          "author": null,
+          "description": "RAM & storage is usually the limiter for VMs but compute is also a concern. Is higher clocks or higher cache size preferred?\n    submitted by    /u/DarkFireGuy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13wn7eb/does_the_extra_cache_on_the_amd_x3d_chips_help/",
+          "publishedOn": "2023-05-31T14:03:39.000Z",
+          "wordCount": 2286,
+          "title": "Does the extra cache on the AMD X3D chips help with virtualization on Hyper-V?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13wn2dd/recommendation_for_remote_it_storage_management/",
+          "author": null,
+          "description": "Hello guys , We are a small start up company and our main headquarters are in Europe ,but we have a small team 15-20 ppl in the States. I was wondering are there any services that we can look inti which offer to store and manage the laptops in our behalf . I've already checked into Hofy but it cannot entirely solve our problems as we want to be able to have the laptops as our property. So we are looking for something or someone with a business that stores the laptops and receives them from employees leaving and gives them to new hires.\n    submitted by    /u/Comprehensive_Cow_34  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13wn2dd/recommendation_for_remote_it_storage_management/",
+          "publishedOn": "2023-05-31T13:58:19.000Z",
+          "wordCount": 2359,
+          "title": "Recommendation for remote IT storage management",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13wn0aj/gcpw_implementation/",
+          "author": null,
+          "description": "Hi! I have the task to implement GCPW for all our windows devices.\n We'll be using it for some extra security, easier remote work etc for 80-100 users that work remotely. \n So my question now is, how would I go forward with rolling out this update to my users? \n I don't want them all to download the GCPW client themselves and install, neither do I want to do it for them manually, one by one. \n We have no device management where we can roll out software. All our computers are just set up as a normal PC. \n Would it be smart to write a powershell script that will download the GCPW client and install? \n I pray that you, the sysgods have a solution, thanks!\n    submitted by    /u/kis4-real  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13wn0aj/gcpw_implementation/",
+          "publishedOn": "2023-05-31T13:55:57.000Z",
+          "wordCount": 2374,
+          "title": "GCPW Implementation",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13wmowy/psa_epyc_7002_cpus_may_hang_after_1042_days_of/",
+          "author": null,
+          "description": "The April 2023 Epyc 2nd gen revision guide has errata #1474:\n Description\n A core will fail to exit CC6 after about 1044 days after the last system reset. The time of failure may vary depending on the spread spectrum and REFCLK frequency.\n Potential Effect on System\n A core will hang.\n Suggested Workaround\n Either disable CC6 or reboot system before the projected time of failure.\n Fix Planned\n No fix planned\n Despite what they say, the problem actually manifests at 1042.5 days. The TSC ticks at 2800 MHz, and 2800 * 10**6 * 1042.5 days almost equals 0x380000000000000, which has too many zeros not to be a coincidence.\n Note that your server will almost definitely hang, requiring a physical (or IPMI) reboot, because no interrupts, including NMIs, can be delivered to the zombie cores: this means no scheduler, no IPIs, nothing will work.\n Either disable the CC6 (as you did with the Zen CPUs IIRC), or just reboot the damn thing, it's been three years already, you're missing out on a lot of security patches.\n Please read erratas before you start digging, it'll save you at least a day of debugging :(\n    submitted by    /u/acid_migrain  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13wmowy/psa_epyc_7002_cpus_may_hang_after_1042_days_of/",
+          "publishedOn": "2023-05-31T13:42:57.000Z",
+          "wordCount": 2450,
+          "title": "PSA: EPYC 7002 CPUs may hang after 1042 days of uptime",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13wmeky/microsoft_adcs_options_to_protect_private_keys_on/",
+          "author": null,
+          "description": "The offline root CA and the online enterprise CA both are virtualized. The enterprise issuing CA will be running in AWS as an EC2.\n Since they will not be installed on a physical servers and not even on the local on premises network, we cannot use the somewhat low cost YubiHSM that you can plug into a physical USB port. AWS has a Cloud HSM that we may be able to use with a EC2, but it’s about $1300 per month.\n So, assuming using an HSM is not possible, what can you do to secure the private keys as much as is practically possible? Just lock away the offline root, limit the network connectivity to the enterprise CA to minimums needed to function and limit the accounts that have access to the online enterprise CA with permissions to view or export the private keys (local admin rights)?\n    submitted by    /u/Real_Lemon8789  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13wmeky/microsoft_adcs_options_to_protect_private_keys_on/",
+          "publishedOn": "2023-05-31T13:31:10.000Z",
+          "wordCount": 2406,
+          "title": "Microsoft ADCS options to protect private keys on virtualized CA?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/13wm9yl/disable_windows_10_pin_sign_in_on_domain_joined/",
+          "author": null,
+          "description": "Hey everyone. I’m trying to disable Windows sign in using PIN and leaving only the username and password but everything I’ve done so far doesn’t seem to work. Long story short, client recently enabled Azure AD sync and all of their PCs started asking for PIN set up upon sign in next morning. They don’t want to use PIN and only a password and I’m not sure where PIN requirement came from.\n I assumed it was due to Windows Hello for Business feature in Azure AD so I disabled it. Only 7 computers have been set up with a PIN and I’m trying to switch back to passwords.\n The computers are unmanaged in Azure. I have tried disabling all policies on affected machines that have anything to do with a password (Logon PIN, Windows Hello for Business). Also disabled “sign in options” registry key.\n After doing all that upon login certain users are still prompted for a PIN. I think it has something to do with Azure since they are Azure AD synced and my admin account is not so I never getting prompted but I just can’t find what’s enabled.\n Any help would be appreciated.\n    submitted by    /u/Casual_Spy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/13wm9yl/disable_windows_10_pin_sign_in_on_domain_joined/",
+          "publishedOn": "2023-05-31T13:25:56.000Z",
+          "wordCount": 2455,
+          "title": "Disable Windows 10 PIN sign in on domain joined workstations",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/13wlvfo/office_365/",
           "author": null,
           "description": "Why is it every time i log into office 365 something is moving. I mean jesus christ it was bad before but it seems like it is getting worse. I can never freaking find anything.\n    submitted by    /u/Hgh43950  \n [link]   [comments]",
@@ -12588,16 +12658,6 @@
           "wordCount": 2170,
           "title": "365 - SharePoint issues?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/1358aer/best_industry_to_do_it/",
-          "author": null,
-          "description": "Let’s be real, the job’s pretty similar place to place. Servers, firewalls, Office 365. Some places are always tough to do it in - lawfirms, non-profits, MSPs. \n What are some of the best industries to be a sysadmin? Users are smart, budget is thick, projects are your own. I’m in healthcare consulting at the moment which is pretty smooth.\n    submitted by    /u/NickSalacious  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/1358aer/best_industry_to_do_it/",
-          "publishedOn": "2023-05-02T02:05:16.000Z",
-          "wordCount": 2180,
-          "title": "Best industry to do IT?",
-          "imageUrl": null
         }
       ]
     },
@@ -13387,6 +13447,36 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/13wn31d/how_would_i_go_about_implementing_a_voice_vlan_in/",
+          "author": null,
+          "description": "Hello!\n I've been tasked with setting up some VLANs for a customer environment, and they use exclusively a digital phone system on their workstations instead of having physical phones on the desk. My general understanding is that in a setup with a physical phone you would send untagged traffic from the workstation and tag the voice traffic from the phone, and then they'll stay separated over the trunk link back to the switch, but I'm unsure how to implement this when it's just a single link between the workstation and switch - is it even possible? \n Any tips would be greatly appreciated :)\n    submitted by    /u/Cloudraa  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/13wn31d/how_would_i_go_about_implementing_a_voice_vlan_in/",
+          "publishedOn": "2023-05-31T13:59:06.000Z",
+          "wordCount": 2380,
+          "title": "How would I go about implementing a voice VLAN in an environment with no physical phones?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/13wmgi6/layer_2_switch_blocking_layer_7/",
+          "author": null,
+          "description": "I feel that this is a dumb question, but can a layer 2 network switch prevent devices connected to it (not the management port) from being accessible on SSH, telnet, HTTPS, etc? From my understanding this is layer 7 stuff and a layer 2 switch would be oblivious to it. However, we're having issues after a server was moved, it's pingable, you can access port HTTPS which you get a \"Page Forbidden\", but that is the server replying at the end of the day. My argument is that the switches are configured properly, all servers are pingable, anything else would be at the application level, AKA on the server.\n    submitted by    /u/PlanetExpress313  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/13wmgi6/layer_2_switch_blocking_layer_7/",
+          "publishedOn": "2023-05-31T13:33:28.000Z",
+          "wordCount": 2376,
+          "title": "Layer 2 Switch Blocking Layer 7",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/13wm0m6/cee_dcbx_protocol_adoption/",
+          "author": null,
+          "description": "Today me and one of my colleague ran into argument how often people use loseless protocols (DCBx in this case)versus lossy protocols. So trying to see how people many use DCBx in actual DC. If yes what overlay protocols you use NFS,CIFS,iSCSI etc ?\n    submitted by    /u/CowResponsible  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/13wm0m6/cee_dcbx_protocol_adoption/",
+          "publishedOn": "2023-05-31T13:15:12.000Z",
+          "wordCount": 2309,
+          "title": "CEE DCBx Protocol Adoption",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/13wkwxa/benefit_to_vrf_in_this_situation/",
           "author": null,
