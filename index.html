@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-30 datetime="2023-05-30T14:08:52.000Z">2023-05-30</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-30 datetime="2023-05-30T14:08:52.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-31 datetime="2023-05-31T08:34:07.000Z">2023-05-31</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-31 datetime="2023-05-31T08:34:07.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,28 +34,26 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vrcmc/dell_os10_dhcp_snooping/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wgf0l/remote_access_conundrum_windows_machines/"
                         open
                       >
-                        <summary class="article-expander__title">Dell OS10 DHCP snooping</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vrcmc/dell_os10_dhcp_snooping/">
+                        <summary class="article-expander__title">Remote access conundrum, windows machines</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wgf0l/remote_access_conundrum_windows_machines/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hi, has anyone had any experience with getting DHCP snooping working on Dell OS10?
- I have a pair of S5232F-ON running OS10 10.5.5.3 configured as a VLT pair.
- The manual is pretty vague on DHCP snooping - it says all you have to do is configure &quot;ip dhcp snooping trust&quot; on the uplink that faces the DHCP server, and then enable &quot;ip dhcp snooping&quot; globally. I&#x27;ve tried this, and as soon as I turn on DHCP snooping globally, attached systems can&#x27;t get DHCP any more. As soon as I turn off snooping, DHCP works again.
- Support say that as no bugs have been reported with DHCP snooping, it must be that I&#x27;ve misconfigured the switch. This is entirely possible but not very helpful!
- If anyone knows how to make it work for sure, I&#x27;d be very interested.
- Thanks!
-    submitted by    /u/eidercollider  
+                              <span>I posted about it recently but I believe i didńt explain myself properly due to the answers received. Here is a second try 
+ Good morning everyone! Let me pic your brain. I have a situation where we need to access (provide support) to different customers but many of them refuse to have an active connection.
+ Let me explain better, we need to be able to dial into windows machines on our customer networks but they refuse to have a site to site VPN, client to site, team viewer, RDP etc… they want to have an in demand solution where we only access when they allow us to. Quick support isn’t an option as we cant control the device per se. Wouldn’t it be cool if we could do that natively?
+ I am trying to get my head around it but any ideas would be more than welcome
+    submitted by    /u/chris_redz  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -68,17 +66,16 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vqh05/having_trouble_with_an_iptables_dnat_policy_due/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wgdat/user_typed_on_a_field_and_corrupted_the_database/"
                         open
                       >
-                        <summary class="article-expander__title">Having trouble with an iptables DNAT policy due to bridged connection</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vqh05/having_trouble_with_an_iptables_dnat_policy_due/">
+                        <summary class="article-expander__title">User typed &#x27;-- on a field and corrupted the database. Vendor blamed the user</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wgdat/user_typed_on_a_field_and_corrupted_the_database/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Background: I&#x27;m running Proxmox with one physical interface, eno1, and two virtual interfaces, vmbr0 and vmbr1. vmbr0 is bridged to eno1 for a few VMs/containers to sit directly on my LAN. vmbr1 is a private Proxmox LAN and is NAT&#x27;d through vmbr0 to access the internet. I have a web server on 10.1.0.5:443 and have a DNAT rule in iptables to achieve port forwarding:
- iptables -t nat -A PREROUTING -i vmbr0 -p tcp -m tcp --dport 443 -j DNAT --to-destination 10.1.0.5:443 
- The problem is that when traffic comes in from the bridged devices, this rule ends up applying since it&#x27;s coming in on vmbr0 and then getting forwarded out. How I can make this rule apply only to packets that originally come from eno1 or distinguish it in some other way? I&#x27;d prefer not to just put exceptions for each individual bridged IP. I&#x27;m still pretty new to iptables so any help or clarification for any misunderstandings I may be having is very appreciated.
-    submitted by    /u/Grandfather-Paradox  
+                              <span>It&#x27;s 2023 and applications still have sql injection. The query updated a field on a table but skipped the WHERE clause because of the dashes interpreted as a comment. Vendor say to use only ASCII characters lol.
+ How&#x27;s your day going?
+    submitted by    /u/gianni4592  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -91,18 +88,14 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wg8ks/block_psiphon_pro/"
                         open
                       >
-                        <summary class="article-expander__title">BGP routing with cradlepoint and cell providers?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/">
+                        <summary class="article-expander__title">block psiphon pro</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wg8ks/block_psiphon_pro/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>I have pretty stringent SLAs with my customer so I am looking at getting extra Internet insurance. 
- I have two DIA circuits to two diverse providers, diverse entry points into the building and diverse paths all the way to the providers POPs. I am doing BGP to each and advertising out a /24 so I feel pretty confident in the resiliency of this design but I am really adverse to taking a SLA hit. 
- I am curious if I was to add two cradle points and BGP peer with the cell providers and advertise out the /24 as a third and fourth backup option is even possible and if anyone has done this. 
- TIA
-    submitted by    /u/kjp12_31  
+                              <span>submitted by    /u/ScaleRecent3815  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -115,18 +108,15 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wg2lf/solution_report_on_manageengine_service_desk_plus/"
                         open
                       >
-                        <summary class="article-expander__title">Ruckus ICX 7150-48P and 3Com 4500 - Optical link up one one side only</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/">
+                        <summary class="article-expander__title">Solution Report on ManageEngine Service Desk Plus</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wg2lf/solution_report_on_manageengine_service_desk_plus/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hi everyone, 
- I am working on this old network infrastucture and I am trying to replace some 3Com 4500 with Ruckus ICX 7150-48P. While doing some tests I found out that if I connect this two models of switches together with a patch cord everything works fine, but if I try to use a fiber link, the status led one the port lights up only on one switch, the 3Com.
- I have tried every possible combination of SFP module, tried to configure the ports in many ways but nothing seems to work.
- I wanna ask if in your opinin it is possible that these switches are just not compatible because I have tried replacing both switches, one at the time, with various ones and always worked except in this one condidion.
-    submitted by    /u/No_Resolution2122  
+                              <span>Anyone here uses SDP? Any suggestion or can help me how to create a report for Solution with column for View type (Private or Public). Thank you!
+    submitted by    /u/InkedMermaid01  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -139,15 +129,31 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wg269/dhcp_there_are_no_items_to_show_in_this_view/"
                         open
                       >
-                        <summary class="article-expander__title">VTP and Vlans</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/">
+                        <summary class="article-expander__title">DHCP &quot;There are no items to show in this view&quot;</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wg269/dhcp_there_are_no_items_to_show_in_this_view/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>In an exercise for my school, we are supposed to configure VTP and later on Vlans. It said to configure them on the vtp server switch and then the clients would also be configured. But it doesn&#x27;t seem to happen. Did I not understand something ? Am I doing it completely wrong ?Please help me. Thanks in advance
-    submitted by    /u/Paval1s  
+                              <span>Hi everybody!
+ ​
+ I have an strange issue i cant find much information about on the internet.
+ I did a dhcp / print server migration a couple of days ago on 2 locations.
+ Exported the dhcp settings with powershell and imported to new one.
+ DHCP is working fine , and clients are getting IP:s from the new servers.
+ The servers are authorized and i can see them in the list of authorized servers.
+ After the migration i cant see any scopes anymore (this worked before migration) , only on one location (1 out of 6) and thats the head office dhcp server.
+ Red &quot;Stop sign&quot; over the dhcp server and says &quot;There are no items to show in this view&quot;.
+ I can see the scopes locally on the server but not from my own computer with RSAT tools.
+ ​
+ I´ve tried running as different users / run as admin.
+ Rebooted servers.
+ Reauthorized DHCP servers.
+ ​
+ But still no luck. Anyone know what could cause this?
+ Picture in comment:
+    submitted by    /u/dawaggen  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -160,19 +166,80 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wfttj/ms_trying_to_get_me_fired_today/"
                         open
                       >
-                        <summary class="article-expander__title">Enterprise DDI - DHCP/DNS/IPAM Solutions</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/">
+                        <summary class="article-expander__title">MS trying to get me fired today...</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wfttj/ms_trying_to_get_me_fired_today/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hi All,
- I am currently examining the DDI market and would like to know about the existing standards and trends. Specifically, I am interested in cloud-based solutions or cloud-managed options available.Currently, our organization lacks an IPAM system, and DHCP and DNS functions are handled by the AD DCs. In addition to Infoblox, BlueCat, and EfficientIP, I am curious to know about other notable players in the market. (I would like to avoid Infoblox due to its high cost.)
- I am not looking for an overlay solution to manage DNS and DHCP on the AD DCs. Rather, I am interested in a separate solution that can remove the DNS and DHCP roles from the AD DCs entirely.
- Objective is to streamline infrastructure by separating the DHCP and DNS responsibilities from the AD DCs and consolidating them within a comprehensive DDI solution. Solution will be internal only, no public facing DNS, split-horizon, etc..
- EDIT: Looking for enterprise solution with vendor support, no DIY with Netbox and BIND/KEA
-    submitted by    /u/One_Business7791  
+                              <span>What are you doing Outlook!!!
+ https://imgur.com/a/kqbZzvJ
+    submitted by    /u/Fr3dAstaire  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wfts5/what_do_you_think_about_the_risks_of_getting_an/"
+                        open
+                      >
+                        <summary class="article-expander__title">What do you think about the risks of getting an XDR / MDR / Soc ?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wfts5/what_do_you_think_about_the_risks_of_getting_an/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Little bit of context : in the case of a good company, with good actual protections and an EDR (BitDefender), do you think there is a big security issue of getting an MDR with an external SOC ?
+ What are the risks in your opinion, for a rgpd ruled company so no company data can normally go to the SOC company ?
+    submitted by    /u/aurdour  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wek2y/anyone_used_any_automated_pen_test_tools_like/"
+                        open
+                      >
+                        <summary class="article-expander__title">Anyone used any automated pen test tools like this one in particular? (https://www.intruder.io)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wek2y/anyone_used_any_automated_pen_test_tools_like/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>For context, small dev team with simple application with only a handful of pages. Hoping something like this with an automated check say once a month could work for us. https://www.intruder.io Understand that it probably can&#x27;t compete with decent human tester, but hoping it might be enough.
+    submitted by    /u/Super13  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wd7mc/figure_out_provider_name_hosted_inside_wmiprvse/"
+                        open
+                      >
+                        <summary class="article-expander__title">Figure out provider name hosted inside wmiprvse</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wd7mc/figure_out_provider_name_hosted_inside_wmiprvse/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Is there any command to know which particular provider hosted inside wmiprvse? Don’t wanna use process explorer or any other UI tool.
+    submitted by    /u/RoofParticular855  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -191,10 +258,394 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13wftyp/are_there_any_security_concerns_or_disadvantages/"
+                        open
+                      >
+                        <summary class="article-expander__title">Are there any security concerns or disadvantages when running OSPF over trunked SVIs instead of physical links?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13wftyp/are_there_any_security_concerns_or_disadvantages/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I am at the site were running OSPF over the trunk link would be preferred, because I&#x27;d like to utilize at least one more link for convenience and doing it over trunk would make it much more cost-effective. The only thing I can think of is that it could require increasing of MTU limit on both ends. But is there something more to it that could make it an unpreferable choice? Especially from security perspective.
+    submitted by    /u/blinkinski  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-05-30 datetime="2023-05-31T03:25:32.000Z">2023-05-30</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-05-30 datetime="2023-05-31T03:25:32.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13way01/windows_server_licenses_vs_cals/"
+                        open
+                      >
+                        <summary class="article-expander__title">Windows Server Licenses vs CALs</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13way01/windows_server_licenses_vs_cals/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Trying to understand server OS licenses vs CALs.
+ The CALs are purchased based on the number of users and devices accessing your servers regardless of having 2 servers of the same OS or older or 2,000 servers, correct?
+ Then server OS licenses are based on the number of physical or virtual CPU cores in each server with a minimum of 8 per server? However, if you are running Windows Server Datacenter, you can buy Datacenter server licenses based on the number of physical cores on the host machines and that covers an unlimited number of virtual guest copies of the OS running on the hardware?
+    submitted by    /u/Real_Lemon8789  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wauqf/email_sending_to_100_recipients_am_i_being_too/"
+                        open
+                      >
+                        <summary class="article-expander__title">Email Sending to 100 Recipients... Am I being too Cautious</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wauqf/email_sending_to_100_recipients_am_i_being_too/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey Folks, 
+ So my CEO wants to send emails to our suppliers a few times a year. Mostly stuff like Merry Christmas, etc. 
+ We recently had ATT Mark us as spammers because our webapp is sending ~280k emails a month that are mostly just &quot;Hey, Your Order Has Been Shipped&quot; or &quot;You requested to Reset Your PW - Here are instructions&quot; type stuff. Standard eCommerce Webapp emails. 
+ My question is this -- would you allow a CEO to send to a standard contact group a few times a year... and then create the contact group and let them go crazy? Are there restrictions you would put on this? Would you insist it go through a marketing email campaign manager due to risk of reputational damage?
+ ​
+ Thanks!
+    submitted by    /u/MiddleManagementIT  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13wacob/it_field_trip_how_to_prepare/"
+                        open
+                      >
+                        <summary class="article-expander__title">IT field trip, how to prepare?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13wacob/it_field_trip_how_to_prepare/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Sorry for formatting, on mobile
+ I&#x27;m the solo IT guy at my company and while I have a year of experience in this environment, have my A+ and am currently studying for my Network+, and I do the work of network admin, help desk, IT manager etc, I know that I am not nearly experienced enough to know what a healthy IT environment looks like or how to correctly implement it. I inherited this system with no documentation, no backups, all the classics on here.
+ I was fortunate to talk to some members of another institution similar to mine just up the road, and they offered for me to visit their site for a bird&#x27;s eye view of how they run things (thank God they took pity on me). I&#x27;m trying to make a list of things to ask and not ask - I don&#x27;t want to burn bridges by being invasive and I don&#x27;t want to walk over and say &#x27;teach me everything&#x27;, but at the same time I want to make sure I can benefit from this experience.
+ If you had the chance to tour another IT environment and learn from it, what would you do?
+    submitted by    /u/Tvelion  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w9ckp/any_pointers_on_how_to_move_from_a_small_company/"
+                        open
+                      >
+                        <summary class="article-expander__title">Any pointers on how to move from a small company experience to a large company experience</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w9ckp/any_pointers_on_how_to_move_from_a_small_company/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve had the good fortune to get interviewed by a few recruiters over the past few months and the ones who didn&#x27;t push me through all said the same thing. I don&#x27;t have experience working on a team this big. Which really sucks and shouldn&#x27;t really be a factor. I have 11 years of IT/sysadmin and web dev experience.
+ I&#x27;ve been a jack-of-all-trade type for about 9 years between two companies and my consulting on the side. I also have sales b2b experience for 4 of those years. I know how to pick up systems and processes really quickly and easily. I am currently teaching myself full stack development and cybersecurity concepts (since I want the CISSP by the end of the year). I have always been employed and am a good worker, yet these recruiters treat me like some unemployable person.
+ The problem seems to be that I don&#x27;t have a structured IT career progression and a lot of it is self taught. Mostly because I was the guy the incompetent managers hired to fix things. Yet somehow I am not getting this picture across to recruiters or they don&#x27;t believe me when I say I work well with others. I know that there is some disconnect between my experience and what companies are looking for. I do believe it is the fact that I have never been in a company that was larger than 500 people. This seems to have hurt me in my job searches. Even though there was diversity, teamwork, irate end users and all that comes with any IT job.
+ Is there any advice out there for a sysadmin who is looking to gain exposure to technologies at a large company? I am not dumb and I can handle sysadmin work, but why do the recruiters not want to hire you if you weren&#x27;t in THAT specific industry? Using THEIR specific tech stack?
+ Are they not understanding that the things I&#x27;ve done match their requirements (but on a smaller scale)?
+    submitted by    /u/moderatenerd  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w8h64/365_user_onedrive_migration_but_need_sysadmin/"
+                        open
+                      >
+                        <summary class="article-expander__title">365 user onedrive migration but need sysadmin ideas</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w8h64/365_user_onedrive_migration_but_need_sysadmin/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi
+ My work is divesting company A, 300 users. Company B will not be providing SharePoint admin rights to give me the ability to migrate the data with a third-party tool. I need to work on an alternative, either export the users OneDrive data to an external drive or export to Company B Azure blob storage, I&#x27;ve never tried this. I will be happy to hear any ideas.?
+ Thank you in advance.
+    submitted by    /u/VirtualCHi  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w7yj1/accounting_got_phished_paid_out_big_bucks/"
+                        open
+                      >
+                        <summary class="article-expander__title">Accounting got phished. Paid out big bucks</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w7yj1/accounting_got_phished_paid_out_big_bucks/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Accounting received a legitimate email from said third-party stating the invoice is due, then a few days go buy and they receive the exact same email again only this time the from email is off 1 letter, for instance instead of accounts.payable@xyzcompanies.com it&#x27;s accounts.payable[@xyzcompanie.com](mailto:walt.disney@xyzcompanie.com). Everything else is identical, even the email signatures. There was also about 10 other emails copied so at first glance it&#x27;s not really noticeable. After reply this was followed up by we changed banks, plz see attached for new banking info and then accounting paid it...
+ We use o365, mfa is enabled and we even do semi-annual training with knowbe4 to be aware of this type of stuff. Now IT is being asked to investigate but honestly there&#x27;s not really much we can do from here. The spoofed domain was recently registered and all the mail records are setup correctly so it slipped by all the scanners. Email also had a warning in the body that we add to be cautious as this is coming from outside the company. 
+ Now we are wondering how a scammer intercepted the communication and was able to phish it. We&#x27;ve seized everyone&#x27;s laptops that were involved and locked their accounts. So far nothing suspicious, no message rules, no unknown logins, no malware. We are wondering if it&#x27;s on the vendors end but even if it is I don&#x27;t think you can really hold them responsible
+ I guess this is just a warning to ensure your user base is well-informed about phishing. If anyone has any tips let me know. They are already trying to reverse the transfer but it&#x27;s been weeks since it went through. They didn&#x27;t even know until the legit vendor followed up a month later and said the balance was still unpaid. 
+ Said vendor also isn&#x27;t a small fry and is a multi-billion dollar global company. Crazy someone can register a domain 1 letter off.
+    submitted by    /u/Intellivindi  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w7h27/the_root_of_all_our_licensing_quandaries_is/"
+                        open
+                      >
+                        <summary class="article-expander__title">The root of all our licensing quandaries is companies charging based on the number of humans that use a product, rather than charging for the product.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w7h27/the_root_of_all_our_licensing_quandaries_is/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I like to think that I have deep epiphanies, and I had one after an irate customer told our support team that they shouldn&#x27;t have to buy another software user license just because one employee is on light duty and they&#x27;ve brought in a part time fill-in to do the rest of her work the days she is out.
+ And I kinda agreed
+    submitted by    /u/xixi2  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w49ty/supervisor_leaving_im_all_thats_left_what_do_i_do/"
+                        open
+                      >
+                        <summary class="article-expander__title">Supervisor leaving. I&#x27;m all that&#x27;s left, what do I do?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w49ty/supervisor_leaving_im_all_thats_left_what_do_i_do/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all,
+ My supervisor is leaving. He was in a managerial role and did all the paperwork and reports and meetings. He covered me when I took trips, and was my backup when I needed to bounce ideas or troubleshooting around.
+ I, the net and sys admin, do 95% of all IT related tasks, and we lost our low level techs over a year ago, but we positioned in a manor where I can pretty much run the place alone. It&#x27;s not a lot of work.
+ Their isn&#x27;t enough work for two techs of my skill level IMHO, and the management stuff is signaling that the IT reports, etc of the managerial role can be scaled down. 
+ So, idk what to recommend to the business, and quite frankly I&#x27;m stressed out. Can I run the place myself? Sure. Do I want to do that and never get a free thought to go on vacations unbothered, etc. No. But there isn&#x27;t enough work for two techs. If I brought someone else on we would be twirling our thumbs and it would turn into a revolving door of techs I&#x27;m sure.
+ What do I do here? Is an MSP an option? Do they help with windows servers, help desk, and Linux servers? I have zero experience dealing with them.
+ Do I hire abother tech and we just shoot the shit most of the day? I&#x27;m beyond stressed over this, and considered polishing my resume myself but the company really needs me and I really like the people who run it, it would be hard for me to do that to them.
+    submitted by    /u/Fizgriz  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w3cph/easus_pertition_master_updater_is_causing_port/"
+                        open
+                      >
+                        <summary class="article-expander__title">Easus Pertition Master updater is causing port exhaustion due to constantly making connections to China IP&#x27;s.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w3cph/easus_pertition_master_updater_is_causing_port/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have had port exhaustion issues for many months now and finally drilled the issue down to Easus Partition Master&#x27;s updater service.
+ ​
+ Process explorer showed dozens of connections to china being made by this service. After removing it, I have fixed my port exhaustion issues.
+ ​
+ I have used Partition Master for many years now, but somehow the version released in the range of last year caused port exhaustion.
+    submitted by    /u/Spam00r  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w2knu/best_option_to_obtain_users_onedrive_contents/"
+                        open
+                      >
+                        <summary class="article-expander__title">Best option to obtain user&#x27;s Onedrive contents?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w2knu/best_option_to_obtain_users_onedrive_contents/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Occasionally we have the need to transfer the contents of a user&#x27;s Onedrive to a location on-prem. Reasons vary, so I won&#x27;t go into all that. I&#x27;m wondering what options others have come up with for this? We have been accessing the user&#x27;s files via the admin center and web interface, but it&#x27;s just so clunky to do it this way when they have a large amount of stuff out there. The MS Sync method has given varying levels of success as well.
+ I&#x27;ve seen third party tools that offer Onedrive cloud connectors like Filezilla and such, but they only give you access to the Onedrive of the person logging in. I&#x27;ve seen feature requests for these to add the ability to access the Onedrive&#x27;s of others the admin has access to, but it looks like there is a technical issue to doing this?
+ Does a good solution exist for admins to get at the contents of User&#x27;s Onedrives without having to mess with the web interface download?
+    submitted by    /u/nathank  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13w2kgx/what_is_with_all_the_call_center_calls_from_ibm/"
+                        open
+                      >
+                        <summary class="article-expander__title">What is with all the call center calls from &quot;IBM, Dell, Redhat&quot; etc asking me to verify my email address?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13w2kgx/what_is_with_all_the_call_center_calls_from_ibm/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I receive at least two calls a day from someone claiming to be from Microsoft, Dell, IBM, Redhat, insert big company here asking me to verify my email and if they can send me a white paper, e-book, pdf, or some other kind of document. I&#x27;ve just started off by saying I&#x27;m not interested in any kind of digital document and please do not email me. 
+ Do other sysadmins get these calls?
+    submitted by    /u/benutne  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vzr2e/whats_the_highest_dollar_amount_screw_up_youve/"
+                        open
+                      >
+                        <summary class="article-expander__title">What&#x27;s the highest dollar amount screw up you&#x27;ve been responsible for?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vzr2e/whats_the_highest_dollar_amount_screw_up_youve/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;ve always seen posts of peoples mishaps leading to downtime/chaos/angry people but i&#x27;d love to hear anecdotes of definitive dollar amounts that the company lost because of you. 
+ What was the screw up, the amount and the outcome?
+    submitted by    /u/Loupreme  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vuacy/video_conferencing_elderly_executives_and/"
+                        open
+                      >
+                        <summary class="article-expander__title">Video Conferencing, Elderly Executives, and Unreasonable Expectations</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vuacy/video_conferencing_elderly_executives_and/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Just needed to get something off my chest after receiving an interesting request today.
+ I work for a smaller organization with one main location and a few remote employees scattered around the United States. We rarely have visitors in our main location, so communication with clients is done completely through email and video conferencing. 
+ Most of our consultants and executives are well beyond the age of retirement. The only exception is my boss, who is the CTO. We&#x27;ve had this issue where the CEO struggles to handle Teams, Zoom, or Webex calls. Sometimes he unplugs his headset, or mutes himself and thinks his entire computer is broken. 
+ It&#x27;s gotten to the point where I&#x27;m called up to his office every time he has a video call to assist him. Naturally, this is becoming extremely disruptiv…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13vrt4t/everyone_is_an_engineer/"
+                        open
+                      >
+                        <summary class="article-expander__title">Everyone is an &quot;engineer&quot;</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13vrt4t/everyone_is_an_engineer/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Looking through my email I got a recruiter trying to find a &quot;Service Delivery Engineer&quot;.
+ Now what the hell would that be? I don&#x27;t know. According to Google- &quot;The role exists to ensure that the company consistently delivers, and the customer consistently receives, excellent service and support.&quot;
+ Sounds a lot like customer service rep to me.
+ What is up with this trend of calling every role an engineer??? What&#x27;s next the &quot;Service Delivery Architect&quot;? I get that it&#x27;s supposedly used to distinguish expertise levels, but that can be done without calling everything an engineer (jr/sr, level 1,2,3, etc.). It&#x27;s just dumb IMO. Just used to fluff job titles and give people over-inflated opinions of themselves, and also add to the bullshit and obscurity in the job market.
+ Edit: Technically, my job title also has &quot;engineer&quot; in it... but alas, I&#x27;m not really an engineer. Configuring and deploying appliances/platforms isn&#x27;t really engineering I don&#x27;t think. One could make the argument that engineer&#x27;s design and build things as the only requirement to be an engineer, but in that case most people would be a very &quot;high level&quot; abstraction of what an engineer used to be, using pre-made tools, or putting pre-constructed &quot;pieces&quot; together... whereas engineers create those tools, or new things out of the &quot;lowest level&quot; raw material/component... ie, concrete/mortar, pcb/transistor, software via your own packages/vanilla code... ya know
+ /rant
+    submitted by    /u/whole_sum  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -985,6 +1436,612 @@ Any additional recommendations or insights would be greatly appreciated!
  It was titled router deployment and the notes just i…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;10
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13w9rt1/colocation_dual_drops/"
+                        open
+                      >
+                        <summary class="article-expander__title">Colocation Dual Drops</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13w9rt1/colocation_dual_drops/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We’re considering getting a second drop from our colocation provider for full redundancy. We currently have a couple pfSense boxes in HA alongside a couple customer firewalls so we do have an L2 switch sitting between our drop and all firewalls.
+ What’s the best route to go with if we go with a redundant drop? 2 separate L2 switches? 2 stacked switches with STP? Connect each pfSense box to each drop then passthrough whichever public ips to the customer firewalls? Something else I’m missing?
+ I don’t always reply to every comment so thanks in advance!
+    submitted by    /u/nicholaspham  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13w9lto/what_are_the_main_differences_between_phd_in/"
+                        open
+                      >
+                        <summary class="article-expander__title">What are the main differences between PhD in Networking Vs a CCIE holder?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13w9lto/what_are_the_main_differences_between_phd_in/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Do they ever go hand to hand and is one worth more in this economic environment?
+ Could the PhD grad be able to get a job as a network architect immediately?
+    submitted by    /u/LarryMueler  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13w97ui/how_do_you_feel_about_naas_network_as_a_service/"
+                        open
+                      >
+                        <summary class="article-expander__title">How do you feel about NaaS (Network as a Service)?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13w97ui/how_do_you_feel_about_naas_network_as_a_service/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I see a lot of vendors offering NaaS (Network as a Service) where the hardware, software, licenses, configuration, and refresh cycles are consumed &quot;as-a-service&quot; .
+ ​
+ NaaS sounds like a threat career, but I&#x27;m wondering how others feel.
+ Does anyone with first hand experience either at the consumer of NaaS or the vendor mind sharing? 
+ Is there still a role for a network engineer at a company that consumes NaaS? And if so, what does that look like?
+    submitted by    /u/Bologna_Spumoni  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13w6ekc/rant_wednesday/"
+                        open
+                      >
+                        <summary class="article-expander__title">Rant Wednesday!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13w6ekc/rant_wednesday/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>It&#x27;s Wednesday! Time to get that crap that&#x27;s been bugging you off your chest! In the interests of spicing things up a bit around here, we&#x27;re going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. 
+ There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that&#x27;s been pissing you off or getting on your nerves!
+ Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13w3690/copper_to_fiber_converters_for_pots/"
+                        open
+                      >
+                        <summary class="article-expander__title">Copper to Fiber Converters for POTS</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13w3690/copper_to_fiber_converters_for_pots/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ Does anyone know if ethernet-to-fiber converters can be used with plain old telephone service? Obviously, there are physical differences between RJ-11 and RJ-45.
+ I purchased Primeda-tronic 2 Ports RJ11 Telephone and 10/100Mbps Ethernet Over Fiber Converters that worked for a few months, but I believe one of the converters has given up the ghost.
+ Any information or recommendations would be greatly appreciated. Thanks!
+    submitted by    /u/full-duplex  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13w0kn0/direct_attach_cable_for_sfp_minigbic_for_hp/"
+                        open
+                      >
+                        <summary class="article-expander__title">Direct Attach Cable for SFP Mini-GBIC for HP J9022A ProCurve Switch 2810-48g</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13w0kn0/direct_attach_cable_for_sfp_minigbic_for_hp/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m entirely new to the networking world at this level, i am trying to connect this HP J9022A ProCurve Switch 2810-48g using it&#x27;s SFP port over to another switch a good distance. I was told I should look into using a DAC instead of an SFP to RJ45 transceiver. So far I am unable to find a DAC that works for HP, and that works for SFP 1G, everything seems be for SFP+ 10G which i&#x27;m reading is not compatible. Does anyone have any recommendations?
+    submitted by    /u/benevolentamatuer  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13w0clh/kemp360_loadmaster_statistics_question_total_conns/"
+                        open
+                      >
+                        <summary class="article-expander__title">Kemp360 LoadMaster Statistics Question (total conns)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13w0clh/kemp360_loadmaster_statistics_question_total_conns/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I was curious if anyone knows the answer to this question. When connected to a Loadmaster and looking at the statistics, I am trying to understand what the Total Conns means. Is that just a connection for an individual service, port, user connection, etc? It is a total connection over 24 hours? The ask is because I do not know why some of my numbers are so high, when the system is a test system and not heavily utilized by more than a few people, however the total connections is over 2000.
+ Seems Kemp questions are pretty vague here in this sub, but I am hoping for the best. If I should post this in another sub I can do so. Thank you in advance for any help.
+    submitted by    /u/yettie24  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vz22d/question_on_hsrp/"
+                        open
+                      >
+                        <summary class="article-expander__title">Question on HSRP</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vz22d/question_on_hsrp/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello Big Reddit Brain. I’m studying for CCNP and working through HSRP. Pretty easy to understand, but I’m stuck on one concept and the class materials are not explaining. So, the Physical Active Router handles ALL of the traffic, including ARP requests, which are first sent to whatever router the host is connected to. What if a host is physically connected (through the topology that might include some switches) to the router acting as Standby? The book/class doesn’t mention it, but is there a requirement that there be redundant L2 paths for hosts so they can potentially reach ALL routers participating in HSRP?
+    submitted by    /u/UpTop5000  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vxn3s/proactively_identifying_potential_cisco_bugs/"
+                        open
+                      >
+                        <summary class="article-expander__title">Proactively identifying potential Cisco Bugs [Automation]</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vxn3s/proactively_identifying_potential_cisco_bugs/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Had an incident where a weird dormant Cisco device bug affecting a few versions reared it&#x27;s ugly head after we made a change which caused at least 1 production device to begin repeatedly reloading.
+ I kind of want to take on a side project to leverage some Cisco API to identify potential bugs related to upcoming changes across a large array of platforms and IOS/NX/XR versions. So I guess this post is for one of two things.... has anyone done anything similar to deal with one-off bugs that would be hard to identify in a lab environment before changes, and 2.... is there a solid Cisco API that I could parse against a keyword or software function (eg: BGP, SNMP, etc) and a list of device types/versions to try and proactively identify these types of issues? I&#x27;ll be using Python, but language/nuances don&#x27;t matter too much as I know not everyone here is super familiar with code.... more looking for if anyone knows manual methods or data sources/api&#x27;s they&#x27;ve leveraged in the past that I can put code to in order to make a web front end that does these checks for us prior to changes.
+ Thanks for any info!
+    submitted by    /u/syntax24  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vxmj7/help_need_software_like_tcp_test_tool/"
+                        open
+                      >
+                        <summary class="article-expander__title">[Help] Need software like TCP Test Tool</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vxmj7/help_need_software_like_tcp_test_tool/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>TL;DR: I need a TCPTestTool-like program that doesn&#x27;t require .NET Framework 3.5
+ Hello there! As mentioned in the title, we require a program with the same functionality as TCP Test Tool by SimpleCom Tools. 
+ So far, I have been unable to find another program, and the one by SimpleCom needs .NET Framework 3.5, and installing/enabling it is not an option. 
+ Does anybody know of a similar program or if there is a newer version of it? (The one I found was v.3.0).
+ Thanks in advance for any help you can provide!
+    submitted by    /u/Lord_Gundisalvus  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vwi7o/help_this_old_dinosaur_get_on_track_with_simple/"
+                        open
+                      >
+                        <summary class="article-expander__title">Help this old dinosaur get on track with simple vpn setup</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vwi7o/help_this_old_dinosaur_get_on_track_with_simple/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>My apologies in advance if this is the wrong area for this kind of problem or if it&#x27;s too simple.
+ I&#x27;m an old dinosaur who used to set up office VPNs about 15 or 20 years ago. These were simple VPNs which allowed remote users to access their documents at their office.
+ The method back then was to set up a vpn connector on the laptop, point it to the public IP, and set up forwarding for a couple of ports in the router. Then IIRC I&#x27;d set up permissions in their account on the server.
+ I&#x27;ve been called upon to set up a VPN for someone, and it looks like things have changed remarkably. Whn I search in order to bone up, most returns are for commercial VPN companies who are focused on providing anonymity on the web.
+ Has my method of creating simple VPNs become completely outdated? I assume that security issues and methods are very different nowadays.
+ Are there any good resources out there to re-learn basic VPN principles and best practices? Perhaps as I&#x27;ve gotten older my search capabilities have dwindled, or else I&#x27;m so hopelessly out of the loop that I don&#x27;t even know what to search for within the context of small office VPNs. If anyone can steer this old coot in the right direction I&#x27;d greatly appreciate it. Again, I apologize of this question is not appropriate for this group.
+    submitted by    /u/steambc  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vv4lw/policymap_being_rejected_when_attempting_to_put/"
+                        open
+                      >
+                        <summary class="article-expander__title">Policy-Map being rejected when attempting to put it on an interface.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vv4lw/policymap_being_rejected_when_attempting_to_put/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I&#x27;m trying to apply Voice, Video, and some critical data QoS to out network. I&#x27;ve done the research on how to create a class-map, policy-map, and how to apply the policy-map to the interface. However, when I try to apply the policy-map, it is getting rejected with error message:
+ &quot;Invalid queuing class-map!!! Queuing actions supported only with dscp/cos/qos-group/precedence/exp based classification!!!&quot;
+ I&#x27;ve tried using both dscp and cos just as the message is saying, but the policy-map won&#x27;t get applied to the interface.
+ class-map match-any VIDEO
+ match protocol rtp video
+ match cos 5
+ class-map match-any VOICE
+ match protocol rtp audio
+ match ip dscp default
+ policy-map QOS-POLICY
+ class VOICE
+ priority level 1 percent 25
+ class VIDEO
+ priority level 2 percent 25
+ This is the class-map and policy map that is currently configured. Our switch is Cisco Catalyst 9500-40x. Is there switches that can&#x27;t accept certain QoS configurations? I&#x27;ve read that the interface supports certain QoS traffic and this is the result of the interface i&#x27;m trying too apply this to:
+ TenGigabitEthernet1/0/38
+ Model: C9500-40X
+ Type: SFP-10GBase-LR
+ Speed: 10000
+ Duplex: full
+ Trunk encap. type: 802.1Q
+ Trunk mode: on,off,desirable,nonegotiate
+ Channel: yes
+ Broadcast suppression: percentage(0-100)
+ Unicast suppression: percentage(0-100)
+ Multicast suppression: percentage(0-100)
+ Flowcontrol: rx-(off,on,desired),tx-(none)
+ Fast Start: yes
+ QoS scheduling: rx-(not configurable on per port basis),
+ tx-(2p6q3t)
+ CoS rewrite: yes
+ ToS rewrite: yes
+ UDLD: yes
+ Inline power: no
+ SPAN: source/destination
+ PortSecure: yes
+ Dot1x: yes
+ Breakout Support: not applicable
+ Is the interface compatible for the QoS?
+    submitted by    /u/networkthinggy  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vtv1l/n9300_nv_overlay_evpn_vxlan_add_switch_change/"
+                        open
+                      >
+                        <summary class="article-expander__title">N9300 / NV Overlay / EVPN VXLAN - Add switch, change from single switch to vPC.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vtv1l/n9300_nv_overlay_evpn_vxlan_add_switch_change/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have 5 switches in production. 2 at HQ, 2 at PDC. 1 at DR. The 5 are eBGP peered and we have a VXLAN overlay between sites. Think multi pod but more than one DC. Anyways, I want to add a second switch at the DR site. I’ve never stood up a VPC after the bgp peering. My questions: 1. What is least intrusive process to add the second switch? 2. What do I need to plan for in terms of downtime? 3. What will happen to the routing when the VPC initially comes up?
+    submitted by    /u/asofyetundiscovered  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vtobg/multihoming_ipv6_without_bgp/"
+                        open
+                      >
+                        <summary class="article-expander__title">Multi-Homing IPv6 Without BGP</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vtobg/multihoming_ipv6_without_bgp/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello,
+ I&#x27;m trying to find a configuration which will allow me to use IPv6 prefixes from multiple ISPs. I&#x27;ve tried configuring multiple prefix delegations on the gateway router, and the end-devices receive IPv6 addresses from both ISPs, but the traffic ends up being black-holed (I&#x27;d love to know why, if anyone can tell me).
+ My current gateway is an Edgerouter 12, but hardware isn&#x27;t a blocker if I need something more advanced. I have familiarity with PFSense, Cisco and a bit with some other vendors.
+ Thanks!
+    submitted by    /u/bshacklett  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vszne/vty_line_config_question/"
+                        open
+                      >
+                        <summary class="article-expander__title">VTY line config question</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vszne/vty_line_config_question/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Going through our switches that were recently configured and I am coming across some some inconsistancies with the vty lines. Some are like this....
+ line vty 0 2, line vty 3 4, line vty 5 31 
+ Then others will be 
+ line vty 0 4, line vty 5 98 
+ And some other ones too with random numbers.
+ Is there an easy way to reconfigure these so that every switch is the same? I know the commands to do so, but Will I lose ssh connection and have an unreachable switch if I delete all the vty lines and then configure new ones?
+ I need to change the session timeouts on all the switches and its tough to push a config change out when all the vty lines are different.
+    submitted by    /u/GC_Player  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vrcmc/dell_os10_dhcp_snooping/"
+                        open
+                      >
+                        <summary class="article-expander__title">Dell OS10 DHCP snooping</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vrcmc/dell_os10_dhcp_snooping/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, has anyone had any experience with getting DHCP snooping working on Dell OS10?
+ I have a pair of S5232F-ON running OS10 10.5.5.3 configured as a VLT pair.
+ The manual is pretty vague on DHCP snooping - it says all you have to do is configure &quot;ip dhcp snooping trust&quot; on the uplink that faces the DHCP server, and then enable &quot;ip dhcp snooping&quot; globally. I&#x27;ve tried this, and as soon as I turn on DHCP snooping globally, attached systems can&#x27;t get DHCP any more. As soon as I turn off snooping, DHCP works again.
+ Support say that as no bugs have been reported with DHCP snooping, it must be that I&#x27;ve misconfigured the switch. This is entirely possible but not very helpful!
+ If anyone knows how to make it work for sure, I&#x27;d be very interested.
+ Thanks!
+    submitted by    /u/eidercollider  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vqh05/having_trouble_with_an_iptables_dnat_policy_due/"
+                        open
+                      >
+                        <summary class="article-expander__title">Having trouble with an iptables DNAT policy due to bridged connection</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vqh05/having_trouble_with_an_iptables_dnat_policy_due/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Background: I&#x27;m running Proxmox with one physical interface, eno1, and two virtual interfaces, vmbr0 and vmbr1. vmbr0 is bridged to eno1 for a few VMs/containers to sit directly on my LAN. vmbr1 is a private Proxmox LAN and is NAT&#x27;d through vmbr0 to access the internet. I have a web server on 10.1.0.5:443 and have a DNAT rule in iptables to achieve port forwarding:
+ iptables -t nat -A PREROUTING -i vmbr0 -p tcp -m tcp --dport 443 -j DNAT --to-destination 10.1.0.5:443 
+ The problem is that when traffic comes in from the bridged devices, this rule ends up applying since it&#x27;s coming in on vmbr0 and then getting forwarded out. How I can make this rule apply only to packets that originally come from eno1 or distinguish it in some other way? I&#x27;d prefer not to just put exceptions for each individual bridged IP. I&#x27;m still pretty new to iptables so any help or clarification for any misunderstandings I may be having is very appreciated.
+    submitted by    /u/Grandfather-Paradox  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/"
+                        open
+                      >
+                        <summary class="article-expander__title">BGP routing with cradlepoint and cell providers?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vpxf4/bgp_routing_with_cradlepoint_and_cell_providers/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have pretty stringent SLAs with my customer so I am looking at getting extra Internet insurance. 
+ I have two DIA circuits to two diverse providers, diverse entry points into the building and diverse paths all the way to the providers POPs. I am doing BGP to each and advertising out a /24 so I feel pretty confident in the resiliency of this design but I am really adverse to taking a SLA hit. 
+ I am curious if I was to add two cradle points and BGP peer with the cell providers and advertise out the /24 as a third and fourth backup option is even possible and if anyone has done this. 
+ TIA
+    submitted by    /u/kjp12_31  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/"
+                        open
+                      >
+                        <summary class="article-expander__title">Ruckus ICX 7150-48P and 3Com 4500 - Optical link up one one side only</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vmm4v/ruckus_icx_715048p_and_3com_4500_optical_link_up/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi everyone, 
+ I am working on this old network infrastucture and I am trying to replace some 3Com 4500 with Ruckus ICX 7150-48P. While doing some tests I found out that if I connect this two models of switches together with a patch cord everything works fine, but if I try to use a fiber link, the status led one the port lights up only on one switch, the 3Com.
+ I have tried every possible combination of SFP module, tried to configure the ports in many ways but nothing seems to work.
+ I wanna ask if in your opinin it is possible that these switches are just not compatible because I have tried replacing both switches, one at the time, with various ones and always worked except in this one condidion.
+    submitted by    /u/No_Resolution2122  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/"
+                        open
+                      >
+                        <summary class="article-expander__title">VTP and Vlans</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vl228/vtp_and_vlans/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>In an exercise for my school, we are supposed to configure VTP and later on Vlans. It said to configure them on the vtp server switch and then the clients would also be configured. But it doesn&#x27;t seem to happen. Did I not understand something ? Am I doing it completely wrong ?Please help me. Thanks in advance
+    submitted by    /u/Paval1s  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/"
+                        open
+                      >
+                        <summary class="article-expander__title">Enterprise DDI - DHCP/DNS/IPAM Solutions</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13vjecl/enterprise_ddi_dhcpdnsipam_solutions/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All,
+ I am currently examining the DDI market and would like to know about the existing standards and trends. Specifically, I am interested in cloud-based solutions or cloud-managed options available.Currently, our organization lacks an IPAM system, and DHCP and DNS functions are handled by the AD DCs. In addition to Infoblox, BlueCat, and EfficientIP, I am curious to know about other notable players in the market. (I would like to avoid Infoblox due to its high cost.)
+ I am not looking for an overlay solution to manage DNS and DHCP on the AD DCs. Rather, I am interested in a separate solution that can remove the DNS and DHCP roles from the AD DCs entirely.
+ Objective is to streamline infrastructure by separating the DHCP and DNS responsibilities from the AD DCs and consolidating them within a comprehensive DDI solution. Solution will be internal only, no public facing DNS, split-horizon, etc..
+ EDIT: Looking for enterprise solution with vendor support, no DIY with Netbox and BIND/KEA
+    submitted by    /u/One_Business7791  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Linus Tech Tips</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;vdD0yMS40a0"
+                        open
+                      >
+                        <summary class="article-expander__title">The Most Exciting PC Hardware in YEARS.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;vdD0yMS40a0">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >ColdFusion</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UC4QZ_LsYcvcq7qOsOhpAX4A">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;GKaVb3jc2No"
+                        open
+                      >
+                        <summary class="article-expander__title">Investigating Open AI&#x27;s Origins and Sam Altman</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;GKaVb3jc2No">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
                             </span>
                           </div>
                         </a>
@@ -45293,212 +46350,6 @@ Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription wit
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134zoxb/fiber_trunks_best_practice_straight_or_crossed/"
-                        open
-                      >
-                        <summary class="article-expander__title">Fiber trunks best practice - straight or crossed?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134zoxb/fiber_trunks_best_practice_straight_or_crossed/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>EDIT: Thanks for your input everyone, keep it coming. I still think it&#x27;s better to cross the trunk but I&#x27;m soaking up all your comments to make as an informed decision as possible.
- We’re working on a new building and at the stage of terminating fiber trunks on patch panels.
- Everything is home run from each IDF to the MDF, there are no IDFIDF trunks.
- We’re terminating on duplex LC patch panels.
- The tech doing the termination and I are at loggerheads about how they should terminate. He says they always terminate them straight through (1-1, 2-2, 3-3, 4-4, etc), but this means we will have to either stock different types of patch cables (crossed and straight) or mess around with rebuilding the duplex LC at one end of the patch cable.
- I’m saying they should be terminating with crossed pairs (1-2, 2-1, 3-4, 4-3, etc) which would allow us to use crossed patch cables everywhere, whether we’re connecting switchswitch within the rack or switchpatchpatchswitch.
- Is there a best practice to this?
-    submitted by    /u/leftplayer  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134u78i/sonicwall_vpn_tunnel_using_wrong_gateway/"
-                        open
-                      >
-                        <summary class="article-expander__title">Sonicwall VPN Tunnel using wrong gateway?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134u78i/sonicwall_vpn_tunnel_using_wrong_gateway/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have a site to site vpn tunnel between two locations, it works fine, however the tunnel seems to negotiate through the secondary WAN gateway vs the primary. Renegotiation results in the same gateway being used….was hoping someone may be able to help out!
-    submitted by    /u/xrinnenganx  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134s6ne/polycom_vv350_ip_phones_and_cisco_9300_catalyst/"
-                        open
-                      >
-                        <summary class="article-expander__title">Polycom vv350 IP Phones and Cisco 9300 Catalyst switch, trying to configure VOIP and IP VLAN</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134s6ne/polycom_vv350_ip_phones_and_cisco_9300_catalyst/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello! 
- I am really hoping for some help and guidance here.. 
- So a little bit of background about my environment. 
- I am currently updating my company&#x27;s switches. I purchased one Cisco 9300 to use as my core switch and then two 48 port Cisco 9200 switches to use as access switches.
- We have about 50 computers and Polycom VV350 IP phones and I have a eSXI host running a domain controller. 
- I&#x27;m fortunate enough to have the new switches and eSXI host running in a “test” environment so I can get this figured out before implementing my entire infrustructure, but everything is currently working in our production network. Ive been doing a lot of trial and error, but mostly errors.... 
- I don’t have a CCNA and Im not very fluent with Cisco, so Im wondering if there is a way to set this up from …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134qeb0/frrouting_kernel_tuning/"
-                        open
-                      >
-                        <summary class="article-expander__title">FRRouting - Kernel Tuning</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134qeb0/frrouting_kernel_tuning/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I want to install FRR on Rocky 9.1 and test performance and stability before using it in production. Possible protocols used will be OSPF, BGP and VXLAN.
- Any Kernel and Linux tuning tips to use as a router?
-    submitted by    /u/myridan86  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134piiz/hp1810_special_characters_in_passwords/"
-                        open
-                      >
-                        <summary class="article-expander__title">HP1810 special characters in passwords?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134piiz/hp1810_special_characters_in_passwords/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Are there any known restrictions or bugs concerning using special characters on passwords?
- I entered a password including a quotation mark and a percentage symbol („ and %).
- The password doesn’t work when logging in.
- I know how to reset the switch to factory defaults. But a) I would like to not have to configure all the VLANs again and b) over the past decades I have encountered such problems with old networking equipment. A few times there were alternative ways of getting back in when „bad“ special characters where used. Once replacing it with an ASCII code worked and once I could truncate the password up until the bad special character.
- Anybody know a way or know any restrictions?
- Thanks for deleting my last post by the way. Top way of moderating.
-    submitted by    /u/oliverleon  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134mu8l/network_refresh_everything_suggest_new_hardware/"
-                        open
-                      >
-                        <summary class="article-expander__title">Network refresh everything - suggest new hardware (datacenter switch, access switch/AP and edge routers)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134mu8l/network_refresh_everything_suggest_new_hardware/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We&#x27;re a relatively small enterprise with two data rooms in the US and EU, and about 15 small branch offices around the globe. I&#x27;ve just taken over operations here, and everything is pretty much end of sale and end of support. We need to expand the network, and I&#x27;m thinking it&#x27;s a good time to maybe revisit what vendors and hardware we should use going forward.
- We have just refreshed the Palo Alto firewalls, and gone SASE with Prisma Access. Each branch office has a routed ipsec tunnel to both data centers. These offices have cisco 2960, aerohive APs and clustered Palo Alto 220/440 series firewalls.
- In each datacenter we have about 6 nexus core switches in VPC, and two ASR1001 as edge routers. Each data center has two ISP’s. Finally each data center has a F5-cluster and a Palo Alto cluste…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134lkcy/have_office_networks_requirements_changed/"
-                        open
-                      >
-                        <summary class="article-expander__title">Have Office Networks requirements changed?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134lkcy/have_office_networks_requirements_changed/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Over the past 3 years we have gone from users meeting in a meeting room to people staying at desks and zooming. Most offices have have multiple 1Gb lines, but it seems as if that will no longer cut it. Higher speed with Wi-Fi 6e and everyone zooming what would you say office speeds should be 10Gb? 100Gb? Are you all experiencing the same issues? What are you doing to resolve this?
-    submitted by    /u/x1xspiderx1x  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134d1fg/high_noise_on_5ghz/"
-                        open
-                      >
-                        <summary class="article-expander__title">High noise on 5GHZ</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134d1fg/high_noise_on_5ghz/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Recently, we have received complaints from customers regarding slow wifi in a specific section of the floor. Upon checking in Cisco DNAC, I found that the wireless access point (WAP) the client is connected to is showing high noise on the 5GHz spectrum. I changed the nearby WAP into sniffer mode to capture the traffic on the same channel as the WAP with high noise. I now have the packet capture in Wireshark, but I&#x27;m unsure of how to diagnose the problem. I tried searching for a solution to this problem on Google but didn&#x27;t find anything useful. Can you please guide me in the right direction? 
- I have temporarily placed the problem wap in down state
-    submitted by    /u/sbobnet  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/134c3ad/unable_to_access_sonicwall_management/"
-                        open
-                      >
-                        <summary class="article-expander__title">Unable to access sonicwall management.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/134c3ad/unable_to_access_sonicwall_management/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi everybody, so to cut right to the chase I am able to get to the sonicwall admin login page but once I login it says that the connection was refused. I know I am using the right credentials when logging in. Any idea on how I could access the management console?
-    submitted by    /u/geegol  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45579,789 +46430,6 @@ Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription wit
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1350gox/what_are_your_oncall_rotations_like/"
-                        open
-                      >
-                        <summary class="article-expander__title">What are your on-call rotations like?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1350gox/what_are_your_oncall_rotations_like/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Were a two man team supporting 600 users. One works 6am-2pm no lunch, and the other works 8am-4pm no lunch. Then both of us are working from home as needed but we desperately need to move to an on call scenario. 
- Looking for suggestions. Having only worked at msp&#x27;s prior, neither of us have a healthy idea of what a good schedule looks like.
-    submitted by    /u/SplitttySplat  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134zojw/am_i_insane_or_is_the_konica_minolta_the_worst/"
-                        open
-                      >
-                        <summary class="article-expander__title">Am I insane or is the Konica Minolta the worst line of multi-function devices ever?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134zojw/am_i_insane_or_is_the_konica_minolta_the_worst/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I am working on this Konica Minolta C364e via web interface. Scan to email has stopped working. I can not find the job log to figure out why these scan to email attempts are failing. The vendor manual does not offer any information as to how one would find this. Anyone have any tips for Konica machines?
-    submitted by    /u/Enough_Ad_2696  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134xxl2/should_i_have_answered_a_call_from_a_prospective/"
-                        open
-                      >
-                        <summary class="article-expander__title">Should I have answered a call from a prospective employer at 7:30pm on a Friday?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134xxl2/should_i_have_answered_a_call_from_a_prospective/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Long story short, I was laid off about 2 months ago and have been looking for a job since. I have about 3 years experience working in help desk and a Jr. Sys admin role.
- Last week, I had two interviews with a small (less than 30 employees) MSP and I thought it went great, both interviewers seemed like good guys and the job would be challenging but I would learn a ton so I was very interested. After the final interview on Thursday, I was told to &quot;probably expect us to reach out soon&quot;.
- Lo and behold, I missed a call from them the next day at 7:30pm, followed by a text from them asking me to call them back when I was available. I text them back about 15 minutes later (when I see the missed call and text), letting them know that I&#x27;m currently out with friends and will call them back on Monda…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134wmvg/usb_desk_stand_for_yubikey/"
-                        open
-                      >
-                        <summary class="article-expander__title">USB desk stand for yubikey</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134wmvg/usb_desk_stand_for_yubikey/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi!
- I want to force 2FA for all users and are searching for a nice USB desk stand.
- The goal would be a very heavy desk usb hub or usb extender or a keyboard with well accessible usb extender.
- How do you solve this? There are lots of small desk stands, but I could not find any really heavy ones (especially in europe).
- Thank you for your thoughts ITStril
-    submitted by    /u/ITStril  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134q1qi/i_think_im_done_with_it/"
-                        open
-                      >
-                        <summary class="article-expander__title">I think I’m done with IT</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134q1qi/i_think_im_done_with_it/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I’ve been working in IT for nearly 8 years now. I’ve gone from working in a hospital, to a MSP to now fruit production. Before I left the MSP I thought I’d hit my limit with IT. I just feel so incredibly burned out, the job just makes me so anxious all the time because if I can’t fix an issue I beat myself up over it, I always feel like I’m not performing well. I started this new job at the beginning of the year and it gave me a bit of a boost. The last couple of weeks I’ve started to get that feeling again as if this isn’t what I want to do but at the same time is it. I don’t know if I’m forcing myself to continue working in IT because it’s what I’ve done for most of my career or what. Does anyone else get this feeling because I feel like I’m just at my breaking point, I hate not looking forward to my job in the morning.
-    submitted by    /u/MoppyUK  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134nt5g/windows_11_start_menu_bloatware_now_ignoring_gpo/"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows 11 Start Menu bloatware - now ignoring GPO</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134nt5g/windows_11_start_menu_bloatware_now_ignoring_gpo/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Morning all, happy Monday! 
- Looking for some advice. We had previously removed the Windows 11 bloatware (Climpchamp, ESPN, Tiktok, Instagram, etc) from our Windows 11 Start menus using the follow group policy settings:
- Computer Configuration -&gt; Windows Components -&gt; Cloud Content -&gt; &quot;Do not show Windows tips&quot; (Enabled)
- Computer Configuration -&gt; Windows Components -&gt; Cloud Content -&gt; &quot;Turn off cloud optimized content&quot; (Enabled)
- Computer Configuration -&gt; Windows Components -&gt; Cloud Content -&gt; &quot;Turn off Microsoft consumer experiences&quot; (Enabled)
- User Configuration -&gt; Windows Components -&gt; Cloud Content -&gt; &quot;Do not suggest third-party content in Windows spotlight&quot; (Enabled)
- User Configuration -&gt; Windows Components -&gt; Cloud Content -&gt; &quot;Turn off all Windows spotlight features&quot; (Enabled)
- User Configuration -&gt; Windows Components -&gt; Cloud Content -&gt; &quot;Turn off the Windows Welcome Experience&quot; (Enabled) 
- This was tested and worked fine, implemented last month and worked fine. Now this morning I am seeing all the bloatware is back, even though my policies are in place. 
- Am I missing a setting, or is this crap finally unremovable? 
-  
-Edit: Found it, fixed it. Now to test and implement. Check the comments below. Thanks all for contributing!
-  
-   submitted by    /u/tjn182  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134n983/openssh_for_windows_changing_rsa_key_manually/"
-                        open
-                      >
-                        <summary class="article-expander__title">OpenSSH for Windows: Changing RSA key manually with added passphrase - needed for Netsuite.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134n983/openssh_for_windows_changing_rsa_key_manually/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi fellow members, I need help with my OpenSSH Server app on my Windows server. OpenSSH is up and running. I can connect to the server from my remote client. But now I need to connect from Netsuite using RSA key but Netsuite doesn&#x27;t accept keys without a passphrase. I tried all possible ways even ChatGPT but all failed. I know how to create RSA keys with a passphrase. What I don&#x27;t know is how to force OpenSSH to accept new RSA key with a passphrase. Please help?
-    submitted by    /u/_EWM3_  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134n7ub/reason_to_not_let_ad_and_o365_sync/"
-                        open
-                      >
-                        <summary class="article-expander__title">Reason to not let AD and O365 Sync</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134n7ub/reason_to_not_let_ad_and_o365_sync/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Fairly new to an organization and just learned that on-prem AD and O365 do not sync. We have about 400 O365 users, of which 150 of those operate in one of our offices and are built in AD. This means that those 150 users technically have two different set of creds, even though they are likely the same. Apparently, it&#x27;s been like this for years and no one really knows why. Is there any reason you would not want it to sync? What are the potential downsides or gotchas if we were to sync? 
- It seems like syncing would allow for better password management, one place to manage at least some of the users (150 on-prem), better integration with Windows and syncing onedrive, etc. Anything else big to use as a benefit?
-    submitted by    /u/huggingwombat  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134n22x/group_policy/"
-                        open
-                      >
-                        <summary class="article-expander__title">group policy</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134n22x/group_policy/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>right now I have a few people that travel a lot for business and they need their time zone to change automatically does anyone know a good way to make a group policy that will set the time zone to automatic but not let them change it.
-    submitted by    /u/jasonbrehmer  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134mqrw/windows_security_feature_bypass_in_secure_boot/"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows Security Feature Bypass in Secure Boot (BootHole) vulnerability. Need some help.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134mqrw/windows_security_feature_bypass_in_secure_boot/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello sysadmins,
- At my previous company I have successfully manually remediated the &quot;Windows Security Feature Bypass in Secure Boot (BootHole)&quot; vulnerability on many Windows servers, however, I am tasked to do it for a few servers at my current company and for the life of me I cannot get it to work. I complete the steps from the Microsoft recommendation documentation on this page:
- (https://support.microsoft.com/en-us/topic/microsoft-guidance-for-applying-secure-boot-dbx-update-kb4575994-e3b9e4cb-a330-b3ba-a602-15083965d9ca)... 
- ...however, I am facing the following error at the last set of running the Set-SecureBootUefi command:
- Set-SecureBootUefi : Incorrect authentication data: 0xC0000022
- Seems to be an issue with the -Time parameter of the command. Here is what I am using:
- Set-Sec…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134mn89/weird_switch_and_connectivity_issues/"
-                        open
-                      >
-                        <summary class="article-expander__title">Weird switch and connectivity issues</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134mn89/weird_switch_and_connectivity_issues/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Good Morning,
- This past week I started to see an issue where some client machines on our LAN will acquire a link on a switch but its MAC address is not put into the MAC address table. This causes the machine to appear online to the user but it actually isn&#x27;t. Intranet and Internet are inaccessible. The only way to fix it is to reboot the machine. Disabling and re-enabling the NIC doesn&#x27;t appear to work.
- We have some older switches admittedly... Cisco SG500X-48p running latest firmware, set up in stacks with 4 member switches for each stack. I&#x27;m receiving complaints from users in two different stacks about this issue so I&#x27;m not sure if its happening to others at the moment.
- When a client machine can&#x27;t connect, I log into the switch they&#x27;re connected to and search for the client&#x27;s MAC add…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134mebo/cyber_liability_insurance_claims_process/"
-                        open
-                      >
-                        <summary class="article-expander__title">Cyber Liability Insurance &amp; Claims Process</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134mebo/cyber_liability_insurance_claims_process/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi all,
- For those of you that have taken out cyber liability insurance policy, aside from this being a checkbox that corporate is looking for, from a technical perspective what sort of (if any) engagement do you have with the insurance provider?
- Has there been any sorts of onboarding calls with the provider to go over the claims process in the event of a cyber breach? Things like what we need to be prepared with before making a claim, etc.
-    submitted by    /u/-c3rberus-  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134lp86/is_it_possible_to_enable_biometrics_on_a_domain/"
-                        open
-                      >
-                        <summary class="article-expander__title">Is it possible to enable biometrics on a domain joined PC without connecting out connecting to the Authenticator app or SSO?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134lp86/is_it_possible_to_enable_biometrics_on_a_domain/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We are trying to connect our domain joined computers with Beyond Identity and we want to leverage the fingerprint sensor on our laptops.
- We have been able to do this Beyond Identity setup on Android, Mac OS, and iPad with no issues however, when we try to enable biometrics on Windows PCs that are domain joined it wants us to set up a pin and use the Microsoft authenticator app or go through our two-factor authentication provider. 
- Does anyone know of a way to just enable biometrics locally so we can integrate it with Beyond Identity without going through the entire integration process with the cloud etc?
-    submitted by    /u/__flx__  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134lkj4/duplicate_34_monitor_to_55_tv/"
-                        open
-                      >
-                        <summary class="article-expander__title">Duplicate 34&quot; monitor to 55&quot; TV</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134lkj4/duplicate_34_monitor_to_55_tv/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Any great ideas for duplicating a 34&quot; curved monitor to a 1080 55&quot; TV so that it has a decent resolution?
-    submitted by    /u/SpareCookie3610  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134lh5k/automatic_time_zone/"
-                        open
-                      >
-                        <summary class="article-expander__title">automatic time zone</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134lh5k/automatic_time_zone/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>right now, I have a few people that travel a lot for business, and they need their time zone to change automatically does anyone know a good way to make a group policy that will set the time zone to automatic but not let them change it.
-    submitted by    /u/jasonbrehmer  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134let2/best_marker_for_writing_on_network_cables_switch/"
-                        open
-                      >
-                        <summary class="article-expander__title">best marker for writing on network cables? switch replacement</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134let2/best_marker_for_writing_on_network_cables_switch/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We are going to be replacing our core switches and since I don&#x27;t have rack space to mount new switch directly below/above old switch, I&#x27;ll have to fully unplug old switch, remove, rack new, replug cables. having cables numbered is going to be critical. 
- anyone have recommendations for a white/silver sharpy (some cables will be black)? I see oil based sharpy, something tells me that might not dry.
-    submitted by    /u/jordanl171  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134krvv/iscsi_and_nvmetcp_shared_storage_comparison/"
-                        open
-                      >
-                        <summary class="article-expander__title">iSCSI and NVMe/TCP shared storage comparison</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134krvv/iscsi_and_nvmetcp_shared_storage_comparison/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>submitted by    /u/bbgeek17  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134kojo/anti_spam_for_single_outlook_user_with_on_prem/"
-                        open
-                      >
-                        <summary class="article-expander__title">Anti Spam for single outlook user with on prem exchange</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134kojo/anti_spam_for_single_outlook_user_with_on_prem/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello all,
- I have a small company I am supporting in IT related topics. One of the users has a lot of spam mails incoming. Do you know any client solution that doesn’t necessarily need an email gateway installed? It could cost a few euros, that’s not a problem.
- Thanks in advance
-    submitted by    /u/doitforthevinee  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134k55k/sysadmin_or_programmer/"
-                        open
-                      >
-                        <summary class="article-expander__title">SysAdmin or Programmer</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134k55k/sysadmin_or_programmer/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello,
- I wasn&#x27;t sure where put this post , at r/sysadmin or r/programming, so i decided write here.
- I am 18 yo and I&#x27;m in an IT technical school so just starting my way in IT.
- I have a dilemma because I don&#x27;t know what path to take. I&#x27;m very interested in systems administration,networks ( I passed CCNA) etc, but I also really like web programming (js and python html,css, etc). I&#x27;m graduating from technical school in a year, and I don&#x27;t plan to go to college just study in my own. I would like to ask you guys for some advice, because I totally don&#x27;t know what to choose and focus on something. I don&#x27;t want to do and learn several things at once, because it doesn&#x27;t benefit me much.
-    submitted by    /u/Pietrek_Kogucix  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134jtvn/accessing_old_laptop_removed_from_domain/"
-                        open
-                      >
-                        <summary class="article-expander__title">Accessing old laptop removed from domain</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134jtvn/accessing_old_laptop_removed_from_domain/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So this happened. A long lost laptop was found in the company that was thought to be part of a rather large security incident we had 2 yrs ago. We really like to access the laptop.
- This is the case:
- - Boots successfully to the windows 10 login screen
- - Computer has bitlocked enabled, Bitlocker key itself is unknown however.
- - Computeraccount was removed from the domain and can not be restored anymore.
- - Because of this, no domain admin or other domain account works.
- - Previous user shown on login screen has unknown password, no other cached domain accounts.
- - Local admin account on the laptop is likely disabled and has an unknown password
- - BIOS is accessible
- We are most interested in a login to get the bitlocker key to enable decrypting the forensic backup.
- I&#x27;m really stuck here. Any thoughts?
-    submitted by    /u/JustBananas  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134jtdy/psa_comcast_is_breakinghijacking_dns_with_their/"
-                        open
-                      >
-                        <summary class="article-expander__title">PSA: Comcast is breaking/hijacking DNS with their &quot;Security Edge&quot; product</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134jtdy/psa_comcast_is_breakinghijacking_dns_with_their/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>More here
-    submitted by    /u/jacobjkeyes  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134jqy6/how_do_you_grow_in_career_as_a_sole_it_person/"
-                        open
-                      >
-                        <summary class="article-expander__title">How do you grow in career as a sole IT person</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134jqy6/how_do_you_grow_in_career_as_a_sole_it_person/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have been a sole IT perosn at my company, joined when i was at University final year as an Admin assistant, got promoted to IT got promoted to it and admin offcer am not it specialist, just made 4 years with the company last month. I have talked to management before and there is no option for an it manager as there is no it team but a sole person. what do you recommend or advise in this case?
-    submitted by    /u/Low-Wish6429  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134i631/moronic_monday_may_01_2023/"
-                        open
-                      >
-                        <summary class="article-expander__title">Moronic Monday - May 01, 2023</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134i631/moronic_monday_may_01_2023/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Howdy, /r/sysadmin!
- It&#x27;s that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I&#x27;ve taken over responsibility for posting these weekly threads so you don&#x27;t have to worry about anything except your comments!
-    submitted by    /u/AutoModerator  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134i12y/stormshield_or_zyxel/"
-                        open
-                      >
-                        <summary class="article-expander__title">Stormshield or Zyxel</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134i12y/stormshield_or_zyxel/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello
- ​
- I manage an infrastructure composed of a main site and 10 secondary sites of small size (1-5 users)
- ​
- I have a main site with an email server and business software accessible in remoteapp (15 users). I have 3CX in telephony
- ​
- I have the choice between 2 providers who offer me
- ​
- Stormshield SN210 for the main site + SN160 for the remote sites
- or
- Zyxel USGFlex 700 + USG20 for the remote site
- ​
- Which one do you choose ?
- ​
- Thanks in advance
-    submitted by    /u/GL62  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134hxqn/microsoft_authenticator_passwordless_signin/"
-                        open
-                      >
-                        <summary class="article-expander__title">Microsoft Authenticator Passwordless Sign-In</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134hxqn/microsoft_authenticator_passwordless_signin/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi Everyone,
- ​
- Recently i&#x27;ve set-up Passwordless Sign-In using Microsoft Authenticator for my organization. This works perfectly for all services connected to the users Microsoft Account. 
- I&#x27;ve tried looking into a way to use the MS Authenticator app as a Sign-In method for InTune enrolled devices (Windows 10/11). Does anybody know if this is available with the current MS Authenticator app?
- Thank you very much for any replies!
-    submitted by    /u/Rare-Understanding-6  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134hodh/www_was_put_into_the_public_domain_30_years_ago/"
-                        open
-                      >
-                        <summary class="article-expander__title">WWW was put into the public domain 30 years ago</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134hodh/www_was_put_into_the_public_domain_30_years_ago/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>On 30 April 1993, CERN put the World Wide Web software in the public domain.
- Only 30 years ago, and it has dramatically revolutionised how many people live today.
- https://home.cern/science/computing/birth-web#:~:text&#x3D;On%2030%20April%201993%2C%20CERN,way%20to%20maximise%20its%20dissemination.
-    submitted by    /u/ZAFJB  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134hbih/scheduled_task_question/"
-                        open
-                      >
-                        <summary class="article-expander__title">Scheduled Task Question</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134hbih/scheduled_task_question/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi
- I have a question about a scheduled task
- If you have a scheduled task to run on a timer and the timer is one hour from the time the scheduled task is created. What happens if the user shuts down their machine before the hour ?
- Does the scheduled task never get to run? Does it run on next log on or next time the machine is turned on?
- The trigger is :
- Run powershell script after 60mins 
- Not after workarounds yet or different ideas. Just troubleshooting some that dont run and I want to know why first
- Thank you !
-    submitted by    /u/Drekk0  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134gxj4/www_was_put_the_public_domain_30_years_ago/"
-                        open
-                      >
-                        <summary class="article-expander__title">WWW was put the public domain 30 years ago</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134gxj4/www_was_put_the_public_domain_30_years_ago/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>On 30 April 1993, CERN put the World Wide Web software in the public domain. 
- Only 30 years ago, and it has dramatically revolutionised how many people live today.
- https://home.cern/science/computing/birth-web#:~:text&#x3D;On%2030%20April%201993%2C%20CERN,way%20to%20maximise%20its%20dissemination.
-    submitted by    /u/ZAFJB  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134g5wu/radius_wifi_login_driving_me_nuts/"
-                        open
-                      >
-                        <summary class="article-expander__title">RADIUS wifi login driving me nuts!</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134g5wu/radius_wifi_login_driving_me_nuts/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have inherited a Unifi Wifi network which uses RADIUS to authenticate computers onto an Active Directory domain. 
- Problem is, nearly every single laptop does NOT connect to wifi (v6) until the domain (or local) user logs in, and this is killing some, not all, of my GPO. 
- As an example, I set a GPO to add a local admin on laptops. That works. But if I try to deploy an .msi it fails miserably, with error logs telling me the network wasn&#x27;t available. If I run GUPDATE, it fails with the couldn&#x27;t complete message, in that it knows there is an .msi in waiting type of thing. 
- GP Result shows the policies are being applied to the local endpoint.
- I can give more detail when I am back in the office on specifics. 
- If I plug the laptop into the network (physical cable) the .msi deploys without issue, so i am relatively happy that I set the GPO up correctly. 
- I am not entirely sure RADIUS authentication is set up correctly on the DC, but if I am honest, I am a bit stuck where to look, or more importantly, how to check. 
- I have set the network to wait, and the laptops now take 60secs to boot to a Windows log in screen, but the wifi is disconnected, so it&#x27;s pretty pointless having wait for network in place! 
- As mentioned at the beginning, I have inherited this, and there has been an absolute ton of work required to roll out an RMM to approx 150 laptops, much of which I&#x27;ve had to do via Powershell due to the .msi failing, plus other work to get the estate where it needs to be. This GPO thing has taken a back seat, but it is nagging at me to get it fixed. 
- I could leave it now i have an RMM in place, but I would prefer to fix it and have it working as it should so it doesn&#x27;t bite me in the future. 
- I&#x27;m posting this from home on a public holiday, so don&#x27;t have specific information to hand, but will gladly respond with any info when I am back in the office. 
- Any ideas?
-    submitted by    /u/NeuroT2  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134f7s7/is_it_right_to_speak_with_shortlisted_candidates/"
-                        open
-                      >
-                        <summary class="article-expander__title">Is it right to speak with shortlisted candidates on the side before their interview</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134f7s7/is_it_right_to_speak_with_shortlisted_candidates/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>A candidate who is going to have a software development interview with my organization private messaged me on LinkedIn requesting to ask some few questions from me -i assume its to do with the interview, what to expect, technical environment, tips etc
- I have not responded to him, but I feel this is not right.
- I&#x27;m not part of the interviewing or decision-making panel, and i didn&#x27;t even know about this upcoming interview -but i usually prepare the test computer which will have the practical tests or activities when im told to do so i.e just installing programs, dev environments, user profiles etc
- Should I alert my boss(who is part of the interview), ignore her, or hear what she has to ask
- On the other hand i just wouldn&#x27;t want someone to lose an interview opportunity that could transform their life and that of their loved ones over something like this, i.e. if the candidate gets disqualified before the interview (it&#x27;s just my little caring heart).. Maybe they mean well, or maybe they want to gain an unfair advantage by seeking insider information 
-    submitted by    /u/StrikingPeace  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134f6x0/has_cs_been_hit_harder_than_it_with_the_recent/"
-                        open
-                      >
-                        <summary class="article-expander__title">Has CS been hit harder than IT with the recent job market shift?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134f6x0/has_cs_been_hit_harder_than_it_with_the_recent/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Just wondering what you guys thought, all I can tell is that /r/cscareerquestions seems to be waaay more pessimistic than this sub as of late.
-    submitted by    /u/PM_ME_YOUR_PS5s  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134df8r/back_to_the_ranks/"
-                        open
-                      >
-                        <summary class="article-expander__title">Back to the ranks</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134df8r/back_to_the_ranks/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Been doing IT and Web Dev and web server type stuff for many a year and after a 5 year stint doing web dev and management, I&#x27;m back among the IT/Sysadmin crowd. I&#x27;ll be doing Office support and managing some infrastructure for production. I&#x27;ll be part of a really small team, some of whome I&#x27;ve worked with before. I&#x27;m excited to be back in IT as it looks more and more like AI is going to even further commoditize web design and development.
-    submitted by    /u/xftwitch  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134cprm/microsoft_and_geoblocking/"
-                        open
-                      >
-                        <summary class="article-expander__title">Microsoft and GeoBlocking</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134cprm/microsoft_and_geoblocking/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Just wondering, how many people are constantly dealing with Microsoft Geolocation ipv4 situation at the moment, I’m having Hobbes if services and users log tickets that they can’t log in, and we have to add them to the exclusion group.
- I’m having Sip phones authenticate from the Netherlands, even though I’m in Australia.
- Lots of my users are apparently logging in from the US from their home network, also had a few from khazakstan…
- Any fixes apart from exclusion groups on CA?
-    submitted by    /u/Weathers  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46396,160 +46464,12 @@ Edit: Found it, fixed it. Now to test and implement. Check the comments below. T
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Morning Wire</button>
-                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="b021ba39-3882-4af3-b8a0-396fa9c64b1a"
-                        open
-                      >
-                        <summary class="article-expander__title">Texas Manhunt &amp; Pilot Strike Authorization | Afternoon Update | 5.1.23</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
-Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ to 231-231.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="22df0fdf-6411-4f6f-9461-206b10a36a39"
-                        open
-                      >
-                        <summary class="article-expander__title">Biden&#x27;s Correspondents Dinner Remarks &amp; Epstein Revelations | 5.1.23</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>President Biden takes aim at his political opponents from the stage at the White House Correspondents Dinner, officials who pushed for prolonged lockdowns of schools testify on Capitol Hill, and new information from Jeffrey Epstein’s personal calendar brings new revelations to light. Get the facts first with Morning Wire. 
-Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/
-Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/
-Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-04-30 datetime="2023-05-01T02:40:58.000Z">2023-04-30</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-04-30 datetime="2023-05-01T02:40:58.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134ai7z/unixwindows_admin_moving_to_linux_what_should_i/"
-                        open
-                      >
-                        <summary class="article-expander__title">Unix/Windows admin moving to Linux. What should I know?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134ai7z/unixwindows_admin_moving_to_linux_what_should_i/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey folks. I&#x27;m a tier 3 Sysadmin who has been supporting Windows for 6 years and more recently, Solaris for the last two as my primary OS. I&#x27;m looking at a job right now where I would need to swap from Solaris to Linux as my primary OS as I escape legacy software hell, and I just wanted to ask; has anyone made this swap before that can give me advice?
- I&#x27;m pretty confident with Solaris and do a good amount of bash scripting. What&#x27;s going to be similar between Solaris and Linux? What&#x27;s going to be different? Are there any pitfalls I should look out for or handy courses I should take?
- Thanks in advance!
-    submitted by    /u/cynicalllama  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134afcm/burner_phone_and_laptop/"
-                        open
-                      >
-                        <summary class="article-expander__title">Burner phone and laptop</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134afcm/burner_phone_and_laptop/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Have a couple of execs traveling to China and need to ensure they’re secure while there. In the past I would just supply old iPhones and loaner laptops that would be wiped upon return. Wondering if there’s a better way to secure these users while keeping them somewhat productive. What is your go to combo of phone/laptop when traveling to countries like this?
-    submitted by    /u/mav41  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/134a4y2/decommissioned_ad_connect_aad_is_still_showing/"
-                        open
-                      >
-                        <summary class="article-expander__title">Decommissioned AD Connect &amp; AAD is still showing active</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/134a4y2/decommissioned_ad_connect_aad_is_still_showing/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>We&#x27;ve completed the shift to be 100% cloud and have no need for on-prem AD anymore. We&#x27;ve disabled AD Connect via the Set-MsolDirSyncEnabled -EnableDirSync $false command and uninstalled the agent. We also ran Okta sync and uninstalled that agent as well. 
- We have Okta upstream as our profile source and users are federated with that. Everything appears to be operating nominally but AAD still has some remnants of on-prem AD. It shows Password hash sync, Seamless single sign on and pass-through authentication as enabled (this is after 72 hours of running the command). Running a Get-msolcompanyinformation shows the DirSyncService account name and PasswordSynchronizationEnabled as true but DirectorySynchronizationEnabled is set to false.
- Will that change/disappear over time or are there other things that need to be done to remove them?
- Also, does anything officially need to be done with on-prem AD? We are moving offices and have no need for the current network either so things like DNS and networking aren&#x27;t a concern. I think it&#x27;s as simple as shutting down the servers and scrubbing the hard drives but am wondering if there&#x27;s a step or two that&#x27;s missing.
-    submitted by    /u/nimjay25  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5122539642">
-        <time id="build-timestamp" datetime="2023-05-30T14:10:01.290Z">2023-05-30T14:10:01.290Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5131017620">
+        <time id="build-timestamp" datetime="2023-05-31T09:11:22.941Z">2023-05-31T09:11:22.941Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
