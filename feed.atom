@@ -2,10 +2,78 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-06-01T12:22:11.468Z</updated>
+    <updated>2023-06-01T13:14:39.479Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Why'd it go to spam folder?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13xh4v0/whyd_it_go_to_spam_folder/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13xh4v0/whyd_it_go_to_spam_folder/"/>
+        <updated>2023-06-01T13:07:08.000Z</updated>
+        <summary type="html"><![CDATA[Sent a potential client an email with a PDF attachment from my email address last week. I waited a few days for response, then got on the phone with him to find out my email ended up in his spam folder.
+ Kind of embarrassing but anyway... why spam?
+ Info:
+  
+This is the first time I sent an email to the specific person's email address (maybe attachment and first time sending flagged it, or my wording?)
+ I have DKIM, SPF, and DMARC active. my (self hosted email) uses MailGun for outgoing mail. 
+ I was curious if it may have went to spam possibly when I didn't hear back for a few days, but I get DMARC reports daily and double checked the report on this message, all passed.
+  
+dmarc - https://imgur.com/aLUuKxp
+ I never had any issues with MailGun's rotating sending IP addresses (in dmarc report). Sent other emails recently to new addresses with attachments and they replied no problem. The only thing I can think of is maybe his I.T. admin has Outlook spam settings set ridiculously strict?
+ I set up mail open/click tracking, which may help a a little (assuming receivers don't have images blocked by default), but still curious why this may have happened.
+ Thanks and I appreciate any ideas you share
+    submitted by    /u/tlatch89  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Auditing things that are using a Domain Controller?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13xgzs2/auditing_things_that_are_using_a_domain_controller/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13xgzs2/auditing_things_that_are_using_a_domain_controller/"/>
+        <updated>2023-06-01T13:01:18.000Z</updated>
+        <summary type="html"><![CDATA[Just fishing for ideas here - we have a ye olde legacy environment that has some ancient Domain Controllers that we're finally getting around to replacing.
+ As it's on an ancient environment the people who know about it have long gone so we're doing a bit of homework first and we need to determine what's actually using the DCs to work out what the risk is.
+ I'm not overly concerned about the actual domain authentication itself as that'll generally just work itself out, I'm mainly concerned about LDAP and DNS - is there anything else i'm overlooking here?
+ I can turn on the LDAP event logging to identity anything doing LDAP queries, not so sure about capturing DNS queries though...the Windows stuff will be fine, it's weird stuff like Wireless Access Points and other appliances i'm concerned about.
+ Any other stuff i should be on the lookout for?
+    submitted by    /u/citrix-throwaway  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Security risks of always on VPN to keep line of site with domain controllers?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13xgwjm/security_risks_of_always_on_vpn_to_keep_line_of/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13xgwjm/security_risks_of_always_on_vpn_to_keep_line_of/"/>
+        <updated>2023-06-01T12:57:20.000Z</updated>
+        <summary type="html"><![CDATA[We wants to deploy always on VPN based on the device certificate so that hybrid laptops always have connectivity with domain controllers to allow logins when cached credentials are not available or the user forgets the password that works with the cached credentials.
+ This is what I found for required network connectivity:
+ https://learn.microsoft.com/en-us/answers/questions/268557/active-directory-domain-controler-to-client-requir
+  
+UDP and TCP Port 135 for domain controllers-to-domain controller and client to domain controller operations.
+ UDP Port 389 for LDAP to handle normal queries from client computers to the domain controllers.
+ TCP and UDP Port 464 for Kerberos Password Change
+ TCP and UDP Port 53 for DNS from client to domain controller and domain controller to domain controller…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Imprivata OneSign SSO with RDS]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13xgmva/imprivata_onesign_sso_with_rds/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13xgmva/imprivata_onesign_sso_with_rds/"/>
+        <updated>2023-06-01T12:44:47.000Z</updated>
+        <summary type="html"><![CDATA[Has anyone used Imprivata OneSign with a standard Remote Desktop Server farm? Not using VDI and not using Published Apps, just a plain old Remote Desktop (aka Terminal Server) farm. I am curious if it works and, if so, how well. All I see referenced online are VDI deployments. Thanks in advance!
+    submitted by    /u/backcountry_bytes  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Amazon Ring IoT epic fail]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/13xg30w/amazon_ring_iot_epic_fail/</id>
@@ -244,6 +312,18 @@ My plan is to create a group and assign the license to the group in bulk. then o
         <updated>2023-06-01T08:13:46.000Z</updated>
         <summary type="html"><![CDATA[Hey all, I was doing a load of digging based on an error that I am seeing in SharePoint for Teams Channels not having a valid SharePoint URL basically. Has anyone else had this? If so, can you please advise on how to fix it? This is a brand new tenant (fresh about a week ago and no additional settings have been configured it's just a straight shot run of the mill tenant and some Business Standard licenses
     submitted by    /u/Glossy_2k  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I need some ideas on how to shred a large volume of magnetic tape]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/13xajpn/i_need_some_ideas_on_how_to_shred_a_large_volume/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/13xajpn/i_need_some_ideas_on_how_to_shred_a_large_volume/"/>
+        <updated>2023-06-01T06:56:01.000Z</updated>
+        <summary type="html"><![CDATA[The tape has already been degaussed and now needs to be shredded, any clever ways on how to do this without a shredder?
+    submitted by    /u/FF614  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
@@ -27968,30 +28048,6 @@ Should I replace DC with new one at new IP and then manually go and update all s
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[File shares to Microsoft teams-team]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/1365ttl/file_shares_to_microsoft_teamsteam/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/1365ttl/file_shares_to_microsoft_teamsteam/"/>
-        <updated>2023-05-03T00:52:54.000Z</updated>
-        <summary type="html"><![CDATA[Managment wants to move away from file servers. With intent on moving home folders to one drive and shared folders to teams within Microsoft teams. The idea is to pass access management of folders or teams off to department leaders for Managment. I see this being a disaster from a management standpoint as a system administrator. Wondering if anyone here has every completely dropped files servers and moved over to teams. How did it go?
-    submitted by    /u/Jtl314  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What's your favorite and least liked corporate terms for technology?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/1365nqq/whats_your_favorite_and_least_liked_corporate/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/1365nqq/whats_your_favorite_and_least_liked_corporate/"/>
-        <updated>2023-05-03T00:45:19.000Z</updated>
-        <summary type="html"><![CDATA[Just asking partly because I want to expand my "corporate" language/buzzwords when talking to others/management and partly curious of other's thoughts. Things I was referring to for example are ”high level", "technology stack", and other terms out there that may end up in a email.
-    submitted by    /u/ScientificQuokka  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
