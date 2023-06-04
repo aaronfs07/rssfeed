@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-06-04T13:11:40.393Z</updated>
+    <updated>2023-06-04T14:08:41.581Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Embedding javascript code into a batchfile]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/140dw8y/embedding_javascript_code_into_a_batchfile/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/140dw8y/embedding_javascript_code_into_a_batchfile/"/>
+        <updated>2023-06-04T13:58:12.000Z</updated>
+        <summary type="html"><![CDATA[I have a JS file that I call from a batch file, and it works as expected. 
+ I suddenly have a thought that i can put the JS file code into the batch file itself. Went through few resources and came up with this below code.
+ if ("0"=="1") /* "Unfortunately, this line do nothing but echo back to your console. " 
+ @echo bat file start. setlocal ENABLEDELAYEDEXPANSION @echo off
+ REM You can embed node.js ( And / Or ) WSH Jscript to single bat file. 
+ call :JSCRIPT goto :EOF
+ :JSCRIPT @REM execute self as WSH JScript @cscript //nologo //e:jscript "%~f0" exit /b
+ */ {} // Do not remove {} above. ( Removing this line is ok. ) // javascript block. // https://gist.github.com/fliedonion/571da78b27fdc2cae098 function wscriptMain(){ WScript.Echo("Hello, JScript");
+ AB = new ActiveXObject("Broker.Application"); AB.SaveDatabase(); //WScript.Echo(fso.FolderExists("C:\windows").toString()); AB = null; }
+ //Rem Deletes previous backup file to generate a new one Del C:\Volume\MEGAsync\Amibroker\Backup\AB_Backup.7z timeout 5 7z.exe a "C:\Volume\MEGAsync\Amibroker\Backup\AB_Backup.7z" "C:\Program Files\AmiBroker*" -x!PersistVars.bin -mmt Exit
+    submitted by    /u/raj1213  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Highly available iSCSI target based on the Linux.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/140ds1l/highly_available_iscsi_target_based_on_the_linux/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/140ds1l/highly_available_iscsi_target_based_on_the_linux/"/>
+        <updated>2023-06-04T13:53:53.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I have a very interesting case study for my university to do and I am wondering if there is any comprehensive tutorial on how to configure a HA iSCSI storage (working in Active<>Passive mode) using the Pacemaker and the DRBD. Unfortunately I am completely green at using the Pacemaker and the DRBD and frankly I don't have time to learn it. Can You please help me? I will take any useful information there is. Thank You in advance :D
+    submitted by    /u/DrvnkMario  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[EVE-NG / FTD / FMC networking problems]]></title>
         <id>https://www.reddit.com/r/networking/comments/140cmw2/eveng_ftd_fmc_networking_problems/</id>
