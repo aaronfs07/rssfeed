@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-08 datetime="2023-06-08T10:11:01.000Z">2023-06-08</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-08 datetime="2023-06-08T10:11:01.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-08 datetime="2023-06-08T11:06:39.000Z">2023-06-08</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-08 datetime="2023-06-08T11:06:39.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,82 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1446881/snipeit_on_kubernetes/"
+                        open
+                      >
+                        <summary class="article-expander__title">Snipe-it on Kubernetes</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1446881/snipeit_on_kubernetes/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello guys! i don&#x27;t know if this is the super-right place to writhe this down, but i&#x27;m out of options and need some help, and you guys are always amazing.
+ we have a fairly simple configuration for Kuberntes ingress: aws alb receive in 443, forward to 80, and then move traffic to nginx ingress controllers that has services on the 80.
+ up until now i never had a problem like this one, snipeit its driving me crazy, the only thing i can get from its ingress is a gateway timeout, and this happens only for its url, all the other applications are working
+ log from the ingress controller:
+ networking nginx-ingress-nginx-controller-x7j7v controller 2023/06/08 10:50:09 [error] 857#857: *22661 upstream timed out (110: Operation timed out) while connecting to upstream, client: client, server: snipeit.staging.k8s.domain, request: &quot;GET / HTTP/1.1&quot;, upstream: &quot;upstream&quot;, host: &quot;snipeit.staging.k8s.domain&quot; 
+ pod of snipeit doesnt log anything sadly, im using the latest image since i have ARM cluster.
+ thats my &quot;proxy&quot; configuration for snipeit, but i tested really almost everything and im starting to thing is a strange combo.
+ APP_ALLOW_INSECURE_HOSTS: &quot;true&quot; APP_FORCE_TLS: &quot;true&quot; APP_TRUSTED_PROXIES: &quot;**&quot; APP_LOG_LEVEL: &quot;debug&quot; SECURE_COOKIES: &quot;true&quot; APP_URL: &quot;https://snipeit.staging.k8s.domain&quot; 
+ here the ingress configuration:
+ ingress: 
+ annotations: nginx.ingress.kubernetes.io/proxy-read-timeout: &quot;120&quot; nginx.ingress.kubernetes.io/configuration-snippet: | more_set_headers &quot;X-Forwarded-Proto: https&quot;; path: / hosts: - snipeit.staging.k8s.jointly.pro pathType: Prefix
+ also for refernce im using this chart. ; thank you in advance for whatever info you have.
+ Really.
+    submitted by    /u/liberovento  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14466iv/tpm_20_in_a_printer_with_no_hard_drive/"
+                        open
+                      >
+                        <summary class="article-expander__title">TPM 2.0 in a printer with no hard drive</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14466iv/tpm_20_in_a_printer_with_no_hard_drive/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Does a TPM chip provide any kind of security/features in a printer if the printer is without a hard drive?
+ Company wants us to only buy printers with a TPM2.0 chip, even small desk printers without a hard drive. My understanding is the TPM-chip only provides encryption to hard drives and that it won’t be any point of having one in a small disk less printer…?
+    submitted by    /u/ZoRaC_  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/1445o0b/kvm_over_internet_recommandation/"
+                        open
+                      >
+                        <summary class="article-expander__title">Kvm over internet recommandation</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/1445o0b/kvm_over_internet_recommandation/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi i am using Teams and webex for online meeting and making calls to do my job and planning to travel for few months so i am looking for Kvm over internet that support teams call , sharing screens and calls with less latency . I am planning to leave my laptop in my home job country and control it from abroad , any one recommand a good kvm model . Thanks
+    submitted by    /u/hannibal8012  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46180,8 +46256,8 @@ Thanks!
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5210015318">
-        <time id="build-timestamp" datetime="2023-06-08T10:11:51.580Z">2023-06-08T10:11:51.580Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5210505206">
+        <time id="build-timestamp" datetime="2023-06-08T11:09:50.120Z">2023-06-08T11:09:50.120Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
