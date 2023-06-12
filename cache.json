@@ -240,6 +240,66 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/147p1xh/meraki_m365_traffic_routing/",
+          "author": null,
+          "description": "I am looking to route M365 traffic from a specific vlan to a specific Hub (happens to be vMX in this scenario)\n Meraki support hasn't been much help, but I feel like I have come across posts of it having been implemented.\n Besides getting the M365 URLs/endpoints, would anyone know where to begin on the Meraki side?\n    submitted by    /u/OniSatsuiNoHado  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/147p1xh/meraki_m365_traffic_routing/",
+          "publishedOn": "2023-06-12T14:08:37.000Z",
+          "wordCount": 2305,
+          "title": "Meraki M365 Traffic Routing",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/147os7f/windows_laps/",
+          "author": null,
+          "description": "Hi all,\n I've set the Encrypted password history size to 4, how do I see the history?\n I use the admin center and can can only see one:\n We use Azure as the directory.\n    submitted by    /u/Critical-King-7349  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/147os7f/windows_laps/",
+          "publishedOn": "2023-06-12T13:56:38.000Z",
+          "wordCount": 2310,
+          "title": "Windows LAPS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/147opmx/samba_share_over_vpn_subnet/",
+          "author": null,
+          "description": "I'm trying to access a Samba share (on Ubuntu) from a windows machine on a different subnet and a Windows machine over OpenVPN. I have setup samba, share and a user with password on the Ubuntu server, I can see the shared folder from both Windows clients, but I keep getting errors when trying to open the folder. The machine connecting over OpenVPN errors as if the username and password is incorrect, the machine on a different subnet says I don't have permission to access the folder.\n What kind of settings do I need to look for when connecting like this as opposed to just on the same subnet? (the same configs work for the Windows 11 machine and a different Ubuntu Samba server both on 8 range).\n Site A (behind pfSense):\n Ubuntu 22.04 server with Samba share & OpenVPN client (172.16.21.0/24) & Windows 11 client (192.168.8.0/24)\n Site B (behind non-pfSense firewall with OpenVPN server setup (OpenVPN works for normal LAN access))\n OpenVPN on 172.16.250.0/24 with Windows 10 client on 192.168.5.0/24\n smb.conf\n [global] \n server string = SMBMachine workgroup = WORKGROUP netbios name = smbmachine hosts allow = 192.168.8.0/24 192.168.5.0/24 172.16.250.0/24 security = user map to guest = Bad User name resolve order = bcast lmhosts host wins log file = /var/log/samba/%m.log max log size = 50 printcap name = /dev/null load printers = no include = /etc/samba/shares.conf\n shares.conf\n [Backup] \n path = /mnt/pool/Backup create mask = 0664 force create mode = 0664 directory mask = 0775 force directory mode = 0775 writable = yes valid users = @backupsusers, smbuser force group = backupusers admin users = @adminusers\n The user I'm trying to use is smbuser and it has been added to the backupusers group as well.\n    submitted by    /u/Imaginary_Access6150  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/147opmx/samba_share_over_vpn_subnet/",
+          "publishedOn": "2023-06-12T13:53:23.000Z",
+          "wordCount": 2535,
+          "title": "Samba share over VPN & subnet",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/147op4n/how_much_time_do_you_spend_on_finding_pricing_on/",
+          "author": null,
+          "description": "We're transitioning to some new software and dropping BYOD for affected users. Order for ~65 iPads now on the docket. I've asked for a few quotes from a few resellers and they all came back generally the same. I expected that, its not that many devices, and negotiating regarding Apple equipment seems to be a non-question in general at this scale.\n The deployment is for only remote employees. I'm wanting to setup an MDM and ensure maintenance and processes are defined, tested, and documented within the two months I have to complete the project. I'm at the stage now where I can order some devices from a reseller I've been working with and make sure the auto enrollment and deployment works.\n My boss now wants me to look at a few other vendors to verify we're getting the best possible deal. I explained my concern regarding it being more important that our setup is clean and efficient in terms of management and deployment, but was told to hold off ordering anyways. Even at scoring something like 10% off its only going to save ~$2500. The idea that I have to redo my work with another vendor to integrate with ABM and setup drop shipping, waiting for the confirmation on their side, etc. to save that amount of money makes it sound like the more expensive option.\n Want to hear the perspective of other people and see what they do/how they would handle this. It feels like splitting hairs, but maybe I'm wrong.\n    submitted by    /u/DevelopmentOne8  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/147op4n/how_much_time_do_you_spend_on_finding_pricing_on/",
+          "publishedOn": "2023-06-12T13:52:41.000Z",
+          "wordCount": 2510,
+          "title": "How much time do you spend on finding pricing on bulk purchasing of equipment?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/147oilb/the_target_account_name_is_incorrect/",
+          "author": null,
+          "description": "Morning,\n Small company with two offices and two sites in AD, both sites have a DC running DNS. The smaller site, lets call it site 2, with one DC and just five workstations had an issue over the weekend apparently, each workstation this morning after logging in had an error that they were connected to a new network and asking if they wanted to enable network discovery. Some said yes, some said no, some just left it.\n None of them can access the server by server name \\\\server2 and of course they only app they use accesses the server by server name.\n Did some testing, they can ping the server IP and it resolves, they can access the shares by IP address. Same thing is happening on the DC in this site. This also happens if they try to access a server by name in site 1. Everything in site 1 is fine by the way.\n Kerberos Event ID 4 is showing up on the server and the workstations. Did the suggested SPN duplicate search but didn't find any duplicates.\n What I did find was if I tried to ping the domain name it would return an IP address other than the server. It is actually just an IP address from the DHCP pool and not actually assigned to anything. This was happening on the server and the desktops.\n I went into DNS and removed that entry. At that point the server in site 2 started working and could access its own shares by name. Workstations could not so I rebooted them with no change. Rebooted server and it still works and so do a handful of the desktops. Some of the desktops still give the error and can't access by name.\n They give the same event id 4 in the event viewer with the name of whatever server we try to access. Ping is working on these workstations for both domain name and server name. IP and DNS info all look good. Not sure what to try to get these other workstations going. Hoping somebody has a suggestion.\n    submitted by    /u/Active_Technician  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/147oilb/the_target_account_name_is_incorrect/",
+          "publishedOn": "2023-06-12T13:44:32.000Z",
+          "wordCount": 2599,
+          "title": "The target account name is incorrect",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/147oed9/what_is_the_best_way_to_block_o365_email_on_cell/",
+          "author": null,
+          "description": "Boss, has a few hourly people that need to block from using email on their cell outside of work hours.\n We are testing Intune, but don't think it does this. You can turn off notifications from Outlook, but still open and use them.\n If you disable mobile and OWA, can new Outlook still work or through portal.office.com.\n And can I still set up the default mail app on phones?\n Also, when Intune was setup they used the 6 digit pin, is there anyway to go back to 4 digit pins?\n I think its better to just make a policy that states \"don't check or reply to email outside work hours.\" And not make mobile email more painful.\n    submitted by    /u/Ad-1316  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/147oed9/what_is_the_best_way_to_block_o365_email_on_cell/",
+          "publishedOn": "2023-06-12T13:39:15.000Z",
+          "wordCount": 2378,
+          "title": "What is the best way to block O365 email on cell, outside of 8-5 Monday - Friday?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/147niy8/is_this_crazy_spoiler_it_alert_it_is_but_tell_me/",
           "author": null,
           "description": "How many agents running on a machine is too many? Seems like every time we get rid of a running agent, the powers that be fall in love with a shiny new toy that must exist on every endpoint. Then they wonder why our laptops get under 2 hours of battery life on average. Anyhow, these are the agents and apps that launch on every win 10 machine in our environment:\n  \nZscaler\n Rapid 7\n Crowdstrike\n Configuration manager (SCCM)\n Cisco anyconnect (Zscaler does the same Job)\n Lakeside software Systems Management Agent Systrack\n Jabra express (Headphone support software, but only half the company uses jabra headsets nowadays)\n Zoom\n Teams\n Citrix receiver (because why not)\n  \nI'm sure I missed one or 2 but its crazy to me. Does anyone else run these many agents or am I the crazy one for thinking its a bit much?\n    submitted by    /u/DJRob73  \n [link]   [comments]",
@@ -12287,26 +12347,6 @@
           "publishedOn": "2023-05-14T02:51:04.000Z",
           "wordCount": 2523,
           "title": "Trying to build an “open frame” server with an intel s2600cw board. It has a raid controller, there’s two sata ports, and two more headers for those 1 to 4 SAS cables. I have two 5 drive bays to connect them to. Boot disk is an SSD but it will only boot to the SSD if no other drive is installed.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13gzel7/what_is_your_favorite_virtualization_platform/",
-          "author": null,
-          "description": "Mine is VirtualBox. I'm currently using it for my IT classes and it's pretty easy to use. I especially like how easy it is to set up a shared folder between the host and guest. \n I've dabbled in Hyper-V a bit and there is definitely a learning learning curve. At least for me. \n I have not touched VMware.\n    submitted by    /u/USS_Frontier  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13gzel7/what_is_your_favorite_virtualization_platform/",
-          "publishedOn": "2023-05-14T01:58:47.000Z",
-          "wordCount": 2277,
-          "title": "What is your favorite virtualization platform?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13gyxfq/azalea_ehr/",
-          "author": null,
-          "description": "Does anyone here have experience with Azalea EHR? I’m curious what your overall experience is with the application itself and their support staff.\n    submitted by    /u/bang_switch40  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13gyxfq/azalea_ehr/",
-          "publishedOn": "2023-05-14T01:35:46.000Z",
-          "wordCount": 2238,
-          "title": "Azalea EHR",
           "imageUrl": null
         }
       ]
