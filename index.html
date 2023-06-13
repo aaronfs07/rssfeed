@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-13 datetime="2023-06-13T13:11:48.000Z">2023-06-13</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-13 datetime="2023-06-13T13:11:48.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-13 datetime="2023-06-13T14:07:33.000Z">2023-06-13</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-13 datetime="2023-06-13T14:07:33.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,262 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148ga3d/azure_ad_admin_compromise_dr_plan/"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure AD Admin Compromise DR Plan</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148ga3d/azure_ad_admin_compromise_dr_plan/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all, Do any of you have a clear DR plan for what to do if an admin account in your Azure tenant is compromised?
+ As I see it, a single forgotten service account could result in all other admins passwords&#x27; changed, and losing access to everything in Azure/M365.
+ In my on-premises environment, if I have a set of backup tapes for all my data sitting on a shelf, I can (theoretically) always wipe all devices to bare metal and have everything restored, including identities, in the time it takes to copy the data. Cloud is not so simple. * Azure AD itself can&#x27;t be restored, at least not with the same identities. If you lose control of a tenant, any identities are gone. And if you use Azure AD login and Intune with Bitlocker, your devices are all now wiped as well. Any configuration that depends on application configurations or managed identities needs to be rebuilt. Even UPNs wouldn&#x27;t work, since you can&#x27;t add the same domain onto a new tenant. * VMs in Azure can be backed up by any backup agent, but what about PaaS? If you&#x27;re relying on Azure Backup/ Site Recovery, you just lost that too. Are there any good options for backing up files or blobs in Azure storage accounts? What about databases? Or Azure Key Vault? Azure Automation? * If you&#x27;re using Azure services, you should be storing all your environment configuration in a code repository. But is it really all there? Have you tested a rebuild? And if you&#x27;re using a cloud repository and logging in with Azure AD SSO, I have some bad news for you..... * For Office 365 data, much of it can be backed up, but can it be restored in a new tenant? Even tenant-to-tenant migrations with access to both tenants are spotty. In a new tenant, any identities are gone, and any permissions or groups would need to be rebuilt.
+ Is there any product out there that claims to be able to restore your entire Azure estate, or should I just throw my hands up and hope it doesn&#x27;t happen?
+    submitted by    /u/ProMSP  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148g7ey/mysql_remote_access_is_a_mess/"
+                        open
+                      >
+                        <summary class="article-expander__title">MySQL remote access is a mess</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148g7ey/mysql_remote_access_is_a_mess/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We have a MySQL database that&#x27;s been happily accessed via T1 lines for years without issue. Now the internet provider has eliminated those lines and we are forced to rely on a Comcast cable connection (connecting via static ip).
+ This works for most people, until it doesn&#x27;t. Randomly (it seems) a remote user will not be able to connect. This has nothing to do with the number of connections (we only have like 10 users at any given time). Unfortunately this is the only internet access available in our area.
+ I&#x27;m going to continue troubleshooting but just wondering:
+  
+Do other folks use Comcast/cable provider modem/routers to access SQL dbs and do they generally work?
+ Would buying a newer, better modem/router be advisable?
+  
+Any input appreciated.
+    submitted by    /u/Maleficent_Antelope2  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148g54n/ceo_almost_clicked_on_a_phishing_email_that_got/"
+                        open
+                      >
+                        <summary class="article-expander__title">CEO almost clicked on a phishing email that got through Mimecast</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148g54n/ceo_almost_clicked_on_a_phishing_email_that_got/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We use Mimecast for a spam filter and whatnot and our CEO received an email from &quot;our IT department&quot; saying that his password was about to expire and he should scan the QR code to confirm and keep using the password. The entire email almost looks like one big picture of text and a QR code so I am not sure if Mimecast could read the impersonation attempt. 
+ Does anyone have any recommendations on how to block emails like this? We have all of the standard policies configured, but I think this one got through because it is an image with a URL attached to it?
+ Any tips are appreciated.
+ Thank you!
+    submitted by    /u/apdunshiz  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148fyt9/teams_audio_conferencing_for_e3_users_is_enabled/"
+                        open
+                      >
+                        <summary class="article-expander__title">Teams Audio Conferencing for E3 users is enabled via policy but is set to &quot;No&quot; in teams admin, E5 users have same policy and it works just fine.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148fyt9/teams_audio_conferencing_for_e3_users_is_enabled/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>These users have the global policy for Audio conferencing, which is set to &quot;Yes&quot; by default.
+ By comparison, our E5 users have the exact same policy and do have audio conferencing for Teams.
+ ​
+ Not sure why only the E3 users (which do have audio conferencing) don&#x27;t have it
+    submitted by    /u/PlaneTry4277  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148fwct/netlogon_protocol_changes_related_to_cve202238023/"
+                        open
+                      >
+                        <summary class="article-expander__title">Netlogon protocol changes related to CVE-2022-38023</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148fwct/netlogon_protocol_changes_related_to_cve202238023/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Has anyone started to see any problem in your environments with this?
+ June 13, 2023 - Enforcement by Default
+ The RequireSeal registry subkey will be moved to Enforced mode unless Administrators explicitly configure to be under Compatibility mode. Vulnerable connections from all clients including third-parties will be denied authentication.
+    submitted by    /u/Simply_GeekHat  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148fs7b/microsoft_mfa_which_admin_panel_to_view_when_user/"
+                        open
+                      >
+                        <summary class="article-expander__title">Microsoft MFA - Which admin panel to view when user has set it up themselves?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148fs7b/microsoft_mfa_which_admin_panel_to_view_when_user/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I&#x27;m getting my head around the different forms of Microsoft MFA. So my understanding is that there is conditional access if you have a more expensive sub, security defaults that is very basic and per-user MFA (which is considered legacy?)
+ However if users have been asked to set up MFA via myaccount.microsoft.com, which control panel are you able to see this from?
+ Thank you
+    submitted by    /u/N00BQuestions1066  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148fr3u/tool_to_upload_filespermissions_to_azure_files/"
+                        open
+                      >
+                        <summary class="article-expander__title">Tool to upload files/permissions to Azure files from prem?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148fr3u/tool_to_upload_filespermissions_to_azure_files/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>What is the best and QUICKEST tool to copy from a prem server to Azure files? 
+ I have about 3 million files and 375000 folders to move to Azure files. 500Mbit upload.
+ Is Azcopy my best route?
+    submitted by    /u/en-rob-deraj  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148fr2r/ad_connect_sspr_failures/"
+                        open
+                      >
+                        <summary class="article-expander__title">AD Connect SSPR Failures</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148fr2r/ad_connect_sspr_failures/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>AD sync completes successfully, but users are unable to change passwords. Password writeback is enabled.
+ Start-ADSyncSyncCycle
+ Result
+ ------
+ Success
+ Error user sees: &quot; We tried to update your password, but couldn&#x27;t sync with your workplace because of a network problem. Try again in a few minutes. If it still doesn&#x27;t work, contact your admin and provide the detailed error information. &quot;
+ The AD Connect Server is Server 2022 with AD Connect version 2.1.20.0
+ On the AD Connect server, errors in the application log has many of these errors:
+ Event 612: Directory Synchronization
+ Failed to initialize synchronization context for domain: . It will be retried in the next password hash synchronization cycle. Details:
+ System.DirectoryServices.Protocols.LdapException: The supplied credential is invalid.
+ at System.DirectoryServices.Protocols.LdapConnection.BindHelper(NetworkCredential newCredential, Boolean needSetCredential)
+ Event 6001: ADSync
+ The management agent &quot;&quot; failed on run profile &quot;Delta Import&quot; because a connection could not be established to the server.
+ So, I see it says the supplied credential is invalid, but what credential?
+ I saw a blog post that said it could be related to TLS 1.2 and to add SchUseStrongCrypto key in the registry with a value of 1. I did that and rebooted, but the issue remains.
+ What else can cause this?
+    submitted by    /u/Real_Lemon8789  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148fq5j/domain_controller_upgradereplacement_connecting/"
+                        open
+                      >
+                        <summary class="article-expander__title">Domain Controller upgrade/replacement - connecting offsite VPN users (whose VPN credentials are tied to AD of the domain being migrated from)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148fq5j/domain_controller_upgradereplacement_connecting/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all,
+ The scenario is: You’re upgrading the domain controller to a newer version of Windows Server for some new infrastructure requirements. All workstations are Windows. No Azure AD in place.
+ The problem is: Some end users that will need to be migrated to the new domain work remotely (not down the street remotely, but sometimes a few states away remotely). These users connect to resources over VPN, but the VPN authentication is tied to the domain controller that is going to be decommissioned.
+ At some point during the migration the authentication of VPN is going to have to be redirected to the new domain controller. What I’m trying to nail down is what’s the best way/best sequence of steps to get all the devices on the new domain with the wrinkle of VPN being tied to the old one?
+ There’s only about 15 or so people I’m dealing with, not hundreds or thousands. So even if the process is a little tedious, that’s okay. One thing I thought about is just switching the VPN (temporarily) to authenticate using some other method besides VPN before the migration starts, but I’m trying to see what all my options are.
+ TLDR: upgrading/replacing domain controller, some users are offsite so their devices would be joined over VPN, but VPN auth is tied to old domain/domain that is going away. Need to figure out optimal way to do the migration.
+ Any thoughts or resources would be appreciated?
+    submitted by    /u/whoyagonnacall_IT  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148fpre/odbcoledb_drivers_through_wsus/"
+                        open
+                      >
+                        <summary class="article-expander__title">Odbc/oledb drivers through WSUS?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148fpre/odbcoledb_drivers_through_wsus/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, as the title say, is it possible to release odbc/oledb drivers through WSUS?
+ I believe i have read thst deploying drivers through WSUS isnt a good idea but cant find any good documentation why.
+ Thanks in advance
+    submitted by    /u/ironclad_network  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -799,6 +1055,75 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/148g7kb/mm1025_moca_adapters_vlan_tagging/"
+                        open
+                      >
+                        <summary class="article-expander__title">MM1025 MOCA Adapters VLAN Tagging</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/148g7kb/mm1025_moca_adapters_vlan_tagging/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Does anyone have any experience or knowledge of, if the Motorola MM1000 &amp; MM1025 MOCA adapters have capability to handle VLAN tagging.
+ TIA
+    submitted by    /u/y2raza  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/148fhwd/backbox_pricing/"
+                        open
+                      >
+                        <summary class="article-expander__title">Backbox pricing?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/148fhwd/backbox_pricing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi, 
+ I heard good stuff about Backbox, but I can&#x27;t find any info an pricing on their website. And I don&#x27;t want to contact them or get a trial or what ever. I can&#x27;t stand another sales mail from another vendor. 
+ How does the licensing work? What are the costs? Could we use it for many different switches/routers that are changing constantly? (that means, always other boxes). 
+ Would be really great if someone could give me an inside if backbox could be an option.
+    submitted by    /u/onyx9  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/148fe6w/solar_winds_npm_monitoring_for_cisco_devices_query/"
+                        open
+                      >
+                        <summary class="article-expander__title">Solar winds npm monitoring for Cisco devices query</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/148fe6w/solar_winds_npm_monitoring_for_cisco_devices_query/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So how do you guys have your solar winds setup? Planning to install solar winds on a VM in Cisco ucs and what vlan should I put that under? Just create a separate vlan for this and then make sure that this vlan is present on all uplinks of all switches/routers? 
+ We would not want to use a server vlan (where we have other servers) for solar winds in the ucs right? So it would need a different vlan? To keep it isolated?
+ Thank you
+    submitted by    /u/Intelligent-Bet4111  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -45514,8 +45839,8 @@ The Federal Bureau of Investigation (FBI), Cybersecurity and Infrastructure Secu
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5255923174">
-        <time id="build-timestamp" datetime="2023-06-13T13:14:06.750Z">2023-06-13T13:14:06.750Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5256546904">
+        <time id="build-timestamp" datetime="2023-06-13T14:10:27.426Z">2023-06-13T14:10:27.426Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
