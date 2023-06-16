@@ -2,10 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-06-16T13:13:41.647Z</updated>
+    <updated>2023-06-16T14:10:02.802Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Manages switches causing packet loss?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14axc9d/manages_switches_causing_packet_loss/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14axc9d/manages_switches_causing_packet_loss/"/>
+        <updated>2023-06-16T13:47:56.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone, I know enough about networking to get by at my job usually but I’m a bit stumped on something I’ve encountered.
+ I work in building automation (think programming airhandlers and other HVAC equipment for large commercial buildings) we have a 5 story building that we are upgrading with room level controllers and adding some stuff to their central plant. Our room controllers operate on a loop topology just daisy chaining one device to another to another etc, until it reaches EOL, and then the last device loops back to the floor switch creating a loop that is protected by the RSTP. This is just to have that small amount of redundancy in case 1 device or cable fails, we should still see the others on the network.
+ For this project we had to upgrade the building switches to some nic…]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Do you allow BYOB for all users, or just company compensated devices?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14avu3j/do_you_allow_byob_for_all_users_or_just_company/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14avu3j/do_you_allow_byob_for_all_users_or_just_company/"/>
+        <updated>2023-06-16T12:40:57.000Z</updated>
+        <summary type="html"><![CDATA[Good morning all, Im hoping this is a quick and easy question.
+ Im fully in the Intune world, and really having good luck with it over the last year and a bit. With that, we allow BYOD devices, which is also working great.
+ Up to this point, we have only allowed enrolment for phones that the organization was paying for, either outright bought and paying monthly for, or compensating some amount directly to the employee.
+ It's never actually come up, weirdly, until yesterday. Our policy for BYOD doesnt address this, so we might want to get that changed.
+ In my opinion, if the user wants their work email on their phone, and willing to download and install the profile, it's secure, and therefore good in my books - who's phone is or is not being paid for is not mine to manage.
+ I thought I would reach out to the hive mind and see if that aligns with others as well.
+ ​
+ edit: haha, BYOB. Seems that came off the fingers a little too easy. I mean BYOD. Oy.
+    submitted by    /u/jdlnewborn  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Am I Getting Fucked Friday, June 16th 2023, Bourbon Edition]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/14avmj5/am_i_getting_fucked_friday_june_16th_2023_bourbon/</id>
@@ -33,6 +64,18 @@ Cloud Services - Security, configurations, deployment, management, consulting se
  Voice - MS Teams Direct Routing, SIP, Hosted VoIP, PRI etc.
   
    submitted by    /u/bad0seed  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft new passwordless logins causing MFA prompts on the hour every hour]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14avkqb/microsoft_new_passwordless_logins_causing_mfa/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14avkqb/microsoft_new_passwordless_logins_causing_mfa/"/>
+        <updated>2023-06-16T12:28:32.000Z</updated>
+        <summary type="html"><![CDATA[Does anyone have this issue? Its impacting my boss and I with our personal Microsoft accounts. I have suspicion that the new passwordless login Microsoft implemented has made it as simple as a malicious actor having only your email on file to try and gain access.
+    submitted by    /u/SaltyPretzel_94  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
@@ -27074,40 +27117,6 @@ Is an USB-Stick the best solution or is a M2 SSD for external use better in this
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Trouble blocking evpn route export]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13kkbxv/trouble_blocking_evpn_route_export/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13kkbxv/trouble_blocking_evpn_route_export/"/>
-        <updated>2023-05-18T01:19:01.000Z</updated>
-        <summary type="html"><![CDATA[I have a spine leaf vxlan environment (Cisco 9k using nxos) using evpn for the control plane. On my border leafs I have an aggregate network in BGP to advertise network summary to edge firewalls, but want to block that summary from advertising to downstream leafs (downstream leafs have two /25 networks, I agg them to one /24 and advertise to FW). I’ve created an export route map on the vrf context on border leafs matching the aggregate prefix to block, but it is still being advertised. I am able to block the prefix on import maps at downstream leafs but want to block at source. Can I get another pair of eyes on my config? I am still fairly new to evpn so I may be missing something simple or fundamentally misunderstanding how this works.
- ``` router bgp xxx vrf test_vrf address-family ipv4 unicast aggregate-address 10.125.128.0/24
- ip prefix-list test_agg seq 5 permit 10.125.128.0/24
- route-map test_export deny 10 match ip address prefix-list test_agg route-map test_export permit 500
- vrf context test_vrf vni xxx rd auto address-family ipv4 unicast route-target both auto route-target both auto evpn export map test_export
- xxx# show bgp l2vpn evpn nei 192.168.2.1 advertised-routes | in 10.125.128.0
- *>l[5]:[0]:[0]:[24]:[10.125.128.0]/224 ```
-    submitted by    /u/networkuber  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Load Balancer for small/mid sized company]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13kkae9/load_balancer_for_smallmid_sized_company/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13kkae9/load_balancer_for_smallmid_sized_company/"/>
-        <updated>2023-05-18T01:16:59.000Z</updated>
-        <summary type="html"><![CDATA[I want to set up a redundant infrastructure with two RADIUS and Fileservers and wanted to use Kemp Load Balancer free, though the throughput is only 20mbit.
- My question: The load balancer, as I understand, only handles the initial connection/handshake, correct? So 20 mbit should be sufficient I guess? 
- If not, I would switch to the integrated Windows Server Load Balancer.
- ​
- Appreciate any suggestions!
-    submitted by    /u/e1ysion  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
