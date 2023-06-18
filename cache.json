@@ -240,6 +240,196 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14cfn3s/drbcp_options_in_azure/",
+          "author": null,
+          "description": "Hi all,\n We're a small company with one site and about 30 servers but for DR we only need about 10 servers including a file server.\n At the moment we just replicate these servers to 3rd party with Zerto. For various reasons we may need to replace this \n I was thinking of the following as a replacement:\n Put a Domain Controller in our Azure tenant. This would be a full time DC using a site to site VPN to our onsite. So it should provide redundancy and remove the need to replicate domain controllers\n Use Azure File Sync for our main file server. Staff would still access the on prem server but we would have a cloud copy for DR and could spin up a new server and point it at this if needed.\n Use Azure Site Recovery for the other servers we need\n I think this gives us some flexibility and redundancy.\n Any thoughts on the above?\n    submitted by    /u/DaithiG  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14cfn3s/drbcp_options_in_azure/",
+          "publishedOn": "2023-06-18T09:00:50.000Z",
+          "wordCount": 2452,
+          "title": "DR/BCP options in Azure",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14ceu8g/centralised_management_defender_for_servers/",
+          "author": null,
+          "description": "Hi,\n I have been given the task to onboard our On-prem servers into Azure Defender for Cloud (P2 license) I succesfully connected some servers and Defender has been installed.\n I was just wondering: What is the best recommended way to manage Defender on these servers, like create exclusions for groups of servers, or to force a full scan every now and than etc. \n Do I have to onboard the servers in Intune? Or? Is there anyone that maybe can kick me into the right direction or has some good websites that explain how this must me archieved? \n Thanks in advance!!\n    submitted by    /u/NorthOfTheBigRivers  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14ceu8g/centralised_management_defender_for_servers/",
+          "publishedOn": "2023-06-18T08:11:22.000Z",
+          "wordCount": 2369,
+          "title": "Centralised management Defender for servers, connected through Azure ARC",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14ce2zw/having_trouble_writing_a_rule_for_snort/",
+          "author": null,
+          "description": "Hey Guys,\n Trying to write a rule for snort to alert every time there is a use of ngrok.\n Couldnt find the right syntax for the signatures that i find in wireshark.\n Most of the signatures was of TLSv1.3 protocol, info- Client hello.\n If someone have an idea it can be very helpful.\n    submitted by    /u/mikeogro  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14ce2zw/having_trouble_writing_a_rule_for_snort/",
+          "publishedOn": "2023-06-18T07:26:19.000Z",
+          "wordCount": 2350,
+          "title": "Having trouble writing a rule for snort",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14ccaz3/best_hipaa_compliant_app_to_have_employees_via/",
+          "author": null,
+          "description": "I work at a doctors office. We want a Hipaa compliant app where our employees can text and call patients from their personal phone and obscure their numbers. Some specific criteria:\n 1) Only the Employee needs to install the App (or maybe visit a web link) to call (audio or/and+or video) and text. The patient can receive calls/texts like normal on their phone without having the app installed.\n 2) The Employee can make the call over Wifi OR their Carrier and still have it be encrypted. This is just in case their wifi is not strong enough.\n So far, we've narrowed down Iplum as the best compared to many popular ones. But the only issue with Iplum: the patient needs to have the app installed in order to receive text messages.\n Does anyone have any input? I feel like it’s kind of specific but figured I’d ask. Thanks for any answers\n Vsee is BAA agreeing but their free messaging protocol does not offer HIPAA compliance. Doxy.me and pMD look good but im looking for all alternatives possible to expand my scope. Thank you in advance, again!!!\n    submitted by    /u/Medical-Confidence-4  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14ccaz3/best_hipaa_compliant_app_to_have_employees_via/",
+          "publishedOn": "2023-06-18T05:46:00.000Z",
+          "wordCount": 2458,
+          "title": "Best HIPAA compliant app to have employees (via their personal phone) communicate with patients?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14cakpk/avd_software_audit_specs/",
+          "author": null,
+          "description": "So, I’ve recently discovered that all of our AVD images (win10 multi session) have a lot of questionable software installed on them from our previous MSPs before I started with the company. They’ve left a huge mess and installed Sql, python, ODBC, and basically a bunch of crap, with no GPOs, no locked down services or drive re-direction blocked, it’s basically a giant disaster. In addition, they set the VM session count limit to 20, with 32 gig ram and 8 cpu per VM. \n Firstly, I think the specs are way overkill, would you agree here? \n Second, the amount of bloat software on these VMs seems a bit ridiculous to me. A design to have non-persistent VDIs, regardless if they are RDSH or win10, should really not even have SQL, python, ODBC, and all this junk on there, that is designed physical endpoints or persistent VDIs. \n Thirdly, I spun up a few hardened VDIs with a baseline image, 2 CPU, 8 gig ram. Someone decided to upgrade all of my persistent VDIs to 4 cpu & 16 gig ram, because “users were complaining”, because they are Power Users that use SQL, PBI, etc. \n while azure monitor clearly shows a lack of resources even being used. \n Am I going crazy here? Thoughts?\n I’m thinking about redoing the multi-session gold image from scratch and doing it the right way. Rather than keeping whatever non sense this MSP did.\n    submitted by    /u/Ok_Hearing3804  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14cakpk/avd_software_audit_specs/",
+          "publishedOn": "2023-06-18T04:09:11.000Z",
+          "wordCount": 2501,
+          "title": "AVD Software Audit & specs",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14cadx1/skysilk_vps_was_deleted_during_maintenance_and/",
+          "author": null,
+          "description": "While not work related, I am absolutely livid with how SkySilk mishandled things for a VPS that I was paying for to host a wordpress backed website for a non-profit cosplay group that I am the manager for.\n I got a notification earlier today that the google business listing for the group had been suspended and needed to be fixed and resubmitted to become active again.\n After a bit of thinking about what could have happened, I discovered that the website was down. I logged into the SkySilk VPS portal to discover that the VPS was gone.\n I submitted a ticket to SkySilk asking for help with this thinking that someone had hacked my account and deleted the VPS.\n I get a response from SkySilk Support to this effect\n  \nHello,\n  \nWe've been doing maintenance and upgrades across our datacenters thes…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14cadx1/skysilk_vps_was_deleted_during_maintenance_and/",
+          "publishedOn": "2023-06-18T03:59:22.000Z",
+          "wordCount": 2807,
+          "title": "SkySilk VPS was deleted during maintenance and they say it was my fault for not responding......",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14c5m06/no_intune_for_e3_license/",
+          "author": null,
+          "description": "I opened a new tennant and bought an e3 subsciption for my global admin account. \n I coud not access the intune page.\n Guides told me I should enable MDM to start configuring intune.\n When i try to activate it:\n Automatic MDM enrollment is available only for Azure AD Premium subscribers. \n This is very strange.\n Did they changed this recently or am I going insane?\n Is it possible to push apps with intune with an e3 license?\n ​\n Kind regards\n ​\n ​\n    submitted by    /u/NotASysAdmin666  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14c5m06/no_intune_for_e3_license/",
+          "publishedOn": "2023-06-17T23:51:31.000Z",
+          "wordCount": 2370,
+          "title": "No intune for e3 license??",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14c4sqv/customer_wants_us_to_install_their_own_vpn/",
+          "author": null,
+          "description": "Would post this in r/cybersecurity but they're still blacking out...\n Big customer with a big contract wants us to install their own VPN and certificate on one of our corporate devices in order to facilitate accessing documentation on their network. Part of this involves the VPN checking for device compliance (virus, firewall, encryption).\n The whole thing seems a bit old school, but they are a very big global customer so I don't think we have much room to find an alternative.\n Can anyone think of reasons NOT to do this? Or reasons why this is safe to do? Any alternatives we might suggest?\n    submitted by    /u/vodged  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14c4sqv/customer_wants_us_to_install_their_own_vpn/",
+          "publishedOn": "2023-06-17T23:13:57.000Z",
+          "wordCount": 2371,
+          "title": "Customer wants us to install their own VPN",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14c2qpy/sysadmin_nightmare_fuel_stories/",
+          "author": null,
+          "description": "Hey all,\n Wondered if some veteran (and less veteran) sysadmins here had some sysadmin nightmare fuel stories, figured it could be fun and informative to read your stories, maybe could help New sysadmins to avoid some pitfalls. I'll enter the world of sysadmin really soon (just got my first job as a sysadmin 😅)\n Looking forward to reading you scary stories ahah\n    submitted by    /u/Asarewin2  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14c2qpy/sysadmin_nightmare_fuel_stories/",
+          "publishedOn": "2023-06-17T21:46:28.000Z",
+          "wordCount": 2356,
+          "title": "Sysadmin nightmare fuel stories",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14bz5px/where_do_you_draw_the_line/",
+          "author": null,
+          "description": "So- my current job has really gone down hill. We’re salaried and our 9-5 is now officially 8-5 on paper, because they want that extra hour to account for our unpaid breaks. My boss says that he doesn’t expect us to do 12-16 hr days like him but he “likes to lead by example in that regard.” \n On top of that, I’m being assigned 9 hours of project work + 3 hours of my normal duties a day. I’m struggling to find time to even take a piss let alone a 30 min. lunch and two 15 minute breaks… I missed my psychologist appointment staying late at work incurring a $150 charge the next day coupled with a mental break down.\n They continue to drop projects on me at the end of business hours that need to be completed immediately and I can’t leave until I’ve delivered results.\n The workload has increased ten fold. My quality of work is dropping as a result. I’m drowning. We’re approaching mass failure.\n I’ve started revamping the resume and shooting it out to those in my network.\n I’m just really bummed. I was invested in the work I had on my plate. But if I can’t do that work well because I’m too spread thin, I don’t want to put my name on it.\n Is there anything I can do about the new culture shift?\n Has anyone ever successfully convinced leadership that a workload is unsustainable and counter productive?\n Or should I cut my losses and dip?\n    submitted by    /u/NoHope4Me420  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14bz5px/where_do_you_draw_the_line/",
+          "publishedOn": "2023-06-17T19:14:00.000Z",
+          "wordCount": 2549,
+          "title": "Where do you draw the line?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14bwvrt/old_timer_question_ever_had_the_coffee_holder/",
+          "author": null,
+          "description": "I had it in 1999. Lady seriously wanted for me to fix her coffee holder on her tower PC. I still chuckle about that one.\n    submitted by    /u/_Volly  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14bwvrt/old_timer_question_ever_had_the_coffee_holder/",
+          "publishedOn": "2023-06-17T17:36:42.000Z",
+          "wordCount": 2331,
+          "title": "Old timer question - ever had the \"Coffee holder\" ticket come in for you to fix?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14bwpf6/best_practices_virtual_machines_and_storage/",
+          "author": null,
+          "description": "Hi guys. I’m a new sys admin at company that just got rid of their senior sys admin a month before I joined up. We’ve got 4 rack servers all operating as hypervisors and a storage server(Synology NAS with a bunch of HDDs). 4 LUNs were created on top of these drives and each LUN was mapped via iSCI to each hypervisor, all the VMs boot and run from these LUNs. Also got a Microtik cloud router switch that connects all the Hypervisors to the storage server(1Gbps connections). \n My question: is this an optimal set up, having multiple VMs on each host sitting on LUNs? Is it best practice? If not how may I possibly improve it? I’m willing to rebuild everything from the ground up if I have to. Any suggestions would be appreciated! And yes I definitely plan to reach out to experienced sys admins to help with doing the actual set up but figured I’d also see what y’all think about this. \n P.S During a recent power issue on one of the hosts I realized that all the VMs lost connection to the storage server and for some reason the iSCI connection kept hanging without reconnecting.. this wouldn’t even be an issue if I was running the VMs locally (buts that’s just my reasoning anyway)\n    submitted by    /u/-zazu  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14bwpf6/best_practices_virtual_machines_and_storage/",
+          "publishedOn": "2023-06-17T17:29:16.000Z",
+          "wordCount": 2486,
+          "title": "Best practices - virtual machines and storage servers",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14bvfp8/getting_a_new_isp_into_campus/",
+          "author": null,
+          "description": "A small non-profit art center I work with is locked into CenturyLink DSL because that's the only ISP that was connected to their property. \n We are looking at building a new building, and as part of it, I wanted to add conduit for both CenturyLink Fiber, Comcast, and a local fiber company in our area. \n Total combined pricing I got was 120k\n Comcast was 20k CenturyLink fiber was 65k (somewhat understandable, as their fiber drop is on the far end of the 5acre property) Local fiber company was 35k (requires boring under the street as their is no aerial lines going over the road) \n Does anyone have alternative options? Can we hire our own private utility install company?\n    submitted by    /u/Kamikazepyro9  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14bvfp8/getting_a_new_isp_into_campus/",
+          "publishedOn": "2023-06-17T16:34:58.000Z",
+          "wordCount": 2414,
+          "title": "Getting a new ISP into campus",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14btuci/comcast/",
+          "author": null,
+          "description": "Is anyone experiencing outages with xfinitys ISP? It seems Florida and possibly Pennsylvania are down.\n    submitted by    /u/Academic-Interview69  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14btuci/comcast/",
+          "publishedOn": "2023-06-17T15:26:34.000Z",
+          "wordCount": 2276,
+          "title": "Comcast",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14btpd5/widespread_outage/",
+          "author": null,
+          "description": "Does anyone have any details on this outage? Downdetector and ThousandEyes are going crazy. We've got dozens of clients that just lost internet service.\n    submitted by    /u/furiouspotato24  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14btpd5/widespread_outage/",
+          "publishedOn": "2023-06-17T15:20:24.000Z",
+          "wordCount": 2316,
+          "title": "Widespread outage",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14btenv/update_ring_for_w11_does_not_work_for_some_devices/",
+          "author": null,
+          "description": "Posted this r/intune but figured I'd put it here as well in case anyone can offer some insight: \n I have a hybrid environment with a fair few devices. I put 30 Windows 10 devices in an Update Ring for W11 but only 11 of them seemed to upgrade. All the devices were on and syncing with Intune.\n I had the Active time set as 08:00 to 18:00 so updates should automatically occur outside of those hours, right?\n I even had \"Restart Checks\" set as \"Skip\" since these are desktops (No worries about battery) and some of my users only \"Lock\" their PC and do not actually Sign Out. I wasn't sure if this would be detected as \"User Presence\" or not.\n The next day, I actually manually dialled into some of the PCs and did \"Check for Updates\" and the W11 update was there (Along with the Cumulative one for some but not all) and started installing and I was prompted to restart to finish the installation.\n The pie chart on the overview page isn't much help. It only shows there were errors with 4 of the PCs but upon clicking it, it shows each of the four devices on there twice, once as \"System Account\" once as the UPN of a user (I suspect the last ones to log in on the device). For the record, none of the devices have a primary user set on Intune. It even says \"Succeeded\" for each of the devices even though they were still on Windows 10.\n Any idea what I'm doing wrong here?\n Also, is the actual \"Downloading\" of the update happening outside of the active hours as well? In an ideal world, I'd want the update to Download/Install (Same as when you do \"Check for Updates\") during active hours while the user is logged in (To save on time), I'd just want the force restart to happen outside of Active Hours or if the user chose to do \"Update and Restart\" or \"Update and Shutdown\". Not too fussed about this however for now since I'm only deploying this to 9-5 users but will eventually have to deploy it to PCs that are used 24/7 with only random 1-2 hour breaks in between use.\n    submitted by    /u/RealAgent0  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14btenv/update_ring_for_w11_does_not_work_for_some_devices/",
+          "publishedOn": "2023-06-17T15:07:04.000Z",
+          "wordCount": 2643,
+          "title": "Update Ring for W11 does not work for some devices?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14btcbm/help_desk_interview_techniques/",
+          "author": null,
+          "description": "We were interving for a help desk manager and did a few rounds of role playing. The candidate held up well.\n During the post interview meeting HR said it bordered on unacceptable.\n Has anyone here had role playing questions in interviews?\n    submitted by    /u/rafiki-knows  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14btcbm/help_desk_interview_techniques/",
+          "publishedOn": "2023-06-17T15:04:13.000Z",
+          "wordCount": 2305,
+          "title": "Help desk interview techniques",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14bsl48/too_old_to_hire/",
+          "author": null,
+          "description": "I am considering a return to the sysadmin world of employment after a 10 year hiatus. It seems like sysadmins used to be older than most in IT. Does anyone see difficulties with a 60+ year old re-entering sysadmin/network admin field cold and starting effectively from scratch?\n    submitted by    /u/Cupdate  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14bsl48/too_old_to_hire/",
+          "publishedOn": "2023-06-17T14:31:54.000Z",
+          "wordCount": 2341,
+          "title": "Too old to hire?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14brtsi/colo_v_private_or_public_cloud/",
+          "author": null,
+          "description": "How common is colo these days?\n I'm trying to escape a poor on-prem environment where putting it in a tier 3 data center moves the internet connectivity to being the weakpoint but takes away most of the building/infrastructure type issues that I'm facing but can't fix as I don't own the building and even then it would cost hundreds of thousands to put right.\n I keep being told colo is dead (mostly by people trying to sell me public or private cloud) but I figure physical kit like NAS boxes and servers and VPN boxes still have to go somewhere and they won't disappear overnight.\n Kind of feels like having 1/2 a rack in a tier 3 DC with good redundant connectivity fixes so many of those issues.\n Am I a dinosaur for thinking this?\n Jas\n    submitted by    /u/MusicWallaby  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14brtsi/colo_v_private_or_public_cloud/",
+          "publishedOn": "2023-06-17T13:58:57.000Z",
+          "wordCount": 2402,
+          "title": "Colo v Private or Public Cloud?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/14brobm/that_one_client/",
           "author": null,
           "description": "I received a call from that one client that would call you at 3 am on Christmas Day to fix her minimal issue. Any way, I received a call this week, one of her employees was unable to sign into of the MAC computers, she passed me the phone over to her employee, I asked her, do you know what your username and password is supposed to be, and she gave me wrong credentials of course. Anyway, this MAC is unmanaged, (I’ve been trying to convince my team to invest on an MDM), and we were unable to log her in. I asked her to pass me back to her boss, and I spoke with her, asked her to please log in with her credentials, and she told me she doesn’t know it, she can’t. Im going crazy in my head lol. She then goes on a rant on how it’s stupid she can’t login to her own computer and that the IT company should be responsible for remembering everyone’s password blah blah blah, any way this continues for 20 minutes, and then randomly she goes ok I am in. I asked her how, and she nonchalantly says, oh I just logged in as myself. 🤦🏻‍♂️. Any way I was able to take care of the issue pretty quickly after that. Anyone have similar experiences?\n    submitted by    /u/Lost_Reporter_1962  \n [link]   [comments]",
@@ -12028,286 +12218,6 @@
           "wordCount": 2734,
           "title": "Powershell to reset \"connect as\" and identity settings in IIS for all app pools, apps and vdirs, parent and child apps that match a specific user id",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13m70sv/network_discovery_tool_options_for_unknown_devices/",
-          "author": null,
-          "description": "We are looking into a way to monitor devices on the network to be alerted when new devices connect. What are some good ones? Preferable inexpensive.\n    submitted by    /u/Shad0wguy  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13m70sv/network_discovery_tool_options_for_unknown_devices/",
-          "publishedOn": "2023-05-19T20:36:40.000Z",
-          "wordCount": 2245,
-          "title": "Network discovery tool options for unknown devices",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13m4ruw/support_fail_of_the_day/",
-          "author": null,
-          "description": "I actually think this could be my favourite end user support story ever, let alone of the day. \n Call comes in from a director of a client today saying her computer “was doing funny things”. Conversation progressed and we were told paragraphs disappeared from a word document and then emails started being deleted from her inbox. \n Our initial response was to quarantine the machine, see if there was anything odd flagged in EDR or firewall and then proceed from there. Couldn’t find anything. \n Turns out she dropped some of her lunch in her keyboard and the delete key got stuck down.\n Happy Friday!\n    submitted by    /u/technoginge  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13m4ruw/support_fail_of_the_day/",
-          "publishedOn": "2023-05-19T19:09:27.000Z",
-          "wordCount": 2320,
-          "title": "Support fail of the day",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13m177a/you_can_increase_the_fps_limit_on_rdp_from_30hz/",
-          "author": null,
-          "description": "Following https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/frame-rate-limited-to-30-fps I had no clue until today. Feels much more responsive.\n    submitted by    /u/ultimation  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13m177a/you_can_increase_the_fps_limit_on_rdp_from_30hz/",
-          "publishedOn": "2023-05-19T16:56:31.000Z",
-          "wordCount": 2245,
-          "title": "You can increase the FPS limit on RDP from 30hz to 60hz with a simple registry edit on the host machine",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lzvxa/it_must_be_friday/",
-          "author": null,
-          "description": "We have a bunch of those crappy Dell docking stations. A mix of the old square ones and the newer rectangular ones. Square ones keep dying, so whenever we find a user with a square one we just replace it with a new rectangular one \n User was having a problem with their dock today, so I asked them on Teams, “please send me a picture of your dick”\n Didn’t hear back for a few hours, but noticed the user is still online. Went back and looked at the message I sent…\n I’m not sure what happens now, but I think I’m either getting into a relationship, or getting fired and sued. \n Definitely Friday.\n    submitted by    /u/_buttsnorkel  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lzvxa/it_must_be_friday/",
-          "publishedOn": "2023-05-19T16:07:49.000Z",
-          "wordCount": 2329,
-          "title": "It must be Friday…",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lyy9h/am_i_getting_fucked_friday_may_19th_2023_pizza/",
-          "author": null,
-          "description": "Brought to you by r/sysadmin 'Trusted VARs': /u/SquizzOC and /u/bad0seed with Trusted Telecom Broker /u/Each1Teach1x27/ for Telecom and /u/Necessary_Time in Canada.\n As always, PMs welcome with your questions any time, not just Fridays.\n This weekly thread is here for you to discuss vendor expectations, software questions, pricing, and quotes of services, licensing, support, deployment and hardware. Last Post: May 12th.\n Required Info for accurate answers:\n  \nPart Number - of utmost importance\n Manufacturer/vendor\n Service Type and Location\n Quantity (as applicable)\n  \nAll questions welcome, keep in mind that there are of course more pieces to this IT puzzle we can dig out of the box\n  \nCloud Services - Security, configurations, deployment, management, consulting services, and migrations\n Server configs and quote answers\n Storage Vendor options, alternatives, details and selection\n Network infrastructure - overlay software, segmentation, routers, switches, load balancing, APs…\n Security - Access Management, firewalls, MFA, cloud DNS, layer 7 services, antivirus, email, DLP….\n User gear - Usually you should buy the quote you have unless the quantity is +50 units\n Bandwidth - Internet, MPLS, dark fiber, carrier SD-WAN, Broadband, and 4G LTE\n Voice - MS Teams Direct Routing, SIP, Hosted VoIP, PRI etc.\n  \n   submitted by    /u/bad0seed  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lyy9h/am_i_getting_fucked_friday_may_19th_2023_pizza/",
-          "publishedOn": "2023-05-19T15:34:12.000Z",
-          "wordCount": 2414,
-          "title": "Am I Getting Fucked Friday, May 19th 2023, Pizza Party Edition",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lxvyk/what_does_it_mean_to_you/",
-          "author": null,
-          "description": "When a manager is gone on leave and their team performs better (less SLA violations, more ticket completions, etc) than when they're around?\n    submitted by    /u/nrml1  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lxvyk/what_does_it_mean_to_you/",
-          "publishedOn": "2023-05-19T14:56:52.000Z",
-          "wordCount": 2241,
-          "title": "What does it mean to you?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lwyw9/it_dress_code/",
-          "author": null,
-          "description": "My company does not do remote so I am in the office daily. This is first job in 20 years that has a strict dress code. I was saving so much money before. Shirt/tie M-Th and no ties Friday. \n You guys have any favorite brand shirt and do you guys wear short sleeve dress shirt. I find that a bit weird looking aka Dwight from the office. \n No polo till June - august.\n    submitted by    /u/NSummerz  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lwyw9/it_dress_code/",
-          "publishedOn": "2023-05-19T14:25:04.000Z",
-          "wordCount": 2288,
-          "title": "IT Dress code",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lwbkp/efs_on_share_folder_does_not_work/",
-          "author": null,
-          "description": "I am testing Windows EFS to encrypt files. I can encrypt local files just fine. I can login to a server and encrypt files on the local drive. But if I try to encrypt any files on a share drive (same as local server drive that works locally but now using share from a workstation) I get an error: An error occurred applying attributes to the file. The parameter is incurrent. \n Any ideas?\n    submitted by    /u/ksrc101  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lwbkp/efs_on_share_folder_does_not_work/",
-          "publishedOn": "2023-05-19T14:02:07.000Z",
-          "wordCount": 2292,
-          "title": "EFS on share folder does not work.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lw8ug/smart_card_certs_not_getting_imported_into_local/",
-          "author": null,
-          "description": "I've been running into this issue on just a few random users and on single machines. They insert their smart card and no certificates are pulled into the local store so nothing works. But if they go to ANY other computer and insert their smart card the certs show up and they are able to use it. \n I've checked the Certificate Propagation service and its running correctly (to my knowledge). Kind of at a loss on how to continue troubleshooting this since there seems to be no errors associated with it that I've found. Has anyone ran into this problem?\n    submitted by    /u/JDark628  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lw8ug/smart_card_certs_not_getting_imported_into_local/",
-          "publishedOn": "2023-05-19T13:59:29.000Z",
-          "wordCount": 2322,
-          "title": "Smart card certs not getting imported into local personal store?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lvfcr/free_microsoft_exams_ms_build_cloud_skills/",
-          "author": null,
-          "description": "Microsoft are running one of their cloud skills challenges again, with the opportunity to get an exam voucher for one of the following exams for free:\n  \nAI-900: Microsoft Azure AI Fundamentals\n AZ-104: Microsoft Azure Administrator\n AZ-204: Developing Solutions for Microsoft Azure\n AZ-305: Designing Microsoft Azure Infrastructure Solutions\n AZ-400: Designing and Implementing Microsoft DevOps Solutions\n DP-420: Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB\n PL-400: Microsoft Power Platform Developer\n  \nStarts 23rd May and runs to 20th June. Use the exam voucher by 27th September\n The challenges: https://www.microsoft.com/en-US/cloudskillschallenge/build/registration/2023\n The rules: https://www.microsoft.com/en-US/cloudskillschallenge/build/officialrules/2023 \n Enjoy!\n    submitted by    /u/stuart475898  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lvfcr/free_microsoft_exams_ms_build_cloud_skills/",
-          "publishedOn": "2023-05-19T13:26:15.000Z",
-          "wordCount": 2313,
-          "title": "Free Microsoft exams - MS Build Cloud Skills Challenge",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lv2f4/in_need_of_a_google_workspace_directory_syncing/",
-          "author": null,
-          "description": "Have a customer on Google Workspace, they are wanting to restrict access to certain password groups based on the role they have in Google workspace.\n I know Keeper does this with Azure, but not familiar with what's possible with Google Workspace if anyone can provide recommendations?\n    submitted by    /u/BNR33  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lv2f4/in_need_of_a_google_workspace_directory_syncing/",
-          "publishedOn": "2023-05-19T13:10:57.000Z",
-          "wordCount": 2268,
-          "title": "In need of a Google Workspace directory syncing password manager",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lumhr/waf_for_saas_based_web_apps/",
-          "author": null,
-          "description": "Hello fellow Redditors,\n I wanted to start a discussion on the topic of whether customers need Web Application Firewalls to protect their Web (SaaS) applications. We are large educational institution\n I understand with SaaS model, the responsibility for securing the underlying infrastructure and platform lies with the service provider, while the customer is responsible for securing their own data and access.\n But sometimes customer needs to put additional security measures such as WAF to prevent from threats like DDoS attacks.\n I'd love to hear your thoughts and experiences regarding this topic What do you to protect Web SaaS apps.\n    submitted by    /u/DENY_ANYANY  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lumhr/waf_for_saas_based_web_apps/",
-          "publishedOn": "2023-05-19T12:52:24.000Z",
-          "wordCount": 2317,
-          "title": "WAF for SaaS based Web Apps",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13ludal/new_role_imposter_syndrome_is_real/",
-          "author": null,
-          "description": "Was working as a Jr. SysAdmin for two years at a small insurance firm and just started a new gig as a SysAdmin L3 at a commercial bank in my state. I’ve almost been here a month and just starting to feel comfortable for the most part.\n I was brought on to replace the current L3 as he will be leaving for a government gig, was told he wouldn’t be leaving until the Fall so we can work together to transfer knowledge and responsibilities.\n We found out yesterday he is actually leaving for the new gig in a little less than 2 WEEKS. I got 5 projects that haven’t even really been started yet dropped on me and a bunch of meetings to follow them up. I was already still getting used to the environment and now this has just put me in a very anxious spot, feeling imposter syndrome hardcore now.\n Any advice from people in this position before?\n    submitted by    /u/Rkb26  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13ludal/new_role_imposter_syndrome_is_real/",
-          "publishedOn": "2023-05-19T12:41:37.000Z",
-          "wordCount": 2378,
-          "title": "New role, Imposter Syndrome is Real",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13ltv5r/where_does_it_end_subscription_license_increase/",
-          "author": null,
-          "description": "So Adobe Acrobat Pro license cost for business jumped from around $16.99 to $23.99 USD.\n That is a $8 USD bump.\n Which is an approximate 41% price increase.\n Of course trying to pay for an annual license yields no discount either.\n To justify the increase, they said this:\n *Why is the price increasing? Adobe Acrobat Pro has improved significantly over the last few years with the addition of many new features, including:\n Liquid mode, which automatically reformats text, images, and tables for quick navigation and consumption on small screens.\n Integrations with Google Suite, Box, and Microsoft that enable customers to collaborate and make changes to PDFs directly from Microsoft Teams.\n Expansion to new surfaces that allow customers to access our PDF tools on the web and mobile.\n New e-signature features that streamline workflows and eliminate the need for in-person and “wet” signatures that can slow business down.*\n Reason 1 and 3 should not have been used as a reason. That is like saying, we changed the template on our website to HTML5 and it should look okay now on your phone.\n So at what point does the price gouging stop? It seems like were being charged for common updates.\n The e-signatures, I can understand. Fighting DocuSign. DocuSign can lick my butt. But something tells me this will be removed in the future from the Pro license and used as an add-on service. Like the way Microsoft tells you, any person can call in to your Teams meeting. But you need a conference bridge, and only after you pay for the conference license of $2.50 per user. That pools your minutes together. Which can be chewed up by just a single user who mistakenly uses the call me at this number feature.\n    submitted by    /u/AdderallBuyersClub  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13ltv5r/where_does_it_end_subscription_license_increase/",
-          "publishedOn": "2023-05-19T12:19:32.000Z",
-          "wordCount": 2510,
-          "title": "Where does it end? Subscription License Increase.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13ltr9n/udemy_agrees_to_pay_4_million_settlement_over/",
-          "author": null,
-          "description": "“If you made purchases from Udemy.com between August 23, 2017 and April 21, 2023, you may be eligible to receive a cash payment of four dollars ($4.00) for every course purchased from Udemy up to forty dollars ($40.00)”\n Source: https://www.classcentral.com/report/udemy-settles-class-action/\n Claim Form: https://www.pricepromotionsettlement.com/\n    submitted by    /u/chenew  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13ltr9n/udemy_agrees_to_pay_4_million_settlement_over/",
-          "publishedOn": "2023-05-19T12:14:39.000Z",
-          "wordCount": 2266,
-          "title": "Udemy Agrees to Pay $4 Million Settlement Over Deceptive Pricing Practices",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13ltb2e/windows_10_startmenu_layout_fails_when_taskbar/",
-          "author": null,
-          "description": "Hi all,\n hoping someone might be able to offer some advice....\n we are looking at standardising our Windows 10 start menu, nothing major, just certain apps pinned to start under folders. This works fine.\n If we then follow M$' guide on adding the taskbar layout to the same xml file, it breaks the startmenu layout and ignores the taskbar changes.\n if we take the taskbar section out, all works again as it should.\n using GPO, we copy the layoutmodification.xml to the default user profile, and also to a local folder (c:\\scripts), without the taskbar settings it works fine, but with them in it all stops working, so new users get a startmenu with no items pinned and the default taskbar.\n ​\n ​\n the XML file with the taskbar settings, looks like this \n <?xml version=\"1.0\" encoding=\"utf-8\"?>\n <Layo…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13ltb2e/windows_10_startmenu_layout_fails_when_taskbar/",
-          "publishedOn": "2023-05-19T11:54:46.000Z",
-          "wordCount": 2488,
-          "title": "Windows 10 startmenu layout fails when taskbar layout added to XML file",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13ls79s/starting_fresh_at_a_manufacturer_need_some_advice/",
-          "author": null,
-          "description": "I just started as the local IT support for a medium-sized manufacturer. Their environment has no structure that I can see, or at least it's very limited (a few VLANS and a domain). I'm new to running the show, and I would greatly appreciate any advice on where to begin to try to get this place in order.\n Most of the machines are on Windows 11 right now, with some of the servers on 2012 and some I'm not even sure of. We have a handful of legacy applications which require some *really* old software to run, and I'm hoping to sandbox all of that in a VM eventually.\n We have multiple different backup solutions, some of them local and some of them are cloud-based. All of that is automated already.\n I'm working on a hardware inventory, as what we had was woefully inadequate and so I'm not actually 100% certain of what's present beyond what I can walk around and see.\n Our server room is unsecured; Anyone can just walk right in with no fob and no swipe.\n We do have a corporate help desk from the company that purchased this location, but they primarily just manage purchasing decisions and provisioning.\n So, again, in terms of where to begin, right now I have my eyes firmly on the security of our server room and the hardware inventory, followed by getting hosts on some kind of naming convention and then the same for users... I'm sure there are a hundred more important things I could and should be thinking about, so please do feel free to shout at me what you think those are.\n ​\n Thank you!\n (For those of you who are rolling your eyes, please know that I already searched the sub for similar posts and have read through quite a few of them)\n    submitted by    /u/_Tock_  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13ls79s/starting_fresh_at_a_manufacturer_need_some_advice/",
-          "publishedOn": "2023-05-19T11:01:36.000Z",
-          "wordCount": 2529,
-          "title": "Starting fresh at a manufacturer, need some advice on where to begin",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lrzp7/i_need_to_visualize_all_logs_from_remote_dir/",
-          "author": null,
-          "description": "I have a remote directory accessible via http, where is stored a bunch of logs file, I want some tool that for every file change (maybe with a polling) it dumps and visualize them in a gui or a basic console, any idea? thanks\n    submitted by    /u/admin_root_  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lrzp7/i_need_to_visualize_all_logs_from_remote_dir/",
-          "publishedOn": "2023-05-19T10:51:00.000Z",
-          "wordCount": 2265,
-          "title": "i need to visualize all logs from remote dir",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lrsn5/what_kind_of_content_would_you_want_to_see_in_a/",
-          "author": null,
-          "description": "I made a simple suggestion to a professor regarding the lack of modules that cover servers / potentially systems administration, and to my surprise it was turned into an actual third year undergraduate module at my university.\n This module will be taught over a ten week period with a one-hour lecture per week, switching to a more practical format later in the term. The professor is quite familiar with Linux and distributed computing, but is currently still outlining the module and taking suggestions;\n This is a final year module in a bachelors degree in computer science, and students should be somewhat familiar with Linux by this point. What type of content would you recommend in a module like this?\n    submitted by    /u/dariuscpt  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lrsn5/what_kind_of_content_would_you_want_to_see_in_a/",
-          "publishedOn": "2023-05-19T10:40:48.000Z",
-          "wordCount": 2345,
-          "title": "What kind of content would you want to see in a University sysadmin module?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lr1gu/weekly_open_sharing_thread_may_19_2023/",
-          "author": null,
-          "description": "There is a great deal of user-generated content out there, from scripts and software to tutorials and videos, but we've generally tried to keep that off of the front page due to the volume and as a result of community feedback. There's also a great deal of content out there that violates our advertising/promotion rule, from scripts and software to tutorials and videos.\n We have received a number of requests for exemptions to the rule, and rather than allowing the front page to get consumed, we thought we'd try a weekly thread that allows for that kind of content. We don't have a catchy name for it yet, so please let us know if you have any ideas!\n In this thread, feel free to show us your pet project, YouTube videos, blog posts, or whatever else you may have and share it with the community. Commercial advertisements, affiliate links, or links that appear to be monetization-grabs will still be removed.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lr1gu/weekly_open_sharing_thread_may_19_2023/",
-          "publishedOn": "2023-05-19T10:02:05.000Z",
-          "wordCount": 2380,
-          "title": "Weekly Open Sharing Thread - May 19, 2023",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lq1p2/smart_on_sas_ctrl_asr8405/",
-          "author": null,
-          "description": "Hey Folks, got a bench of some new to me sas HDDs and SSDs for free, got a Adaptec/Microsemi PCIe SAS Controller to get them run and read out the smart values. But the first tools didn’t work, can’t read them out. I have no experience with sas and the paths I’ve to go. Just wanna check them to be okay and sell them. Can you guys help me out and tell me what tool I can use at a win7 64Bit? Thank you a lot!\n    submitted by    /u/feinmechaniker  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lq1p2/smart_on_sas_ctrl_asr8405/",
-          "publishedOn": "2023-05-19T09:07:50.000Z",
-          "wordCount": 2303,
-          "title": "Smart on sas ctrl ASR-8405",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13losd2/azure_storage_accounts_anonymous_access_to_be/",
-          "author": null,
-          "description": "Article here\n Great. That's going to cause some major headaches. We have a lot of scripts that pull files from Azure Blob Storage\n    submitted by    /u/ginolard  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13losd2/azure_storage_accounts_anonymous_access_to_be/",
-          "publishedOn": "2023-05-19T07:59:23.000Z",
-          "wordCount": 2248,
-          "title": "Azure Storage Accounts anonymous access to be disabled by default from August 2023",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lo7u6/list_of_new_features_and_missing_features_in_the/",
-          "author": null,
-          "description": "I've been looking at the new Outlook. While it has some improvements, it is missing many features that have existed for years. It reminds me of the Windows 11 Start Menu - pretty and new, but far less functional than the old version.\n My list does not consider GUI changes (because they are subjective) and ignores bugs/crashes/slowness of the new Outlook.\n Here's what I found so far...\n New features:\n  \nPin/Unpin Email\n Snooze email\n Density has 3 choices instead of 2\n Can preview message text next to subject in message list\n Board\n Integrates MS Loop cloud components\n  \nFeatures removed (in no particular order):\n  \nCustomize ribbon\n Ribbon cannot be hidden\n Choose columns to show in message list\n Separation of categories from subject in message list\n Shared categories cannot have color\n St…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lo7u6/list_of_new_features_and_missing_features_in_the/",
-          "publishedOn": "2023-05-19T07:27:51.000Z",
-          "wordCount": 2717,
-          "title": "List of new features and missing features in the \"New\" Outlook",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lo23l/ruckus_ap_vulnerability_critical_update/",
-          "author": null,
-          "description": "HAK5 on YouTube reported on a critical vulnerability in Ruckus APs that, while it patched months ago, there are still a large number of devices unpatched. This flaw is being actively exploited.\n I did a quick reddit search and did not see a reference to this issue.\n https://youtu.be/TKfxOTvt27o\n    submitted by    /u/Icariiax  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lo23l/ruckus_ap_vulnerability_critical_update/",
-          "publishedOn": "2023-05-19T07:19:16.000Z",
-          "wordCount": 2266,
-          "title": "Ruckus AP Vulnerability & Critical Update",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lnpej/question_explorerexe_hangingcrashing_when/",
-          "author": null,
-          "description": "Hello,\n In advance I would like to thank anyone who has any thoughts on this.\n I've been pulling my hair out unable to fix it. But I'm no Azure admin, when it comes to troubleshooting. Just a guy doing his best.\n We have 6 users onboarded onto a file share in Azure files. They access it from onsite/wherever they are. The storage account itself is \"StorageV2 (general purpose v2)\" \"Hot Tier\".\n The files stored in here are company Excel files. Some of these files are able to get into excess of 50-100MB. With lots of links, formulas, etc.\n The issue that is occurring seems primarily occur when accessing files larger then 1 or 2 MB.\n The issue being that when a larger excel file is accessed the windows file explorer (explorer.exe) will hang. Sometimes it will return to function within seconds, but it generally needs to be closed via task manager. \n It is replicable on multiple computers, so I do not think it is a local issue, and occurs both offsite on home internet, on onsite on our guaranteed 1000/1000 link, I had begun to think it was an IOPS issue but I can't find any reports on throttling in the azure monitoring.\n I am at a bit of a loss of where to go to from here, view the process and what it is waiting on in task manager when it is hanging gives me \"one or more thread of explorer.exe are waiting to finish network I/O\" as if explorer.exe has stopped communicating to the internet, but the file will finish downloading and launch. still.\n I am just absolutely confounded. If anyone has any ideas or could point in the right direction of some information to check out, I would be eternally grateful.\n    submitted by    /u/Trickshot1322  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lnpej/question_explorerexe_hangingcrashing_when/",
-          "publishedOn": "2023-05-19T07:00:49.000Z",
-          "wordCount": 2518,
-          "title": "[Question] Explorer.exe hanging/crashing when accessing larger excel files in Azure File Share",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13lkjfa/oncall_policies/",
-          "author": null,
-          "description": "Does anybody know labor laws in California that well when it comes to On-Call Policies?\n Recently, my company shifted to a new company, and everything has been so hectic. We're about 3 months into the new company, and we still don't have a defined on-call policy. My management has been making up rules on the fly as we go, and it's really starting to get to us. We went from being restricted, to no restrictions and a loose \"1-2 hour response time\". Instead of standby, they were doing block hours, where ticket = 2 hour pay, but as of today they've taken that away. We've been told that our overtime for on-call is basically just \"whatever we worked\". Except, we've been told that we still need to look at tickets (we get texts for urgent tickets), but we need to decide if we'll respond or not. If…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13lkjfa/oncall_policies/",
-          "publishedOn": "2023-05-19T04:09:16.000Z",
-          "wordCount": 2714,
-          "title": "On-Call Policies",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13ljj47/microsoft_store_is_blocked/",
-          "author": null,
-          "description": "I'm running into an issue where all users are unable to access the MS Store and private store. When attempting to launch the store they receive an error message stating that it has been blocked, and to check with your IT or system administrator. Code: 0x800704EC\n It's definitely GPO related as the event viewer>store> operational, states that it has been blocked by policy (Event ID 4), show error page. \n All settings in the GPO relating to the store seem correct, but i did find the following in gpresults reporting... @(Microsoft.WindowsStore11606.1001.39.0_x64_8wekyb3d8bbwe?ms-resource://Microsoft.WindowsStore/Resources/StoreTitle) This rule might contain some elements that can not be interpreted by the current version of GPMC reporting module.\n Anyone run into this recently, or have any ideas?\n    submitted by    /u/RefrigeratorFancy730  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13ljj47/microsoft_store_is_blocked/",
-          "publishedOn": "2023-05-19T03:19:14.000Z",
-          "wordCount": 2334,
-          "title": "Microsoft Store is blocked",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13liuue/rhel_container_images_not_available_anymore/",
-          "author": null,
-          "description": "For anybody that works with containers, has Red Hat discontinued all the old \"standard\" (registry.access.redhat.com/rhel7/rhel for example) RHEL container images in favor of the ubi images? I've only been able to find an ubi while searching the registry.access.redhat.com registry. And if so has anybody had any level of success using the ubi images to sync the full RHEL 8 and 9 repositories?\n edit: The \"registry.access.redhat.com/rhel7/rhel\" image is still available, I meant the equivalent image for RHEL 8/9.\n    submitted by    /u/ClumsyAdmin  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13liuue/rhel_container_images_not_available_anymore/",
-          "publishedOn": "2023-05-19T02:46:32.000Z",
-          "wordCount": 2295,
-          "title": "RHEL container images not available anymore?",
-          "imageUrl": null
         }
       ]
     },
@@ -12441,42 +12351,6 @@
             "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/pfx.vpixl.com/3Q5mz/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/6e5a33e8-5090-4ae6-8954-2f0ced7a3ea2/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=6e5a33e8-5090-4ae6-8954-2f0ced7a3ea2&feed=WCb5SgYj"
           },
           "imageUrl": null
-        },
-        {
-          "id": "8e9cdf16-12af-4cad-ba1f-025c2e767fce",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.\nGenucel: Premier Skincare Partner of The Daily Wire\n70% off Most Popular Package + Free Shipping\nGenucel.com/WIRE",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2023-05-19T20:30:00.000Z",
-          "wordCount": null,
-          "title": "Epstein Settlement & Final Indiana Jones | Afternoon Update | 5.19.23",
-          "itunes": {
-            "duration": "00:03:10"
-          },
-          "enclosure": {
-            "length": "3042857",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/pfx.vpixl.com/3Q5mz/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/e5f38028-0699-434b-a6a4-fc8815202456/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=e5f38028-0699-434b-a6a4-fc8815202456&feed=WCb5SgYj"
-          },
-          "imageUrl": null
-        },
-        {
-          "id": "68053b8f-9f7a-4f83-918f-34d9326800f8",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "FBI whistleblowers appear before Congress – accusing the bureau of harsh retaliation when each questioned the handling of the Jan. 6th, Chicago’s new progressive mayor took office this week with a full plate of issues, and a number of scientists are pushing back against the growing anti-meat sentiment. Get the facts first with Morning Wire. \nGenucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE \nIndeed: Start hiring with a $75 sponsored job credit with Indeed at  https://indeed.com/wire",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2023-05-19T08:30:00.000Z",
-          "wordCount": null,
-          "title": "FBI Whistleblower Testimony & Chicago Mayor’s First Week | 5.19.23",
-          "itunes": {
-            "duration": "00:13:46"
-          },
-          "enclosure": {
-            "length": "13222629",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/pfx.vpixl.com/3Q5mz/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/0bb149c1-880f-4b8e-b8f7-6eca0d0dd708/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=0bb149c1-880f-4b8e-b8f7-6eca0d0dd708&feed=WCb5SgYj"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -12485,6 +12359,76 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14ccr8g/tplink_omada_vpn_vlan_problems/",
+          "author": null,
+          "description": "Hello everyone,\n im new to Omada SDN and strungling at the Site2Site VPN.\n ​\n Background:\n Small company.\n 1 HQ - Static IP - ER605 V2 - OC300\n 3 Branches - Dynamic IP (DynDNS over NO-IP) - ER605 V2 - Omada compatible Switches and APs\n ​\n What do i want?\n All branches can acces and use central RDS Server in HQ\n All MFP/Printer are installed on Printserver in the HQ so that they appear on the RDS Server\n All branches have Dect Systems and IP Phones which have to connect to the PBX at HQ\n ​\n What have i done?\n Created S2S connection from every branch (initiator) to the hq (responder)\n --- Cause HQ got static IP\n ​\n Every location have multiple Vlans:\n LAN - managment\n Intern - Access to server\n Printer - For printers\n Telephony - For Voip\n Guest - For Guests\n IOT - Heater and PV stuff\n Inter…",
+          "link": "https://www.reddit.com/r/networking/comments/14ccr8g/tplink_omada_vpn_vlan_problems/",
+          "publishedOn": "2023-06-18T06:11:15.000Z",
+          "wordCount": 2678,
+          "title": "TPLink Omada - VPN Vlan problems",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14ccdr2/edgerouter_to_pfsense_ipsec_trouble/",
+          "author": null,
+          "description": "Hello,\n I have an interesting one here and its breaking my brain a little bit. I won't lie, I'm not the biggest networking guy out there. So I ask this question with many question marks in my mind.\n ​\n Part 1:\n I have PFSense firewall setup with 4 different IPSec tunnels running in place with no issue.\n Two of these tunnels are going to other PFSense boxes - no issues\n One is going to a SonicWall - no issues\n The last one is going to a edge router. - no issues yet\n ​\n Part 2: no issues yet\n Attaches another Edge router to the pfsense - no issues yet\n We now have 5 vpns in action.\n ​\n Part 3:\n VPN is created between the two edge routers - to each other - along with the vpn back to the pfsense box.\n Once the tunnel is created between the Edge Routers - the vpns from both boxes drop to the pfsense box. Remove the VPN tunnel from one of the edge routers and that edge router reconnects back to the pfsense box. Re add the VPN and the connection drops.\n ​\n We have tested each VPN separately and all works fine. Its like - once a edge router talks to another edge router, it kills all non-edge router connections. Very odd. \n ​\n So my thinking is there is some type of limitation in the edge os that is causing this issue. Has anyone seen this issue before?\n Thanks,\n Kyle\n    submitted by    /u/Computer0Freek  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14ccdr2/edgerouter_to_pfsense_ipsec_trouble/",
+          "publishedOn": "2023-06-18T05:50:16.000Z",
+          "wordCount": 2550,
+          "title": "EdgeRouter to PFSense IPSEC Trouble",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14cbh2j/ospf_question/",
+          "author": null,
+          "description": "Hi - I recently setup OSPF between my core switches and firewalls. The core switches are Cisco Nexus and the firewalls are Fortigate running in Active/Passive HA. \n The OSPF is configured on the VLAN 33 between the switches and firewalls on the LAN side of the network. \n When I run show ip OSPF neighbors on the switches the switches list the designated router and backup designated router on the VLAN 33 with two different IPs in the VLAN (10.33.100.1 and 10.33.100.254). \n Is this expected?\n    submitted by    /u/sillypea00  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14cbh2j/ospf_question/",
+          "publishedOn": "2023-06-18T04:59:56.000Z",
+          "wordCount": 2388,
+          "title": "OSPF Question",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14c1kh7/arista_and_eveng_networking_help/",
+          "author": null,
+          "description": "Hello all. I have set up eve-ng in ESXi. Everything is working just fine except in the following scenario. \n I have one switch and one cloud vision installed and connected to cloud0. They can ping 8.8.8.8 ie go out to the internet but they can’t ping each other. \n The eve-ng host is 172.17.18.7 and using this up as gateway for the the others two machines. \n Cloud vision is 172.17.18.14 I can access the webui on this ip\n sw01 is 172.17.18.243 and I can access its webui. \n But the two machines can’t see each other. \n All I want to do is be able to see this sw01 in my cloud vision instance so that play around with deployment. \n Any help or guidance you are able to provide is greatly appreciated. \n Thank you\n    submitted by    /u/cbfa17  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14c1kh7/arista_and_eveng_networking_help/",
+          "publishedOn": "2023-06-17T20:58:31.000Z",
+          "wordCount": 2408,
+          "title": "Arista and eve-ng networking help",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14c1jrq/cisco_router_image_on_aws/",
+          "author": null,
+          "description": "Has anyone figured out how to either access the image ID from within the router interface or find the router serial number from AWS?\n I have a number of Cisco SD-WAN images in the cloud, a list of the EC2 IDs, and a list of the router serial numbers. I am trying to figure out a way to programmatically figure out the correct association between the two lists.\n The best idea we have so far is to add hostname and IP address fields to each report and compare those, but I’m worried that is not a safe design for a global enterprise where ip addresses can be reused in different geographies.\n Open to other ideas as well. Ultimately trying to hopefully find that one system contains a list of the other’s unique identifier.\n    submitted by    /u/DaveSays_1  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14c1jrq/cisco_router_image_on_aws/",
+          "publishedOn": "2023-06-17T20:57:39.000Z",
+          "wordCount": 2410,
+          "title": "Cisco Router image on AWS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14bz7sj/igmp_snooping_querier_not_available/",
+          "author": null,
+          "description": "Hi, I'm trying to simulate a multicast scenario in eve-ng, I'm using a l2 switch and wanted to have the source in the same subnet, the thing is when i try to use the \"ip igmp snooping querier\" command the switch doesn't accept it? \n has anyone run into the same issue and found a solution? \n thank you\n    submitted by    /u/loaighareeb  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14bz7sj/igmp_snooping_querier_not_available/",
+          "publishedOn": "2023-06-17T19:16:26.000Z",
+          "wordCount": 2334,
+          "title": "igmp snooping querier not available",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14bu5wz/what_are_you_thoughts_on_which_underlay_routing/",
+          "author": null,
+          "description": "Hi everyone, I'm curious what is the general consensus regarding the preferred underlay routing protocol to use in an ip fabric network that is made of 300+ switches ?\n From what i've gathered using a IGP like OSPF seems like the easiest choice given how simple it is to deploy and it would allow you to use ip unnumbered interfaces which reduces the complexity of the deployment. However you would end up with LSA floods anytime there is a topology change, but maybe that is no longer a big deal since switch CPUs and memory have become more powerful nowadays.\n On the other hand there is BGP it's less \"noisy\" allows for better administrative control of the underlay network, however it would increase the complexity of the network configuration although that might not be a big deal thanks to network automation tools.\n    submitted by    /u/ghoststalker2k  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14bu5wz/what_are_you_thoughts_on_which_underlay_routing/",
+          "publishedOn": "2023-06-17T15:40:37.000Z",
+          "wordCount": 2462,
+          "title": "What are you thoughts on which underlay routing protocol to use in a 300+ switch Clos topology ?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/14bn65f/questions_about_qsfp28_psm4cwdm4_transceivers_and/",
           "author": null,
@@ -17094,186 +17038,6 @@
           "wordCount": 2272,
           "title": "Cisco 7490 series - PoE injector",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13m6k71/risk_of_udld_autorecovery/",
-          "author": null,
-          "description": "Had a lot of udld issues recently, some which only take one uplink down but others that take both links down. Results in needing to physical go around and console or reboot switches to get them back online.\n These issues occur during some distro switch upgrades or the other day when we had a switch have a bug. So no true lasting unidirectional links.\n Would like to have autorecovery of the errdisabled state but concerned about any potential impact of a udld event that lasts more than a few minutes and results in bringing a unidirectionally link online and it causing a problem before the udld timers shut it down.\n Using rpvst which usually converges in a few seconds but my understanding is that since both sides cannot detect bpdu that it would revert to basic stp timers of 30-50 seconds. Any downsides to bringing a unidrectional link back up with recovery? Would spanning tree timers prevent an actual issue?\n    submitted by    /u/hendrixx007  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13m6k71/risk_of_udld_autorecovery/",
-          "publishedOn": "2023-05-19T20:18:26.000Z",
-          "wordCount": 2388,
-          "title": "Risk of UDLD autorecovery?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13m31v5/software_image_management_anyone_doing_this/",
-          "author": null,
-          "description": "We have mixed vendor environment and I'm looking to see if there a Software Image mgmt system that can help us improve efficiency for sw updates and consistency of version deployment.\n I know each vendor has their own solutions, but wondering if anyone has tackled this with open source solution?\n    submitted by    /u/Slow_Monk1376  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13m31v5/software_image_management_anyone_doing_this/",
-          "publishedOn": "2023-05-19T18:05:16.000Z",
-          "wordCount": 2281,
-          "title": "Software Image Management - anyone doing this?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13m26jg/same_port_is_used_by_two_programs/",
-          "author": null,
-          "description": "Hello,\n I wrote \"netstat -ano\" in my terminal in W11 and it shows that the port 3306 is getting used twice at the same time. How do I enable the other process?\n    submitted by    /u/erkilan  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13m26jg/same_port_is_used_by_two_programs/",
-          "publishedOn": "2023-05-19T17:33:04.000Z",
-          "wordCount": 2263,
-          "title": "same port is used by two \"programs\"",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13m16ua/can_i_connect_deco_m5_tplink_with_cable/",
-          "author": null,
-          "description": "i have 3 Decos of Tplink , the main deco m9 plus connected to a rouer and 2 last Decos (M5) , 1 of them connected wirelessly to the main, and 2nd deco connected by ethernet (through homepluge through the power cords \n is this may cause problems?\n    submitted by    /u/gabrielf1977  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13m16ua/can_i_connect_deco_m5_tplink_with_cable/",
-          "publishedOn": "2023-05-19T16:56:11.000Z",
-          "wordCount": 2279,
-          "title": "can i connect deco m5 tplink with cable?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13m05a2/dell_s4810on_looking_for_helpos/",
-          "author": null,
-          "description": "So the Dell S4810-ON switch doesn't allow you to load the FTOS on it from dell, it says it supports the Big Networks Switch Light and Cumulus Linux 2.x - I have the Switch Light OS on it right now, but it doesn't seem to support vlans, or route traffic between ports. I'm looking for old downloads of Cumulus Linux, or Switch Light Configuration examples (I assume I just have it mis-configured to not route traffic).\n Does anyone have a download location for the arm Cumulus Linux 2.x NOS or advice on getting Switch Light OS to route traffic between the ports? (Admin Interface/SSH works fine, just not the SFP+ ports)\n    submitted by    /u/toioiz  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13m05a2/dell_s4810on_looking_for_helpos/",
-          "publishedOn": "2023-05-19T16:17:33.000Z",
-          "wordCount": 2341,
-          "title": "Dell S4810-ON - Looking for Help/OS",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lyj9k/load_balancing_4_starlink_connections_flyaway/",
-          "author": null,
-          "description": "I need to design a flyaway rack that is going to highly remote locations to support up to 35 work stations (predominantly on wifi). I want to deploy 4 starlink dishes (we have the business dish) and combine them into one switch which has a number of APS on them.\n My main sticking point is what I use to load balance the 4 starlink networks. I have not got any experience doing this and need some advice on hardware solutions for this.\n Thanks\n Edit - I so far have:\n Starlink, Dream Machine Pro, 4 APS, Ups.\n All is configured and works well, I just need to add more network capacity and we have calculated that 3-4 Starlinks will do the trick.\n    submitted by    /u/kilbixy  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lyj9k/load_balancing_4_starlink_connections_flyaway/",
-          "publishedOn": "2023-05-19T15:19:22.000Z",
-          "wordCount": 2355,
-          "title": "Load balancing 4 starlink connections - flyaway rack solution needed",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lxfxi/link_down_between_c9500_and_hx220cm6s/",
-          "author": null,
-          "description": "Hi Guys,\n the 25G link between Core Stack C9500 and hypeflex node HX220C-M6S did not come up . The 25GBASE Cable 3 is totally working. I have checked the ports from Hyperflex and C9500 , everything is fine.\n I May have read somowhere that this issue is related to FEC config . Both ports need to be on cl74. I appreciate if you can help me. \n Thanks\n    submitted by    /u/Potential_Coast_4706  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lxfxi/link_down_between_c9500_and_hx220cm6s/",
-          "publishedOn": "2023-05-19T14:41:10.000Z",
-          "wordCount": 2297,
-          "title": "Link down between C9500 and HX220C-M6S",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lx3u8/crs305_windows_file_transfer_speeds_stuck_at/",
-          "author": null,
-          "description": "I set up 2 CRS305 switches a few years ago and I recall testing file transfers then and I was getting 800-900MBs with large VM files.\n Not sure if it was the cause but a few weeks ago I upgraded to the newest RouterOS firmware.\n While still in the RouterOS I also upgraded the RouterBOARD fireware to 6.49.7.\n I've tried switching to the switch SwOS and updated the SwOS version to 2.13 but it did not help.\n Not sure if it means anything but the main switch got stuck a few times when switching to the SwOS. Power cycle did not work. I had the same IP address in both configs but ended up using the reset button after the power was back. It did the same thing when trying to update the SwOS firmware. ???\n I have a simple setup with a few workstations and a laptop. They have very fast SSDs that can copy to each other in the same workstation at around 4-5GBs and to themselves at around 1-2GBs.\n I used the /int bridge port print command and all the ports have HW hardware on.\n __________________________________\n I've looked at it a bit more and with workstation1, workstation2 and the laptop all on the same CRS305 switch. Both WS1 and the Laptop get 1.00-1.02GBs and the Windows file copy graph looks flat with only very small dips. Looks really good. But if I copy from the WS1 to the Laptop or the Laptop to WS1 I get around 400-500MBs and it's all over the place.\n WS1 and the Laptop are using Ethernet ports and Ethernet SFP modules on the CRS305 switch. WS2 has Fiber SFP modules. Not sure if that matters.\n ​\n Here is a video copying first on the laptop in the RDP window from WS2, then on WS1 from WS2.\n Then from WS1 to the Laptop and then from the laptop to WS1. The last one, laptop to WS1 is always the slowest to start, it goes up slowly.\n I just don't get how/why copying from WS2 is rock solid on both but then between WS1 and the laptop is so bad.\n All three PCs have SSDs that can read and write over 3GBs.\n File Copy Video\n    submitted by    /u/Tanquen256  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lx3u8/crs305_windows_file_transfer_speeds_stuck_at/",
-          "publishedOn": "2023-05-19T14:29:44.000Z",
-          "wordCount": 2606,
-          "title": "CRS305 Windows File Transfer Speeds Stuck at 400-500MBs Between Only 2 PCs",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lx1ye/path_to_less_specialized_work/",
-          "author": null,
-          "description": "I’ve been in networking for almost a decade now. I still enjoy it but what gets me is how much specialized our work is. By that I mean you’re pretty much bound to the brands your company has. You’re going to be a Cisco guy or a checkpoint guy, etc. it’s just frustrating to keep up w these things, and worse if it gets replaced and you sort of start all over again and learn how this “new” tech is implemented differently \n I guess my question is, what would be a worthwhile networking career path that’s the most vendor agnostic? I’m thinking python/automation but I’m not really up to date w what else is out there.\n    submitted by    /u/d3adbor3d2  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lx1ye/path_to_less_specialized_work/",
-          "publishedOn": "2023-05-19T14:27:58.000Z",
-          "wordCount": 2345,
-          "title": "Path to less specialized work",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lwapg/how_much_time_will_it_take_to_transfer_a_25_mb/",
-          "author": null,
-          "description": "A 25 MB video file which needs to be transferred among two devices in a network where multiple devices are connected with each other using a shared transmission media. If this file is divided into multiple packets where each packet is 1KB in size then how long will it take (in seconds) to transfer the entire file over a network with a bandwidth capacity of 1Mbps?\n    submitted by    /u/ItxHuraira  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lwapg/how_much_time_will_it_take_to_transfer_a_25_mb/",
-          "publishedOn": "2023-05-19T14:01:15.000Z",
-          "wordCount": 2314,
-          "title": "How much time will it take to transfer a 25 MB video file divided into 1 KB packets with a 1 Mbps bandwidth capacity?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13ltkul/rail_kits_for_arista_7050qx/",
-          "author": null,
-          "description": "Hi all, we sourced some refurbished Arista 7050QX switches. these all are without any mounting accessories. does anyone know how can we source compatible Rail Kits for these switches. \n Thanks\n    submitted by    /u/howdareyuo  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13ltkul/rail_kits_for_arista_7050qx/",
-          "publishedOn": "2023-05-19T12:06:33.000Z",
-          "wordCount": 2259,
-          "title": "Rail kits for Arista 7050QX",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13ls5mg/single_vs_dual_authentication_why_choose_dual/",
-          "author": null,
-          "description": "I'm looking into wholesale broadband and how it is configured. Currently confused over how RADIUS works. There seem to be options of single vs dual authentication.\n Single being 'wholesaler only' auth & dual being 'wholesaler & retailer' auth. Could anyone explain to me how this works and what the benefits/disadvantages to each configuration are please?\n Thank you!\n    submitted by    /u/Ok_Language_5003  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13ls5mg/single_vs_dual_authentication_why_choose_dual/",
-          "publishedOn": "2023-05-19T10:59:34.000Z",
-          "wordCount": 2289,
-          "title": "Single Vs. Dual Authentication | Why choose dual?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13louia/do_we_need_ruckus_l3_premium_license/",
-          "author": null,
-          "description": "In what cases should we consider Ruckus ICX8200-PREM-LIC L3 Premium license?This enables:\n · IPv4 and IPv6 dynamic routes· OSPF v2, v3· PIM-SM, PIM-SSM, PIM-DM, PIM passive (IPv4, IPv6)· PBR· Virtual Route Redundancy Protocol VRRP (IPv4)· VRRP v3 (IPv6)· VRRP-E(IPv4/IPv6)· VRF (IPv4\n We will be using only one router/firewall, 15 switches distributed in 11 racks (a few stacked switches), 80 APs... Do we need OSPF? And as for PIM, we might be using multicast for the video surveillance system...\n No linked sites.... From another thread:\n  \nOSPF will make sense only if you have 2 links to and from the site. Even then I would recommend making it a totally stub site just to optimise the routing table.\n  \nYour thoughts?\n    submitted by    /u/_ReeX_  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13louia/do_we_need_ruckus_l3_premium_license/",
-          "publishedOn": "2023-05-19T08:02:21.000Z",
-          "wordCount": 2349,
-          "title": "Do we need Ruckus L3 premium license?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lo6ei/macbased_vlan_question/",
-          "author": null,
-          "description": "Hello.\n I have a switch (DCN S5750E-26X-SI). On one port I receive 10 vlans.\n Now, depending on MAC inside each of those vlans I need to put this MAC in vlan 3 or 4.\n From what I read, for MAC-based vlan input needs to be untagged.\n Is my only option to bridge those 10 vlans (I don't need them separate, I just receive them like that form outside) then put this bridge on access an loop it to another port with MAC-based VLAN enabled?\n    submitted by    /u/Kliwer16  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lo6ei/macbased_vlan_question/",
-          "publishedOn": "2023-05-19T07:25:42.000Z",
-          "wordCount": 2311,
-          "title": "MAC-based VLAN question",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lnx2g/self_organizinghealing_network_with_multiple/",
-          "author": null,
-          "description": "Hi,\n Looking for a direction to make a self organizing network that can handle dynamic multiple gateways.\n Imagine when a group of friends get together their phones would talk, confirm which has the best 5G service and all use that.\n or If no 5G, the next best available.\n and if one of them has run out of data for the month, can use any of their connection.\n (yes, ignoring security and all that. these would all be sharing on purpose and with full knowledge of the owners/users/etc/etc)\n I don't imagine phones being able to do it, but is there a routing protocol that can handle dynamic gateway selection along with path selection?\n Thanks!\n    submitted by    /u/AmIWorkingYet505  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lnx2g/self_organizinghealing_network_with_multiple/",
-          "publishedOn": "2023-05-19T07:11:50.000Z",
-          "wordCount": 2343,
-          "title": "Self organizing/healing network with multiple gateways",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13llusa/couldnt_decide_on_which_course_to_take/",
-          "author": null,
-          "description": "As someone who passed batchelor of computer application, ive planned to take courses related to networking, courses like CCNA,CCNP,CCIE etc. During my studies ive found out that im more into technical aspects than coding. That made me chose this field. But enquring some people i know in this field told me to take some other courses related to cloud networking/computing since the field is moving more towards cloud based. The courses that they have suggested me are cyber security courses and cloud computing courses. As someone who just turned 25, i dont wish to spend another 3 years and land a job after 5 years. Really confused and scared of wasting time. What would be your suggestion? Is getting a CCIE certification would land a job? Is it future proof?\n    submitted by    /u/lifeisabout-balance  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13llusa/couldnt_decide_on_which_course_to_take/",
-          "publishedOn": "2023-05-19T05:18:11.000Z",
-          "wordCount": 2361,
-          "title": "Couldnt decide on which course to take",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lls5f/wifi_for_an_outdoor_event/",
-          "author": null,
-          "description": "Hey all, i'm volunteering to put together a POS system for a yearly neighborhood outdoor event and looking for advice on wifi there. The area I'm working with is about 200 feet and on the edge of it one of the businesses has volunteered their internet connection.\n Last year there were problems with connectivity, people are made of meat and water and the signal wouldn't reach well during peak hours. Also there are just enough people that cell signals get jammed up, so it looks like a hotspot is out. We want to make sure that the square readers stay working. \n Here's what I'm thinking: I have a Linkstar I've been messing around with for shit and grins. Get a cheap point to point pair of antennas to go from the building with internet to a high spot above the beer garden and into to the linkstar. From there get a few fire tablets, reflash the firmware to get rid of the ads, and boom. \n This is all on a budget, I'll probably go out of pocket on it since it's a non-profit thing. Is this the right way to go about this?\n    submitted by    /u/Fyzzle  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lls5f/wifi_for_an_outdoor_event/",
-          "publishedOn": "2023-05-19T05:14:07.000Z",
-          "wordCount": 2422,
-          "title": "WiFi for an outdoor event?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13lloyv/technical_writing_what_makes_a_good_network/",
-          "author": null,
-          "description": "What are your thoughts on what makes a good network document? How about a good diagram? What makes you look at a document and be like \"damn THAT's a good document. I want my docs to look like that.\"\n Any standard outline you follow? How much detail do you put in versus assume that the reader should know the information?\n I'm in a very sad situation where I am forced to use power point as a technical knowledge dissemination tool, whereas a technical white paper would be more appropriate delivery mechanism. There's just too much information to fit into the slides, and the people reviewing these slides are not all network engineers/architects. (I normally write with markdown and asciidoc and convert to PDF)\n I've brought this matter up with the management, but they insist on using power point. It's like trying to fit a square peg into a round hole.\n I've tried to scope the slides, by stating which slides are primarily intended for a more technical audience versus just a general one, however the problem is less-technical management loves to interject with their questions when they come across content they don't understand.\n Others want to just take my slide deck, be able to look at some bullet points and get a basic idea, yet still be briefed on finer details of a design. It's hard to find a balance.\n To me, power point is a visual aide for me to deliver a presentation, and a guide on where to get more detailed information. Not a zero to hero manual.\n    submitted by    /u/Sea_Inspection5114  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13lloyv/technical_writing_what_makes_a_good_network/",
-          "publishedOn": "2023-05-19T05:09:09.000Z",
-          "wordCount": 2493,
-          "title": "Technical writing - What makes a good network document?",
-          "imageUrl": null
         }
       ]
     },
@@ -17359,6 +17123,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw",
       "siteUrl": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=7nXVJBGowmY",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=7nXVJBGowmY",
+          "publishedOn": "2023-06-17T17:22:59.000Z",
+          "wordCount": null,
+          "title": "Checking on my Investment in Person - Framework Laptop Factory Tour",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=i8qkqfC190s",
           "author": null,
