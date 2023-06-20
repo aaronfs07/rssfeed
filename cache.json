@@ -240,6 +240,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14e7pt3/windows_server_home_folder_map_to_dfs_namespace/",
+          "author": null,
+          "description": "Hi,\n Is it possible to create a home_folder for a user without the requirement to use and assign a drive letter?\n I want to assign a home_folder to a dfs resource. Everything works ok, but I don't need a home_folder that is connected also to a other drive letter. DFS has own drive letter.\n It's option to create home_folder on Active Direcory Users and Computer ->User Properities->Profile->Home folder->Connect \"I don't want to assign letter \" ->To: \\\\company.local\\share\\home\\user (DFS Namespace share)?\n I want share all folders on one share (G). \n G:\\DFS\\PUBLIC\n G:\\DFS\\HOME_FOLDER\n G:\\DFS\\COMPANY\n I don't want H:\\HOME_FOLDER\n    submitted by    /u/oinkoff  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14e7pt3/windows_server_home_folder_map_to_dfs_namespace/",
+          "publishedOn": "2023-06-20T10:44:48.000Z",
+          "wordCount": 2436,
+          "title": "Windows Server Home Folder map to DFS Namespace share.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/14e6o30/logi_tap_scheduler/",
           "author": null,
           "description": "Hi,\n Something has changed where before we were able to log into a Tap scheduler with an MTR account (pro licence) without any issues. \n Now we try to log in, it seems the device wants to enroll to Intune. Is there an easy way in which to bypass this? Is this a config on the Tap scheduler itself or Company Portal/Intune settings that is catching the device logging in and enforcing enrollment?\n error we're getting is \"Signing out.. This device isn't enrolled in Device Administrator. Contact your Admin\". (I am in contact with our admin as well)\n Thanks\n    submitted by    /u/SpudGun79  \n [link]   [comments]",
@@ -12527,6 +12537,46 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14e81u7/massive_multicast_igmp_traffic_on_connect/",
+          "author": null,
+          "description": "Hey there, I'm facing network issues that affect hosts, that connect to the network, for some minutes.\n As soon as a host gets a connection to the network it starts sending out massive multicast / IGMP traffic (Membership report / Leave group 224.0.0.252). This happens for some seconds or even hours until it stops. During all the time the host is unable to communicate to the network as most packets get lost and dont even arrrive their destination.\n This doesnt happen when I simply disable multicast on the host, but this can't be the solution here.\n The issue was tested with 2 Windows VMs on a Xen Server cluster running on a FlexCenter. It has a trunked connection to the next (Netgear) switch. There are no VLANs. IGMP Snooping is turned of.The issue also exists on physical Windows clients in the network.\n One line from the wireshark report:\n No. Time Source Destination Prot. Lenght Info31134 926.817456 172.20.11.124 224.0.0.22 IGMPv3 60 Membership Report / Leave group 224.0.0.252\n Did anyone see such a behaviour before? What could cause this?\n    submitted by    /u/basecatcherz  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14e81u7/massive_multicast_igmp_traffic_on_connect/",
+          "publishedOn": "2023-06-20T11:02:18.000Z",
+          "wordCount": 2526,
+          "title": "Massive Multicast / IGMP traffic on connect",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14e7kzs/replacing_on_prem_firewalls_with_cloud/",
+          "author": null,
+          "description": "Question: all servers on cloud, any reason to co tinje using a firewall like fortigate or sophos or Palo alto on prem for hq and branch offices? How about replacing the traditional firewall appliances with cloudflare? \n Our environment: all windows based PCs/laptops with office365 for email and office apps.\n All applications are on the cloud or will be on the cloud by September. \n Traditionally, we had all on prem servers for apps, db, telephony and moved to cloud last year. Since the app and db servers were on prem , we had fortigate and sophos Firewalls plus xdr etc \n Cloud team takes care of cloud security. \n Want to get rid of sophos and fortigates and all that junk because my clients already have their own av xdr etc installed on their PCs\n    submitted by    /u/stopthinking60  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14e7kzs/replacing_on_prem_firewalls_with_cloud/",
+          "publishedOn": "2023-06-20T10:37:25.000Z",
+          "wordCount": 2483,
+          "title": "Replacing on prem Firewalls with Cloud",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14e7b46/cleaning_up_data_center_wiring/",
+          "author": null,
+          "description": "Hello ,\n I am cleaning up my companies Datacenter. We have moved from Physical to Virtual from 80 physical machines down to 12. The 7 new servers use fiber with 5 of the legacy machines using 4 ethernet lines each. Currently there appears to be around 300 ethernet cables running about the datacenter would it be worth removing the majority of them and only leaving about 40 since all the new servers we install run off fiber?\n ​\n I am also tasked with replacing the switching infrastructure in the Datacenter in a year from now and want to do this to help me get an accurate estimate on what costs would be instead of buying an exact match to what we currently have.\n ​\n Thank You,\n    submitted by    /u/mmckibben  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14e7b46/cleaning_up_data_center_wiring/",
+          "publishedOn": "2023-06-20T10:22:44.000Z",
+          "wordCount": 2472,
+          "title": "Cleaning Up data center wiring",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14e78gi/cisco_aci_to_dellmx7k_macs_changing_ports_and/",
+          "author": null,
+          "description": "Hi Folks,\n 4x Cisco Leaf(Nexus) << TRUNK >> DellMx7K with ESXi(Virtual switches and hosts running)\n I'm having an issue where Virtual hosts look to get dropped after a failover test on the virtual switches. Traffic would come into ACI on different ports. I did create a port-security policy to the interfaces with maxium endpoint value of 0 to disable. As per this document.\n https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/5-x/security/cisco-apic-security-configuration-guide-50x/m\\_port\\_security.html \n Server team say it's has improved but not fully. Still some hosts disappearing for a short period after failover. Are there any other configurations I need to implement?\n ​\n This link below mentions disabling DTP and using 802.1q over ISL. I can't see where to set this is ACI.\n https://kb.vmware.com/s/article/1006628\n ​\n    submitted by    /u/keeganb2000  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14e78gi/cisco_aci_to_dellmx7k_macs_changing_ports_and/",
+          "publishedOn": "2023-06-20T10:18:52.000Z",
+          "wordCount": 2467,
+          "title": "Cisco ACI to DellMX7K - MAC's changing ports and hosts dropping.",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/14e5sws/how_would_i_go_about_loopback_testing_this/",
           "author": null,
