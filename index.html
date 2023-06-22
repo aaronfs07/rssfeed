@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-22 datetime="2023-06-22T08:36:45.000Z">2023-06-22</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-22 datetime="2023-06-22T08:36:45.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-22 datetime="2023-06-22T10:00:33.000Z">2023-06-22</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-22 datetime="2023-06-22T10:00:33.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -34,26 +34,24 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                  >Sysadmin</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/14fxt82/acx1100_memory_leak/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14fzagm/thickheaded_thursday_june_22_2023/"
                         open
                       >
-                        <summary class="article-expander__title">ACX1100 memory leak</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14fxt82/acx1100_memory_leak/">
+                        <summary class="article-expander__title">Thickheaded Thursday - June 22, 2023</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14fzagm/thickheaded_thursday_june_22_2023/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Hi everyone!
- Is anyone also experiencing memory leak issue in their ACX1100? We have experienced multiple occurrences of memory leak on ACX1100 installed and would require reboot to be performed as workaround for the router to be performing again. Have verified that ACX1100 due to its design limitations, memory leak is occurring due to routes and/or routing processes which the router cannot handle. Would like to know if anyone have encountered the same issue and what has been the resolution in your network scenario.
- Monitored that memory leak on the ACX persists even after upgrading JUNOS from 20.2R2-S1.3 to 20.4R1.12. Verifying with JTAC, memory leak is triggered due to device configuration but the root cause for the permanent fix is due to software PR. I am still awaiting next service release for JUNOS 20.4R3-S8 to confirm with Juniper if memory leak issue finally resolved for next service release.
- Thanks!
-    submitted by    /u/Aggravating_Ad5919  
+                              <span>Howdy, /r/sysadmin!
+ It&#x27;s that time of the week, Thickheaded Thursday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I&#x27;ve taken over responsibility for posting these weekly threads so you don&#x27;t have to worry about anything except your comments!
+    submitted by    /u/AutoModerator  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -66,46 +64,117 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/14fstt4/mellanox_sn2100_this_layer_1_issue_is_driving_us/"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14fz74m/raspberrypi_cluster_with_network_drive/"
                         open
                       >
-                        <summary class="article-expander__title">Mellanox SN2100 - This layer 1 issue is driving us nuts</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14fstt4/mellanox_sn2100_this_layer_1_issue_is_driving_us/">
+                        <summary class="article-expander__title">RaspberryPi cluster with network drive.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14fz74m/raspberrypi_cluster_with_network_drive/">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Greetings:
- We are upgrading from a pair of SN2010 (eighteen 10/25Gb ports + four 100Gb ports) to a pair of SN2100 (sixteen 100Gb ports) for our TOR switches. These switches are all running the Onyx operating system.
- We have deployed several sets of SN2010 switches for us and our clients over the past four years. We decided to upgrade to SN2100 to get more port density by using 100Gb optics and breakout cables. 
- We configured a SN2100 switch and swapped it in for one of our SN2010 switches. 
- This issue we are having is that whenever we connect a host one of the four breakout pairs, the port flaps every 30 seconds. We have configured the new switch port identically to our existing switches and connected to existing hosts that have Mellanox NICs in them. 
- When we connect the same 10/25Gb breakout to another switch, we have no issues. We only experience the issue when we connect a host (server or workstation) with SFP+. 
- We&#x27;ve used a 100Gb to 25Gb converter with both an optical transceiver as well as DAC cable and get the same results; the port stays up when connected to another switch (Mellanox or other brand) and the port flaps when that same connection terminates into a host (server or workstation).
- During the time the port is up, we have connectivity.
- Any ideas what this might be or what to try next?
- Thanks in advance.
-    submitted by    /u/tmcmillan  
+                              <span>Hi guys,since the rpi4 prices are going down, and for whatever reason i have the urge to build a cluster...redundancy is a big goal of mine, im wondering if network booting via a NAS server is a good way doing so (instead of booting via SD Card). or is there another hardware/software solution for having network drives for running an OS?
+ i would be happy if you guys can give me hints for what i have to look for.
+ info:price range is between 500-700$ without the Pis.the cluster would be out of 5-10Pis each should have about 100gb storage.
+    submitted by    /u/iGhost1337  
  [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
                             </span>
                           </div>
                         </a>
                       </details>
                     </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
-                </h3>
-                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14fz61z/same_gpo_working_on_windows_server_2019_but_not/"
+                        open
+                      >
+                        <summary class="article-expander__title">Same GPO working on Windows Server 2019, but not on Windows Server 2016?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14fz61z/same_gpo_working_on_windows_server_2019_but_not/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As title says. I have GPO which automatically downloads and install updates, then reboot the computer on schedule. On Win2019 this work, on 2016 not (even though RSOP says the policy applies).
+    submitted by    /u/neverfullysecured  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14fypj0/outlook_new_roaming_signatures_and_stationery/"
+                        open
+                      >
+                        <summary class="article-expander__title">Outlook - New Roaming &quot;Signatures and stationery&quot; function on RDS</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14fypj0/outlook_new_roaming_signatures_and_stationery/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>There is already a post about this particular problem, but it is a few months old already so I thought I created a new one.
+ https://www.reddit.com/r/sysadmin/comments/1042lkf/outlook\_new\_roaming\_signatures\_and\_stationery/
+ I&#x27;m having a problem where the roaming signatures in Outlook are happening for users on a RDS server. I have tried to make the registry work, but unfortunately this is not a solution. Has anyone been able to stop this function from appearing on a RDS server?
+    submitted by    /u/MusicMaikel  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14fyo1c/sql_emails_fail_to_send/"
+                        open
+                      >
+                        <summary class="article-expander__title">SQL emails fail to send</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14fyo1c/sql_emails_fail_to_send/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all
+ I have a SQL 2012 server that I&#x27;m trying to get to send emails via SMTP 365 but I only seem to get errors of &quot;Activation failure.&quot; 
+ SQL is also showing the mail queue type as INACTIVE
+ Im pretty sure that is the issue but it also seems odd that there is no ID, just NULLs in the next 3 coloums 
+ any ideas?
+    submitted by    /u/OkYogurtcloset9535  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14fyli2/how_to_use_tiny_pxe_server_to_install_a_windowswim/"
+                        open
+                      >
+                        <summary class="article-expander__title">how to use tiny pxe server to install a windows.wim</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14fyli2/how_to_use_tiny_pxe_server_to_install_a_windowswim/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>i have a multiple self service machine that i have to update over a pxe server, actually im testing with tiny pxe server but i m having problems installing windows over pxe.
+ im booting my self service machine over pxe connection and it detect my pxe server, i injected the windows.wim file but for some reason doesn&#x27;t update the OS. Do i have to do something else?
+ for now im just running the client machine in pxe boot, the server with tiny pxe server with the windows.wim file and nothing else
+    submitted by    /u/Acrobatic_Fox_1862  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -377,6 +446,187 @@
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14fueaa/i_feel_overwhelmed_and_im_not_sure_where_to_start/"
+                        open
+                      >
+                        <summary class="article-expander__title">I feel overwhelmed and I&#x27;m not sure where to start. I guess that I am a server guy now</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14fueaa/i_feel_overwhelmed_and_im_not_sure_where_to_start/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey there! Just wanted to share a bit about my background. I joined my company as a network engineer about 3 months ago, bringing along my CCNP certification and previous experience in Cisco networking. Although I have some familiarity with basic Linux commands, my main expertise lies in the networking side of IT.
+ Now, here&#x27;s where things get interesting. The senior system administrator recently left the company, leaving me in charge of managing all the systems and servers. To be honest, I feel a bit overwhelmed and lacking in confidence. The senior guy still tries to help me out when he can, but he&#x27;s got his own projects keeping him busy.
+ The senior IT guy at our company has over 20 years of experience, and he&#x27;s incredibly knowledgeable. He seems to have a natural understanding of all aspects of systems and developments. Technical stuff comes easily to him, so he never really felt the need to document everything. Before he left, he did his best to teach me, but I must admit it wasn&#x27;t enough for me. I&#x27;m not placing any blame on him, though. In fact, I really liked working with him and learned a lot. I&#x27;m simply sharing my current situation and the challenges I&#x27;m facing in my role.
+ Let me give you an idea of what I&#x27;m dealing with. I&#x27;ve got my hands full with various VMs, including a Perforce server, TrueNAS, Active Directory, PFSense firewall, NextCloud, and several customer server VMs. The thing is, I&#x27;m fairly new to VMware systems, Linux, NAS, and PFSense. It doesn&#x27;t seem like the company is planning to hire a senior IT person anytime soon, so it looks like I&#x27;ll be flying solo in the IT department for a while.
+ I know I need to upskill and expand my knowledge, but any advice or tips you have for someone in my shoes would be greatly appreciated!
+    submitted by    /u/kus222  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14ft746/is_alienvault_otx_a_solid_tim_platform/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is AlienVault OTX a solid TIM platform?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14ft746/is_alienvault_otx_a_solid_tim_platform/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Do you all have any luck using AlienVault Open Threat Exchange? I have done some research into open/crowd sourced and cheaper TIL platforms and this one stuck. I am having some issues with it that looks to be on their end. If there are better affordable options I would love to hear something for the sole purpose of researching IOCs and submitting file and url samples.
+ My issue upon attempting to Submit a Sample is I get greeted with this message:
+ &quot;Submissions
+ Invalid &#x27;sort&#x27; parameter &#x27;-addDate&#x27;. Allowed values: add_date, complete_date, description, type, tlp
+ You do not have any submissions.&quot;
+ ​
+ This is even after I submit a domain, but I am unable to submit file samples it appears.
+ ​
+ Not sure if this is an error on my end or theirs. I utilize open source intelligent information for cyber security research and testing and was attempting to use the AlienVault OTX platform but it seems I am unable to take advantage of their sample submission.
+    submitted by    /u/SirEliasRiddle  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/14fyylb/broadband_isps_transitioning_to_dhcp_from_poe_how/"
+                        open
+                      >
+                        <summary class="article-expander__title">Broadband ISP&#x27;s transitioning to DHCP from PoE &amp; how they meet regulatory requirements for audibility.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14fyylb/broadband_isps_transitioning_to_dhcp_from_poe_how/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi,
+ a number of ISP&#x27;s including AltNets are using DHCP to assign IP&#x27;s where in the past they would have used PPPoE. I&#x27;m just wondering why the transition &amp; how they are ensuring accountability. 
+ I&#x27;ve worked for a number of global ISP&#x27;s in enterprise services but never in the broadband space so just wondering how they ensure they meet the challenge of being able to be certain that a certain IP actually belongs to a specific customer.
+ It&#x27;s not that hard to change the advertised MAC &amp; IP of the device connecting to their network, I guess they could tie the customer IP to their demarc interface &amp; be certain that anything coming into their demarc is from that subscriber regardless of MAC or IP.
+ Just curious as to how they meet the audibility regulatory requirement without the customer using a username &amp; password to authenticate their conenction.
+    submitted by    /u/iPhrase  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/14fxt82/acx1100_memory_leak/"
+                        open
+                      >
+                        <summary class="article-expander__title">ACX1100 memory leak</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14fxt82/acx1100_memory_leak/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi everyone!
+ Is anyone also experiencing memory leak issue in their ACX1100? We have experienced multiple occurrences of memory leak on ACX1100 installed and would require reboot to be performed as workaround for the router to be performing again. Have verified that ACX1100 due to its design limitations, memory leak is occurring due to routes and/or routing processes which the router cannot handle. Would like to know if anyone have encountered the same issue and what has been the resolution in your network scenario.
+ Monitored that memory leak on the ACX persists even after upgrading JUNOS from 20.2R2-S1.3 to 20.4R1.12. Verifying with JTAC, memory leak is triggered due to device configuration but the root cause for the permanent fix is due to software PR. I am still awaiting next service release for JUNOS 20.4R3-S8 to confirm with Juniper if memory leak issue finally resolved for next service release.
+ Thanks!
+    submitted by    /u/Aggravating_Ad5919  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/14fstt4/mellanox_sn2100_this_layer_1_issue_is_driving_us/"
+                        open
+                      >
+                        <summary class="article-expander__title">Mellanox SN2100 - This layer 1 issue is driving us nuts</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14fstt4/mellanox_sn2100_this_layer_1_issue_is_driving_us/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Greetings:
+ We are upgrading from a pair of SN2010 (eighteen 10/25Gb ports + four 100Gb ports) to a pair of SN2100 (sixteen 100Gb ports) for our TOR switches. These switches are all running the Onyx operating system.
+ We have deployed several sets of SN2010 switches for us and our clients over the past four years. We decided to upgrade to SN2100 to get more port density by using 100Gb optics and breakout cables. 
+ We configured a SN2100 switch and swapped it in for one of our SN2010 switches. 
+ This issue we are having is that whenever we connect a host one of the four breakout pairs, the port flaps every 30 seconds. We have configured the new switch port identically to our existing switches and connected to existing hosts that have Mellanox NICs in them. 
+ When we connect the same 10/25Gb breakout to another switch, we have no issues. We only experience the issue when we connect a host (server or workstation) with SFP+. 
+ We&#x27;ve used a 100Gb to 25Gb converter with both an optical transceiver as well as DAC cable and get the same results; the port stays up when connected to another switch (Mellanox or other brand) and the port flaps when that same connection terminates into a host (server or workstation).
+ During the time the port is up, we have connectivity.
+ Any ideas what this might be or what to try next?
+ Thanks in advance.
+    submitted by    /u/tmcmillan  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="18f7d315-68e7-4842-ae54-a4d7632cc8a2"
+                        open
+                      >
+                        <summary class="article-expander__title">Durham Testifies &amp; Oscars Diversity Push  | 6.22.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Clashes on Capitol Hill yesterday as special counsel John Durham answered questions about his FBI assessment, a dark money group is targeting lawyers who consider representing former President Trump, and The Academy of Motion Picture Arts and Sciences faces blowback over their new diversity rules. Get the facts first with Morning Wire. 
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/
+Genucel: &quot;Extra 10% Off Summer Skincare Essentials Bundle – New 
+Customers Only  + FREE SHIPPING https://genucel.com/WIRE&quot;</span>
                             </span>
                           </div>
                         </a>
@@ -1586,6 +1836,59 @@ You can download the script from GitHub.
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
                               <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="923220ae-239d-435a-b093-16c5fd58fc3c"
+                        open
+                      >
+                        <summary class="article-expander__title">Submersible Search Effort &amp; Hunter Biden Child Support | Afternoon Update | 6.21.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="dc85a13a-1d53-40e7-86aa-25c547dbf7d3"
+                        open
+                      >
+                        <summary class="article-expander__title">Hunter Biden Tax Evasion &amp; Nashville Manifesto Legal Fight | 6.21.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hunter Biden has reached a tentative deal to plead guilty on charges of tax evasion while dodging a felony gun possession charge, a search for a submersible taking 5 passengers to the wreckage of the Titanic is still missing, and the legal wrangling over the Nashville school shooter’s writings continues. Get the facts first with Morning Wire. 
+Indeed: Start hiring with a $75 sponsored job credit with Indeed at  https://indeed.com/wire
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.
+Follow us on Twitter: https://twitter.com/MorningWire
+Follow us on Instagram: https://www.instagram.com/georgiamaehowe/?igshid&#x3D;NTc4MTIwNjQ2YQ%3D%3D</span>
                             </span>
                           </div>
                         </a>
@@ -3235,6 +3538,57 @@ Some information from a working drive
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="9ac67da1-536b-4ee0-91e5-091732e23878"
+                        open
+                      >
+                        <summary class="article-expander__title">Hunter Biden’s Guilty Plea &amp; Titanic Submersible Search | Afternoon Update | 6.20.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Balance of Nature: Get a FREE Fruit &amp; Veggies Travel Set plus $25 off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="c5787796-4134-4ee6-bec6-b598a764892e"
+                        open
+                      >
+                        <summary class="article-expander__title">COVID Patient Zero &amp; Remote Work Exodus | 6.20.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Newly reviewed documents allege that the first people to contract Covid were scientists at China’s Wuhan lab, a new report shows evidence that Joe and Hunter Biden coerced a Ukrainian energy company to pay them millions, and work from home policies have led many workers to leave big cities to live elsewhere. Get the facts first with Morning Wire. 
+Balance of Nature: Get a FREE Fruit &amp; Veggies Travel Set plus $25 off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/
+Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -4816,6 +5170,57 @@ Buy windows server 2019 essentials, shared folder is located here &#x3D;&gt; som
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="d5b3da6c-ae2f-4ab2-aaf3-5e9faa79adf1"
+                        open
+                      >
+                        <summary class="article-expander__title">Titanic Tour Search &amp; Nashville Shooter Manifesto | Afternoon Update | 6.19.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+American Home Shield: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="13c71d37-63c5-4148-986e-bd65515ec81a"
+                        open
+                      >
+                        <summary class="article-expander__title">Blinken’s China Trip &amp; Congressional Appropriations | 6.19.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>For the first time in 5 years, the U.S. Secretary of State met with his Chinese counterpart in Beijing, a new poll shows us where the public stands on the race for the oval office, and congressional Republicans look for new ways of cutting spending after avoiding a debt ceiling default. Get the facts first with Morning Wire. 
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/
+American Home Shield: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -5726,6 +6131,59 @@ Presence of mail server on A record of your domain can lead to subtle and hard-t
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="d5d5ec6f-8f9d-4abc-ad6e-dfc3aa49c73b"
+                        open
+                      >
+                        <summary class="article-expander__title">RNC Unveils New Voting Strategy | Sunday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>RNC Chairwoman Ronna McDaniel unveils the new voting strategy for the 2024 presidential election. The party’s “Bank Your Vote” strategy will embrace early voting, voter ID, and a massive ground game. Plus we discuss the robust field of presidential candidates challenging President Joe Biden. Get the facts first on Morning Wire.
+ 
+Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ to 231-231</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="7ad0bda0-e471-48ad-8a1d-dc01c0341d89"
+                        open
+                      >
+                        <summary class="article-expander__title">Transgender Regret | Sunday Special | 6.18.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Proponents of transgender surgeries and treatments for minors and young adults claim such medical interventions are necessary and even “life-saving,” but as the procedures become more common, an increasing number of young people are expressing regret over the permanent changes made to their bodies. In this episode of Morning Wire, we hear first-hand accounts from two individuals who underwent these gender treatments and now regret it. Both appear in the documentary “No Way Back: The Reality of Gender Affirming Care”. You can learn more at NoWayBackFilm.com.
+ 
+Indeed: Start hiring with a $75 sponsored job credit with Indeed at  https://indeed.com/wire
+Follow us on Twitter: https://twitter.com/MorningWire</span>
                             </span>
                           </div>
                         </a>
@@ -6678,6 +7136,59 @@ We&#x27;ve been doing maintenance and upgrades across our datacenters thes…</s
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="64f1972d-3011-46af-ad99-7d3d7b9f9ca4"
+                        open
+                      >
+                        <summary class="article-expander__title">Trump’s Legal and Political Jeopardy | Saturday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The historic arraignment of a former President of the United States and the current leading Republican presidential candidate took place this week – raising unprecedented political and legal questions. We sit down with former federal prosecutor Andrew McCarthy to address the legal and political implications Get the facts first on Morning Wire.
+ 
+Omaha Steak: Type code  &quot;WIRE&quot; into the search bar to get ‘Dad’s Favorite Gift Package’ for JUST $99.99. Plus get 8 free steak burgers. http://www.OmahaSteaks.com
+ 
+Follow us on Twitter: https://twitter.com/MorningWire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="90fadc04-1cb1-4386-9065-0b539d69d6e3"
+                        open
+                      >
+                        <summary class="article-expander__title">Americans More Socially Conservative &amp; Mall Exits San Francisco | 6.17.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>In a major reversal, more Americans are identifying as socially conservative for the first time ever, the Southern Baptists held their annual meeting this week, and a major mall owner exits San Francisco. Get the facts first with Morning Wire. 
+Genucel: &quot;Extra 10% Off Summer Skincare Essentials Bundle – New Customers Only  + FREE SHIPPING https://genucel.com/WIRE&quot;</span>
                             </span>
                           </div>
                         </a>
@@ -8359,6 +8870,57 @@ working with site tech and Cogent we fixed the ISP issue (CC was still fixing a 
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="be91bb5d-babe-4481-8050-c8a95daff39a"
+                        open
+                      >
+                        <summary class="article-expander__title">Art Theft Ring Busted &amp; Synthetic Embryo Breakthrough | Afternoon Update | 6.16.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. Follow us on Twitter: https://twitter.com/MorningWire
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="6e2409e2-d6df-4061-8ff7-157b758a913d"
+                        open
+                      >
+                        <summary class="article-expander__title">Penny Jury Indictment &amp; RNC Backs New Strategy | 6.16.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The attorneys for Marine Veteran Daniel Penny speak out, The RNC embraces a new get out the vote strategy, and big tobacco companies receive high environmental, social governance scores. Get the facts first with Morning Wire. 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/</span>
                             </span>
                           </div>
                         </a>
@@ -10119,6 +10681,58 @@ Windows 10 20H2, 21H2, 22H2: Add a new DWORD registry value named 4103588492 wit
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="4733ed58-9b8a-4f6d-ae82-bbfc9e13d56c"
+                        open
+                      >
+                        <summary class="article-expander__title">SCOTUS Adoption Case &amp; Harvard Morgue Scandal | Afternoon Update | 6.15.2</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="95323b67-4721-4d4f-ae99-fbe7a93e36dc"
+                        open
+                      >
+                        <summary class="article-expander__title">Secret Iran Diplomacy &amp; Biden Media Blackout | 6.15.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The Biden administration has quietly resumed talks with Iran, evidence tying President Biden to a bribery scheme is largely ignored by mainstream media as Trump’s federal indictment was covered around the clock, and New York’s top cop is leaving her post. Get the facts first with Morning Wire. 
+Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/
+Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ to 231-231.
+Follow us on Twitter: https://twitter.com/MorningWire</span>
                             </span>
                           </div>
                         </a>
@@ -12000,6 +12614,59 @@ I understand that stacking at the core isn&#x27;t the greatest idea, because of 
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="e0e82c63-114c-47d2-9590-a442561ea1ae"
+                        open
+                      >
+                        <summary class="article-expander__title">Federal Rates Pause &amp; Blinken’s China Trip | Afternoon Update | 6.14.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+American Home Shield: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="649f16e7-0752-4df4-8d96-f349d57ea2d6"
+                        open
+                      >
+                        <summary class="article-expander__title">Trump’s Arraignment &amp; China’s Cuban Base | 6.14.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Former President Trump pleaded not guilty to charges of mishandling classified documents, Republican Lawmakers spar with the FBI over  supposed audio evidence related to claims that President Biden was involved in a bribery scandal, and the White House confirms reports that China made a deal with Cuba to establish a base on the island. Get the facts first with Morning Wire. 
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/
+American Home Shield: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE
+Follow us on Twitter: https://twitter.com/MorningWire
+Morning Wire Behind the Scenes: https://www.instagram.com/georgiamaehowe/?igshid&#x3D;NTc4MTIwNjQ2YQ%3D%3D</span>
                             </span>
                           </div>
                         </a>
@@ -14219,6 +14886,57 @@ Any input appreciated.
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="f5c89898-7e4e-4f4d-bdd8-28ade7f3f53d"
+                        open
+                      >
+                        <summary class="article-expander__title">Trump Pleads Not Guilty &amp; Nashville Shooter Autopsy | Afternoon Update | 6.13.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Omaha Steaks: &quot;Type code  &quot;&quot;WIRE&quot;&quot; into the search bar to get ‘Dad’s Favorite Gift Package’ for JUST $99.99. Plus get 8 free steak burgers. http://www.OmahaSteaks.com&quot;</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="37ba5721-2548-4ad2-8a8b-07529fcc1e54"
+                        open
+                      >
+                        <summary class="article-expander__title">COVID Origin Revelations &amp; Catholic Hospital Trans Treatments | 6.13.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>A bombshell investigation reveals evidence that COVID-19 was created at the Wuhan Institute of Virology in collaboration with China’s military, a new report accuses the nation’s largest Catholic health network of providing transgender medical services, and following tech sector layoffs the big names of Silicon Valley companies push for more foreign workers. Get the facts first with Morning Wire. 
+Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.
+Omaha Steaks: &quot;Type code  &quot;&quot;WIRE&quot;&quot; into the search bar to get ‘Dad’s Favorite Gift Package’ for JUST $99.99. Plus get 8 free steak burgers. http://www.OmahaSteaks.com&quot;</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -16031,6 +16749,57 @@ Unlimited free re-tests: Current penetration testing companies charge you twice,
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="569c78f0-0efd-4df8-9a37-a8be7390950f"
+                        open
+                      >
+                        <summary class="article-expander__title">COVID Origin Investigation &amp; Daniel Penny Speaks Out | Afternoon Update | 6.12.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="8baf22a5-b058-4519-8b05-83831c256d5c"
+                        open
+                      >
+                        <summary class="article-expander__title">Trump Indictment Fallout &amp; Transgender Child Abuse | 6.12.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Fallout continued through the weekend after the indictment against former President Donald Trump was unsealed, The contents of an FBI document detailing an alleged bribery scheme involving the President gets a closer look, and a bill in California would define a parent failing to “affirm” their child’s gender identity as “child abuse.” Get the facts first with Morning Wire. 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >CISA Cybersecurity Advisories</button>
                   <a class="source-heading__link" href="https://www.cisa.gov/">Open</a>
                 </h3>
@@ -16871,6 +17640,57 @@ Windows Command Line Basics - https://coursetreat.com/udemycourse/learn-windows-
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="6d6782a4-7629-4fbc-b758-f893562272c5"
+                        open
+                      >
+                        <summary class="article-expander__title">Mike Pence 2024 Presidential Candidate | Sunday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Vice President Mike Pence has announced his candidacy for President of the United States this week. We speak to Pence about how he will distinguish himself from former President Trump, how faith will influence his campaign and why he believes he is the best choice for GOP voters who want a return to principled conservatism. Get the facts first on Morning Wire.
+ 
+Fast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="c4afcbbd-efd6-49cd-a4b0-5f12d6b0a784"
+                        open
+                      >
+                        <summary class="article-expander__title">Social Media &amp; Mental Health | Sunday Special | 6.11.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>A growing body of research shows that social media is likely harming the mental health of adolescents, especially girls. Early and prolonged use seems to be a significant factor in rising rates of anxiety, depression, and gender dysphoria in this age group. We speak to psychologists, lawmakers and parents about the potential harms of social media and what, if anything, should be done to regulate the technology. Get the facts first on Morning Wire.
+Genucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE</span>
                             </span>
                           </div>
                         </a>
@@ -17846,6 +18666,57 @@ https://www.icann.org/en/blogs/details/icann-support-for-registrants-impacted-by
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="b2302fc7-f519-4ce3-92f7-210d8b6e5126"
+                        open
+                      >
+                        <summary class="article-expander__title">Legal Double Standard for J6 &amp; BLM Protests | Saturday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>More than 1,000 U.S. citizens have been charged for their role in the January 6 Capitol riot, while almost none of the people involved in the Black Lives Matter violence at the Capitol were charged. Are federal prosecutors allowing political bias to decide who is held accountable? Get the facts first on Morning Wire.
+ 
+Fast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="7250aaec-e6c3-4caf-a798-14b94929c705"
+                        open
+                      >
+                        <summary class="article-expander__title">UFO Whistleblower &amp; Drug Vending Machines | 6.10.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>A whistleblower claims the U.S. is hiding information of non-human aircraft, New York City uses vending machines to pass out free crack pipes and NARCAN, and Oklahoma approves public funding for a Catholic school. Get the facts first with Morning Wire.
+Genucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE</span>
                             </span>
                           </div>
                         </a>
@@ -19458,6 +20329,57 @@ So I&#x27;m trying to determine why the /8 is preferred over the /16.
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="ec86a7e3-55c4-4f3e-a619-0035fc8ae7e6"
+                        open
+                      >
+                        <summary class="article-expander__title">Trump Charges Revealed &amp; Biden $5 Million Bribe | Afternoon Update | 6.9.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.
+Genucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="ee4360b7-eff6-4832-a41c-bdcc5f01534d"
+                        open
+                      >
+                        <summary class="article-expander__title">Trump Federal Indictment &amp; Truth About Glendale Protest | 6.9.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Former President Trump indicted on seven counts related to classified documents, the truth about the Glendale school board protest, and Oakland residents sound off about violent crime. Get the facts first with Morning Wire.
+Fast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire
+Genucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE</span>
                             </span>
                           </div>
                         </a>
@@ -21138,6 +22060,57 @@ The urls of the websites belong to the intranet zone
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="fcd91f93-74d9-4e9a-b184-edef535a0fb0"
+                        open
+                      >
+                        <summary class="article-expander__title">House Views FBI Doc &amp; Canadian Wildfire Smoke | Afternoon Update | 6.8.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="67a0ef71-a872-4fa4-a81f-a5900e29f8bc"
+                        open
+                      >
+                        <summary class="article-expander__title">Tucker Carlson’s Twitter Debut &amp; CNN’s CEO Ouster | 6.8.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Tucker Carlson makes his Twitter debut, Chris Licht and CNN part ways, and the Southern Poverty Law Center unveils their 2023 “hate map” which includes some prominent parental rights groups. Get the facts first with Morning Wire. 
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -22691,6 +23664,57 @@ Thank you so much.
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="c3cb205b-4a8a-46df-8a21-7e82884bc057"
+                        open
+                      >
+                        <summary class="article-expander__title">Transgender Care Provider Investigation &amp; FBI Director Contempt | Afternoon Update | 6.7.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Omaha Steaks: &quot;Type code  &quot;&quot;WIRE&quot;&quot; into the search bar to get ‘Dad’s Favorite Gift Package’ for JUST $99.99. Plus get 8 free steak burgers. http://www.OmahaSteaks.com&quot;</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="8fbc3109-4ccd-45d7-b34f-9c6dbad00a29"
+                        open
+                      >
+                        <summary class="article-expander__title">Ukraine’s Counteroffensive &amp; PGA LIV Golf Merger | 6.7.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Ukraine’s counteroffensive begins to build, the feud between California Governor Gavin Newsom and Florida Governor Ron DeSantis escalates, and the two biggest entities in professional golf announce merger. Get the facts first with Morning Wire. 
+Indeed: Start hiring with a $75 sponsored job credit with Indeed at  https://indeed.com/wire
+Omaha Steaks: Type code ‘WIRE’ into the search bar to get ‘Dad’s Favorite Gift Package’ for JUST $99.99. Plus get 8 free steak burgers.http://www.OmahaSteaks.com</span>
                             </span>
                           </div>
                         </a>
@@ -24347,6 +25371,57 @@ Take an inventory of assets and data, identifying authorized and unauthorized de
 Grant admin privileges and access only when necessary, establishing a softwa…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;16
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="cf9ec4a3-deb1-46f4-bd36-8a04ff20a39b"
+                        open
+                      >
+                        <summary class="article-expander__title">Florida Trans Bill Blocked &amp; CA Insurance Applications | Afternoon Update | 6.6.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="3d332651-dc4e-4297-9692-6696cd2bfcae"
+                        open
+                      >
+                        <summary class="article-expander__title">RFK Gains Momentum &amp; Ireland’s Leaked Climate Plan | 6.6.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Elon Musk hosted Democratic presidential candidate Robert Kennedy Jr in a Twitter space on Monday, Ireland is reportedly looking to cull around 200,000 cows to meet climate goals, and confidence in CNN Chief executive Chris Licht, remains lows. Get the facts first with Morning Wire. 
+Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/
+Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.</span>
                             </span>
                           </div>
                         </a>
@@ -26137,6 +27212,57 @@ Update 9:54 PM ET: I had the Tagged and Untagged labels backwards. Sorry for the
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="6b7d09b1-2a5b-4664-98d0-8b7b9a04c60f"
+                        open
+                      >
+                        <summary class="article-expander__title">FBI Document Denial &amp; Pence Registers For Run | Afternoon Update | 6.5.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ to 231-231.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="b41e401d-cf70-44c3-9202-6d949c728116"
+                        open
+                      >
+                        <summary class="article-expander__title">Pride Month Controversies &amp; Biden Bribe Allegations | 6.5.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>A landmark drag show law was struck down in TN while violence broke out over a pride event in California, House Oversight Committee chairman James Comer reviews an FBI document containing explosive allegations about the President, and three teachers sue their teacher union for refusing to represent them when they refused to get a COVID vaccine. Get the facts first with Morning Wire. 
+Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ to 231-231.
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -26990,6 +28116,56 @@ Cisco and aritsa are super expensive where we are. Huawei and H3C are super affo
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="f917c01a-543e-4fcf-a0e6-6a64581e26bb"
+                        open
+                      >
+                        <summary class="article-expander__title">The Impacts of Hidden Inflation | Sunday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As prices on things like groceries, gas, and cars continue to rise, other hidden impacts are contributing to the squeeze on the middle to lower class. Get the facts first with Morning Wire.
+Fast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="afb38d04-5c22-4d4d-b8f9-0e8906f9ae4d"
+                        open
+                      >
+                        <summary class="article-expander__title">The Nationwide Push to Decriminalize Prostitution I 6.4.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Politicians and activists across the country are pushing to decriminalize prostitution with the mantra: “sex work is work.” However opponents including a former sex worker say decriminalization is not the answer. Get the facts first with Morning Wire.
+Omaha Steaks: Get $30 off your order! Use promo code WIRE at http://www.OmahaSteaks.com</span>
                             </span>
                           </div>
                         </a>
@@ -27945,6 +29121,56 @@ The idea is to use Group Policy Management Console on MyDC to create a folder an
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="d36f13dd-6b2b-4239-ad7f-c2326c6f2bfb"
+                        open
+                      >
+                        <summary class="article-expander__title">A Conversation with Senator Marsha Blackburn | Saturday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>With a Republican-led House and a Democrat-led Senate, most have expected “gridlock” to define Washington – but some meaningful, bipartisan legislation is making its way through. Tennessee Senator Marsha Blackburn talks to us about several bills poised to pass the upper chamber. Get the facts first with Morning Wire.
+Fast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="2facce22-b18d-49e8-8b1d-f6c2d0a2770a"
+                        open
+                      >
+                        <summary class="article-expander__title">Adolescent Mortality Rates &amp; Minority Contracting | 6.3.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>After decades of steady decline, adolescent mortality rates are now increasing, questions loom about race-based government contracts, and San Francisco’s mayor has a new plan to cut homelessness down significantly. Get the facts first with Morning Wire. 
+Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.</span>
                             </span>
                           </div>
                         </a>
@@ -29766,6 +30992,57 @@ From the names alone, it tells me I need to download #2. Is that correct?
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="13782ab2-585f-43c0-939d-762954933894"
+                        open
+                      >
+                        <summary class="article-expander__title">Twitter Walks Back DW Restriction &amp; Texas’ Interim AG | Afternoon Update | 6.2.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="e35e6c43-2540-49a1-8316-16f1e4eef5a0"
+                        open
+                      >
+                        <summary class="article-expander__title">Daily Wire Twitter Suppression &amp; DeSantis Vs Trump | 6.2.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Twitter censored Daily Wire’s hit documentary ‘What is a Woman?’ resulting in Chaos online, the battle between Florida governor Ron Desnatis and former president Donald Trump heats up, and a major state medical school has disbanded its DEI task force. Get the facts first with Morning Wire. 
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/
+Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -31173,6 +32450,58 @@ My plan is to create a group and assign the license to the group in bulk. then o
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
                               <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="2f624920-595b-4fcb-850d-6b5597fad75c"
+                        open
+                      >
+                        <summary class="article-expander__title">Daily Wire’s Twitter Deal &amp; Student Debt Relief Vote | Afternoon Update | 6.1.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+American Home Shield: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="baac68a6-df44-4f15-b4b4-1ab745b7063d"
+                        open
+                      >
+                        <summary class="article-expander__title">Debt Ceiling Deferral Passed &amp; LA Dodgers Pushback | 6.1.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The House passes a budget agreement that defers the debt limit, stopping the potential for default, the LA Dodgers remain in hot water after several MLB players speak out against the team&#x27;s decision to host an anti-catholic drag group, and Angelenos are blaming George Gascon’s policies for two recent murders. Get the facts first with Morning Wire. 
+Boll &amp; Branch: &quot;Save 15% off your order with promo code WIRE https://www.bollandbranch.com/?utm_source&#x3D;podcast&amp;utm_medium&#x3D;Radio&amp;utm_campaign&#x3D;WIRE&quot;
+American Home Shield: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE
+Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.</span>
                             </span>
                           </div>
                         </a>
@@ -32958,6 +34287,58 @@ Any suggestions on proper structuring from AD Veterans would help. Thanks!
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="a3c72059-cda6-4667-aaad-d63c763e2f10"
+                        open
+                      >
+                        <summary class="article-expander__title">DOJ Sues Gov. Jim Justice &amp; Virginia&#x27;s National Guard | Afternoon Update | 5.31.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Omaha Steaks: Get $30 off your order! Use promo code WIRE at http://www.OmahaSteaks.com</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="ad7e2418-f06c-4497-9519-e2a74d053f9d"
+                        open
+                      >
+                        <summary class="article-expander__title">Target Boycott Fallout &amp; Historic Credit Card Debt | 5.31.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Retail giant Target continues to face boycotts and backlash, U.S. credit card debt hits historic highs, and Wall Street’s biggest donors reveal who they don’t want to see on the 2024 ballot. Get the facts first with Morning Wire. 
+Omaha Steaks: Get $30 off your order! Use promo code WIRE at http://www.OmahaSteaks.com 
+Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ to 231-231.
+Follow us on Twitter: https://twitter.com/MorningWire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -34722,6 +36103,58 @@ Any additional recommendations or insights would be greatly appreciated!
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="8be52860-622d-49e1-ba4a-9b22b4640c9a"
+                        open
+                      >
+                        <summary class="article-expander__title">Drone Attacks Russia &amp; Chicago Weekend Violence | Afternoon Update | 5.30.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="6b69c68c-0974-45d3-adc0-9c9b7feda937"
+                        open
+                      >
+                        <summary class="article-expander__title">Debt Ceiling Deal Struck &amp; Texas AG Impeached | 5.30.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>An agreement has been made to raise the U.S. debt ceiling, The Texas statehouse makes a historical impeachment, and Dozens of people were shot during a violent weekend in Chicago. Get the facts first with Morning Wire. 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.
+Genucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE
+Follow us on Twitter: https://twitter.com/MorningWire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -35909,6 +37342,56 @@ Any ideas?
                 </section>
               </section>
             </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="03cd7fd7-6a62-4aa5-bcb4-f1e9cfe50d4f"
+                        open
+                      >
+                        <summary class="article-expander__title">Apartment Collapse In Iowa, Debt Deal &amp; Target Troubles | Afternoon Update | 5.29.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire. 
+American Home Shield: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="444fa06a-6cf4-4363-84bd-9fa7b524bfa5"
+                        open
+                      >
+                        <summary class="article-expander__title">Honoring Our World War II Fallen Heroes &amp; Veterans | Memorial Day | 5.29.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Andrew Biggio is a Marine veteran and author of The Rifle. He’s spent years traveling the country collecting and sharing the stories of America&#x27;s last living World War II veterans, many of whom – in their 90s or early hundreds – had previously never spoken about their experiences. Happy Memorial Day everyone and thank you to our veterans. God bless America. Get the facts first on Morning Wire.
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
         </ul>
       </section>
       <section class="daily-content js-toggle-accordions-scope">
@@ -36759,6 +38242,58 @@ Edit: Found the solution! I&#x27;m really stupid for not noticing this earlier, 
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="5f10fa6b-d04a-43a4-b68a-f68494ef3cde"
+                        open
+                      >
+                        <summary class="article-expander__title">Tim Scott Announces Presidential Run | Sunday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>South Carolina Senator Tim Scott entered the race for president on Monday. We speak to the Republican about his unique American story, his optimistic message for the country and his plans and policies for the U.S. Get the facts first on Morning Wire.
+ 
+Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation information kit.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="015fc355-2f8d-4368-8dcc-b0e2e4a3c395"
+                        open
+                      >
+                        <summary class="article-expander__title">Unveiling Bill Gates&#x27; Synthetic Meat Agenda | 5.28.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>As food prices soaring over the last year, Gates has been using his growing influence in the industry to urge Americans to embrace a new form of sustenance: synthetic meat. In this episode, we revisit a Sunday edition of Morning Wire that took a closer look at those behind the anti-meat movement.
+ 
+Indeed: Start hiring with a $75 sponsored job credit with Indeed at  https://indeed.com/wire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -37546,6 +39081,58 @@ Oh you cant even use the typical win pro license in hyperv. you have to buy wind
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="d324d990-23e4-4a52-858e-0e57530b439e"
+                        open
+                      >
+                        <summary class="article-expander__title">States Battle Over Trans Policies | Saturday Extra</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The legislative battle over the LGBT agenda is being waged across the U.S., with some blue states establishing “sanctuary” status and pushing radical concepts about gender and sexual orientation, while red states move to protect children from gender medical treatments. In this episode, we speak with an expert about some of the more controversial laws. Get the facts first on Morning Wire. 
+ 
+Fast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="ad0d083c-6e78-408a-9b22-bd5b8c7591d8"
+                        open
+                      >
+                        <summary class="article-expander__title">Political Engagement by Religion &amp; Critical Drug Shortages | 5.27.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The political engagement of religious and non religious groups, critical drug shortages in several categories, and childhood obesity around the world. Get the facts first with Morning Wire.
+ 
+Contingency Medical: ​​Get $20 off any Contingency Medical Pack! Use promo code WIRE at http://www.ContingencyMedical.com</span>
                             </span>
                           </div>
                         </a>
@@ -39159,6 +40746,57 @@ Connect-IPPSSession -UserPrincipalName  * New-ComplianceSearch -name &quot;suspi
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
                               <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="5ce927b2-80fc-4fbb-97a3-2596cd3c4ffc"
+                        open
+                      >
+                        <summary class="article-expander__title">Burger King Sued &amp; Summer Travel | Afternoon Update | 5.26.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.
+Genucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="83553853-d576-4c9a-af35-2166481bd034"
+                        open
+                      >
+                        <summary class="article-expander__title">IRS Protects Hunter Biden &amp; Social Media Harms Kids | 5.26.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>An IRS whistleblower alleges the DOJ interfered with a high profile investigation, US surgeon general warns social media is harming mental health of children and sanctuary cities can&#x27;t handle the influx of illegal immigrants. Get the facts first with Morning Wire.
+Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription with code WIRE: https://www.blackriflecoffee.com/
+Genucel: 70% off Most Popular Package + FREE Shipping + Free Spa Essentials https://genucel.com/WIRE</span>
                             </span>
                           </div>
                         </a>
@@ -41124,6 +42762,59 @@ Do you have any suggestions on how to access the the HA server from the first Ee
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="5386f4d4-9d1a-4710-99c3-64a25219bf11"
+                        open
+                      >
+                        <summary class="article-expander__title">Longest J6 Sentence &amp; Biden Vetoes Bi-Partisan Safety Bill | Afternoon Update | 5.25.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.
+Balance of Nature: Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="ac919d94-1ffa-4213-a608-1339f71fd5c8"
+                        open
+                      >
+                        <summary class="article-expander__title">DeSantis Enters Race &amp; Target Pride Backlash | 5.25.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Ron DeSantis announces his presidential run on Twitter, the legacy media continue their attacks on the Florida Governor and Target stores face backlash from shoppers over Pride merchandise. Get the facts first with Morning Wire.
+ 
+Indeed: Start hiring with a $75 sponsored job credit with Indeed at https://indeed.com/wire
+ 
+Balance of Nature: Save $50 when you join American Home Shield. Visit http://www.ahs.com/WIRE Get 35% off your first order as a preferred customer. Use promo code WIRE at checkout: https://www.balanceofnature.com/</span>
                             </span>
                           </div>
                         </a>
@@ -43154,6 +44845,59 @@ I&#x27;m sure you&#x27;ll think about greenfield (brand new project, no restrict
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Morning Wire</button>
+                  <a class="source-heading__link" href="https://www.dailywire.com/podcasts/morning-wire">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="9943d510-65ea-497b-a79d-fca380c78fe5"
+                        open
+                      >
+                        <summary class="article-expander__title">Uvalde Anniversary &amp; Tina Turner Dies | Afternoon Update | 5.24.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Developing stories you need to know just in time for your drive home. Get the facts first on Morning Wire.
+Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="93c13ea0-8377-480c-ba5b-0e0077fe409b"
+                        open
+                      >
+                        <summary class="article-expander__title">Dodgers Ignite Anger &amp; Epstein Gates Relationship | 5.24.23</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.dailywire.com/podcasts/morning-wire">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>The Los Angeles Dodgers kindle the ire of Christian fans, latest Harvard poll on direction of country and bombshell report on Jeffrey Epstein relationship with Bill Gates. Get the facts first with Morning Wire.
+ 
+Cynch: Download the Cynch app and get your first tank exchange for just $10 with promo code WIRE. Visit http://cynch.com/offer for details.
+ 
+Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ to 231-231</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Linus Tech Tips</button>
                   <a class="source-heading__link" href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Open</a>
                 </h3>
@@ -43289,29 +45033,6 @@ I&#x27;m sure you&#x27;ll think about greenfield (brand new project, no restrict
  The job market is tough enough as is for most people, companies that do this do not make things any better.
  Is this common?
     submitted by    /u/Cookies_and_Cache  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/13q1arf/barracuda_appliance_customers_compromised_likely/"
-                        open
-                      >
-                        <summary class="article-expander__title">barracuda appliance customers compromised, likely related to recent outages and issues</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/13q1arf/barracuda_appliance_customers_compromised_likely/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>https://status.barracuda.com/incidents/34kx82j5n4q9
- Really seems like it&#x27;s been going WAY downhill with barracuda the last couple weeks. Also was notified today &quot;oops we might have blocked everything today, so uh, go through that mess manually&quot;
- If you are coming up on a renewal, I&#x27;d strongly look at alternatives. Mimecast and proofpoint look viable but I haven&#x27;t started digging way in yet.
-    submitted by    /u/hotfistdotcom  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
@@ -43462,8 +45183,8 @@ I&#x27;m sure you&#x27;ll think about greenfield (brand new project, no restrict
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5343714459">
-        <time id="build-timestamp" datetime="2023-06-22T09:10:27.225Z">2023-06-22T09:10:27.225Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5344288663">
+        <time id="build-timestamp" datetime="2023-06-22T10:11:44.587Z">2023-06-22T10:11:44.587Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
