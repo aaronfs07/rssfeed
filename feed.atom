@@ -2,10 +2,465 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-06-25T14:10:37.430Z</updated>
+    <updated>2023-06-26T09:13:20.207Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Weird problem with monitors showing "no signal" but GPO is to blame?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14jbjmr/weird_problem_with_monitors_showing_no_signal_but/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14jbjmr/weird_problem_with_monitors_showing_no_signal_but/"/>
+        <updated>2023-06-26T08:35:53.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I got a weird issue that has been going on couple of months now and I decided to get to the bottom of it once an for all.
+ We all use lenovo laptops which are connected to a docking station, and the DS is connected to two monitors.
+ In our Group Policy Settings we have our default power plan which manages couple of settings, one of which is Display->Turn off display after: on battery 15min, plugged in 15min.
+ When this is active, my and every other monitor in the company goes off/ to sleep mode after 30 seconds, but only on LOCK SCREEN! No matter how many minutes i select in GPO and apply it I always see the same result. If the Windows are not locked then it works like expected.
+ Only if I set the display to never turn off (so 0 in GPO) and never on energy settings in Windows does the monitor stay awake - but this is not something that we want. After you are not around for 15-20 minutes there is no reason to keep the monitors turned on.
+ Hybrid sleep is off. The monitor settings have been checked multiple times, there is no any power saving mode active. The same thing happens if the laptop is on its own, the display will turn off in a matter of seconds. I did not check the bios settings, but this should not cause the problem?
+ ​
+ Cheers!
+ ​
+    submitted by    /u/Master_Kidfisto  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gerrit cloud ldap caching]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14jb4pl/gerrit_cloud_ldap_caching/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14jb4pl/gerrit_cloud_ldap_caching/"/>
+        <updated>2023-06-26T08:11:48.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ question for my fellow gerrit hosting admins. We've recently migrated to a Google Workspace and started using their "secure ldap" as the LDAP provider.
+ Because of slow and long responses we've started caching some of the data such as 
+ [cache "accounts"]
+ maxAge = 1 hour
+ [cache "ldap_groups"]
+ maxAge = 1 hour
+ [cache "ldap_groups_byinclude"]
+ maxAge = 1 hour
+ [cache "ldap_usernames"]
+ maxAge = 1 hour
+ But according to our employees, listing/suggest reviewers is still very slow, I've searched through documentation and forums, but I couldn't find what data could I cash to speed it up. 
+ Also, another question, any others tips for using gerrit and a cloud ldap provider (besides don't do it, because that was my response as well)
+ ​
+ ​
+    submitted by    /u/Ardeeny  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure Active Directory - Failed sign-ins]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14jaus1/azure_active_directory_failed_signins/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14jaus1/azure_active_directory_failed_signins/"/>
+        <updated>2023-06-26T07:57:03.000Z</updated>
+        <summary type="html"><![CDATA[Due to a recent incident I am trying to get better monitoring for failed signins into our AAD. I am looking for tips and tricks to get this working better... 
+ Current setup:
+ All singins are transferred to a log analytics workspace. There I've set up an alert with the following query: 
+ SigninLogs | where Status.errorCode != 0 // Filter all successful logins | extend City=LocationDetails.city, State=LocationDetails.state, Country=LocationDetails.countryOrRegion, Error_Code=Status.errorCode, Failure_Reason=Status.failureReason | project TimeGenerated, UserDisplayName, AppDisplayName, IPAddress, City, State, Country, AuthenticationRequirement, Failure_Reason, ConditionalAccessStatus, ConditionalAccessPolicies, Error_Code 
+ On success (currently 10 lines in 3 hours) it sends an email. But this is triggering a lot of false positives. Looking for help slimming this down to more useful results...
+    submitted by    /u/mitharas  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GPO to disable links opening from Outlook to Edge ?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14jalnv/gpo_to_disable_links_opening_from_outlook_to_edge/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14jalnv/gpo_to_disable_links_opening_from_outlook_to_edge/"/>
+        <updated>2023-06-26T07:41:37.000Z</updated>
+        <summary type="html"><![CDATA[So, the update started rolling in my org and I'm looking for a way to prevent Outlook from opening links in Edge instead of the default browser. 
+ I've been looking for a solution about this that I could deploy through GPO but the only thing I could find was people being pissed, but no clear GPO setting to turn off that shit.
+ Anyone got a tip for me ? 
+ Also, F*** Microsoft for this. It's always unwarranted changes like that that make my job more difficult. 
+    submitted by    /u/Alzzary  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Azure domain: can users without admin rights update already installed apps without admin password prompt?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14ja914/azure_domain_can_users_without_admin_rights/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14ja914/azure_domain_can_users_without_admin_rights/"/>
+        <updated>2023-06-26T07:21:37.000Z</updated>
+        <summary type="html"><![CDATA[Hi there,
+ We have a client and the users do not have administration rights, they have an app installed that needs an update almost everyday.
+ I wonder if they are able to without administration rights.
+ Any tips if not?
+ Kind regards
+    submitted by    /u/NoSoy777  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Run database on SQL instance or containers for isolating]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j9do5/run_database_on_sql_instance_or_containers_for/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j9do5/run_database_on_sql_instance_or_containers_for/"/>
+        <updated>2023-06-26T06:32:29.000Z</updated>
+        <summary type="html"><![CDATA[I'm designing a new infrastructure to host a web application with some security requirements, because it will hold sensitive data. The application can work with SQL Server or MySQL, It will run one database per each user and the goal is to minimize the impact of a potential penetration, and our team is discussing two scenarios, 1) One SQL Server with hardening techniques applied 2) run each database on a dockerized instance of MySQL, we know that this last option also requires hardening at docker layer. Any opinion will be useful. 
+    submitted by    /u/xeitu  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Long Time to Merge Policies in WDAC Wizard]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j8jat/long_time_to_merge_policies_in_wdac_wizard/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j8jat/long_time_to_merge_policies_in_wdac_wizard/"/>
+        <updated>2023-06-26T05:46:27.000Z</updated>
+        <summary type="html"><![CDATA[Hi all,
+ I'm in the process of deploying WDAC in a customer environment. One of the things I've started to notice is how long the WDAC Wizard takes to both merge and update XML policies, the larger they get (20 minutes to 45 minutes). Does anyone know if it's possible to speed this process up or is this simply as long as it takes? The base XML file for this policy is ~18 MB.
+ Thanks so much in advance.
+    submitted by    /u/gqstyles55  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Wireless Works but Wired Doesn't]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14j7lt1/wireless_works_but_wired_doesnt/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14j7lt1/wireless_works_but_wired_doesnt/"/>
+        <updated>2023-06-26T04:56:51.000Z</updated>
+        <summary type="html"><![CDATA[I've worked on this two days now and can't make any progress on what is going on.
+ I have an outbuilding linked by an Aerohive wireless bridge. The outbuilding bridge AP is linked to a switch, which has two APs (also Aerohive) broadcasting the access SSIDs. All VLAN 1. If I connect to any of the access SSIDs, I get DHCP, pings, internet access, all good. But if I connect to the switch, nothing. No DHCP. No pings to gateway or other devices even when I have a valid manual IP address on the subnet. 
+ So maybe the switch is being weird? Nope, put in a new switch, exact same behavior.
+ So I thought, maybe the APs are meshed into the bridge AP, or maybe into the main building APs directly? Nope, if I isolate the APs on their own VLANs, they lose their DHCP and connectivity on the wireless networks. 
+ So what else could it be? Can Aerohive bridges somehow share a link that only Aerohive APs can pick up? Some sort of tunnel? Is there anything I can do to get the wired connections on the switch live?
+ To be clear, everything works fine in the main building, e.g., wired and wireless client connect without issue, plenty of available DHCP addresses, no MAC filtering.
+ Any help will be greatly appreciated. I don't want to have to scrap the whole wing just to get a couple wired devices on the network.
+    submitted by    /u/Queyme  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Switches arping broadcast address]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14j5ycl/switches_arping_broadcast_address/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14j5ycl/switches_arping_broadcast_address/"/>
+        <updated>2023-06-26T03:31:05.000Z</updated>
+        <summary type="html"><![CDATA[Hello.
+ Only starting with networks, so apologies if this is a stupid question.
+ I have been put in (de facto) charge of a smallish AV network and I'm learning as I go along. We have four Netgear switches addressed 172.16.0.250-253 on a 255.255.0.0 subnet. All four keep sending out an ARP request to discover who 172.16.0.255 is every second. This address is unallocated. Why do they do this and is it suboptimal?
+ Almost everything (~150 devices) is on static IP address, but I believe that the devices are inconsistent in their subnet configuration; that is to say some have been configured 255.255.255.0 and some have been configured 255.255.0.0. Is this the cause for the ARP?
+ Thanks for any assistance!
+    submitted by    /u/flxbrown  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[File Share with AAD join and AAD identities]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j3pjh/file_share_with_aad_join_and_aad_identities/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j3pjh/file_share_with_aad_join_and_aad_identities/"/>
+        <updated>2023-06-26T01:42:08.000Z</updated>
+        <summary type="html"><![CDATA[Lately I’ve been looking to see if there are any native options there that support cloud file share as well as a similar fashion of ACLs and locking down folder permissions likely your typical NTFS shares. 
+ Our environment has a presence of AADDS (Azure AD domain services), however, this isn’t on-prem and it’s soely used for virtual machines, only. 
+ Our machines are AAD Cloud joined, and our user identities are also cloud sourced. From looking, the only native option for file share in Azure is Azure Files, and it doesn’t support NTFS permissions, plus only works with storage account keys. You can only truly use Kerberos and ACL permissions if your identities are hybrid, (the devices can still be AAD joined in this case) 
+ Given the fact that, if we were to have our identities hybrid, we’d be able to receive Kerberos tickets on an AAD joined machine, in result this opens a few doors for us, without even having the need to hybrid join machines. 
+ The other option would be to dump 10+ TB into sharepoint, however, to me, that makes absolutely no sense as Sharepoint Online is not meant to replace a file system. 
+ Thoughts? Would it better a better option to ditch the managed domain in AADDS and move to ADDS? Users would be hybrid, devices would still be cloud joined. So it wouldn’t necessarily be completely moving to “on-prem”, plus if we already have and utilize Azure AD domain services, I don’t really see a point in it, being that Azure AD domain services is extremely limited and probably better for a mom & pop shop type of environment.
+    submitted by    /u/Ok_Hearing3804  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Version control for orchestration files.]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j37by/version_control_for_orchestration_files/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j37by/version_control_for_orchestration_files/"/>
+        <updated>2023-06-26T01:17:55.000Z</updated>
+        <summary type="html"><![CDATA[I think a break for the regular complaint post may do us some good lol.
+ Do ya'll folks use git for your orchestration files. I usually have a separate S3 bucket to back up and track my yaml files for docker compose and expansible playbooks. We are moving to adopt k8s in the near future. We are using terraform as well and was thinking about just throwing this over to our git. The problem is that a lot of our products are micro services and we are already filling up our git with a lot of repos. Are any of ya'll just using git or are you segmenting your infra code from your app code? 
+    submitted by    /u/fmtech_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google Chrome Hanging on SSL/TLS Connections]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j35w1/google_chrome_hanging_on_ssltls_connections/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j35w1/google_chrome_hanging_on_ssltls_connections/"/>
+        <updated>2023-06-26T01:16:00.000Z</updated>
+        <summary type="html"><![CDATA[We have recently noticed an unusual issue impacting several clients where Google Chrome is seemingly hanging on SSL handshake when connecting to new websites.
+ The issue appears to cause the SSL to hang when the website is loading, usually taking 10-20 seconds before the "Initial Connection" completes. Once the website loads the issue goes away until you start a new browser session.
+ Chrome Network Timings: https://cdn.discordapp.com/attachments/616069974192291840/1122696364787257374/image.png
+ Troubleshooting
+ First, we suspected a server-side issue, but this occurs on MANY different unrelated websites, in-fact nearly any website has the same issue if it is using HTTPS.
+ Secondly, we have tested using different Internet connections, ISPs, mobile hotspot, DNS servers and Proxy servers, all which did not resolve the issue, this leans me to believe this is purely a device-level issue.
+ We have tested different browsers, Edge (Chromium) and Firefox do NOT experience this issue, only Google Chrome. Furthermore, we have not had any reports from MacOS users yet, only windows users. All windows machines running the latest OS updates.
+ Updating to the latest version of chrome does not resolve the issue. Older versions, beta, etc also experience the issue.
+ My suspicion is that there is an issue relating to both windows/chrome interacting together that is causing the SSL/Initial Connection to hang for a long period of time when loading pages. But I cannot isolate any particular cause.
+ Im at a loss for where to look next at this point, the issue seems to be disconnected from any specific client, software, policy, etc. 
+ Would like to hear if any other Techs out there have seen anything like this? Let me know if you have any tips for what we can try next....
+    submitted by    /u/Bregirn  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Average day in the life of… you?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j21lw/average_day_in_the_life_of_you/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j21lw/average_day_in_the_life_of_you/"/>
+        <updated>2023-06-26T00:23:20.000Z</updated>
+        <summary type="html"><![CDATA[Recently, me and a few friends discussed how we all work in ”IT” and to our friends and family we probably all do the same stuff as each other. Despite sharing similar job titles, it became evident that our daily work experiences were incredibly diverse, highlighting the vast range of responsibilities each of us held. 
+ So there for I'm genuinely curious to hear about the workdays of you guys/gals/pals and how they differ. It would be cool to hear what your job title is, what kind of company you work for, size of the company, and most importantly please share how a typical day in the life looks for you?
+ I fully acknowledge that this topic has likely been covered before, but I've always enjoyed reading such posts, so here we are! 
+ Hope u have a great day!
+    submitted by    /u/itstworty  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lower-than-expected download speeds, except on server]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14j1wtw/lowerthanexpected_download_speeds_except_on_server/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14j1wtw/lowerthanexpected_download_speeds_except_on_server/"/>
+        <updated>2023-06-26T00:17:19.000Z</updated>
+        <summary type="html"><![CDATA[Small enterprise organization is getting 500/500 from ISP, but the only devices getting this speed are the on-site servers. All other devices are usually getting 150-200 download speeds and 300-400 upload speeds. Even when I bypass the firewall and connect directly to the ISP's Adva FSP 150, none of the devices I'm trying (mix of Dell Latitudes and Lenovo Thinkpads) are getting the correct speed.
+ ISP verified duplex speed was set to 1000Mbps Auto (Fortinet firewall was set manually to 1000Full and auto-negotiate, no change). There don't seem to be any packets being dropped. I've tried setting the DNS manually (the server itself, google, cloudfare) on the end devices to see if that changes anything, but no change there. Bandwidth usage is normal. Tried troubleshooting during active hours and also after hours, no change in speed. Tried adjusting TCP Window Scaling Settings on end-devices, updating drivers, verifying cables were un-damaged CAT5e or CAT6 cables, trying different network profile settings on end-devices, manually setting IP information, checked for malware...
+ Can anyone offer me any advice or tips as to what I should be looking for here? I've been searching for answers online for a couple of weeks and nothing that has come up is helping.
+    submitted by    /u/Melodic2Melancholy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Travel Advice from a friend working overseas in a high security environment]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j1rdl/travel_advice_from_a_friend_working_overseas_in_a/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j1rdl/travel_advice_from_a_friend_working_overseas_in_a/"/>
+        <updated>2023-06-26T00:10:34.000Z</updated>
+        <summary type="html"><![CDATA[My first time relocating overseas following Her
+ Does the TSA or customs really confiscate/scan hard drives and stuff for intl. trips?
+    submitted by    /u/Mitharu  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Converting Physical Server to Virtual Machine]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14j1r2x/converting_physical_server_to_virtual_machine/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14j1r2x/converting_physical_server_to_virtual_machine/"/>
+        <updated>2023-06-26T00:10:13.000Z</updated>
+        <summary type="html"><![CDATA[I need to convert some physical Windows Servers to Virtual Machines. I'm presently using VMware vCenter Converter to do this. However, I am running into some potential issues.
+ There are two physical DC's. The primary appears to be a core. The secondary is standard. I can convert the second, but the primary fails.
+ The DC that I have successfully converted, has a storage space of 400+ GB. Not all of it is used, but all of it appears in the conversion. Is there any way to cut this down and only use what is necessary? I don't have a ton of spare space presently.
+ Edit: I've responded to a few of you, but it's clear that I just need to rebuild into a new VM. 
+ I just need to review the process first. Will hopefully get this done this week.
+ Thank you all for the help. If you have additional advice regarding the process to do this...let me know. 
+ I have several spare 2019 licenses. 2022 licenses would need to be acquired (extremely slow process). I don't want to remain on 2012.
+    submitted by    /u/MainStudy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moronic Monday!]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14j1ilm/moronic_monday/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14j1ilm/moronic_monday/"/>
+        <updated>2023-06-26T00:00:17.000Z</updated>
+        <summary type="html"><![CDATA[It's Monday, you've not yet had coffee and the week ahead is gonna suck. Let's open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we're too embarrassed to ask!
+ Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.
+ Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Managing application configuration on a distributed platform?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14iykhv/managing_application_configuration_on_a/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14iykhv/managing_application_configuration_on_a/"/>
+        <updated>2023-06-25T21:55:30.000Z</updated>
+        <summary type="html"><![CDATA[I'm working with a team which builds a sort of simulator running a distributed heterogeneous OS environment of primarily Windows + Linux (though I do see some weird shit sometimes like VXworks and still MS-DOS).
+ Part of the system involves an in-house application responsible for orchestration of the whole mess. From GUI's, shared memory, data acquisition and distribution across hardware IO and several networks, starting and stopping .exe's etc etc. you get the idea. 
+ As you might imagine, there's a good deal of co-ordination necessary to ensure each compute node has the right config.
+ Today, the team has the application architecture so that each relevant node connects to multiple SMB shares on PC login. And pretty much everything runs directly from the network shares (yay) including writ…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How do you guys handle a partner org with their own ticketing system?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14ixqax/how_do_you_guys_handle_a_partner_org_with_their/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14ixqax/how_do_you_guys_handle_a_partner_org_with_their/"/>
+        <updated>2023-06-25T21:22:12.000Z</updated>
+        <summary type="html"><![CDATA[First time this has ever happened to me. We have another company/division/whatever (it's complicated) that we partner with on some services.
+ Sometimes there is a problem and they open up a ticket on their end, and add a bunch of people on my team to the ticket.
+ I'd really prefer they opened a ticket with us, but I then had to stop and think about how that would work. I suppose they could email our ticketing email address and open one that way.
+ Curious how others handle this.
+ They do not have access to any of our systems nor accounts in our domain and they never will.
+    submitted by    /u/crankysysadmin  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Managing re-occurring tasks - Daily/weekly/monthly]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14iwpqx/managing_reoccurring_tasks_dailyweeklymonthly/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14iwpqx/managing_reoccurring_tasks_dailyweeklymonthly/"/>
+        <updated>2023-06-25T20:42:12.000Z</updated>
+        <summary type="html"><![CDATA[We've got a small team that hasn't had much turnover for a while, but we've had a few replacements recently, and have expanded a bit, so we are trying to formalize a few of the processes we were "just doing" in the past to make sure that they dont get missed.
+ Im curious how other teams of a similar size (~6) manage re-occurring tasks / obligations eg
+  
+Tickets - Daily
+ Monitoring checks - Daily
+ Vulnerability Checks - Weekly
+ ​
+  
+At $OLDWORK$ i wrote a checklist system that would populate each day with new tasks / or on a schedule. I could rebuild it here, but im sure there is either an O/S equivalent, or a better way of doing things
+ Ideally I'd like something that could send reminders if tasks havnt been completed. Bonus points for supporting multiple task schedules / across multiple teams.
+ We do have access to existing tools like ServiceNow, Confluence/Jira etc, O365 etc.
+ ​
+    submitted by    /u/internat  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What’s your naming convention for AD groups]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14ivcqz/whats_your_naming_convention_for_ad_groups/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14ivcqz/whats_your_naming_convention_for_ad_groups/"/>
+        <updated>2023-06-25T19:48:16.000Z</updated>
+        <summary type="html"><![CDATA[We’re rethinking how we name security groups. I don’t think we’re ever going to be able to fully rid ourselves of local AD. Currently we’re naming groups for applications APP_ and the few file shares we still have start with ACL_. 
+ What’s everyone using for your AD groups?
+    submitted by    /u/TryReboot1st  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Centralized user mangement for Linux]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14itfny/centralized_user_mangement_for_linux/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14itfny/centralized_user_mangement_for_linux/"/>
+        <updated>2023-06-25T18:31:40.000Z</updated>
+        <summary type="html"><![CDATA[Hi,
+ I work at a primarily Windows focused company and 90% of our servers are Windows Servers and we utilize all the usual Windows Server roles. Nothing special there.
+ We do have a few Linux servers running as well, since we have some solutions that either require Linux or just "belongs" on Linux. Right now we just have non-managed admin accounts for each admin on these servers, but that really doesn't comply with best practices and our own policies. It's mostly Ubuntu Server 20.04 and 22.04, so is there an easy way to either join them to Active Directory for managing these admin accounts, or create an alternative user directory just for these servers? I guess that Active Directory would be the best solution.
+ We don't need much in term of functionality, "just" a simple but stable way to manage admin accounts. What are our options?
+    submitted by    /u/mosx76  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SCCM CB, HA and WSUS]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14it6os/sccm_cb_ha_and_wsus/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14it6os/sccm_cb_ha_and_wsus/"/>
+        <updated>2023-06-25T18:21:38.000Z</updated>
+        <summary type="html"><![CDATA[Posted this in r/SCCM but thought i'd post here too for traction.
+ Bit of background, our current environment consists of:
+ 1 Primary Site Server CB2111 with all roles in one box including WSUS
+ 1 CMG Server (currently in process of updating to vm Scale Set so we can update SCCM Version)
+ 15 Distribution Servers
+ ~15k devices
+ I'll try my best to explain the scenarios but it gets confusing thinking about it.
+ We are already in the process of expanding our configuration into an HA setup and would like some clarrification/advice as to best cause of action
+ 2 SQL Server 2019 in a cluster in AG
+ 1 DR Passive Site Server
+ Site Servers will connect to SQLAG using CNAME
+ WSUS/Reporting Where?
+ Can the SUP roles still exist on both site server and passive server, but only the DB offloaded?
+ I have…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I Bought 10 Weird Keyboards from AliExpress]]></title>
+        <id>https://www.youtube.com/watch?v=YBTARvcFZ1A</id>
+        <link href="https://www.youtube.com/watch?v=YBTARvcFZ1A"/>
+        <updated>2023-06-25T18:05:19.000Z</updated>
+        <author>
+            <name>Linus Tech Tips</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Radiation Patterns in a Beamforming World]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14irtmj/radiation_patterns_in_a_beamforming_world/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14irtmj/radiation_patterns_in_a_beamforming_world/"/>
+        <updated>2023-06-25T17:25:47.000Z</updated>
+        <summary type="html"><![CDATA[Since beamforming WAPs are normal in enterprise WiFi, do you still consult vendor documentation for WAP radiation patterns? Did beamforming make that irrelevant?
+    submitted by    /u/cmrcmk  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network layout/ip address software]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14irp2q/network_layoutip_address_software/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14irp2q/network_layoutip_address_software/"/>
+        <updated>2023-06-25T17:20:31.000Z</updated>
+        <summary type="html"><![CDATA[Hi Folks
+ I run a small home automation/control business and i need to provide better documentation to onsite engineers.
+ Im trying to find some software that will allow me to assign hardware to rooms/areas and assign IP ranges, then export a CSV or document of some type.
+ It would be great to be able to provide engineers with this that they could then populate with MAC and Serial numbers for example.
+ Is there any software that would help with this?
+    submitted by    /u/RulerOfThePixel  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Single tenant vs multiple tenant]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14ir1gi/single_tenant_vs_multiple_tenant/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14ir1gi/single_tenant_vs_multiple_tenant/"/>
+        <updated>2023-06-25T16:52:53.000Z</updated>
+        <summary type="html"><![CDATA[Boss asked me to come up with an IT plan for when he brings in another company that will operate as it's own entity but wants IT to manage both companies.
+ Would it make sense to merge the other MS365 tenant into ours or leave it separate in case he ever sells it off in the future?
+ I know IT management would be a lot easier bringing in their AD environment, syncing with one MS365 tenant, etc.. We could just create aliases for email and so forth.
+ I'm just not sure how painful it would be to separate the companies in the future since we'd have to work with whoever they bring in as the IT folks and if they are going to be easy to work with or not.
+    submitted by    /u/macboost84  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LACP/LAG - Load Balancing mode - DHCP IP]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14inz7n/lacplag_load_balancing_mode_dhcp_ip/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14inz7n/lacplag_load_balancing_mode_dhcp_ip/"/>
+        <updated>2023-06-25T14:42:25.000Z</updated>
+        <summary type="html"><![CDATA[Hey guys!
+ I'm trying to setup a LACP/LAGG connection.
+ I have a few questions and was hoping folks around here might have some clue:
+  
+Do individual interfaces on a LAG have different IP addresses?
+ If I had to setup a mac-binding - if the interfaces show up as a single ip, what mac address will it have?
+ If the interfaces have separate IPs, does that mean eventually the TCP/IP ports are also effectively doubled?
+  
+I have so much confusion here, hoping someone would clear it for me 😅
+    submitted by    /u/CodeIsALiability  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Number of VLAN's]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/14immov/number_of_vlans/</id>
@@ -25503,398 +25958,6 @@ Indeed: Start hiring with a $75 sponsored job credit with Indeed at  https://in
  Overall, the sw…]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[States Battle Over Trans Policies | Saturday Extra]]></title>
-        <id>d324d990-23e4-4a52-858e-0e57530b439e</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2023-05-27T20:30:00.000Z</updated>
-        <summary type="html"><![CDATA[The legislative battle over the LGBT agenda is being waged across the U.S., with some blue states establishing “sanctuary” status and pushing radical concepts about gender and sexual orientation, while red states move to protect children from gender medical treatments. In this episode, we speak with an expert about some of the more controversial laws. Get the facts first on Morning Wire. 
- 
-Fast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to use Cineshooter API (Kessler crane) to communicate with Cineshooter from an ESP32 microcontroller?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13th0zf/how_to_use_cineshooter_api_kessler_crane_to/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13th0zf/how_to_use_cineshooter_api_kessler_crane_to/"/>
-        <updated>2023-05-27T20:14:40.000Z</updated>
-        <summary type="html"><![CDATA[I am having a Cineshooter motion control device with me for my personal hobby filming. I would like to control it manually by sending movement data from a microcontroller(ESP32). Kessler crane has documentation regarding their kOS network protocol to communicate with their motion control products. But I do not get, what is the format(Data-type) in which we are supposed to send the data? Should we send in the exact byte order(Big endian) that has been mentioned? Is there an easier way to do this?
-    submitted by    /u/Fruitseye  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Looking into my crystal ball... Is going to be bad]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13tgnl1/looking_into_my_crystal_ball_is_going_to_be_bad/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13tgnl1/looking_into_my_crystal_ball_is_going_to_be_bad/"/>
-        <updated>2023-05-27T19:59:04.000Z</updated>
-        <summary type="html"><![CDATA[Hey everyone, I hoping you all can tell me if it's worth fighting everyone all the time.
- Background: I'm (28) very young for my team(infrastructure management and architecture) being that that my closest coworker in age is about 15 years older then myself and young for the department as a whole where most people around my age seem to be on the help desk or a jr application admin. So I do tend to deal with imposter syndrome but I think I deal with it well as I'm definitely qualified for the work. 
- I'm the administer of our on prem virtual environment but have input on our service model and offering because I will have to maintain it. Right now everything is great there is consistent work that I have time to do and really learn from / about. I will be taking on additional responsibilities …]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Software Roll-out Tool Suggestions]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13tew2k/software_rollout_tool_suggestions/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13tew2k/software_rollout_tool_suggestions/"/>
-        <updated>2023-05-27T18:41:41.000Z</updated>
-        <summary type="html"><![CDATA[Hi All,
- Do you guys know about any software or tools that I can use to roll out apps, require updates, deploy network profiles, and see battery health and disk space available?
- The summer camp I work for recently acquired a fleet of laptops for some classes and activities. I told them that it would be a good idea for us to be able to manage the laptops from a central location to be able to keep an eye on all of them and keep them ready for classes.
- I have been looking at open RMM and MDM solutions and have tested MeshCentral and Fleet but I am wondering if I am looking for the wrong products.
- Ideally I am looking for a solution that we can host on-premises without requiring a subscription or license, or a service we can rent that would cost less than a few hundred dollars a year for about 100-200 devices.
- Thanks and sorry in advanced if this is the wrong forum or the post is not formatted correctly.
-    submitted by    /u/osome101  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mobile email clients with S/MIME support]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13tdw7a/mobile_email_clients_with_smime_support/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13tdw7a/mobile_email_clients_with_smime_support/"/>
-        <updated>2023-05-27T17:58:20.000Z</updated>
-        <summary type="html"><![CDATA[We are implementing S/MIME for our email security. But we are facing challenges with mobile platforms because outlook for android and IOS do not support S/MIME (wtf?)... So, what mobile clients would you recommend? or is that even a thing? Management required support for mobile platforms, but IMO because we are govermental agency having highly-confidential info in email is a bad idea, these should not be available on unmanaged/personal devices.
- Apreciate you sharing your experiences and recommendations.
- Thanks :)
-    submitted by    /u/DynamicResolution  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Issue when upgrading Exchange 2019 to the latest CU 13.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13td9xh/issue_when_upgrading_exchange_2019_to_the_latest/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13td9xh/issue_when_upgrading_exchange_2019_to_the_latest/"/>
-        <updated>2023-05-27T17:30:51.000Z</updated>
-        <summary type="html"><![CDATA[Currently on CU 10, attempting to upgrade to CU 13. I've run the prep commands but when the actual installer runs it errors out complaining about an unmountable database and possibly missing/corrupt logs.
- Has anyone else run into this?
- Error: The following error was generated when "$error.Clear(); $name = [Microsoft.Exchange.Management.RecipientTasks.EnableMailbox]::DiscoveryMailboxUniqueName; $dispname = [Microsoft.Exchange.Management.RecipientTasks.EnableMailbox]::DiscoveryMailboxDisplayName; $dismbx = get-mailbox -Filter {name -eq $name} -IgnoreDefaultScope -resultSize 1; if( $dismbx -ne $null) { $srvname = $dismbx.ServerName; if( $dismbx.Database -ne $null -and $RoleFqdnOrName -like "$srvname.*" ) { Write-ExchangeSetupLog -info "Setup DiscoverySearchMailbox Permission."; $mountedMdb …]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Life is full of surprises - AMD $5,000 Ultimate Tech Upgrade]]></title>
-        <id>https://www.youtube.com/watch?v=IL2P1IB-2nc</id>
-        <link href="https://www.youtube.com/watch?v=IL2P1IB-2nc"/>
-        <updated>2023-05-27T17:18:49.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A DDoS attack with unknown scr and dst port.]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13ta64l/a_ddos_attack_with_unknown_scr_and_dst_port/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13ta64l/a_ddos_attack_with_unknown_scr_and_dst_port/"/>
-        <updated>2023-05-27T15:21:22.000Z</updated>
-        <summary type="html"><![CDATA[I'm using a Mikrotik router. There was this traffic with almost 200k incoming packets to a single IP. But when torching it, it didn't show the source ports or destination ports. Anyone knows the workaround for this?
- I noticed that most people here use either cisco or juniper. And my question might sounds dumb or very basic. But i still want to learn lol.
-    submitted by    /u/Moist-Inspector  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[City of Augusta, GA falls victim to cyber attack]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13ta3aw/city_of_augusta_ga_falls_victim_to_cyber_attack/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13ta3aw/city_of_augusta_ga_falls_victim_to_cyber_attack/"/>
-        <updated>2023-05-27T15:18:02.000Z</updated>
-        <summary type="html"><![CDATA[https://www.wrdw.com/2023/05/26/hackers-say-theyre-holding-augustas-data-hostage-cyber-crisis/
- My heart goes out to everyone on the crisis management team for Augusta, GA. Their IT staff will not be enjoying any BBQs or family gatherings this Memorial Day weekend.
-    submitted by    /u/inphosys  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Printer mapping based on location in Active Directory, best practices?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t8enf/printer_mapping_based_on_location_in_active/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t8enf/printer_mapping_based_on_location_in_active/"/>
-        <updated>2023-05-27T14:06:00.000Z</updated>
-        <summary type="html"><![CDATA[Our campus is a bit of a mix and match and we have some printers dedicated to departments which rarely use them and could easily use the printer of a nearby department just a few feet away. We are yet to step up our game on department mapping based on location in our AD structure and some departments are split with team members in two different building/office locations. What is the easiest way to tackle having one common printer per floor and building and making sure Bob in building A part of team B is not sending a print job of 1000 copies to Building D a few kilometers away. 
- We are thinking of implementing pin based printing to prevent these spam prints as a precaution, let me know what practices you guys have used before to tackle this type of scenario effectively.
- Thanks!
-    submitted by    /u/Klipspringer112  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Anger over airports' passport e-gates not working]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t8d97/anger_over_airports_passport_egates_not_working/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t8d97/anger_over_airports_passport_egates_not_working/"/>
-        <updated>2023-05-27T14:04:16.000Z</updated>
-        <summary type="html"><![CDATA[Pour out a cold one for the IT folks at the UK e-gates system https://www.bbc.co.uk/news/uk-65731795
-    submitted by    /u/ewok251  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Taskbar GPO]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t64cn/taskbar_gpo/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t64cn/taskbar_gpo/"/>
-        <updated>2023-05-27T12:26:25.000Z</updated>
-        <summary type="html"><![CDATA[I've been trying to create a GPO for my home lab that sets default programs pinned to the Taskbar when a user logs in for the first time. After that, I want users to be able to customize the Taskbar as they want without it being reset at every login. Is the something that is possible? I found settings for the Taskbar in the Group Policy editor and made a layout.xml file for it to reference, but when I try logging into my test vm with a new account it doesn't make the changes.
-    submitted by    /u/JonU240Z  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[dlp agents on AD]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t63ud/dlp_agents_on_ad/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t63ud/dlp_agents_on_ad/"/>
-        <updated>2023-05-27T12:25:44.000Z</updated>
-        <summary type="html"><![CDATA[Hello ,can anyone give me the steps to install the symantec dlp agents on machines , i found that i needed to use a tool called orca , but i cant find this tool , is there any other way to install it 
- i found this link https://community.broadcom.com/symantecenterprise/communities/community-home/digestviewer/viewthread?MessageKey=c56650ef-abab-44f1-bbc3-80384bb5b6f5&CommunityKey=65cf8c43-bb97-4e96-ae0b-0db8ba1b4d07&tab=digestviewer#bmc56650ef-abab-44f1-bbc3-80384bb5b6f5 but can anyone tell me the steps to follow on the Ad and on the target machine 
- ​
- ​
- Thank you
-    submitted by    /u/xxxx-192  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Outbound test for TLS]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t62o5/outbound_test_for_tls/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t62o5/outbound_test_for_tls/"/>
-        <updated>2023-05-27T12:24:10.000Z</updated>
-        <summary type="html"><![CDATA[Hi,
- I have a system as a support engineer that has a policy that enforces TLS on the outbound. I'm just trying to check something is working and need to spin up a machine for this. I was thinking an ec2 running iredmail and reducing the tls to 0. This might take a bit of time to configure. Does anyone know of any much faster services I could use to send an email to a server that has no TLS configured on it?
-    submitted by    /u/Particular-Spot-2183  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RDP outside Lan is working on IOS application but not working on other PC.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t5vq4/rdp_outside_lan_is_working_on_ios_application_but/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t5vq4/rdp_outside_lan_is_working_on_ios_application_but/"/>
-        <updated>2023-05-27T12:15:03.000Z</updated>
-        <summary type="html"><![CDATA[Please help me. My window got updated and RDP is not working. My 3389 port is open.
-    submitted by    /u/Gagandeep106  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Do Event IDs numbers change frequently in Windows Event Viewer?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t5px6/do_event_ids_numbers_change_frequently_in_windows/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t5px6/do_event_ids_numbers_change_frequently_in_windows/"/>
-        <updated>2023-05-27T12:07:03.000Z</updated>
-        <summary type="html"><![CDATA[I use Event Viewer in Windows 10 Home and Pro to check when the system was started, shut down, sleep or wakes, etc.
- I noticed that some Event ID numbers change over time, like Microsoft changes them with Windows updates for some reason?. 
- For example, 4624 LogonType 7 was used 1 year ago or so, now it is not used. So I now use 4738 to check if a user signed in entering the pw.
- I'd appreciate any insights.
-    submitted by    /u/Frank1533d  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hyper-V Server 2019 or Windows Server Core with Hyper-V role?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t51tm/hyperv_server_2019_or_windows_server_core_with/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t51tm/hyperv_server_2019_or_windows_server_core_with/"/>
-        <updated>2023-05-27T11:33:09.000Z</updated>
-        <summary type="html"><![CDATA[Hello!
- I'm currently running a more or less consumer computer at home with Hyper-V Server 2019, with two Windows VM's (one is a Domain Controller) and five Linux VM's. 
- Now.. afaik Hyper V Server is discontinued, so there will be no 2022 version. Support for it though will continue until 2019, so this should be the issue. My question tho is:
- What should be better?
-  
-Hyper-V Server 2019 with two Windows VM's and five Linux VM's
- Windows Server Core with Hyper-V role and two Windows VM's and five Linux VM's
- Windows Server Core with Hyper-V & Domain Controller roles, one Windows VM and five Linux VM's.
-  
-Any ideas?
- About the third option: I rarely encounter an issue where my Domain Controller VM isn't reachable or up, which could result in auth issues with my Hyper-V server, which is part of the domain, so both bundled together would more or less elminate the issue.
- I know there's already this thread, but this is now 3 years older and is about Windows Server with Desktop, so a lil' bit different.
-    submitted by    /u/dom6770  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Solution for Helpdesk Admins to do some light Cisco switch management]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13t4g7a/solution_for_helpdesk_admins_to_do_some_light/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13t4g7a/solution_for_helpdesk_admins_to_do_some_light/"/>
-        <updated>2023-05-27T11:02:31.000Z</updated>
-        <summary type="html"><![CDATA[Does anybody have any recomandation of a solution to use in our envirolement so admin helpdesk guys could connect to switches and do some small management like: Interface descirption, adjust VLANs assignement shut down interfaces. I would allow them to assign trunks shut down trunks etc. 
- CLI with priv levels wouldn't be a solution. I need something more user friendly and easy to read. I tried playing with https GUI but i can't seem to make priv levels to work. I managed either readonly or full access. I tried to define a priv level 5 that would allow some commands, in CLI works but in GUI it doesn't.
-    submitted by    /u/mishadib  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Azure AD Privileged Identity Management vs. Entitlement management differences?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t4aed/azure_ad_privileged_identity_management_vs/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t4aed/azure_ad_privileged_identity_management_vs/"/>
-        <updated>2023-05-27T10:53:13.000Z</updated>
-        <summary type="html"><![CDATA[Hi, 
- what are the differences between Privileged Identity Management and Entitlement management in Azure AD? They seem to basically offer the same features? Are there any recommendations when to use what? Should one be preferred in general? 
- Thanks :)
-    submitted by    /u/gladston3  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to block AnyDesk from working on large network?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13t3khe/how_to_block_anydesk_from_working_on_large_network/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13t3khe/how_to_block_anydesk_from_working_on_large_network/"/>
-        <updated>2023-05-27T10:09:24.000Z</updated>
-        <summary type="html"><![CDATA[I am an admin on large network cca. 5000 users and 3000 devices. Team viewer was easy to block by only blocking one port on firewall but anydesk uses some common ports i can't block and it has lot of workarounds to work. What do you folks recommend to do? Thanks in advance.
-    submitted by    /u/KarloB03  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[what to do with a company where everything is obsolite?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t3i6j/what_to_do_with_a_company_where_everything_is/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t3i6j/what_to_do_with_a_company_where_everything_is/"/>
-        <updated>2023-05-27T10:05:27.000Z</updated>
-        <summary type="html"><![CDATA[Got myself in a tricky predicament. I am tasked with revamping operational process workflows for a company where all technologies they use are utterly obsolete, and doing it without spending money, just shifting around workflows of how employees interact with outdated tools they are given. However what they got is immutable!
- They still use on-prem window servers +VPN for documents instead of sharepoint/gdrive. All servers are HP G8 and older (there is about 150 of them). Everting (AD,Dns, mail, SMB)runs on windows server 2008 and 2012. No RMM, no monitoring, no ticketing, no virtualisation, everything is bare metal, IP phone system from 2005. no laptops, fixed workstations everywhere. They also use a number of industry specific software products for core business functions that are no lon…]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cloud consulting question]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t3emx/cloud_consulting_question/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t3emx/cloud_consulting_question/"/>
-        <updated>2023-05-27T10:00:07.000Z</updated>
-        <summary type="html"><![CDATA[For those of us here that outsource part of their IT to service providers, I’d love to know what makes them good to work with? Would also love to know what makes it difficult to work with them. Context would be appreciated.
-    submitted by    /u/BowlersName  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Political Engagement by Religion & Critical Drug Shortages | 5.27.23]]></title>
-        <id>ad0d083c-6e78-408a-9b22-bd5b8c7591d8</id>
-        <link href="https://www.dailywire.com/podcasts/morning-wire"/>
-        <updated>2023-05-27T08:30:00.000Z</updated>
-        <summary type="html"><![CDATA[The political engagement of religious and non religious groups, critical drug shortages in several categories, and childhood obesity around the world. Get the facts first with Morning Wire.
- 
-Contingency Medical: ​​Get $20 off any Contingency Medical Pack! Use promo code WIRE at http://www.ContingencyMedical.com]]></summary>
-        <author>
-            <name>podcasts@dailywire.com (The Daily Wire)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 Pro license in a VM, anything special to know?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13t1r32/windows_11_pro_license_in_a_vm_anything_special/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13t1r32/windows_11_pro_license_in_a_vm_anything_special/"/>
-        <updated>2023-05-27T08:16:22.000Z</updated>
-        <summary type="html"><![CDATA[What I want. 
-  
-buy a license, activate the windows in a VM in hyperv. Can run the machine for years or destroy it next month, create a new VM, fresh install, activate. As long as you are not attempting to run two VMs with same license you are good.
-  
-What I suspect
-  
-Once that VM is activated you better not "lose" that VM. The license is tight to some HW ID of that one VM, reinstalls can be done on that one machine.
-  
-What I fear
-  
-Oh you cant even use the typical win pro license in hyperv. you have to buy windows server 2016, 2019, 2022,.. special license with whatever cal sublinceses for machines/users that would connect to that machine
-    submitted by    /u/Do_TheEvolution  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Finally happened]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13symbu/finally_happened/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13symbu/finally_happened/"/>
-        <updated>2023-05-27T05:08:20.000Z</updated>
-        <summary type="html"><![CDATA[Knew it was coming, but was initializing a couple new Win11 Pro PC's today, and for the first time finally encountered a mandatory MS account build of [pro] windows. Even "work or school" made me start with a ms account login.
- Build 22621
- Anybody have any workarounds? I know I read fairly recently this was coming, but was surprised how angry I actually was when I encountered it -- the fact it was after hours on a holiday weekend Friday didn't help I guess. I needed another hoop to jump through like I need Suzie in accounting to click another blatantly fake 365 phishing link 🤦‍♂️
-    submitted by    /u/mr_taint  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Entry level experience?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13sxygl/entry_level_experience/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13sxygl/entry_level_experience/"/>
-        <updated>2023-05-27T04:32:02.000Z</updated>
-        <summary type="html"><![CDATA[I'm wondering if there is any weekend style work that can provide entry level sysadmin experience? I've got the certs but entry level admin positions are hard ro come by even less with good organizations to set roots in. Anything I can do to build experience on my weekends? I currently work full time on a service desk as a incident manager
-    submitted by    /u/Gabriel_Crow1990  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[You Deserve Better - WAN Show May 26, 2023]]></title>
-        <id>https://www.youtube.com/watch?v=0vP5Knq1xhs</id>
-        <link href="https://www.youtube.com/watch?v=0vP5Knq1xhs"/>
-        <updated>2023-05-27T04:16:40.000Z</updated>
-        <author>
-            <name>Linus Tech Tips</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Odd wrong group names]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13swtvs/odd_wrong_group_names/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13swtvs/odd_wrong_group_names/"/>
-        <updated>2023-05-27T03:30:40.000Z</updated>
-        <summary type="html"><![CDATA[So, people in our Azure AD Tenant have been creating groups with very strange names, examples being:
- ​
- CompanyName_FC-QA_AccountMgr-Clinician
- I don't see the point of making a group with underscores and dashes mixed, then some other groups and literally just dashes, and then the rest of it just spaces..
- ​
- Is it my OCD, or would this drive you insane? Especially the underscores.
-    submitted by    /u/Ok_Hearing3804  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Win 2019 install on enclosure]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/13svvdv/win_2019_install_on_enclosure/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/13svvdv/win_2019_install_on_enclosure/"/>
-        <updated>2023-05-27T02:40:15.000Z</updated>
-        <summary type="html"><![CDATA[As the subject says, is it me or am I that crazy. I took over a decent sized network and my predisisor installed the os on a secondary vd on an md1400. Now the vm's are failing. Along with the disks. One at a time. The installed ssd of untouched. Mind you, he put the os on a 12tb drive. Everything is slow even moreso the vm's. How the hell do I fix this.
- Love or community.
-    submitted by    /u/terminal_loop  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>

@@ -250,6 +250,206 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14jbjmr/weird_problem_with_monitors_showing_no_signal_but/",
+          "author": null,
+          "description": "Hi,\n I got a weird issue that has been going on couple of months now and I decided to get to the bottom of it once an for all.\n We all use lenovo laptops which are connected to a docking station, and the DS is connected to two monitors.\n In our Group Policy Settings we have our default power plan which manages couple of settings, one of which is Display->Turn off display after: on battery 15min, plugged in 15min.\n When this is active, my and every other monitor in the company goes off/ to sleep mode after 30 seconds, but only on LOCK SCREEN! No matter how many minutes i select in GPO and apply it I always see the same result. If the Windows are not locked then it works like expected.\n Only if I set the display to never turn off (so 0 in GPO) and never on energy settings in Windows does the monitor stay awake - but this is not something that we want. After you are not around for 15-20 minutes there is no reason to keep the monitors turned on.\n Hybrid sleep is off. The monitor settings have been checked multiple times, there is no any power saving mode active. The same thing happens if the laptop is on its own, the display will turn off in a matter of seconds. I did not check the bios settings, but this should not cause the problem?\n ​\n Cheers!\n ​\n    submitted by    /u/Master_Kidfisto  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14jbjmr/weird_problem_with_monitors_showing_no_signal_but/",
+          "publishedOn": "2023-06-26T08:35:53.000Z",
+          "wordCount": 2570,
+          "title": "Weird problem with monitors showing \"no signal\" but GPO is to blame?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14jb4pl/gerrit_cloud_ldap_caching/",
+          "author": null,
+          "description": "Hi,\n question for my fellow gerrit hosting admins. We've recently migrated to a Google Workspace and started using their \"secure ldap\" as the LDAP provider.\n Because of slow and long responses we've started caching some of the data such as \n [cache \"accounts\"]\n maxAge = 1 hour\n [cache \"ldap_groups\"]\n maxAge = 1 hour\n [cache \"ldap_groups_byinclude\"]\n maxAge = 1 hour\n [cache \"ldap_usernames\"]\n maxAge = 1 hour\n But according to our employees, listing/suggest reviewers is still very slow, I've searched through documentation and forums, but I couldn't find what data could I cash to speed it up. \n Also, another question, any others tips for using gerrit and a cloud ldap provider (besides don't do it, because that was my response as well)\n ​\n ​\n    submitted by    /u/Ardeeny  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14jb4pl/gerrit_cloud_ldap_caching/",
+          "publishedOn": "2023-06-26T08:11:48.000Z",
+          "wordCount": 2431,
+          "title": "Gerrit cloud ldap caching",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14jaus1/azure_active_directory_failed_signins/",
+          "author": null,
+          "description": "Due to a recent incident I am trying to get better monitoring for failed signins into our AAD. I am looking for tips and tricks to get this working better... \n Current setup:\n All singins are transferred to a log analytics workspace. There I've set up an alert with the following query: \n SigninLogs | where Status.errorCode != 0 // Filter all successful logins | extend City=LocationDetails.city, State=LocationDetails.state, Country=LocationDetails.countryOrRegion, Error_Code=Status.errorCode, Failure_Reason=Status.failureReason | project TimeGenerated, UserDisplayName, AppDisplayName, IPAddress, City, State, Country, AuthenticationRequirement, Failure_Reason, ConditionalAccessStatus, ConditionalAccessPolicies, Error_Code \n On success (currently 10 lines in 3 hours) it sends an email. But this is triggering a lot of false positives. Looking for help slimming this down to more useful results...\n    submitted by    /u/mitharas  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14jaus1/azure_active_directory_failed_signins/",
+          "publishedOn": "2023-06-26T07:57:03.000Z",
+          "wordCount": 2465,
+          "title": "Azure Active Directory - Failed sign-ins",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14jalnv/gpo_to_disable_links_opening_from_outlook_to_edge/",
+          "author": null,
+          "description": "So, the update started rolling in my org and I'm looking for a way to prevent Outlook from opening links in Edge instead of the default browser. \n I've been looking for a solution about this that I could deploy through GPO but the only thing I could find was people being pissed, but no clear GPO setting to turn off that shit.\n Anyone got a tip for me ? \n Also, F*** Microsoft for this. It's always unwarranted changes like that that make my job more difficult. \n    submitted by    /u/Alzzary  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14jalnv/gpo_to_disable_links_opening_from_outlook_to_edge/",
+          "publishedOn": "2023-06-26T07:41:37.000Z",
+          "wordCount": 2412,
+          "title": "GPO to disable links opening from Outlook to Edge ?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14ja914/azure_domain_can_users_without_admin_rights/",
+          "author": null,
+          "description": "Hi there,\n We have a client and the users do not have administration rights, they have an app installed that needs an update almost everyday.\n I wonder if they are able to without administration rights.\n Any tips if not?\n Kind regards\n    submitted by    /u/NoSoy777  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14ja914/azure_domain_can_users_without_admin_rights/",
+          "publishedOn": "2023-06-26T07:21:37.000Z",
+          "wordCount": 2372,
+          "title": "Azure domain: can users without admin rights update already installed apps without admin password prompt?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j9do5/run_database_on_sql_instance_or_containers_for/",
+          "author": null,
+          "description": "I'm designing a new infrastructure to host a web application with some security requirements, because it will hold sensitive data. The application can work with SQL Server or MySQL, It will run one database per each user and the goal is to minimize the impact of a potential penetration, and our team is discussing two scenarios, 1) One SQL Server with hardening techniques applied 2) run each database on a dockerized instance of MySQL, we know that this last option also requires hardening at docker layer. Any opinion will be useful. \n    submitted by    /u/xeitu  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j9do5/run_database_on_sql_instance_or_containers_for/",
+          "publishedOn": "2023-06-26T06:32:29.000Z",
+          "wordCount": 2446,
+          "title": "Run database on SQL instance or containers for isolating",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j8jat/long_time_to_merge_policies_in_wdac_wizard/",
+          "author": null,
+          "description": "Hi all,\n I'm in the process of deploying WDAC in a customer environment. One of the things I've started to notice is how long the WDAC Wizard takes to both merge and update XML policies, the larger they get (20 minutes to 45 minutes). Does anyone know if it's possible to speed this process up or is this simply as long as it takes? The base XML file for this policy is ~18 MB.\n Thanks so much in advance.\n    submitted by    /u/gqstyles55  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j8jat/long_time_to_merge_policies_in_wdac_wizard/",
+          "publishedOn": "2023-06-26T05:46:27.000Z",
+          "wordCount": 2403,
+          "title": "Long Time to Merge Policies in WDAC Wizard",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j3pjh/file_share_with_aad_join_and_aad_identities/",
+          "author": null,
+          "description": "Lately I’ve been looking to see if there are any native options there that support cloud file share as well as a similar fashion of ACLs and locking down folder permissions likely your typical NTFS shares. \n Our environment has a presence of AADDS (Azure AD domain services), however, this isn’t on-prem and it’s soely used for virtual machines, only. \n Our machines are AAD Cloud joined, and our user identities are also cloud sourced. From looking, the only native option for file share in Azure is Azure Files, and it doesn’t support NTFS permissions, plus only works with storage account keys. You can only truly use Kerberos and ACL permissions if your identities are hybrid, (the devices can still be AAD joined in this case) \n Given the fact that, if we were to have our identities hybrid, we’d be able to receive Kerberos tickets on an AAD joined machine, in result this opens a few doors for us, without even having the need to hybrid join machines. \n The other option would be to dump 10+ TB into sharepoint, however, to me, that makes absolutely no sense as Sharepoint Online is not meant to replace a file system. \n Thoughts? Would it better a better option to ditch the managed domain in AADDS and move to ADDS? Users would be hybrid, devices would still be cloud joined. So it wouldn’t necessarily be completely moving to “on-prem”, plus if we already have and utilize Azure AD domain services, I don’t really see a point in it, being that Azure AD domain services is extremely limited and probably better for a mom & pop shop type of environment.\n    submitted by    /u/Ok_Hearing3804  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j3pjh/file_share_with_aad_join_and_aad_identities/",
+          "publishedOn": "2023-06-26T01:42:08.000Z",
+          "wordCount": 2597,
+          "title": "File Share with AAD join and AAD identities",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j37by/version_control_for_orchestration_files/",
+          "author": null,
+          "description": "I think a break for the regular complaint post may do us some good lol.\n Do ya'll folks use git for your orchestration files. I usually have a separate S3 bucket to back up and track my yaml files for docker compose and expansible playbooks. We are moving to adopt k8s in the near future. We are using terraform as well and was thinking about just throwing this over to our git. The problem is that a lot of our products are micro services and we are already filling up our git with a lot of repos. Are any of ya'll just using git or are you segmenting your infra code from your app code? \n    submitted by    /u/fmtech_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j37by/version_control_for_orchestration_files/",
+          "publishedOn": "2023-06-26T01:17:55.000Z",
+          "wordCount": 2436,
+          "title": "Version control for orchestration files.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j35w1/google_chrome_hanging_on_ssltls_connections/",
+          "author": null,
+          "description": "We have recently noticed an unusual issue impacting several clients where Google Chrome is seemingly hanging on SSL handshake when connecting to new websites.\n The issue appears to cause the SSL to hang when the website is loading, usually taking 10-20 seconds before the \"Initial Connection\" completes. Once the website loads the issue goes away until you start a new browser session.\n Chrome Network Timings: https://cdn.discordapp.com/attachments/616069974192291840/1122696364787257374/image.png\n Troubleshooting\n First, we suspected a server-side issue, but this occurs on MANY different unrelated websites, in-fact nearly any website has the same issue if it is using HTTPS.\n Secondly, we have tested using different Internet connections, ISPs, mobile hotspot, DNS servers and Proxy servers, all which did not resolve the issue, this leans me to believe this is purely a device-level issue.\n We have tested different browsers, Edge (Chromium) and Firefox do NOT experience this issue, only Google Chrome. Furthermore, we have not had any reports from MacOS users yet, only windows users. All windows machines running the latest OS updates.\n Updating to the latest version of chrome does not resolve the issue. Older versions, beta, etc also experience the issue.\n My suspicion is that there is an issue relating to both windows/chrome interacting together that is causing the SSL/Initial Connection to hang for a long period of time when loading pages. But I cannot isolate any particular cause.\n Im at a loss for where to look next at this point, the issue seems to be disconnected from any specific client, software, policy, etc. \n Would like to hear if any other Techs out there have seen anything like this? Let me know if you have any tips for what we can try next....\n    submitted by    /u/Bregirn  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j35w1/google_chrome_hanging_on_ssltls_connections/",
+          "publishedOn": "2023-06-26T01:16:00.000Z",
+          "wordCount": 2631,
+          "title": "Google Chrome Hanging on SSL/TLS Connections",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j21lw/average_day_in_the_life_of_you/",
+          "author": null,
+          "description": "Recently, me and a few friends discussed how we all work in ”IT” and to our friends and family we probably all do the same stuff as each other. Despite sharing similar job titles, it became evident that our daily work experiences were incredibly diverse, highlighting the vast range of responsibilities each of us held. \n So there for I'm genuinely curious to hear about the workdays of you guys/gals/pals and how they differ. It would be cool to hear what your job title is, what kind of company you work for, size of the company, and most importantly please share how a typical day in the life looks for you?\n I fully acknowledge that this topic has likely been covered before, but I've always enjoyed reading such posts, so here we are! \n Hope u have a great day!\n    submitted by    /u/itstworty  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j21lw/average_day_in_the_life_of_you/",
+          "publishedOn": "2023-06-26T00:23:20.000Z",
+          "wordCount": 2461,
+          "title": "Average day in the life of… you?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j1rdl/travel_advice_from_a_friend_working_overseas_in_a/",
+          "author": null,
+          "description": "My first time relocating overseas following Her\n Does the TSA or customs really confiscate/scan hard drives and stuff for intl. trips?\n    submitted by    /u/Mitharu  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j1rdl/travel_advice_from_a_friend_working_overseas_in_a/",
+          "publishedOn": "2023-06-26T00:10:34.000Z",
+          "wordCount": 2379,
+          "title": "Travel Advice from a friend working overseas in a high security environment",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14j1r2x/converting_physical_server_to_virtual_machine/",
+          "author": null,
+          "description": "I need to convert some physical Windows Servers to Virtual Machines. I'm presently using VMware vCenter Converter to do this. However, I am running into some potential issues.\n There are two physical DC's. The primary appears to be a core. The secondary is standard. I can convert the second, but the primary fails.\n The DC that I have successfully converted, has a storage space of 400+ GB. Not all of it is used, but all of it appears in the conversion. Is there any way to cut this down and only use what is necessary? I don't have a ton of spare space presently.\n Edit: I've responded to a few of you, but it's clear that I just need to rebuild into a new VM. \n I just need to review the process first. Will hopefully get this done this week.\n Thank you all for the help. If you have additional advice regarding the process to do this...let me know. \n I have several spare 2019 licenses. 2022 licenses would need to be acquired (extremely slow process). I don't want to remain on 2012.\n    submitted by    /u/MainStudy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14j1r2x/converting_physical_server_to_virtual_machine/",
+          "publishedOn": "2023-06-26T00:10:13.000Z",
+          "wordCount": 2534,
+          "title": "Converting Physical Server to Virtual Machine",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14iykhv/managing_application_configuration_on_a/",
+          "author": null,
+          "description": "I'm working with a team which builds a sort of simulator running a distributed heterogeneous OS environment of primarily Windows + Linux (though I do see some weird shit sometimes like VXworks and still MS-DOS).\n Part of the system involves an in-house application responsible for orchestration of the whole mess. From GUI's, shared memory, data acquisition and distribution across hardware IO and several networks, starting and stopping .exe's etc etc. you get the idea. \n As you might imagine, there's a good deal of co-ordination necessary to ensure each compute node has the right config.\n Today, the team has the application architecture so that each relevant node connects to multiple SMB shares on PC login. And pretty much everything runs directly from the network shares (yay) including writ…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14iykhv/managing_application_configuration_on_a/",
+          "publishedOn": "2023-06-25T21:55:30.000Z",
+          "wordCount": 2645,
+          "title": "Managing application configuration on a distributed platform?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14ixqax/how_do_you_guys_handle_a_partner_org_with_their/",
+          "author": null,
+          "description": "First time this has ever happened to me. We have another company/division/whatever (it's complicated) that we partner with on some services.\n Sometimes there is a problem and they open up a ticket on their end, and add a bunch of people on my team to the ticket.\n I'd really prefer they opened a ticket with us, but I then had to stop and think about how that would work. I suppose they could email our ticketing email address and open one that way.\n Curious how others handle this.\n They do not have access to any of our systems nor accounts in our domain and they never will.\n    submitted by    /u/crankysysadmin  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14ixqax/how_do_you_guys_handle_a_partner_org_with_their/",
+          "publishedOn": "2023-06-25T21:22:12.000Z",
+          "wordCount": 2436,
+          "title": "How do you guys handle a partner org with their own ticketing system?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14iwpqx/managing_reoccurring_tasks_dailyweeklymonthly/",
+          "author": null,
+          "description": "We've got a small team that hasn't had much turnover for a while, but we've had a few replacements recently, and have expanded a bit, so we are trying to formalize a few of the processes we were \"just doing\" in the past to make sure that they dont get missed.\n Im curious how other teams of a similar size (~6) manage re-occurring tasks / obligations eg\n  \nTickets - Daily\n Monitoring checks - Daily\n Vulnerability Checks - Weekly\n ​\n  \nAt $OLDWORK$ i wrote a checklist system that would populate each day with new tasks / or on a schedule. I could rebuild it here, but im sure there is either an O/S equivalent, or a better way of doing things\n Ideally I'd like something that could send reminders if tasks havnt been completed. Bonus points for supporting multiple task schedules / across multiple teams.\n We do have access to existing tools like ServiceNow, Confluence/Jira etc, O365 etc.\n ​\n    submitted by    /u/internat  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14iwpqx/managing_reoccurring_tasks_dailyweeklymonthly/",
+          "publishedOn": "2023-06-25T20:42:12.000Z",
+          "wordCount": 2507,
+          "title": "Managing re-occurring tasks - Daily/weekly/monthly",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14ivcqz/whats_your_naming_convention_for_ad_groups/",
+          "author": null,
+          "description": "We’re rethinking how we name security groups. I don’t think we’re ever going to be able to fully rid ourselves of local AD. Currently we’re naming groups for applications APP_ and the few file shares we still have start with ACL_. \n What’s everyone using for your AD groups?\n    submitted by    /u/TryReboot1st  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14ivcqz/whats_your_naming_convention_for_ad_groups/",
+          "publishedOn": "2023-06-25T19:48:16.000Z",
+          "wordCount": 2371,
+          "title": "What’s your naming convention for AD groups",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14itfny/centralized_user_mangement_for_linux/",
+          "author": null,
+          "description": "Hi,\n I work at a primarily Windows focused company and 90% of our servers are Windows Servers and we utilize all the usual Windows Server roles. Nothing special there.\n We do have a few Linux servers running as well, since we have some solutions that either require Linux or just \"belongs\" on Linux. Right now we just have non-managed admin accounts for each admin on these servers, but that really doesn't comply with best practices and our own policies. It's mostly Ubuntu Server 20.04 and 22.04, so is there an easy way to either join them to Active Directory for managing these admin accounts, or create an alternative user directory just for these servers? I guess that Active Directory would be the best solution.\n We don't need much in term of functionality, \"just\" a simple but stable way to manage admin accounts. What are our options?\n    submitted by    /u/mosx76  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14itfny/centralized_user_mangement_for_linux/",
+          "publishedOn": "2023-06-25T18:31:40.000Z",
+          "wordCount": 2467,
+          "title": "Centralized user mangement for Linux",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14it6os/sccm_cb_ha_and_wsus/",
+          "author": null,
+          "description": "Posted this in r/SCCM but thought i'd post here too for traction.\n Bit of background, our current environment consists of:\n 1 Primary Site Server CB2111 with all roles in one box including WSUS\n 1 CMG Server (currently in process of updating to vm Scale Set so we can update SCCM Version)\n 15 Distribution Servers\n ~15k devices\n I'll try my best to explain the scenarios but it gets confusing thinking about it.\n We are already in the process of expanding our configuration into an HA setup and would like some clarrification/advice as to best cause of action\n 2 SQL Server 2019 in a cluster in AG\n 1 DR Passive Site Server\n Site Servers will connect to SQLAG using CNAME\n WSUS/Reporting Where?\n Can the SUP roles still exist on both site server and passive server, but only the DB offloaded?\n I have…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14it6os/sccm_cb_ha_and_wsus/",
+          "publishedOn": "2023-06-25T18:21:38.000Z",
+          "wordCount": 2708,
+          "title": "SCCM CB, HA and WSUS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14ir1gi/single_tenant_vs_multiple_tenant/",
+          "author": null,
+          "description": "Boss asked me to come up with an IT plan for when he brings in another company that will operate as it's own entity but wants IT to manage both companies.\n Would it make sense to merge the other MS365 tenant into ours or leave it separate in case he ever sells it off in the future?\n I know IT management would be a lot easier bringing in their AD environment, syncing with one MS365 tenant, etc.. We could just create aliases for email and so forth.\n I'm just not sure how painful it would be to separate the companies in the future since we'd have to work with whoever they bring in as the IT folks and if they are going to be easy to work with or not.\n    submitted by    /u/macboost84  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14ir1gi/single_tenant_vs_multiple_tenant/",
+          "publishedOn": "2023-06-25T16:52:53.000Z",
+          "wordCount": 2451,
+          "title": "Single tenant vs multiple tenant",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/14immov/number_of_vlans/",
           "author": null,
           "description": "How many VLAN do you have in your business network? And for what do you use them? \n For some companies i have 10 VLANs, and still could need more. But I am wondering what is \"normal\" to have.\n    submitted by    /u/TotalTronix  \n [link]   [comments]",
@@ -11508,216 +11708,6 @@
           "wordCount": 2367,
           "title": "Could a migration to a new VMWare environment impact a SQL replication subscription?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13tgnl1/looking_into_my_crystal_ball_is_going_to_be_bad/",
-          "author": null,
-          "description": "Hey everyone, I hoping you all can tell me if it's worth fighting everyone all the time.\n Background: I'm (28) very young for my team(infrastructure management and architecture) being that that my closest coworker in age is about 15 years older then myself and young for the department as a whole where most people around my age seem to be on the help desk or a jr application admin. So I do tend to deal with imposter syndrome but I think I deal with it well as I'm definitely qualified for the work. \n I'm the administer of our on prem virtual environment but have input on our service model and offering because I will have to maintain it. Right now everything is great there is consistent work that I have time to do and really learn from / about. I will be taking on additional responsibilities …",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13tgnl1/looking_into_my_crystal_ball_is_going_to_be_bad/",
-          "publishedOn": "2023-05-27T19:59:04.000Z",
-          "wordCount": 2619,
-          "title": "Looking into my crystal ball... Is going to be bad",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13tew2k/software_rollout_tool_suggestions/",
-          "author": null,
-          "description": "Hi All,\n Do you guys know about any software or tools that I can use to roll out apps, require updates, deploy network profiles, and see battery health and disk space available?\n The summer camp I work for recently acquired a fleet of laptops for some classes and activities. I told them that it would be a good idea for us to be able to manage the laptops from a central location to be able to keep an eye on all of them and keep them ready for classes.\n I have been looking at open RMM and MDM solutions and have tested MeshCentral and Fleet but I am wondering if I am looking for the wrong products.\n Ideally I am looking for a solution that we can host on-premises without requiring a subscription or license, or a service we can rent that would cost less than a few hundred dollars a year for about 100-200 devices.\n Thanks and sorry in advanced if this is the wrong forum or the post is not formatted correctly.\n    submitted by    /u/osome101  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13tew2k/software_rollout_tool_suggestions/",
-          "publishedOn": "2023-05-27T18:41:41.000Z",
-          "wordCount": 2427,
-          "title": "Software Roll-out Tool Suggestions",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13tdw7a/mobile_email_clients_with_smime_support/",
-          "author": null,
-          "description": "We are implementing S/MIME for our email security. But we are facing challenges with mobile platforms because outlook for android and IOS do not support S/MIME (wtf?)... So, what mobile clients would you recommend? or is that even a thing? Management required support for mobile platforms, but IMO because we are govermental agency having highly-confidential info in email is a bad idea, these should not be available on unmanaged/personal devices.\n Apreciate you sharing your experiences and recommendations.\n Thanks :)\n    submitted by    /u/DynamicResolution  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13tdw7a/mobile_email_clients_with_smime_support/",
-          "publishedOn": "2023-05-27T17:58:20.000Z",
-          "wordCount": 2334,
-          "title": "Mobile email clients with S/MIME support",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13td9xh/issue_when_upgrading_exchange_2019_to_the_latest/",
-          "author": null,
-          "description": "Currently on CU 10, attempting to upgrade to CU 13. I've run the prep commands but when the actual installer runs it errors out complaining about an unmountable database and possibly missing/corrupt logs.\n Has anyone else run into this?\n Error: The following error was generated when \"$error.Clear(); $name = [Microsoft.Exchange.Management.RecipientTasks.EnableMailbox]::DiscoveryMailboxUniqueName; $dispname = [Microsoft.Exchange.Management.RecipientTasks.EnableMailbox]::DiscoveryMailboxDisplayName; $dismbx = get-mailbox -Filter {name -eq $name} -IgnoreDefaultScope -resultSize 1; if( $dismbx -ne $null) { $srvname = $dismbx.ServerName; if( $dismbx.Database -ne $null -and $RoleFqdnOrName -like \"$srvname.*\" ) { Write-ExchangeSetupLog -info \"Setup DiscoverySearchMailbox Permission.\"; $mountedMdb …",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13td9xh/issue_when_upgrading_exchange_2019_to_the_latest/",
-          "publishedOn": "2023-05-27T17:30:51.000Z",
-          "wordCount": 3127,
-          "title": "Issue when upgrading Exchange 2019 to the latest CU 13.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13ta3aw/city_of_augusta_ga_falls_victim_to_cyber_attack/",
-          "author": null,
-          "description": "https://www.wrdw.com/2023/05/26/hackers-say-theyre-holding-augustas-data-hostage-cyber-crisis/\n My heart goes out to everyone on the crisis management team for Augusta, GA. Their IT staff will not be enjoying any BBQs or family gatherings this Memorial Day weekend.\n    submitted by    /u/inphosys  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13ta3aw/city_of_augusta_ga_falls_victim_to_cyber_attack/",
-          "publishedOn": "2023-05-27T15:18:02.000Z",
-          "wordCount": 2289,
-          "title": "City of Augusta, GA falls victim to cyber attack",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t8enf/printer_mapping_based_on_location_in_active/",
-          "author": null,
-          "description": "Our campus is a bit of a mix and match and we have some printers dedicated to departments which rarely use them and could easily use the printer of a nearby department just a few feet away. We are yet to step up our game on department mapping based on location in our AD structure and some departments are split with team members in two different building/office locations. What is the easiest way to tackle having one common printer per floor and building and making sure Bob in building A part of team B is not sending a print job of 1000 copies to Building D a few kilometers away. \n We are thinking of implementing pin based printing to prevent these spam prints as a precaution, let me know what practices you guys have used before to tackle this type of scenario effectively.\n Thanks!\n    submitted by    /u/Klipspringer112  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t8enf/printer_mapping_based_on_location_in_active/",
-          "publishedOn": "2023-05-27T14:06:00.000Z",
-          "wordCount": 2403,
-          "title": "Printer mapping based on location in Active Directory, best practices?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t8d97/anger_over_airports_passport_egates_not_working/",
-          "author": null,
-          "description": "Pour out a cold one for the IT folks at the UK e-gates system https://www.bbc.co.uk/news/uk-65731795\n    submitted by    /u/ewok251  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t8d97/anger_over_airports_passport_egates_not_working/",
-          "publishedOn": "2023-05-27T14:04:16.000Z",
-          "wordCount": 2271,
-          "title": "Anger over airports' passport e-gates not working",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t64cn/taskbar_gpo/",
-          "author": null,
-          "description": "I've been trying to create a GPO for my home lab that sets default programs pinned to the Taskbar when a user logs in for the first time. After that, I want users to be able to customize the Taskbar as they want without it being reset at every login. Is the something that is possible? I found settings for the Taskbar in the Group Policy editor and made a layout.xml file for it to reference, but when I try logging into my test vm with a new account it doesn't make the changes.\n    submitted by    /u/JonU240Z  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t64cn/taskbar_gpo/",
-          "publishedOn": "2023-05-27T12:26:25.000Z",
-          "wordCount": 2345,
-          "title": "Taskbar GPO",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t63ud/dlp_agents_on_ad/",
-          "author": null,
-          "description": "Hello ,can anyone give me the steps to install the symantec dlp agents on machines , i found that i needed to use a tool called orca , but i cant find this tool , is there any other way to install it \n i found this link https://community.broadcom.com/symantecenterprise/communities/community-home/digestviewer/viewthread?MessageKey=c56650ef-abab-44f1-bbc3-80384bb5b6f5&CommunityKey=65cf8c43-bb97-4e96-ae0b-0db8ba1b4d07&tab=digestviewer#bmc56650ef-abab-44f1-bbc3-80384bb5b6f5 but can anyone tell me the steps to follow on the Ad and on the target machine \n ​\n ​\n Thank you\n    submitted by    /u/xxxx-192  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t63ud/dlp_agents_on_ad/",
-          "publishedOn": "2023-05-27T12:25:44.000Z",
-          "wordCount": 2320,
-          "title": "dlp agents on AD",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t62o5/outbound_test_for_tls/",
-          "author": null,
-          "description": "Hi,\n I have a system as a support engineer that has a policy that enforces TLS on the outbound. I'm just trying to check something is working and need to spin up a machine for this. I was thinking an ec2 running iredmail and reducing the tls to 0. This might take a bit of time to configure. Does anyone know of any much faster services I could use to send an email to a server that has no TLS configured on it?\n    submitted by    /u/Particular-Spot-2183  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t62o5/outbound_test_for_tls/",
-          "publishedOn": "2023-05-27T12:24:10.000Z",
-          "wordCount": 2336,
-          "title": "Outbound test for TLS",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t5vq4/rdp_outside_lan_is_working_on_ios_application_but/",
-          "author": null,
-          "description": "Please help me. My window got updated and RDP is not working. My 3389 port is open.\n    submitted by    /u/Gagandeep106  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t5vq4/rdp_outside_lan_is_working_on_ios_application_but/",
-          "publishedOn": "2023-05-27T12:15:03.000Z",
-          "wordCount": 2280,
-          "title": "RDP outside Lan is working on IOS application but not working on other PC.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t5px6/do_event_ids_numbers_change_frequently_in_windows/",
-          "author": null,
-          "description": "I use Event Viewer in Windows 10 Home and Pro to check when the system was started, shut down, sleep or wakes, etc.\n I noticed that some Event ID numbers change over time, like Microsoft changes them with Windows updates for some reason?. \n For example, 4624 LogonType 7 was used 1 year ago or so, now it is not used. So I now use 4738 to check if a user signed in entering the pw.\n I'd appreciate any insights.\n    submitted by    /u/Frank1533d  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t5px6/do_event_ids_numbers_change_frequently_in_windows/",
-          "publishedOn": "2023-05-27T12:07:03.000Z",
-          "wordCount": 2338,
-          "title": "Do Event IDs numbers change frequently in Windows Event Viewer?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t51tm/hyperv_server_2019_or_windows_server_core_with/",
-          "author": null,
-          "description": "Hello!\n I'm currently running a more or less consumer computer at home with Hyper-V Server 2019, with two Windows VM's (one is a Domain Controller) and five Linux VM's. \n Now.. afaik Hyper V Server is discontinued, so there will be no 2022 version. Support for it though will continue until 2019, so this should be the issue. My question tho is:\n What should be better?\n  \nHyper-V Server 2019 with two Windows VM's and five Linux VM's\n Windows Server Core with Hyper-V role and two Windows VM's and five Linux VM's\n Windows Server Core with Hyper-V & Domain Controller roles, one Windows VM and five Linux VM's.\n  \nAny ideas?\n About the third option: I rarely encounter an issue where my Domain Controller VM isn't reachable or up, which could result in auth issues with my Hyper-V server, which is part of the domain, so both bundled together would more or less elminate the issue.\n I know there's already this thread, but this is now 3 years older and is about Windows Server with Desktop, so a lil' bit different.\n    submitted by    /u/dom6770  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t51tm/hyperv_server_2019_or_windows_server_core_with/",
-          "publishedOn": "2023-05-27T11:33:09.000Z",
-          "wordCount": 2437,
-          "title": "Hyper-V Server 2019 or Windows Server Core with Hyper-V role?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t4aed/azure_ad_privileged_identity_management_vs/",
-          "author": null,
-          "description": "Hi, \n what are the differences between Privileged Identity Management and Entitlement management in Azure AD? They seem to basically offer the same features? Are there any recommendations when to use what? Should one be preferred in general? \n Thanks :)\n    submitted by    /u/gladston3  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t4aed/azure_ad_privileged_identity_management_vs/",
-          "publishedOn": "2023-05-27T10:53:13.000Z",
-          "wordCount": 2297,
-          "title": "Azure AD Privileged Identity Management vs. Entitlement management differences?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t3i6j/what_to_do_with_a_company_where_everything_is/",
-          "author": null,
-          "description": "Got myself in a tricky predicament. I am tasked with revamping operational process workflows for a company where all technologies they use are utterly obsolete, and doing it without spending money, just shifting around workflows of how employees interact with outdated tools they are given. However what they got is immutable!\n They still use on-prem window servers +VPN for documents instead of sharepoint/gdrive. All servers are HP G8 and older (there is about 150 of them). Everting (AD,Dns, mail, SMB)runs on windows server 2008 and 2012. No RMM, no monitoring, no ticketing, no virtualisation, everything is bare metal, IP phone system from 2005. no laptops, fixed workstations everywhere. They also use a number of industry specific software products for core business functions that are no lon…",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t3i6j/what_to_do_with_a_company_where_everything_is/",
-          "publishedOn": "2023-05-27T10:05:27.000Z",
-          "wordCount": 2698,
-          "title": "what to do with a company where everything is obsolite?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t3emx/cloud_consulting_question/",
-          "author": null,
-          "description": "For those of us here that outsource part of their IT to service providers, I’d love to know what makes them good to work with? Would also love to know what makes it difficult to work with them. Context would be appreciated.\n    submitted by    /u/BowlersName  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t3emx/cloud_consulting_question/",
-          "publishedOn": "2023-05-27T10:00:07.000Z",
-          "wordCount": 2294,
-          "title": "Cloud consulting question",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13t1r32/windows_11_pro_license_in_a_vm_anything_special/",
-          "author": null,
-          "description": "What I want. \n  \nbuy a license, activate the windows in a VM in hyperv. Can run the machine for years or destroy it next month, create a new VM, fresh install, activate. As long as you are not attempting to run two VMs with same license you are good.\n  \nWhat I suspect\n  \nOnce that VM is activated you better not \"lose\" that VM. The license is tight to some HW ID of that one VM, reinstalls can be done on that one machine.\n  \nWhat I fear\n  \nOh you cant even use the typical win pro license in hyperv. you have to buy windows server 2016, 2019, 2022,.. special license with whatever cal sublinceses for machines/users that would connect to that machine\n    submitted by    /u/Do_TheEvolution  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13t1r32/windows_11_pro_license_in_a_vm_anything_special/",
-          "publishedOn": "2023-05-27T08:16:22.000Z",
-          "wordCount": 2381,
-          "title": "Windows 11 Pro license in a VM, anything special to know?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13symbu/finally_happened/",
-          "author": null,
-          "description": "Knew it was coming, but was initializing a couple new Win11 Pro PC's today, and for the first time finally encountered a mandatory MS account build of [pro] windows. Even \"work or school\" made me start with a ms account login.\n Build 22621\n Anybody have any workarounds? I know I read fairly recently this was coming, but was surprised how angry I actually was when I encountered it -- the fact it was after hours on a holiday weekend Friday didn't help I guess. I needed another hoop to jump through like I need Suzie in accounting to click another blatantly fake 365 phishing link 🤦‍♂️\n    submitted by    /u/mr_taint  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13symbu/finally_happened/",
-          "publishedOn": "2023-05-27T05:08:20.000Z",
-          "wordCount": 2355,
-          "title": "Finally happened",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13sxygl/entry_level_experience/",
-          "author": null,
-          "description": "I'm wondering if there is any weekend style work that can provide entry level sysadmin experience? I've got the certs but entry level admin positions are hard ro come by even less with good organizations to set roots in. Anything I can do to build experience on my weekends? I currently work full time on a service desk as a incident manager\n    submitted by    /u/Gabriel_Crow1990  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13sxygl/entry_level_experience/",
-          "publishedOn": "2023-05-27T04:32:02.000Z",
-          "wordCount": 2314,
-          "title": "Entry level experience?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13swtvs/odd_wrong_group_names/",
-          "author": null,
-          "description": "So, people in our Azure AD Tenant have been creating groups with very strange names, examples being:\n ​\n CompanyName_FC-QA_AccountMgr-Clinician\n I don't see the point of making a group with underscores and dashes mixed, then some other groups and literally just dashes, and then the rest of it just spaces..\n ​\n Is it my OCD, or would this drive you insane? Especially the underscores.\n    submitted by    /u/Ok_Hearing3804  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13swtvs/odd_wrong_group_names/",
-          "publishedOn": "2023-05-27T03:30:40.000Z",
-          "wordCount": 2314,
-          "title": "Odd wrong group names",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/13svvdv/win_2019_install_on_enclosure/",
-          "author": null,
-          "description": "As the subject says, is it me or am I that crazy. I took over a decent sized network and my predisisor installed the os on a secondary vd on an md1400. Now the vm's are failing. Along with the disks. One at a time. The installed ssd of untouched. Mind you, he put the os on a 12tb drive. Everything is slow even moreso the vm's. How the hell do I fix this.\n Love or community.\n    submitted by    /u/terminal_loop  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/13svvdv/win_2019_install_on_enclosure/",
-          "publishedOn": "2023-05-27T02:40:15.000Z",
-          "wordCount": 2331,
-          "title": "Win 2019 install on enclosure",
-          "imageUrl": null
         }
       ]
     },
@@ -12643,42 +12633,6 @@
             "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/pfx.vpixl.com/3Q5mz/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/2a710d7d-b48f-426a-b391-2c2ba1618ef7/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=2a710d7d-b48f-426a-b391-2c2ba1618ef7&feed=WCb5SgYj"
           },
           "imageUrl": null
-        },
-        {
-          "id": "d324d990-23e4-4a52-858e-0e57530b439e",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "The legislative battle over the LGBT agenda is being waged across the U.S., with some blue states establishing “sanctuary” status and pushing radical concepts about gender and sexual orientation, while red states move to protect children from gender medical treatments. In this episode, we speak with an expert about some of the more controversial laws. Get the facts first on Morning Wire. \n \nFast Growing Trees: Get 15% off your entire order. Use Promo Code ‘MORNINGWIRE’ at http://www.fastgrowingtrees.com/morningwire",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2023-05-27T20:30:00.000Z",
-          "wordCount": null,
-          "title": "States Battle Over Trans Policies | Saturday Extra",
-          "itunes": {
-            "duration": "00:12:07"
-          },
-          "enclosure": {
-            "length": "11643204",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/pfx.vpixl.com/3Q5mz/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/3cca44ee-93d9-4f37-9efc-114201d76eda/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=3cca44ee-93d9-4f37-9efc-114201d76eda&feed=WCb5SgYj"
-          },
-          "imageUrl": null
-        },
-        {
-          "id": "ad0d083c-6e78-408a-9b22-bd5b8c7591d8",
-          "author": "podcasts@dailywire.com (The Daily Wire)",
-          "description": "The political engagement of religious and non religious groups, critical drug shortages in several categories, and childhood obesity around the world. Get the facts first with Morning Wire.\n \nContingency Medical: ​​Get $20 off any Contingency Medical Pack! Use promo code WIRE at http://www.ContingencyMedical.com",
-          "link": "https://www.dailywire.com/podcasts/morning-wire",
-          "publishedOn": "2023-05-27T08:30:00.000Z",
-          "wordCount": null,
-          "title": "Political Engagement by Religion & Critical Drug Shortages | 5.27.23",
-          "itunes": {
-            "duration": "00:14:24"
-          },
-          "enclosure": {
-            "length": "13835357",
-            "type": "audio/mpeg",
-            "url": "https://dts.podtrac.com/redirect.mp3/chrt.fm/track/E7B282/pdst.fm/e/verifi.podscribe.com/rss/p/arttrk.com/p/SMPL7/pfx.vpixl.com/3Q5mz/injector.simplecastaudio.com/c18a8b40-daa3-4233-8071-33fb86470964/episodes/e3c816d0-78b7-47d8-806d-f729cb6aace4/audio/128/default.mp3?aid=rss_feed&awCollectionId=c18a8b40-daa3-4233-8071-33fb86470964&awEpisodeId=e3c816d0-78b7-47d8-806d-f729cb6aace4&feed=WCb5SgYj"
-          },
-          "imageUrl": null
         }
       ]
     },
@@ -12687,6 +12641,76 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14j7lt1/wireless_works_but_wired_doesnt/",
+          "author": null,
+          "description": "I've worked on this two days now and can't make any progress on what is going on.\n I have an outbuilding linked by an Aerohive wireless bridge. The outbuilding bridge AP is linked to a switch, which has two APs (also Aerohive) broadcasting the access SSIDs. All VLAN 1. If I connect to any of the access SSIDs, I get DHCP, pings, internet access, all good. But if I connect to the switch, nothing. No DHCP. No pings to gateway or other devices even when I have a valid manual IP address on the subnet. \n So maybe the switch is being weird? Nope, put in a new switch, exact same behavior.\n So I thought, maybe the APs are meshed into the bridge AP, or maybe into the main building APs directly? Nope, if I isolate the APs on their own VLANs, they lose their DHCP and connectivity on the wireless networks. \n So what else could it be? Can Aerohive bridges somehow share a link that only Aerohive APs can pick up? Some sort of tunnel? Is there anything I can do to get the wired connections on the switch live?\n To be clear, everything works fine in the main building, e.g., wired and wireless client connect without issue, plenty of available DHCP addresses, no MAC filtering.\n Any help will be greatly appreciated. I don't want to have to scrap the whole wing just to get a couple wired devices on the network.\n    submitted by    /u/Queyme  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14j7lt1/wireless_works_but_wired_doesnt/",
+          "publishedOn": "2023-06-26T04:56:51.000Z",
+          "wordCount": 2605,
+          "title": "Wireless Works but Wired Doesn't",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14j5ycl/switches_arping_broadcast_address/",
+          "author": null,
+          "description": "Hello.\n Only starting with networks, so apologies if this is a stupid question.\n I have been put in (de facto) charge of a smallish AV network and I'm learning as I go along. We have four Netgear switches addressed 172.16.0.250-253 on a 255.255.0.0 subnet. All four keep sending out an ARP request to discover who 172.16.0.255 is every second. This address is unallocated. Why do they do this and is it suboptimal?\n Almost everything (~150 devices) is on static IP address, but I believe that the devices are inconsistent in their subnet configuration; that is to say some have been configured 255.255.255.0 and some have been configured 255.255.0.0. Is this the cause for the ARP?\n Thanks for any assistance!\n    submitted by    /u/flxbrown  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14j5ycl/switches_arping_broadcast_address/",
+          "publishedOn": "2023-06-26T03:31:05.000Z",
+          "wordCount": 2481,
+          "title": "Switches arping broadcast address",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14j1wtw/lowerthanexpected_download_speeds_except_on_server/",
+          "author": null,
+          "description": "Small enterprise organization is getting 500/500 from ISP, but the only devices getting this speed are the on-site servers. All other devices are usually getting 150-200 download speeds and 300-400 upload speeds. Even when I bypass the firewall and connect directly to the ISP's Adva FSP 150, none of the devices I'm trying (mix of Dell Latitudes and Lenovo Thinkpads) are getting the correct speed.\n ISP verified duplex speed was set to 1000Mbps Auto (Fortinet firewall was set manually to 1000Full and auto-negotiate, no change). There don't seem to be any packets being dropped. I've tried setting the DNS manually (the server itself, google, cloudfare) on the end devices to see if that changes anything, but no change there. Bandwidth usage is normal. Tried troubleshooting during active hours and also after hours, no change in speed. Tried adjusting TCP Window Scaling Settings on end-devices, updating drivers, verifying cables were un-damaged CAT5e or CAT6 cables, trying different network profile settings on end-devices, manually setting IP information, checked for malware...\n Can anyone offer me any advice or tips as to what I should be looking for here? I've been searching for answers online for a couple of weeks and nothing that has come up is helping.\n    submitted by    /u/Melodic2Melancholy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14j1wtw/lowerthanexpected_download_speeds_except_on_server/",
+          "publishedOn": "2023-06-26T00:17:19.000Z",
+          "wordCount": 2538,
+          "title": "Lower-than-expected download speeds, except on server",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14j1ilm/moronic_monday/",
+          "author": null,
+          "description": "It's Monday, you've not yet had coffee and the week ahead is gonna suck. Let's open the floor for a weekly Stupid Questions Thread, so we can all ask those questions we're too embarrassed to ask!\n Post your question - stupid or otherwise - here to get an answer. Anyone can post a question and the community as a whole is invited and encouraged to provide an answer. Serious answers are not expected.\n Note: This post is created at 01:00 UTC. It may not be Monday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14j1ilm/moronic_monday/",
+          "publishedOn": "2023-06-26T00:00:17.000Z",
+          "wordCount": 2458,
+          "title": "Moronic Monday!",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14irtmj/radiation_patterns_in_a_beamforming_world/",
+          "author": null,
+          "description": "Since beamforming WAPs are normal in enterprise WiFi, do you still consult vendor documentation for WAP radiation patterns? Did beamforming make that irrelevant?\n    submitted by    /u/cmrcmk  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14irtmj/radiation_patterns_in_a_beamforming_world/",
+          "publishedOn": "2023-06-25T17:25:47.000Z",
+          "wordCount": 2357,
+          "title": "Radiation Patterns in a Beamforming World",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14irp2q/network_layoutip_address_software/",
+          "author": null,
+          "description": "Hi Folks\n I run a small home automation/control business and i need to provide better documentation to onsite engineers.\n Im trying to find some software that will allow me to assign hardware to rooms/areas and assign IP ranges, then export a CSV or document of some type.\n It would be great to be able to provide engineers with this that they could then populate with MAC and Serial numbers for example.\n Is there any software that would help with this?\n    submitted by    /u/RulerOfThePixel  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14irp2q/network_layoutip_address_software/",
+          "publishedOn": "2023-06-25T17:20:31.000Z",
+          "wordCount": 2442,
+          "title": "Network layout/ip address software",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14inz7n/lacplag_load_balancing_mode_dhcp_ip/",
+          "author": null,
+          "description": "Hey guys!\n I'm trying to setup a LACP/LAGG connection.\n I have a few questions and was hoping folks around here might have some clue:\n  \nDo individual interfaces on a LAG have different IP addresses?\n If I had to setup a mac-binding - if the interfaces show up as a single ip, what mac address will it have?\n If the interfaces have separate IPs, does that mean eventually the TCP/IP ports are also effectively doubled?\n  \nI have so much confusion here, hoping someone would clear it for me 😅\n    submitted by    /u/CodeIsALiability  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14inz7n/lacplag_load_balancing_mode_dhcp_ip/",
+          "publishedOn": "2023-06-25T14:42:25.000Z",
+          "wordCount": 2424,
+          "title": "LACP/LAG - Load Balancing mode - DHCP IP",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/14ild4l/voip_and_other_videoaudio_traffic_issues/",
           "author": null,
@@ -17106,46 +17130,6 @@
           "wordCount": 2619,
           "title": "ONIE Layer 2/3 Switching",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13th0zf/how_to_use_cineshooter_api_kessler_crane_to/",
-          "author": null,
-          "description": "I am having a Cineshooter motion control device with me for my personal hobby filming. I would like to control it manually by sending movement data from a microcontroller(ESP32). Kessler crane has documentation regarding their kOS network protocol to communicate with their motion control products. But I do not get, what is the format(Data-type) in which we are supposed to send the data? Should we send in the exact byte order(Big endian) that has been mentioned? Is there an easier way to do this?\n    submitted by    /u/Fruitseye  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13th0zf/how_to_use_cineshooter_api_kessler_crane_to/",
-          "publishedOn": "2023-05-27T20:14:40.000Z",
-          "wordCount": 2360,
-          "title": "How to use Cineshooter API (Kessler crane) to communicate with Cineshooter from an ESP32 microcontroller?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13ta64l/a_ddos_attack_with_unknown_scr_and_dst_port/",
-          "author": null,
-          "description": "I'm using a Mikrotik router. There was this traffic with almost 200k incoming packets to a single IP. But when torching it, it didn't show the source ports or destination ports. Anyone knows the workaround for this?\n I noticed that most people here use either cisco or juniper. And my question might sounds dumb or very basic. But i still want to learn lol.\n    submitted by    /u/Moist-Inspector  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13ta64l/a_ddos_attack_with_unknown_scr_and_dst_port/",
-          "publishedOn": "2023-05-27T15:21:22.000Z",
-          "wordCount": 2334,
-          "title": "A DDoS attack with unknown scr and dst port.",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13t4g7a/solution_for_helpdesk_admins_to_do_some_light/",
-          "author": null,
-          "description": "Does anybody have any recomandation of a solution to use in our envirolement so admin helpdesk guys could connect to switches and do some small management like: Interface descirption, adjust VLANs assignement shut down interfaces. I would allow them to assign trunks shut down trunks etc. \n CLI with priv levels wouldn't be a solution. I need something more user friendly and easy to read. I tried playing with https GUI but i can't seem to make priv levels to work. I managed either readonly or full access. I tried to define a priv level 5 that would allow some commands, in CLI works but in GUI it doesn't.\n    submitted by    /u/mishadib  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13t4g7a/solution_for_helpdesk_admins_to_do_some_light/",
-          "publishedOn": "2023-05-27T11:02:31.000Z",
-          "wordCount": 2380,
-          "title": "Solution for Helpdesk Admins to do some light Cisco switch management",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13t3khe/how_to_block_anydesk_from_working_on_large_network/",
-          "author": null,
-          "description": "I am an admin on large network cca. 5000 users and 3000 devices. Team viewer was easy to block by only blocking one port on firewall but anydesk uses some common ports i can't block and it has lot of workarounds to work. What do you folks recommend to do? Thanks in advance.\n    submitted by    /u/KarloB03  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13t3khe/how_to_block_anydesk_from_working_on_large_network/",
-          "publishedOn": "2023-05-27T10:09:24.000Z",
-          "wordCount": 2323,
-          "title": "How to block AnyDesk from working on large network?",
-          "imageUrl": null
         }
       ]
     },
@@ -17221,6 +17205,16 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw",
       "siteUrl": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
       "articles": [
+        {
+          "id": "https://www.youtube.com/watch?v=YBTARvcFZ1A",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=YBTARvcFZ1A",
+          "publishedOn": "2023-06-25T18:05:19.000Z",
+          "wordCount": null,
+          "title": "I Bought 10 Weird Keyboards from AliExpress",
+          "imageUrl": null
+        },
         {
           "id": "https://www.youtube.com/watch?v=P2hey3mNnN0",
           "author": null,
@@ -17519,26 +17513,6 @@
           "publishedOn": "2023-05-28T16:57:50.000Z",
           "wordCount": null,
           "title": "PC Cleaning Products from AliExpress...",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=IL2P1IB-2nc",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=IL2P1IB-2nc",
-          "publishedOn": "2023-05-27T17:18:49.000Z",
-          "wordCount": null,
-          "title": "Life is full of surprises - AMD $5,000 Ultimate Tech Upgrade",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=0vP5Knq1xhs",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=0vP5Knq1xhs",
-          "publishedOn": "2023-05-27T04:16:40.000Z",
-          "wordCount": null,
-          "title": "You Deserve Better - WAN Show May 26, 2023",
           "imageUrl": null
         }
       ]
