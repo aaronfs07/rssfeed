@@ -250,6 +250,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14je7mq/using_vlan_trunk_ports_with_linux_network/",
+          "author": null,
+          "description": "Apologies but asking here as /r/linuxquestions is still locked.\n I work for a private ISP, we sell managed networks to customers with various services. I have a VMware ESXi server, and to simplify things let's say it currently has 10 VMs, each VM having a management NIC, and a customer VLAN NIC. Currently I can use a service like NRPE to execute commands on each VM, and NRPE runs a networking command (like a cURL, ping, or similar) over the customer network NIC. The NRPE agent listens on the management NIC, but executes the commands over the customer VLAN NIC.\n Customer wise, for simplicity we'll say customers are called Customer1, Customer2, Customer3, and so on. Their VLANs correspond like 10, 20, 30, and so on. Each customer network has an identical IP space of 10.0.0.0/8, and the IP of this VM will be identical in each of the networks.\n I'm building a new VM which has a single management NIC, and a single trunk NIC (VLAN 4095 in VMware parlance). I've tested configuring the secondary NIC on the VM as Customer1 with VLAN 10 tagged, and that works fine (so the port is all good), but I'm having trouble with network namespaces. My end goal is to be able to run commands like ip netns exec customer1 ping 8.8.8.8 and get the results (quick crap example, but you get the idea).\n I tried to borrow the principles from [this article] but it wouldn't work for me. \n Is what I'm trying to do possible?\n    submitted by    /u/iDemonix  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14je7mq/using_vlan_trunk_ports_with_linux_network/",
+          "publishedOn": "2023-06-26T11:01:27.000Z",
+          "wordCount": 2581,
+          "title": "Using VLAN trunk ports with Linux network namespaces for segregated network testing.",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/14jd2fr/moronic_monday_june_26_2023/",
           "author": null,
           "description": "Howdy, /r/sysadmin!\n It's that time of the week, Moronic Monday! This is a safe (mostly) judgement-free environment for all of your questions and stories, no matter how silly you think they are. Anybody can answer questions! My name is AutoModerator and I've taken over responsibility for posting these weekly threads so you don't have to worry about anything except your comments!\n    submitted by    /u/AutoModerator  \n [link]   [comments]",

@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-26 datetime="2023-06-26T10:00:43.000Z">2023-06-26</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-26 datetime="2023-06-26T10:00:43.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-26 datetime="2023-06-26T11:01:27.000Z">2023-06-26</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-26 datetime="2023-06-26T11:01:27.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,32 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14je7mq/using_vlan_trunk_ports_with_linux_network/"
+                        open
+                      >
+                        <summary class="article-expander__title">Using VLAN trunk ports with Linux network namespaces for segregated network testing.</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14je7mq/using_vlan_trunk_ports_with_linux_network/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Apologies but asking here as /r/linuxquestions is still locked.
+ I work for a private ISP, we sell managed networks to customers with various services. I have a VMware ESXi server, and to simplify things let&#x27;s say it currently has 10 VMs, each VM having a management NIC, and a customer VLAN NIC. Currently I can use a service like NRPE to execute commands on each VM, and NRPE runs a networking command (like a cURL, ping, or similar) over the customer network NIC. The NRPE agent listens on the management NIC, but executes the commands over the customer VLAN NIC.
+ Customer wise, for simplicity we&#x27;ll say customers are called Customer1, Customer2, Customer3, and so on. Their VLANs correspond like 10, 20, 30, and so on. Each customer network has an identical IP space of 10.0.0.0/8, and the IP of this VM will be identical in each of the networks.
+ I&#x27;m building a new VM which has a single management NIC, and a single trunk NIC (VLAN 4095 in VMware parlance). I&#x27;ve tested configuring the secondary NIC on the VM as Customer1 with VLAN 10 tagged, and that works fine (so the port is all good), but I&#x27;m having trouble with network namespaces. My end goal is to be able to run commands like ip netns exec customer1 ping 8.8.8.8 and get the results (quick crap example, but you get the idea).
+ I tried to borrow the principles from [this article] but it wouldn&#x27;t work for me. 
+ Is what I&#x27;m trying to do possible?
+    submitted by    /u/iDemonix  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -43589,8 +43615,8 @@ Indeed: Start hiring with a $75 sponsored job credit with Indeed at  https://in
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5376916861">
-        <time id="build-timestamp" datetime="2023-06-26T10:13:57.689Z">2023-06-26T10:13:57.689Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5377428963">
+        <time id="build-timestamp" datetime="2023-06-26T11:10:28.455Z">2023-06-26T11:10:28.455Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
