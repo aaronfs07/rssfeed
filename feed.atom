@@ -2,10 +2,109 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-06-28T09:12:26.766Z</updated>
+    <updated>2023-06-28T10:13:33.774Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Squid on non-standard port but 443]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14l59um/squid_on_nonstandard_port_but_443/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14l59um/squid_on_nonstandard_port_but_443/"/>
+        <updated>2023-06-28T09:58:19.000Z</updated>
+        <summary type="html"><![CDATA[Hi, I'm running squid at my work and there's an issue I can't resolve.
+ I can access to the site on standard port 443 through https://0.0.0.0/ but https://0.0.0.0:10210/.
+ I checked the log and it shows as below after timeout.
+ 60203 10.0.10.201 NONE_NONE/503 0 CONNECT 0.0.0.0:10210
+ My conf is as below.
+ acl SSL_ports port 443 10210
+ http_access deny CONNECT !SSL_ports
+ ## When I just specify SSL_ports to only 443, I see logging
+ ## 0 10.0.10.201 TCP_DENIED/403 2014 CONNECT 0.0.0.0:10210
+ Can someone please help me to resolve the issue?
+ Thanks
+    submitted by    /u/Serious-Platform3395  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create bootable USB with Windows 10 reference image and boot with secure boot]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14l53gc/create_bootable_usb_with_windows_10_reference/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14l53gc/create_bootable_usb_with_windows_10_reference/"/>
+        <updated>2023-06-28T09:48:27.000Z</updated>
+        <summary type="html"><![CDATA[Hi all,
+ I would like to know how to create a bootable USB with a Windows 10 reference image and boot it from a PC with secure boot enabled. I have seen that Rufus provides this, but cannot see any option when creating the bootable USB using Rufus.
+ Thanks!
+    submitted by    /u/bedec_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Configure new switch and I am confused.]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14l52ax/configure_new_switch_and_i_am_confused/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14l52ax/configure_new_switch_and_i_am_confused/"/>
+        <updated>2023-06-28T09:46:34.000Z</updated>
+        <summary type="html"><![CDATA[Hello, I try to configure a new aruba 6100 switch. (Lets call it Switch A)
+ I configured an IP on the Vlan 1 and connected the switch A to another switch (Switch B) that outputs that Vlan 1 untagged. When I do so, every device connected to switch b cant communicate at all, get an apipa and so on. 
+ Needless to say, I can't reach the new Switch A via IP either. (Unless I connect the Lan directly to the switch and configure the gateway address to the switch managment IP)
+ When I disconnect Switch A from Switch B, everything is fine again.
+ Configuration Switch A:
+ Current configuration:
+ !
+ !Version ArubaOS-CX PL.10.06.0110
+ !export-password: default
+ user admin group administrators password ciphertext
+ ntp server pool.ntp.org minpoll 4 maxpoll 4 iburst
+ ntp enable
+ !
+ !
+ !
+ !
+ ssh server vrf default
+ vlan 1
+ spanning-tree
+ interface 1/1/1
+ no shutdown
+ vlan access 1
+ interface 1/1/2
+ no shutdown
+ vlan access 1
+ ...............
+ interface 1/1/50
+ no shutdown
+ vlan access 1
+ interface 1/1/51
+ no shutdown
+ vlan access 1
+ interface 1/1/52
+ no shutdown
+ vlan access 1
+ interface vlan 1
+ description Lan
+ ip address 10.6.16.80/20
+ no ip dhcp
+ ip route 0.0.0.0/0 10.6.16.1
+ !
+ !
+ !
+ !
+ !
+ https-server vrf default
+ ​
+ IP configuration of a random client: 
+ IPv4 address . . . . . . . . . . : 10.6.29.173
+ Subnet mask . . . . . . . . . . : 255.255.240.0
+ Default gateway . . . . . . . . : 10.6.16.1
+ Does anyone have any ideas what I am doing wrong?
+    submitted by    /u/Infamous_Low_5267  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Web app for users to reset expired or forgotten AD password?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/14l4hdq/web_app_for_users_to_reset_expired_or_forgotten/</id>
