@@ -2,10 +2,126 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-06-30T09:12:04.506Z</updated>
+    <updated>2023-06-30T10:12:34.030Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[VLAN bandwidth limiting on Cisco C4900M - missing 'match vlan' command]]></title>
+        <id>https://www.reddit.com/r/networking/comments/14mwbc2/vlan_bandwidth_limiting_on_cisco_c4900m_missing/</id>
+        <link href="https://www.reddit.com/r/networking/comments/14mwbc2/vlan_bandwidth_limiting_on_cisco_c4900m_missing/"/>
+        <updated>2023-06-30T10:10:54.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I have a portchannel with two 10Gig ports. There are two VLANs in trunk in this portchannel and I would like to limit the bandwidth for the vlan as follows:
+ VLAN1990 - Allocated 1Gbit
+ VLAN1991 - Allocated 19Gbit
+ VLAN1990 is vlan with multicast TV service, when the other VLANs traffic is more than 19Gbit, it causes the disruption of TV service.
+ I tried to create the class-map with "match vlan 1990" but this command is apparently not available on C4900M, we are running:
+ sh ver
+ Cisco IOS Software, Catalyst 4500 L3 Switch Software (cat4500e-ENTSERVICESK9-M), Version 15.2(4)E5, RELEASE SOFTWARE (fc2)
+ Technical Support: http://www.cisco.com/techsupport
+ Copyright (c) 1986-2017 by Cisco Systems, Inc.
+ Compiled Mon 18-Sep-17 09:44 by prod_rel_team
+ ROM: 12.2(44r)SG10
+ Is there any way to have the bandwidth allocated?
+ Thanks
+    submitted by    /u/neologtu  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Open Sharing Thread - June 30, 2023]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mw5e0/weekly_open_sharing_thread_june_30_2023/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mw5e0/weekly_open_sharing_thread_june_30_2023/"/>
+        <updated>2023-06-30T10:01:59.000Z</updated>
+        <summary type="html"><![CDATA[There is a great deal of user-generated content out there, from scripts and software to tutorials and videos, but we've generally tried to keep that off of the front page due to the volume and as a result of community feedback. There's also a great deal of content out there that violates our advertising/promotion rule, from scripts and software to tutorials and videos.
+ We have received a number of requests for exemptions to the rule, and rather than allowing the front page to get consumed, we thought we'd try a weekly thread that allows for that kind of content. We don't have a catchy name for it yet, so please let us know if you have any ideas!
+ In this thread, feel free to show us your pet project, YouTube videos, blog posts, or whatever else you may have and share it with the community. Commercial advertisements, affiliate links, or links that appear to be monetization-grabs will still be removed.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RemoteApp working within RDS deployment but not externally]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mvtf2/remoteapp_working_within_rds_deployment_but_not/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mvtf2/remoteapp_working_within_rds_deployment_but_not/"/>
+        <updated>2023-06-30T09:42:31.000Z</updated>
+        <summary type="html"><![CDATA[We are in the process of renewing our RDP deployment in Azure. The current servers are all Server 2012 and since this OS will be end of support by October 2023, we have created a new deployment with all Server 2022 VM's.
+ We provide our applications within the RDP deployment as RemoteApp. Users can acces the RDWeb page through URL cloud.example.com where they have to login and then see the icon(s) of the applications they can use. 
+ When the new environment is fully functional, we will point the DNS server to the IP address of the new RDWeb server, but we are not yet fully ready for that. When we open the RDWeb from within the server, we can login and start an application, but when we try to do that from outside the environment (by IP address, ie https://123.12.3.4/rdweb/pages/en-US/default.aspx) we still can login to the server but applications won't open. Instead, an error message is shown:
+  
+RemoteApp Disconnected 
+ Remote Desktop can't connect to the remote computer "cb.cloud.example.com" for one of these reasons: 
+ 1) Your user account is not authorized to access the RD Gateway "cloud.example.com"
+ 2) Your computer is not authorized to access the RD Gateway "cloud.example.com"
+ 3) You are using an incompatible authentication method (for example, the RD Gateway might be expecting a smart card but you provided a password) 
+ Contact your network administrator for assistance.
+  
+​
+ We are not sure why this is happening. Could this be because we are not accessing the environment by the domain cloud.example.com but by IP address? Any suggestions on where to look at are welcome. 
+ Of course, I would prefer to test accessing the RemoteApp over the domain name, but unfortunately this requires help from external parties that are not available to me at the moment.
+    submitted by    /u/wholesaleworldwide  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Has anyone else seen unsolicited fake 5* Google reviews?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mvt1a/has_anyone_else_seen_unsolicited_fake_5_google/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mvt1a/has_anyone_else_seen_unsolicited_fake_5_google/"/>
+        <updated>2023-06-30T09:41:53.000Z</updated>
+        <summary type="html"><![CDATA[I'm thinking it's one of two things:
+ Either a competitor trying to get a google place shut down for fraudulant reviews or review bot farms reviewing other random businesses to make their bots look more legit.
+ Has anyone else seen this or had to deal with it?
+    submitted by    /u/Quib-DankMemes  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Replicating sql from one cloud to another]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mvndo/replicating_sql_from_one_cloud_to_another/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mvndo/replicating_sql_from_one_cloud_to_another/"/>
+        <updated>2023-06-30T09:32:17.000Z</updated>
+        <summary type="html"><![CDATA[I have a question
+ If I have a sql as a service in Azure & I want to replicate for DR purposes to AWS sql as a service instance but ideally not over the dirty internet...it's that possible?
+    submitted by    /u/vishybear  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Issues with NPS/RADIUS]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mvipj/issues_with_npsradius/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mvipj/issues_with_npsradius/"/>
+        <updated>2023-06-30T09:24:20.000Z</updated>
+        <summary type="html"><![CDATA[Hi All,
+ We are using NPS for our RADIUS authentication for Wi-Fi. This is computer based authentication where the machines are added to an AD group. All was fine until we imaged devices with Windows 11 22H2.
+ I've now changed NPS to these settings:
+ https://ibb.co/ZxSRh2w
+ https://ibb.co/742QX42
+ ​
+ And GPO:
+ https://ibb.co/VVV82Tm
+ ​
+ IAS Log Viewer for a failed connection:
+ https://ibb.co/vwdQcL1
+ ​
+ I am at my NPS/RADIUS limit. Please send help. Clearly I'm missing *something*.
+ ​
+    submitted by    /u/Academic_Ad1931  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Missing mails?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/14mv79t/missing_mails/</id>
@@ -174,6 +290,21 @@ This process is followed by our Junior and Senior Engineers alike
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Office 2021 LTSC Hyperlinks]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mubrd/office_2021_ltsc_hyperlinks/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mubrd/office_2021_ltsc_hyperlinks/"/>
+        <updated>2023-06-30T08:13:46.000Z</updated>
+        <summary type="html"><![CDATA[Hi all,
+ Having a bit of a problem with us opening hyperlinks on Office applications, our users are getting "Your organization policies are preventing us from completing this action for you."
+ We are using Edge as the default browser. Has anyone come across this recently? Is there a policy for this on 2021 ADMX templates?
+ Thanks
+    submitted by    /u/Original-Design9916  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
         </author>
     </entry>
     <entry>
