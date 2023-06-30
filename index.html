@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-30 datetime="2023-06-30T10:47:11.000Z">2023-06-30</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-30 datetime="2023-06-30T10:47:11.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-06-30 datetime="2023-06-30T11:50:15.000Z">2023-06-30</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-06-30 datetime="2023-06-30T11:50:15.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,115 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14my8lx/isc_dhcp_server_failover/"
+                        open
+                      >
+                        <summary class="article-expander__title">isc dhcp server failover</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14my8lx/isc_dhcp_server_failover/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello, I am trying to set up failover on an isc dhcp server running on debian 11. DHCP can communicate with each other, but failover does not work.
+ Configuration on the active dhcp:
+ failover peer &quot;my-failover&quot; {
+ primary;
+ address 10.81.0.100;
+ port 647;
+ peer address 10.81.0.101;
+ peer port 647;
+ max-response-delay 60;
+ max-unacked-updates 10;
+ load balance max seconds 3;
+ hba 120;
+ }
+ Configuration on the standby dhcp:
+ failover peer &quot;my-failover&quot; {
+ secondary;
+ address 10.81.0.101;
+ port 647;
+ peer address 10.81.0.100;
+ peer port 647;
+ max-response-delay 60;
+ max-unacked-updates 10;
+ load balance max seconds 3;
+ }
+ ​
+ Services run on the standby without problems. On the active it throws this error:
+ Jun 30 13:44:01 dhcp1 isc-dhcp-server[1698]: Copyright 2004-2018 Internet Systems Cons…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14mxt79/prevent_rdp_from_going_idle_not_idlelocking_or/"
+                        open
+                      >
+                        <summary class="article-expander__title">Prevent RDP from going idle (not idle-locking or idle logout)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14mxt79/prevent_rdp_from_going_idle_not_idlelocking_or/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello
+ I need to prevent a remote desktop session from going into idle. The setting to not logout/disconnect user was already made, but still if I let the window, minimize and work on something else, it shows as idle:
+ in cmd: query user /server: MY_SERVER, shows idle after 1 minute of inactivity
+ I need to have this active all the time, as a user makes some activity, since I have some scheduled tasks that will run some GUI actions/applications. Also the remote connection will at some point start by itself, if the server gets rebooted or so.
+ What I have tried:
+ - mouse jiggler
+ - caffeine
+ - autohotkey scripts (click and pressing keys)
+ - powertoys - awake
+ -vbs, powershell scripts
+ None of them worked. The cmd query still showed idle after one 1 minute
+ Am I missing something? Does this have to do with windows being opened (not minimized), or having focus or something else? Is there any tricky thing regarding how windows detects inactivity
+ If I have the window not minimized, and something is running (like a mouse jiggler or something) then, the connection is not being shown as idle at all
+ Thank you
+ ​
+ P.S. Hopefully I did not put this into the wrong category. But I did not found one for the remote desktop connection
+ ​
+    submitted by    /u/eltigre4jc  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14mxke2/how_do_i_get_back_into_the_flow_of_things/"
+                        open
+                      >
+                        <summary class="article-expander__title">How do I get back into the flow of things?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14mxke2/how_do_i_get_back_into_the_flow_of_things/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have been relaxing and taking it super slow for the past few months because I&#x27;ve been under a lot of stress and anxiety. I haven&#x27;t stopped working, nor have I quit doing tickets, deployments, etc but I have taken a much more relaxed and hands-off approach; only doing what needs to be done, not trying to do a million things a day that aren&#x27;t essential.
+ But I&#x27;ve realized I&#x27;m taking it a bit to far and not pulling my weight, upholding my obligations. My team isn&#x27;t to bothered by this because they know I do my work when I&#x27;m asked but I don&#x27;t want to become a lazy lard and let it become an issue (could be thinking to much into it).
+ Like I said, I&#x27;m not coming back cold turkey. I&#x27;ve been working, but not up to my own standards. (I&#x27;m grateful my team let me do this because I was under stress but I want to get back to help them on more complicated matters like deploying VDI, and a new virtualization stack at another office).
+ ​
+ Any advice for someone who wants to get back into the saddle and start being more productive?
+ [sorry if this isn&#x27;t the right flair, I can fix it if someone tells me what this actually belongs under]
+ EDIT: grammar correction
+    submitted by    /u/BouncyPancake  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -45118,91 +45227,6 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13x27zm/connecting_datacenter_environments_to_private/"
-                        open
-                      >
-                        <summary class="article-expander__title">Connecting Datacenter Environments to Private MPLS Network</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13x27zm/connecting_datacenter_environments_to_private/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello,
- I was hoping to get some opinions for a situation I can&#x27;t seem to explain to some of our datacenter folks.
- I help implement and maintain our company&#x27;s large private backbone/MPLS Network (let&#x27;s call this out enterprise environment). We have two Datacenters utilizing Cisco ACI with 100G DCI between them. I&#x27;m not a data center guy, I&#x27;m a transport/radio guy.
- My task is to properly connect the MPLS environment to the two Datacenters. (Currently only commented via legacy DC equipment at one Datacenter only) this task wasnt completed by our senior in 3 years they had to do it and now that person is gone so I&#x27;m up.
- My thought is to connect to each DC via EBGP where my MPLS nodes are AS1 and the DC environments are AS2-5 (vPC pairs with separate AS numbers. Idk If that&#x27;s good design, I didn&#x27;t set it up and I don&#x27;t know DC/ACI. I&#x27;d almost think each vPC pair would share an AS but have separate AS per DC.)
- Regardless, I&#x27;d set route policies to only allow DC to DC traffic to traverse the DCI and any user traffic. From DCA site to DC2 site would traverse the MPLS backbone.
- What general approach would you all take to this? I can provide more details if needed just let me know. 
- Thanks
-    submitted by    /u/somerandomguy6263  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/13x1ejc/ms_office365_instance_with_ip_whitelisting_and/"
-                        open
-                      >
-                        <summary class="article-expander__title">MS Office365 instance with IP Whitelisting and split tunnel VPN.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/13x1ejc/ms_office365_instance_with_ip_whitelisting_and/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I have a client that has their Office365 tools in a cloud instance with whitelisting. In order to whitelist IPs for our remote workers we have to split tunnel that MS Traffic in to exit our ISP for the whitelisting. 
- I&#x27;m using Palo Alto Global Protect and domain forwarding to accomplish this since there are regional IPs all over and VPN users all over. 
- I&#x27;ve basically added every domain found here: 
- https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view&#x3D;o365-worldwide#skype-for-business-online-and-microsoft-teams
- This seems to work for the whitelisting, I can see the traffic come in and out and it satisfies the client logon. However active Outlook and Teams sessions seem to go offline and can&#x27;t show online anymore. I&#x27;ve gone through all sorts of logs and captures and so far I haven&#x27;t been able to narrow down what and why this is happening. Nothing is getting blocked so the only thing I can think of so far is that there is some traffic that is getting missed (either not on the urls listed above, or direct IPs not getting DNS resolved) and splitting the traffic between two egress points causing the session issues. I&#x27;m trying to get something setup to where I can test and capture myself so I don&#x27;t have to rely on client interactions but for now I thought I&#x27;d see if anyone has run into this issue. 
- I&#x27;m wondering if there are less domains I can split just for the login and leave all the others.
-    submitted by    /u/supaflash  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Windows Central</button>
-                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCDMnCGlkv4gyFGZo_ZT3atg">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;RZLZt031Oag"
-                        open
-                      >
-                        <summary class="article-expander__title">Windows 11 June 2023 Update - Official Release Demo (Moment 3)</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;RZLZt031Oag">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>No content preview</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45210,8 +45234,8 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5422256810">
-        <time id="build-timestamp" datetime="2023-06-30T11:09:56.150Z">2023-06-30T11:09:56.150Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5422847882">
+        <time id="build-timestamp" datetime="2023-06-30T12:23:51.390Z">2023-06-30T12:23:51.390Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

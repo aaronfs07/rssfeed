@@ -290,6 +290,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14my8lx/isc_dhcp_server_failover/",
+          "author": null,
+          "description": "Hello, I am trying to set up failover on an isc dhcp server running on debian 11. DHCP can communicate with each other, but failover does not work.\n Configuration on the active dhcp:\n failover peer \"my-failover\" {\n primary;\n address 10.81.0.100;\n port 647;\n peer address 10.81.0.101;\n peer port 647;\n max-response-delay 60;\n max-unacked-updates 10;\n load balance max seconds 3;\n hba 120;\n }\n Configuration on the standby dhcp:\n failover peer \"my-failover\" {\n secondary;\n address 10.81.0.101;\n port 647;\n peer address 10.81.0.100;\n peer port 647;\n max-response-delay 60;\n max-unacked-updates 10;\n load balance max seconds 3;\n }\n ​\n Services run on the standby without problems. On the active it throws this error:\n Jun 30 13:44:01 dhcp1 isc-dhcp-server[1698]: Copyright 2004-2018 Internet Systems Cons…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14my8lx/isc_dhcp_server_failover/",
+          "publishedOn": "2023-06-30T11:50:15.000Z",
+          "wordCount": 2807,
+          "title": "isc dhcp server failover",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14mxt79/prevent_rdp_from_going_idle_not_idlelocking_or/",
+          "author": null,
+          "description": "Hello\n I need to prevent a remote desktop session from going into idle. The setting to not logout/disconnect user was already made, but still if I let the window, minimize and work on something else, it shows as idle:\n in cmd: query user /server: MY_SERVER, shows idle after 1 minute of inactivity\n I need to have this active all the time, as a user makes some activity, since I have some scheduled tasks that will run some GUI actions/applications. Also the remote connection will at some point start by itself, if the server gets rebooted or so.\n What I have tried:\n - mouse jiggler\n - caffeine\n - autohotkey scripts (click and pressing keys)\n - powertoys - awake\n -vbs, powershell scripts\n None of them worked. The cmd query still showed idle after one 1 minute\n Am I missing something? Does this have to do with windows being opened (not minimized), or having focus or something else? Is there any tricky thing regarding how windows detects inactivity\n If I have the window not minimized, and something is running (like a mouse jiggler or something) then, the connection is not being shown as idle at all\n Thank you\n ​\n P.S. Hopefully I did not put this into the wrong category. But I did not found one for the remote desktop connection\n ​\n    submitted by    /u/eltigre4jc  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14mxt79/prevent_rdp_from_going_idle_not_idlelocking_or/",
+          "publishedOn": "2023-06-30T11:29:31.000Z",
+          "wordCount": 2552,
+          "title": "Prevent RDP from going idle (not idle-locking or idle logout)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14mxke2/how_do_i_get_back_into_the_flow_of_things/",
+          "author": null,
+          "description": "I have been relaxing and taking it super slow for the past few months because I've been under a lot of stress and anxiety. I haven't stopped working, nor have I quit doing tickets, deployments, etc but I have taken a much more relaxed and hands-off approach; only doing what needs to be done, not trying to do a million things a day that aren't essential.\n But I've realized I'm taking it a bit to far and not pulling my weight, upholding my obligations. My team isn't to bothered by this because they know I do my work when I'm asked but I don't want to become a lazy lard and let it become an issue (could be thinking to much into it).\n Like I said, I'm not coming back cold turkey. I've been working, but not up to my own standards. (I'm grateful my team let me do this because I was under stress but I want to get back to help them on more complicated matters like deploying VDI, and a new virtualization stack at another office).\n ​\n Any advice for someone who wants to get back into the saddle and start being more productive?\n [sorry if this isn't the right flair, I can fix it if someone tells me what this actually belongs under]\n EDIT: grammar correction\n    submitted by    /u/BouncyPancake  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14mxke2/how_do_i_get_back_into_the_flow_of_things/",
+          "publishedOn": "2023-06-30T11:17:17.000Z",
+          "wordCount": 2554,
+          "title": "How do I get back into the flow of things?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/14mwz98/what_is_the_best_method_to_protect_publically/",
           "author": null,
           "description": "was thinking about Cloudflare unfortunately prices are too high. all these sites are getting small traffic. (less than 20GB daily for all sites). many sites are installed Let's encrypt SSL certificates. so the solution should capable of SSL offloading + scan (IDS, IPS, anti-virus) PFSense seems does Let's encrypt offloading using HAproxy very well. but security is not satisfied like commercial firewalls.\n ​\n what do you suggest? \n    submitted by    /u/Warm-Jelly7341  \n [link]   [comments]",
@@ -17616,26 +17646,6 @@
           "wordCount": 2308,
           "title": "IP Phones Registration Fail over DMVPN",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13x27zm/connecting_datacenter_environments_to_private/",
-          "author": null,
-          "description": "Hello,\n I was hoping to get some opinions for a situation I can't seem to explain to some of our datacenter folks.\n I help implement and maintain our company's large private backbone/MPLS Network (let's call this out enterprise environment). We have two Datacenters utilizing Cisco ACI with 100G DCI between them. I'm not a data center guy, I'm a transport/radio guy.\n My task is to properly connect the MPLS environment to the two Datacenters. (Currently only commented via legacy DC equipment at one Datacenter only) this task wasnt completed by our senior in 3 years they had to do it and now that person is gone so I'm up.\n My thought is to connect to each DC via EBGP where my MPLS nodes are AS1 and the DC environments are AS2-5 (vPC pairs with separate AS numbers. Idk If that's good design, I didn't set it up and I don't know DC/ACI. I'd almost think each vPC pair would share an AS but have separate AS per DC.)\n Regardless, I'd set route policies to only allow DC to DC traffic to traverse the DCI and any user traffic. From DCA site to DC2 site would traverse the MPLS backbone.\n What general approach would you all take to this? I can provide more details if needed just let me know. \n Thanks\n    submitted by    /u/somerandomguy6263  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13x27zm/connecting_datacenter_environments_to_private/",
-          "publishedOn": "2023-05-31T23:48:52.000Z",
-          "wordCount": 2495,
-          "title": "Connecting Datacenter Environments to Private MPLS Network",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/13x1ejc/ms_office365_instance_with_ip_whitelisting_and/",
-          "author": null,
-          "description": "I have a client that has their Office365 tools in a cloud instance with whitelisting. In order to whitelist IPs for our remote workers we have to split tunnel that MS Traffic in to exit our ISP for the whitelisting. \n I'm using Palo Alto Global Protect and domain forwarding to accomplish this since there are regional IPs all over and VPN users all over. \n I've basically added every domain found here: \n https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams\n This seems to work for the whitelisting, I can see the traffic come in and out and it satisfies the client logon. However active Outlook and Teams sessions seem to go offline and can't show online anymore. I've gone through all sorts of logs and captures and so far I haven't been able to narrow down what and why this is happening. Nothing is getting blocked so the only thing I can think of so far is that there is some traffic that is getting missed (either not on the urls listed above, or direct IPs not getting DNS resolved) and splitting the traffic between two egress points causing the session issues. I'm trying to get something setup to where I can test and capture myself so I don't have to rely on client interactions but for now I thought I'd see if anyone has run into this issue. \n I'm wondering if there are less domains I can split just for the login and leave all the others.\n    submitted by    /u/supaflash  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/13x1ejc/ms_office365_instance_with_ip_whitelisting_and/",
-          "publishedOn": "2023-05-31T23:15:01.000Z",
-          "wordCount": 2518,
-          "title": "MS Office365 instance with IP Whitelisting and split tunnel VPN.",
-          "imageUrl": null
         }
       ]
     },
@@ -17702,16 +17712,6 @@
           "publishedOn": "2023-06-02T11:47:22.000Z",
           "wordCount": null,
           "title": "Windows Central Podcast LIVE | Episode 314 | June 2nd 2023",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.youtube.com/watch?v=RZLZt031Oag",
-          "author": null,
-          "description": "",
-          "link": "https://www.youtube.com/watch?v=RZLZt031Oag",
-          "publishedOn": "2023-06-01T00:05:33.000Z",
-          "wordCount": null,
-          "title": "Windows 11 June 2023 Update - Official Release Demo (Moment 3)",
           "imageUrl": null
         }
       ]

@@ -2,10 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-06-30T11:09:56.260Z</updated>
+    <updated>2023-06-30T12:23:51.469Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[isc dhcp server failover]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14my8lx/isc_dhcp_server_failover/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14my8lx/isc_dhcp_server_failover/"/>
+        <updated>2023-06-30T11:50:15.000Z</updated>
+        <summary type="html"><![CDATA[Hello, I am trying to set up failover on an isc dhcp server running on debian 11. DHCP can communicate with each other, but failover does not work.
+ Configuration on the active dhcp:
+ failover peer "my-failover" {
+ primary;
+ address 10.81.0.100;
+ port 647;
+ peer address 10.81.0.101;
+ peer port 647;
+ max-response-delay 60;
+ max-unacked-updates 10;
+ load balance max seconds 3;
+ hba 120;
+ }
+ Configuration on the standby dhcp:
+ failover peer "my-failover" {
+ secondary;
+ address 10.81.0.101;
+ port 647;
+ peer address 10.81.0.100;
+ peer port 647;
+ max-response-delay 60;
+ max-unacked-updates 10;
+ load balance max seconds 3;
+ }
+ ​
+ Services run on the standby without problems. On the active it throws this error:
+ Jun 30 13:44:01 dhcp1 isc-dhcp-server[1698]: Copyright 2004-2018 Internet Systems Cons…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Prevent RDP from going idle (not idle-locking or idle logout)]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mxt79/prevent_rdp_from_going_idle_not_idlelocking_or/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mxt79/prevent_rdp_from_going_idle_not_idlelocking_or/"/>
+        <updated>2023-06-30T11:29:31.000Z</updated>
+        <summary type="html"><![CDATA[Hello
+ I need to prevent a remote desktop session from going into idle. The setting to not logout/disconnect user was already made, but still if I let the window, minimize and work on something else, it shows as idle:
+ in cmd: query user /server: MY_SERVER, shows idle after 1 minute of inactivity
+ I need to have this active all the time, as a user makes some activity, since I have some scheduled tasks that will run some GUI actions/applications. Also the remote connection will at some point start by itself, if the server gets rebooted or so.
+ What I have tried:
+ - mouse jiggler
+ - caffeine
+ - autohotkey scripts (click and pressing keys)
+ - powertoys - awake
+ -vbs, powershell scripts
+ None of them worked. The cmd query still showed idle after one 1 minute
+ Am I missing something? Does this have to do with windows being opened (not minimized), or having focus or something else? Is there any tricky thing regarding how windows detects inactivity
+ If I have the window not minimized, and something is running (like a mouse jiggler or something) then, the connection is not being shown as idle at all
+ Thank you
+ ​
+ P.S. Hopefully I did not put this into the wrong category. But I did not found one for the remote desktop connection
+ ​
+    submitted by    /u/eltigre4jc  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How do I get back into the flow of things?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14mxke2/how_do_i_get_back_into_the_flow_of_things/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14mxke2/how_do_i_get_back_into_the_flow_of_things/"/>
+        <updated>2023-06-30T11:17:17.000Z</updated>
+        <summary type="html"><![CDATA[I have been relaxing and taking it super slow for the past few months because I've been under a lot of stress and anxiety. I haven't stopped working, nor have I quit doing tickets, deployments, etc but I have taken a much more relaxed and hands-off approach; only doing what needs to be done, not trying to do a million things a day that aren't essential.
+ But I've realized I'm taking it a bit to far and not pulling my weight, upholding my obligations. My team isn't to bothered by this because they know I do my work when I'm asked but I don't want to become a lazy lard and let it become an issue (could be thinking to much into it).
+ Like I said, I'm not coming back cold turkey. I've been working, but not up to my own standards. (I'm grateful my team let me do this because I was under stress but I want to get back to help them on more complicated matters like deploying VDI, and a new virtualization stack at another office).
+ ​
+ Any advice for someone who wants to get back into the saddle and start being more productive?
+ [sorry if this isn't the right flair, I can fix it if someone tells me what this actually belongs under]
+ EDIT: grammar correction
+    submitted by    /u/BouncyPancake  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[what is the best method to protect publically accessible 180 websites]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/14mwz98/what_is_the_best_method_to_protect_publically/</id>
@@ -27005,51 +27087,6 @@ Birch Gold: Text "WIRE" to 989898 for your no-cost, no-obligation information ki
         <updated>2023-06-01T01:21:06.000Z</updated>
         <summary type="html"><![CDATA[I have DMVPN Phase 1 setup, and I want to register Cisco IP Phones (SIP) residing on Spoke 1 network to Spoke 2 with Cisco Call Manager Express but IP Phones fail to register.
     submitted by    /u/Top-Sky1625  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 June 2023 Update - Official Release Demo (Moment 3)]]></title>
-        <id>https://www.youtube.com/watch?v=RZLZt031Oag</id>
-        <link href="https://www.youtube.com/watch?v=RZLZt031Oag"/>
-        <updated>2023-06-01T00:05:33.000Z</updated>
-        <author>
-            <name>Windows Central</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Connecting Datacenter Environments to Private MPLS Network]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13x27zm/connecting_datacenter_environments_to_private/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13x27zm/connecting_datacenter_environments_to_private/"/>
-        <updated>2023-05-31T23:48:52.000Z</updated>
-        <summary type="html"><![CDATA[Hello,
- I was hoping to get some opinions for a situation I can't seem to explain to some of our datacenter folks.
- I help implement and maintain our company's large private backbone/MPLS Network (let's call this out enterprise environment). We have two Datacenters utilizing Cisco ACI with 100G DCI between them. I'm not a data center guy, I'm a transport/radio guy.
- My task is to properly connect the MPLS environment to the two Datacenters. (Currently only commented via legacy DC equipment at one Datacenter only) this task wasnt completed by our senior in 3 years they had to do it and now that person is gone so I'm up.
- My thought is to connect to each DC via EBGP where my MPLS nodes are AS1 and the DC environments are AS2-5 (vPC pairs with separate AS numbers. Idk If that's good design, I didn't set it up and I don't know DC/ACI. I'd almost think each vPC pair would share an AS but have separate AS per DC.)
- Regardless, I'd set route policies to only allow DC to DC traffic to traverse the DCI and any user traffic. From DCA site to DC2 site would traverse the MPLS backbone.
- What general approach would you all take to this? I can provide more details if needed just let me know. 
- Thanks
-    submitted by    /u/somerandomguy6263  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MS Office365 instance with IP Whitelisting and split tunnel VPN.]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13x1ejc/ms_office365_instance_with_ip_whitelisting_and/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13x1ejc/ms_office365_instance_with_ip_whitelisting_and/"/>
-        <updated>2023-05-31T23:15:01.000Z</updated>
-        <summary type="html"><![CDATA[I have a client that has their Office365 tools in a cloud instance with whitelisting. In order to whitelist IPs for our remote workers we have to split tunnel that MS Traffic in to exit our ISP for the whitelisting. 
- I'm using Palo Alto Global Protect and domain forwarding to accomplish this since there are regional IPs all over and VPN users all over. 
- I've basically added every domain found here: 
- https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams
- This seems to work for the whitelisting, I can see the traffic come in and out and it satisfies the client logon. However active Outlook and Teams sessions seem to go offline and can't show online anymore. I've gone through all sorts of logs and captures and so far I haven't been able to narrow down what and why this is happening. Nothing is getting blocked so the only thing I can think of so far is that there is some traffic that is getting missed (either not on the urls listed above, or direct IPs not getting DNS resolved) and splitting the traffic between two egress points causing the session issues. I'm trying to get something setup to where I can test and capture myself so I don't have to rely on client interactions but for now I thought I'd see if anyone has run into this issue. 
- I'm wondering if there are less domains I can split just for the login and leave all the others.
-    submitted by    /u/supaflash  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
