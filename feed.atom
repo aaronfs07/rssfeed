@@ -2,10 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-07-02T10:11:49.748Z</updated>
+    <updated>2023-07-02T11:09:20.212Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Help with 4625 Events - Account failed to log on]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14olgag/help_with_4625_events_account_failed_to_log_on/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14olgag/help_with_4625_events_account_failed_to_log_on/"/>
+        <updated>2023-07-02T10:54:54.000Z</updated>
+        <summary type="html"><![CDATA[Hi
+ I was wondering if someone could help me with this. I am seeing a lot of alerts for the event ID 4625 - Account Failed To Log On. 
+ Below is a example:
+ An account failed to log on.
+ Subject:
+ Security ID: S-1-0-0 Account Name: - Account Domain: - Logon ID: 0x0 
+ Logon Type: 3
+ Account For Which Logon Failed:
+ Security ID: S-1-0-0 Account Name: TomJones Account Domain: mydomain 
+ Failure Information:
+ Failure Reason: An Error occured during Logon. Status: 0xC00002EE Sub Status: 0x0 
+ Process Information:
+ Caller Process ID: 0x0 Caller Process Name: - 
+ Network Information:
+ Workstation Name: - Source Network Address: - Source Port: - 
+ Detailed Authentication Information:
+ Logon Process: Kerberos Authentication Package: Kerberos Transited Services: - Package Name (NTLM only): - Key Length: 0 
+ We are seeing a large number of these events within our monitoring systems, which I believe may also be the cause of our current where multiple users are getting locked out randomly. 
+ I have cleared cached passwords on the users machine ( credential manager), purged their KLIST, removed invalid passwords from their Edge browser which uses SSO, but still no change.
+ I spoke to one user when the alert came through and they stated they had not been near their laptop. These events are network related as the logon type is 3.
+ The status code indicates - STATUS_UNFINISHED_CONTEXT_DELETED
+ A security context was deleted before the context was completed. This is considered a logon failure. 
+ I am not sure what this means exactly.
+ Has anyone come across something like this similar?
+ Thanks
+ ​
+    submitted by    /u/AJBOJACK  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Network Monitoring]]></title>
         <id>https://www.reddit.com/r/networking/comments/14ojlyn/network_monitoring/</id>
@@ -26569,27 +26606,6 @@ The idea is to use Group Policy Management Console on MyDC to create a folder an
         <updated>2023-06-02T23:09:25.000Z</updated>
         <summary type="html"><![CDATA[Hi All, Im in the middle of a network refresh in our secondary data center and we are implementing Vxlan evpn fabric with Cisco n9ks. I am learning all I can in this short time before we deploy, but I can’t seem to find a good resource that explains how Broadcast unknown unicast and multicast traffic works in the overlay. Do I need to have multicast in the underlay (Pim sparse mode) in addition to mp-bgp evpn? It would seem that with evpn and arp suppression it wouldn’t be necessary. Any help is appreciated.
     submitted by    /u/shutrmcgavin  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[KEA DHCP option 156]]></title>
-        <id>https://www.reddit.com/r/networking/comments/13ys7cm/kea_dhcp_option_156/</id>
-        <link href="https://www.reddit.com/r/networking/comments/13ys7cm/kea_dhcp_option_156/"/>
-        <updated>2023-06-02T22:46:26.000Z</updated>
-        <summary type="html"><![CDATA[Hi all,
- I’ve been trying to implement option 156 in KEA DHCP as outlined in this forum : 
- https://www.shoretelforums.com/forum/shoretel-tech/administrators/650-how-to-configure-option-156-in-linux-dhcpd
- The option has been defined as a string , and I set CSV to true, as I want multiple values to be sent to the clients.
- Unfortunately KEA doesn’t accept “array of strings” as a valid option and will not start.
- After removing the array line, predictably , only the first value is sent to the client and it appears to be a decimal string not a string the same way it was configured.
- Based off this guidance 
- https://ftp.ripe.net/mirrors/sites/ftp.isc.org/isc/kea/1.5.0/doc/kea-guide.html#dhcp4-custom-options
- I am hoping to specify the option as a “record” and specify multiple data types and pray it accepts it.
- Unfortunately I feel this won’t work because “When array is set to true and type is set to "record", the last field is an array, i.e., it can contain more than one value ” will probably just complain about an array of strings again.
-    submitted by    /u/vavs15  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
