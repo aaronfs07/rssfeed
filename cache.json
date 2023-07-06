@@ -250,6 +250,36 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14s7dqc/nps_cross_domain_authentication_failure/",
+          "author": null,
+          "description": "Hello Community,\n we use Cisco Meraki & NPS for WiFi Authentication (Device Certificate based).\n The device is a hybrid joined Windows device that obtains its certificate through intune. (on prem PKI,NDES Connector). For Fallback purposes we defined multiple RADIUS Servers (NPS Servers) on meraki.\n Here comes the problem:\n As long as the NPS Server resides inside in the same domain as the AD Computer object there is no problem with authentication, but if the NPS Server is located in different domain (Domain Trust established ofc) authentication fails with \"NULL SID\". We did have this setup working in the past (with an orphaned domain we wanted to get rid off)\n Any idea what can cause that problem? \n    submitted by    /u/F3ndt  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14s7dqc/nps_cross_domain_authentication_failure/",
+          "publishedOn": "2023-07-06T12:13:06.000Z",
+          "wordCount": 2472,
+          "title": "NPS Cross Domain Authentication failure",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14s66cb/rdp_delay_of_5_minutes_on_windows_11_only/",
+          "author": null,
+          "description": "Hi all, I have a question that I am trying to troubleshoot with users and I am really struggling so I thought I would reach out to see if anyone has seen similar.\n When a user who uses Windows 11 tries to RDP to a server there is a delay between clicking 'Connect' and the password prompt appearing. This delay is about 5 minutes from our testing but once it has happened and the password box appears then all is fine from then on, no other slowdowns at all. This happens to servers both on the same site and remotely.\n While the delay is happening, there is a screen in the background that you cannot interact with or click to have appear, only if you hover over it from the taskbar do you see it. A screenshot of which is linked here: https://imgur.com/a/9XDdwDH.\n If we delete the cache for RDP (as noted here: https://www.tachytelic.net/2019/01/clear-rdp-cache/) then it works once as normal but the delay occurs again on subsequent connections until the cache is cleared again. I can't see anything in the cache that would cause a delay like this, its only impacting Windows 11 machines and it only started this week.\n Has anyone seen anything like this before?\n    submitted by    /u/NecropolisTD  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14s66cb/rdp_delay_of_5_minutes_on_windows_11_only/",
+          "publishedOn": "2023-07-06T11:20:08.000Z",
+          "wordCount": 2571,
+          "title": "RDP Delay of 5 minutes on Windows 11 only",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14s60xt/orchestration_of_background_scripts/",
+          "author": null,
+          "description": "I have a series of background tasks written in Python such as checking for today's date, monitoring my inbox for specific emails, triggering some reminders etc.\n At the moment, I have managed to schedule those tasks to start at a specific date and time, or at specific events using the windows task scheduler (WTS). However, I have come up with several issues:\n 1. For some of these tasks, like the inbox monitoring script, I need them to run continuously in the background, and for some of them I need specific time scheduling (run between this and this date)\n 2. 1. For some of these tasks, I need to implement some stopping clauses (ie. events that terminate these tasks external to the list of events provided by WTS). An example of such, is when some specific file was saving into a folder (the background tasks keeps checking the existence of that folder continuously/periodically) or when an environment variable is modified following another user manipulation.\n 3. It is easy for the user to shut the task by mistake, and I have little to no traceability of these tasks in WTS\n My question is: Do I need to consider a virtual machine or setting up a container (using Windows containers or Docker) to achieve a better orchestration of these tasks? The goal is to have a clearer overview of all the tasks that are running, their state (terminated, failed or running) as well as ensure that I can implement some stopping clauses for these tasks.\n Any help would be much appreciated. Thank you.\n    submitted by    /u/laika00  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14s60xt/orchestration_of_background_scripts/",
+          "publishedOn": "2023-07-06T11:13:13.000Z",
+          "wordCount": 2612,
+          "title": "Orchestration of background scripts",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/14s5yai/career_change/",
           "author": null,
           "description": "Hey everyone,\n I was just wondering if anyone had any advice of how to switch my career from infrastructure engineer to Devops/cloud engineer. Bit of context. I have been working 4 years now with experience on prem and in cloud. This contains VMware suite, racking and stacking of network,storage and compute ,windows server, win10, AD, azure console, AWS console. I’m noticing in my company the ‘Devops’ team are automating a lot of existing processes and would love to hear of anyone who’s made the jump!\n Thanks :)\n    submitted by    /u/kts346  \n [link]   [comments]",
@@ -12078,16 +12108,6 @@
           "wordCount": 2288,
           "title": "Google 'our systems have detected unusual traffic...' captcha. I don't see this with any staff but at home I get it frequently? Not a lot of info easily googable (heh)",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/142xaah/how_to_boot_a_usb_pe_to_a_microsoft_surface/",
-          "author": null,
-          "description": "I don't know if this is just me, but for the life of me, I can't figure out these damn Microsoft Surfaces and their inability to work with preinstallation environments. I've tried every combo of BIOS settings for them (disabling secure boot, etc..). Formatted both in NTFS and ExFat\n Try to boot using Hiren Boot CD? It loads the first frame, but you can't move or select anything\n Try to boot using Windows Media Created USBs, freezes on the first screen\n Try to boot using Windows PE to build a new image, it gets stuck at wpeinit (Initializing). Can't go any further.\n I did confirm it can boot to other situations like a Ubuntu .iso. So I don't think it's the USB file system.\n The laptops in particular are Surfaces 4 and 5 and probably other models. Does anyone have a good idea of what's going on here? I can't figure it out from my coworkers, nor the internet.\n    submitted by    /u/xraylong  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/142xaah/how_to_boot_a_usb_pe_to_a_microsoft_surface/",
-          "publishedOn": "2023-06-06T23:47:01.000Z",
-          "wordCount": 2425,
-          "title": "How to boot a USB PE to a Microsoft Surface?",
-          "imageUrl": null
         }
       ]
     },
@@ -12661,6 +12681,26 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14s7dvy/captive_portal_and_starlink/",
+          "author": null,
+          "description": "Our primarily goal is be able to offer Wi-Fi on a donation basis at race events my team is present at. We like the idea of a captive portal to provide guest user management and to direct them to whom to contact/how to connect. \n I seem to be having a hard time finding a stand-alone router/AP to accomplish this in lieu of Omada or UniFi. Is there an option I’m overlooking?\n    submitted by    /u/Longjumping-Usual-35  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14s7dvy/captive_portal_and_starlink/",
+          "publishedOn": "2023-07-06T12:13:15.000Z",
+          "wordCount": 2442,
+          "title": "Captive Portal and Starlink",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/14s7bxq/cml_can_someone_help_me_understand_the_differences/",
+          "author": null,
+          "description": "Does anyone out there know about CML? I want to get it for my CCNP labs. I asked my manager and he said to research it because he would like to make a vm that everyone in our network team could log in with when they want to do a lab. After googling I found out the VIRL is now CML. We are a university \n They have different versions of CML and I have questions because I don't know how to interpret their site perfectly. This is the website I'm reading from: https://www.cisco.com/c/en/us/products/cloud-systems-management/modeling-labs/index.html#~licensing \n Personal - Single use only. Does this mean only 1 person can be logged in at once and others must wait until they are done, or does it mean only 1 person can be logged in and it always the same person logging in?\n Enterprise:\n - Multi user - Maybe this is what I really need.\n - What does TAC support mean? Will I be able to call someone and they can help me if I get stuck in a lab? I doubt it. Maybe it means they support in the setting up of the VM and installing the software?\n Higher Education:\n - I work at a university. Would this mean I can use this type of CML? Why would I choose this over enterprise? The site says it licenses for concurrent users instead of nodes. This makes me think enterprise works like this: you have license for 20 nodes. User 1 logs in and uses 5 nodes. User 2 logs in and uses 15 nodes. User 3 logs in and has no nodes to use until the other 2 users shut their labs down. \n ​\n    submitted by    /u/Dunce-Learner  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14s7bxq/cml_can_someone_help_me_understand_the_differences/",
+          "publishedOn": "2023-07-06T12:10:52.000Z",
+          "wordCount": 2650,
+          "title": "CML: Can someone help me understand the differences?",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/14rv4kg/compatibility_of_firewall_brands_with_access/",
           "author": null,
@@ -17459,16 +17499,6 @@
           "publishedOn": "2023-06-07T00:53:57.000Z",
           "wordCount": 2362,
           "title": "Can I use EAP-TLS for machine-authenticated Wi-Fi on non-domain (Intune) Windows devices?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/142xkk6/rant_wednesday/",
-          "author": null,
-          "description": "It's Wednesday! Time to get that crap that's been bugging you off your chest! In the interests of spicing things up a bit around here, we're going to try out a Rant Wednesday thread for you all to vent your frustrations. Feel free to vent about vendors, co-workers, price of scotch or anything else network related. \n There is no guiding question to help stir up some rage-feels, feel free to fire at will, ranting about anything and everything that's been pissing you off or getting on your nerves!\n Note: This post is created at 00:00 UTC. It may not be Wednesday where you are in the world, no need to comment on it.\n    submitted by    /u/AutoModerator  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/142xkk6/rant_wednesday/",
-          "publishedOn": "2023-06-07T00:00:09.000Z",
-          "wordCount": 2383,
-          "title": "Rant Wednesday!",
           "imageUrl": null
         }
       ]
