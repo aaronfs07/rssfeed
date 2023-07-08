@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-07-08T09:10:59.341Z</updated>
+    <updated>2023-07-08T10:11:53.594Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
@@ -240,6 +240,25 @@ Edit: - found this great thread https://www.reddit.com/r/sysadmin/comments/mcipy
         <summary type="html"><![CDATA[Just curious as to which operating system you use on your main rig and why? 
  Personally I run Linux and have been very happy with the experience. I made the switch because Windows was starting to feel like a big, heavy piece of adware and privacy was becoming a concern of mine. I like that Linux also runs like butter on lower end systems that Windows just doesn’t support anymore (less e-waste).
     submitted by    /u/AmusedSeagull  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Need to work out where the error "Could not reconnect all network drives" is coming from]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/14tjqxl/need_to_work_out_where_the_error_could_not/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/14tjqxl/need_to_work_out_where_the_error_could_not/"/>
+        <updated>2023-07-07T21:17:45.000Z</updated>
+        <summary type="html"><![CDATA[Whenever I log into a Windows machine I get the message "could not reconnect all network drives" and I am tearing my hair out trying to work out where this is coming from, i.e. what drives are not able to be mapped and where that mapping is coming from.
+ When this happens and I go into explorer there are no drives with the little x on them to indicate that they are not reconnected, and all the mapped drives (2 of them, from a login script) are mapped fine.
+ I just went through all of my GPOs to see if I can find some indication in there as to what is going on, but there are no drive mapping settings anywhere in my GPOs.
+ I searched the Windows logs to see if I could find more details on this, but I cannot find anything.
+ And lastly, I do have the "wait for network connection" option set in my GPOs, so it's not that.
+ Since this happens on every windows machine I log into, the mappings have to be coming from somewhere in AD, but I cannot find it.
+ Any suggestions on how I can work out what drives are being mapped so I can kill this message?
+ EDIT: Thanks to /u/bigtime618 who was spot on in identifying the issue. My login script maps a share with different credentials from that of my user account, and this is what caused the issue. To fix it I just needed to add /persistent:no to my net use command in my login script.
+    submitted by    /u/lutiana  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>

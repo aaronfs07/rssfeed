@@ -370,6 +370,16 @@
           "imageUrl": null
         },
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/14tjqxl/need_to_work_out_where_the_error_could_not/",
+          "author": null,
+          "description": "Whenever I log into a Windows machine I get the message \"could not reconnect all network drives\" and I am tearing my hair out trying to work out where this is coming from, i.e. what drives are not able to be mapped and where that mapping is coming from.\n When this happens and I go into explorer there are no drives with the little x on them to indicate that they are not reconnected, and all the mapped drives (2 of them, from a login script) are mapped fine.\n I just went through all of my GPOs to see if I can find some indication in there as to what is going on, but there are no drive mapping settings anywhere in my GPOs.\n I searched the Windows logs to see if I could find more details on this, but I cannot find anything.\n And lastly, I do have the \"wait for network connection\" option set in my GPOs, so it's not that.\n Since this happens on every windows machine I log into, the mappings have to be coming from somewhere in AD, but I cannot find it.\n Any suggestions on how I can work out what drives are being mapped so I can kill this message?\n EDIT: Thanks to /u/bigtime618 who was spot on in identifying the issue. My login script maps a share with different credentials from that of my user account, and this is what caused the issue. To fix it I just needed to add /persistent:no to my net use command in my login script.\n    submitted by    /u/lutiana  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/14tjqxl/need_to_work_out_where_the_error_could_not/",
+          "publishedOn": "2023-07-07T21:17:45.000Z",
+          "wordCount": 2648,
+          "title": "Need to work out where the error \"Could not reconnect all network drives\" is coming from",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/14ths1l/have_you_migrated_away_from_wmi_remote_management/",
           "author": null,
           "description": "To reduce the number of firewall ports required for enabling remote management of Windows workstations and servers, we want to migrate to something else like WinRM, CIM etc..\n How were you able to do that and did you lose functionality?\n Does using Windows Admin Center help with this or not? \n    submitted by    /u/Real_Lemon8789  \n [link]   [comments]",
