@@ -12444,6 +12444,16 @@
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/networking/comments/14uvrro/a_question_about_port_channels/",
+          "author": null,
+          "description": "So right now I am trying to set up some bonded 10G interfaces for a Ceph cluster.\n Switch is a Arista 7124SX running EOS 4.8.6\n I have 3 nodes, each with 2x 10G interfaces. I configured them for LACP and connected them to the switch. \n It looks like this: https://imgur.com/a/XPEHkhA\n I then configured the port channels on the switches, and they negotiated properly, as far as I can tell. \n However, I can't ping the servers from each other. None of the ARP requests are getting answered.\n Here's the kicker, I disabled the bond and port channel for one of the nodes, and then was able to ping the other one just fine! So the port channel wasn't messed up, AFAIK.\n I tried it the other way, flip-flopping who had the bonded interfaces, same result.\n So the question is:\n Is it not possible to traverse between two port channels on the same switch? Or am I missing something here?\n I can provide configs if needed, but I think this is mostly a higher level (my brain) thing that's going on.\n    submitted by    /u/iznotros  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/14uvrro/a_question_about_port_channels/",
+          "publishedOn": "2023-07-09T11:01:59.000Z",
+          "wordCount": 2569,
+          "title": "A Question about Port Channels",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/networking/comments/14ujpdu/rebuilding_from_scratch/",
           "author": null,
           "description": "So we are moving to the office of our parent company soon and I got the opportunity to redo the entire network stack there since the current setup has a lot of issues and I am looking into what kind of hardware I should be getting. \n Currently their network consists out of 9 Unifi switches, a unifi security gateway and 12 Ubiquiti UAP-AC-Pro access points for roughly 100-150 clients and they are having wifi drops constantly. I am guessing that the current APs simply can't handle the density and having all settings set to auto won't help either. \n The office doesn't need much in terms of complexity, there will be 2 different networks, one whi h does basic internet access and the other connects to a more restricted network. For now they'll get seperate SSIDs, but eventually we'll be moving it to a RADIUS assigned VLAN setup. \n So currently I am looking into another Ubiquiti unifi setup since it has served me well personally, and I do like the centralized management interface. But I want to make sure I am making the best choice here. Preferably I like to keep the single pane of glass interface for switches and wifi, but it's not required. I do need switches which do POE+ and can aggregate to a central 10g switch for distribution since we have a high bandwidth backup server. \n What kind of setup would you guys go with? Any recommendations?\n    submitted by    /u/WarriorXK  \n [link]   [comments]",
