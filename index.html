@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-07-13 datetime="2023-07-13T10:00:29.000Z">2023-07-13</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-07-13 datetime="2023-07-13T10:00:29.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-07-13 datetime="2023-07-13T10:52:44.000Z">2023-07-13</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-07-13 datetime="2023-07-13T10:52:44.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,107 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14yhk67/remote_access_solution/"
+                        open
+                      >
+                        <summary class="article-expander__title">Remote Access Solution</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14yhk67/remote_access_solution/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey all,
+ Looking for a good remote access solutions to PC all within the same LAN. Here&#x27;s the catch though... none of them can get out to the internet. We have servers that can get out, and the hope is that we can deploy a remote access solution that we would be able to access the machines across the network jumping through the server. Essentially we&#x27;d use a solution like TeamViewer to instigate a session to the server, and would want to jump to the deployed machines from there. 
+ We have been using Windows remote desktop connection in the interim, however, this isn&#x27;t a good solution for this use case as the machine gets logged out when disconnecting from the session, making things more difficult on the user. 
+ Anyone have any experience in deploying a remote access solution that works just across the LAN? Like I said, opening up the network to allow these machines out to the internet is NOT something we can do in this instance. 
+ Thanks sysadmins! 
+    submitted by    /u/Vinniec79  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14yhhbj/kpi_destroyed_by_our_sdwan_provider/"
+                        open
+                      >
+                        <summary class="article-expander__title">KPI destroyed by our SDWAN Provider</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14yhhbj/kpi_destroyed_by_our_sdwan_provider/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Venting here because my KPI for the year was absolutely fucked by a mistake made by our SDWAN provider.
+ I called them up yesterday to get a new SSID added to all of our manufacturing sites. This is a real simple thing that didn&#x27;t require any complex routing or anything, it&#x27;s basically a secondary guest Wi-Fi, right? No big deal.
+ Some fuckknuckle logged into the centralized manager for all the firewalls and apparently clicked push to two of our primary manufacturing sites without paying any attention to what he was doing. This pushed two old configuration files to those sites which overwrote half of the SSIDs that were already in place and vital to our 24/7 manufacturing. You&#x27;d think this was easily fixable by rolling back to the previous nights stored config, right?
+ These dumb cumstains…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14yh5hb/performance_benefits_ms_sql_express_vs_ms_sql/"
+                        open
+                      >
+                        <summary class="article-expander__title">Performance benefits MS SQL Express vs MS SQL Server Std?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14yh5hb/performance_benefits_ms_sql_express_vs_ms_sql/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi All,
+ We have a customer running a product called Autodesk Vault on an AWS instance (Windows Server 2019). Recently they have been experiencing really poor performance on the software and we&#x27;ve been trying to get to the bottom of it. 
+ The software is file storage / BLOB vault with clients connecting to it via a IIS web application layer. The customer has about 3 users on the system so it&#x27;s not a huge deployment and the vault database is about 150gb (140gb of BLOB and 10gb of database spread across ~ 15 MDF) 
+  
+The instance is idling most of the time on CPU ( &lt;10% usage)
+ It&#x27;s using less than 40% available memory. I&#x27;ve checked SQL server and it&#x27;s using about 1/4 of the available 1.4gb shared memory pool
+ Network speed tests are very good (as you would expect from AWS)
+ Disk activity doesn&#x27;t appear very high but...
+  
+Having checked everything with the developers, the problems seemed to be stemming from the database. We&#x27;ve upgraded the storage from &quot;gp2&quot; tier to gp3 and doubled the IOPS and throughput from 900 IOPS / ~250MB/s to 5000 IOPS / 500MB/s.
+ Having done all this its running a bit better but not dramatically better. It&#x27;s not clear though if it is the storage which is the bottleneck or if something else is going on.
+ The server currently runs MS SQL Express 2019 but we&#x27;re nowhere near hitting the memory pool limit and it doesn&#x27;t appear like its getting thrashed. I just wondered though if there are any other limits/issues which could be causing this version of SQL Server to be causing problems? 
+ Does anyone know if upgrading to MS SQL Server Standard 2019 offers any performance benefits over Express for general SQL work loads?
+ ​
+    submitted by    /u/Soup_Roll  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14yh25i/multiple_calendar_domains_can_you_do_it_in_ms365/"
+                        open
+                      >
+                        <summary class="article-expander__title">Multiple calendar domains - can you do it in MS365?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14yh25i/multiple_calendar_domains_can_you_do_it_in_ms365/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>submitted by    /u/DilshadZhou  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -400,6 +501,27 @@ Reconnect the power cables and turn on the server. I already tried to reset the 
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/14yhj5r/how_to_avoid_spam_warning/"
+                        open
+                      >
+                        <summary class="article-expander__title">How to avoid spam warning?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14yhj5r/how_to_avoid_spam_warning/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I have four virtual machines installed on my computer. From each machine I go to the same site for buying and selling and update prices on accounts. If I do it with more than two machines at the same time, I get a warning for spam, but it&#x27;s not spam. How can I solve this?
+    submitted by    /u/Magija021  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -45121,54 +45243,6 @@ Morning Wire Behind the Scenes: https://www.instagram.com/georgiamaehowe/?igshid
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/148rxgz/cat_6_length_issue/"
-                        open
-                      >
-                        <summary class="article-expander__title">CAT 6 Length Issue</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/148rxgz/cat_6_length_issue/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Not sure if anyone can help with this. I have limited experience with networking. 
- I have a 100ft Cat6 cable with Neutrik Ethercon ends. Im using it for live video production. My system limits me to using 180ft of cable or less. Which a 100ft cable should be just fine for. However these cables are not working.
- When I test the cables with my Klein Scout Pro 3 it tells me the cables are 197-200 ft long. I know for a fact they are 100. I suspect this has something to do with my signal issue. What could be causing this?
-    submitted by    /u/dillancullifer  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/148rnit/router_switch_suggestions/"
-                        open
-                      >
-                        <summary class="article-expander__title">Router + Switch suggestions</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/148rnit/router_switch_suggestions/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi y&#x27;all! 
- I&#x27;m changing the networking components at a nonprofit I work for. Their current set-up includes 3 netgear nighthawk routers (one per building) and those are connected to unmanaged gigabit switches (also from netgear) and one main Dell switch from like 2008. 
- They have unmanaged switches everywhere since the main building was built back in the 50&#x27;s. None of the cabling has labels and its basically a sh*tshow.
- Anyways, I&#x27;m trying to replace everything and basically start brand new. I&#x27;m looking for recommendations on routers and switches. Right now, we have a nighthawk RAX70 router in the main building and that connects two outerbuildings, one with a nighthawk AC1900 &amp; the other with netgear r6120 acting as AP&#x27;s. 
- What are the things I should take into consideration when looking for new routers and managed switches? I know I need gigabit ports. We have about 50 users spread out in these buildings that require reliable connection. I was looking into the Cisco router firewall plus gx50, but this does require a subscription. Also the Cisco 1000 series for the switches.
-    submitted by    /u/Administrative_Line3  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45251,27 +45325,6 @@ Morning Wire Behind the Scenes: https://www.instagram.com/georgiamaehowe/?igshid
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/148rra0/fortigate_ha_upgrade_724/"
-                        open
-                      >
-                        <summary class="article-expander__title">FortiGate HA upgrade 7.2.4</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/148rra0/fortigate_ha_upgrade_724/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>I&#x27;m looking to upgrade my active-passive HA cluster from 7.2.4 to 7.2.5. In previous versions I manually added the OS during the process. I see that option when clicking upgrade but not fabric upgrade. Will the upgrade option upgrade both units or is that only possible with the fabric upgrade option?
-    submitted by    /u/scottyboy667  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -45279,8 +45332,8 @@ Morning Wire Behind the Scenes: https://www.instagram.com/georgiamaehowe/?igshid
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5541848828">
-        <time id="build-timestamp" datetime="2023-07-13T10:13:14.177Z">2023-07-13T10:13:14.177Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5542364971">
+        <time id="build-timestamp" datetime="2023-07-13T11:10:47.159Z">2023-07-13T11:10:47.159Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
