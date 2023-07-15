@@ -2,10 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-07-15T11:09:44.971Z</updated>
+    <updated>2023-07-15T12:22:00.153Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[I have 2 crappy cellular connections I would like to load balance, in Mexico, to increase reliability]]></title>
+        <id>https://www.reddit.com/r/networking/comments/150akw0/i_have_2_crappy_cellular_connections_i_would_like/</id>
+        <link href="https://www.reddit.com/r/networking/comments/150akw0/i_have_2_crappy_cellular_connections_i_would_like/"/>
+        <updated>2023-07-15T12:17:46.000Z</updated>
+        <summary type="html"><![CDATA[I bought a Pepwave but had to return it because it worked fine in USA but could not get an IP using TMobile in Mexico (only) and not configurable enough to get Telcel (Mexico) Home Internet via cellular to work on it. Only the pay-per-minute sim I had, would work and that didn't work for me.
+ I was told by a few people that Cisco doesn't actually load balance.
+  
+Active-active dual router SD-WAN topology
+  
+https://www.cisco.com/c/en/us/products/routers/sd-wan-vendor-comparison.html#~chart
+ Cisco appears to claim it can handle it better than the other guy so I don't know. Typically I have found Cisco to be more configurable than most other units. Popular opinion is that I am dead wrong on this one.
+ So, Pepwave is out. Cisco might be out. What other quality unit might be able to handle a dual cellular (load balanced) Mexico configuration?
+ I can't find a product list for silver-peak, to see which units would have dual cellular.
+    submitted by    /u/inaliisviis  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Update to the request for a BGP nerd! Some further details as people suggested just posting it....]]></title>
+        <id>https://www.reddit.com/r/networking/comments/1509eok/update_to_the_request_for_a_bgp_nerd_some_further/</id>
+        <link href="https://www.reddit.com/r/networking/comments/1509eok/update_to_the_request_for_a_bgp_nerd_some_further/"/>
+        <updated>2023-07-15T11:18:28.000Z</updated>
+        <summary type="html"><![CDATA[Original Post
+ To provide further context and to start clarifying what my approach is here is the lab design and requirement:
+  
+two branch DCs: DC1 and DC3
+ central hub HUB
+ DC1 connects to HUB, HUB connectd to DC3 - to get from DC1 to DC3 you have to go via HUB
+ DC1 and DC3 have the DCx_SW (L3 switch), DCx_FW (firewall), DCx_Edge (WAN router)
+ DC1 and DC3 have 3 zones LAN, DMZ, PROD
+ DC1 LAN is 172.16.1.0/24, DMZ is 10.1.0.0/24, PROD is 192.168.1.0/24
+ DC3 LAN is 172.16.3.0/24, DMZ is 10.1.0.0/24, PROD is 192.168.3.0/24 and 192.168.33.0/24
+ each zone is a separate VRF on DCx_SW
+ each zone network is an interface on the DCx_SW (i.e. port1,2,3)
+ Intra-Zone (i.e. DC1_LAN to DC3_LAN or DC3_PROD to DC3_PROD) traffic does not traverse the firewall 
+ where it is zone to zone across the DCs the …]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Need a remote desktop program or another solution for specific use.]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/15092hb/need_a_remote_desktop_program_or_another_solution/</id>
@@ -27067,35 +27110,6 @@ For example a Fortigate 30E only supports FortiOS 6.2 that according to https://
         <updated>2023-06-16T00:28:38.000Z</updated>
         <summary type="html"><![CDATA[About the Squarespace purchase of Google Domains registrations
     submitted by    /u/_TheKnightMan_  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Blogpost Friday!]]></title>
-        <id>https://www.reddit.com/r/networking/comments/14ahmlh/blogpost_friday/</id>
-        <link href="https://www.reddit.com/r/networking/comments/14ahmlh/blogpost_friday/"/>
-        <updated>2023-06-16T00:00:17.000Z</updated>
-        <summary type="html"><![CDATA[It's Read-only Friday! It is time to put your feet up, pour a nice dram and look through some of our member's new and shiny blog posts.
- Feel free to submit your blog post and as well a nice description to this thread.
- Note: This post is created at 00:00 UTC. It may not be Friday where you are in the world, no need to comment on it.
-    submitted by    /u/AutoModerator  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Have you ever gotten crap from management/co-workers about not being emotionally invested in your job?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/14agous/have_you_ever_gotten_crap_from/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/14agous/have_you_ever_gotten_crap_from/"/>
-        <updated>2023-06-15T23:18:11.000Z</updated>
-        <summary type="html"><![CDATA[The reason I ask this is because I was very emotionally invested in very, very entry-level tech job. I was hourly and I came in nearly every day and did tons of OT. The job thanked me by laying me off. I wasn't even there a year. 
- Now that I'm older and wiser (cynical) I refuse to get emotionally invested into any job. I see jobs as a way to get a paycheck and build a skillset. That's it. 
- No loyalty whatsoever. I'll go where the money and good working environments are.
- So have any of you ever gotten guff from management or from someone who drank the company kool-aid for not being "excited" enough about working at that particular place?
-    submitted by    /u/USS_Frontier  
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
