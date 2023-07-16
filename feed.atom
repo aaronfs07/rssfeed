@@ -2,10 +2,117 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-07-16T10:11:56.770Z</updated>
+    <updated>2023-07-16T11:09:25.890Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Help with Linux script to copy files]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15138j5/help_with_linux_script_to_copy_files/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15138j5/help_with_linux_script_to_copy_files/"/>
+        <updated>2023-07-16T10:50:35.000Z</updated>
+        <summary type="html"><![CDATA[I hope this is allowed here and the right platform
+ -i want to create a linux .sh script that checks inside a given folder if there is a folder inside was created today
+ -if the folder is present then copy it together with its contents to a given destination
+ ​
+ My use case:
+ I'm manually copying backup folders with databases to a storage every morning after the backups run around 4 am, so i want to automate it with a script
+ ​
+ The code: (NB: the paths are trials on a virtual linux machine before i use the code on real paths and real server)
+ #!/bin/bash
+ ​
+ # Set the source and destination directories
+ source_dir="/home/graffius/Desktop/Hana/Sei/NT_DB""dest_dir="/home/graffius/Desktop/Rvnas2/schemas/NT_DB"
+ ​
+ # Get the current date
+ today=$(date +"%Y-%m-%d")
+ ​
+ # Search for subdirectories created today in the source directory
+ new_dirs=$(find "$source_dir" -type d -newerct "$today 00:00:00" ! -newerct "$today 23:59:59")
+ ​
+ # Copy the new directories to the destination directory
+ for dir in $new_dirs; do
+ cp -R "$dir" "$dest_dir"
+ done
+ ​
+ The error message in Terminal
+ graffius@graffiuslinux:~$ ./try.sh
+ ./try.sh: line 14: unexpected EOF while looking for matching \"'`
+ ./try.sh: line 16: syntax error: unexpected end of file
+ graffius@graffiuslinux:~$
+    submitted by    /u/StrikingPeace  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Office 365 Zero Day - I Am Confuse]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/151317y/office_365_zero_day_i_am_confuse/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/151317y/office_365_zero_day_i_am_confuse/"/>
+        <updated>2023-07-16T10:39:05.000Z</updated>
+        <summary type="html"><![CDATA[So, this CVE:
+ https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36884
+ Has this verbiage:
+  
+If I'm running Office365 Semi-Annual Channel Extended, am I affected by this vulnerability?
+  
+Office365 Semi-Annual Channel Extended (specifically versions 2208 and 2202) are affected. Microsoft 365 Apps Semi-Annual Channel Extended (specifically versions 2208 and 2202) are affected. However, Microsoft 365 Semi-Annual Channel version 2302 (and all later versions) are protected from this vulnerability.. Please see Update history for Microsoft 365 Apps (listed by date) for information about those channels and their versions.
+ Highlighted, since they're specifically calling out a channel of Office 365. If you click on their link in the article:
+ https://www.microsoft.com/en-us/security/…]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Help] Seeking Advice on Setting Up Redundancy for Firewall Cluster]]></title>
+        <id>https://www.reddit.com/r/networking/comments/15130ii/help_seeking_advice_on_setting_up_redundancy_for/</id>
+        <link href="https://www.reddit.com/r/networking/comments/15130ii/help_seeking_advice_on_setting_up_redundancy_for/"/>
+        <updated>2023-07-16T10:37:57.000Z</updated>
+        <summary type="html"><![CDATA[Hey fellow network admins!
+ I'm currently trying to figure out the best way to configure the following setup, and I could really use your expertise. I'm in charge of administering two Cisco routers, each equipped with 2 WAN ports and 4 LAN ports. One of the routers serves as the main router in an MPLS network, connected to the corporate network. The backup router connects the corporate network via DMVPN.
+ Currently, the LAN is directly connected to both WAN routers, ensuring redundancy through HSRP and IP SLAs. However, we now want to introduce a firewall cluster between the LAN and the WAN, so that the LAN side is protected by the firewalls and the default gateways for the LAN networks reside on the firewall. To achieve this, we plan to establish a transit network between the Cisco routers and the firewall cluster.
+ The customer's network are isolated from other customers using VRFs. We are currently utilizing MPBGP with iBGP for the LAN customer networks and OSPF for overlay purposes.
+ Here's what we have implemented in the past so far: redundancy through OSPF with corresponding costs and a distribute list to only learn specific networks.
+ I would greatly appreciate any suggestions or insights on how to achieve redundancy for the firewall cluster in the most straightforward manner. Are there any other methods or best practices you could recommend?
+ Thanks in advance for your help! 
+ Edit: https://imgur.com/a/uMNFc5e - for visualization
+    submitted by    /u/errore_maximus  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SQL Server best practise setup]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/1512q4j/sql_server_best_practise_setup/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/1512q4j/sql_server_best_practise_setup/"/>
+        <updated>2023-07-16T10:21:31.000Z</updated>
+        <summary type="html"><![CDATA[Hey, I'm new to SQL Server setups and testing a SQL Express setup in a lab and trying to work out the best practise for installing it. My query is around storage locations, I'm guessing its best to have the Databases on a separate D drive. However at which stage should this be setup? Reading online theres mixed views if to chnage during install or install all to C then chnage data, temp, logs, etc to D after install?
+ Which is the best way to do it in your opinions?
+ TIA
+    submitted by    /u/tempj274849  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Need your help - IT employee retention survey]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/1512lwv/need_your_help_it_employee_retention_survey/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/1512lwv/need_your_help_it_employee_retention_survey/"/>
+        <updated>2023-07-16T10:14:40.000Z</updated>
+        <summary type="html"><![CDATA[I'm Julien, a Master's student in HR at the University of Paris 1 Panthéon-Sorbonne. I'm conducting a study on the factors that keep IT employees engaged.
+ Your participation in this anonymous survey would be greatly appreciated. It will only take a few minutes of your time.
+ Click here to participate: LINK
+ Thank you in advance for your help!
+ IT #employee #retention #tech
+    submitted by    /u/Chemical_Cancel_4539  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Looking for Recommendations on Web-Based Server Management and Monitoring Tools]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/1512cy0/looking_for_recommendations_on_webbased_server/</id>

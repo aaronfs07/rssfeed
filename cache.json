@@ -250,6 +250,46 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/15138j5/help_with_linux_script_to_copy_files/",
+          "author": null,
+          "description": "I hope this is allowed here and the right platform\n -i want to create a linux .sh script that checks inside a given folder if there is a folder inside was created today\n -if the folder is present then copy it together with its contents to a given destination\n ​\n My use case:\n I'm manually copying backup folders with databases to a storage every morning after the backups run around 4 am, so i want to automate it with a script\n ​\n The code: (NB: the paths are trials on a virtual linux machine before i use the code on real paths and real server)\n #!/bin/bash\n ​\n # Set the source and destination directories\n source_dir=\"/home/graffius/Desktop/Hana/Sei/NT_DB\"\"dest_dir=\"/home/graffius/Desktop/Rvnas2/schemas/NT_DB\"\n ​\n # Get the current date\n today=$(date +\"%Y-%m-%d\")\n ​\n # Search for subdirectories created today in the source directory\n new_dirs=$(find \"$source_dir\" -type d -newerct \"$today 00:00:00\" ! -newerct \"$today 23:59:59\")\n ​\n # Copy the new directories to the destination directory\n for dir in $new_dirs; do\n cp -R \"$dir\" \"$dest_dir\"\n done\n ​\n The error message in Terminal\n graffius@graffiuslinux:~$ ./try.sh\n ./try.sh: line 14: unexpected EOF while looking for matching \\\"'`\n ./try.sh: line 16: syntax error: unexpected end of file\n graffius@graffiuslinux:~$\n    submitted by    /u/StrikingPeace  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/15138j5/help_with_linux_script_to_copy_files/",
+          "publishedOn": "2023-07-16T10:50:35.000Z",
+          "wordCount": 2586,
+          "title": "Help with Linux script to copy files",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/151317y/office_365_zero_day_i_am_confuse/",
+          "author": null,
+          "description": "So, this CVE:\n https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36884\n Has this verbiage:\n  \nIf I'm running Office365 Semi-Annual Channel Extended, am I affected by this vulnerability?\n  \nOffice365 Semi-Annual Channel Extended (specifically versions 2208 and 2202) are affected. Microsoft 365 Apps Semi-Annual Channel Extended (specifically versions 2208 and 2202) are affected. However, Microsoft 365 Semi-Annual Channel version 2302 (and all later versions) are protected from this vulnerability.. Please see Update history for Microsoft 365 Apps (listed by date) for information about those channels and their versions.\n Highlighted, since they're specifically calling out a channel of Office 365. If you click on their link in the article:\n https://www.microsoft.com/en-us/security/…",
+          "link": "https://www.reddit.com/r/sysadmin/comments/151317y/office_365_zero_day_i_am_confuse/",
+          "publishedOn": "2023-07-16T10:39:05.000Z",
+          "wordCount": 2681,
+          "title": "Office 365 Zero Day - I Am Confuse",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1512q4j/sql_server_best_practise_setup/",
+          "author": null,
+          "description": "Hey, I'm new to SQL Server setups and testing a SQL Express setup in a lab and trying to work out the best practise for installing it. My query is around storage locations, I'm guessing its best to have the Databases on a separate D drive. However at which stage should this be setup? Reading online theres mixed views if to chnage during install or install all to C then chnage data, temp, logs, etc to D after install?\n Which is the best way to do it in your opinions?\n TIA\n    submitted by    /u/tempj274849  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1512q4j/sql_server_best_practise_setup/",
+          "publishedOn": "2023-07-16T10:21:31.000Z",
+          "wordCount": 2489,
+          "title": "SQL Server best practise setup",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/1512lwv/need_your_help_it_employee_retention_survey/",
+          "author": null,
+          "description": "I'm Julien, a Master's student in HR at the University of Paris 1 Panthéon-Sorbonne. I'm conducting a study on the factors that keep IT employees engaged.\n Your participation in this anonymous survey would be greatly appreciated. It will only take a few minutes of your time.\n Click here to participate: LINK\n Thank you in advance for your help!\n IT #employee #retention #tech\n    submitted by    /u/Chemical_Cancel_4539  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/1512lwv/need_your_help_it_employee_retention_survey/",
+          "publishedOn": "2023-07-16T10:14:40.000Z",
+          "wordCount": 2463,
+          "title": "Need your help - IT employee retention survey",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/1512cy0/looking_for_recommendations_on_webbased_server/",
           "author": null,
           "description": "Hello fellow sysadmins,\n I’m currently managing a large number of cloud and on-premisses servers and am looking for an efficient and secure way to streamline my workflow. I’m particularly interested in a web-accessible system where I can visualize server states (resources, alerts, services, containers, etc.), access them via the web interface using SSH, and add new servers either directly or by installing an agent on the server.\n Moreover, considering security is paramount in our field, I’d highly value any tools that offer two-factor authentication (2FA).\n I’ve explored solutions like Cockpit Project, Webmin/Virtualmin, Rancher,.. but none have all features. While these tools offer several of the features I mentioned, I’d love to hear what you all are using and if there’s something out there that might better align with my needs.\n Could you kindly share your recommendations, experiences, or even potential custom solutions you might have developed? I appreciate any guidance.\n Thanks in advance!\n    submitted by    /u/SajajuaBot  \n [link]   [comments]",
@@ -12101,6 +12141,16 @@
       "feedUrl": "https://www.reddit.com/r/networking.rss",
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/networking/comments/15130ii/help_seeking_advice_on_setting_up_redundancy_for/",
+          "author": null,
+          "description": "Hey fellow network admins!\n I'm currently trying to figure out the best way to configure the following setup, and I could really use your expertise. I'm in charge of administering two Cisco routers, each equipped with 2 WAN ports and 4 LAN ports. One of the routers serves as the main router in an MPLS network, connected to the corporate network. The backup router connects the corporate network via DMVPN.\n Currently, the LAN is directly connected to both WAN routers, ensuring redundancy through HSRP and IP SLAs. However, we now want to introduce a firewall cluster between the LAN and the WAN, so that the LAN side is protected by the firewalls and the default gateways for the LAN networks reside on the firewall. To achieve this, we plan to establish a transit network between the Cisco routers and the firewall cluster.\n The customer's network are isolated from other customers using VRFs. We are currently utilizing MPBGP with iBGP for the LAN customer networks and OSPF for overlay purposes.\n Here's what we have implemented in the past so far: redundancy through OSPF with corresponding costs and a distribute list to only learn specific networks.\n I would greatly appreciate any suggestions or insights on how to achieve redundancy for the firewall cluster in the most straightforward manner. Are there any other methods or best practices you could recommend?\n Thanks in advance for your help! \n Edit: https://imgur.com/a/uMNFc5e - for visualization\n    submitted by    /u/errore_maximus  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/15130ii/help_seeking_advice_on_setting_up_redundancy_for/",
+          "publishedOn": "2023-07-16T10:37:57.000Z",
+          "wordCount": 2653,
+          "title": "[Help] Seeking Advice on Setting Up Redundancy for Firewall Cluster",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/networking/comments/1510kmc/question_about_stacked_switches/",
           "author": null,
