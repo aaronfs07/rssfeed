@@ -270,6 +270,96 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153uqr7/hpe_ilo5_292_scep_ndes_automatic_certificate/",
+          "author": null,
+          "description": "Evening folks.\n This is really bugging the hell out of me. We have a bunch of DL's here, and we would rather like to leverage our CA to give said DL's certificates.\n I wrote a powershell script that, using the HPE powershell commandlets, will generate a CSR, acquire the PEM from said CA, and install the certificate to iLO.\n However, it's a bit clunky and requires us to do... Well, something.\n I know there's a bug in 2.72, which most of the DL's are on, but I updated a couple to 2.92, and here I am still scratching my head.\n Automatic certificate enrollment seems to ask for the following information;\n  \nServer URL - As far as I can tell this is the FQDN for our certificate server, and the appropriate /certsrv/mscep_admin/. This is the only URL that it accepts that I've tried.\n \nChallenge password - No problem, retrieved from that URL.\n \n *CA Certificate - Here, I start to scratch my head. The NDES page offers a thumbprint, and no certificate. I cannot find this thumbprint associated with any certificate. I have, however, tried teh CA root certificate. I have also, out of morbid curiosity, tried the PEM certificate I generated via certreq.\n It errors out, and tells me to check basically all the settings and DNS.\n I'm not a CA whizz, so I feel like I've missed something along the way. Someone before my time set this CA server up, and anyone I've asked internally has been perplexed as to why it doesn't work too.\n Does anyone have any thoughts on what I've missed?\n    submitted by    /u/Mitarbeiter09  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153uqr7/hpe_ilo5_292_scep_ndes_automatic_certificate/",
+          "publishedOn": "2023-07-19T13:14:37.000Z",
+          "wordCount": 2677,
+          "title": "HPE iLO5 2.92, SCEP NDES, automatic certificate enrollment problem",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153uq2b/hpe_ilo_5_292_automatic_certificate_enrollment/",
+          "author": null,
+          "description": "Evening folks.\n This is really bugging the hell out of me. We have a bunch of DL's here, and we would rather like to leverage our CA to give said DL's certificates.\n I wrote a powershell script that, using the HPE powershell commandlets, will generate a CSR, acquire the PEM from said CA, and install the certificate to iLO.\n However, it's a bit clunky and requires us to do... Well, something.\n I know there's a bug in 2.72, which most of the DL's are on, but I updated a couple to 2.92, and here I am still scratching my head.\n Automatic certificate enrollment seems to ask for the following information;\n  \nServer URL - As far as I can tell this is the FQDN for our certificate server, and the appropriate /certsrv/mscep_admin/. This is the only URL that it accepts that I've tried.\n \nChallenge password - No problem, retrieved from that URL.\n \n *CA Certificate - Here, I start to scratch my head. The NDES page offers a thumbprint, and no certificate. I cannot find this thumbprint associated with any certificate. I have, however, tried teh CA root certificate. I have also, out of morbid curiosity, tried the PEM certificate I generated via certreq.\n It errors out, and tells me to check basically all the settings and DNS.\n I'm not a CA whizz, so I feel like I've missed something along the way. Someone before my time set this CA server up, and anyone I've asked internally has been perplexed as to why it doesn't work too.\n Does anyone have any thoughts on what I've missed?\n    submitted by    /u/Mitarbeiter09  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153uq2b/hpe_ilo_5_292_automatic_certificate_enrollment/",
+          "publishedOn": "2023-07-19T13:13:45.000Z",
+          "wordCount": 2676,
+          "title": "HPE iLO 5 2.92 Automatic Certificate enrollment (SCEP/NDES",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153ufn2/seamless_lanwlan_switching_browserproxy_sessions/",
+          "author": null,
+          "description": "Hi Sysadmin.\n Hope you can help.\n We have an Sr.exec who insists on using LAN when at his desk (even though we have a banging Meraki Wifi setup that everyone else is more than happy to use) - and uses Wifi when moving to meeting rooms etc.\n His issue is that browser/office365 sessions timeout as he moves from LAN to WLAN or vice versa.\n We use Forcepoint web proxy client on Windows laptops.\n He insists on using Chrome which I'm sure is the cause of his issues as it caches Proxy, DNS and Sockets via chrome://net-internals.\n ​\n He is adamant that he should be able to switch from LAN to WLAN at will and have all sessions continue seamlessly.\n Has anyone managed to implement this? \n Any tips on how? Any products used?\n (am thinking perhaps always-on-VPN that gives the client a single fixed VPN IP regardless of connection type.....)\n ​\n Thanks for any advice!\n ​\n    submitted by    /u/poet666d  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153ufn2/seamless_lanwlan_switching_browserproxy_sessions/",
+          "publishedOn": "2023-07-19T13:02:01.000Z",
+          "wordCount": 2562,
+          "title": "Seamless LAN/WLAN switching - browser/proxy sessions",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153ue13/security_certificate_notices_for/",
+          "author": null,
+          "description": "Is anyone else having certificate issues with Outlook app on windows pc's? We have gotten several certificate warnings on different pc's this morning.\n    submitted by    /u/Better-Freedom-7474  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153ue13/security_certificate_notices_for/",
+          "publishedOn": "2023-07-19T13:00:23.000Z",
+          "wordCount": 2432,
+          "title": "Security certificate notices for Microsoft.office365.com?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153udsr/issues_with_ios_devices_and_azure_adintune/",
+          "author": null,
+          "description": "Starting around 12 hours or so ago, we started seeing a plethora of iOS devices appearing as non-compliant in Azure AD, causing Conditional Access in InTune to fail, and their native mail app would fail to authenticate. Android users are unaffected.\n We cannot find any relevant outages related to Microsoft services. We saw this, but it's not a perfect match for what we're seeing.\n It's still little fuzzy, I'm tired and might not have the details right. A few things seem to fix it.\n - Choose Settings => Mail Accounts => Clark Hill and click on Re-enter Password. This doesn't work for everyone.\n - Oddly enough, some users we can't fix any other way are fixed simply by downloading and logging into Microsoft Authenticator. That's it, you don't need to actually use it for MFA.\n We think the issue might be related to the newest Company portal app version (5.2307.0) failing to pass long registration attributes. Anyone else running into anything like this? I feel like we're actually having two different problems at the same time. This came out of the blue, and I find it hard to believe 'it's just us'.\n Example error from an iOS device attempting to register itself in the Company Portal app.\n 2023-07-19 03:49:12.680 | workplaceJoinSdk | ERROR: [errorCode:-100]-[WorkPlaceJoin getDeviceIdWithRequestParameters:completionBlock:] [Line 4648][2023-07-19 03:49:12 +0000][WorkPlaceJoin] deviceIdWithTenantIdentifier - invalid input parameters! both tenant guid and domain name are invalid! at least one of them needs to be valid!\n    submitted by    /u/archon286  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153udsr/issues_with_ios_devices_and_azure_adintune/",
+          "publishedOn": "2023-07-19T13:00:10.000Z",
+          "wordCount": 2654,
+          "title": "Issues with iOS devices and Azure AD/Intune becoming non-compliant",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153u6q0/switch_ms_nps_server_from_user_namepassword_peap/",
+          "author": null,
+          "description": "Management would like to switch the NPS server authentication. I know we will need x509 certificate on devices. What other issues can we expect? Does anyone have a checklist or a site with the steps for configuring 802.1X authentication for wireless connections?\n    submitted by    /u/TundraIT  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153u6q0/switch_ms_nps_server_from_user_namepassword_peap/",
+          "publishedOn": "2023-07-19T12:51:20.000Z",
+          "wordCount": 2461,
+          "title": "Switch MS NPS server from User Name/Password (PEAP) to device certificate (EAP-TLS) for wireless connections",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153u234/fsx_file_server_informations/",
+          "author": null,
+          "description": "Hello, everyone,\n I need to integrate AWS FSx with a SailPoint tool for monitoring activities on shared folders. The requirements ask me to add the service user to the local group of the FSx, but I can't find it. Does it exist, or is it possible to create?\n Thank you for your attention.\n PR\n    submitted by    /u/palerider0  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153u234/fsx_file_server_informations/",
+          "publishedOn": "2023-07-19T12:45:38.000Z",
+          "wordCount": 2463,
+          "title": "FSX || File server informations",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153u0vx/auto_join_domain_when_connected_to_azure_ad/",
+          "author": null,
+          "description": "Hi folks,\n When I connect a computer to my Azure AD, my computer is in workgroup mode.\n Is it possible to configure an \"auto-join domain\" (AADDS) when my computer is register in the Azure AD ?\n Thx\n    submitted by    /u/MrlyKing  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153u0vx/auto_join_domain_when_connected_to_azure_ad/",
+          "publishedOn": "2023-07-19T12:44:17.000Z",
+          "wordCount": 2449,
+          "title": "Auto join domain when connected to Azure AD",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/153txvm/authenticating_windows_laptop_signin_with_intune/",
+          "author": null,
+          "description": "Hi All! \n I currently am part of a small team of 3 IT people at my company of 400+ staff. My company is currently using Google Workspace as our main identity provider however we also have M365 accounts. We are also using AzureAD for our laptop sign as well as Intune. My IT manager has tasked me with federating our M365 with our Google Workspace accounts which is all fine and well. We have tested this functionality and our staff are succesfully signing into their M365 accounts with Google. However as a result of changing our auth to federation, our test staff are unable to sign into their laptops anymore. \n I have looked online and have not found any concrete evidence on if it is possible for staff to sign into their laptops (that are bound to Intune) with their Google accounts. Does anyone have expierence with this and know if it is possible or not? If it is, please could you share any resources you have on this. I did discover the Google Credential Provider for Windows (GCPW) during my investigation but have so far have had some strange inconsistencies with it where some of our tests users are able to use it and seeminly log into the enviroment but Intune has not behaved or they haven't been able to login at all. \n We may fully migrate our identity provider to AzureAD in the future however at this point in time, our small team of 3 people doesn't have capacity for this. We're a fully remote company so we want to make the process to signing into company machines as smooth as possible whilst also reducing security issues (2FA is mandated for our Google Accounts) by reducing the use of passwords as much as possible. \n Thank you all for your time! I really apprecite it. \n    submitted by    /u/BigKnots  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/153txvm/authenticating_windows_laptop_signin_with_intune/",
+          "publishedOn": "2023-07-19T12:40:38.000Z",
+          "wordCount": 2720,
+          "title": "Authenticating Windows Laptop sign-in with Intune and Google Workspace Federation",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/153thp4/black_screen_desktop/",
           "author": null,
           "description": "We recently did a domain conversion on a company that we purchased and they have some drop in stations that some of our sales guy use. They said they have been working after we did what we needed to do but we did a recent update on our password GP and now when any of the users login it just takes them to a black screen. Anyone have any insight on what could be causing that/potential fix?\n    submitted by    /u/Hoeprah74  \n [link]   [comments]",
@@ -17491,16 +17581,6 @@
           "publishedOn": "2023-06-20T02:56:58.000Z",
           "wordCount": 2344,
           "title": "Good Network Engineering Masters Program",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/14dwnsv/bgp_inbound_traffic_engineering/",
-          "author": null,
-          "description": "Say I have 2 separate geo locations with routers that both have a BGP neighbor (different AS peer), receiving just default route from both.\n I have qty. 4 /24 ARIN-allocated IPv4 blocks. The internal network is all OSPF routed, ultimately with routes connecting the 2 sites.\n I understand I can manipulate outbound traffic patters with OSPF cost internally- just send that traffic to the router that you want it to go out of.\n But how can I manipulate inbound traffic patterns if I want traffic coming to one of the /24 blocks through one circuit and the other 3 /24's through the other circuit? But at the same time, I want to advertise all 4 blocks to both peers. \n I know how to AS prepend- but I don't think applicable here. I can only export one route-map per neighbor on each router I think?\n    submitted by    /u/FuckHinn  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/14dwnsv/bgp_inbound_traffic_engineering/",
-          "publishedOn": "2023-06-20T01:09:50.000Z",
-          "wordCount": 2418,
-          "title": "BGP inbound traffic engineering",
           "imageUrl": null
         }
       ]
