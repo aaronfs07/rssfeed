@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-07-23 datetime="2023-07-23T08:32:29.000Z">2023-07-23</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-07-23 datetime="2023-07-23T08:32:29.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-07-23 datetime="2023-07-23T10:38:48.000Z">2023-07-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-07-23 datetime="2023-07-23T10:38:48.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,40 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/157biqw/azure_ad_custom_email_application_admin_consent/"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure AD - custom email application - admin consent grants - which mailboxes?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/157biqw/azure_ad_custom_email_application_admin_consent/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Every SaaS provider and their dog want to send/receive emails in 365 via OAuth using application permissions since basic authentication has been deprecated. Whether they are fancy/smart enough to publish their own &quot;Azure App&quot; or they want you to register one in your AAD tenant.
+ There are at least 2 ways to access/send emails via:
+  
+GraphAPI - via Mail.[Some action] application permissions
+ Office 365 Exchange Online API - IMAP/SMTP/POP.AccessAsApp (doc here)
+  
+What freaks me out is giving &quot;Admin consent&quot; to these apps. Does this mean they get to use these permissions on ALL of our users? Its the kind of thing that does not let me sleep at night.
+ From RTFMin a bit I&#x27;ve come to the conclusion - please confirm or correct me:
+  
+if application permission is via GraphAPI - yes, the Mail.* permissions are given to the app on ALL mailboxes in the org. You HAVE to use ApplicationAccessPolicy to limit the app&#x27;s access (doc here).
+ 1. if application permission is via 1. Office 365 Exchange Online API - no, there needs to be an explicit Exchange Service Principal and that be assigned mailbox permissions (as implied in the doc here). Tested with the test tool mentioned in this blog (used temporary secret)
+  
+If I got that correct, now my questions is - are there other APIs that mail? How - as an admin - am I supposed to know and VERIFY the level of permissions granting admin consent will provide this app? Am I missing something in my Azure App/SP understanding and it supposed to be obvious?
+ If you there is a better place for such a question than please also do point me there (I see a lot of technical questions downvoted here stating that there are better and more specific subs).
+    submitted by    /u/Hakkensha  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -46298,36 +46332,6 @@ Does Reactivation automatically sends the software version and config to the new
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/14hc1r9/another_windows_patch_management_recommendation/"
-                        open
-                      >
-                        <summary class="article-expander__title">another Windows patch management recommendation post</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/14hc1r9/another_windows_patch_management_recommendation/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>maybe once a year, i take a look at moving away from our current patching solution: WSUS as our single repo to reduce WAN usage; BatchPatch for manually performing prepatch operations (stopping our in-house middleware services) and initiating the download/install/reboot cycle; PRTG for server health monitoring/alerts to on-call, alerts which need to be acknowledged or ignored during the patch window so as not to fire off PagerDuty calls.
- so far, i haven&#x27;t found anything that feels like a worthwhile upgrade/replacement. i think the main things working against my search are these:
-  
-we need to issue a &quot;Stop-Service -Name MiddleWareApp&quot; to ensure connections to the servers are stopped and drained before beginning patch installation
- we need to manually acknowledge all the server alarms that follow (CPU usage &gt; 95%; host not pinging during the post-patch reboot; etc.)
-  
-we&#x27;ve been using PRTG for many years and we do like that it supports fully agent-less monitoring of essentially ALL the things we care about. WMI for Windows, SNMP for Linux/appliances, and so on. but, it feels very, very stuck in the past. like, it&#x27;s 2023 and they still do not support recurring maintenance window scheduling, or rules like &quot;only alert if the alarm threshold has been exceeded for X scan intervals&quot;. maddening.
- the handful of other products i&#x27;ve tried -- PDQdeploy, ManageEngine Patch Manager, Automox, Level dot io -- do not (at the time i tested each one) support pre- or post-patch scripting, e.g., stop the specified service and wait for the process to terminate before beginning patching. naturally, i&#x27;m tired of doing it manually in BatchPatch but i just haven&#x27;t found a solid replacement yet.
- i have about 140 Windows servers (98% VM&#x27;s) that i need to deal with.
- please give me recommendations on products and/or process improvements that you&#x27;ve found to make this task easier. thanks!
-    submitted by    /u/No_Direction4544  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -46335,8 +46339,8 @@ we&#x27;ve been using PRTG for many years and we do like that it supports fully 
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5635834792">
-        <time id="build-timestamp" datetime="2023-07-23T10:10:26.851Z">2023-07-23T10:10:26.851Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5636080349">
+        <time id="build-timestamp" datetime="2023-07-23T11:08:21.207Z">2023-07-23T11:08:21.207Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

@@ -250,6 +250,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/157biqw/azure_ad_custom_email_application_admin_consent/",
+          "author": null,
+          "description": "Every SaaS provider and their dog want to send/receive emails in 365 via OAuth using application permissions since basic authentication has been deprecated. Whether they are fancy/smart enough to publish their own \"Azure App\" or they want you to register one in your AAD tenant.\n There are at least 2 ways to access/send emails via:\n  \nGraphAPI - via Mail.[Some action] application permissions\n Office 365 Exchange Online API - IMAP/SMTP/POP.AccessAsApp (doc here)\n  \nWhat freaks me out is giving \"Admin consent\" to these apps. Does this mean they get to use these permissions on ALL of our users? Its the kind of thing that does not let me sleep at night.\n From RTFMin a bit I've come to the conclusion - please confirm or correct me:\n  \nif application permission is via GraphAPI - yes, the Mail.* permissions are given to the app on ALL mailboxes in the org. You HAVE to use ApplicationAccessPolicy to limit the app's access (doc here).\n 1. if application permission is via 1. Office 365 Exchange Online API - no, there needs to be an explicit Exchange Service Principal and that be assigned mailbox permissions (as implied in the doc here). Tested with the test tool mentioned in this blog (used temporary secret)\n  \nIf I got that correct, now my questions is - are there other APIs that mail? How - as an admin - am I supposed to know and VERIFY the level of permissions granting admin consent will provide this app? Am I missing something in my Azure App/SP understanding and it supposed to be obvious?\n If you there is a better place for such a question than please also do point me there (I see a lot of technical questions downvoted here stating that there are better and more specific subs).\n    submitted by    /u/Hakkensha  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/157biqw/azure_ad_custom_email_application_admin_consent/",
+          "publishedOn": "2023-07-23T10:38:48.000Z",
+          "wordCount": 2754,
+          "title": "Azure AD - custom email application - admin consent grants - which mailboxes?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/15799kr/i_created_a_new_menu_bar_filevault_restart_app/",
           "author": null,
           "description": "Hi, I wanted a simple way to initial a Filevault Restart on Macs so I created FilevaultReboot\n    submitted by    /u/dieskim_skim  \n [link]   [comments]",
@@ -12017,16 +12027,6 @@
           "publishedOn": "2023-06-24T02:24:15.000Z",
           "wordCount": 2514,
           "title": "SSSD with smart card maps and AD",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/sysadmin/comments/14hc1r9/another_windows_patch_management_recommendation/",
-          "author": null,
-          "description": "maybe once a year, i take a look at moving away from our current patching solution: WSUS as our single repo to reduce WAN usage; BatchPatch for manually performing prepatch operations (stopping our in-house middleware services) and initiating the download/install/reboot cycle; PRTG for server health monitoring/alerts to on-call, alerts which need to be acknowledged or ignored during the patch window so as not to fire off PagerDuty calls.\n so far, i haven't found anything that feels like a worthwhile upgrade/replacement. i think the main things working against my search are these:\n  \nwe need to issue a \"Stop-Service -Name MiddleWareApp\" to ensure connections to the servers are stopped and drained before beginning patch installation\n we need to manually acknowledge all the server alarms that follow (CPU usage > 95%; host not pinging during the post-patch reboot; etc.)\n  \nwe've been using PRTG for many years and we do like that it supports fully agent-less monitoring of essentially ALL the things we care about. WMI for Windows, SNMP for Linux/appliances, and so on. but, it feels very, very stuck in the past. like, it's 2023 and they still do not support recurring maintenance window scheduling, or rules like \"only alert if the alarm threshold has been exceeded for X scan intervals\". maddening.\n the handful of other products i've tried -- PDQdeploy, ManageEngine Patch Manager, Automox, Level dot io -- do not (at the time i tested each one) support pre- or post-patch scripting, e.g., stop the specified service and wait for the process to terminate before beginning patching. naturally, i'm tired of doing it manually in BatchPatch but i just haven't found a solid replacement yet.\n i have about 140 Windows servers (98% VM's) that i need to deal with.\n please give me recommendations on products and/or process improvements that you've found to make this task easier. thanks!\n    submitted by    /u/No_Direction4544  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/sysadmin/comments/14hc1r9/another_windows_patch_management_recommendation/",
-          "publishedOn": "2023-06-23T22:39:29.000Z",
-          "wordCount": 2627,
-          "title": "another Windows patch management recommendation post",
           "imageUrl": null
         }
       ]
