@@ -18180,16 +18180,6 @@
           "wordCount": 2435,
           "title": "Velo reboot",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/14hdtdo/azure_p2s_and_s2s_designtshoot_question/",
-          "author": null,
-          "description": "Got brought into a use case where an end user needs to VPN into Azure, and then that azure subscription/resources also Site 2 Site IPSEC VPN's over to another location that has a machine the end user is trying to reach. When I came into this effort to help a buddy, it was setup already using native Azure VPN gateway/etc.... there's also an Azure Firewall but it's not doing much currently. So the main issue is the distant end with the server wants the client to only come across the VPN using one public IP.... here's the fun part... for Azure VPN DHCP Pools it has to be a /29 or greater... so I can't just issue the client one public and call it a day. Additionally, the S2S VPN is using policy based traffic selectors and as such I can't also turn on NAT to turn a private pool into one \"port overloaded\" public IP. I also apparently can't just slap a NAT Gateway in there because when I attach a private subnet to it, and try to use that same subnet for VPN pool addresses, it throws overlap errors.\n ​\n So I guess in summary..... what is the right design strategy for this situation given the technical limitations (oh and they can't change their end until the next change window next week if we need to try anything, so we're just trying to figure out what we can do from our Azure end for now, if anything).\n ​\n Part of me thinks I should just slap a Palo VM on there, do globalprotect and a site 2 site and let the palo take care of NAT without complaining like Azure has been at me, but palo's are like $6k a month in azure, and part of me wonders if I should be using azure's native firewall in the mix in some way to help the situation or if I'm not using other native features correctly enough to get this straight.\n ​\n Any advice is appreciated, sorry for the wall of text, and RIP my favorite 3rd party reddit app soon =[\n    submitted by    /u/syntax24  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/14hdtdo/azure_p2s_and_s2s_designtshoot_question/",
-          "publishedOn": "2023-06-23T23:57:01.000Z",
-          "wordCount": 2714,
-          "title": "Azure P2S and S2S design/tshoot question",
-          "imageUrl": null
         }
       ]
     },
