@@ -22,49 +22,11 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-07-28 datetime="2023-07-28T06:38:43.000Z">2023-07-28</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-07-28 datetime="2023-07-28T06:38:43.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-07-28 datetime="2023-07-28T10:01:50.000Z">2023-07-28</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-07-28 datetime="2023-07-28T10:01:50.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/15bpl5u/triple_public_ip_routing/"
-                        open
-                      >
-                        <summary class="article-expander__title">Triple public ip routing?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15bpl5u/triple_public_ip_routing/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So I took an opportunity to get some basically free server hosting at a friends work place since they’ve got a bunch of unused public IPs. I’ve already bought the hardware, being two servers, and I want some advise on what I’ve chosen to do and if anyone has a different way that might be better for management specifically.
- So first things first, I got a 1u R620 that I plan to install pfsense onto and have it route 3 different incoming wans into 3 different places. One will be a private network with full firewall and all, another will be a similar one but will specifically run a few servers that are ported out through the firewall. And the last one is going to hold my email server (I’ve got rdns and ip configs in place)
- Both of the “public” networks will be routed to a single server, R720 running proxmox(because I like it) and will be internally routed to the vms it needs to go on. My next no open ports network, is going to be my management network I guess, specifically so I can configure the pfsense when needed without exposing the webui of it to any other server. I’m thinking a little Dell optiplex running Ubuntu server and something j can connect to it with. I plan to have some sort of vpn set up so I can vpn in and talk to that management network.
- I know this sounds not the best and messy, hence why I’m here. It’s the best I could come up with in a few nights. Some guidance would be nice to see what other people recommend for this. I’m looking for advise on more of the networking side and how to more efficiently implement this setup.
-    submitted by    /u/Kn0t5  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -76,6 +38,99 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15bt4gr/weekly_open_sharing_thread_july_28_2023/"
+                        open
+                      >
+                        <summary class="article-expander__title">Weekly Open Sharing Thread - July 28, 2023</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15bt4gr/weekly_open_sharing_thread_july_28_2023/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>There is a great deal of user-generated content out there, from scripts and software to tutorials and videos, but we&#x27;ve generally tried to keep that off of the front page due to the volume and as a result of community feedback. There&#x27;s also a great deal of content out there that violates our advertising/promotion rule, from scripts and software to tutorials and videos.
+ We have received a number of requests for exemptions to the rule, and rather than allowing the front page to get consumed, we thought we&#x27;d try a weekly thread that allows for that kind of content. We don&#x27;t have a catchy name for it yet, so please let us know if you have any ideas!
+ In this thread, feel free to show us your pet project, YouTube videos, blog posts, or whatever else you may have and share it with the community. Commercial advertisements, affiliate links, or links that appear to be monetization-grabs will still be removed.
+    submitted by    /u/AutoModerator  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15bszoq/azure_file_sync_and_deduplicated_storage/"
+                        open
+                      >
+                        <summary class="article-expander__title">Azure File Sync and deduplicated storage</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15bszoq/azure_file_sync_and_deduplicated_storage/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all,
+ I have many fileserver with deduplication activated and I&#x27;m considering to activate Azure File Sync and implement cache servers to reduce local footprint. As i understand, Azure File Sync is compatible with data deduplication, but it doesn&#x27;t process files in /system volume information https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/storage/file-sync/file-sync-planning.md
+ So, if i want to implement cache servers, they will have to be minimum the size of the actual &quot;/system volume information&quot;; is this correct?
+ What are the benefit if i can move to Azure File Sync only the stub files?
+ Thanks
+    submitted by    /u/Devidj1980  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15bsr01/today_is_systemadministrator_appreciation_day/"
+                        open
+                      >
+                        <summary class="article-expander__title">Today is Systemadministrator appreciation day! Congrats everyone!</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15bsr01/today_is_systemadministrator_appreciation_day/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I hope your colleagues will finally show some appreciation.
+    submitted by    /u/Hot_Potato_Salad  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15br1b6/in_at_the_deep_end/"
+                        open
+                      >
+                        <summary class="article-expander__title">In at the deep end</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15br1b6/in_at_the_deep_end/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Seen a few posts on here about being dropped in at the deep end so thought I&#x27;d share my experience of this.
+ My first role in IT support, I was part of a 2 person IT department for a small college, just me and the IT Manager. My Manager was very knowledgeable and taught me a lot about the general day to day of doing support.
+ After about 9 months, the Manager went on sick leave, which was fine at first as there had been times where I was on my own for the day to cover annual leave/weekends etc. After a week of him being on sick leave and completely out of communication I was starting to get concerned as even though I was handling my day to day tasks, I was starting to get more questions that I had no idea about, and would usually pass up to the Manager. I had to very quickly learn how to manage all of the IT requirements for the college, updating business critical software, dealing with suppliers, deciding on purchases, managing the IT budget etc. 
+ The Manager never came back from his sick leave, I only saw him 1 more time about a year later when he came in to collect some stuff. I ended up being a 1 person IT department for 9 years and was very comfortable doing that role. The only reason I left is because the college merged with another larger college and I would have had to become a smaller role in a 6 person IT department, which felt like a step backwards.
+    submitted by    /u/pfrary  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -158,6 +213,44 @@
                               <span>The Texas State Police have acquired an Israeli phone-tracking software, as part of Governor Greg Abbott’s controversial border control initiative, Operation Lone Star. The Department of Public Safety obtained the software to aid in tracking individuals crossing the Texas-Mexico border unlawfully, a crisis declared by Abbott in 2021.
  The software, Tangles, is a product of Cobwebs Technologies, an Israeli surveillance company. Tangles offers a multitude of surveillance tools, such as social media tracking, app activity monitoring, facial recognition, and phone tracking. This news surfaces as Abbott’s border control methods are intensifying, amidst reports of migrant mistreatment and a Justice Department lawsuit regarding his use of razor wire along... Read More
     submitted by    /u/Errol_dont_care  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15bpl5u/triple_public_ip_routing/"
+                        open
+                      >
+                        <summary class="article-expander__title">Triple public ip routing?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15bpl5u/triple_public_ip_routing/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So I took an opportunity to get some basically free server hosting at a friends work place since they’ve got a bunch of unused public IPs. I’ve already bought the hardware, being two servers, and I want some advise on what I’ve chosen to do and if anyone has a different way that might be better for management specifically.
+ So first things first, I got a 1u R620 that I plan to install pfsense onto and have it route 3 different incoming wans into 3 different places. One will be a private network with full firewall and all, another will be a similar one but will specifically run a few servers that are ported out through the firewall. And the last one is going to hold my email server (I’ve got rdns and ip configs in place)
+ Both of the “public” networks will be routed to a single server, R720 running proxmox(because I like it) and will be internally routed to the vms it needs to go on. My next no open ports network, is going to be my management network I guess, specifically so I can configure the pfsense when needed without exposing the webui of it to any other server. I’m thinking a little Dell optiplex running Ubuntu server and something j can connect to it with. I plan to have some sort of vpn set up so I can vpn in and talk to that management network.
+ I know this sounds not the best and messy, hence why I’m here. It’s the best I could come up with in a few nights. Some guidance would be nice to see what other people recommend for this. I’m looking for advise on more of the networking side and how to more efficiently implement this setup.
+    submitted by    /u/Kn0t5  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;9
                                   min&hairsp;)</span>
@@ -47255,60 +47348,6 @@ Cynch: Download the Cynch app and get your first tank exchange for just $10 with
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/14lmntv/suggestions_for_48_port_10gb_rj45_switch/"
-                        open
-                      >
-                        <summary class="article-expander__title">Suggestions for ~48 port 10GB RJ45 switch? Preferably with no subscription.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14lmntv/suggestions_for_48_port_10gb_rj45_switch/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>So like the title says, I am going to be in charge of building out some new infrastructure and it will need to be all 10GB.
- I have been having a surprisingly hard time finding good options for switches, they are either too small/consumer/Chinese or cisco + license requirements.
- Is there any middle ground? If not what are some good options? Ideally would like to keep it under $10k but if there is a good reason to spend more I am open to hearing it.
- We will need ~200 10GB rj45 ports eventually but starting off with a single 48 port should be good enough with at least a 40gb uplink, 100gb would be better.
- ​
- EDIT: More details.
- They will be connecting directly to servers via cat6/7 10gb connections. The actual networking setup will be really basic/simple.
- router &gt; 10gb switches via trunk lines &gt; servers
- The servers will only need to access the internet. In fact they will be fire walled and port isolated to ensure that is all they have access to on this network. Vlans will also be used.
- Thanks for any suggestions! Little out of my depth, first time swimming in this end of the pool.
-    submitted by    /u/JennaFisherTX  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/14lm9xa/network_engineer_looking_to_learn_cloud/"
-                        open
-                      >
-                        <summary class="article-expander__title">Network Engineer looking to learn Cloud Engineering - Recommendations?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14lm9xa/network_engineer_looking_to_learn_cloud/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello all.
- I&#x27;m a network engineer looking to get my hands dirty in the cloud space, as it pertains to networking solely (if that&#x27;s even a thing).
- I know absolutely nothing about cloud engineering so I was curious what some of you may recommend would be a good starting point to start learning. Do I go AWS, Azure, some other vendor? I learn best via videos so if there are any good beginner courses someone can recommend, i&#x27;d appreciate it.
- Thank you.
-    submitted by    /u/magic9669  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47316,8 +47355,8 @@ Cynch: Download the Cynch app and get your first tank exchange for just $10 with
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5690272362">
-        <time id="build-timestamp" datetime="2023-07-28T09:10:47.098Z">2023-07-28T09:10:47.098Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5690800536">
+        <time id="build-timestamp" datetime="2023-07-28T10:11:03.762Z">2023-07-28T10:11:03.762Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
