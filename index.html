@@ -22,11 +22,165 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-08-03 datetime="2023-08-03T10:06:01.000Z">2023-08-03</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-08-03 datetime="2023-08-03T10:06:01.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-08-03 datetime="2023-08-03T10:59:05.000Z">2023-08-03</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-08-03 datetime="2023-08-03T10:59:05.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15h0xzo/does_an_igmp_querier_reduce_ttl_of_packets/"
+                        open
+                      >
+                        <summary class="article-expander__title">Does an IGMP querier reduce TTL of packets?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15h0xzo/does_an_igmp_querier_reduce_ttl_of_packets/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hi all,
+ Does anyone know whether IGMP snooping + a querier will reduce a multicast packets TTL?
+ My understanding was that if the packet stays within the same VLAN then the TTL shouldn&#x27;t be reduced but we&#x27;re seeing packets with a TTL of 1 being dropped on the input interface whilst packets with higher TTL are forwarded to the receiver.
+ Cheers
+    submitted by    /u/shivellebits  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gzj76/complete_network_rebuild_advice_needed/"
+                        open
+                      >
+                        <summary class="article-expander__title">Complete Network Rebuild - Advice needed</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gzj76/complete_network_rebuild_advice_needed/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Im lucky to be able to rebuild our entire network / server room as my company is moving in a new modern office building soon. I have a lot of Linux Sysadmin, but only basic / intermediate networking knowledge which I want to improve with this project.
+ I am planning on going with:
+  
+two 42 unit racks for all the servers and network hardware
+ PFSense Firewall Cluster (2x Netgate 1541 Appliance, for FW, IDS, DHCP, DNS),
+ 10GB symmetrical WAN Uplink with a 500/50 backup link)
+ 2x 48P POE+ Switches for the clients
+ 4x 24P 10GB Switches for the Servers
+ One or Two UPS per Rack, still researching options here.
+  
+Does this sound reasonable?
+ We have about 40-50 servers ( ~ 15 bare metal, the rest vm&#x27;s / containers on two proxmox-nodes, windows, Debian, a few Centos) and about 50 clients. We are 31 employees and are growing up to 40 in the next 2 years.
+ What I am unsure about is on how I would go on on planning the segmentation of the new network, whats best practice for a network of this size? Hook up everything physically together, use one big subnet and then use VLAN&#x27;s to segment it? Any Links for good Guides, How-tos, real world examples?
+ Im planning on separate Segments for
+ - Clients
+ - Guests
+ - VOIP
+ - Windows-Servers
+ - Linux Servers
+ - Infrastructure (Switches, FW, UPS, etc.)
+ Does it make sense to run the basic network services like DHCP and DNS on the PFSense Cluster? Of course there will also be DNS Services from our Active-Directory running for the windows-part. Im asking because my predecessor had setup separate BIND-Servers running right now for DNS on the non-windows area, which looks like over complicating things to me?
+ I am also thinking about hiring a network-consultant to work trough the design and setup phase with m e, but am not sure its really needed.
+ I appreciate any input!
+ ​
+    submitted by    /u/tovoro  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gzd06/poe_over_pseudo_cat5e/"
+                        open
+                      >
+                        <summary class="article-expander__title">PoE over pseudo cat5e?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gzd06/poe_over_pseudo_cat5e/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>i have a shit ton of this pseudo cat5e wiring that only has two pair for 10/100 base-T,
+ and i want to wire some VoIP phones to it.
+ these phones require little power and not that much data bandwidth.
+ we know we can send PoE over data wires from gigabit or higher PoE.
+ is it possible to send PoE over these wires,
+ and if so, what dongles do i need to build?
+    submitted by    /u/RepresentativeNeck63  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gxibl/c4351_loopback_problem/"
+                        open
+                      >
+                        <summary class="article-expander__title">C4351 loopback problem</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gxibl/c4351_loopback_problem/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Migrating a Cisco 2821 router to a 4351 router and I found on a strange problem. On the new router in the associated local network, I do not see a loopback IP address that serves as a gateway to one subnet. From the internet the loopback IP address is visible. First I copied the complete configuration from one to other router and when it didn&#x27;t work I stripped the 4351 config on one gi0/0/0 interface and one loopback. It still doesn&#x27;t work.
+ Am I missing something?
+    submitted by    /u/Thin_Tax1971  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gwizw/bgp_2_as_for_the_same_peering/"
+                        open
+                      >
+                        <summary class="article-expander__title">BGP 2 AS for the same peering</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gwizw/bgp_2_as_for_the_same_peering/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello, A customer asked me to configure an eBGP peering between his router and mine. He gaved me two AS number for his side but only one IP. Each AS will annonce differents network. I&#x27;m using a Juniper MX. 
+ Is it possible to have two differents BGP session between the same couple of IP? I think it&#x27;s not possible.
+ I can change the IP on my side only. But on Juniper, I have : set protocol bgp neighbor 1.2.3.4 peer-as 9999 set protocol bgp neighbor 1.2.3.4 local-address 8.8.8.8 Is it possible to establish a second BGP session for the same neighbor from an other IP and other ASN?
+ Thanks all
+    submitted by    /u/Azertvt  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -38,6 +192,104 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15h0u3l/how_do_you_handle_customers_who_expect_a_100/"
+                        open
+                      >
+                        <summary class="article-expander__title">How do you handle customers who expect a 100% guaranteed working solution?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15h0u3l/how_do_you_handle_customers_who_expect_a_100/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>So far the relationship with this customer has always been alright, at least no major complaints except of some things out of our control (Office 364 uptime lol).Last week though we had an issue with one of their users who wasn&#x27;t happy with solution A and wanted to attempt potential solution B. After warning them that solution A is much better suited and more likely to work as expected they refused because of convenience and we went forward with solution B, resulting in about 3 hrs of work that they had to pay for and still no functioning solution for their problem because - as expected - solution B did not work as expected (also because we had no expert for it in out Team, which they were also told about beforehand).
+ So now with every one of their new requests it&#x27;s like walking on eggshells because they will most certainly go off and ask if it&#x27;s gonna work 100% guaranteed, because if not they start saying how we don&#x27;t meet their expectations for a good IT service provider as we need to be able to offer 100% guaranteed working solutions. Meanwhile they are calling like twice a day because of weird issues and full blown incompetence to operate a computer.
+ At this point I&#x27;m not even arguing with them anymore, this and all of their open tickets went straight to my boss to deal with. It feels like someone from craigslist trying to bargain by shitting all over your product (while still depending on it).
+    submitted by    /u/WrathOfThePuffin  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15h0gye/list_something_went_wrong_invalid_argument/"
+                        open
+                      >
+                        <summary class="article-expander__title">List - Something went wrong: Invalid argument: &#x27;headers&#x27; missing application ID header</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15h0gye/list_something_went_wrong_invalid_argument/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We currently have a shared list setup which has multiple users, however our users regularly get this error when opening the list - &quot;Something went wrong: Invalid argument: &#x27;header&#x27;s missing application ID header. &quot;
+ I can confirm that simply opening the list and the error populates, refreshing a few times fixes it. 
+ Also PowerBI doesn&#x27;t gather the data from those files in the lists that can&#x27;t be accessed. Only after a few minutes of retries they show up.
+ Started about 1 week ago.
+ Have you encountered this? Can it be fixed?
+ ​
+    submitted by    /u/psychoticapex  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15h0f2k/is_this_even_devops_and_am_i_underpaid/"
+                        open
+                      >
+                        <summary class="article-expander__title">Is this even DevOps and am I underpaid</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15h0f2k/is_this_even_devops_and_am_i_underpaid/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I work in Croatia for worldwide company by managing Azure subscription and all resources within it for websites and developers. I automate tasks in powershell but dont have permissions to IaaC (that is managed by different team and not for my subscription). I have 2 ppl working in my team under me tgat help me manage it since we have a lot of work and I am paid 1800€ Net/month (that is with all benefits except yearly bonus which was around 2400€ net). My supervisor is very happy with me and commented that they were looking for 1.5 years for someone for this role and that I was worth it. When I complained about 5.07% yearly raise (just official inflation last year was over 13%) he told me that is max he can do for me since I just joined the company 1 year ago and those limits are set by local office. Am I underpaid? If so, I hear a lot of ppl saying that they work for Americans as outside contractors, how much can I expect with 2 years expirience in Azure, 4 in Enterprise Management tools (Intune/ System Center) and 6 in global support (O365, AD and other standard support cases)?
+    submitted by    /u/Etnall  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15h06ht/upgrade_servers_or_migrate_to_cloud/"
+                        open
+                      >
+                        <summary class="article-expander__title">Upgrade servers or migrate to cloud</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15h06ht/upgrade_servers_or_migrate_to_cloud/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>We&#x27;re a 400-user org running a couple of 2012R2 servers which will reach the end of life in October. We dont have any files on the servers but use it more for Federation services, AD, user auth, GPOs, print services, RDP, etc. Exchange is also hybrid but can be moved to cloud. 
+ Currently evaluating if we should upgrade the servers to newer v2022 or migrate the remaining services to the cloud.
+ Servers are a safe bet since its familiar and no change management is required and for this reason I want to stay in the same hybrid setup with upgrading the servers. 
+ However, senior mgmt wants to investigate cloud migration options as well properly.
+ I&#x27;ve put together both options regarding the cost but can&#x27;t seem to provide more details on the risks involved with migrating to the cloud.
+ If we move to the cloud, we&#x27;ll have to deploy Intune to replace GPOs, move print services to AWS/Azure, etc.
+ For me, it&#x27;s more about a mental block for making that change because i know there will be nuanced changes that might become a pain, (or maybe not)
+ Anyone who&#x27;s been in a similar situation situation? what documentation would you provide for the risks associated with both options? and how to frame the recommendation for the management?
+    submitted by    /u/kzbash  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -348,136 +600,6 @@
  Another suggestion was to add bestsysadmin.com as a UPN on the domain, which I&#x27;ve done but I am unsure how the server would then be presented as appserver.bestsysadmin.com.
  Hopefully this makes sense as I feel like I&#x27;m a little out of my depth at the moment with this.
     submitted by    /u/finale781  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Enterprise Networking Design, Support, and Discussion</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gzj76/complete_network_rebuild_advice_needed/"
-                        open
-                      >
-                        <summary class="article-expander__title">Complete Network Rebuild - Advice needed</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gzj76/complete_network_rebuild_advice_needed/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Im lucky to be able to rebuild our entire network / server room as my company is moving in a new modern office building soon. I have a lot of Linux Sysadmin, but only basic / intermediate networking knowledge which I want to improve with this project.
- I am planning on going with:
-  
-two 42 unit racks for all the servers and network hardware
- PFSense Firewall Cluster (2x Netgate 1541 Appliance, for FW, IDS, DHCP, DNS),
- 10GB symmetrical WAN Uplink with a 500/50 backup link)
- 2x 48P POE+ Switches for the clients
- 4x 24P 10GB Switches for the Servers
- One or Two UPS per Rack, still researching options here.
-  
-Does this sound reasonable?
- We have about 40-50 servers ( ~ 15 bare metal, the rest vm&#x27;s / containers on two proxmox-nodes, windows, Debian, a few Centos) and about 50 clients. We are 31 employees and are growing up to 40 in the next 2 years.
- What I am unsure about is on how I would go on on planning the segmentation of the new network, whats best practice for a network of this size? Hook up everything physically together, use one big subnet and then use VLAN&#x27;s to segment it? Any Links for good Guides, How-tos, real world examples?
- Im planning on separate Segments for
- - Clients
- - Guests
- - VOIP
- - Windows-Servers
- - Linux Servers
- - Infrastructure (Switches, FW, UPS, etc.)
- Does it make sense to run the basic network services like DHCP and DNS on the PFSense Cluster? Of course there will also be DNS Services from our Active-Directory running for the windows-part. Im asking because my predecessor had setup separate BIND-Servers running right now for DNS on the non-windows area, which looks like over complicating things to me?
- I am also thinking about hiring a network-consultant to work trough the design and setup phase with m e, but am not sure its really needed.
- I appreciate any input!
- ​
-    submitted by    /u/tovoro  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gzd06/poe_over_pseudo_cat5e/"
-                        open
-                      >
-                        <summary class="article-expander__title">PoE over pseudo cat5e?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gzd06/poe_over_pseudo_cat5e/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>i have a shit ton of this pseudo cat5e wiring that only has two pair for 10/100 base-T,
- and i want to wire some VoIP phones to it.
- these phones require little power and not that much data bandwidth.
- we know we can send PoE over data wires from gigabit or higher PoE.
- is it possible to send PoE over these wires,
- and if so, what dongles do i need to build?
-    submitted by    /u/RepresentativeNeck63  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gxibl/c4351_loopback_problem/"
-                        open
-                      >
-                        <summary class="article-expander__title">C4351 loopback problem</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gxibl/c4351_loopback_problem/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Migrating a Cisco 2821 router to a 4351 router and I found on a strange problem. On the new router in the associated local network, I do not see a loopback IP address that serves as a gateway to one subnet. From the internet the loopback IP address is visible. First I copied the complete configuration from one to other router and when it didn&#x27;t work I stripped the 4351 config on one gi0/0/0 interface and one loopback. It still doesn&#x27;t work.
- Am I missing something?
-    submitted by    /u/Thin_Tax1971  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/15gwizw/bgp_2_as_for_the_same_peering/"
-                        open
-                      >
-                        <summary class="article-expander__title">BGP 2 AS for the same peering</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15gwizw/bgp_2_as_for_the_same_peering/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hello, A customer asked me to configure an eBGP peering between his router and mine. He gaved me two AS number for his side but only one IP. Each AS will annonce differents network. I&#x27;m using a Juniper MX. 
- Is it possible to have two differents BGP session between the same couple of IP? I think it&#x27;s not possible.
- I can change the IP on my side only. But on Juniper, I have : set protocol bgp neighbor 1.2.3.4 peer-as 9999 set protocol bgp neighbor 1.2.3.4 local-address 8.8.8.8 Is it possible to establish a second BGP session for the same neighbor from an other IP and other ASN?
- Thanks all
-    submitted by    /u/Azertvt  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;9
                                   min&hairsp;)</span>
@@ -47367,53 +47489,6 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/14qt42g/how_do_you_handle_account_access_for_network/"
-                        open
-                      >
-                        <summary class="article-expander__title">How do you handle account access for network automation?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14qt42g/how_do_you_handle_account_access_for_network/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>When it comes to network automation, how do you handle what kinds of accounts run a given but if automation?
- For example, say I want to use some automation to push a config update with netmiko to 10 devices. I could use my individual credentials to runn that and connect to the devices. However, what if I want to run some other automation like grabbing config backups or collecting the status of various network devices at regular intervals?
- There comes this debate of always using individual credentials vs having a non-user/master account. A master account can be very useful, but I get the feeling some people get turned off by this and view it as a security risk.
- How do you navigate this in your automation? Is every bit if automation run individually by each employee, or do you have non-user specific accounts that are used to connect and authenticate to things? (If the later, how is security handled)
-    submitted by    /u/Prophet_60091_  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/14qsqei/problem_with_routing/"
-                        open
-                      >
-                        <summary class="article-expander__title">Problem with routing</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/14qsqei/problem_with_routing/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hi
- eno1 is the WAN and also the default gateway for my ubuntu server. Wireguard clients could connect to eno1&#x27;s public ip, no problems there. enx001e101f0000 is an LTE modem, all wireguard client should use this as their default gateway. I&#x27;ve added the following to my wg0.conf PostUp &#x3D; iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o enx001e101f0000 -j MASQUERADE PostDown &#x3D; iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o enx001e101f0000 -j MASQUERADE My clients can ping the LTE modems ip, but can&#x27;t ping 8.8.8.8. Error: No route to host. I think that ubuntu is somehow still trying to push traffic out of eno0.
- ip a l output:
- 1: lo:  mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
- link/loopback 00:00:00:00…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -47421,8 +47496,8 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5749422612">
-        <time id="build-timestamp" datetime="2023-08-03T10:11:10.038Z">2023-08-03T10:11:10.038Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5749966695">
+        <time id="build-timestamp" datetime="2023-08-03T11:08:54.303Z">2023-08-03T11:08:54.303Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
