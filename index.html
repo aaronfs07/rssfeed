@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-08-09 datetime="2023-08-09T10:52:55.000Z">2023-08-09</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-08-09 datetime="2023-08-09T10:52:55.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-08-09 datetime="2023-08-09T11:50:40.000Z">2023-08-09</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-08-09 datetime="2023-08-09T11:50:40.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -35,9 +35,83 @@
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15md2u6/checking_audited_asr_rules/"
+                        open
+                      >
+                        <summary class="article-expander__title">Checking Audited ASR rules</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15md2u6/checking_audited_asr_rules/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hey All,
+ I wrote a KQL query to check for ASR Rules being hit that are set to audited mode. Now if ido this KQL query in Advanced hunting I get no results. However i find it weird that with 610 devices there are no hits. Also i created a powershell today that should trigger a wmi event subscription but also no hit so far in Defender. How long does that take to sync? What am i doing wrong?
+ Below is the code.
+ DeviceEvents | where ActionType in ( &#x27;AsrExecutableEmailContentAudited&#x27;, &#x27;AsrExecutableOfficeContentAudited&#x27;, &#x27;AsrAdobeReaderChildProcessAudited&#x27;, &#x27;AsrObfuscatedScriptAudited&#x27;, &#x27;AsrOfficeChildProcessAudited&#x27;, &#x27;AsrOfficeMacroWin32ApiCallsAudited&#x27;, &#x27;AsrOfficeProcessInjectionAudited&#x27;, &#x27;AsrPsexecWmiChildProcessAudited&#x27;, &#x27;AsrUntrustedExecutableAudited&#x27;, &#x27;AsrRansomwareAudited&#x27;, &#x27;AsrUntrustedUsbProcessAudited&#x27;, &#x27;AsrVulnerableSignedDriverAudited&#x27;, &#x27;AsrScriptExecutableDownloadAudited&#x27;, &#x27;AsrPersistenceThroughWmiAudited&#x27;, &#x27;AsrOfficeCommAppChildProcessAudited&#x27; ) | project Timestamp, DeviceName, ActionType, FileName, FolderPath, AccountName, AccountDomain, InitiatingProcessFileName, InitiatingProcessFolderPath, InitiatingProcessCommandLine | order by Timestamp desc 
+ ​
+ Powershell used on a test device under normal user no admin.
+ ## Create a hit for WMI Event Subscription Create a test WMI event subscription $Query &#x3D; &quot;SELECT * FROM __InstanceModificationEvent WITHIN 5 WHERE TargetInstance ISA &#x27;Win32_LogicalDisk&#x27; AND TargetInstance.DeviceID &#x3D; &#x27;C:&#x27;&quot; Register-WmiEvent -Query $Query -SourceIdentifier &quot;TestWMIEvent&quot; -Action { Write-Host &quot;Test WMI event triggered&quot; } 
+ Unregister-Event -SourceIdentifier &quot;TestWMIEvent&quot;
+ How do you guys test this?
+ ​
+ Small notice: If i change one of the asr rules to Blocked (we do have some rules also set to blocked) I DO get hits.
+    submitted by    /u/Koosjuh  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15md0q1/translation_options_for_teamszoom/"
+                        open
+                      >
+                        <summary class="article-expander__title">Translation options for Teams/Zoom</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15md0q1/translation_options_for_teamszoom/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Looking into options for captioning and/or live audio translation AI solutions for meetings. I know Teams has some new Azure Cognitive Services translation features and I am exploring them. Leadership wants other options to compare. All the third party options I find don&#x27;t have any video showing the services functioning which makes me suspect they don&#x27;t function.
+ Does anyone have any experience, good or bad, with third party translation options for Teams/Zoom?
+    submitted by    /u/GroundbreakingCrow80  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15mcrno/multi_factor_unlock_using_windows_hello/"
+                        open
+                      >
+                        <summary class="article-expander__title">Multi factor Unlock using WIndows Hello</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15mcrno/multi_factor_unlock_using_windows_hello/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>I’m testing Windows Hello for Business for my company as a 2fa solution but I ran into some road blocks. I set in GP the dynamic lock factors being trusted network double authentication (facial and pin). If the user chooses username and password as first sign on it doesn’t look for the second factor. It just lets you in and does care if I’m on or off network and never ask for pin. What am I missing?
+    submitted by    /u/stlb1090  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -340,6 +414,37 @@
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Lawrence Systems</button>
+                  <a class="source-heading__link" href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.youtube.com/watch?v&#x3D;ozukouDBo78"
+                        open
+                      >
+                        <summary class="article-expander__title">The Homelab Show Episode 106: How To Audit Your Homelab</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.youtube.com/watch?v&#x3D;ozukouDBo78">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>No content preview</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >Enterprise Networking Design, Support, and Discussion</button>
                   <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
                 </h3>
@@ -417,7 +522,7 @@
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -2316,7 +2421,7 @@ Thanks in advance for your help!
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -4268,7 +4373,7 @@ I&#x27;m new (noob to be honest) to DC networking so I might have wrong assumpti
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -5067,7 +5172,7 @@ Microsoft has once again come under blistering criticism for the security practi
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -5967,7 +6072,7 @@ However, I don&#x27;t have a way of being able to get power from the wall using 
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -8000,7 +8105,7 @@ Does this sound reasonable?
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -9329,7 +9434,7 @@ Worm propagates
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -11291,7 +11396,7 @@ This advisory provides details on the Common Vulnerabilities and Exposures (CVEs
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -13130,7 +13235,7 @@ Ivanti released a patch for CVE-2023-35078 on July 23, 2023. Ivanti later determ
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -14824,7 +14929,7 @@ Test and monitor network connections.
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -16127,7 +16232,7 @@ Are there knobs on the server to request multicast feeds, aka send IGMP joins. I
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -17258,7 +17363,7 @@ Ability to deploy hundreds of simulated devices (so VM-based simulators like GNS
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -18611,7 +18716,7 @@ We do have fortigates - I&#x27;m wondering if we should start looking at that li
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -20517,7 +20622,7 @@ This vnet will only be used for testing
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -23074,7 +23179,7 @@ https://www.amazon.com/gp/product/180323461X/ref&#x3D;ox_sc_saved_image_2?smid&#
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -24704,7 +24809,7 @@ Any performance impact will vary depending on workload and system configuration.
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -25906,7 +26011,7 @@ This gives me a baseline and always sets a timestamp of when it was fixed.
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -26676,7 +26781,7 @@ If I got that correct, now my questions is - are there other APIs that mail? How
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -28176,7 +28281,7 @@ Another question. Why can&#x27;t I ping the loopback of R3 even though it alread
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -29330,7 +29435,7 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -31279,7 +31384,7 @@ The victim organization…</span>
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -33956,7 +34061,7 @@ Service Provider: Cisco still leading?
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -35192,7 +35297,7 @@ Genucel: &quot;Extra 10% Off Most Popular Package featuring the Dark Spot Correc
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -36873,7 +36978,7 @@ Balance of Nature: Get a FREE Fruit &amp; Veggies Travel Set plus $25 off your f
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -38250,7 +38355,7 @@ two branch DCs: DC1 and DC3
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -39022,7 +39127,7 @@ NetLogon RPC becomes enforcement phase. Link and Link.
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -41348,7 +41453,7 @@ The only things that have been defined from the IPsec framework from this comman
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -42659,7 +42764,7 @@ Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription wit
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -44492,7 +44597,7 @@ Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ 
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -46557,7 +46662,7 @@ Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription wit
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
                   >Sysadmin</button>
-                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin?rdt&#x3D;54533">Open</a>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
                     <article>
@@ -46610,8 +46715,8 @@ Black Rifle Coffee: Get 10% off your first order or Coffee Club subscription wit
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5808266188">
-        <time id="build-timestamp" datetime="2023-08-09T11:09:24.346Z">2023-08-09T11:09:24.346Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5808949533">
+        <time id="build-timestamp" datetime="2023-08-09T12:22:51.984Z">2023-08-09T12:22:51.984Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

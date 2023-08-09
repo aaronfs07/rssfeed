@@ -2,10 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-08-09T11:09:24.508Z</updated>
+    <updated>2023-08-09T12:22:52.097Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Checking Audited ASR rules]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15md2u6/checking_audited_asr_rules/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15md2u6/checking_audited_asr_rules/"/>
+        <updated>2023-08-09T11:50:40.000Z</updated>
+        <summary type="html"><![CDATA[Hey All,
+ I wrote a KQL query to check for ASR Rules being hit that are set to audited mode. Now if ido this KQL query in Advanced hunting I get no results. However i find it weird that with 610 devices there are no hits. Also i created a powershell today that should trigger a wmi event subscription but also no hit so far in Defender. How long does that take to sync? What am i doing wrong?
+ Below is the code.
+ DeviceEvents | where ActionType in ( 'AsrExecutableEmailContentAudited', 'AsrExecutableOfficeContentAudited', 'AsrAdobeReaderChildProcessAudited', 'AsrObfuscatedScriptAudited', 'AsrOfficeChildProcessAudited', 'AsrOfficeMacroWin32ApiCallsAudited', 'AsrOfficeProcessInjectionAudited', 'AsrPsexecWmiChildProcessAudited', 'AsrUntrustedExecutableAudited', 'AsrRansomwareAudited', 'AsrUntrustedUsbProcessAudited', 'AsrVulnerableSignedDriverAudited', 'AsrScriptExecutableDownloadAudited', 'AsrPersistenceThroughWmiAudited', 'AsrOfficeCommAppChildProcessAudited' ) | project Timestamp, DeviceName, ActionType, FileName, FolderPath, AccountName, AccountDomain, InitiatingProcessFileName, InitiatingProcessFolderPath, InitiatingProcessCommandLine | order by Timestamp desc 
+ ​
+ Powershell used on a test device under normal user no admin.
+ ## Create a hit for WMI Event Subscription Create a test WMI event subscription $Query = "SELECT * FROM __InstanceModificationEvent WITHIN 5 WHERE TargetInstance ISA 'Win32_LogicalDisk' AND TargetInstance.DeviceID = 'C:'" Register-WmiEvent -Query $Query -SourceIdentifier "TestWMIEvent" -Action { Write-Host "Test WMI event triggered" } 
+ Unregister-Event -SourceIdentifier "TestWMIEvent"
+ How do you guys test this?
+ ​
+ Small notice: If i change one of the asr rules to Blocked (we do have some rules also set to blocked) I DO get hits.
+    submitted by    /u/Koosjuh  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Translation options for Teams/Zoom]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15md0q1/translation_options_for_teamszoom/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15md0q1/translation_options_for_teamszoom/"/>
+        <updated>2023-08-09T11:47:58.000Z</updated>
+        <summary type="html"><![CDATA[Looking into options for captioning and/or live audio translation AI solutions for meetings. I know Teams has some new Azure Cognitive Services translation features and I am exploring them. Leadership wants other options to compare. All the third party options I find don't have any video showing the services functioning which makes me suspect they don't function.
+ Does anyone have any experience, good or bad, with third party translation options for Teams/Zoom?
+    submitted by    /u/GroundbreakingCrow80  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Multi factor Unlock using WIndows Hello]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15mcrno/multi_factor_unlock_using_windows_hello/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15mcrno/multi_factor_unlock_using_windows_hello/"/>
+        <updated>2023-08-09T11:35:32.000Z</updated>
+        <summary type="html"><![CDATA[I’m testing Windows Hello for Business for my company as a 2fa solution but I ran into some road blocks. I set in GP the dynamic lock factors being trusted network double authentication (facial and pin). If the user chooses username and password as first sign on it doesn’t look for the second factor. It just lets you in and does care if I’m on or off network and never ask for pin. What am I missing?
+    submitted by    /u/stlb1090  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Homelab Show Episode 106: How To Audit Your Homelab]]></title>
+        <id>https://www.youtube.com/watch?v=ozukouDBo78</id>
+        <link href="https://www.youtube.com/watch?v=ozukouDBo78"/>
+        <updated>2023-08-09T11:19:44.000Z</updated>
+        <author>
+            <name>Lawrence Systems</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Windows AutoPilot USB automation]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/15mbw69/windows_autopilot_usb_automation/</id>

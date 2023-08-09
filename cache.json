@@ -106,6 +106,16 @@
       "siteUrl": "https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ",
       "articles": [
         {
+          "id": "https://www.youtube.com/watch?v=ozukouDBo78",
+          "author": null,
+          "description": "",
+          "link": "https://www.youtube.com/watch?v=ozukouDBo78",
+          "publishedOn": "2023-08-09T11:19:44.000Z",
+          "wordCount": null,
+          "title": "The Homelab Show Episode 106: How To Audit Your Homelab",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.youtube.com/watch?v=KKU6eJN4bVU",
           "author": null,
           "description": "",
@@ -327,8 +337,38 @@
     {
       "title": "Sysadmin",
       "feedUrl": "https://www.reddit.com/r/sysadmin.rss",
-      "siteUrl": "https://www.reddit.com/r/sysadmin?rdt=54533",
+      "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/15md2u6/checking_audited_asr_rules/",
+          "author": null,
+          "description": "Hey All,\n I wrote a KQL query to check for ASR Rules being hit that are set to audited mode. Now if ido this KQL query in Advanced hunting I get no results. However i find it weird that with 610 devices there are no hits. Also i created a powershell today that should trigger a wmi event subscription but also no hit so far in Defender. How long does that take to sync? What am i doing wrong?\n Below is the code.\n DeviceEvents | where ActionType in ( 'AsrExecutableEmailContentAudited', 'AsrExecutableOfficeContentAudited', 'AsrAdobeReaderChildProcessAudited', 'AsrObfuscatedScriptAudited', 'AsrOfficeChildProcessAudited', 'AsrOfficeMacroWin32ApiCallsAudited', 'AsrOfficeProcessInjectionAudited', 'AsrPsexecWmiChildProcessAudited', 'AsrUntrustedExecutableAudited', 'AsrRansomwareAudited', 'AsrUntrustedUsbProcessAudited', 'AsrVulnerableSignedDriverAudited', 'AsrScriptExecutableDownloadAudited', 'AsrPersistenceThroughWmiAudited', 'AsrOfficeCommAppChildProcessAudited' ) | project Timestamp, DeviceName, ActionType, FileName, FolderPath, AccountName, AccountDomain, InitiatingProcessFileName, InitiatingProcessFolderPath, InitiatingProcessCommandLine | order by Timestamp desc \n ​\n Powershell used on a test device under normal user no admin.\n ## Create a hit for WMI Event Subscription Create a test WMI event subscription $Query = \"SELECT * FROM __InstanceModificationEvent WITHIN 5 WHERE TargetInstance ISA 'Win32_LogicalDisk' AND TargetInstance.DeviceID = 'C:'\" Register-WmiEvent -Query $Query -SourceIdentifier \"TestWMIEvent\" -Action { Write-Host \"Test WMI event triggered\" } \n Unregister-Event -SourceIdentifier \"TestWMIEvent\"\n How do you guys test this?\n ​\n Small notice: If i change one of the asr rules to Blocked (we do have some rules also set to blocked) I DO get hits.\n    submitted by    /u/Koosjuh  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/15md2u6/checking_audited_asr_rules/",
+          "publishedOn": "2023-08-09T11:50:40.000Z",
+          "wordCount": 2684,
+          "title": "Checking Audited ASR rules",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/15md0q1/translation_options_for_teamszoom/",
+          "author": null,
+          "description": "Looking into options for captioning and/or live audio translation AI solutions for meetings. I know Teams has some new Azure Cognitive Services translation features and I am exploring them. Leadership wants other options to compare. All the third party options I find don't have any video showing the services functioning which makes me suspect they don't function.\n Does anyone have any experience, good or bad, with third party translation options for Teams/Zoom?\n    submitted by    /u/GroundbreakingCrow80  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/15md0q1/translation_options_for_teamszoom/",
+          "publishedOn": "2023-08-09T11:47:58.000Z",
+          "wordCount": 2546,
+          "title": "Translation options for Teams/Zoom",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/sysadmin/comments/15mcrno/multi_factor_unlock_using_windows_hello/",
+          "author": null,
+          "description": "I’m testing Windows Hello for Business for my company as a 2fa solution but I ran into some road blocks. I set in GP the dynamic lock factors being trusted network double authentication (facial and pin). If the user chooses username and password as first sign on it doesn’t look for the second factor. It just lets you in and does care if I’m on or off network and never ask for pin. What am I missing?\n    submitted by    /u/stlb1090  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/15mcrno/multi_factor_unlock_using_windows_hello/",
+          "publishedOn": "2023-08-09T11:35:32.000Z",
+          "wordCount": 2553,
+          "title": "Multi factor Unlock using WIndows Hello",
+          "imageUrl": null
+        },
         {
           "id": "https://www.reddit.com/r/sysadmin/comments/15mbw69/windows_autopilot_usb_automation/",
           "author": null,
