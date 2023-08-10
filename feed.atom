@@ -2,10 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-08-10T10:12:09.036Z</updated>
+    <updated>2023-08-10T11:09:25.461Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Server 2019 LACP Configuration]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15n96uq/server_2019_lacp_configuration/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15n96uq/server_2019_lacp_configuration/"/>
+        <updated>2023-08-10T10:57:47.000Z</updated>
+        <summary type="html"><![CDATA[Dear All,
+ ​
+ We have Windows Server 2019 with 4 NIC x 1 Gb, Configured the teaming already, Teaming Mode: Switch Independent, Load Balancing: Dynamic. Here the issue i am only able to see 1Gb as utilization instead of 4Gb in the server the teaming NIC is always bottle neck in the server.
+ Do we need to configure LACP for the 4 NIC's in order to utilize the 4 Gb speed or any advice on this ?
+    submitted by    /u/dharani077  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RRAS Servers Redundancy]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15n9317/rras_servers_redundancy/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15n9317/rras_servers_redundancy/"/>
+        <updated>2023-08-10T10:52:18.000Z</updated>
+        <summary type="html"><![CDATA[Hello, we have two RRAS servers, both have dual interfaces. One NIC in the DMZ and another in the internal segment. Both servers have the default gateway on the DMZ nic and a route added to the LAN Nic to point back to our internal network. The DMZ interfaces are using MS NBL and share an IP. Our static route from the outside points to this NLB IP. My questions is on the internal subnet that the clients recieve. Both RRAS servers have a static IP Pool in the same subnet. However, the route internally can either point to RRAS LAN nic on a single server. 
+ Public IP-->Static NAT-->DMZ(NLB)
+ RRAS-1--(LAN)-->10.4.4.10 --Client route 192.168.1.0/24 10.4.40.10
+ RRAS-2--(LAN)-->10.4.4.11-- Client Route 192.168.1.0/24 10.4.40.11 
+ ​
+ Otherwise, we can just give each RRAS server their own client subnets and this works fine but each time the client disconnects they will get a new IP. 
+ Public IP-->Static NAT-->DMZ(NLB) 
+ RRAS-1--(LAN)--10.4.4.10 --Client route 192.168.1.0/24 10.4.40.10
+ RRAS-2--(LAN)--10.4.4.11-- Client Route 192.168.2.0/24 10.4.40.11
+ ​
+    submitted by    /u/Dunn-IT-JR  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RDS 2022 - Fully disable universal print]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15n905o/rds_2022_fully_disable_universal_print/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15n905o/rds_2022_fully_disable_universal_print/"/>
+        <updated>2023-08-10T10:48:06.000Z</updated>
+        <summary type="html"><![CDATA[I am setting up a couple of new RDS servers, I have noticed that all users, even admin get the modern authentication pop up when opening settings > printers.
+ Previously it errored (saying the application was disabled) I enabled the application in Azure so users can sign in, just to stop the error.
+ But now it wants all users to sign in.
+ How do I turn it off completely, I don't want it, they run their own print server with printers deployed via GPO the good old fashioned way.
+ TL:DR How do I completely bin off universal printing from RDS servers.
+    submitted by    /u/elliottmarter  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Become Crazy with DMARC and SPF for a newsletter]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15n8wkb/become_crazy_with_dmarc_and_spf_for_a_newsletter/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15n8wkb/become_crazy_with_dmarc_and_spf_for_a_newsletter/"/>
+        <updated>2023-08-10T10:43:03.000Z</updated>
+        <summary type="html"><![CDATA[Good Morning guys, i've to setting up a newsletter with mailerlite, i've autenticated my domain with the internal tool and i've added all records for Dkim signature and added to my spf the sender of mailer lite, then i've tried mailgenius and mailer-tester and learndmarc.com for getting test and i've always the problem that my spf is not aligned 
+ this the error from learndmarco.com
+ SPF domain does not align with RFC5322.From domain (mlsend2.com != example.net). Alignment mode: relaxed. 
+ this is my dmarc 
+ _dmarc.example.net: "v=DMARC1; p=reject; rua=mailto:reportdmarc@example.net; ruf=mailto:reportdmarc@example.net; sp=none; fo=1; adkim=r; aspf=r 
+ this is my spf 
+ "v=spf1 include:_spf.mlsend.com include:spf.protection.outlook.com -all" 
+ what i've to do for pass the SPF check in dmarc and dmarc alignment?
+    submitted by    /u/Jirobaye  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Examine the Availability Status of Teams Users in Large Scale Using MS Graph PowerShell!]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15n8pfr/examine_the_availability_status_of_teams_users_in/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15n8pfr/examine_the_availability_status_of_teams_users_in/"/>
+        <updated>2023-08-10T10:33:00.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/Shanchana30  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Unable to copy/paste between RDP and local machine]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/15n86wa/unable_to_copypaste_between_rdp_and_local_machine/</id>
@@ -27874,43 +27956,6 @@ Nugenix: Get a complimentary bottle of Nugenix Total T when you text ‘WIRE’ 
  When requesting for 54.240.62.30 (IP belonging to Amazon SES), my Bind recursor responds with SERVFAIL and logs the lines at the end of the post. Otherwise the resolver is working fine, that's why I assume it's more a thing with Amazon - but resolvers like Cloudflare or Google DNS are resolving fine. So I'm a bit irritated if it's a problem with my Bind or with Amazon. Has anyone else seen problems like this?
  My Bind is running in Germany, near Düsseldorf ("DUS"). 
   named[2024497]: chase DS servers resolving '62.240.54.in-addr.arpa/DS/IN': 2001:502:f3ff::1#53 named[2024497]: REFUSED unexpected RCODE resolving '240.54.in-addr.arpa/NS/IN': 2001:502:f3ff::1#53 named[2024497]: REFUSED unexpected RCO…]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Anyone want some free firewall ACL consolidation?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/14x6lbh/anyone_want_some_free_firewall_acl_consolidation/</id>
-        <link href="https://www.reddit.com/r/networking/comments/14x6lbh/anyone_want_some_free_firewall_acl_consolidation/"/>
-        <updated>2023-07-11T23:03:59.000Z</updated>
-        <summary type="html"><![CDATA[I've made a tool that consolidates 5 tuple firewall ACL's as a side-project. Is there anyone with a large, disgusting, unkempt ruleset that wants it consolidating? I've created test data for unit testing, but looking to try it out in the wild.
-    submitted by    /u/Polysticks  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How do you handle tough days?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/14x5vt9/how_do_you_handle_tough_days/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/14x5vt9/how_do_you_handle_tough_days/"/>
-        <updated>2023-07-11T22:35:53.000Z</updated>
-        <summary type="html"><![CDATA[Or just tough weeks. We’ve all had em. We’re at the top of our game some days and we figure everything out. Other days, can’t seem to get a resolution on anything. Just off your game. When a resolution is found, you’re like “dammit, why didn’t I try that”.
- I try to be the best I can be every day, but rough ones just totally demoralize me.
-    submitted by    /u/konky741  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Thoughts on Engenius?]]></title>
-        <id>https://www.reddit.com/r/networking/comments/14x5pxu/thoughts_on_engenius/</id>
-        <link href="https://www.reddit.com/r/networking/comments/14x5pxu/thoughts_on_engenius/"/>
-        <updated>2023-07-11T22:29:17.000Z</updated>
-        <summary type="html"><![CDATA[Current Meraki user in an enterprise setting. A vendor I'm working with in recommending Engenious APs to save us some money on equipment for a new network install. Anyone with Meraki ever work with Engenius and could give their thoughts on the two?
-    submitted by    /u/spurs126  
- [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
