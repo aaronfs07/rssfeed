@@ -2,10 +2,105 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-08-18T12:19:27.536Z</updated>
+    <updated>2023-08-18T13:12:27.677Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[IT Manager here, am I just being unrealistic of my expectations of IT Technicians?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15uk4ya/it_manager_here_am_i_just_being_unrealistic_of_my/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15uk4ya/it_manager_here_am_i_just_being_unrealistic_of_my/"/>
+        <updated>2023-08-18T13:08:11.000Z</updated>
+        <summary type="html"><![CDATA[I have been in the PC industry for over 20 years at this point. I spent a good 12 years or so in the PC repair space. As a result, I have a strong knowledge of hardware, the Windows Operating system, repairing software and so on.
+ When our company started venturing into the B2B/MSP market, most of us "graduated" from the PC repair space. As a result, almost all the techs I worked with had all of the same skills as I did.
+ Within the past few years, we have pretty much lost all of those employees (they all moved on to bigger and better positions).
+ My question is this... Is it an unrealistic expectation that an IT tech of today would have the skills to roam through a BIOS and understand things like AHCI, UEFI, CSM, etc... Understanding when a CMOS battery has failed and the symptoms of that... or just build a modern day PC correctly (which is easier now than it's ever been). I constantly keep encounter technicians that do possess these skills.
+ I was thinking that it's possible that my days in repair are giving me a much greater level of understanding vs someone who maybe never did but was in IT. I guess I just expect that if you are in this industry, you would understand this type of stuff.
+ Am I just expecting too much?
+    submitted by    /u/g2tegsown  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Question about resetting DSRM password for main DC]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15uk0cn/question_about_resetting_dsrm_password_for_main_dc/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15uk0cn/question_about_resetting_dsrm_password_for_main_dc/"/>
+        <updated>2023-08-18T13:02:46.000Z</updated>
+        <summary type="html"><![CDATA[We are doing Veeam restores to test our backups and I found out that we do not know our DSRM password for our main DC. I am familiar with the process of changing it. I need to update it in our production environment in case we needed to resort to restoring the domain.
+ ​
+ Is it safe to reset this password using ntdsutil on a production DC?
+    submitted by    /u/Weak-Peak1015  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cannot find cause of blocked network traffic]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15ujn09/cannot_find_cause_of_blocked_network_traffic/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15ujn09/cannot_find_cause_of_blocked_network_traffic/"/>
+        <updated>2023-08-18T12:46:42.000Z</updated>
+        <summary type="html"><![CDATA[Note: I’m not looking for a solution; I’m looking for ideas of what to check.
+ I work K12 IT, and I have a FOSS classroom monitoring program called Veyon installed in our Windows computer lab. It worked great on our old machines, but I’m getting zero response from ANY of the new machines I installed this summer. To complicate matters, I moved from a Meraki MX firewall to a FortiGate over the summer, so it could be a config issue there.
+ Here’s what I checked so far:
+  
+FortiGate firewall policies: logs show ping traffic from Staff VLAN to Lab VLAN was “accept”ed.
+ All switches in that chain* have the Lab VLAN allowed on the trunk ports
+ Added Any/Any/Any rule in Windows firewall on the clients
+ There’s no Wifi involved so that is not a factor.
+  
+*chain = Firewall to Core switch to IDF switch to access switch to Lab clients
+ FACTS
+  
+I cannot ping from Staff VLAN to Windows clients on the Lab VLAN. 
+ I cannot ping from Wifi VLAN to ChromeOS clients on the Lab VLAN.
+ I can ping the computer lab B&W printer on the Lab VLAN.
+ I can ping the computer lab Color printer on the Lab VLAN.
+  
+REQUEST
+ Teach me how to fish better. What else should I check?
+    submitted by    /u/Aim_Fire_Ready  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Which DBMS for Mailman 3?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15ujkm7/which_dbms_for_mailman_3/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15ujkm7/which_dbms_for_mailman_3/"/>
+        <updated>2023-08-18T12:43:53.000Z</updated>
+        <summary type="html"><![CDATA[Hello everyone, 
+ at work I run a Mailman 2 environment I inherited from my precessor, and it's in large parts a blackbox for me. Now I want to set up a test server (VM) running Mailman 3 and I wonder, which DBMS might be best for this? 
+ The plan is to set up a few test lists, test migration from Mailman 2 -> 3. Then, when tests are ok, scale up the VM and move all the lists to Mailman 3, so I need a DBMS that can handle all the data from the very beginning. There are approx. 700 lists, most of them are small (>100 users) but there are also some with 60k users and web archives as old as 20 years. I doubt there will be further upscaling since we run the mailing list for our... "older legacy customers" while newer/younger users populate more web2.0-ish social networks. Each list votes their own admins/mods and most of them are noobs. So if I understand the docs correctly, a web interface (Postorius + Hyperkitty, both based on Django) is a must.
+ I have almost no experience with doing stuff on SQL-level, but this could change (webarchive scraping for market research etc). So I wonder, which DBMS would you suggest? Mailman 3 comes with SQLite, is it sufficient or should I choose MySQL, MariaDB or PostgreSQL? 
+ Thanks in advance!
+    submitted by    /u/Schrankwand83  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The naming context is in the process of being removed or is not replicated from the specified server]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15ujhmw/the_naming_context_is_in_the_process_of_being/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15ujhmw/the_naming_context_is_in_the_process_of_being/"/>
+        <updated>2023-08-18T12:40:18.000Z</updated>
+        <summary type="html"><![CDATA[Currently testing recovery scenario of whole forest. Followed the official Microsoft Doc (https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-perform-initial-recovery) step by step and restored one domain controller from each domain.
+ Now one DC from each domain is up and running in the same subnet, the Microsoft doc says I need to verify replication health. It does not mention how to. Replication is broken to some domains because the KCC establishes connections to non-restored domain controllers which are not available. Keep in mind that metadata cleanup of domain controllers outside the current domain was not mentioned in the doc.
+ Now the replication is broken between some domains. I tried to create a manual replication object and replicate manually, but I get the error:
+ The naming context is in the process of being removed or is not replicated from the specified server.
+ At this point I also cannot cleanup the non-restored domain controllers, I get the error:
+ A referral was returned from the server.
+ Been at this for quite a few days now, pisses me off the Microsoft doc is so trash. "Just create direct connection for faster replicate" my ass when the manual replication is not working.
+    submitted by    /u/Impressive_Log_1311  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Autologon to Microsoft when fresh installing Windows?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/15uinqd/autologon_to_microsoft_when_fresh_installing/</id>
@@ -21388,62 +21483,6 @@ Balance of Nature: Get a FREE Fruit & Veggies Travel Set plus $25 off your first
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Managing Printer Drivers. Tasked with auditing print server and ensuring drivers are up to date (Printers Deployed via Intune)]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/154coga/managing_printer_drivers_tasked_with_auditing/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/154coga/managing_printer_drivers_tasked_with_auditing/"/>
-        <updated>2023-07-20T01:06:42.000Z</updated>
-        <summary type="html"><![CDATA[Hi All
- We got a request today from a client wanting an audit of thier printers. To have all the drivers checked to ensure they are up to date.
- Printers are instaled on a print server and they are mapped via intune.
- At a first glance it seems straight forward enought to check all the printers one by one to see what driver is installed. But even then, there is nothing signifying the driver "version". In the printer properties it just specifies the driver bieng used no version/dates at all
- The other thing is, Printing is working fine across all printers. Why do they need to be updated?
- How would you all tackle this? Would you just for the sake get the latests driver for each printer and update all the drivers anyways?
- Thanks
-    submitted by    /u/spazzo246  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Kevin Mitnick has died]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/154capo/kevin_mitnick_has_died/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/154capo/kevin_mitnick_has_died/"/>
-        <updated>2023-07-20T00:49:39.000Z</updated>
-        <summary type="html"><![CDATA[Larger than life, he had the coolest business card in the world. He has passed away at 59 after battling pancreatic cancer.
-    submitted by    /u/vic-traill  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I think I’m losing my mind.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/154c4qi/i_think_im_losing_my_mind/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/154c4qi/i_think_im_losing_my_mind/"/>
-        <updated>2023-07-20T00:41:59.000Z</updated>
-        <summary type="html"><![CDATA[That’s it. That’s the post.
- I’m doing too much. And then quality of work suffers. But if the work doesn’t get done, that’s also bad.
- Tomorrow is a new day.
-    submitted by    /u/Low-Juggernaut-1164  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How is your org doing cloud right?]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/154c0mo/how_is_your_org_doing_cloud_right/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/154c0mo/how_is_your_org_doing_cloud_right/"/>
-        <updated>2023-07-20T00:36:33.000Z</updated>
-        <summary type="html"><![CDATA[We've heard a lot about how companies are doing cloud wrong, what's one thing your company is doing right in the cloud?
-    submitted by    /u/Status_Network_8882  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
         </author>
     </entry>
 </feed>
