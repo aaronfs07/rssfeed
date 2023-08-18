@@ -2,10 +2,78 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-08-18T11:08:35.364Z</updated>
+    <updated>2023-08-18T12:19:27.536Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Autologon to Microsoft when fresh installing Windows?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15uinqd/autologon_to_microsoft_when_fresh_installing/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15uinqd/autologon_to_microsoft_when_fresh_installing/"/>
+        <updated>2023-08-18T12:02:44.000Z</updated>
+        <summary type="html"><![CDATA[Hello,
+ I am trying to make an Unattended.xml that will install Windows with my prefered settings and then login with an account ("Sign in with an Microsoft account" screen) that we use to enroll to Intune. I tried this in my autounattend file. 
+ <AutoLogon>
+ <Password>
+ <Value>MyPassword</Value>
+ </Password>
+ <Domain>FabrikamDomain</Domain>
+ <Enabled>true</Enabled>
+ <LogonCount>2</LogonCount>
+ <Username>MyUserName</Username>
+ </AutoLogon> 
+ But it didnt work for me. So is there a way to do this with the autounattend file or do i have to go another route ?
+ ​
+    submitted by    /u/HelloRexis  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DHCP Relay question]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15uilti/dhcp_relay_question/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15uilti/dhcp_relay_question/"/>
+        <updated>2023-08-18T12:00:35.000Z</updated>
+        <summary type="html"><![CDATA[Hey there,
+ I have a network that has multiple subnets all hitting a specific dhcp server. We have dhcp relays setup on the layer 3 switches.
+ ​
+ However, looking at a wireshark capture on the DHCP server, I see multiple DHCP discover messages from multiple dhcp switches, even some not in the same subnet. The DHCP server will NAK the ones that aren't in the correct subnet and offer an IP in the correct subnet, but it's not working quite right.
+ ​
+ I guess I have two questions.
+ 1) Should I be seeing multiple dhcp discovers across multiple subnets?
+ 2) If not, what should I be looking for? I'm guessing an incorrect VLAN tag somewhere.
+ ​
+    submitted by    /u/Faulteh12  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows keeps forgetting networked resources]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15uikak/windows_keeps_forgetting_networked_resources/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15uikak/windows_keeps_forgetting_networked_resources/"/>
+        <updated>2023-08-18T11:58:38.000Z</updated>
+        <summary type="html"><![CDATA[Is anyone else having issues accessing network-shared folders? I'm on windows 11 and my computer keeps forgetting network shared folders and RDP, I have to type the credentials every time I want to access shared folders or log into another computer using RDP.
+    submitted by    /u/Mosesmbadi  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Did anyone have problems with Outlook yesterday?]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15ui6i5/did_anyone_have_problems_with_outlook_yesterday/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15ui6i5/did_anyone_have_problems_with_outlook_yesterday/"/>
+        <updated>2023-08-18T11:40:54.000Z</updated>
+        <summary type="html"><![CDATA[Maybe it was org but I couldn't access outlook all day yesterday.
+    submitted by    /u/frogmicky  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Does a AD user name change affect signed documents in sharepoint?]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/15uh8fc/does_a_ad_user_name_change_affect_signed/</id>
@@ -21376,53 +21444,6 @@ Balance of Nature: Get a FREE Fruit & Veggies Travel Set plus $25 off your first
  [link]   [comments]]]></summary>
         <author>
             <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BGP & Distribute Lists]]></title>
-        <id>https://www.reddit.com/r/networking/comments/154blr0/bgp_distribute_lists/</id>
-        <link href="https://www.reddit.com/r/networking/comments/154blr0/bgp_distribute_lists/"/>
-        <updated>2023-07-20T00:18:09.000Z</updated>
-        <summary type="html"><![CDATA[Hi folks, I have the following configuration...
- interface GigabitEthernet0/0 description UPLINK:FIREWALL ip address 10.0.0.2 255.255.255.0 ip access-list extended TEST 10 permit ip host 192.168.1.0 host 255.255.255.0 router bgp 1 neighbor 1.1.1.1 remote-as 2 ! address-family ipv4 neighbor 1.1.1.1 distribute-list TEST out ip route 0.0.0.0 0.0.0.0 10.0.0.1 
- Will neighbor 1.1.1.1 learn the route (192.168.1.0/24) without the following configuration?
- ip route 192.168.1.0 255.255.255.0 10.0.0.1 
- ​
-    submitted by    /u/derpypupdog  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[SSO service has logs where users will attempt to authenticate with common last names, and every letter as the first name, in the pattern of our email. "ameyer, bmeyer, cmeyer, dmeyer,... zmeyer", 26 attempts each, with so far a dozen last names.]]></title>
-        <id>https://www.reddit.com/r/sysadmin/comments/154bev3/sso_service_has_logs_where_users_will_attempt_to/</id>
-        <link href="https://www.reddit.com/r/sysadmin/comments/154bev3/sso_service_has_logs_where_users_will_attempt_to/"/>
-        <updated>2023-07-20T00:09:43.000Z</updated>
-        <summary type="html"><![CDATA[I have the feeling that this means something is trying to compromise us and they're using a programmatically generated rainbow list of usernames? Am I right in thinking this?
- https://imgur.com/L8d4OEx
- Like, this log file as "aschmidt" through "zschmidt", and then continues on to "agonazales" to "zgonzalez", and then "abradley" to "zbradley".
- ​
-    submitted by    /u/throws_rocks_at_cars  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Sysadmin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[4 Paths to the same networks via BGP]]></title>
-        <id>https://www.reddit.com/r/networking/comments/154b16i/4_paths_to_the_same_networks_via_bgp/</id>
-        <link href="https://www.reddit.com/r/networking/comments/154b16i/4_paths_to_the_same_networks_via_bgp/"/>
-        <updated>2023-07-19T23:52:49.000Z</updated>
-        <summary type="html"><![CDATA["I currently have four ISP paths to the same networks, all of which are advertised via BGP to my firewalls (Checkpoint Gaia r81.10). These consist of two clusters, one located at each site. The BGP configuration is functioning correctly without any issues.
- However, when these routes are redistributed into OSPF (Cisco), problems arise. Everything operates as expected until we start conducting failover tests. We sequentially disconnect ISP routers 1 through 3 in an attempt to force traffic through each router along the path. When we reach router 4, everything still continues to function properly.
- The issue emerges when router 1 is reconnected. As soon as this happens, it immediately expects, via BGP, that the traffic will be routed through it. However, the OSPF routing table has not been updated at this point and is still pointing towards router 4. This creates a black hole, as the routes are expected to come from router 4 via OSPF, but from the perspective of BGP, router 1 is now online.
- The underlying problem is that router 4 never lost its link state since it still owns the routes (OSPF).
- I hope I have managed to clearly explain this complex scenario. If anyone can shed light on how to resolve this issue, please do reach out. If there is something incorrect with my configuration, I am open to suggestions. Any assistance would be greatly appreciated."
-    submitted by    /u/deey001  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
         </author>
     </entry>
 </feed>
