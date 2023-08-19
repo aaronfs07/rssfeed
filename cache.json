@@ -350,6 +350,16 @@
       "siteUrl": "https://www.reddit.com/r/sysadmin",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/sysadmin/comments/15vginc/server_2016_will_not_add_windows_features/",
+          "author": null,
+          "description": "Hello fellow Sysadmins, I have a few servers that will not add any Windows features and am wondering if there is anything else I can try. When I try and add a feature I get:\n ​\n Error: 0x800f0831\n This means that the CBS store is corrupted.\n ​\n Here are some things I have attempted to fix it:\n ​\n sfc /scannow\n No errors detected\n ​\n dism /online /cleanup-image /scanhealth\n It says the component store is repairable.\n ​\n dism /online /cleanup-image /restorehealth\n Fails with an error that the source cannot be found\n ​\n dism /online /cleanup-image /restorehealth /source:wim:pathtowim:4 /limitaccess\n Still fails with an error that the source cannot be found. For the Wim file, I have tried both the stock server 2016 WIM, and a WIM file I have patched with the most recent SSU and CU.\n ​\n dism /online /cleanup-image /restorehealth /source:\\\\OtherWorkingServer\\c$\\Windows /limitaccess\n Where OtherWorkingServer is another 2016 server at the same update level, that does not have CBS corruption. This still fails with an error that the source cannot be found.\n ​\n DISM /Online /Cleanup-Image /StartComponentCleanup\n DISM /Online /Cleanup-Image /StartComponentCleanup /ResetBase\n These both work but don't fix the issue.\n ​\n In the CBS logs, it looks like the issue is related to two older updates, I get various package errors for KB4512495 and KB4487026 such as:\n (p) CBS Catalog Missing Package_7847_for_KB4487026~31bf3856ad364e35~amd64~~10.0.1.6\n (p) CBS Catalog Missing Package_2014_for_KB4512495~31bf3856ad364e35~amd64~~10.0.1.8\n ​\n ​\n KB4512495 is expired and can no longer be downloaded.\n KB4487026 is a delta update from 2019, I have tried installing it on the OS by itself and through DISM but it says its not applicable.\n ​\n Is there anything else I can try, or are these servers a write-off and I should just nuke them and re-deploy? They have some more involved application setup on them so I was hoping I could salvage them, but at this point I am out of ideas.\n ​\n    submitted by    /u/Threep1337  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/sysadmin/comments/15vginc/server_2016_will_not_add_windows_features/",
+          "publishedOn": "2023-08-19T13:37:34.000Z",
+          "wordCount": 2863,
+          "title": "Server 2016 will not add Windows Features",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/sysadmin/comments/15vekgo/web_forwarding_https_to_https/",
           "author": null,
           "description": "I have been researching this question, and I cannot find a concrete answer.\n I want to take the URL at https://www.oldsite.com/ and forward all visitors to https://www.newsite.com/. I own both domains.\n This was always easy to do when the websites were http, but now it never seems to work. I typically would configure the web forwarding options at the registrar and that was it. Now all site visitors always get ERR_CONNECTION_CLOSED message on the browser.\n    submitted by    /u/MarkInPA  \n [link]   [comments]",
@@ -9298,6 +9308,26 @@
       "siteUrl": "https://www.reddit.com/r/networking",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/networking/comments/15vgfla/rto_for_network_engineers/",
+          "author": null,
+          "description": "My company sent us all to work at home in March 2020 and I’ve been full time work from home since then. My company started to push RTO last year and many employees went to a hybrid schedule of 3 days in office 2 days at home. We were not included and my manager told us we were “safe.” We also hired remote workers on our team during that time some who live in different states.\n Yesterday at 6pm on a Friday my team received an email from our manager that beginning the first full week of September we are Returning to office and going hybrid. More details to come when he can talk to us on Monday.\n This is really disappointing to me and don’t know how it will effect our remote hires, if at all. \n Is this happening all over? I know some of you have done work from home since before covid but I wonder if it’s even worth looking for something else… seems like Return to office is everywhere and there’s no escaping it.. and working from home jobs very competitive.\n Thoughts?\n    submitted by    /u/MyFirstDataCenter  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/15vgfla/rto_for_network_engineers/",
+          "publishedOn": "2023-08-19T13:33:41.000Z",
+          "wordCount": 2759,
+          "title": "RTO for network engineers?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/networking/comments/15vg4ya/self_hosted_services_private_access/",
+          "author": null,
+          "description": "Access to locally hosted services via vpn\n I am trying to set up access to my locally hosted services (git etc), which are hosted on different servers NOT in a local network. Right now I am using ssh port forwarding, and accessing everything on various local ports. But this method is not really scalable to say the least, and I would like to access some of my services via my phone as well, which is not possible right now. On the other hand, I don’t want them to be publicly accessible, or even the ip addresses of the servers be shown to anybody without access to my vpn server, so I guess the solution should be simpler than setting up a dns server + reverse proxy on some subdomain of my domain. So I was thinking - is it possible to setup some local dns on the server where my vpn is hosted, so that it would resolve {some_subdomain}.example.com (port 80/443) into localhost:{some_port}? This way I could have all of the tunnels constantly up on my vpn server, and access my services from whichever device has my vpn running.\n My background in networking consists of whichever I read during last couple of weeks, and all of this dns_servers/reverse_proxy kind of stuff confuses me very much, so apologize in advance in case the question is stupid, and none of it works in a way I imagine it to.\n    submitted by    /u/Low-Grade-8952  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/networking/comments/15vg4ya/self_hosted_services_private_access/",
+          "publishedOn": "2023-08-19T13:20:42.000Z",
+          "wordCount": 2811,
+          "title": "Self hosted services private access",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/networking/comments/15v48ej/whats_your_toughest_to_reach_network_switch/",
           "author": null,
           "description": "Hello!\n I'll slowly be transitioning into a more networking focused role from servicedesk in a manufacturing company and am looking for ways to psych myself up as a majority of our IDFs are in locked cages above all of our heavy machinery that may require a skyjack to get to, and I am deeply afraid of heights. \n For those of you that work in these kinds of environments, are there any pointers that you can share on dealing with these sorts of circumstances?\n    submitted by    /u/AgentCovfefe  \n [link]   [comments]",
@@ -13415,16 +13445,6 @@
           "publishedOn": "2023-07-21T03:03:29.000Z",
           "wordCount": 2554,
           "title": "Silly VPN question",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/networking/comments/1559xlv/new_to_cambium_looking_for_pointers_setting_up_xv/",
-          "author": null,
-          "description": "Hey reddit. I'm looking for pointers setting up XV series wifi before I start please.\n I'll read the docs and tutorials, but I'd like to have an idea of what I'll be doing before I get started on them as to set my focus.\n My intended setup is pretty basic and for a small site:\n  \nAm looking at 4 or more XV series access points, will add more if needed.\n \nTwo SSIDs: one for the internal network VLAN and one for 'visitor wifi' VLAN.\n \nWPA2 PSK Passphrase authentication.\n \nSSID for internal network VLAN to be restricted by device / MAC address.\n \n Have registered with cnMaestro so I can start having a play before the access points arrive and it looks fairly intuitive.\n Any pointers and/or a brief rundown of what to expect would be appreciated, thank you.\n    submitted by    /u/donteatmyaspergers  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/networking/comments/1559xlv/new_to_cambium_looking_for_pointers_setting_up_xv/",
-          "publishedOn": "2023-07-21T01:43:15.000Z",
-          "wordCount": 2609,
-          "title": "New to Cambium, looking for pointers setting up XV series wifi before I start.",
           "imageUrl": null
         }
       ]

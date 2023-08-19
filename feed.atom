@@ -2,10 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aaronfs07.github.io/rssfeed/index.html</id>
     <title>Aaron's RSS Feed</title>
-    <updated>2023-08-19T13:11:46.563Z</updated>
+    <updated>2023-08-19T14:08:15.321Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://aaronfs07.github.io/rssfeed/index.html"/>
     <link rel="self" href="https://aaronfs07.github.io/rssfeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Server 2016 will not add Windows Features]]></title>
+        <id>https://www.reddit.com/r/sysadmin/comments/15vginc/server_2016_will_not_add_windows_features/</id>
+        <link href="https://www.reddit.com/r/sysadmin/comments/15vginc/server_2016_will_not_add_windows_features/"/>
+        <updated>2023-08-19T13:37:34.000Z</updated>
+        <summary type="html"><![CDATA[Hello fellow Sysadmins, I have a few servers that will not add any Windows features and am wondering if there is anything else I can try. When I try and add a feature I get:
+ ​
+ Error: 0x800f0831
+ This means that the CBS store is corrupted.
+ ​
+ Here are some things I have attempted to fix it:
+ ​
+ sfc /scannow
+ No errors detected
+ ​
+ dism /online /cleanup-image /scanhealth
+ It says the component store is repairable.
+ ​
+ dism /online /cleanup-image /restorehealth
+ Fails with an error that the source cannot be found
+ ​
+ dism /online /cleanup-image /restorehealth /source:wim:pathtowim:4 /limitaccess
+ Still fails with an error that the source cannot be found. For the Wim file, I have tried both the stock server 2016 WIM, and a WIM file I have patched with the most recent SSU and CU.
+ ​
+ dism /online /cleanup-image /restorehealth /source:\\OtherWorkingServer\c$\Windows /limitaccess
+ Where OtherWorkingServer is another 2016 server at the same update level, that does not have CBS corruption. This still fails with an error that the source cannot be found.
+ ​
+ DISM /Online /Cleanup-Image /StartComponentCleanup
+ DISM /Online /Cleanup-Image /StartComponentCleanup /ResetBase
+ These both work but don't fix the issue.
+ ​
+ In the CBS logs, it looks like the issue is related to two older updates, I get various package errors for KB4512495 and KB4487026 such as:
+ (p) CBS Catalog Missing Package_7847_for_KB4487026~31bf3856ad364e35~amd64~~10.0.1.6
+ (p) CBS Catalog Missing Package_2014_for_KB4512495~31bf3856ad364e35~amd64~~10.0.1.8
+ ​
+ ​
+ KB4512495 is expired and can no longer be downloaded.
+ KB4487026 is a delta update from 2019, I have tried installing it on the OS by itself and through DISM but it says its not applicable.
+ ​
+ Is there anything else I can try, or are these servers a write-off and I should just nuke them and re-deploy? They have some more involved application setup on them so I was hoping I could salvage them, but at this point I am out of ideas.
+ ​
+    submitted by    /u/Threep1337  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Sysadmin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RTO for network engineers?]]></title>
+        <id>https://www.reddit.com/r/networking/comments/15vgfla/rto_for_network_engineers/</id>
+        <link href="https://www.reddit.com/r/networking/comments/15vgfla/rto_for_network_engineers/"/>
+        <updated>2023-08-19T13:33:41.000Z</updated>
+        <summary type="html"><![CDATA[My company sent us all to work at home in March 2020 and I’ve been full time work from home since then. My company started to push RTO last year and many employees went to a hybrid schedule of 3 days in office 2 days at home. We were not included and my manager told us we were “safe.” We also hired remote workers on our team during that time some who live in different states.
+ Yesterday at 6pm on a Friday my team received an email from our manager that beginning the first full week of September we are Returning to office and going hybrid. More details to come when he can talk to us on Monday.
+ This is really disappointing to me and don’t know how it will effect our remote hires, if at all. 
+ Is this happening all over? I know some of you have done work from home since before covid but I wonder if it’s even worth looking for something else… seems like Return to office is everywhere and there’s no escaping it.. and working from home jobs very competitive.
+ Thoughts?
+    submitted by    /u/MyFirstDataCenter  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Self hosted services private access]]></title>
+        <id>https://www.reddit.com/r/networking/comments/15vg4ya/self_hosted_services_private_access/</id>
+        <link href="https://www.reddit.com/r/networking/comments/15vg4ya/self_hosted_services_private_access/"/>
+        <updated>2023-08-19T13:20:42.000Z</updated>
+        <summary type="html"><![CDATA[Access to locally hosted services via vpn
+ I am trying to set up access to my locally hosted services (git etc), which are hosted on different servers NOT in a local network. Right now I am using ssh port forwarding, and accessing everything on various local ports. But this method is not really scalable to say the least, and I would like to access some of my services via my phone as well, which is not possible right now. On the other hand, I don’t want them to be publicly accessible, or even the ip addresses of the servers be shown to anybody without access to my vpn server, so I guess the solution should be simpler than setting up a dns server + reverse proxy on some subdomain of my domain. So I was thinking - is it possible to setup some local dns on the server where my vpn is hosted, so that it would resolve {some_subdomain}.example.com (port 80/443) into localhost:{some_port}? This way I could have all of the tunnels constantly up on my vpn server, and access my services from whichever device has my vpn running.
+ My background in networking consists of whichever I read during last couple of weeks, and all of this dns_servers/reverse_proxy kind of stuff confuses me very much, so apologize in advance in case the question is stupid, and none of it works in a way I imagine it to.
+    submitted by    /u/Low-Grade-8952  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Enterprise Networking Design, Support, and Discussion</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Web Forwarding HTTPS to HTTPS]]></title>
         <id>https://www.reddit.com/r/sysadmin/comments/15vekgo/web_forwarding_https_to_https/</id>
@@ -20991,31 +21068,6 @@ Birch Gold: Text "WIRE" to 989898 for your no-cost, no-obligation information ki
         <updated>2023-07-21T03:03:29.000Z</updated>
         <summary type="html"><![CDATA[So I always thought traffic in a site to site VPN connection flowed through a tunnel on the same interface as the VPN... but the tunnel is built on 1 interface to agree on the phase 1 & 2 cryptography and to encrypt and decrypt the traffic with the keys. The 2nd interface is where the actual traffic flows back and forth between the private networks. So the traffic still goes through the internet normally on it's own interface, it's just encrypted and decrypted by the VPN interface as it comes and goes?
     submitted by    /u/Theb1rdisthew0rd  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Enterprise Networking Design, Support, and Discussion</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New to Cambium, looking for pointers setting up XV series wifi before I start.]]></title>
-        <id>https://www.reddit.com/r/networking/comments/1559xlv/new_to_cambium_looking_for_pointers_setting_up_xv/</id>
-        <link href="https://www.reddit.com/r/networking/comments/1559xlv/new_to_cambium_looking_for_pointers_setting_up_xv/"/>
-        <updated>2023-07-21T01:43:15.000Z</updated>
-        <summary type="html"><![CDATA[Hey reddit. I'm looking for pointers setting up XV series wifi before I start please.
- I'll read the docs and tutorials, but I'd like to have an idea of what I'll be doing before I get started on them as to set my focus.
- My intended setup is pretty basic and for a small site:
-  
-Am looking at 4 or more XV series access points, will add more if needed.
- 
-Two SSIDs: one for the internal network VLAN and one for 'visitor wifi' VLAN.
- 
-WPA2 PSK Passphrase authentication.
- 
-SSID for internal network VLAN to be restricted by device / MAC address.
- 
- Have registered with cnMaestro so I can start having a play before the access points arrive and it looks fairly intuitive.
- Any pointers and/or a brief rundown of what to expect would be appreciated, thank you.
-    submitted by    /u/donteatmyaspergers  
  [link]   [comments]]]></summary>
         <author>
             <name>Enterprise Networking Design, Support, and Discussion</name>

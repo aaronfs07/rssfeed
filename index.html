@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-08-19 datetime="2023-08-19T12:08:21.000Z">2023-08-19</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-08-19 datetime="2023-08-19T12:08:21.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-08-19 datetime="2023-08-19T13:37:34.000Z">2023-08-19</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-08-19 datetime="2023-08-19T13:37:34.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -38,6 +38,62 @@
                   <a class="source-heading__link" href="https://www.reddit.com/r/sysadmin">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/sysadmin/comments/15vginc/server_2016_will_not_add_windows_features/"
+                        open
+                      >
+                        <summary class="article-expander__title">Server 2016 will not add Windows Features</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/sysadmin/comments/15vginc/server_2016_will_not_add_windows_features/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Hello fellow Sysadmins, I have a few servers that will not add any Windows features and am wondering if there is anything else I can try. When I try and add a feature I get:
+ ​
+ Error: 0x800f0831
+ This means that the CBS store is corrupted.
+ ​
+ Here are some things I have attempted to fix it:
+ ​
+ sfc /scannow
+ No errors detected
+ ​
+ dism /online /cleanup-image /scanhealth
+ It says the component store is repairable.
+ ​
+ dism /online /cleanup-image /restorehealth
+ Fails with an error that the source cannot be found
+ ​
+ dism /online /cleanup-image /restorehealth /source:wim:pathtowim:4 /limitaccess
+ Still fails with an error that the source cannot be found. For the Wim file, I have tried both the stock server 2016 WIM, and a WIM file I have patched with the most recent SSU and CU.
+ ​
+ dism /online /cleanup-image /restorehealth /source:\\OtherWorkingServer\c$\Windows /limitaccess
+ Where OtherWorkingServer is another 2016 server at the same update level, that does not have CBS corruption. This still fails with an error that the source cannot be found.
+ ​
+ DISM /Online /Cleanup-Image /StartComponentCleanup
+ DISM /Online /Cleanup-Image /StartComponentCleanup /ResetBase
+ These both work but don&#x27;t fix the issue.
+ ​
+ In the CBS logs, it looks like the issue is related to two older updates, I get various package errors for KB4512495 and KB4487026 such as:
+ (p) CBS Catalog Missing Package_7847_for_KB4487026~31bf3856ad364e35~amd64~~10.0.1.6
+ (p) CBS Catalog Missing Package_2014_for_KB4512495~31bf3856ad364e35~amd64~~10.0.1.8
+ ​
+ ​
+ KB4512495 is expired and can no longer be downloaded.
+ KB4487026 is a delta update from 2019, I have tried installing it on the OS by itself and through DISM but it says its not applicable.
+ ​
+ Is there anything else I can try, or are these servers a write-off and I should just nuke them and re-deploy? They have some more involved application setup on them so I was hoping I could salvage them, but at this point I am out of ideas.
+ ​
+    submitted by    /u/Threep1337  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;10
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -300,6 +356,68 @@
     submitted by    /u/TheOGwcwain  
  [link]   [comments]</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;10
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Enterprise Networking Design, Support, and Discussion</button>
+                  <a class="source-heading__link" href="https://www.reddit.com/r/networking">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15vgfla/rto_for_network_engineers/"
+                        open
+                      >
+                        <summary class="article-expander__title">RTO for network engineers?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15vgfla/rto_for_network_engineers/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>My company sent us all to work at home in March 2020 and I’ve been full time work from home since then. My company started to push RTO last year and many employees went to a hybrid schedule of 3 days in office 2 days at home. We were not included and my manager told us we were “safe.” We also hired remote workers on our team during that time some who live in different states.
+ Yesterday at 6pm on a Friday my team received an email from our manager that beginning the first full week of September we are Returning to office and going hybrid. More details to come when he can talk to us on Monday.
+ This is really disappointing to me and don’t know how it will effect our remote hires, if at all. 
+ Is this happening all over? I know some of you have done work from home since before covid but I wonder if it’s even worth looking for something else… seems like Return to office is everywhere and there’s no escaping it.. and working from home jobs very competitive.
+ Thoughts?
+    submitted by    /u/MyFirstDataCenter  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.reddit.com/r/networking/comments/15vg4ya/self_hosted_services_private_access/"
+                        open
+                      >
+                        <summary class="article-expander__title">Self hosted services private access</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/15vg4ya/self_hosted_services_private_access/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Access to locally hosted services via vpn
+ I am trying to set up access to my locally hosted services (git etc), which are hosted on different servers NOT in a local network. Right now I am using ssh port forwarding, and accessing everything on various local ports. But this method is not really scalable to say the least, and I would like to access some of my services via my phone as well, which is not possible right now. On the other hand, I don’t want them to be publicly accessible, or even the ip addresses of the servers be shown to anybody without access to my vpn server, so I guess the solution should be simpler than setting up a dns server + reverse proxy on some subdomain of my domain. So I was thinking - is it possible to setup some local dns on the server where my vpn is hosted, so that it would resolve {some_subdomain}.example.com (port 80/443) into localhost:{some_port}? This way I could have all of the tunnels constantly up on my vpn server, and access my services from whichever device has my vpn running.
+ My background in networking consists of whichever I read during last couple of weeks, and all of this dns_servers/reverse_proxy kind of stuff confuses me very much, so apologize in advance in case the question is stupid, and none of it works in a way I imagine it to.
+    submitted by    /u/Low-Grade-8952  
+ [link]   [comments]</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;9
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -35175,40 +35293,6 @@ Birch Gold: Text &quot;WIRE&quot; to 989898 for your no-cost, no-obligation info
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.reddit.com/r/networking/comments/1559xlv/new_to_cambium_looking_for_pointers_setting_up_xv/"
-                        open
-                      >
-                        <summary class="article-expander__title">New to Cambium, looking for pointers setting up XV series wifi before I start.</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.reddit.com/r/networking/comments/1559xlv/new_to_cambium_looking_for_pointers_setting_up_xv/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Hey reddit. I&#x27;m looking for pointers setting up XV series wifi before I start please.
- I&#x27;ll read the docs and tutorials, but I&#x27;d like to have an idea of what I&#x27;ll be doing before I get started on them as to set my focus.
- My intended setup is pretty basic and for a small site:
-  
-Am looking at 4 or more XV series access points, will add more if needed.
- 
-Two SSIDs: one for the internal network VLAN and one for &#x27;visitor wifi&#x27; VLAN.
- 
-WPA2 PSK Passphrase authentication.
- 
-SSID for internal network VLAN to be restricted by device / MAC address.
- 
- Have registered with cnMaestro so I can start having a play before the access points arrive and it looks fairly intuitive.
- Any pointers and/or a brief rundown of what to expect would be appreciated, thank you.
-    submitted by    /u/donteatmyaspergers  
- [link]   [comments]</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -35216,8 +35300,8 @@ SSID for internal network VLAN to be restricted by device / MAC address.
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5911624330">
-        <time id="build-timestamp" datetime="2023-08-19T13:11:46.464Z">2023-08-19T13:11:46.464Z</time>
+      <a class="footer-link" href="https://github.com/aaronfs07/rssfeed/actions/runs/5911854311">
+        <time id="build-timestamp" datetime="2023-08-19T14:08:15.254Z">2023-08-19T14:08:15.254Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
